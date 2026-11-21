@@ -61,11 +61,11 @@ export function CategoriesClient() {
               href={getCategoryHref(cat.slug)}
               className="ensar-card group overflow-hidden transition-transform duration-300 hover:-translate-y-0.5"
             >
-              <div className="aspect-square w-full overflow-hidden bg-[#241320]">
+              <div className="aspect-square w-full overflow-hidden bg-white p-2">
                 <img
                   src={cat.image}
                   alt={cat.imageAlt}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-3.5 text-center">

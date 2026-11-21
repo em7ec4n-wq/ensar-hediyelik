@@ -189,12 +189,12 @@ function ProductDetailInner({
       <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12">
         {/* Left: Gallery */}
         <div className="lg:col-span-6">
-          <div className="ensar-card relative overflow-hidden bg-[#241320]">
-            <div className="aspect-[4/3.6] w-full">
+          <div className="relative overflow-hidden rounded-[16px] border border-[#E5DCD0] bg-white shadow-[0_6px_20px_rgba(36,23,34,0.06)]">
+            <div className="aspect-square w-full p-4">
               <img
                 src={activeImage}
                 alt={product.imageAlt}
-                className="h-full w-full object-contain bg-[#FFFDF8]"
+                className="h-full w-full bg-white object-contain"
               />
             </div>
             {product.isConceptImage && (

@@ -947,12 +947,12 @@ export default function AdminPanelPage() {
                     <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
                       {/* Left: Photo + Product Title + Photo Buttons */}
                       <div className="flex items-start gap-3.5 sm:gap-4">
-                        <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-[#E5DCD0] bg-[#FFFDF8] sm:h-28 sm:w-28">
+                        <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-[#E5DCD0] bg-white p-1.5 sm:h-28 sm:w-28">
                           <img
                             src={product.image}
                             alt={product.imageAlt}
                             loading="lazy"
-                            className="h-full w-full object-cover"
+                            className="h-full w-full object-contain"
                           />
                           <span className="absolute bottom-1 right-1 rounded-md bg-black/70 px-1.5 py-0.5 text-[10px] font-semibold text-white">
                             {gallery.length} foto
