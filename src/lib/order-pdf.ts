@@ -14,6 +14,8 @@ export interface SiparisEntry {
 
 export interface SiparisPayload {
   createdAt: string;
+  customerName: string;
+  customerPhone: string;
   payment: string;
   address: string;
   entries: SiparisEntry[];
@@ -31,22 +33,28 @@ export function formatTRYExact(amount: number): string {
 /**
  * Compact URL-safe encoding of an order so the shopkeeper can open
  * the visual Sipariş Listesi (with product photos) directly from a WhatsApp link:
- * Format: v1|payment|address|sku~qty~price~opt,sku~qty~price~opt
+ * Format: v2|customerName|customerPhone|payment|address|sku~qty~price~opt,...
  */
 export function encodeSiparisQuery(params: {
   items: CartItem[];
+  customerName?: string;
+  customerPhone?: string;
   payment?: string;
   address?: string;
 }): string {
-  const pay = (params.payment || "-").replace(/[|,~]/g, " ").trim() || "-";
-  const addr = (params.address || "-").replace(/[|,~]/g, " ").trim() || "-";
+  const clean = (s?: string) =>
+    (s || "-").replace(/[|,~]/g, " ").trim() || "-";
+  const name = clean(params.customerName);
+  const phone = clean(params.customerPhone);
+  const pay = clean(params.payment);
+  const addr = clean(params.address);
   const rows = params.items
     .map((i) => {
       const opt = (i.selectedOption || "").replace(/[|,~]/g, " ");
       return `${i.sku}~${i.quantity}~${i.unitPrice}${opt ? `~${opt}` : ""}`;
     })
     .join(",");
-  const raw = `v1|${pay}|${addr}|${rows}`;
+  const raw = `v2|${name}|${phone}|${pay}|${addr}|${rows}`;
   if (typeof window === "undefined") return "";
   return btoa(unescape(encodeURIComponent(raw)))
     .replace(/\+/g, "-")
@@ -63,8 +71,27 @@ export function decodeSiparisQuery(
     const base64 = encoded.replace(/-/g, "+").replace(/_/g, "/");
     const padded = base64 + "===".slice((base64.length + 3) % 4);
     const raw = decodeURIComponent(escape(atob(padded)));
-    const [ver, payment = "-", address = "-", rowsStr = ""] = raw.split("|");
-    if (ver !== "v1" || !rowsStr) return null;
+    const parts = raw.split("|");
+    let customerName = "-";
+    let customerPhone = "-";
+    let payment = "-";
+    let address = "-";
+    let rowsStr = "";
+
+    if (parts[0] === "v2") {
+      customerName = parts[1] || "-";
+      customerPhone = parts[2] || "-";
+      payment = parts[3] || "-";
+      address = parts[4] || "-";
+      rowsStr = parts[5] || "";
+    } else if (parts[0] === "v1") {
+      payment = parts[1] || "-";
+      address = parts[2] || "-";
+      rowsStr = parts[3] || "";
+    } else {
+      return null;
+    }
+    if (!rowsStr) return null;
 
     const catMap = new Map(categories.map((c) => [c.slug, c.name]));
     const entries: SiparisEntry[] = [];
@@ -95,6 +122,8 @@ export function decodeSiparisQuery(
 
     return {
       createdAt: new Date().toLocaleString("tr-TR").slice(0, 16),
+      customerName,
+      customerPhone,
       payment: payment || "-",
       address: address || "-",
       entries,
@@ -319,23 +348,28 @@ export async function generateSiparisPdfBlob(
       ctx.textAlign = "center";
 
       ctx.font = "bold 36px -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif";
-      ctx.fillText("Sipariş Listesi", W / 2, currentY + 32);
+      ctx.fillText("Sipariş Listesi", W / 2, currentY + 30);
 
       ctx.font = "bold 21px -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif";
-      ctx.fillText(`Ürün Sayısı: ${totalProductsCount}`, W / 2, currentY + 70);
+      ctx.fillText(`Ürün Sayısı: ${totalProductsCount}`, W / 2, currentY + 66);
 
       ctx.font = "bold 23px -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif";
       ctx.fillText(
         `Genel Toplam: ${formatTRYExact(grandTotal)}`,
         W / 2,
-        currentY + 104
+        currentY + 98
       );
 
       ctx.font = "bold 17px -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif";
-      ctx.fillText(`Ödeme: ${payload.payment || "-"}`, W / 2, currentY + 134);
-      ctx.fillText(`Adres: ${payload.address || "-"}`, W / 2, currentY + 160);
+      ctx.fillText(
+        `Müşteri: ${payload.customerName || "-"}   |   Tel: ${payload.customerPhone || "-"}`,
+        W / 2,
+        currentY + 128
+      );
+      ctx.fillText(`Adres: ${payload.address || "-"}`, W / 2, currentY + 154);
+      ctx.fillText(`Ödeme: ${payload.payment || "-"}`, W / 2, currentY + 180);
 
-      currentY += 195;
+      currentY += 210;
     }
 
     ctx.textAlign = "left";

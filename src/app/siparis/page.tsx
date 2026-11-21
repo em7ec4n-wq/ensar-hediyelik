@@ -39,6 +39,8 @@ function SiparisListesiInner() {
     const catMap = new Map(store.categories.map((c) => [c.slug, c.name]));
     return {
       createdAt: new Date().toLocaleString("tr-TR").slice(0, 16),
+      customerName: "-",
+      customerPhone: "-",
       payment: "-",
       address: "-",
       entries: cartItems.map((item) => {
@@ -237,11 +239,15 @@ function SiparisListesiInner() {
           <p className="mt-0.5 text-[18px] font-bold text-[#111111]">
             Genel Toplam: {formatTRYExact(grandTotal)}
           </p>
-          <p className="mt-1 text-[13px] font-bold text-[#222222]">
-            Ödeme: {payload.payment || "-"}
+          <p className="mt-1.5 text-[13.5px] font-bold text-[#111111]">
+            Müşteri: {payload.customerName || "-"} · Tel:{" "}
+            {payload.customerPhone || "-"}
           </p>
           <p className="text-[13px] font-bold text-[#222222]">
             Adres: {payload.address || "-"}
+          </p>
+          <p className="text-[13px] font-bold text-[#222222]">
+            Ödeme: {payload.payment || "-"}
           </p>
         </div>
 

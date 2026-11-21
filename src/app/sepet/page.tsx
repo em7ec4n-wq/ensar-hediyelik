@@ -18,14 +18,36 @@ export default function CartPage() {
   const { items, subtotal, hydrated, updateQuantity, removeItem } = useCart();
   const { store } = useLiveStore();
 
-  const [paymentNote, setPaymentNote] = useState("");
+  const [customerName, setCustomerName] = useState("");
+  const [customerPhone, setCustomerPhone] = useState("");
   const [addressNote, setAddressNote] = useState("");
+  const [paymentNote, setPaymentNote] = useState("");
+  const [formError, setFormError] = useState("");
   const [generatingPdf, setGeneratingPdf] = useState(false);
 
   const catMap = new Map(store.categories.map((c) => [c.slug, c.name]));
 
+  const validateCustomerFields = (): boolean => {
+    if (!customerName.trim()) {
+      setFormError("Lütfen Ad Soyad alanını doldurun.");
+      return false;
+    }
+    if (!customerPhone.trim()) {
+      setFormError("Lütfen Telefon Numarası alanını doldurun.");
+      return false;
+    }
+    if (!addressNote.trim()) {
+      setFormError("Lütfen Teslimat Adresi alanını doldurun.");
+      return false;
+    }
+    setFormError("");
+    return true;
+  };
+
   const buildCurrentPayload = (): SiparisPayload => ({
     createdAt: new Date().toLocaleString("tr-TR").slice(0, 16),
+    customerName: customerName.trim() || "-",
+    customerPhone: customerPhone.trim() || "-",
     payment: paymentNote.trim() || "-",
     address: addressNote.trim() || "-",
     entries: items.map((item) => {
@@ -47,6 +69,7 @@ export default function CartPage() {
 
   const handleDownloadAndSharePdf = async () => {
     if (items.length === 0) return;
+    if (!validateCustomerFields()) return;
     setGeneratingPdf(true);
     try {
       const payload = buildCurrentPayload();
@@ -90,9 +113,12 @@ export default function CartPage() {
 
   const handleSendWhatsAppOrder = async () => {
     if (items.length === 0) return;
+    if (!validateCustomerFields()) return;
     const payload = buildCurrentPayload();
     const encoded = encodeSiparisQuery({
       items,
+      customerName: payload.customerName,
+      customerPhone: payload.customerPhone,
       payment: payload.payment,
       address: payload.address,
     });
@@ -106,10 +132,12 @@ export default function CartPage() {
       "Merhaba, Sipariş Listem (PDF) hazırdır:",
       `📄 Sipariş PDF İndir / Görüntüle: ${siparisUrl}`,
       "",
+      `Müşteri: ${payload.customerName}`,
+      `Telefon: ${payload.customerPhone}`,
+      `Adres: ${payload.address}`,
+      `Ödeme: ${payload.payment}`,
       `Ürün Sayısı: ${items.length}`,
       `Genel Toplam: ${formatTRYExact(subtotal)}`,
-      `Ödeme: ${payload.payment}`,
-      `Adres: ${payload.address}`,
       "",
       ...payload.entries.map(
         (e, idx) =>
@@ -190,11 +218,15 @@ export default function CartPage() {
                 <p className="mt-0.5 text-[17px] font-bold text-[#111111]">
                   Genel Toplam: {formatTRYExact(subtotal)}
                 </p>
-                <p className="mt-1 text-xs font-bold text-[#333333]">
-                  Ödeme: {paymentNote.trim() || "-"}
+                <p className="mt-1.5 text-xs font-bold text-[#222222]">
+                  Müşteri: {customerName.trim() || "-"} · Tel:{" "}
+                  {customerPhone.trim() || "-"}
                 </p>
                 <p className="text-xs font-bold text-[#333333]">
                   Adres: {addressNote.trim() || "-"}
+                </p>
+                <p className="text-xs font-bold text-[#333333]">
+                  Ödeme: {paymentNote.trim() || "-"}
                 </p>
               </div>
 
@@ -303,38 +335,91 @@ export default function CartPage() {
             </div>
           </div>
 
-          {/* Right: PDF Download & WhatsApp Order Panel */}
+          {/* Right: Customer Details + PDF Download & WhatsApp Order Panel */}
           <aside className="lg:col-span-4">
             <div className="ensar-card space-y-4 bg-white p-5 sm:p-6">
-              <h2 className="font-heading text-2xl font-medium text-[#241722]">
-                Siparişi Gönder / PDF Al
-              </h2>
+              <div>
+                <h2 className="font-heading text-2xl font-medium text-[#241722]">
+                  Müşteri &amp; Sipariş Bilgileri
+                </h2>
+                <p className="mt-0.5 text-xs text-[#5F505C]">
+                  Bilgileriniz Sipariş Listesi PDF&apos;ine ve WhatsApp mesajına
+                  otomatik eklenir.
+                </p>
+              </div>
 
               <div className="space-y-3">
                 <div>
                   <label className="block text-xs font-bold text-[#241722]">
-                    Ödeme Notu (İsteğe Bağlı)
+                    Ad Soyad / Firma Adı *
                   </label>
                   <input
-                    value={paymentNote}
-                    onChange={(e) => setPaymentNote(e.target.value)}
-                    placeholder="Örn: Havale / Nakit (Boşsa - görünür)"
-                    className="mt-1 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-xs text-[#241722]"
+                    required
+                    value={customerName}
+                    onChange={(e) => {
+                      setCustomerName(e.target.value);
+                      if (formError) setFormError("");
+                    }}
+                    placeholder="Örn: Ahmet Yılmaz"
+                    className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm text-[#241722] focus:border-[#321B2D] focus:outline-none"
                   />
                 </div>
 
                 <div>
                   <label className="block text-xs font-bold text-[#241722]">
-                    Firma / Adres Notu (İsteğe Bağlı)
+                    Telefon Numarası *
                   </label>
                   <input
+                    required
+                    type="tel"
+                    value={customerPhone}
+                    onChange={(e) => {
+                      setCustomerPhone(e.target.value);
+                      if (formError) setFormError("");
+                    }}
+                    placeholder="Örn: 05XX XXX XX XX"
+                    className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm text-[#241722] focus:border-[#321B2D] focus:outline-none"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-[#241722]">
+                    Teslimat Adresi *
+                  </label>
+                  <textarea
+                    required
+                    rows={2}
                     value={addressNote}
-                    onChange={(e) => setAddressNote(e.target.value)}
-                    placeholder="Örn: İstanbul (Boşsa - görünür)"
-                    className="mt-1 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-xs text-[#241722]"
+                    onChange={(e) => {
+                      setAddressNote(e.target.value);
+                      if (formError) setFormError("");
+                    }}
+                    placeholder="Mahalle, sokak, bina no, ilçe / il…"
+                    className="mt-1 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] p-3 text-sm text-[#241722] focus:border-[#321B2D] focus:outline-none"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-[#241722]">
+                    Ödeme / Sipariş Notu (İsteğe Bağlı)
+                  </label>
+                  <input
+                    value={paymentNote}
+                    onChange={(e) => setPaymentNote(e.target.value)}
+                    placeholder="Örn: Havale / Nakit"
+                    className="mt-1 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-xs text-[#241722] focus:border-[#321B2D] focus:outline-none"
                   />
                 </div>
               </div>
+
+              {formError && (
+                <p
+                  role="alert"
+                  className="rounded-xl bg-rose-50 px-3.5 py-2.5 text-xs font-semibold text-rose-700"
+                >
+                  {formError}
+                </p>
+              )}
 
               <div className="rounded-xl bg-[#F7F3EB] p-3.5 text-sm">
                 <div className="flex justify-between font-medium text-[#4C3C49]">
@@ -377,6 +462,8 @@ export default function CartPage() {
               <Link
                 href={`/siparis/?d=${encodeSiparisQuery({
                   items,
+                  customerName: customerName.trim() || "-",
+                  customerPhone: customerPhone.trim() || "-",
                   payment: paymentNote.trim() || "-",
                   address: addressNote.trim() || "-",
                 })}`}
