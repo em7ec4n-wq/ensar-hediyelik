@@ -1,13 +1,168 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import type { Product } from "@/types/store";
 import { formatPriceTRY } from "@/lib/format";
-import { GiftIcon, LightIcon, ChevronRightIcon } from "./Icons";
+import {
+  GiftIcon,
+  LightIcon,
+  ChevronRightIcon,
+  ChevronDownIcon,
+} from "./Icons";
 
 interface GiftFinderProps {
   products: Product[];
+}
+
+interface ModernDropdownProps {
+  id: string;
+  label: string;
+  placeholder: string;
+  value: string;
+  options: string[];
+  icon: React.ReactNode;
+  onChange: (val: string) => void;
+}
+
+function ModernFilterDropdown({
+  id,
+  label,
+  placeholder,
+  value,
+  options,
+  icon,
+  onChange,
+}: ModernDropdownProps) {
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleOutside(e: MouseEvent) {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(e.target as Node)
+      ) {
+        setOpen(false);
+      }
+    }
+    function handleEsc(e: KeyboardEvent) {
+      if (e.key === "Escape") setOpen(false);
+    }
+    document.addEventListener("mousedown", handleOutside);
+    document.addEventListener("keydown", handleEsc);
+    return () => {
+      document.removeEventListener("mousedown", handleOutside);
+      document.removeEventListener("keydown", handleEsc);
+    };
+  }, []);
+
+  return (
+    <div ref={containerRef} className="relative">
+      <button
+        id={id}
+        type="button"
+        aria-label={label}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+        className={`flex min-h-[44px] w-full items-center justify-between gap-2 rounded-full border bg-[#FFFDF8] px-3.5 py-2 text-left shadow-[0_2px_10px_rgba(50,27,45,0.06)] transition-all duration-200 lg:min-w-[195px] ${
+          open
+            ? "border-[#321B2D] ring-2 ring-[#321B2D]/15"
+            : "border-[#DDD0E6] hover:border-[#321B2D]/50"
+        }`}
+      >
+        <span className="flex min-w-0 items-center gap-2">
+          <span className="shrink-0 text-[#321B2D]">{icon}</span>
+          <span
+            className={`truncate text-[13px] font-medium sm:text-[14px] ${
+              value ? "text-[#241722]" : "text-[#6D5D6A]"
+            }`}
+          >
+            {value || placeholder}
+          </span>
+        </span>
+        <ChevronDownIcon
+          size={15}
+          className={`shrink-0 text-[#5F505C] transition-transform duration-200 ${
+            open ? "rotate-180 text-[#321B2D]" : ""
+          }`}
+        />
+      </button>
+
+      {open && (
+        <div
+          role="listbox"
+          aria-labelledby={id}
+          className="absolute left-0 right-0 top-[calc(100%+8px)] z-30 min-w-[210px] overflow-hidden rounded-[18px] border border-[#E5DCD0] bg-[#FFFDF8]/98 p-1.5 shadow-[0_16px_40px_rgba(36,23,34,0.14)] backdrop-blur-md"
+        >
+          <button
+            type="button"
+            role="option"
+            aria-selected={value === ""}
+            onClick={() => {
+              onChange("");
+              setOpen(false);
+            }}
+            className={`flex min-h-[40px] w-full items-center justify-between rounded-xl px-3 py-2 text-left text-[13.5px] transition-colors ${
+              value === ""
+                ? "bg-[#E9D9F1]/75 font-semibold text-[#321B2D]"
+                : "text-[#5F505C] hover:bg-[#F7F3EB] hover:text-[#241722]"
+            }`}
+          >
+            <span>Tümü ({placeholder})</span>
+            {value === "" && (
+              <span className="h-2 w-2 rounded-full bg-[#321B2D]" />
+            )}
+          </button>
+
+          <div className="my-1 h-px bg-[#EFE7DC]" />
+
+          <div className="max-h-[240px] space-y-0.5 overflow-y-auto">
+            {options.map((opt) => {
+              const selected = value === opt;
+              return (
+                <button
+                  key={opt}
+                  type="button"
+                  role="option"
+                  aria-selected={selected}
+                  onClick={() => {
+                    onChange(opt);
+                    setOpen(false);
+                  }}
+                  className={`flex min-h-[40px] w-full items-center justify-between rounded-xl px-3 py-2 text-left text-[13.5px] transition-colors ${
+                    selected
+                      ? "bg-[#321B2D] font-medium text-[#F7F3EB]"
+                      : "text-[#241722] hover:bg-[#F7F3EB]"
+                  }`}
+                >
+                  <span className="truncate">{opt}</span>
+                  {selected && (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width={15}
+                      height={15}
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                      className="shrink-0"
+                    >
+                      <path d="M20 6 9 17l-5-5" />
+                    </svg>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
 
 export function GiftFinder({ products }: GiftFinderProps) {
@@ -79,7 +234,7 @@ export function GiftFinder({ products }: GiftFinderProps) {
       aria-labelledby="hediyeni-bul-baslik"
       className="ensar-container scroll-mt-24 pt-6 lg:pt-8"
     >
-      <div className="rounded-[16px] bg-[#E9D9F1] p-4 sm:p-6 lg:px-7 lg:py-6">
+      <div className="rounded-[18px] bg-[#E9D9F1] p-4 shadow-[0_6px_24px_rgba(50,27,45,0.06)] sm:p-6 lg:px-7 lg:py-6">
         <form
           onSubmit={handleApply}
           className="flex flex-col gap-3.5 lg:flex-row lg:items-center lg:justify-between lg:gap-4"
@@ -92,79 +247,39 @@ export function GiftFinder({ products }: GiftFinderProps) {
           </h2>
 
           <div className="flex flex-1 flex-col gap-3 lg:flex-row lg:items-center lg:justify-end">
-            <div className="grid grid-cols-2 gap-2 lg:flex lg:items-center lg:gap-3">
-              {/* Filter 1: Occasion */}
-              <div className="relative flex min-h-[44px] items-center rounded-full border border-[#DFD2E7] bg-[#FFFDF8] pl-3 pr-2 shadow-2xs">
-                <GiftIcon
-                  size={16}
-                  className="pointer-events-none shrink-0 text-[#321B2D]"
-                />
-                <label htmlFor="gift-occasion" className="sr-only">
-                  Kime veya hangi güne?
-                </label>
-                <select
-                  id="gift-occasion"
-                  value={selectedOccasion}
-                  onChange={(e) => {
-                    setSelectedOccasion(e.target.value);
-                    setAppliedOccasion(e.target.value);
-                    setIsPreviewMode(false);
-                  }}
-                  className="ensar-select h-11 w-full cursor-pointer truncate bg-transparent pl-1.5 pr-5 text-[12.5px] font-medium text-[#241722] focus:outline-none sm:text-sm lg:min-w-[165px]"
-                >
-                  <option value="">Kime veya hangi güne?</option>
-                  {occasionOptions.map((occ) => (
-                    <option key={occ} value={occ}>
-                      {occ}
-                    </option>
-                  ))}
-                </select>
-                <span
-                  aria-hidden="true"
-                  className="pointer-events-none absolute right-2.5 text-[11px] text-[#5F505C]"
-                >
-                  ▾
-                </span>
-              </div>
+            <div className="grid grid-cols-2 gap-2.5 lg:flex lg:items-center lg:gap-3">
+              <ModernFilterDropdown
+                id="gift-occasion"
+                label="Kime veya hangi güne?"
+                placeholder="Özel gün seç"
+                value={selectedOccasion}
+                options={occasionOptions}
+                icon={<GiftIcon size={16} />}
+                onChange={(val) => {
+                  setSelectedOccasion(val);
+                  setAppliedOccasion(val);
+                  setIsPreviewMode(false);
+                }}
+              />
 
-              {/* Filter 2: Gift Type */}
-              <div className="relative flex min-h-[44px] items-center rounded-full border border-[#DFD2E7] bg-[#FFFDF8] pl-3 pr-2 shadow-2xs">
-                <LightIcon
-                  size={16}
-                  className="pointer-events-none shrink-0 text-[#321B2D]"
-                />
-                <label htmlFor="gift-type" className="sr-only">
-                  Ne tür bir hediye?
-                </label>
-                <select
-                  id="gift-type"
-                  value={selectedGiftType}
-                  onChange={(e) => {
-                    setSelectedGiftType(e.target.value);
-                    setAppliedGiftType(e.target.value);
-                    setIsPreviewMode(false);
-                  }}
-                  className="ensar-select h-11 w-full cursor-pointer truncate bg-transparent pl-1.5 pr-5 text-[12.5px] font-medium text-[#241722] focus:outline-none sm:text-sm lg:min-w-[165px]"
-                >
-                  <option value="">Ne tür bir hediye?</option>
-                  {giftTypeOptions.map((type) => (
-                    <option key={type} value={type}>
-                      {type}
-                    </option>
-                  ))}
-                </select>
-                <span
-                  aria-hidden="true"
-                  className="pointer-events-none absolute right-2.5 text-[11px] text-[#5F505C]"
-                >
-                  ▾
-                </span>
-              </div>
+              <ModernFilterDropdown
+                id="gift-type"
+                label="Ne tür bir hediye?"
+                placeholder="Hediye türü"
+                value={selectedGiftType}
+                options={giftTypeOptions}
+                icon={<LightIcon size={16} />}
+                onChange={(val) => {
+                  setSelectedGiftType(val);
+                  setAppliedGiftType(val);
+                  setIsPreviewMode(false);
+                }}
+              />
             </div>
 
             <button
               type="submit"
-              className="inline-flex min-h-[44px] w-full shrink-0 items-center justify-center gap-1.5 rounded-full bg-[#321B2D] px-6 py-2.5 text-[14px] font-semibold text-[#F7F3EB] transition-colors hover:bg-[#44253D] lg:w-auto"
+              className="inline-flex min-h-[44px] w-full shrink-0 items-center justify-center gap-1.5 rounded-full bg-[#321B2D] px-6 py-2.5 text-[14px] font-semibold text-[#F7F3EB] shadow-[0_4px_14px_rgba(50,27,45,0.22)] transition-all hover:bg-[#44253D] lg:w-auto"
             >
               <span>Sonuçları Gör</span>
               <ChevronRightIcon size={16} />
@@ -235,9 +350,7 @@ export function GiftFinder({ products }: GiftFinderProps) {
 
           {!isPreviewMode && (appliedOccasion || appliedGiftType) && (
             <div className="flex items-center justify-between pt-1 text-xs text-[#4C3C49]">
-              <span>
-                {matchedProducts.length} ürün listeleniyor
-              </span>
+              <span>{matchedProducts.length} ürün listeleniyor</span>
               <button
                 type="button"
                 onClick={handleClear}
