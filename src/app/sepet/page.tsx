@@ -16,10 +16,8 @@ export default function CartPage() {
     setSettings(loadClientStore().settings);
   }, []);
 
-  const threshold = settings?.shippingThreshold ?? 1250;
-  const baseShipping = settings?.shippingFee ?? 89;
-  const shippingFee = subtotal === 0 || subtotal >= threshold ? 0 : baseShipping;
-  const total = subtotal + shippingFee;
+  const shippingFee = 0;
+  const total = subtotal;
 
   if (!hydrated) {
     return (
@@ -161,24 +159,6 @@ export default function CartPage() {
               </h2>
 
               <div className="mt-4 space-y-2.5 text-sm">
-                <div className="flex justify-between text-[#4C3C49]">
-                  <span>Ara Toplam</span>
-                  <span className="font-medium text-[#241722]">
-                    {formatPriceTRY(subtotal)}
-                  </span>
-                </div>
-                <div className="flex justify-between text-[#4C3C49]">
-                  <span>Kargo</span>
-                  <span className="font-medium text-[#241722]">
-                    {shippingFee === 0 ? "Ücretsiz" : formatPriceTRY(shippingFee)}
-                  </span>
-                </div>
-                {subtotal < threshold && (
-                  <p className="rounded-xl bg-[#E9D9F1]/60 px-3 py-2 text-xs text-[#321B2D]">
-                    Ücretsiz kargo için sepetinize{" "}
-                    <strong>{formatPriceTRY(threshold - subtotal)}</strong> daha ekleyin.
-                  </p>
-                )}
                 <div className="flex justify-between border-t border-[#E5DCD0] pt-3 text-base font-semibold text-[#241722]">
                   <span>Toplam</span>
                   <span>{formatPriceTRY(total)}</span>

@@ -17,8 +17,8 @@ export const DEFAULT_STORE_DATA: StoreData = {
     workingHours: "Pazartesi – Cumartesi: 09:30 – 19:00",
     legalEntityName: "Ensar Hediyelik (Ticari unvan yayın öncesi işletme tarafından onaylanacaktır)",
     taxOfficeAndNo: "Vergi dairesi ve numarası müşteri onayı ile eklenecektir",
-    shippingThreshold: 1250,
-    shippingFee: 89,
+    shippingThreshold: 0,
+    shippingFee: 0,
     deliverySummary:
       "Stoktaki ürünler hafta içi 15:00'e kadar verilen siparişlerde aynı gün, sonraki siparişlerde 1–2 iş günü içinde özenli hediye paketlemesiyle kargoya teslim edilir.",
     returnSummary:

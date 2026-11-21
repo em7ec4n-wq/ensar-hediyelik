@@ -1914,39 +1914,6 @@ export default function AdminPanelPage() {
 
             <div>
               <label className="block text-xs font-bold text-[#241722]">
-                Ücretsiz Kargo Alt Limiti (TL)
-              </label>
-              <input
-                type="number"
-                value={store.settings.shippingThreshold}
-                onChange={(e) => {
-                  const next = structuredClone(store);
-                  next.settings.shippingThreshold =
-                    Number(e.target.value) || 0;
-                  void commitStore(next);
-                }}
-                className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm"
-              />
-            </div>
-
-            <div>
-              <label className="block text-xs font-bold text-[#241722]">
-                Standart Kargo Ücreti (TL)
-              </label>
-              <input
-                type="number"
-                value={store.settings.shippingFee}
-                onChange={(e) => {
-                  const next = structuredClone(store);
-                  next.settings.shippingFee = Number(e.target.value) || 0;
-                  void commitStore(next);
-                }}
-                className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm"
-              />
-            </div>
-
-            <div>
-              <label className="block text-xs font-bold text-[#241722]">
                 E-posta Adresi
               </label>
               <input

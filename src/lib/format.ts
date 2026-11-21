@@ -56,9 +56,7 @@ export function buildWhatsAppCartUrl(params: {
       return `${idx + 1}. ${item.name}${opt} [${item.sku}] × ${item.quantity} adet = ${lineTotal}\n   ${base}/urun/${item.slug}`;
     }),
     "",
-    `Ara Toplam: ${formatPriceTRY(subtotal)}`,
-    `Kargo: ${shippingFee === 0 ? "Ücretsiz" : formatPriceTRY(shippingFee)}`,
-    `Genel Toplam: ${formatPriceTRY(total)}`,
+    `Toplam Tutar: ${formatPriceTRY(subtotal)}`,
   ];
   const cleanPhone = whatsappNumber.replace(/\D/g, "");
   return `https://wa.me/${cleanPhone}?text=${encodeURIComponent(lines.join("\n"))}`;

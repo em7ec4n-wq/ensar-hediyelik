@@ -113,15 +113,12 @@ export default function CheckoutPage() {
         (sum, i) => sum + i.unitPrice * i.quantity,
         0
       );
-      const shippingFee =
-        subtotal >= store.settings.shippingThreshold || subtotal === 0
-          ? 0
-          : store.settings.shippingFee;
+      const shippingFee = 0;
 
       setServerTotals({
         subtotal,
         shippingFee,
-        total: subtotal + shippingFee,
+        total: subtotal,
       });
     } finally {
       setValidating(false);
@@ -170,10 +167,7 @@ export default function CheckoutPage() {
         (sum, i) => sum + i.unitPrice * i.quantity,
         0
       );
-      const shippingFee =
-        subtotal >= store.settings.shippingThreshold
-          ? 0
-          : store.settings.shippingFee;
+      const shippingFee = 0;
 
       const order: Order = {
         id: `ENS-${Date.now().toString().slice(-6)}`,
@@ -496,18 +490,6 @@ export default function CheckoutPage() {
                   </div>
                 ))}
                 <div className="space-y-1.5 border-t border-[#E5DCD0] pt-3">
-                  <div className="flex justify-between text-[#4C3C49]">
-                    <span>Ara Toplam</span>
-                    <span>{formatPriceTRY(serverTotals.subtotal)}</span>
-                  </div>
-                  <div className="flex justify-between text-[#4C3C49]">
-                    <span>Kargo</span>
-                    <span>
-                      {serverTotals.shippingFee === 0
-                        ? "Ücretsiz"
-                        : formatPriceTRY(serverTotals.shippingFee)}
-                    </span>
-                  </div>
                   <div className="flex justify-between pt-1 text-base font-semibold text-[#321B2D]">
                     <span>Toplam</span>
                     <span>{formatPriceTRY(serverTotals.total)}</span>
