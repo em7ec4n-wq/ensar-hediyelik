@@ -8,14 +8,9 @@ import { uploadLosslessImage } from "@/lib/client-store";
 import { useLiveStore } from "@/components/StoreProvider";
 import { getProductHref } from "@/components/ProductCard";
 import { getCategoryHref } from "@/components/CategoriesClient";
-import { SearchIcon, WhatsAppIcon } from "@/components/Icons";
+import { SearchIcon, WhatsAppIcon, ChevronDownIcon } from "@/components/Icons";
 
-type TabKey =
-  | "urunler"
-  | "kategoriler"
-  | "vitrin"
-  | "siparisler"
-  | "magaza";
+type TabKey = "urunler" | "kategoriler" | "vitrin" | "siparisler" | "magaza";
 
 function slugifyTR(input: string): string {
   return String(input || "")
@@ -42,6 +37,7 @@ export default function AdminPanelPage() {
   const [activeTab, setActiveTab] = useState<TabKey>("urunler");
   const [toast, setToast] = useState<string>("");
   const [uploadingId, setUploadingId] = useState<string>("");
+  const [savedCardId, setSavedCardId] = useState<string>("");
 
   // Product list filters
   const [prodSearch, setProdSearch] = useState("");
@@ -86,11 +82,21 @@ export default function AdminPanelPage() {
     setToast(msg);
     setTimeout(() => {
       setToast((prev) => (prev === msg ? "" : prev));
-    }, 3500);
+    }, 3000);
   };
 
-  const commitStore = async (next: StoreData, message = "✓ Otomatik kaydedildi") => {
+  const commitStore = async (
+    next: StoreData,
+    message = "✓ Değişiklik kaydedildi",
+    cardId?: string
+  ) => {
     await updateStore(next);
+    if (cardId) {
+      setSavedCardId(cardId);
+      setTimeout(() => {
+        setSavedCardId((prev) => (prev === cardId ? "" : prev));
+      }, 2200);
+    }
     showNotice(message);
   };
 
@@ -125,7 +131,6 @@ export default function AdminPanelPage() {
       });
   }, [store, prodSearch, prodCatFilter, prodStatusFilter]);
 
-  // Lossless multi-file uploader helper
   const handleFilesUpload = async (
     files: FileList | null,
     targetKey: string,
@@ -140,9 +145,7 @@ export default function AdminPanelPage() {
         urls.push(url);
       }
       onUrlsReady(urls);
-      showNotice(
-        `✓ ${urls.length} fotoğraf orijinal kalitede (kayıpsız) yüklendi`
-      );
+      showNotice(`✓ Fotoğraf orijinal kalitede yüklendi`);
     } catch {
       showNotice("Fotoğraf yüklenirken bir hata oluştu.");
     } finally {
@@ -150,7 +153,6 @@ export default function AdminPanelPage() {
     }
   };
 
-  // Create new product
   const handleCreateProduct = async (e: React.FormEvent) => {
     e.preventDefault();
     const trimmedName = newProdName.trim();
@@ -159,8 +161,7 @@ export default function AdminPanelPage() {
       return;
     }
     const sku =
-      newProdSku.trim() ||
-      `ENS-${Date.now().toString().slice(-5)}`;
+      newProdSku.trim() || `ENS-${Date.now().toString().slice(-5)}`;
     const baseSlug = slugifyTR(`${trimmedName}-${sku}`) || `urun-${Date.now()}`;
     const existingSlugs = new Set(store.products.map((p) => p.slug));
     let slug = baseSlug;
@@ -173,9 +174,12 @@ export default function AdminPanelPage() {
       newProdGallery[0] ||
       "/ensar-web/gorseller/hero-astronot-cam-kure.webp";
     const gallery = newProdGallery.length > 0 ? newProdGallery : [cover];
-    const selectedCatObj = store.categories.find((cat) => cat.slug === newProdCat);
-    const extraCats =
-      selectedCatObj?.parentSlug ? [selectedCatObj.parentSlug] : [];
+    const selectedCatObj = store.categories.find(
+      (cat) => cat.slug === newProdCat
+    );
+    const extraCats = selectedCatObj?.parentSlug
+      ? [selectedCatObj.parentSlug]
+      : [];
 
     const created: Product = {
       id: `custom-${Date.now()}`,
@@ -201,7 +205,7 @@ export default function AdminPanelPage() {
 
     const next = structuredClone(store);
     next.products.unshift(created);
-    await commitStore(next, `✓ "${trimmedName}" kataloğa eklendi ve yayınlandı!`);
+    await commitStore(next, `✓ "${trimmedName}" eklendi ve yayınlandı!`);
 
     setNewProdName("");
     setNewProdSku("");
@@ -212,7 +216,6 @@ export default function AdminPanelPage() {
     setShowNewProduct(false);
   };
 
-  // Apply bulk price update
   const handleApplyBulkPrice = async () => {
     const num = Number(bulkValue);
     if (Number.isNaN(num) || num === 0) {
@@ -244,14 +247,10 @@ export default function AdminPanelPage() {
       updatedCount++;
     }
 
-    await commitStore(
-      next,
-      `✓ ${updatedCount} ürünün fiyatı toplu olarak güncellendi`
-    );
+    await commitStore(next, `✓ ${updatedCount} ürünün fiyatı güncellendi`);
     setShowBulkPrice(false);
   };
 
-  // Create new category
   const handleCreateCategory = async (e: React.FormEvent) => {
     e.preventDefault();
     const trimmed = newCatName.trim();
@@ -272,8 +271,7 @@ export default function AdminPanelPage() {
       name: trimmed,
       description:
         newCatDesc.trim() || `${trimmed} koleksiyonundaki ürünler.`,
-      image:
-        newCatImage || "/ensar-web/gorseller/kategori-cam-kure.webp",
+      image: newCatImage || "/ensar-web/gorseller/kategori-cam-kure.webp",
       imageAlt: trimmed,
       showOnHome: newCatHome,
       homeOrder: newCatHome ? 5 : undefined,
@@ -293,7 +291,6 @@ export default function AdminPanelPage() {
     setShowNewCategory(false);
   };
 
-  // Export JSON backup
   const handleExportBackup = () => {
     const blob = new Blob([JSON.stringify(store, null, 2)], {
       type: "application/json",
@@ -307,7 +304,6 @@ export default function AdminPanelPage() {
     showNotice("✓ Mağaza yedeği indirildi");
   };
 
-  // Import JSON backup
   const handleImportBackup = (files: FileList | null) => {
     if (!files || !files[0]) return;
     const reader = new FileReader();
@@ -318,7 +314,7 @@ export default function AdminPanelPage() {
           showNotice("Geçersiz yedek dosyası.");
           return;
         }
-        await commitStore(parsed, "✓ Yedek dosyası başarıyla yüklendi!");
+        await commitStore(parsed, "✓ Yedek dosyası yüklendi!");
       } catch {
         showNotice("Yedek dosyası okunamadı.");
       }
@@ -337,117 +333,170 @@ export default function AdminPanelPage() {
   const publishedCount = store.products.filter((p) => p.published).length;
   const hiddenCount = store.products.length - publishedCount;
 
-  return (
-    <div className="ensar-container py-6 lg:py-10">
-      {/* Sticky Top Control Bar */}
-      <div className="sticky top-[60px] z-30 -mx-4 border-b border-[#E5DCD0] bg-[#F7F3EB]/95 px-4 py-3 backdrop-blur-md lg:top-[76px] lg:-mx-6 lg:px-6">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <div className="flex flex-wrap items-center gap-2.5">
-              <h1 className="font-heading text-[24px] font-medium text-[#241722] sm:text-[30px]">
-                Mağaza Yönetimi
-              </h1>
-              <span className="rounded-full bg-emerald-900/10 px-3 py-1 text-xs font-semibold text-emerald-900">
-                Orijinal Kalite Fotoğraf &amp; Otomatik Kayıt Aktif
-              </span>
-            </div>
-            <p className="mt-0.5 text-xs text-[#5F505C] sm:text-sm">
-              {store.products.length} ürün ({publishedCount} satışta
-              {hiddenCount > 0 ? `, ${hiddenCount} gizli` : ""}) ·{" "}
-              {store.categories.length} kategori · Yapılan her değişiklik anında
-              kaydedilir
-            </p>
-          </div>
+  const MENU_TABS: { key: TabKey; title: string; count?: string }[] = [
+    { key: "urunler", title: "Ürünler", count: `${store.products.length}` },
+    {
+      key: "kategoriler",
+      title: "Kategoriler",
+      count: `${store.categories.length}`,
+    },
+    { key: "vitrin", title: "Ana Vitrin", count: "3 Slayt" },
+    {
+      key: "siparisler",
+      title: "Siparişler",
+      count: `${store.orders.length}`,
+    },
+    { key: "magaza", title: "Ayarlar & Logo" },
+  ];
 
-          <div className="flex flex-wrap items-center gap-2">
-            {toast && (
-              <span
-                role="status"
-                className="rounded-full bg-[#321B2D] px-4 py-2 text-xs font-semibold text-[#F7F3EB] shadow-sm"
-              >
-                {toast}
-              </span>
-            )}
-            <Link
-              href="/"
-              className="inline-flex min-h-[44px] items-center justify-center rounded-full border border-[#321B2D] bg-[#FFFDF8] px-4 text-xs font-semibold text-[#321B2D] hover:bg-[#E9D9F1] sm:text-sm"
-            >
-              Siteyi Gör ↗
-            </Link>
-            <button
-              type="button"
-              onClick={() =>
-                commitStore(store, "✓ Tüm değişiklikler kaydedildi!")
-              }
-              className="inline-flex min-h-[44px] items-center justify-center rounded-full bg-[#321B2D] px-5 text-xs font-semibold text-[#F7F3EB] hover:bg-[#44253D] sm:text-sm"
-            >
-              Kaydet
-            </button>
-          </div>
+  return (
+    <div className="ensar-container py-5 lg:py-8">
+      {/* Floating Toast Notification */}
+      {toast && (
+        <div
+          role="status"
+          className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-2xl bg-[#321B2D] px-5 py-3 text-sm font-semibold text-[#F7F3EB] shadow-xl"
+        >
+          <span>{toast}</span>
+        </div>
+      )}
+
+      {/* 1. CLEAN HEADER ROW */}
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#E5DCD0] pb-4">
+        <div>
+          <h1 className="font-heading text-[26px] font-medium text-[#241722] sm:text-[32px]">
+            Mağaza Yönetim Paneli
+          </h1>
+          <p className="text-xs text-[#5F505C] sm:text-sm">
+            Fotoğraflar kalite düşmeden yüklenir · Fiyat ve bilgi değişiklikleri
+            anında kaydedilir
+          </p>
         </div>
 
-        {/* Navigation Tabs — Scrollable on mobile, zero clutter */}
-        <div className="mt-3 flex gap-2 overflow-x-auto pb-1">
-          {(
-            [
-              ["urunler", `Ürünler (${store.products.length})`],
-              ["kategoriler", `Kategoriler (${store.categories.length})`],
-              ["vitrin", `Ana Sayfa Vitrin (3 Slayt)`],
-              ["siparisler", `Siparişler (${store.orders.length})`],
-              ["magaza", "Logo, İletişim & Yedek"],
-            ] as [TabKey, string][]
-          ).map(([key, label]) => (
-            <button
-              key={key}
-              type="button"
-              onClick={() => setActiveTab(key)}
-              className={`min-h-[44px] shrink-0 rounded-full px-4 text-xs font-semibold transition-colors sm:px-5 sm:text-sm ${
-                activeTab === key
-                  ? "bg-[#321B2D] text-[#F7F3EB] shadow-xs"
-                  : "border border-[#DDD3C6] bg-[#FFFDF8] text-[#241722] hover:border-[#321B2D]"
-              }`}
-            >
-              {label}
-            </button>
-          ))}
+        <Link
+          href="/"
+          className="inline-flex min-h-[42px] items-center gap-1.5 rounded-xl border border-[#321B2D]/25 bg-[#FFFDF8] px-4 text-xs font-semibold text-[#321B2D] shadow-2xs hover:bg-[#E9D9F1] sm:text-sm"
+        >
+          <span>Mağazayı Görüntüle ↗</span>
+        </Link>
+      </div>
+
+      {/* 2. SEGMENTED TAB BOX (All tabs visible in clean grid on mobile — nothing clipped!) */}
+      <div className="mt-4 rounded-2xl border border-[#E5DCD0] bg-[#EFE9DF] p-1.5">
+        <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-5">
+          {MENU_TABS.map((tab) => {
+            const active = activeTab === tab.key;
+            return (
+              <button
+                key={tab.key}
+                type="button"
+                onClick={() => setActiveTab(tab.key)}
+                className={`flex min-h-[46px] items-center justify-between rounded-xl px-3.5 py-2 text-left transition-all ${
+                  active
+                    ? "bg-[#321B2D] text-[#F7F3EB] shadow-sm"
+                    : "bg-[#FFFDF8]/70 text-[#241722] hover:bg-[#FFFDF8]"
+                }`}
+              >
+                <span className="text-xs font-semibold sm:text-sm">
+                  {tab.title}
+                </span>
+                {tab.count && (
+                  <span
+                    className={`rounded-full px-2 py-0.5 text-[11px] font-semibold ${
+                      active
+                        ? "bg-[#F7F3EB]/20 text-[#F7F3EB]"
+                        : "bg-[#E9D9F1] text-[#321B2D]"
+                    }`}
+                  >
+                    {tab.count}
+                  </span>
+                )}
+              </button>
+            );
+          })}
         </div>
       </div>
 
       {/* ========================================================= */}
-      {/* TAB 1: ÜRÜNLER (ADD PRODUCT, BULK PRICE, LOSSLESS PHOTOS) */}
+      {/* TAB 1: ÜRÜNLER                                            */}
       {/* ========================================================= */}
       {activeTab === "urunler" && (
-        <div className="mt-6 space-y-5">
-          {/* Quick Action Buttons */}
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <div className="flex flex-wrap gap-2.5">
-              <button
-                type="button"
-                onClick={() => {
-                  setShowNewProduct((v) => !v);
-                  setShowBulkPrice(false);
-                }}
-                className="inline-flex min-h-[46px] items-center gap-2 rounded-full bg-[#321B2D] px-6 text-sm font-semibold text-[#F7F3EB] shadow-sm hover:bg-[#44253D]"
+        <div className="mt-5 space-y-5">
+          {/* ACTION CARDS: 2 Clear Cards Side-by-Side */}
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <button
+              type="button"
+              onClick={() => {
+                setShowNewProduct((v) => !v);
+                setShowBulkPrice(false);
+              }}
+              className={`flex min-h-[64px] items-center justify-between rounded-2xl border p-4 text-left transition-all ${
+                showNewProduct
+                  ? "border-[#321B2D] bg-[#321B2D] text-[#F7F3EB]"
+                  : "border-[#321B2D]/25 bg-[#FFFDF8] text-[#241722] shadow-2xs hover:border-[#321B2D]"
+              }`}
+            >
+              <div>
+                <p className="text-base font-bold">
+                  {showNewProduct
+                    ? "− Yeni Ürün Formunu Kapat"
+                    : "＋ Yeni Ürün Ekle"}
+                </p>
+                <p
+                  className={`mt-0.5 text-xs ${
+                    showNewProduct ? "text-[#F7F3EB]/80" : "text-[#5F505C]"
+                  }`}
+                >
+                  Cihazdan fotoğraf seçip isim ve fiyat girerek yeni ürün açın
+                </p>
+              </div>
+              <span
+                className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-lg font-bold ${
+                  showNewProduct
+                    ? "bg-[#F7F3EB]/20 text-[#F7F3EB]"
+                    : "bg-[#321B2D] text-[#F7F3EB]"
+                }`}
               >
-                <span>{showNewProduct ? "− Formu Kapat" : "+ Yeni Ürün Ekle"}</span>
-              </button>
+                {showNewProduct ? "✕" : "＋"}
+              </span>
+            </button>
 
-              <button
-                type="button"
-                onClick={() => {
-                  setShowBulkPrice((v) => !v);
-                  setShowNewProduct(false);
-                }}
-                className="inline-flex min-h-[46px] items-center gap-2 rounded-full border border-[#321B2D] bg-[#FFFDF8] px-5 text-sm font-semibold text-[#321B2D] hover:bg-[#E9D9F1]"
+            <button
+              type="button"
+              onClick={() => {
+                setShowBulkPrice((v) => !v);
+                setShowNewProduct(false);
+              }}
+              className={`flex min-h-[64px] items-center justify-between rounded-2xl border p-4 text-left transition-all ${
+                showBulkPrice
+                  ? "border-[#321B2D] bg-[#321B2D] text-[#F7F3EB]"
+                  : "border-[#E5DCD0] bg-[#FFFDF8] text-[#241722] shadow-2xs hover:border-[#321B2D]"
+              }`}
+            >
+              <div>
+                <p className="text-base font-bold">
+                  {showBulkPrice
+                    ? "− Toplu Fiyat Aracını Kapat"
+                    : "% Toplu Fiyat Güncelle"}
+                </p>
+                <p
+                  className={`mt-0.5 text-xs ${
+                    showBulkPrice ? "text-[#F7F3EB]/80" : "text-[#5F505C]"
+                  }`}
+                >
+                  Tüm ürünlere veya seçili kategoriye tek tuşla zam/indirim yapın
+                </p>
+              </div>
+              <span
+                className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-sm font-bold ${
+                  showBulkPrice
+                    ? "bg-[#F7F3EB]/20 text-[#F7F3EB]"
+                    : "bg-[#E9D9F1] text-[#321B2D]"
+                }`}
               >
-                <span>Toplu Fiyat Güncelle (%)</span>
-              </button>
-            </div>
-
-            <p className="text-xs text-[#5F505C]">
-              Yüklenen fotoğraflar sıkıştırılmaz, %100 orijinal kalitede
-              kaydedilir.
-            </p>
+                %
+              </span>
+            </button>
           </div>
 
           {/* + YENİ ÜRÜN EKLE DRAWER */}
@@ -456,14 +505,14 @@ export default function AdminPanelPage() {
               onSubmit={handleCreateProduct}
               className="ensar-card space-y-5 border-2 border-[#321B2D] p-5 sm:p-6"
             >
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between border-b border-[#EFE7DC] pb-3">
                 <h2 className="font-heading text-2xl font-medium text-[#241722]">
                   Yeni Ürün Ekle
                 </h2>
                 <button
                   type="button"
                   onClick={() => setShowNewProduct(false)}
-                  className="text-sm font-semibold text-[#5F505C] hover:text-[#241722]"
+                  className="rounded-lg bg-[#F7F3EB] px-3 py-1.5 text-xs font-semibold text-[#241722]"
                 >
                   Kapat ✕
                 </button>
@@ -475,11 +524,11 @@ export default function AdminPanelPage() {
                   1. Ürün Fotoğrafları (Kalite Düşmez — Tek veya Çoklu Seçebilirsiniz)
                 </p>
                 <div className="mt-3 flex flex-wrap items-center gap-3">
-                  <label className="inline-flex min-h-[44px] cursor-pointer items-center gap-2 rounded-full bg-[#321B2D] px-5 text-sm font-semibold text-[#F7F3EB] hover:bg-[#44253D]">
+                  <label className="inline-flex min-h-[44px] cursor-pointer items-center gap-2 rounded-xl bg-[#321B2D] px-5 text-sm font-semibold text-[#F7F3EB] hover:bg-[#44253D]">
                     <span>
                       {uploadingId === "new-prod"
                         ? "Yükleniyor…"
-                        : "📷 Cihazdan Fotoğraf Seç"}
+                        : "📷 Telefondan / Bilgisayardan Fotoğraf Seç"}
                     </span>
                     <input
                       type="file"
@@ -496,9 +545,6 @@ export default function AdminPanelPage() {
                       }
                     />
                   </label>
-                  <span className="text-xs text-[#5F505C]">
-                    JPG, PNG, WebP — Orijinal çözünürlük korunur
-                  </span>
                 </div>
 
                 {newProdGallery.length > 0 && (
@@ -539,8 +585,8 @@ export default function AdminPanelPage() {
               {/* Step 2: Basic Details */}
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 <div>
-                  <label className="block text-xs font-semibold text-[#241722]">
-                    Ürün Adı *
+                  <label className="block text-xs font-bold text-[#241722]">
+                    2. Ürün Adı *
                   </label>
                   <input
                     required
@@ -552,8 +598,8 @@ export default function AdminPanelPage() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#241722]">
-                    Satış Fiyatı (TL) *
+                  <label className="block text-xs font-bold text-[#241722]">
+                    3. Satış Fiyatı (TL) *
                   </label>
                   <input
                     required
@@ -568,37 +614,43 @@ export default function AdminPanelPage() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#241722]">
-                    Kategori *
+                  <label className="block text-xs font-bold text-[#241722]">
+                    4. Hangi Kategoriye Eklensin? *
                   </label>
-                  <select
-                    value={newProdCat}
-                    onChange={(e) => setNewProdCat(e.target.value)}
-                    className="mt-1.5 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
-                  >
-                    {store.categories.map((c) => (
-                      <option key={c.slug} value={c.slug}>
-                        {c.parentSlug ? `↳ ${c.name}` : c.name}
-                      </option>
-                    ))}
-                  </select>
+                  <div className="relative mt-1.5">
+                    <select
+                      value={newProdCat}
+                      onChange={(e) => setNewProdCat(e.target.value)}
+                      className="ensar-select h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] pl-3.5 pr-9 text-sm focus:border-[#321B2D] focus:outline-none"
+                    >
+                      {store.categories.map((c) => (
+                        <option key={c.slug} value={c.slug}>
+                          {c.parentSlug ? `↳ ${c.name}` : c.name}
+                        </option>
+                      ))}
+                    </select>
+                    <ChevronDownIcon
+                      size={16}
+                      className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[#5F505C]"
+                    />
+                  </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#241722]">
-                    Ürün Kodu (Boşsa otomatik)
+                  <label className="block text-xs font-bold text-[#241722]">
+                    Ürün Kodu (İsteğe Bağlı)
                   </label>
                   <input
                     value={newProdSku}
                     onChange={(e) => setNewProdSku(e.target.value)}
-                    placeholder="Örn: ENS-101"
+                    placeholder="Boşsa otomatik verilir"
                     className="mt-1.5 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-[#241722]">
+                <label className="block text-xs font-bold text-[#241722]">
                   Ürün Açıklaması (İsteğe Bağlı)
                 </label>
                 <textarea
@@ -623,9 +675,9 @@ export default function AdminPanelPage() {
 
                 <button
                   type="submit"
-                  className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#321B2D] px-8 text-sm font-semibold text-[#F7F3EB] hover:bg-[#44253D]"
+                  className="inline-flex min-h-[48px] items-center justify-center rounded-xl bg-[#321B2D] px-8 text-sm font-semibold text-[#F7F3EB] hover:bg-[#44253D]"
                 >
-                  ✓ Ürünü Ekle ve Yayınla
+                  ✓ Ürünü Kaydet ve Yayınla
                 </button>
               </div>
             </form>
@@ -634,63 +686,76 @@ export default function AdminPanelPage() {
           {/* TOPLU FİYAT GÜNCELLEME PANELİ */}
           {showBulkPrice && (
             <div className="ensar-card space-y-4 border-2 border-[#321B2D] p-5">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between border-b border-[#EFE7DC] pb-3">
                 <h2 className="font-heading text-xl font-medium text-[#241722]">
                   Toplu Fiyat Güncelleme
                 </h2>
                 <button
                   type="button"
                   onClick={() => setShowBulkPrice(false)}
-                  className="text-xs font-semibold text-[#5F505C]"
+                  className="rounded-lg bg-[#F7F3EB] px-3 py-1 text-xs font-semibold text-[#241722]"
                 >
                   Kapat ✕
                 </button>
               </div>
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-4">
                 <div>
-                  <label className="block text-xs font-semibold text-[#5F505C]">
-                    Hangi Kategori?
+                  <label className="block text-xs font-bold text-[#241722]">
+                    1. Hangi Kategori?
                   </label>
-                  <select
-                    value={bulkCat}
-                    onChange={(e) => setBulkCat(e.target.value)}
-                    className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm"
-                  >
-                    <option value="all">Tüm Ürünler ({store.products.length})</option>
-                    {store.categories.map((c) => (
-                      <option key={c.slug} value={c.slug}>
-                        {c.parentSlug ? `↳ ${c.name}` : c.name}
+                  <div className="relative mt-1">
+                    <select
+                      value={bulkCat}
+                      onChange={(e) => setBulkCat(e.target.value)}
+                      className="ensar-select h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] pl-3 pr-9 text-sm"
+                    >
+                      <option value="all">
+                        Tüm Ürünler ({store.products.length})
                       </option>
-                    ))}
-                  </select>
+                      {store.categories.map((c) => (
+                        <option key={c.slug} value={c.slug}>
+                          {c.parentSlug ? `↳ ${c.name}` : c.name}
+                        </option>
+                      ))}
+                    </select>
+                    <ChevronDownIcon
+                      size={16}
+                      className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[#5F505C]"
+                    />
+                  </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#5F505C]">
-                    İşlem Türü
+                  <label className="block text-xs font-bold text-[#241722]">
+                    2. İşlem Türü
                   </label>
-                  <select
-                    value={bulkMode}
-                    onChange={(e) =>
-                      setBulkMode(e.target.value as "percent" | "add")
-                    }
-                    className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm"
-                  >
-                    <option value="percent">Yüzde (%) Artır / Azalt</option>
-                    <option value="add">Sabit Tutar (TL) Ekle / Çıkar</option>
-                  </select>
+                  <div className="relative mt-1">
+                    <select
+                      value={bulkMode}
+                      onChange={(e) =>
+                        setBulkMode(e.target.value as "percent" | "add")
+                      }
+                      className="ensar-select h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] pl-3 pr-9 text-sm"
+                    >
+                      <option value="percent">Yüzde (%) Zam / İndirim</option>
+                      <option value="add">Sabit TL Ekle / Düş</option>
+                    </select>
+                    <ChevronDownIcon
+                      size={16}
+                      className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[#5F505C]"
+                    />
+                  </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#5F505C]">
-                    {bulkMode === "percent"
-                      ? "Oran (% — İndirim için -10 yazın)"
-                      : "Tutar (TL — İndirim için -50 yazın)"}
+                  <label className="block text-xs font-bold text-[#241722]">
+                    3. {bulkMode === "percent" ? "Oran (%)" : "Tutar (TL)"}
                   </label>
                   <input
                     type="number"
                     value={bulkValue}
                     onChange={(e) => setBulkValue(e.target.value)}
+                    placeholder="İndirim için başına - koyun"
                     className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm"
                   />
                 </div>
@@ -699,74 +764,169 @@ export default function AdminPanelPage() {
                   <button
                     type="button"
                     onClick={handleApplyBulkPrice}
-                    className="h-11 w-full rounded-full bg-[#321B2D] px-5 text-sm font-semibold text-[#F7F3EB] hover:bg-[#44253D]"
+                    className="h-11 w-full rounded-xl bg-[#321B2D] px-5 text-sm font-semibold text-[#F7F3EB] hover:bg-[#44253D]"
                   >
-                    Fiyatları Uygula
+                    ✓ Fiyatları Güncelle
                   </button>
                 </div>
               </div>
             </div>
           )}
 
-          {/* SEARCH & FILTER BAR */}
-          <div className="ensar-card grid grid-cols-1 gap-3 p-4 sm:grid-cols-12">
-            <div className="relative sm:col-span-6">
-              <SearchIcon
-                size={18}
-                className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-[#6F606C]"
-              />
-              <input
-                type="search"
-                value={prodSearch}
-                onChange={(e) => {
-                  setProdSearch(e.target.value);
-                  setVisibleLimit(24);
-                }}
-                placeholder="Ürün adı veya ürün kodu (örn. 6169, CH03) ile hızlı ara…"
-                className="h-11 w-full rounded-full border border-[#DDD3C6] bg-[#FFFDF8] pl-10 pr-4 text-sm focus:border-[#321B2D] focus:outline-none"
-              />
+          {/* 3. CRYSTAL-CLEAR SEARCH & FILTER BOX (With labels & custom chevrons!) */}
+          <div className="ensar-card space-y-3.5 p-4 sm:p-5">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-12">
+              {/* Search Box */}
+              <div className="sm:col-span-6">
+                <label
+                  htmlFor="admin-prod-search"
+                  className="mb-1 block text-xs font-bold text-[#241722]"
+                >
+                  Ürün Ara (İsim veya Ürün Kodu)
+                </label>
+                <div className="relative">
+                  <SearchIcon
+                    size={17}
+                    className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-[#6F606C]"
+                  />
+                  <input
+                    id="admin-prod-search"
+                    type="search"
+                    value={prodSearch}
+                    onChange={(e) => {
+                      setProdSearch(e.target.value);
+                      setVisibleLimit(24);
+                    }}
+                    placeholder="Örn: Kar küresi, fanus, 6169, CH03…"
+                    className="h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#F7F3EB]/60 pl-10 pr-4 text-sm text-[#241722] focus:border-[#321B2D] focus:bg-[#FFFDF8] focus:outline-none"
+                  />
+                </div>
+              </div>
+
+              {/* Category Select & Status Select side-by-side on mobile */}
+              <div className="grid grid-cols-2 gap-2.5 sm:col-span-6">
+                <div>
+                  <label
+                    htmlFor="admin-cat-select"
+                    className="mb-1 block text-xs font-bold text-[#241722]"
+                  >
+                    Kategori Seçin
+                  </label>
+                  <div className="relative">
+                    <select
+                      id="admin-cat-select"
+                      value={prodCatFilter}
+                      onChange={(e) => {
+                        setProdCatFilter(e.target.value);
+                        setVisibleLimit(24);
+                      }}
+                      className="ensar-select h-11 w-full cursor-pointer truncate rounded-xl border border-[#DDD3C6] bg-[#F7F3EB]/60 pl-3 pr-8 text-xs font-semibold text-[#241722] focus:border-[#321B2D] focus:bg-[#FFFDF8] focus:outline-none sm:text-sm"
+                    >
+                      <option value="all">Tüm Kategoriler</option>
+                      {store.categories.map((c) => (
+                        <option key={c.slug} value={c.slug}>
+                          {c.parentSlug ? `↳ ${c.name}` : c.name}
+                        </option>
+                      ))}
+                    </select>
+                    <ChevronDownIcon
+                      size={15}
+                      className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-[#5F505C]"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="admin-status-select"
+                    className="mb-1 block text-xs font-bold text-[#241722]"
+                  >
+                    Satış Durumu
+                  </label>
+                  <div className="relative">
+                    <select
+                      id="admin-status-select"
+                      value={prodStatusFilter}
+                      onChange={(e) => {
+                        setProdStatusFilter(
+                          e.target.value as "all" | "published" | "hidden"
+                        );
+                        setVisibleLimit(24);
+                      }}
+                      className="ensar-select h-11 w-full cursor-pointer truncate rounded-xl border border-[#DDD3C6] bg-[#F7F3EB]/60 pl-3 pr-8 text-xs font-semibold text-[#241722] focus:border-[#321B2D] focus:bg-[#FFFDF8] focus:outline-none sm:text-sm"
+                    >
+                      <option value="all">
+                        Tüm Ürünler ({store.products.length})
+                      </option>
+                      <option value="published">
+                        Satışta Olanlar ({publishedCount})
+                      </option>
+                      <option value="hidden">
+                        Gizlenenler ({hiddenCount})
+                      </option>
+                    </select>
+                    <ChevronDownIcon
+                      size={15}
+                      className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-[#5F505C]"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="sm:col-span-4">
-              <select
-                value={prodCatFilter}
-                onChange={(e) => {
-                  setProdCatFilter(e.target.value);
-                  setVisibleLimit(24);
-                }}
-                className="h-11 w-full rounded-full border border-[#DDD3C6] bg-[#FFFDF8] px-4 text-sm focus:border-[#321B2D] focus:outline-none"
-              >
-                <option value="all">Tüm Kategoriler</option>
-                {store.categories.map((c) => (
-                  <option key={c.slug} value={c.slug}>
-                    {c.parentSlug ? `↳ ${c.name}` : c.name}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <div className="sm:col-span-2">
-              <select
-                value={prodStatusFilter}
-                onChange={(e) => {
-                  setProdStatusFilter(
-                    e.target.value as "all" | "published" | "hidden"
-                  );
-                  setVisibleLimit(24);
-                }}
-                className="h-11 w-full rounded-full border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm focus:border-[#321B2D] focus:outline-none"
-              >
-                <option value="all">Tümü ({store.products.length})</option>
-                <option value="published">Satışta ({publishedCount})</option>
-                <option value="hidden">Gizli ({hiddenCount})</option>
-              </select>
+            {/* Quick 1-Tap Category Filter Chips */}
+            <div className="flex items-center gap-1.5 overflow-x-auto pt-1 pb-0.5">
+              <span className="shrink-0 text-[11px] font-bold text-[#6F606C]">
+                Hızlı Seç:
+              </span>
+              {[
+                { slug: "all", label: "Tümü" },
+                { slug: "kar-kureleri", label: "Kar Küreleri" },
+                { slug: "noel-baba", label: "Noel Baba" },
+                { slug: "fanuslar", label: "Fanuslar" },
+                { slug: "isiklar-ve-lambalar", label: "Işıklar & Lambalar" },
+                { slug: "biblolar-ve-dekorlar", label: "Biblolar" },
+                { slug: "hediye-cantalari", label: "Hediye Çantaları" },
+                { slug: "agac-susleri", label: "Ağaç Süsleri" },
+                { slug: "yilbasi-agaclari", label: "Yılbaşı Ağaçları" },
+              ].map((chip) => (
+                <button
+                  key={chip.slug}
+                  type="button"
+                  onClick={() => {
+                    setProdCatFilter(chip.slug);
+                    setVisibleLimit(24);
+                  }}
+                  className={`shrink-0 rounded-lg px-2.5 py-1 text-xs font-semibold transition-colors ${
+                    prodCatFilter === chip.slug
+                      ? "bg-[#321B2D] text-[#F7F3EB]"
+                      : "bg-[#F7F3EB] text-[#241722] hover:bg-[#E9D9F1]"
+                  }`}
+                >
+                  {chip.label}
+                </button>
+              ))}
             </div>
           </div>
 
-          <p className="text-xs font-medium text-[#5F505C]">
-            {filteredProducts.length} ürün listeleniyor — Fiyatı veya fotoğrafı
-            değiştirdiğiniz anda otomatik kaydedilir.
-          </p>
+          <div className="flex items-center justify-between px-1">
+            <p className="text-xs font-semibold text-[#5F505C]">
+              Toplam {filteredProducts.length} ürün bulundu
+            </p>
+            {(prodSearch || prodCatFilter !== "all" || prodStatusFilter !== "all") && (
+              <button
+                type="button"
+                onClick={() => {
+                  setProdSearch("");
+                  setProdCatFilter("all");
+                  setProdStatusFilter("all");
+                }}
+                className="text-xs font-bold text-[#321B2D] underline"
+              >
+                Filtreyi Temizle
+              </button>
+            )}
+          </div>
 
           {/* PRODUCT CARDS LIST */}
           <div className="space-y-3.5">
@@ -774,6 +934,7 @@ export default function AdminPanelPage() {
               .slice(0, visibleLimit)
               .map(({ product, originalIndex }) => {
                 const isExpanded = expandedProductId === product.id;
+                const isJustSaved = savedCardId === product.id;
                 const gallery = product.gallery?.length
                   ? product.gallery
                   : [product.image];
@@ -784,8 +945,8 @@ export default function AdminPanelPage() {
                     className="ensar-card overflow-hidden p-4 transition-all sm:p-5"
                   >
                     <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-                      {/* Left: Photo + Quick Photo Upload */}
-                      <div className="flex items-start gap-4">
+                      {/* Left: Photo + Product Title + Photo Buttons */}
+                      <div className="flex items-start gap-3.5 sm:gap-4">
                         <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-[#E5DCD0] bg-[#FFFDF8] sm:h-28 sm:w-28">
                           <img
                             src={product.image}
@@ -793,14 +954,14 @@ export default function AdminPanelPage() {
                             loading="lazy"
                             className="h-full w-full object-cover"
                           />
-                          <span className="absolute bottom-1 right-1 rounded-full bg-black/65 px-2 py-0.5 text-[10px] font-semibold text-white">
+                          <span className="absolute bottom-1 right-1 rounded-md bg-black/70 px-1.5 py-0.5 text-[10px] font-semibold text-white">
                             {gallery.length} foto
                           </span>
                         </div>
 
                         <div className="min-w-0 flex-1 space-y-2">
                           <div className="flex flex-wrap items-center gap-2">
-                            <span className="rounded-full bg-[#E9D9F1] px-2.5 py-0.5 text-[11px] font-semibold text-[#321B2D]">
+                            <span className="rounded-md bg-[#E9D9F1] px-2 py-0.5 text-[11px] font-bold text-[#321B2D]">
                               Kod: {product.sku}
                             </span>
                             <button
@@ -813,10 +974,11 @@ export default function AdminPanelPage() {
                                   next,
                                   next.products[originalIndex].published
                                     ? "✓ Ürün satışa açıldı"
-                                    : "✓ Ürün gizlendi"
+                                    : "✓ Ürün gizlendi",
+                                  product.id
                                 );
                               }}
-                              className={`rounded-full px-3 py-0.5 text-[11px] font-semibold ${
+                              className={`rounded-md px-2.5 py-0.5 text-[11px] font-bold ${
                                 product.published
                                   ? "bg-emerald-900/15 text-emerald-950"
                                   : "bg-stone-200 text-stone-700"
@@ -826,28 +988,36 @@ export default function AdminPanelPage() {
                             </button>
                           </div>
 
-                          {/* Product Name inline edit */}
-                          <input
-                            value={product.name}
-                            aria-label="Ürün adı"
-                            onChange={(e) => {
-                              const next = structuredClone(store);
-                              next.products[originalIndex].name =
-                                e.target.value;
-                              next.products[originalIndex].shortName =
-                                e.target.value;
-                              void commitStore(next);
-                            }}
-                            className="h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm font-medium text-[#241722] focus:border-[#321B2D] focus:outline-none sm:min-w-[280px]"
-                          />
+                          <div>
+                            <label className="block text-[11px] font-bold text-[#6F606C]">
+                              Ürün Adı
+                            </label>
+                            <input
+                              value={product.name}
+                              aria-label="Ürün adı"
+                              onChange={(e) => {
+                                const next = structuredClone(store);
+                                next.products[originalIndex].name =
+                                  e.target.value;
+                                next.products[originalIndex].shortName =
+                                  e.target.value;
+                                void commitStore(
+                                  next,
+                                  "✓ Ürün adı kaydedildi",
+                                  product.id
+                                );
+                              }}
+                              className="mt-0.5 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm font-semibold text-[#241722] focus:border-[#321B2D] focus:outline-none sm:min-w-[280px]"
+                            />
+                          </div>
 
                           {/* Lossless Photo Upload Buttons */}
                           <div className="flex flex-wrap items-center gap-2 pt-0.5">
-                            <label className="inline-flex min-h-[38px] cursor-pointer items-center gap-1.5 rounded-full bg-[#321B2D] px-3.5 py-1.5 text-xs font-semibold text-[#F7F3EB] hover:bg-[#44253D]">
+                            <label className="inline-flex min-h-[36px] cursor-pointer items-center gap-1.5 rounded-xl bg-[#321B2D] px-3 py-1.5 text-xs font-semibold text-[#F7F3EB] hover:bg-[#44253D]">
                               <span>
                                 {uploadingId === product.id
                                   ? "Yükleniyor…"
-                                  : "📷 Kapak Fotoğrafı Değiştir"}
+                                  : "📷 Fotoğraf Değiştir"}
                               </span>
                               <input
                                 type="file"
@@ -878,7 +1048,8 @@ export default function AdminPanelPage() {
                                       ].isConceptImage = false;
                                       void commitStore(
                                         next,
-                                        "✓ Kapak fotoğrafı orijinal kalitede güncellendi"
+                                        "✓ Fotoğraf orijinal kalitede kaydedildi",
+                                        product.id
                                       );
                                     }
                                   )
@@ -886,8 +1057,8 @@ export default function AdminPanelPage() {
                               />
                             </label>
 
-                            <label className="inline-flex min-h-[38px] cursor-pointer items-center gap-1.5 rounded-full border border-[#321B2D] bg-[#FFFDF8] px-3.5 py-1.5 text-xs font-semibold text-[#321B2D] hover:bg-[#E9D9F1]">
-                              <span>➕ Galeriye Foto Ekle</span>
+                            <label className="inline-flex min-h-[36px] cursor-pointer items-center gap-1.5 rounded-xl border border-[#321B2D]/40 bg-[#FFFDF8] px-3 py-1.5 text-xs font-semibold text-[#321B2D] hover:bg-[#E9D9F1]">
+                              <span>＋ Ek Fotoğraf Ekle</span>
                               <input
                                 type="file"
                                 accept="image/*"
@@ -913,7 +1084,8 @@ export default function AdminPanelPage() {
                                       ];
                                       void commitStore(
                                         next,
-                                        `✓ Galeriye ${urls.length} fotoğraf eklendi`
+                                        `✓ ${urls.length} ek fotoğraf kaydedildi`,
+                                        product.id
                                       );
                                       setExpandedProductId(product.id);
                                     }
@@ -925,12 +1097,12 @@ export default function AdminPanelPage() {
                         </div>
                       </div>
 
-                      {/* Right: Big Price Input, Category, Actions */}
-                      <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[#EFE7DC] pt-3 lg:justify-end lg:border-t-0 lg:pt-0">
+                      {/* Right: Clear Labeled Price, Category & Save/View Buttons */}
+                      <div className="grid grid-cols-2 gap-2.5 border-t border-[#EFE7DC] pt-3 sm:flex sm:flex-wrap sm:items-end sm:justify-end lg:border-t-0 lg:pt-0">
                         {/* Price Input */}
-                        <div className="flex items-center gap-2">
-                          <label className="text-xs font-semibold text-[#5F505C]">
-                            Fiyat (TL):
+                        <div>
+                          <label className="block text-[11px] font-bold text-[#6F606C]">
+                            Satış Fiyatı (TL)
                           </label>
                           <input
                             type="number"
@@ -944,44 +1116,79 @@ export default function AdminPanelPage() {
                                 e.target.value === ""
                                   ? null
                                   : Number(e.target.value);
-                              void commitStore(next);
+                              void commitStore(
+                                next,
+                                "✓ Yeni fiyat kaydedildi",
+                                product.id
+                              );
                             }}
-                            className="h-11 w-28 rounded-xl border-2 border-[#321B2D]/30 bg-[#FFFDF8] px-3 text-base font-bold text-[#321B2D] focus:border-[#321B2D] focus:outline-none"
+                            className="mt-0.5 h-10 w-full rounded-xl border-2 border-[#321B2D]/35 bg-[#FFFDF8] px-3 text-base font-bold text-[#321B2D] focus:border-[#321B2D] focus:outline-none sm:w-28"
                           />
                         </div>
 
                         {/* Category Select */}
-                        <select
-                          value={product.categorySlug}
-                          aria-label="Ürün kategorisi"
-                          onChange={(e) => {
-                            const next = structuredClone(store);
-                            const newSlug = e.target.value;
-                            next.products[originalIndex].categorySlug = newSlug;
-                            const catObj = store.categories.find(
-                              (c) => c.slug === newSlug
-                            );
-                            if (catObj?.parentSlug) {
-                              next.products[
-                                originalIndex
-                              ].extraCategorySlugs = [catObj.parentSlug];
-                            }
-                            void commitStore(
-                              next,
-                              "✓ Ürün kategorisi değiştirildi"
-                            );
-                          }}
-                          className="h-11 max-w-[175px] rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-xs font-medium text-[#241722]"
-                        >
-                          {store.categories.map((c) => (
-                            <option key={c.slug} value={c.slug}>
-                              {c.parentSlug ? `↳ ${c.name}` : c.name}
-                            </option>
-                          ))}
-                        </select>
+                        <div>
+                          <label className="block text-[11px] font-bold text-[#6F606C]">
+                            Kategorisi
+                          </label>
+                          <div className="relative mt-0.5">
+                            <select
+                              value={product.categorySlug}
+                              aria-label="Ürün kategorisi"
+                              onChange={(e) => {
+                                const next = structuredClone(store);
+                                const newSlug = e.target.value;
+                                next.products[originalIndex].categorySlug =
+                                  newSlug;
+                                const catObj = store.categories.find(
+                                  (c) => c.slug === newSlug
+                                );
+                                if (catObj?.parentSlug) {
+                                  next.products[
+                                    originalIndex
+                                  ].extraCategorySlugs = [catObj.parentSlug];
+                                }
+                                void commitStore(
+                                  next,
+                                  "✓ Kategori kaydedildi",
+                                  product.id
+                                );
+                              }}
+                              className="ensar-select h-10 w-full truncate rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] pl-2.5 pr-7 text-xs font-semibold text-[#241722] sm:w-40"
+                            >
+                              {store.categories.map((c) => (
+                                <option key={c.slug} value={c.slug}>
+                                  {c.parentSlug ? `↳ ${c.name}` : c.name}
+                                </option>
+                              ))}
+                            </select>
+                            <ChevronDownIcon
+                              size={14}
+                              className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-[#5F505C]"
+                            />
+                          </div>
+                        </div>
 
-                        {/* Details & Preview Actions */}
-                        <div className="flex items-center gap-2">
+                        {/* Explicit Save + Details + Preview Buttons */}
+                        <div className="col-span-2 flex items-center gap-2 pt-1 sm:pt-0">
+                          <button
+                            type="button"
+                            onClick={() =>
+                              commitStore(
+                                store,
+                                `✓ "${product.name}" kaydedildi`,
+                                product.id
+                              )
+                            }
+                            className={`min-h-[40px] flex-1 rounded-xl px-4 text-xs font-bold transition-colors sm:flex-initial ${
+                              isJustSaved
+                                ? "bg-emerald-700 text-white"
+                                : "bg-[#321B2D] text-[#F7F3EB] hover:bg-[#44253D]"
+                            }`}
+                          >
+                            {isJustSaved ? "✓ Kaydedildi" : "Kaydet"}
+                          </button>
+
                           <button
                             type="button"
                             onClick={() =>
@@ -989,16 +1196,16 @@ export default function AdminPanelPage() {
                                 isExpanded ? null : product.id
                               )
                             }
-                            className="min-h-[40px] rounded-full border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-xs font-semibold text-[#241722] hover:border-[#321B2D]"
+                            className="min-h-[40px] rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-xs font-semibold text-[#241722] hover:border-[#321B2D]"
                           >
-                            {isExpanded ? "Detayı Gizle ▲" : "Galeri & Detay ▼"}
+                            {isExpanded ? "Gizle ▲" : "Detay ▼"}
                           </button>
 
                           <Link
                             href={getProductHref(product.slug)}
-                            className="inline-flex min-h-[40px] items-center rounded-full bg-[#E9D9F1] px-3.5 text-xs font-semibold text-[#321B2D] hover:bg-[#321B2D] hover:text-[#F7F3EB]"
+                            className="inline-flex min-h-[40px] items-center rounded-xl bg-[#E9D9F1] px-3 text-xs font-semibold text-[#321B2D] hover:bg-[#321B2D] hover:text-[#F7F3EB]"
                           >
-                            Sitede Gör ↗
+                            Gör ↗
                           </Link>
                         </div>
                       </div>
@@ -1008,10 +1215,8 @@ export default function AdminPanelPage() {
                     {isExpanded && (
                       <div className="mt-4 space-y-4 border-t border-[#EFE7DC] pt-4">
                         <div>
-                          <p className="text-xs font-semibold text-[#241722]">
-                            Ürün Galerisi ({gallery.length} Fotoğraf — İstediğiniz
-                            fotoğrafı &ldquo;Kapak Yap&rdquo; ile ana görsel
-                            seçebilirsiniz)
+                          <p className="text-xs font-bold text-[#241722]">
+                            Ürün Fotoğrafları ({gallery.length} adet)
                           </p>
                           <div className="mt-2.5 flex flex-wrap gap-3">
                             {gallery.map((imgUrl, gIdx) => {
@@ -1043,7 +1248,8 @@ export default function AdminPanelPage() {
                                           imgUrl;
                                         void commitStore(
                                           next,
-                                          "✓ Kapak fotoğrafı güncellendi"
+                                          "✓ Kapak fotoğrafı güncellendi",
+                                          product.id
                                         );
                                       }}
                                       className="absolute bottom-1 left-1 rounded bg-black/70 px-1.5 py-0.5 text-[10px] font-semibold text-white hover:bg-[#321B2D]"
@@ -1067,7 +1273,8 @@ export default function AdminPanelPage() {
                                         }
                                         void commitStore(
                                           next,
-                                          "✓ Fotoğraf galeriden kaldırıldı"
+                                          "✓ Fotoğraf silindi",
+                                          product.id
                                         );
                                       }}
                                       aria-label="Fotoğrafı sil"
@@ -1084,7 +1291,7 @@ export default function AdminPanelPage() {
 
                         <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
                           <div>
-                            <label className="block text-xs font-semibold text-[#5F505C]">
+                            <label className="block text-xs font-bold text-[#5F505C]">
                               Ürün Kodu (SKU)
                             </label>
                             <input
@@ -1100,7 +1307,7 @@ export default function AdminPanelPage() {
                           </div>
 
                           <div className="sm:col-span-2">
-                            <label className="block text-xs font-semibold text-[#5F505C]">
+                            <label className="block text-xs font-bold text-[#5F505C]">
                               Ürün Açıklaması
                             </label>
                             <input
@@ -1130,7 +1337,10 @@ export default function AdminPanelPage() {
                               }}
                               className="h-4 w-4 accent-[#321B2D]"
                             />
-                            <span>Ana Sayfa &ldquo;Yeni Gelenler&rdquo; vitrininde göster</span>
+                            <span>
+                              Ana Sayfa &ldquo;Yeni Gelenler&rdquo; vitrininde
+                              göster
+                            </span>
                           </label>
 
                           {confirmDeleteId === product.id ? (
@@ -1149,14 +1359,14 @@ export default function AdminPanelPage() {
                                     "✓ Ürün katalogdan silindi"
                                   );
                                 }}
-                                className="rounded-full bg-rose-700 px-3.5 py-1.5 text-xs font-semibold text-white"
+                                className="rounded-lg bg-rose-700 px-3.5 py-1.5 text-xs font-semibold text-white"
                               >
                                 Evet, Sil
                               </button>
                               <button
                                 type="button"
                                 onClick={() => setConfirmDeleteId(null)}
-                                className="rounded-full border border-[#DDD3C6] px-3 py-1.5 text-xs font-semibold"
+                                className="rounded-lg border border-[#DDD3C6] px-3 py-1.5 text-xs font-semibold"
                               >
                                 Vazgeç
                               </button>
@@ -1183,7 +1393,7 @@ export default function AdminPanelPage() {
               <button
                 type="button"
                 onClick={() => setVisibleLimit((v) => v + 48)}
-                className="inline-flex min-h-[46px] items-center rounded-full border border-[#321B2D] bg-[#FFFDF8] px-7 text-sm font-semibold text-[#321B2D] hover:bg-[#321B2D] hover:text-[#F7F3EB]"
+                className="inline-flex min-h-[46px] items-center rounded-xl border border-[#321B2D] bg-[#FFFDF8] px-7 text-sm font-semibold text-[#321B2D] hover:bg-[#321B2D] hover:text-[#F7F3EB]"
               >
                 Daha Fazla Ürün Göster ({filteredProducts.length - visibleLimit}{" "}
                 ürün kaldı)
@@ -1197,15 +1407,15 @@ export default function AdminPanelPage() {
       {/* TAB 2: KATEGORİLER                                        */}
       {/* ========================================================= */}
       {activeTab === "kategoriler" && (
-        <div className="mt-6 space-y-5">
+        <div className="mt-5 space-y-5">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <button
               type="button"
               onClick={() => setShowNewCategory((v) => !v)}
-              className="inline-flex min-h-[46px] items-center gap-2 rounded-full bg-[#321B2D] px-6 text-sm font-semibold text-[#F7F3EB] hover:bg-[#44253D]"
+              className="inline-flex min-h-[46px] items-center gap-2 rounded-xl bg-[#321B2D] px-6 text-sm font-semibold text-[#F7F3EB] hover:bg-[#44253D]"
             >
               <span>
-                {showNewCategory ? "− Formu Kapat" : "+ Yeni Kategori Ekle"}
+                {showNewCategory ? "− Formu Kapat" : "＋ Yeni Kategori Ekle"}
               </span>
             </button>
           </div>
@@ -1220,7 +1430,7 @@ export default function AdminPanelPage() {
               </h2>
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
                 <div>
-                  <label className="block text-xs font-semibold text-[#241722]">
+                  <label className="block text-xs font-bold text-[#241722]">
                     Kategori Adı *
                   </label>
                   <input
@@ -1232,26 +1442,32 @@ export default function AdminPanelPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-semibold text-[#241722]">
+                  <label className="block text-xs font-bold text-[#241722]">
                     Üst Kategori (Ana kategoriyse boş bırakın)
                   </label>
-                  <select
-                    value={newCatParent}
-                    onChange={(e) => setNewCatParent(e.target.value)}
-                    className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm"
-                  >
-                    <option value="">Ana Kategori</option>
-                    {store.categories
-                      .filter((c) => !c.parentSlug)
-                      .map((c) => (
-                        <option key={c.slug} value={c.slug}>
-                          {c.name}
-                        </option>
-                      ))}
-                  </select>
+                  <div className="relative mt-1">
+                    <select
+                      value={newCatParent}
+                      onChange={(e) => setNewCatParent(e.target.value)}
+                      className="ensar-select h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] pl-3 pr-9 text-sm"
+                    >
+                      <option value="">Ana Kategori</option>
+                      {store.categories
+                        .filter((c) => !c.parentSlug)
+                        .map((c) => (
+                          <option key={c.slug} value={c.slug}>
+                            {c.name}
+                          </option>
+                        ))}
+                    </select>
+                    <ChevronDownIcon
+                      size={15}
+                      className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[#5F505C]"
+                    />
+                  </div>
                 </div>
                 <div>
-                  <label className="block text-xs font-semibold text-[#241722]">
+                  <label className="block text-xs font-bold text-[#241722]">
                     Kapak Fotoğrafı (Orijinal Kalite)
                   </label>
                   <label className="mt-1 flex h-11 cursor-pointer items-center justify-center rounded-xl bg-[#321B2D] px-4 text-xs font-semibold text-[#F7F3EB]">
@@ -1276,7 +1492,7 @@ export default function AdminPanelPage() {
                 </div>
               </div>
               <div>
-                <label className="block text-xs font-semibold text-[#241722]">
+                <label className="block text-xs font-bold text-[#241722]">
                   Kısa Açıklama
                 </label>
                 <input
@@ -1294,13 +1510,16 @@ export default function AdminPanelPage() {
                     onChange={(e) => setNewCatHome(e.target.checked)}
                     className="h-4 w-4 accent-[#321B2D]"
                   />
-                  <span>Ana Sayfada &ldquo;Kategorileri Keşfet&rdquo; vitrininde göster</span>
+                  <span>
+                    Ana Sayfada &ldquo;Kategorileri Keşfet&rdquo; vitrininde
+                    göster
+                  </span>
                 </label>
                 <button
                   type="submit"
-                  className="min-h-[44px] rounded-full bg-[#321B2D] px-6 text-sm font-semibold text-[#F7F3EB]"
+                  className="min-h-[44px] rounded-xl bg-[#321B2D] px-6 text-sm font-semibold text-[#F7F3EB]"
                 >
-                  ✓ Kategoriyi Oluştur
+                  ✓ Kategoriyi Kaydet
                 </button>
               </div>
             </form>
@@ -1332,7 +1551,7 @@ export default function AdminPanelPage() {
                     />
                     <Link
                       href={getCategoryHref(cat.slug)}
-                      className="shrink-0 rounded-full bg-[#E9D9F1] px-3 py-1.5 text-xs font-semibold text-[#321B2D]"
+                      className="shrink-0 rounded-xl bg-[#E9D9F1] px-3 py-2 text-xs font-semibold text-[#321B2D]"
                     >
                       Gör ↗
                     </Link>
@@ -1349,8 +1568,8 @@ export default function AdminPanelPage() {
                   />
 
                   <div className="flex flex-wrap items-center justify-between gap-2 pt-0.5">
-                    <label className="inline-flex min-h-[36px] cursor-pointer items-center gap-1.5 rounded-full bg-[#321B2D] px-3.5 py-1 text-xs font-semibold text-[#F7F3EB]">
-                      <span>📷 Kapak Fotoğrafı Yükle</span>
+                    <label className="inline-flex min-h-[36px] cursor-pointer items-center gap-1.5 rounded-xl bg-[#321B2D] px-3.5 py-1 text-xs font-semibold text-[#F7F3EB]">
+                      <span>📷 Fotoğraf Değiştir</span>
                       <input
                         type="file"
                         accept="image/*"
@@ -1366,7 +1585,7 @@ export default function AdminPanelPage() {
                               next.categories[idx].isConceptImage = false;
                               void commitStore(
                                 next,
-                                "✓ Kategori fotoğrafı güncellendi"
+                                "✓ Kategori fotoğrafı kaydedildi"
                               );
                             }
                           )
@@ -1399,7 +1618,7 @@ export default function AdminPanelPage() {
       {/* TAB 3: ANA SAYFA VİTRİN (3 AÇILIŞ SLAYTI)                 */}
       {/* ========================================================= */}
       {activeTab === "vitrin" && (
-        <div className="mt-6 space-y-4">
+        <div className="mt-5 space-y-4">
           <p className="text-sm text-[#5F505C]">
             Ana sayfadaki 3 büyük açılış vitrininin fotoğrafını, başlığını ve
             butonunu buradan değiştirebilirsiniz.
@@ -1417,8 +1636,8 @@ export default function AdminPanelPage() {
                     className="h-full w-full object-cover"
                   />
                 </div>
-                <label className="mt-3 flex min-h-[44px] w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-[#321B2D] px-4 text-xs font-semibold text-[#F7F3EB] hover:bg-[#44253D]">
-                  <span>📷 Vitrin Fotoğrafını Değiştir (Orijinal Kalite)</span>
+                <label className="mt-3 flex min-h-[44px] w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-[#321B2D] px-4 text-xs font-semibold text-[#F7F3EB] hover:bg-[#44253D]">
+                  <span>📷 Vitrin Fotoğrafını Değiştir</span>
                   <input
                     type="file"
                     accept="image/*"
@@ -1434,7 +1653,7 @@ export default function AdminPanelPage() {
                           next.heroSlides[idx].isConceptImage = false;
                           void commitStore(
                             next,
-                            "✓ Vitrin fotoğrafı orijinal kalitede güncellendi"
+                            "✓ Vitrin fotoğrafı kaydedildi"
                           );
                         }
                       )
@@ -1443,9 +1662,9 @@ export default function AdminPanelPage() {
                 </label>
               </div>
 
-              <div className="grid grid-cols-1 gap-4 md:col-span-8 sm:grid-cols-2">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:col-span-8">
                 <div className="sm:col-span-2">
-                  <label className="block text-xs font-semibold text-[#241722]">
+                  <label className="block text-xs font-bold text-[#241722]">
                     Vitrin Başlığı (Satırları / ile ayırın)
                   </label>
                   <input
@@ -1463,7 +1682,7 @@ export default function AdminPanelPage() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#241722]">
+                  <label className="block text-xs font-bold text-[#241722]">
                     Buton Yazısı
                   </label>
                   <input
@@ -1478,26 +1697,32 @@ export default function AdminPanelPage() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#241722]">
+                  <label className="block text-xs font-bold text-[#241722]">
                     Tıklanınca Gideceği Sayfa
                   </label>
-                  <select
-                    value={slide.buttonHref}
-                    onChange={(e) => {
-                      const next = structuredClone(store);
-                      next.heroSlides[idx].buttonHref = e.target.value;
-                      void commitStore(next);
-                    }}
-                    className="mt-1.5 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm"
-                  >
-                    <option value="#hediyeni-bul">Hediyeni Bul Bölümü</option>
-                    <option value="/kategoriler/">Tüm Kategoriler</option>
-                    {store.categories.map((c) => (
-                      <option key={c.slug} value={`/kategori/${c.slug}/`}>
-                        Kategori: {c.name}
-                      </option>
-                    ))}
-                  </select>
+                  <div className="relative mt-1.5">
+                    <select
+                      value={slide.buttonHref}
+                      onChange={(e) => {
+                        const next = structuredClone(store);
+                        next.heroSlides[idx].buttonHref = e.target.value;
+                        void commitStore(next);
+                      }}
+                      className="ensar-select h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] pl-3.5 pr-9 text-sm"
+                    >
+                      <option value="#hediyeni-bul">Hediyeni Bul Bölümü</option>
+                      <option value="/kategoriler/">Tüm Kategoriler</option>
+                      {store.categories.map((c) => (
+                        <option key={c.slug} value={`/kategori/${c.slug}/`}>
+                          Kategori: {c.name}
+                        </option>
+                      ))}
+                    </select>
+                    <ChevronDownIcon
+                      size={15}
+                      className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[#5F505C]"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -1509,7 +1734,7 @@ export default function AdminPanelPage() {
       {/* TAB 4: SİPARİŞLER                                         */}
       {/* ========================================================= */}
       {activeTab === "siparisler" && (
-        <div className="mt-6 space-y-4">
+        <div className="mt-5 space-y-4">
           {store.orders.length === 0 ? (
             <div className="ensar-card p-8 text-center text-sm text-[#5F505C]">
               Henüz siteden oluşturulmuş bir sipariş bulunmuyor.
@@ -1536,7 +1761,7 @@ export default function AdminPanelPage() {
                       )}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex min-h-[40px] items-center gap-1.5 rounded-full border border-[#321B2D] px-3.5 text-xs font-semibold text-[#321B2D]"
+                      className="inline-flex min-h-[40px] items-center gap-1.5 rounded-xl border border-[#321B2D] px-3.5 text-xs font-semibold text-[#321B2D]"
                     >
                       <WhatsAppIcon size={15} />
                       <span>Müşteriye Yaz</span>
@@ -1550,7 +1775,7 @@ export default function AdminPanelPage() {
                           .value as Order["status"];
                         void commitStore(next, "✓ Sipariş durumu güncellendi");
                       }}
-                      className="h-10 rounded-full bg-[#321B2D] px-4 text-xs font-semibold text-[#F7F3EB]"
+                      className="h-10 rounded-xl bg-[#321B2D] px-4 text-xs font-semibold text-[#F7F3EB]"
                     >
                       {[
                         "Yeni",
@@ -1595,11 +1820,10 @@ export default function AdminPanelPage() {
       {/* TAB 5: LOGO, İLETİŞİM & YEDEKLEME                         */}
       {/* ========================================================= */}
       {activeTab === "magaza" && (
-        <div className="mt-6 space-y-6">
-          {/* Logos */}
+        <div className="mt-5 space-y-6">
           <div className="ensar-card grid grid-cols-1 gap-6 p-6 sm:grid-cols-2">
             <div>
-              <p className="text-sm font-semibold text-[#241722]">
+              <p className="text-sm font-bold text-[#241722]">
                 Üst Menü Logosu (Açık Zemin)
               </p>
               <div className="mt-2 flex h-20 items-center justify-center rounded-xl border border-[#E5DCD0] bg-[#F7F3EB] p-3">
@@ -1609,8 +1833,8 @@ export default function AdminPanelPage() {
                   className="max-h-12 w-auto object-contain"
                 />
               </div>
-              <label className="mt-3 inline-flex min-h-[42px] cursor-pointer items-center rounded-full bg-[#321B2D] px-5 text-xs font-semibold text-[#F7F3EB]">
-                <span>📷 Yeni Logo Yükle (Orijinal Kalite)</span>
+              <label className="mt-3 inline-flex min-h-[42px] cursor-pointer items-center rounded-xl bg-[#321B2D] px-5 text-xs font-semibold text-[#F7F3EB]">
+                <span>📷 Yeni Logo Yükle</span>
                 <input
                   type="file"
                   accept="image/*"
@@ -1620,7 +1844,7 @@ export default function AdminPanelPage() {
                       if (!urls[0]) return;
                       const next = structuredClone(store);
                       next.settings.logoLightBg = urls[0];
-                      void commitStore(next, "✓ Üst menü logosu güncellendi");
+                      void commitStore(next, "✓ Üst menü logosu kaydedildi");
                     })
                   }
                 />
@@ -1628,7 +1852,7 @@ export default function AdminPanelPage() {
             </div>
 
             <div>
-              <p className="text-sm font-semibold text-[#241722]">
+              <p className="text-sm font-bold text-[#241722]">
                 Alt Menü Logosu (Koyu Zemin)
               </p>
               <div className="mt-2 flex h-20 items-center justify-center rounded-xl bg-[#321B2D] p-3">
@@ -1638,7 +1862,7 @@ export default function AdminPanelPage() {
                   className="max-h-12 w-auto object-contain"
                 />
               </div>
-              <label className="mt-3 inline-flex min-h-[42px] cursor-pointer items-center rounded-full bg-[#321B2D] px-5 text-xs font-semibold text-[#F7F3EB]">
+              <label className="mt-3 inline-flex min-h-[42px] cursor-pointer items-center rounded-xl bg-[#321B2D] px-5 text-xs font-semibold text-[#F7F3EB]">
                 <span>📷 Yeni Koyu Zemin Logosu Yükle</span>
                 <input
                   type="file"
@@ -1649,7 +1873,7 @@ export default function AdminPanelPage() {
                       if (!urls[0]) return;
                       const next = structuredClone(store);
                       next.settings.logoDarkBg = urls[0];
-                      void commitStore(next, "✓ Alt menü logosu güncellendi");
+                      void commitStore(next, "✓ Alt menü logosu kaydedildi");
                     })
                   }
                 />
@@ -1657,10 +1881,9 @@ export default function AdminPanelPage() {
             </div>
           </div>
 
-          {/* Contact & Shipping Settings */}
           <div className="ensar-card grid grid-cols-1 gap-4 p-6 sm:grid-cols-2">
             <div>
-              <label className="block text-xs font-semibold text-[#5F505C]">
+              <label className="block text-xs font-bold text-[#241722]">
                 Telefon Numarası (Sitede Görünen)
               </label>
               <input
@@ -1675,7 +1898,7 @@ export default function AdminPanelPage() {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-[#5F505C]">
+              <label className="block text-xs font-bold text-[#241722]">
                 WhatsApp Sipariş Hattı (905413567162 formatında)
               </label>
               <input
@@ -1690,7 +1913,7 @@ export default function AdminPanelPage() {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-[#5F505C]">
+              <label className="block text-xs font-bold text-[#241722]">
                 Ücretsiz Kargo Alt Limiti (TL)
               </label>
               <input
@@ -1707,7 +1930,7 @@ export default function AdminPanelPage() {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-[#5F505C]">
+              <label className="block text-xs font-bold text-[#241722]">
                 Standart Kargo Ücreti (TL)
               </label>
               <input
@@ -1723,7 +1946,7 @@ export default function AdminPanelPage() {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-[#5F505C]">
+              <label className="block text-xs font-bold text-[#241722]">
                 E-posta Adresi
               </label>
               <input
@@ -1738,7 +1961,7 @@ export default function AdminPanelPage() {
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-[#5F505C]">
+              <label className="block text-xs font-bold text-[#241722]">
                 Çalışma Saatleri
               </label>
               <input
@@ -1753,7 +1976,7 @@ export default function AdminPanelPage() {
             </div>
 
             <div className="sm:col-span-2">
-              <label className="block text-xs font-semibold text-[#5F505C]">
+              <label className="block text-xs font-bold text-[#241722]">
                 Mağaza Açık Adresi
               </label>
               <input
@@ -1768,7 +1991,6 @@ export default function AdminPanelPage() {
             </div>
           </div>
 
-          {/* Backup & Reset */}
           <div className="ensar-card flex flex-wrap items-center justify-between gap-4 p-6">
             <div>
               <h3 className="font-heading text-lg font-medium text-[#241722]">
@@ -1784,12 +2006,12 @@ export default function AdminPanelPage() {
               <button
                 type="button"
                 onClick={handleExportBackup}
-                className="min-h-[42px] rounded-full bg-[#321B2D] px-5 text-xs font-semibold text-[#F7F3EB]"
+                className="min-h-[42px] rounded-xl bg-[#321B2D] px-5 text-xs font-semibold text-[#F7F3EB]"
               >
                 📥 Yedeği İndir (.json)
               </button>
 
-              <label className="inline-flex min-h-[42px] cursor-pointer items-center rounded-full border border-[#321B2D] bg-[#FFFDF8] px-5 text-xs font-semibold text-[#321B2D]">
+              <label className="inline-flex min-h-[42px] cursor-pointer items-center rounded-xl border border-[#321B2D] bg-[#FFFDF8] px-5 text-xs font-semibold text-[#321B2D]">
                 <span>📤 Yedek Yükle</span>
                 <input
                   type="file"
@@ -1808,14 +2030,14 @@ export default function AdminPanelPage() {
                       setConfirmReset(false);
                       showNotice("✓ İlk kurulum ayarlarına sıfırlandı");
                     }}
-                    className="min-h-[42px] rounded-full bg-rose-700 px-4 text-xs font-semibold text-white"
+                    className="min-h-[42px] rounded-xl bg-rose-700 px-4 text-xs font-semibold text-white"
                   >
                     Evet, Sıfırla
                   </button>
                   <button
                     type="button"
                     onClick={() => setConfirmReset(false)}
-                    className="min-h-[42px] rounded-full border border-[#DDD3C6] px-4 text-xs font-semibold"
+                    className="min-h-[42px] rounded-xl border border-[#DDD3C6] px-4 text-xs font-semibold"
                   >
                     Vazgeç
                   </button>
@@ -1824,7 +2046,7 @@ export default function AdminPanelPage() {
                 <button
                   type="button"
                   onClick={() => setConfirmReset(true)}
-                  className="min-h-[42px] rounded-full border border-rose-700/40 px-4 text-xs font-semibold text-rose-700"
+                  className="min-h-[42px] rounded-xl border border-rose-700/40 px-4 text-xs font-semibold text-rose-700"
                 >
                   Fabrika Ayarlarına Dön
                 </button>
