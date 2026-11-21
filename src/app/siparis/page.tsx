@@ -18,9 +18,11 @@ import { WhatsAppIcon } from "@/components/Icons";
 function SiparisListesiInner() {
   const searchParams = useSearchParams();
   const encodedData = searchParams.get("d") || "";
+  const autoPdf = searchParams.get("pdf") === "1";
   const { items: cartItems } = useCart();
   const { store } = useLiveStore();
   const [generatingPdf, setGeneratingPdf] = useState(false);
+  const [autoTriggered, setAutoTriggered] = useState(false);
 
   const payload: SiparisPayload = useMemo(() => {
     if (encodedData) {
@@ -61,6 +63,32 @@ function SiparisListesiInner() {
     (sum, e) => sum + e.unitPrice * e.quantity,
     0
   );
+
+  // Automatically generate & download the PDF when opened from the WhatsApp link (?d=...&pdf=1)
+  React.useEffect(() => {
+    if (!autoPdf || autoTriggered || payload.entries.length === 0) return;
+    setAutoTriggered(true);
+    const timer = setTimeout(async () => {
+      try {
+        setGeneratingPdf(true);
+        const blob = await generateSiparisPdfBlob(
+          payload,
+          typeof window !== "undefined"
+            ? `${window.location.origin}/siparis`
+            : "https://ensar-hediyelik.onizlememerkezi.com/siparis"
+        );
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "Ensar-Hediyelik-Siparis-Listesi.pdf";
+        a.click();
+        setTimeout(() => URL.revokeObjectURL(url), 5000);
+      } finally {
+        setGeneratingPdf(false);
+      }
+    }, 350);
+    return () => clearTimeout(timer);
+  }, [autoPdf, autoTriggered, payload]);
 
   const handleDownloadOrSharePdf = async () => {
     if (payload.entries.length === 0) return;

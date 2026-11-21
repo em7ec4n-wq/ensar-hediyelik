@@ -88,7 +88,7 @@ export default function CartPage() {
     }
   };
 
-  const handleSendWhatsAppOrder = () => {
+  const handleSendWhatsAppOrder = async () => {
     if (items.length === 0) return;
     const payload = buildCurrentPayload();
     const encoded = encodeSiparisQuery({
@@ -100,11 +100,11 @@ export default function CartPage() {
       typeof window !== "undefined"
         ? window.location.origin
         : "https://ensar-hediyelik.onizlememerkezi.com";
-    const siparisUrl = `${origin}/siparis/?d=${encoded}`;
+    const siparisUrl = `${origin}/siparis/?d=${encoded}&pdf=1`;
 
     const lines = [
-      "Merhaba, Sipariş Listem aşağıdadır:",
-      `📄 Görselli Sipariş Listesi (PDF): ${siparisUrl}`,
+      "Merhaba, Sipariş Listem (PDF) hazırdır:",
+      `📄 Sipariş PDF İndir / Görüntüle: ${siparisUrl}`,
       "",
       `Ürün Sayısı: ${items.length}`,
       `Genel Toplam: ${formatTRYExact(subtotal)}`,
@@ -121,7 +121,23 @@ export default function CartPage() {
       store.settings.whatsappNumber || "905413567162",
       lines.join("\n")
     );
+
+    // Open WhatsApp immediately (so browser popup blocker never blocks it)
     window.open(waUrl, "_blank", "noopener,noreferrer");
+
+    // And automatically generate + download the PDF file from the cart in parallel
+    setGeneratingPdf(true);
+    try {
+      const blob = await generateSiparisPdfBlob(payload, `${origin}/siparis`);
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "Ensar-Hediyelik-Siparis-Listesi.pdf";
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 5000);
+    } finally {
+      setGeneratingPdf(false);
+    }
   };
 
   if (!hydrated) {
@@ -333,28 +349,29 @@ export default function CartPage() {
                 </div>
               </div>
 
-              {/* 1. Primary Action: Generate Real PDF & Share to WhatsApp */}
+              {/* 1. Primary Single-Click Action: Auto-generate PDF from Cart & Open WhatsApp */}
+              <button
+                type="button"
+                onClick={handleSendWhatsAppOrder}
+                disabled={generatingPdf}
+                className="inline-flex min-h-[52px] w-full items-center justify-center gap-2 rounded-full bg-[#321B2D] px-6 text-[14.5px] font-semibold text-[#F7F3EB] shadow-sm transition-colors hover:bg-[#44253D] disabled:opacity-50"
+              >
+                <WhatsAppIcon size={19} />
+                <span>
+                  {generatingPdf
+                    ? "PDF Oluşturulup Gönderiliyor…"
+                    : "Siparişi PDF Olarak WhatsApp'tan Gönder"}
+                </span>
+              </button>
+
+              {/* 2. Secondary Action: Download or Share Raw PDF File */}
               <button
                 type="button"
                 onClick={handleDownloadAndSharePdf}
                 disabled={generatingPdf}
-                className="inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-full bg-[#321B2D] px-6 text-[14px] font-semibold text-[#F7F3EB] shadow-sm transition-colors hover:bg-[#44253D] disabled:opacity-50"
+                className="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-full border border-[#321B2D]/40 bg-white px-5 text-xs font-semibold text-[#321B2D] transition-colors hover:bg-[#E9D9F1]"
               >
-                <span>
-                  {generatingPdf
-                    ? "Sipariş PDF'i Hazırlanıyor…"
-                    : "📄 Sipariş Listesi PDF İndir / Paylaş"}
-                </span>
-              </button>
-
-              {/* 2. Secondary Action: Send Visual Order Link + List via WhatsApp */}
-              <button
-                type="button"
-                onClick={handleSendWhatsAppOrder}
-                className="inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-full border-2 border-[#321B2D] bg-white px-6 text-[14px] font-semibold text-[#321B2D] transition-colors hover:bg-[#E9D9F1]"
-              >
-                <WhatsAppIcon size={18} />
-                <span>WhatsApp&apos;tan Sipariş Gönder</span>
+                <span>📄 Sadece PDF Dosyasını İndir / Paylaş</span>
               </button>
 
               <Link

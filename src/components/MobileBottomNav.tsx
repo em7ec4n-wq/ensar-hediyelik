@@ -5,7 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCart } from "./CartProvider";
 import { useLiveStore } from "./StoreProvider";
-import { buildWhatsAppGeneralUrl, buildWhatsAppCartUrl } from "@/lib/format";
+import { buildWhatsAppGeneralUrl } from "@/lib/format";
+import { encodeSiparisQuery, formatTRYExact } from "@/lib/order-pdf";
 import { WhatsAppIcon } from "./Icons";
 
 export function MobileBottomNav() {
@@ -13,21 +14,34 @@ export function MobileBottomNav() {
   const { items: cartItems, subtotal, totalCount } = useCart();
   const { store } = useLiveStore();
 
-  const whatsappHref =
-    cartItems.length > 0
-      ? buildWhatsAppCartUrl({
-          whatsappNumber: store.settings.whatsappNumber || "905413567162",
-          items: cartItems,
-          subtotal,
-          shippingFee: 0,
-          total: subtotal,
-          origin:
-            typeof window !== "undefined" ? window.location.origin : undefined,
-        })
-      : buildWhatsAppGeneralUrl(
-          store.settings.whatsappNumber || "905413567162",
-          "Merhaba, Ensar Hediyelik ürünleri hakkında bilgi almak istiyorum."
-        );
+  const whatsappHref = React.useMemo(() => {
+    const phone = store.settings.whatsappNumber || "905413567162";
+    if (cartItems.length === 0) {
+      return buildWhatsAppGeneralUrl(
+        phone,
+        "Merhaba, Ensar Hediyelik ürünleri hakkında bilgi almak istiyorum."
+      );
+    }
+    const encoded = encodeSiparisQuery({ items: cartItems });
+    const origin =
+      typeof window !== "undefined"
+        ? window.location.origin
+        : "https://ensar-hediyelik.onizlememerkezi.com";
+    const pdfLink = `${origin}/siparis/?d=${encoded}&pdf=1`;
+    const lines = [
+      "Merhaba, Sipariş Listem (PDF) hazırdır:",
+      `📄 Sipariş PDF İndir / Görüntüle: ${pdfLink}`,
+      "",
+      `Ürün Sayısı: ${cartItems.length}`,
+      `Genel Toplam: ${formatTRYExact(subtotal)}`,
+      "",
+      ...cartItems.map(
+        (i, idx) =>
+          `${idx + 1}. ${i.name} [${i.sku}] — Adet: ${i.quantity} × ${formatTRYExact(i.unitPrice)} = ${formatTRYExact(i.unitPrice * i.quantity)}`
+      ),
+    ];
+    return buildWhatsAppGeneralUrl(phone, lines.join("\n"));
+  }, [cartItems, subtotal, store.settings.whatsappNumber]);
 
   const navItems = [
     {
