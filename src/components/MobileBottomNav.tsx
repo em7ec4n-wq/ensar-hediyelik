@@ -46,7 +46,7 @@ export function MobileBottomNav() {
   const navItems = [
     {
       key: "anasayfa",
-      label: "Vitrin",
+      label: "Ana Sayfa",
       href: "/",
       isActive: pathname === "/",
       icon: (
@@ -66,39 +66,12 @@ export function MobileBottomNav() {
       ),
     },
     {
-      key: "katalog",
-      label: "Katalog",
-      href: "/kategori/yilbasi/",
-      isActive:
-        pathname.startsWith("/kategori/yilbasi") ||
-        pathname.startsWith("/urun/"),
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width={20}
-          height={20}
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={1.8}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <rect x="3" y="3" width="7" height="7" rx="1.5" />
-          <rect x="14" y="3" width="7" height="7" rx="1.5" />
-          <rect x="3" y="14" width="7" height="7" rx="1.5" />
-          <rect x="14" y="14" width="7" height="7" rx="1.5" />
-        </svg>
-      ),
-    },
-    {
       key: "kategoriler",
       label: "Kategoriler",
       href: "/kategoriler/",
       isActive:
         pathname.startsWith("/kategoriler") ||
-        (pathname.startsWith("/kategori/") &&
-          !pathname.startsWith("/kategori/yilbasi")),
+        pathname.startsWith("/kategori/"),
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +93,8 @@ export function MobileBottomNav() {
       label: "Sepet",
       href: "/sepet/",
       badge: totalCount,
-      isActive: pathname.startsWith("/sepet"),
+      isActive:
+        pathname.startsWith("/sepet") || pathname.startsWith("/siparis"),
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +119,7 @@ export function MobileBottomNav() {
       aria-label="Mobil alt menü"
       className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-[#180E16]/98 px-2 pb-[env(safe-area-inset-bottom)] pt-1.5 text-[#F7F3EB] shadow-[0_-8px_24px_rgba(0,0,0,0.22)] backdrop-blur-md lg:hidden"
     >
-      <div className="mx-auto grid max-w-md grid-cols-5 items-center">
+      <div className="mx-auto grid max-w-md grid-cols-4 items-center">
         {navItems.map((item) => (
           <Link
             key={item.key}
@@ -178,7 +152,7 @@ export function MobileBottomNav() {
           </Link>
         ))}
 
-        {/* 5th Tab: Direct WhatsApp Order / Inquiry */}
+        {/* 4th Tab: Direct WhatsApp Order / Inquiry */}
         <a
           href={whatsappHref}
           target="_blank"

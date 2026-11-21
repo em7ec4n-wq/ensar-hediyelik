@@ -42,24 +42,12 @@ export default async function CategoryDetailPage({ params }: CategoryPageProps) 
     ? store.categories.find((c) => c.slug === category.parentSlug)
     : undefined;
 
-  const subcategories = store.categories.filter(
-    (c) => c.parentSlug === category.slug
-  );
-  const subSlugs = new Set(subcategories.map((s) => s.slug));
-
-  const allCategoryProducts = store.products.filter(
-    (p) =>
-      p.categorySlug === category.slug ||
-      p.extraCategorySlugs?.includes(category.slug) ||
-      subSlugs.has(p.categorySlug)
-  );
-
   return (
     <CategoryCatalogClient
       category={category}
       parentCategory={parentCategory}
-      subcategories={subcategories}
-      allCategoryProducts={allCategoryProducts}
+      subcategories={[]}
+      allCategoryProducts={[]}
     />
   );
 }

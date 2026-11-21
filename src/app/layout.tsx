@@ -49,12 +49,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const store = readStore();
-
   return (
     <html lang="tr" className={`${playfair.variable} ${dmSans.variable}`}>
       <body className="flex min-h-screen flex-col bg-[#F7F3EB] text-[#241722] antialiased">
-        <StoreProvider initialStore={store}>
+        <StoreProvider>
           <CartProvider>
             <LiveAppShell>{children}</LiveAppShell>
           </CartProvider>
