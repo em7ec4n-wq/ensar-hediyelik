@@ -31,12 +31,21 @@ export default function HomePage() {
         aria-labelledby="kategorileri-kesfet-baslik"
         className="ensar-container pt-10 lg:pt-14"
       >
-        <h2
-          id="kategorileri-kesfet-baslik"
-          className="font-heading text-[28px] font-medium text-[#241722] lg:text-[36px]"
-        >
-          Kategorileri Keşfet
-        </h2>
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <h2
+            id="kategorileri-kesfet-baslik"
+            className="font-heading text-[28px] font-medium text-[#241722] lg:text-[36px]"
+          >
+            Kategorileri Keşfet
+          </h2>
+          <Link
+            href="/kategori/yilbasi"
+            className="inline-flex min-h-[40px] items-center gap-1.5 rounded-full bg-[#E9D9F1] px-4 py-1.5 text-xs font-semibold text-[#321B2D] transition-colors hover:bg-[#321B2D] hover:text-[#F7F3EB] sm:text-sm"
+          >
+            <span>Yılbaşı Koleksiyonu (230 Ürün)</span>
+            <ChevronRightIcon size={15} />
+          </Link>
+        </div>
 
         <div className="mt-5 grid grid-cols-2 gap-3.5 sm:gap-5 lg:grid-cols-4 lg:gap-6">
           {homeCategories.map((cat) => (

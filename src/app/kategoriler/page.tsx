@@ -69,7 +69,7 @@ export default function CategoriesPage() {
                 </div>
                 <p className="mt-0.5 text-xs text-[#6F606C]">
                   {childSlugs.size > 0
-                    ? `${childSlugs.size} alt kategori`
+                    ? `${childSlugs.size} alt kategori · 230 ürün`
                     : `${count} ürün`}
                 </p>
               </div>

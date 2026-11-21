@@ -20,22 +20,23 @@ function CategoryCatalogInner({
   allCategoryProducts,
 }: CategoryCatalogClientProps) {
   const searchParams = useSearchParams();
-  const isPreview = searchParams.get("onizleme") === "1";
+  const onlyPublished = searchParams.get("yayinda") === "1";
   const [activeSubSlug, setActiveSubSlug] = useState<string>("all");
 
   const visibleProducts = useMemo(() => {
-    const base = isPreview
-      ? allCategoryProducts
-      : allCategoryProducts.filter((p) => p.published);
+    const base = onlyPublished
+      ? allCategoryProducts.filter((p) => p.published)
+      : allCategoryProducts;
 
     if (activeSubSlug === "all") return base;
     return base.filter((p) => p.categorySlug === activeSubSlug);
-  }, [allCategoryProducts, isPreview, activeSubSlug]);
+  }, [allCategoryProducts, onlyPublished, activeSubSlug]);
 
   const draftCount = useMemo(
     () => allCategoryProducts.filter((p) => !p.published).length,
     [allCategoryProducts]
   );
+  const isPreview = draftCount > 0 && !onlyPublished;
 
   return (
     <div className="ensar-container py-8 lg:py-12">

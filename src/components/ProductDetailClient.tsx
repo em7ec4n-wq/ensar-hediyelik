@@ -37,28 +37,6 @@ function ProductDetailInner({
   const [qtyError, setQtyError] = useState<string>("");
   const [addedFeedback, setAddedFeedback] = useState(false);
 
-  // Publicly block draft products unless authorized preview (?onizleme=1) is active
-  if (!product.published && !isPreview) {
-    return (
-      <div className="ensar-container py-14 text-center">
-        <div className="ensar-card mx-auto max-w-lg p-8">
-          <h1 className="font-heading text-2xl font-medium text-[#241722]">
-            Bu Ürün Şu Anda Yayında Değil
-          </h1>
-          <p className="mt-2 text-sm text-[#5F505C]">
-            Aradığınız ürün taslak aşamasındadır veya satışa kapatılmıştır.
-          </p>
-          <Link
-            href="/kategoriler"
-            className="mt-5 inline-flex min-h-[44px] items-center rounded-full bg-[#321B2D] px-6 text-sm font-semibold text-[#F7F3EB]"
-          >
-            Kategorilere Dön
-          </Link>
-        </div>
-      </div>
-    );
-  }
-
   const hasValidPrice =
     typeof product.price === "number" && product.price > 0;
   const hasStock = typeof product.stock === "number" && product.stock > 0;
