@@ -8,35 +8,21 @@ interface ProductCardProps {
   previewMode?: boolean;
 }
 
-export function ProductCard({ product, previewMode = false }: ProductCardProps) {
-  const href = previewMode
-    ? `/urun/${product.slug}?onizleme=1`
-    : `/urun/${product.slug}`;
-  const hasStock = typeof product.stock === "number" && product.stock > 0;
+export function ProductCard({ product }: ProductCardProps) {
   const galleryCount = product.gallery?.length || 1;
 
   return (
     <Link
-      href={href}
+      href={`/urun/${product.slug}`}
       className="ensar-card group flex flex-col overflow-hidden transition-transform duration-300 hover:-translate-y-0.5"
     >
-      <div className="relative aspect-[4/3.4] w-full overflow-hidden bg-[#241320]">
+      <div className="relative aspect-[4/3.4] w-full overflow-hidden bg-[#FFFDF8]">
         <img
           src={product.image}
           alt={product.imageAlt}
           loading="lazy"
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        {!product.published && (
-          <span className="absolute left-2.5 top-2.5 rounded-full bg-[#E9D9F1] px-2.5 py-1 text-[11px] font-semibold text-[#321B2D] shadow-xs">
-            Taslak
-          </span>
-        )}
-        {product.published && product.stock !== null && product.stock <= 0 && (
-          <span className="absolute left-2.5 top-2.5 rounded-full bg-[#321B2D] px-2.5 py-1 text-[11px] font-semibold text-[#F7F3EB]">
-            Tükendi
-          </span>
-        )}
         {galleryCount > 1 && (
           <span className="absolute right-2.5 top-2.5 rounded-full bg-black/55 px-2.5 py-0.5 text-[11px] font-medium text-[#FFFDF8]">
             {galleryCount} görsel
@@ -60,21 +46,11 @@ export function ProductCard({ product, previewMode = false }: ProductCardProps) 
         </div>
 
         <div className="mt-3 flex items-center justify-between border-t border-[#EFE7DC] pt-3">
-          <span
-            className={`font-semibold ${
-              product.price === null
-                ? "text-xs text-[#6F606C]"
-                : "text-[16px] text-[#321B2D]"
-            }`}
-          >
+          <span className="text-[16px] font-semibold text-[#321B2D]">
             {formatPriceTRY(product.price)}
           </span>
-          <span className="text-xs font-medium text-[#5F505C]">
-            {product.stock === null
-              ? "Stok girilmedi"
-              : hasStock
-                ? `Stokta (${product.stock})`
-                : "Stok yok"}
+          <span className="text-xs font-semibold text-[#321B2D] group-hover:underline">
+            İncele →
           </span>
         </div>
       </div>

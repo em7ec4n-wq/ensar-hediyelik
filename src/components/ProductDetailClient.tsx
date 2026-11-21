@@ -39,8 +39,7 @@ function ProductDetailInner({
 
   const hasValidPrice =
     typeof product.price === "number" && product.price > 0;
-  const hasStock = typeof product.stock === "number" && product.stock > 0;
-  const canPurchase = product.published && hasValidPrice && hasStock;
+  const canPurchase = hasValidPrice;
 
   const parseQuantity = (): number | null => {
     const parsed = Number(quantityInput);
@@ -74,12 +73,8 @@ function ProductDetailInner({
     const { valid, qty } = validateSelection();
     if (!valid) return;
 
-    if (!hasValidPrice || !hasStock || product.price === null || product.stock === null) {
-      setQtyError("Bu ürün için satış fiyatı veya stok bilgisi henüz tanımlanmadı.");
-      return;
-    }
-    if (qty > product.stock) {
-      setQtyError(`En fazla ${product.stock} adet ekleyebilirsiniz.`);
+    if (!hasValidPrice || product.price === null) {
+      setQtyError("Bu ürün için satış fiyatı henüz tanımlanmadı.");
       return;
     }
 
@@ -90,7 +85,7 @@ function ProductDetailInner({
       name: product.name,
       image: product.image,
       unitPrice: product.price,
-      stock: product.stock,
+      stock: typeof product.stock === "number" && product.stock > 0 ? product.stock : 999,
       quantity: qty,
       selectedOption: selectedOption || undefined,
     });
@@ -239,7 +234,7 @@ function ProductDetailInner({
             {product.name}
           </h1>
 
-          {/* Verified Price & Stock */}
+          {/* Verified Price */}
           <div className="mt-4 flex flex-wrap items-center gap-4">
             <p
               className={`font-semibold ${
@@ -250,21 +245,6 @@ function ProductDetailInner({
             >
               {formatPriceTRY(product.price)}
             </p>
-            <span
-              className={`rounded-full px-3 py-1 text-xs font-semibold ${
-                product.stock === null
-                  ? "bg-[#E9D9F1]/70 text-[#321B2D]"
-                  : hasStock
-                    ? "bg-emerald-900/10 text-emerald-900"
-                    : "bg-rose-900/10 text-rose-900"
-              }`}
-            >
-              {product.stock === null
-                ? "Stok henüz girilmedi"
-                : hasStock
-                  ? `Stokta var (${product.stock} adet)`
-                  : "Stokta yok"}
-            </span>
           </div>
 
           {product.description && (
@@ -381,15 +361,7 @@ function ProductDetailInner({
               className="inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-full bg-[#321B2D] px-6 py-3 text-[15px] font-semibold text-[#F7F3EB] transition-colors hover:bg-[#44253D] disabled:cursor-not-allowed disabled:opacity-50"
             >
               <BagIcon size={19} />
-              <span>
-                {!product.published
-                  ? "Taslak (Satışa Kapalı)"
-                  : !hasValidPrice
-                    ? "Fiyat Bekleniyor"
-                    : hasStock
-                      ? "Sepete Ekle"
-                      : "Stokta Yok"}
-              </span>
+              <span>{hasValidPrice ? "Sepete Ekle" : "Fiyat Bekleniyor"}</span>
             </button>
 
             <button

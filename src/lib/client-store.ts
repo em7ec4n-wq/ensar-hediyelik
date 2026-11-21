@@ -3,7 +3,7 @@
 import type { StoreData } from "@/types/store";
 import { DEFAULT_STORE_DATA } from "./default-store";
 
-const STORE_KEY = "ensar_hediyelik_store_v2";
+const STORE_KEY = "ensar_hediyelik_store_v3";
 
 export function loadClientStore(): StoreData {
   if (typeof window === "undefined") {
