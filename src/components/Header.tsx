@@ -100,7 +100,7 @@ export function Header({ settings, categories }: HeaderProps) {
             </div>
 
             {catDropdownOpen && (
-              <div className="ensar-card absolute left-0 top-full mt-2 w-60 p-2">
+              <div className="ensar-card absolute left-0 top-full mt-2 w-64 p-2">
                 <Link
                   href="/kategoriler"
                   onClick={() => setCatDropdownOpen(false)}
@@ -109,16 +109,23 @@ export function Header({ settings, categories }: HeaderProps) {
                   Tüm Kategoriler
                 </Link>
                 <div className="my-1 h-px bg-[#ECE4D8]" />
-                {categories.map((cat) => (
-                  <Link
-                    key={cat.slug}
-                    href={`/kategori/${cat.slug}`}
-                    onClick={() => setCatDropdownOpen(false)}
-                    className="block rounded-xl px-3.5 py-2 text-sm text-[#241722] hover:bg-[#F7F3EB]"
-                  >
-                    {cat.name}
-                  </Link>
-                ))}
+                {categories
+                  .filter((cat) => !cat.parentSlug)
+                  .map((cat) => (
+                    <Link
+                      key={cat.slug}
+                      href={`/kategori/${cat.slug}`}
+                      onClick={() => setCatDropdownOpen(false)}
+                      className="flex items-center justify-between rounded-xl px-3.5 py-2 text-sm text-[#241722] hover:bg-[#F7F3EB]"
+                    >
+                      <span>{cat.name}</span>
+                      {cat.slug === "yilbasi" && (
+                        <span className="rounded-full bg-[#E9D9F1] px-2 py-0.5 text-[10px] font-semibold text-[#321B2D]">
+                          10 alt kategori
+                        </span>
+                      )}
+                    </Link>
+                  ))}
               </div>
             )}
           </div>
@@ -291,16 +298,18 @@ export function Header({ settings, categories }: HeaderProps) {
                 Hızlı Kategoriler
               </p>
               <div className="grid grid-cols-2 gap-1.5 px-1">
-                {categories.map((cat) => (
-                  <Link
-                    key={cat.slug}
-                    href={`/kategori/${cat.slug}`}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="flex min-h-[44px] items-center rounded-xl bg-[#F7F3EB] px-3 text-sm text-[#241722]"
-                  >
-                    {cat.name}
-                  </Link>
-                ))}
+                {categories
+                  .filter((cat) => !cat.parentSlug)
+                  .map((cat) => (
+                    <Link
+                      key={cat.slug}
+                      href={`/kategori/${cat.slug}`}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="flex min-h-[44px] items-center rounded-xl bg-[#F7F3EB] px-3 text-sm text-[#241722]"
+                    >
+                      {cat.name}
+                    </Link>
+                  ))}
               </div>
             </li>
             <li className="border-t border-[#ECE4D8] pt-2">

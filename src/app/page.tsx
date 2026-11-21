@@ -110,7 +110,7 @@ export default function HomePage() {
                 </h3>
                 <p className="mt-0.5 text-xs font-medium text-[#5F505C]">
                   {formatPriceTRY(product.price)}
-                  {product.stock <= 0 ? " · Tükendi" : ""}
+                  {product.stock !== null && product.stock <= 0 ? " · Tükendi" : ""}
                 </p>
               </div>
             </Link>

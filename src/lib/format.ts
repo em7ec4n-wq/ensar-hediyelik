@@ -1,4 +1,7 @@
-export function formatPriceTRY(amount: number): string {
+export function formatPriceTRY(amount: number | null | undefined): string {
+  if (amount === null || amount === undefined || Number.isNaN(amount)) {
+    return "Fiyat belirlenmedi";
+  }
   return new Intl.NumberFormat("tr-TR", {
     style: "currency",
     currency: "TRY",

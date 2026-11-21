@@ -51,7 +51,7 @@ export default function CheckoutPage() {
 
       for (const item of items) {
         const live = store.products.find((p) => p.id === item.productId);
-        if (!live || !live.published) {
+        if (!live || !live.published || live.price === null || live.stock === null) {
           foundIssues.push({
             productId: item.productId,
             type: "unpublished",
@@ -144,7 +144,13 @@ export default function CheckoutPage() {
       const orderItems: Order["items"] = [];
       for (const item of items) {
         const live = store.products.find((p) => p.id === item.productId);
-        if (!live || !live.published || item.quantity > live.stock) {
+        if (
+          !live ||
+          !live.published ||
+          live.price === null ||
+          live.stock === null ||
+          item.quantity > live.stock
+        ) {
           setSubmitError("Stok veya fiyat değişikliği nedeniyle sepet güncellendi.");
           await verifyCartWithServer();
           return;

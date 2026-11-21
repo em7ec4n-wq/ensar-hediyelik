@@ -4,6 +4,11 @@ export interface ProductOption {
   values: string[];
 }
 
+export interface ProductSourceRef {
+  dosya: string;
+  sayfa: number;
+}
+
 export interface Product {
   id: string;
   sku: string;
@@ -13,8 +18,8 @@ export interface Product {
   categorySlug: string;
   extraCategorySlugs?: string[];
   description: string;
-  price: number; // Managed via admin panel (TRY)
-  stock: number; // Managed via admin panel
+  price: number | null; // Managed via admin panel (TRY); null for unpriced drafts
+  stock: number | null; // Managed via admin panel; null for unstocked drafts
   published: boolean;
   image: string;
   gallery: string[];
@@ -26,6 +31,12 @@ export interface Product {
   giftTypes: string[]; // e.g. ["Işıklı Ürünler", "Cam Küreler", "Müzik Kutuları"]
   options?: ProductOption[];
   legacyPath?: string;
+  // Admin-only source catalog fields (never auto-converted to retail price or stock)
+  birim?: string;
+  koliIciAdet?: number | null;
+  pdfBirimFiyati?: string | null;
+  kaynakUrunAdi?: string;
+  kaynaklar?: ProductSourceRef[];
 }
 
 export interface Category {
@@ -36,6 +47,7 @@ export interface Category {
   imageAlt: string;
   showOnHome: boolean;
   homeOrder?: number;
+  parentSlug?: string;
   isConceptImage?: boolean;
 }
 

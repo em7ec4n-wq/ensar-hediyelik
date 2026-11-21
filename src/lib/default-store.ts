@@ -1,4 +1,8 @@
-import type { StoreData } from "@/types/store";
+import type { Category, Product, StoreData } from "@/types/store";
+import yilbasiCatalog from "@/data/yilbasi-catalog.json";
+
+const YILBASI_CATEGORIES = (yilbasiCatalog.categories || []) as Category[];
+const YILBASI_PRODUCTS = (yilbasiCatalog.products || []) as Product[];
 
 export const DEFAULT_STORE_DATA: StoreData = {
   settings: {
@@ -117,6 +121,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
       showOnHome: false,
       isConceptImage: true,
     },
+    ...YILBASI_CATEGORIES,
   ],
   products: [
     {
@@ -316,6 +321,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
       giftTypes: ["Müzik Kutuları", "Romantik Hediyeler"],
       legacyPath: "/Müzik-Kutusu-Cesitleri?product_id=324",
     },
+    ...YILBASI_PRODUCTS,
   ],
   orders: [],
 };

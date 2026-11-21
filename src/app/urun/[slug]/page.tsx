@@ -18,21 +18,23 @@ export async function generateMetadata({
 }: ProductPageProps): Promise<Metadata> {
   const { slug } = await params;
   const store = readStore();
-  const product = store.products.find((p) => p.slug === slug && p.published);
+  const product = store.products.find((p) => p.slug === slug);
   if (!product) {
     return { title: "Ürün Bulunamadı" };
   }
   return {
     title: product.name,
-    description: product.description,
+    description:
+      product.description || `${product.name} (${product.sku}) — Ensar Hediyelik`,
     alternates: { canonical: `/urun/${product.slug}` },
+    robots: product.published ? undefined : { index: false, follow: false },
   };
 }
 
 export default async function ProductDetailPage({ params }: ProductPageProps) {
   const { slug } = await params;
   const store = readStore();
-  const product = store.products.find((p) => p.slug === slug && p.published);
+  const product = store.products.find((p) => p.slug === slug);
 
   if (!product) {
     notFound();
@@ -41,12 +43,17 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   const category = store.categories.find(
     (c) => c.slug === product.categorySlug
   );
+  const parentCategory = category?.parentSlug
+    ? store.categories.find((c) => c.slug === category.parentSlug)
+    : undefined;
 
   return (
     <ProductDetailClient
       product={product}
       settings={store.settings}
       categoryName={category?.name || "Hediyelik"}
+      parentCategorySlug={parentCategory?.slug}
+      parentCategoryName={parentCategory?.name}
     />
   );
 }

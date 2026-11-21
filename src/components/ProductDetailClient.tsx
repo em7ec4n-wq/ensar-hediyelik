@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import type { Product, StoreSettings } from "@/types/store";
 import { formatPriceTRY, buildWhatsAppProductUrl } from "@/lib/format";
 import { useCart } from "./CartProvider";
@@ -11,13 +12,20 @@ interface ProductDetailClientProps {
   product: Product;
   settings: StoreSettings;
   categoryName: string;
+  parentCategorySlug?: string;
+  parentCategoryName?: string;
 }
 
-export function ProductDetailClient({
+function ProductDetailInner({
   product,
   settings,
   categoryName,
+  parentCategorySlug,
+  parentCategoryName,
 }: ProductDetailClientProps) {
+  const searchParams = useSearchParams();
+  const isPreview = searchParams.get("onizleme") === "1";
+
   const { addItem } = useCart();
   const gallery = product.gallery?.length ? product.gallery : [product.image];
   const [activeImage, setActiveImage] = useState(gallery[0]);
@@ -28,6 +36,33 @@ export function ProductDetailClient({
   const [optionError, setOptionError] = useState<string>("");
   const [qtyError, setQtyError] = useState<string>("");
   const [addedFeedback, setAddedFeedback] = useState(false);
+
+  // Publicly block draft products unless authorized preview (?onizleme=1) is active
+  if (!product.published && !isPreview) {
+    return (
+      <div className="ensar-container py-14 text-center">
+        <div className="ensar-card mx-auto max-w-lg p-8">
+          <h1 className="font-heading text-2xl font-medium text-[#241722]">
+            Bu Ürün Şu Anda Yayında Değil
+          </h1>
+          <p className="mt-2 text-sm text-[#5F505C]">
+            Aradığınız ürün taslak aşamasındadır veya satışa kapatılmıştır.
+          </p>
+          <Link
+            href="/kategoriler"
+            className="mt-5 inline-flex min-h-[44px] items-center rounded-full bg-[#321B2D] px-6 text-sm font-semibold text-[#F7F3EB]"
+          >
+            Kategorilere Dön
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  const hasValidPrice =
+    typeof product.price === "number" && product.price > 0;
+  const hasStock = typeof product.stock === "number" && product.stock > 0;
+  const canPurchase = product.published && hasValidPrice && hasStock;
 
   const parseQuantity = (): number | null => {
     const parsed = Number(quantityInput);
@@ -61,8 +96,8 @@ export function ProductDetailClient({
     const { valid, qty } = validateSelection();
     if (!valid) return;
 
-    if (product.stock <= 0) {
-      setQtyError("Bu ürün şu anda stokta bulunmuyor.");
+    if (!hasValidPrice || !hasStock || product.price === null || product.stock === null) {
+      setQtyError("Bu ürün için satış fiyatı veya stok bilgisi henüz tanımlanmadı.");
       return;
     }
     if (qty > product.stock) {
@@ -107,11 +142,16 @@ export function ProductDetailClient({
 
   const stepQty = (delta: number) => {
     const current = parseQuantity() ?? 1;
-    const maxVal = product.stock > 0 ? product.stock : 99;
+    const maxVal =
+      typeof product.stock === "number" && product.stock > 0
+        ? product.stock
+        : 99;
     const next = Math.min(maxVal, Math.max(1, current + delta));
     setQuantityInput(String(next));
     setQtyError("");
   };
+
+  const previewSuffix = isPreview ? "?onizleme=1" : "";
 
   return (
     <div className="ensar-container py-8 lg:py-12">
@@ -120,9 +160,20 @@ export function ProductDetailClient({
         <Link href="/" className="hover:text-[#321B2D]">
           Ana Sayfa
         </Link>
+        {parentCategorySlug && parentCategoryName && (
+          <>
+            <span className="mx-2">/</span>
+            <Link
+              href={`/kategori/${parentCategorySlug}${previewSuffix}`}
+              className="hover:text-[#321B2D]"
+            >
+              {parentCategoryName}
+            </Link>
+          </>
+        )}
         <span className="mx-2">/</span>
         <Link
-          href={`/kategori/${product.categorySlug}`}
+          href={`/kategori/${product.categorySlug}${previewSuffix}`}
           className="hover:text-[#321B2D]"
         >
           {categoryName}
@@ -130,6 +181,22 @@ export function ProductDetailClient({
         <span className="mx-2">/</span>
         <span className="font-medium text-[#241722]">{product.name}</span>
       </nav>
+
+      {isPreview && !product.published && (
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-[#321B2D]/20 bg-[#E9D9F1]/75 px-4 py-3 text-sm text-[#321B2D]">
+          <span>
+            <strong>Taslak — Yetkili Önizleme:</strong> Bu ürün henüz halka açık
+            katalogda yayınlanmamıştır. Satış fiyatı ve stok yönetim panelinden
+            girildiğinde yayına alınabilir.
+          </span>
+          <Link
+            href="/yonetim"
+            className="rounded-full bg-[#321B2D] px-4 py-1.5 text-xs font-semibold text-[#F7F3EB]"
+          >
+            Yönetim Panelinde Düzenle
+          </Link>
+        </div>
+      )}
 
       <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12">
         {/* Left: Gallery */}
@@ -139,7 +206,7 @@ export function ProductDetailClient({
               <img
                 src={activeImage}
                 alt={product.imageAlt}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain bg-[#FFFDF8]"
               />
             </div>
             {product.isConceptImage && (
@@ -157,10 +224,10 @@ export function ProductDetailClient({
                   type="button"
                   onClick={() => setActiveImage(img)}
                   aria-label={`Ürün görseli ${i + 1}`}
-                  className={`h-20 w-20 shrink-0 overflow-hidden rounded-xl border-2 transition-all ${
+                  className={`h-20 w-20 shrink-0 overflow-hidden rounded-xl border-2 bg-[#FFFDF8] transition-all ${
                     activeImage === img
                       ? "border-[#321B2D]"
-                      : "border-transparent opacity-75 hover:opacity-100"
+                      : "border-[#E5DCD0] opacity-75 hover:opacity-100"
                   }`}
                 >
                   <img
@@ -183,6 +250,11 @@ export function ProductDetailClient({
             <span className="rounded-full border border-[#E5DCD0] bg-[#FFFDF8] px-3 py-1 font-medium text-[#5F505C]">
               Ürün Kodu: {product.sku}
             </span>
+            {gallery.length > 1 && (
+              <span className="rounded-full border border-[#E5DCD0] bg-[#FFFDF8] px-3 py-1 font-medium text-[#5F505C]">
+                {gallery.length} Görsel
+              </span>
+            )}
           </div>
 
           <h1 className="font-heading mt-3 text-[30px] font-medium leading-tight text-[#241722] lg:text-[40px]">
@@ -191,25 +263,37 @@ export function ProductDetailClient({
 
           {/* Verified Price & Stock */}
           <div className="mt-4 flex flex-wrap items-center gap-4">
-            <p className="text-[28px] font-semibold text-[#321B2D]">
+            <p
+              className={`font-semibold ${
+                hasValidPrice
+                  ? "text-[28px] text-[#321B2D]"
+                  : "text-base text-[#6F606C]"
+              }`}
+            >
               {formatPriceTRY(product.price)}
             </p>
             <span
               className={`rounded-full px-3 py-1 text-xs font-semibold ${
-                product.stock > 0
-                  ? "bg-emerald-900/10 text-emerald-900"
-                  : "bg-rose-900/10 text-rose-900"
+                product.stock === null
+                  ? "bg-[#E9D9F1]/70 text-[#321B2D]"
+                  : hasStock
+                    ? "bg-emerald-900/10 text-emerald-900"
+                    : "bg-rose-900/10 text-rose-900"
               }`}
             >
-              {product.stock > 0
-                ? `Stokta var (${product.stock} adet)`
-                : "Stokta yok"}
+              {product.stock === null
+                ? "Stok henüz girilmedi"
+                : hasStock
+                  ? `Stokta var (${product.stock} adet)`
+                  : "Stokta yok"}
             </span>
           </div>
 
-          <p className="mt-4 text-[15px] leading-relaxed text-[#4C3C49]">
-            {product.description}
-          </p>
+          {product.description && (
+            <p className="mt-4 text-[15px] leading-relaxed text-[#4C3C49]">
+              {product.description}
+            </p>
+          )}
 
           {/* Product Options */}
           {primaryOption && (
@@ -315,11 +399,19 @@ export function ProductDetailClient({
             <button
               type="button"
               onClick={handleAddToCart}
-              disabled={product.stock <= 0}
+              disabled={!canPurchase}
               className="inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-full bg-[#321B2D] px-6 py-3 text-[15px] font-semibold text-[#F7F3EB] transition-colors hover:bg-[#44253D] disabled:cursor-not-allowed disabled:opacity-50"
             >
               <BagIcon size={19} />
-              <span>{product.stock > 0 ? "Sepete Ekle" : "Stokta Yok"}</span>
+              <span>
+                {!product.published
+                  ? "Taslak (Satışa Kapalı)"
+                  : !hasValidPrice
+                    ? "Fiyat Bekleniyor"
+                    : hasStock
+                      ? "Sepete Ekle"
+                      : "Stokta Yok"}
+              </span>
             </button>
 
             <button
@@ -376,5 +468,19 @@ export function ProductDetailClient({
         </div>
       </div>
     </div>
+  );
+}
+
+export function ProductDetailClient(props: ProductDetailClientProps) {
+  return (
+    <Suspense
+      fallback={
+        <div className="ensar-container py-12">
+          <p className="text-sm text-[#5F505C]">Ürün yükleniyor…</p>
+        </div>
+      }
+    >
+      <ProductDetailInner {...props} />
+    </Suspense>
   );
 }

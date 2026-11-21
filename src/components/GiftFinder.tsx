@@ -328,7 +328,9 @@ export function GiftFinder({ products }: GiftFinderProps) {
                     {!isPreviewMode && (
                       <p className="mt-0.5 text-xs text-[#5F505C]">
                         {formatPriceTRY(product.price)} ·{" "}
-                        {product.stock > 0 ? "Stokta var" : "Tükendi"}
+                        {typeof product.stock === "number" && product.stock > 0
+                          ? "Stokta var"
+                          : "Tükendi"}
                       </p>
                     )}
                   </div>
