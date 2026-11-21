@@ -4,18 +4,58 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCart } from "./CartProvider";
+import { useLiveStore } from "./StoreProvider";
+import { buildWhatsAppGeneralUrl, buildWhatsAppCartUrl } from "@/lib/format";
+import { WhatsAppIcon } from "./Icons";
 
 export function MobileBottomNav() {
   const pathname = usePathname() || "/";
-  const { totalCount } = useCart();
+  const { items: cartItems, subtotal, totalCount } = useCart();
+  const { store } = useLiveStore();
 
-  const items = [
+  const whatsappHref =
+    cartItems.length > 0
+      ? buildWhatsAppCartUrl({
+          whatsappNumber: store.settings.whatsappNumber || "905413567162",
+          items: cartItems,
+          subtotal,
+          shippingFee: 0,
+          total: subtotal,
+          origin:
+            typeof window !== "undefined" ? window.location.origin : undefined,
+        })
+      : buildWhatsAppGeneralUrl(
+          store.settings.whatsappNumber || "905413567162",
+          "Merhaba, Ensar Hediyelik ürünleri hakkında bilgi almak istiyorum."
+        );
+
+  const navItems = [
+    {
+      key: "anasayfa",
+      label: "Vitrin",
+      href: "/",
+      isActive: pathname === "/",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width={20}
+          height={20}
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={1.8}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1V10Z" />
+        </svg>
+      ),
+    },
     {
       key: "katalog",
       label: "Katalog",
       href: "/kategori/yilbasi/",
       isActive:
-        pathname === "/" ||
         pathname.startsWith("/kategori/yilbasi") ||
         pathname.startsWith("/urun/"),
       icon: (
@@ -66,7 +106,7 @@ export function MobileBottomNav() {
       label: "Sepet",
       href: "/sepet/",
       badge: totalCount,
-      isActive: pathname.startsWith("/sepet") || pathname.startsWith("/odeme"),
+      isActive: pathname.startsWith("/sepet"),
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -84,51 +124,6 @@ export function MobileBottomNav() {
         </svg>
       ),
     },
-    {
-      key: "siparisler",
-      label: "Siparişler",
-      href: "/hesabim/",
-      isActive: pathname.startsWith("/hesabim"),
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width={20}
-          height={20}
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={1.8}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M6 3h12v18l-6-4-6 4V3Z" />
-          <path d="M9 8h6M9 12h6" />
-        </svg>
-      ),
-    },
-    {
-      key: "hesabim",
-      label: "Hesabım",
-      href: "/iletisim/",
-      isActive:
-        pathname.startsWith("/iletisim") || pathname.startsWith("/yonetim"),
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width={20}
-          height={20}
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={1.8}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <circle cx="12" cy="8" r="4" />
-          <path d="M5 20a7 7 0 0 1 14 0" />
-        </svg>
-      ),
-    },
   ];
 
   return (
@@ -137,7 +132,7 @@ export function MobileBottomNav() {
       className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-[#180E16]/98 px-2 pb-[env(safe-area-inset-bottom)] pt-1.5 text-[#F7F3EB] shadow-[0_-8px_24px_rgba(0,0,0,0.22)] backdrop-blur-md lg:hidden"
     >
       <div className="mx-auto grid max-w-md grid-cols-5 items-center">
-        {items.map((item) => (
+        {navItems.map((item) => (
           <Link
             key={item.key}
             href={item.href}
@@ -168,6 +163,21 @@ export function MobileBottomNav() {
             </span>
           </Link>
         ))}
+
+        {/* 5th Tab: Direct WhatsApp Order / Inquiry */}
+        <a
+          href={whatsappHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex min-h-[54px] flex-col items-center justify-center gap-1 py-1"
+        >
+          <div className="flex h-8 w-13 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-300 transition-colors group-hover:bg-emerald-500/30">
+            <WhatsAppIcon size={19} />
+          </div>
+          <span className="text-[11px] font-semibold leading-none text-emerald-300">
+            WhatsApp
+          </span>
+        </a>
       </div>
     </nav>
   );

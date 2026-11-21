@@ -166,15 +166,8 @@ export default function CartPage() {
               </div>
 
               <p className="mt-3 text-xs text-[#5F505C]">
-                Ödeme adımında ürün fiyatları ve stok durumu sunucudan otomatik olarak yeniden doğrulanır.
+                Siparişiniz tek tuşla hazır liste halinde WhatsApp hattımıza iletilir.
               </p>
-
-              <Link
-                href="/odeme"
-                className="mt-5 inline-flex min-h-[48px] w-full items-center justify-center rounded-full bg-[#321B2D] px-6 text-[15px] font-semibold text-[#F7F3EB] transition-colors hover:bg-[#44253D]"
-              >
-                Ödemeye Geç
-              </Link>
 
               <button
                 type="button"
@@ -192,10 +185,10 @@ export default function CartPage() {
                   });
                   window.open(waUrl, "_blank", "noopener,noreferrer");
                 }}
-                className="mt-2.5 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-full border border-[#321B2D] bg-[#FFFDF8] px-6 text-[15px] font-semibold text-[#321B2D] transition-colors hover:bg-[#E9D9F1]"
+                className="mt-5 inline-flex min-h-[50px] w-full items-center justify-center gap-2.5 rounded-full bg-[#321B2D] px-6 text-[15px] font-semibold text-[#F7F3EB] shadow-sm transition-colors hover:bg-[#44253D]"
               >
-                <WhatsAppIcon size={18} />
-                <span>Sepeti WhatsApp&apos;tan Paylaş</span>
+                <WhatsAppIcon size={19} />
+                <span>WhatsApp&apos;tan Sipariş Ver</span>
               </button>
             </div>
           </aside>

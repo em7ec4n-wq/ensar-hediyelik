@@ -341,11 +341,6 @@ export default function AdminPanelPage() {
       count: `${store.categories.length}`,
     },
     { key: "vitrin", title: "Ana Vitrin", count: "3 Slayt" },
-    {
-      key: "siparisler",
-      title: "Siparişler",
-      count: `${store.orders.length}`,
-    },
     { key: "magaza", title: "Ayarlar & Logo" },
   ];
 
@@ -381,9 +376,9 @@ export default function AdminPanelPage() {
         </Link>
       </div>
 
-      {/* 2. SEGMENTED TAB BOX (All tabs visible in clean grid on mobile — nothing clipped!) */}
+      {/* 2. SEGMENTED TAB BOX (4 clear tabs in a 2x2 mobile / 4-col desktop grid) */}
       <div className="mt-4 rounded-2xl border border-[#E5DCD0] bg-[#EFE9DF] p-1.5">
-        <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-5">
+        <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-4">
           {MENU_TABS.map((tab) => {
             const active = activeTab === tab.key;
             return (
