@@ -3,8 +3,9 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useCart } from "@/components/CartProvider";
-import { formatPriceTRY } from "@/lib/format";
+import { formatPriceTRY, buildWhatsAppCartUrl } from "@/lib/format";
 import { loadClientStore } from "@/lib/client-store";
+import { WhatsAppIcon } from "@/components/Icons";
 import type { StoreSettings } from "@/types/store";
 
 export default function CartPage() {
@@ -194,6 +195,28 @@ export default function CartPage() {
               >
                 Ödemeye Geç
               </Link>
+
+              <button
+                type="button"
+                onClick={() => {
+                  const waUrl = buildWhatsAppCartUrl({
+                    whatsappNumber: settings?.whatsappNumber || "905413567162",
+                    items,
+                    subtotal,
+                    shippingFee,
+                    total,
+                    origin:
+                      typeof window !== "undefined"
+                        ? window.location.origin
+                        : undefined,
+                  });
+                  window.open(waUrl, "_blank", "noopener,noreferrer");
+                }}
+                className="mt-2.5 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-full border border-[#321B2D] bg-[#FFFDF8] px-6 text-[15px] font-semibold text-[#321B2D] transition-colors hover:bg-[#E9D9F1]"
+              >
+                <WhatsAppIcon size={18} />
+                <span>Sepeti WhatsApp&apos;tan Paylaş</span>
+              </button>
             </div>
           </aside>
         </div>
