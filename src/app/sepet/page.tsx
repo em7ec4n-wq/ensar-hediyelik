@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useCart } from "@/components/CartProvider";
 import { useLiveStore } from "@/components/StoreProvider";
+import { sanitizeProductImage } from "@/lib/client-store";
 import {
   encodeSiparisQuery,
   formatTRYExact,
@@ -51,15 +52,25 @@ export default function CartPage() {
     payment: paymentNote.trim() || "-",
     address: addressNote.trim() || "-",
     entries: items.map((item) => {
-      const prod = store.products.find((p) => p.id === item.productId);
+      const prod = store.products.find(
+        (p) =>
+          p.id === item.productId ||
+          p.sku.toUpperCase() === item.sku.toUpperCase() ||
+          p.slug === item.slug
+      );
       const catName = prod
         ? catMap.get(prod.categorySlug) || "HEDİYELİK"
         : "HEDİYELİK";
+      const validImage = sanitizeProductImage(
+        prod?.image || item.image,
+        prod?.id || item.productId,
+        prod?.sku || item.sku
+      );
       return {
         sku: item.sku,
-        name: item.name,
+        name: prod?.name || item.name,
         categoryName: catName.toLocaleUpperCase("tr-TR"),
-        image: item.image,
+        image: validImage,
         unitPrice: item.unitPrice,
         quantity: item.quantity,
         selectedOption: item.selectedOption,
@@ -234,13 +245,21 @@ export default function CartPage() {
               <div className="mt-4 space-y-3">
                 {items.map((item) => {
                   const prod = store.products.find(
-                    (p) => p.id === item.productId
+                    (p) =>
+                      p.id === item.productId ||
+                      p.sku.toUpperCase() === item.sku.toUpperCase() ||
+                      p.slug === item.slug
                   );
                   const catName = (
                     prod
                       ? catMap.get(prod.categorySlug) || "HEDİYELİK"
                       : "HEDİYELİK"
                   ).toLocaleUpperCase("tr-TR");
+                  const resolvedImg = sanitizeProductImage(
+                    prod?.image || item.image,
+                    prod?.id || item.productId,
+                    prod?.sku || item.sku
+                  );
 
                   return (
                     <div
@@ -253,8 +272,12 @@ export default function CartPage() {
                           className="h-[80px] w-[80px] shrink-0 overflow-hidden rounded-[10px] border border-[#F0F0F0] bg-white p-1"
                         >
                           <img
-                            src={item.image}
+                            src={resolvedImg}
                             alt={item.name}
+                            onError={(e) => {
+                              e.currentTarget.src =
+                                "/ensar-web/gorseller/hero-astronot-cam-kure.webp";
+                            }}
                             className="h-full w-full object-contain"
                           />
                         </Link>

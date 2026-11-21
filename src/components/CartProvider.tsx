@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useEffect, useState, useCallback } from "react";
 import type { CartItem } from "@/types/store";
+import { sanitizeProductImage } from "@/lib/client-store";
 
 const CART_STORAGE_KEY = "ensar_hediyelik_cart_v1";
 
@@ -29,7 +30,12 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       if (raw) {
         const parsed = JSON.parse(raw);
         if (Array.isArray(parsed)) {
-          setItems(parsed);
+          setItems(
+            parsed.map((it: CartItem) => ({
+              ...it,
+              image: sanitizeProductImage(it.image, it.productId, it.sku),
+            }))
+          );
         }
       }
     } catch {

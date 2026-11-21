@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useCart } from "@/components/CartProvider";
 import { useLiveStore } from "@/components/StoreProvider";
+import { sanitizeProductImage } from "@/lib/client-store";
 import {
   decodeSiparisQuery,
   encodeSiparisQuery,
@@ -260,8 +261,12 @@ function SiparisListesiInner() {
             >
               <div className="h-[84px] w-[84px] shrink-0 overflow-hidden rounded-[10px] border border-[#F0F0F0] bg-white p-1">
                 <img
-                  src={item.image}
+                  src={sanitizeProductImage(item.image, undefined, item.sku)}
                   alt={item.name}
+                  onError={(e) => {
+                    e.currentTarget.src =
+                      "/ensar-web/gorseller/hero-astronot-cam-kure.webp";
+                  }}
                   className="h-full w-full object-contain"
                 />
               </div>
