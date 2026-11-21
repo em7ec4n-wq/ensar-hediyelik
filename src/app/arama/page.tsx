@@ -124,7 +124,7 @@ function SearchContent() {
           </div>
         </div>
       ) : (
-        <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+        <div className="mt-6 grid grid-cols-2 gap-3 sm:gap-5 lg:gap-6">
           {results.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

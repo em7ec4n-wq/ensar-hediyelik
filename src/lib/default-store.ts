@@ -32,8 +32,8 @@ export const DEFAULT_STORE_DATA: StoreData = {
     {
       id: "slide-astronot",
       titleLines: ["Her anın", "bir hediyesi", "var."],
-      buttonLabel: "Hediyeni Bul",
-      buttonHref: "#hediyeni-bul",
+      buttonLabel: "Kategorileri İncele",
+      buttonHref: "/kategoriler/",
       image: "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
       imageAlt:
         "Ahşap tabanlı, sıcak LED ışıklı astronot ve gezegen figürlü kristal cam küre",

@@ -120,11 +120,6 @@ export function Header({ settings, categories }: HeaderProps) {
                       className="flex items-center justify-between rounded-xl px-3.5 py-2 text-sm text-[#241722] hover:bg-[#F7F3EB]"
                     >
                       <span>{cat.name}</span>
-                      {cat.slug === "yilbasi" && (
-                        <span className="rounded-full bg-[#E9D9F1] px-2 py-0.5 text-[10px] font-semibold text-[#321B2D]">
-                          10 alt kategori
-                        </span>
-                      )}
                     </Link>
                   ))}
               </div>
@@ -139,10 +134,10 @@ export function Header({ settings, categories }: HeaderProps) {
           </Link>
 
           <Link
-            href="/#hediyeni-bul"
+            href="/#misyon-vizyon"
             className="text-[15px] font-medium text-[#241722] transition-colors hover:text-[#321B2D]"
           >
-            Hediyeni Bul
+            Misyon &amp; Vizyon
           </Link>
         </nav>
 
@@ -278,11 +273,11 @@ export function Header({ settings, categories }: HeaderProps) {
             </li>
             <li>
               <Link
-                href="/#hediyeni-bul"
+                href="/#misyon-vizyon"
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex min-h-[44px] items-center rounded-xl px-3 text-[15px] font-medium text-[#241722] hover:bg-[#F7F3EB]"
               >
-                Hediyeni Bul
+                Misyon &amp; Vizyon
               </Link>
             </li>
             <li>

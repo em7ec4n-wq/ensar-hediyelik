@@ -876,14 +876,10 @@ export default function AdminPanelPage() {
               </span>
               {[
                 { slug: "all", label: "Tümü" },
-                { slug: "kar-kureleri", label: "Kar Küreleri" },
-                { slug: "noel-baba", label: "Noel Baba" },
-                { slug: "fanuslar", label: "Fanuslar" },
-                { slug: "isiklar-ve-lambalar", label: "Işıklar & Lambalar" },
-                { slug: "biblolar-ve-dekorlar", label: "Biblolar" },
-                { slug: "hediye-cantalari", label: "Hediye Çantaları" },
-                { slug: "agac-susleri", label: "Ağaç Süsleri" },
-                { slug: "yilbasi-agaclari", label: "Yılbaşı Ağaçları" },
+                ...store.categories.map((c) => ({
+                  slug: c.slug,
+                  label: c.name,
+                })),
               ].map((chip) => (
                 <button
                   key={chip.slug}

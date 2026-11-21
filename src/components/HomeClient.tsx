@@ -5,17 +5,15 @@ import Link from "next/link";
 import { useLiveStore } from "./StoreProvider";
 import { formatPriceTRY } from "@/lib/format";
 import { HeroCarousel } from "./HeroCarousel";
-import { GiftFinder } from "./GiftFinder";
 import { ChevronRightIcon, GiftIcon } from "./Icons";
 import { getProductHref } from "./ProductCard";
+import { getCategoryHref } from "./CategoriesClient";
 
 export function HomeClient() {
   const { store } = useLiveStore();
 
-  const homeCategories = store.categories
-    .filter((c) => c.showOnHome)
-    .sort((a, b) => (a.homeOrder ?? 99) - (b.homeOrder ?? 99))
-    .slice(0, 4);
+  // Order categories cleanly with Yılbaşı Ürünleri and main categories stacked vertically & larger
+  const allMainCategories = store.categories.filter((c) => !c.parentSlug);
 
   const newArrivals = store.products
     .filter((p) => p.published && p.isNewArrival)
@@ -27,38 +25,34 @@ export function HomeClient() {
       {/* 1. Three-Slide Hero */}
       <HeroCarousel slides={store.heroSlides} />
 
-      {/* 2. Hediyeni Bul (Tool 1) */}
-      <GiftFinder products={store.products} />
-
-      {/* 3. Kategorileri Keşfet */}
+      {/* 2. Kategorileri Keşfet (Tek tek alt alta, büyük boy ve sade) */}
       <section
         aria-labelledby="kategorileri-kesfet-baslik"
         className="ensar-container pt-10 lg:pt-14"
       >
         <div className="flex flex-wrap items-end justify-between gap-3">
-          <h2
-            id="kategorileri-kesfet-baslik"
-            className="font-heading text-[28px] font-medium text-[#241722] lg:text-[36px]"
-          >
-            Kategorileri Keşfet
-          </h2>
-          <Link
-            href="/kategori/yilbasi/"
-            className="inline-flex min-h-[40px] items-center gap-1.5 rounded-full bg-[#E9D9F1] px-4 py-1.5 text-xs font-semibold text-[#321B2D] transition-colors hover:bg-[#321B2D] hover:text-[#F7F3EB] sm:text-sm"
-          >
-            <span>Yılbaşı Koleksiyonu (230 Ürün)</span>
-            <ChevronRightIcon size={15} />
-          </Link>
+          <div>
+            <h2
+              id="kategorileri-kesfet-baslik"
+              className="font-heading text-[30px] font-medium text-[#241722] lg:text-[38px]"
+            >
+              Kategorileri Keşfet
+            </h2>
+            <p className="mt-1 text-sm text-[#5F505C]">
+              İncelemek istediğiniz ürün grubunu seçin
+            </p>
+          </div>
         </div>
 
-        <div className="mt-5 grid grid-cols-2 gap-3.5 sm:gap-5 lg:grid-cols-4 lg:gap-6">
-          {homeCategories.map((cat) => (
+        {/* Tek tek alt alta (her satırda 1 büyük kategori kartı) */}
+        <div className="mx-auto mt-5 max-w-2xl grid grid-cols-1 gap-5">
+          {allMainCategories.map((cat) => (
             <Link
               key={cat.slug}
-              href={`/kategori/${cat.slug}/`}
+              href={getCategoryHref(cat.slug)}
               className="ensar-card group overflow-hidden transition-transform duration-300 hover:-translate-y-0.5"
             >
-              <div className="aspect-[1/0.94] w-full overflow-hidden bg-[#241320]">
+              <div className="aspect-[16/10] w-full overflow-hidden bg-[#241320]">
                 <img
                   src={cat.image}
                   alt={cat.imageAlt}
@@ -66,12 +60,12 @@ export function HomeClient() {
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="flex min-h-[48px] items-center justify-center gap-1 bg-[#FFFDF8] px-3 py-3 text-center">
-                <span className="text-[14px] font-medium text-[#241722] sm:text-[16px]">
+              <div className="flex min-h-[56px] items-center justify-center gap-1.5 bg-[#FFFDF8] px-4 py-3.5 text-center">
+                <span className="text-[18px] font-medium text-[#241722] sm:text-[20px]">
                   {cat.name}
                 </span>
                 <ChevronRightIcon
-                  size={15}
+                  size={18}
                   className="text-[#5F505C] transition-transform group-hover:translate-x-0.5"
                 />
               </div>
@@ -80,11 +74,11 @@ export function HomeClient() {
         </div>
       </section>
 
-      {/* 4. Yeni Gelenler */}
+      {/* 3. Yeni Gelenler */}
       <section
         id="yeni-gelenler"
         aria-labelledby="yeni-gelenler-baslik"
-        className="ensar-container scroll-mt-24 pt-10 lg:pt-14"
+        className="ensar-container scroll-mt-24 pt-12 lg:pt-16"
       >
         <h2
           id="yeni-gelenler-baslik"
@@ -93,34 +87,26 @@ export function HomeClient() {
           Yeni Gelenler
         </h2>
 
-        <div className="mt-5 grid grid-cols-2 gap-3.5 sm:gap-5 lg:grid-cols-3 lg:gap-6">
-          {newArrivals.map((product, index) => (
+        <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-3 lg:gap-6">
+          {newArrivals.map((product) => (
             <Link
               key={product.id}
               href={getProductHref(product.slug)}
-              className={`ensar-card group overflow-hidden transition-transform duration-300 hover:-translate-y-0.5 ${
-                index === 2 ? "col-span-2 lg:col-span-1" : ""
-              }`}
+              className="group overflow-hidden rounded-[16px] border border-[#E5DCD0] bg-white shadow-[0_6px_20px_rgba(36,23,34,0.06)] transition-transform duration-300 hover:-translate-y-0.5"
             >
-              <div
-                className={`w-full overflow-hidden bg-[#241320] ${
-                  index === 2
-                    ? "aspect-[16/10] lg:aspect-[4/3.1]"
-                    : "aspect-[4/3.4] lg:aspect-[4/3.1]"
-                }`}
-              >
+              <div className="aspect-[4/3.2] w-full overflow-hidden bg-white p-2">
                 <img
                   src={product.image}
                   alt={product.imageAlt}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="flex flex-col items-center justify-center bg-[#FFFDF8] px-3 py-3.5 text-center">
-                <h3 className="text-[14px] font-medium text-[#241722] sm:text-[16px]">
+              <div className="flex flex-col items-center justify-center bg-white px-4 py-4 text-center">
+                <h3 className="text-[16px] font-medium text-[#241722]">
                   {product.shortName || product.name}
                 </h3>
-                <p className="mt-0.5 text-xs font-medium text-[#5F505C]">
+                <p className="mt-1 text-sm font-bold text-[#321B2D]">
                   {formatPriceTRY(product.price)}
                 </p>
               </div>
@@ -129,10 +115,10 @@ export function HomeClient() {
         </div>
       </section>
 
-      {/* 5. Işıklı Hediyeler Vitrin */}
+      {/* 4. Işıklı Hediyeler Vitrin */}
       <section
         aria-labelledby="isikli-hediyeler-baslik"
-        className="ensar-container pt-10 lg:pt-14"
+        className="ensar-container pt-12 lg:pt-16"
       >
         <div className="relative flex h-[200px] items-center justify-between overflow-hidden rounded-[16px] bg-[#321B2D] text-[#F7F3EB] lg:h-[320px]">
           <div className="relative z-10 flex max-w-[58%] flex-col items-start justify-center pl-5 pr-3 sm:pl-10 lg:max-w-[50%] lg:pl-14">
@@ -162,9 +148,53 @@ export function HomeClient() {
               loading="lazy"
               className="h-full w-full object-cover object-center"
             />
-            <span className="absolute bottom-2 right-3 z-10 rounded-full bg-black/45 px-2 py-0.5 text-[10px] italic text-[#F7F3EB]/85">
-              Konsept görsel
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Misyonumuz & Vizyonumuz */}
+      <section
+        id="misyon-vizyon"
+        aria-labelledby="misyon-vizyon-baslik"
+        className="ensar-container scroll-mt-24 pt-12 lg:pt-16"
+      >
+        <div className="rounded-[20px] border border-[#E5DCD0] bg-white p-6 shadow-[0_6px_20px_rgba(36,23,34,0.05)] sm:p-8 lg:p-10">
+          <div className="max-w-2xl">
+            <span className="inline-block rounded-full bg-[#E9D9F1] px-3.5 py-1 text-xs font-semibold text-[#321B2D]">
+              Ensar Hediyelik Hakkında
             </span>
+            <h2
+              id="misyon-vizyon-baslik"
+              className="font-heading mt-3 text-[28px] font-medium text-[#241722] lg:text-[36px]"
+            >
+              Misyonumuz &amp; Vizyonumuz
+            </h2>
+          </div>
+
+          <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div className="rounded-2xl border border-[#EFE7DC] bg-[#FFFDF8] p-6">
+              <h3 className="font-heading text-[22px] font-medium text-[#321B2D]">
+                Misyonumuz
+              </h3>
+              <p className="mt-2.5 text-sm leading-relaxed text-[#4C3C49] sm:text-[15px]">
+                Her özel günü ve anlamlı anı unutulmaz kılacak kaliteli, estetik
+                ve özenle seçilmiş hediyelik ürünleri ulaşılabilir fiyatlarla
+                müşterilerimize sunmak; hızlı iletişim ve güvenilir hizmet
+                anlayışıyla alışverişin her adımında memnuniyet sağlamaktır.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-[#EFE7DC] bg-[#FFFDF8] p-6">
+              <h3 className="font-heading text-[22px] font-medium text-[#321B2D]">
+                Vizyonumuz
+              </h3>
+              <p className="mt-2.5 text-sm leading-relaxed text-[#4C3C49] sm:text-[15px]">
+                Cam kürelerden müzik kutularına, dekoratif objelerden sezonluk
+                koleksiyonlara kadar Türkiye&apos;nin her noktasına yenilikçi ve
+                zengin ürün çeşitliliğiyle ulaşan, hediyelik eşya sektöründe
+                güven ve kalitenin ilk akla gelen öncü markası olmaktır.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -172,7 +202,7 @@ export function HomeClient() {
       {/* 6. Hediye Seçim Rehberi Bar */}
       <section
         aria-label="Hediye Seçim Rehberi"
-        className="mt-8 border-t border-[#E5DCD0] bg-[#FFFDF8] lg:mt-12"
+        className="mt-10 border-t border-[#E5DCD0] bg-[#FFFDF8] lg:mt-14"
       >
         <div className="ensar-container">
           <Link

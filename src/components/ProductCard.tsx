@@ -49,21 +49,21 @@ export function ProductCard({ product }: ProductCardProps) {
         )}
       </div>
 
-      <div className="flex flex-1 flex-col justify-between bg-white p-4">
+      <div className="flex flex-1 flex-col justify-between bg-white p-2.5 sm:p-4">
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-wider text-[#6F606C]">
+          <p className="text-[10px] font-semibold uppercase tracking-wider text-[#6F606C] sm:text-[11px]">
             {product.sku}
           </p>
-          <h3 className="mt-1 text-[15px] font-medium leading-snug text-[#241722] sm:text-[16px]">
+          <h3 className="mt-0.5 line-clamp-2 text-[13px] font-medium leading-snug text-[#241722] sm:mt-1 sm:text-[16px]">
             {product.name}
           </h3>
         </div>
 
-        <div className="mt-3 flex items-center justify-between border-t border-[#F2ECE4] pt-3">
-          <span className="text-[17px] font-bold text-[#321B2D]">
+        <div className="mt-2.5 flex items-center justify-between border-t border-[#F2ECE4] pt-2.5 sm:mt-3 sm:pt-3">
+          <span className="text-[14px] font-bold text-[#321B2D] sm:text-[17px]">
             {formatPriceTRY(product.price)}
           </span>
-          <span className="rounded-full bg-[#F7F3EB] px-3 py-1 text-xs font-semibold text-[#321B2D] transition-colors group-hover:bg-[#321B2D] group-hover:text-white">
+          <span className="rounded-full bg-[#F7F3EB] px-2 py-0.5 text-[11px] font-semibold text-[#321B2D] transition-colors group-hover:bg-[#321B2D] group-hover:text-white sm:px-3 sm:py-1 sm:text-xs">
             İncele →
           </span>
         </div>
