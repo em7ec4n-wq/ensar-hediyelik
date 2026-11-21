@@ -2,18 +2,31 @@ import React from "react";
 import Link from "next/link";
 import type { Product } from "@/types/store";
 import { formatPriceTRY } from "@/lib/format";
+import { DEFAULT_STORE_DATA } from "@/lib/default-store";
+
+const STATIC_PRODUCT_SLUGS = new Set(
+  DEFAULT_STORE_DATA.products.map((p) => p.slug)
+);
 
 interface ProductCardProps {
   product: Product;
   previewMode?: boolean;
 }
 
+export function getProductHref(slug: string): string {
+  if (STATIC_PRODUCT_SLUGS.has(slug)) {
+    return `/urun/${slug}/`;
+  }
+  return `/urun/detay/?slug=${encodeURIComponent(slug)}`;
+}
+
 export function ProductCard({ product }: ProductCardProps) {
   const galleryCount = product.gallery?.length || 1;
+  const href = getProductHref(product.slug);
 
   return (
     <Link
-      href={`/urun/${product.slug}`}
+      href={href}
       className="ensar-card group flex flex-col overflow-hidden transition-transform duration-300 hover:-translate-y-0.5"
     >
       <div className="relative aspect-[4/3.4] w-full overflow-hidden bg-[#FFFDF8]">

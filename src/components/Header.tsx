@@ -12,6 +12,7 @@ import {
   CloseIcon,
   ChevronDownIcon,
 } from "./Icons";
+import { getCategoryHref } from "./CategoriesClient";
 
 interface HeaderProps {
   settings: StoreSettings;
@@ -114,7 +115,7 @@ export function Header({ settings, categories }: HeaderProps) {
                   .map((cat) => (
                     <Link
                       key={cat.slug}
-                      href={`/kategori/${cat.slug}`}
+                      href={getCategoryHref(cat.slug)}
                       onClick={() => setCatDropdownOpen(false)}
                       className="flex items-center justify-between rounded-xl px-3.5 py-2 text-sm text-[#241722] hover:bg-[#F7F3EB]"
                     >
@@ -303,7 +304,7 @@ export function Header({ settings, categories }: HeaderProps) {
                   .map((cat) => (
                     <Link
                       key={cat.slug}
-                      href={`/kategori/${cat.slug}`}
+                      href={getCategoryHref(cat.slug)}
                       onClick={() => setMobileMenuOpen(false)}
                       className="flex min-h-[44px] items-center rounded-xl bg-[#F7F3EB] px-3 text-sm text-[#241722]"
                     >

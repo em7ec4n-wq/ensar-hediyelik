@@ -6,6 +6,7 @@ import { useSearchParams } from "next/navigation";
 import type { Product, StoreSettings } from "@/types/store";
 import { formatPriceTRY, buildWhatsAppProductUrl } from "@/lib/format";
 import { useCart } from "./CartProvider";
+import { useLiveStore } from "./StoreProvider";
 import { BagIcon, WhatsAppIcon } from "./Icons";
 
 interface ProductDetailClientProps {
@@ -17,18 +18,32 @@ interface ProductDetailClientProps {
 }
 
 function ProductDetailInner({
-  product,
-  settings,
-  categoryName,
+  product: initialProduct,
+  settings: initialSettings,
+  categoryName: initialCategoryName,
   parentCategorySlug,
   parentCategoryName,
 }: ProductDetailClientProps) {
+  const { store } = useLiveStore();
+  const product =
+    store.products.find(
+      (p) => p.id === initialProduct.id || p.slug === initialProduct.slug
+    ) || initialProduct;
+  const settings = store.settings || initialSettings;
+  const categoryName =
+    store.categories.find((c) => c.slug === product.categorySlug)?.name ||
+    initialCategoryName;
+
   const searchParams = useSearchParams();
   const isPreview = searchParams.get("onizleme") === "1";
 
   const { addItem } = useCart();
   const gallery = product.gallery?.length ? product.gallery : [product.image];
   const [activeImage, setActiveImage] = useState(gallery[0]);
+
+  React.useEffect(() => {
+    setActiveImage(product.gallery?.[0] || product.image);
+  }, [product.image, product.gallery]);
 
   const primaryOption = product.options?.[0];
   const [selectedOption, setSelectedOption] = useState<string>("");

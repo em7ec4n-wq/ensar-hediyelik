@@ -4,6 +4,7 @@ import React, { Suspense, useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import type { Category, Product } from "@/types/store";
+import { useLiveStore } from "./StoreProvider";
 import { ProductCard } from "./ProductCard";
 
 interface CategoryCatalogClientProps {
@@ -14,29 +15,44 @@ interface CategoryCatalogClientProps {
 }
 
 function CategoryCatalogInner({
-  category,
-  parentCategory,
-  subcategories,
-  allCategoryProducts,
+  category: initialCategory,
 }: CategoryCatalogClientProps) {
+  const { store } = useLiveStore();
   const searchParams = useSearchParams();
   const onlyPublished = searchParams.get("yayinda") === "1";
   const [activeSubSlug, setActiveSubSlug] = useState<string>("all");
 
+  const category =
+    store.categories.find((c) => c.slug === initialCategory.slug) ||
+    initialCategory;
+
+  const parentCategory = category.parentSlug
+    ? store.categories.find((c) => c.slug === category.parentSlug)
+    : undefined;
+
+  const subcategories = useMemo(
+    () => store.categories.filter((c) => c.parentSlug === category.slug),
+    [store.categories, category.slug]
+  );
+
+  const allCategoryProducts = useMemo(() => {
+    const subSlugs = new Set(subcategories.map((s) => s.slug));
+    return store.products.filter(
+      (p) =>
+        p.categorySlug === category.slug ||
+        p.extraCategorySlugs?.includes(category.slug) ||
+        subSlugs.has(p.categorySlug)
+    );
+  }, [store.products, category.slug, subcategories]);
+
   const visibleProducts = useMemo(() => {
     const base = onlyPublished
       ? allCategoryProducts.filter((p) => p.published)
-      : allCategoryProducts;
+      : allCategoryProducts.filter((p) => p.published);
 
     if (activeSubSlug === "all") return base;
     return base.filter((p) => p.categorySlug === activeSubSlug);
   }, [allCategoryProducts, onlyPublished, activeSubSlug]);
-
-  const draftCount = useMemo(
-    () => allCategoryProducts.filter((p) => !p.published).length,
-    [allCategoryProducts]
-  );
-  const isPreview = draftCount > 0 && !onlyPublished;
 
   return (
     <div className="ensar-container py-8 lg:py-12">
@@ -52,11 +68,7 @@ function CategoryCatalogInner({
           <>
             <span className="mx-2">/</span>
             <Link
-              href={
-                isPreview
-                  ? `/kategori/${parentCategory.slug}?onizleme=1`
-                  : `/kategori/${parentCategory.slug}`
-              }
+              href={`/kategori/${parentCategory.slug}`}
               className="hover:text-[#321B2D]"
             >
               {parentCategory.name}
@@ -66,22 +78,6 @@ function CategoryCatalogInner({
         <span className="mx-2">/</span>
         <span className="font-medium text-[#241722]">{category.name}</span>
       </nav>
-
-      {isPreview && (
-        <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-[#321B2D]/20 bg-[#E9D9F1]/70 px-4 py-3 text-sm text-[#321B2D]">
-          <span>
-            <strong>Yetkili Önizleme Modu:</strong> Bu görünümde taslak ürünler (
-            {draftCount} adet) de listelenmektedir. Halka açık sitede yalnızca
-            yayınlanmış ürünler görünür.
-          </span>
-          <Link
-            href={`/kategori/${category.slug}`}
-            className="rounded-full bg-[#321B2D] px-4 py-1.5 text-xs font-semibold text-[#F7F3EB]"
-          >
-            Önizlemeden Çık
-          </Link>
-        </div>
-      )}
 
       <div className="mt-4 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
         <div className="max-w-2xl">
@@ -110,18 +106,14 @@ function CategoryCatalogInner({
             }`}
           >
             Tümü (
-            {isPreview
-              ? allCategoryProducts.length
-              : allCategoryProducts.filter((p) => p.published).length}
+            {allCategoryProducts.filter((p) => p.published).length}
             )
           </button>
 
           {subcategories.map((sub) => {
-            const subCount = (
-              isPreview
-                ? allCategoryProducts
-                : allCategoryProducts.filter((p) => p.published)
-            ).filter((p) => p.categorySlug === sub.slug).length;
+            const subCount = allCategoryProducts.filter(
+              (p) => p.published && p.categorySlug === sub.slug
+            ).length;
 
             return (
               <button
@@ -144,14 +136,8 @@ function CategoryCatalogInner({
       {visibleProducts.length === 0 ? (
         <div className="ensar-card mt-8 p-8 text-center">
           <p className="text-base font-medium text-[#241722]">
-            Bu kategoride şu anda yayınlanmış ürün bulunmamaktadır.
+            Bu kategoride şu anda ürün bulunmamaktadır.
           </p>
-          {draftCount > 0 && !isPreview && (
-            <p className="mt-1.5 text-xs text-[#5F505C]">
-              Bu kategoriye ait taslak ürünler yönetim panelinden fiyat ve stok
-              onayı sonrası yayına alınacaktır.
-            </p>
-          )}
           <div className="mt-5 flex flex-wrap justify-center gap-3">
             <Link
               href="/kategoriler"
@@ -164,11 +150,7 @@ function CategoryCatalogInner({
       ) : (
         <div className="mt-7 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-5">
           {visibleProducts.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              previewMode={isPreview}
-            />
+            <ProductCard key={product.id} product={product} />
           ))}
         </div>
       )}

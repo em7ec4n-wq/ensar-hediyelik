@@ -3,9 +3,8 @@ import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { readStore } from "@/lib/store-server";
 import { CartProvider } from "@/components/CartProvider";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { SplashOverlay } from "@/components/SplashOverlay";
+import { StoreProvider } from "@/components/StoreProvider";
+import { LiveAppShell } from "@/components/LiveAppShell";
 
 const playfair = Playfair_Display({
   subsets: ["latin", "latin-ext"],
@@ -53,20 +52,13 @@ export default function RootLayout({
   const store = readStore();
 
   return (
-    <html
-      lang="tr"
-      className={`${playfair.variable} ${dmSans.variable}`}
-    >
+    <html lang="tr" className={`${playfair.variable} ${dmSans.variable}`}>
       <body className="flex min-h-screen flex-col bg-[#F7F3EB] text-[#241722] antialiased">
-        <CartProvider>
-          <SplashOverlay
-            logoSrc={store.settings.logoLightBg}
-            brandName={store.settings.brandName}
-          />
-          <Header settings={store.settings} categories={store.categories} />
-          <main className="flex-1">{children}</main>
-          <Footer settings={store.settings} />
-        </CartProvider>
+        <StoreProvider initialStore={store}>
+          <CartProvider>
+            <LiveAppShell>{children}</LiveAppShell>
+          </CartProvider>
+        </StoreProvider>
       </body>
     </html>
   );
