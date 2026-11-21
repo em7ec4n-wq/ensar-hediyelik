@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+:root {
+  --bg-cream: #F7F3EB;
+  --surface-ivory: #FFFDF8;
+  --plum-dark: #321B2D;
+  --plum-hover: #44253D;
+  --lavender-panel: #E9D9F1;
+  --text-primary: #241722;
+  --text-muted: #5F505C;
+  --border-beige: #E5DCD0;
+  --card-shadow: 0 6px 20px rgba(36, 23, 34, 0.06);
+}
+
+@theme inline {
+  --color-cream: #F7F3EB;
+  --color-ivory: #FFFDF8;
+  --color-plum: #321B2D;
+  --color-plum-hover: #44253D;
+  --color-lavender: #E9D9F1;
+  --color-ink: #241722;
+  --color-ink-muted: #5F505C;
+  --color-beige-border: #E5DCD0;
+  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-dm-sans), system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-cream);
+  color: var(--text-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: var(--bg-cream);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.font-heading {
+  font-family: var(--font-serif);
+}
+
+.ensar-card {
+  background-color: var(--surface-ivory);
+  border: 1px solid var(--border-beige);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+}
+
+/* Slanted plum edge on desktop hero */
+.hero-plum-clip {
+  clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%);
+}
+
+/* Container matching 1440px max-width, 36-48px desktop padding, 16px mobile padding */
+.ensar-container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 1024px) {
+  .ensar-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ensar-container {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid #321B2D;
+  outline-offset: 2px;
+}
+
+select.ensar-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none;
+}
+
+@keyframes ensarSplashFade {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.ensar-splash {
+  animation: ensarSplashFade 680ms ease-out forwards;
+}
