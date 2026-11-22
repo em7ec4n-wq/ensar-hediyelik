@@ -234,6 +234,16 @@
       "homeOrder": 5,
       "parentSlug": "anahtarliklar",
       "isConceptImage": false
+    },
+    {
+      "slug": "trend-urunler",
+      "name": "Trend Ürünler",
+      "description": "Trend Ürünler koleksiyonundaki ürünler.",
+      "image": "/ensar-web/gorseller/kategori-cam-kure.webp",
+      "imageAlt": "Trend Ürünler",
+      "showOnHome": true,
+      "homeOrder": 5,
+      "isConceptImage": false
     }
   ],
   "products": [
