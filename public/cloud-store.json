@@ -229,7 +229,7 @@
       "slug": "trend-urunler",
       "name": "Trend Ürünler",
       "description": "Trend Ürünler koleksiyonundaki ürünler.",
-      "image": "/ensar-web/gorseller/kategori-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795382571524-gg2za-IMG_4493.jpeg",
       "imageAlt": "Trend Ürünler",
       "showOnHome": true,
       "homeOrder": 5,
