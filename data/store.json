@@ -193,6 +193,26 @@
       "showOnHome": true,
       "homeOrder": 9,
       "isConceptImage": false
+    },
+    {
+      "slug": "peluslar",
+      "name": "Peluşlar",
+      "description": "Peluşlar koleksiyonundaki ürünler.",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795377434388-llcjt-IMG_0548.jpeg",
+      "imageAlt": "Peluşlar",
+      "showOnHome": true,
+      "homeOrder": 5,
+      "isConceptImage": false
+    },
+    {
+      "slug": "peluslar-2",
+      "name": "Peluşlar",
+      "description": "Peluşlar koleksiyonundaki ürünler.",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795377434388-llcjt-IMG_0548.jpeg",
+      "imageAlt": "Peluşlar",
+      "showOnHome": true,
+      "homeOrder": 5,
+      "isConceptImage": false
     }
   ],
   "products": [
