@@ -138,7 +138,7 @@
       "slug": "cam-kureler",
       "name": "Cam Küreler",
       "description": "Ahşap tabanlı USB'li 3D lazer işleme ışıklı kristal cam küre çeşitleri.",
-      "image": "/ensar-web/gorseller/kategori-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795380178979-bxchn-IMG_4483.jpeg",
       "imageAlt": "Cam Küreler",
       "showOnHome": true,
       "homeOrder": 4,
