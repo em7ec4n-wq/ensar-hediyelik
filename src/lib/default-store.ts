@@ -1,8 +1,8 @@
 import type { Category, Product, StoreData } from "@/types/store";
 import yilbasiCatalog from "@/data/yilbasi-catalog.json";
 
-const YILBASI_CATEGORIES = (yilbasiCatalog.categories || []) as Category[];
-const YILBASI_PRODUCTS = (yilbasiCatalog.products || []) as Product[];
+const CATALOG_CATEGORIES = (yilbasiCatalog.categories || []) as Category[];
+const CATALOG_PRODUCTS = (yilbasiCatalog.products || []) as Product[];
 
 export const DEFAULT_STORE_DATA: StoreData = {
   settings: {
@@ -13,9 +13,11 @@ export const DEFAULT_STORE_DATA: StoreData = {
     phoneDisplay: "+90 541 356 71 62",
     whatsappNumber: "905413567162",
     email: "info@ensarhediyelik.com.tr",
-    address: "İstanbul, Türkiye (Onaylı işletme adresi yayın öncesi güncellenecektir)",
+    address:
+      "İstanbul, Türkiye (Onaylı işletme adresi yayın öncesi güncellenecektir)",
     workingHours: "Pazartesi – Cumartesi: 09:30 – 19:00",
-    legalEntityName: "Ensar Hediyelik (Ticari unvan yayın öncesi işletme tarafından onaylanacaktır)",
+    legalEntityName:
+      "Ensar Hediyelik (Ticari unvan yayın öncesi işletme tarafından onaylanacaktır)",
     taxOfficeAndNo: "Vergi dairesi ve numarası müşteri onayı ile eklenecektir",
     shippingThreshold: 0,
     shippingFee: 0,
@@ -45,7 +47,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
       id: "slide-piyano",
       titleLines: ["Müzik Kutularını", "Keşfet"],
       buttonLabel: "Müzik Kutularını Keşfet",
-      buttonHref: "/kategori/muzik-kutulari",
+      buttonHref: "/kategori/muzik-kutulari/",
       image: "/ensar-web/gorseller/hero-balerinli-piyano.webp",
       imageAlt:
         "Açık kapaklı pembe kurmalı müzikli balerinli piyano müzik kutusu",
@@ -57,7 +59,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
       id: "slide-gul-fanusu",
       titleLines: ["Işıklı", "Hediyeler"],
       buttonLabel: "Koleksiyonu İncele",
-      buttonHref: "/kategori/isikli-hediyeler",
+      buttonHref: "/kategori/isikli-hediyeler/",
       image: "/ensar-web/gorseller/hero-solmayan-gul-fanusu.webp",
       imageAlt:
         "Ahşap tabanlı cam fanus içinde sıcak LED peri ışıklı kırmızı solmayan gül",
@@ -66,63 +68,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
       mobileObjectPosition: "50% 50%",
     },
   ],
-  categories: [
-    {
-      slug: "cam-kureler",
-      name: "Kar & Cam Küreler",
-      description:
-        "Büyük boy, orta boy, küçük boy ve mini boy kar küreleri ile ışıklı cam küre çeşitleri.",
-      image: "/ensar-web/gorseller/kategori-cam-kure.webp",
-      imageAlt: "Ahşap tabanlı sıcak ışıklı astronot cam küre",
-      showOnHome: true,
-      homeOrder: 1,
-      isConceptImage: true,
-    },
-    {
-      slug: "muzik-kutulari",
-      name: "Müzik Kutuları",
-      description:
-        "Balerinli piyano, nostaljik ahşap ve kurmalı mekanizmalı müzik kutuları.",
-      image: "/ensar-web/gorseller/kategori-muzik-kutusu.webp",
-      imageAlt: "Oymalı ahşap kutu içinde dönen balerin figürlü müzik kutusu",
-      showOnHome: true,
-      homeOrder: 2,
-      isConceptImage: true,
-    },
-    {
-      slug: "kum-saatleri",
-      name: "Kum Saatleri",
-      description:
-        "Masaüstü dekorasyonu için 5, 10, 15 ve 30 dakikalık metal ve cam kum saatleri.",
-      image: "/ensar-web/gorseller/kategori-kum-saati.webp",
-      imageAlt: "Pirinç görünümlü çerçeveli mor kumlu masaüstü kum saati",
-      showOnHome: true,
-      homeOrder: 3,
-      isConceptImage: true,
-    },
-    {
-      slug: "ilginc-kupalar",
-      name: "İlginç Kupalar",
-      description:
-        "Kabartma figürlü, temalı ve hediyelik porselen kupa çeşitleri.",
-      image: "/ensar-web/gorseller/kategori-ilginc-kupa.webp",
-      imageAlt: "Altın kulplu ve üç boyutlu astronot kabartmalı porselen kupa",
-      showOnHome: true,
-      homeOrder: 4,
-      isConceptImage: true,
-    },
-    {
-      slug: "isikli-hediyeler",
-      name: "Işıklı Hediyeler",
-      description:
-        "Cam fanus solmayan güller, LED'li cam küreler ve sıcak atmosferli gece lambaları.",
-      image: "/ensar-web/gorseller/vitrin-isikli-hediyeler.webp",
-      imageAlt: "Cam fanus içinde peri ışıklı solmayan kırmızı gül",
-      showOnHome: false,
-      isConceptImage: true,
-    },
-    ...YILBASI_CATEGORIES,
-  ],
+  categories: CATALOG_CATEGORIES,
   products: [
     {
       id: "prod-347",
@@ -131,7 +77,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
       name: "Astronot Büyük Boy USB'li Cam Küre",
       shortName: "Astronot Cam Küre",
       categorySlug: "cam-kureler",
-      extraCategorySlugs: ["isikli-hediyeler"],
+      extraCategorySlugs: ["isikli-hediyeler", "hediyelik-urunler"],
       description:
         "Lazer işleme kristal cam küre içerisinde astronot ve gezegen detayı bulunur. Doğal ahşap görünümlü tabanı USB kablo ile sıcak sarı LED ışık verir; gece lambası ve masaüstü hediyesi olarak idealdir.",
       price: 449,
@@ -164,6 +110,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
       name: "Müzikli Balerinli Piyano",
       shortName: "Balerinli Piyano",
       categorySlug: "muzik-kutulari",
+      extraCategorySlugs: ["sevgililer-gunu", "hediyelik-urunler"],
       description:
         "Kuyruklu piyano formunda tasarlanmış kurmalı müzik kutusu. Kapak açıldığında klasik melodi çalar ve mıknatıslı taban üzerindeki zarif balerin figürü piyano üzerinde dans eder.",
       price: 529,
@@ -196,8 +143,8 @@ export const DEFAULT_STORE_DATA: StoreData = {
       slug: "buyuk-boy-puskurtmeli-kar-kuresi",
       name: "Büyük Boy Püskürtmeli Kar Küresi",
       shortName: "Püskürtmeli Kar Küresi",
-      categorySlug: "cam-kureler",
-      extraCategorySlugs: ["isikli-hediyeler", "muzik-kutulari"],
+      categorySlug: "buyuk-boy-kar-kuresi",
+      extraCategorySlugs: ["kar-kureleri", "sevgililer-gunu"],
       description:
         "Otomatik kar püskürtme motoru, çoklu melodi ve yumuşak LED ışık geçişine sahip büyük boy kış evi temalı kar küresi. Sallamaya gerek kalmadan kar tanelerini küre içinde savurur.",
       price: 749,
@@ -211,7 +158,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
       isNewArrival: true,
       newArrivalOrder: 2,
       occasions: ["Yılbaşı", "Doğum Günü", "Sevgililer Günü", "Ev Hediyesi"],
-      giftTypes: ["Işıklı Ürünler", "Cam Küreler", "Müzik Kutuları"],
+      giftTypes: ["Işıklı Ürünler", "Kar Küreleri", "Müzik Kutuları"],
       options: [
         {
           name: "Boyut",
@@ -227,7 +174,8 @@ export const DEFAULT_STORE_DATA: StoreData = {
       slug: "buyuk-boy-cam-fanus-solmayan-kristal-gul",
       name: "Büyük Boy Cam Fanus Solmayan Kristal Gül",
       shortName: "Solmayan Gül Fanusu",
-      categorySlug: "isikli-hediyeler",
+      categorySlug: "sevgililer-gunu",
+      extraCategorySlugs: ["isikli-hediyeler", "hediyelik-urunler"],
       description:
         "Şeffaf cam fanus altında canlı kırmızı gül ve sarılı sıcak LED peri ışıklarıyla hazırlanan dekoratif hediye. Ahşap tabanındaki anahtarla kolayca açılıp kapanır.",
       price: 589,
@@ -261,6 +209,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
       name: "15 Dakikalık Metal Gövdeli Dekoratif Kum Saati",
       shortName: "Metal Kum Saati",
       categorySlug: "kum-saatleri",
+      extraCategorySlugs: ["hediyelik-urunler"],
       description:
         "Antik pirinç tonunda metal sütunlar ve ince akışlı renkli kum ile çalışma masası veya kitaplık için zamansız bir dekoratif hediye.",
       price: 389,
@@ -268,7 +217,8 @@ export const DEFAULT_STORE_DATA: StoreData = {
       published: true,
       image: "/ensar-web/gorseller/kategori-kum-saati.webp",
       gallery: ["/ensar-web/gorseller/kategori-kum-saati.webp"],
-      imageAlt: "Pirinç görünümlü metal çerçeveli mor kumlu 15 dakikalık kum saati",
+      imageAlt:
+        "Pirinç görünümlü metal çerçeveli mor kumlu 15 dakikalık kum saati",
       isConceptImage: true,
       occasions: ["Yeni İş", "Ev Hediyesi", "Mezuniyet", "Doğum Günü"],
       giftTypes: ["Kum Saatleri", "Ofis & Masaüstü"],
@@ -288,6 +238,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
       name: "Astronot Kabartmalı Altın Kulplu Porselen Kupa",
       shortName: "Astronot Porselen Kupa",
       categorySlug: "ilginc-kupalar",
+      extraCategorySlugs: ["hediyelik-urunler"],
       description:
         "Üç boyutlu kabartma astronot figürü, gece gökyüzü desenleri ve parlak altın renkli ergonomik kulpuyla kahve molalarına keyif katan hediyelik porselen kupa.",
       price: 329,
@@ -308,6 +259,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
       name: "Ahşap Oymalı Nostaljik Balerinli Müzik Kutusu",
       shortName: "Ahşap Müzik Kutusu",
       categorySlug: "muzik-kutulari",
+      extraCategorySlugs: ["sevgililer-gunu", "hediyelik-urunler"],
       description:
         "Vintage kabartma detaylı ahşap kutu içinde kurmalı mekanizma ile dönen balerin figürü. Takı ve küçük hatıralar için zarif bir saklama ve hediye seçeneği.",
       price: 495,
@@ -321,7 +273,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
       giftTypes: ["Müzik Kutuları", "Romantik Hediyeler"],
       legacyPath: "/Müzik-Kutusu-Cesitleri?product_id=324",
     },
-    ...YILBASI_PRODUCTS,
+    ...CATALOG_PRODUCTS,
   ],
   orders: [],
 };

@@ -3,11 +3,11 @@
 import type { StoreData } from "@/types/store";
 import { DEFAULT_STORE_DATA } from "./default-store";
 
-const LS_FALLBACK_KEY = "ensar_hediyelik_store_v7";
-const IDB_NAME = "ensar_hediyelik_idb_v3";
+const LS_FALLBACK_KEY = "ensar_hediyelik_store_v8";
+const IDB_NAME = "ensar_hediyelik_idb_v4";
 const IDB_VERSION = 1;
 const STORE_KV = "store_kv";
-const MAIN_RECORD_KEY = "active_store_v7";
+const MAIN_RECORD_KEY = "active_store_v8";
 
 const DEFAULT_PROD_IMG_MAP = new Map(
   DEFAULT_STORE_DATA.products.map((p) => [p.id, p.image])

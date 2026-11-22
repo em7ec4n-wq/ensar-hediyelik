@@ -101,27 +101,49 @@ export function Header({ settings, categories }: HeaderProps) {
             </div>
 
             {catDropdownOpen && (
-              <div className="ensar-card absolute left-0 top-full mt-2 w-64 p-2">
+              <div className="ensar-card absolute left-0 top-full mt-2 max-h-[75vh] w-72 overflow-y-auto p-2.5">
                 <Link
-                  href="/kategoriler"
+                  href="/kategoriler/"
                   onClick={() => setCatDropdownOpen(false)}
-                  className="block rounded-xl px-3.5 py-2.5 text-sm font-semibold text-[#321B2D] hover:bg-[#F7F3EB]"
+                  className="block rounded-xl px-3.5 py-2.5 text-sm font-bold text-[#321B2D] hover:bg-[#F7F3EB]"
                 >
                   Tüm Kategoriler
                 </Link>
-                <div className="my-1 h-px bg-[#ECE4D8]" />
-                {categories
-                  .filter((cat) => !cat.parentSlug)
-                  .map((cat) => (
-                    <Link
-                      key={cat.slug}
-                      href={getCategoryHref(cat.slug)}
-                      onClick={() => setCatDropdownOpen(false)}
-                      className="flex items-center justify-between rounded-xl px-3.5 py-2 text-sm text-[#241722] hover:bg-[#F7F3EB]"
-                    >
-                      <span>{cat.name}</span>
-                    </Link>
-                  ))}
+                <div className="my-1.5 h-px bg-[#ECE4D8]" />
+                <div className="space-y-1">
+                  {categories
+                    .filter((cat) => !cat.parentSlug)
+                    .map((cat) => {
+                      const subcats = categories.filter(
+                        (sub) => sub.parentSlug === cat.slug
+                      );
+                      return (
+                        <div key={cat.slug}>
+                          <Link
+                            href={getCategoryHref(cat.slug)}
+                            onClick={() => setCatDropdownOpen(false)}
+                            className="flex items-center justify-between rounded-xl px-3.5 py-2 text-sm font-semibold text-[#241722] hover:bg-[#F7F3EB]"
+                          >
+                            <span>{cat.name}</span>
+                          </Link>
+                          {subcats.length > 0 && (
+                            <div className="ml-4 mt-0.5 space-y-0.5 border-l-2 border-[#E9D9F1] pl-2.5">
+                              {subcats.map((sub) => (
+                                <Link
+                                  key={sub.slug}
+                                  href={getCategoryHref(sub.slug)}
+                                  onClick={() => setCatDropdownOpen(false)}
+                                  className="block rounded-lg px-2.5 py-1.5 text-[13px] font-medium text-[#4C3C49] hover:bg-[#F7F3EB] hover:text-[#321B2D]"
+                                >
+                                  • {sub.name}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                </div>
               </div>
             )}
           </div>
@@ -289,23 +311,44 @@ export function Header({ settings, categories }: HeaderProps) {
                 Hediye Seçim Rehberi
               </Link>
             </li>
-            <li className="my-2 border-t border-[#ECE4D8] pt-2">
-              <p className="px-3 pb-1 text-xs font-semibold uppercase tracking-wider text-[#6F606C]">
-                Hızlı Kategoriler
+            <li className="my-2 border-t border-[#ECE4D8] pt-3">
+              <p className="px-3 pb-2 text-xs font-bold uppercase tracking-wider text-[#6F606C]">
+                Ürün Kategorileri
               </p>
-              <div className="grid grid-cols-2 gap-1.5 px-1">
+              <div className="space-y-1.5 px-1">
                 {categories
                   .filter((cat) => !cat.parentSlug)
-                  .map((cat) => (
-                    <Link
-                      key={cat.slug}
-                      href={getCategoryHref(cat.slug)}
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="flex min-h-[44px] items-center rounded-xl bg-[#F7F3EB] px-3 text-sm text-[#241722]"
-                    >
-                      {cat.name}
-                    </Link>
-                  ))}
+                  .map((cat) => {
+                    const subcats = categories.filter(
+                      (sub) => sub.parentSlug === cat.slug
+                    );
+                    return (
+                      <div key={cat.slug} className="space-y-1">
+                        <Link
+                          href={getCategoryHref(cat.slug)}
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex min-h-[44px] items-center justify-between rounded-xl bg-[#F7F3EB] px-3.5 text-[15px] font-semibold text-[#241722]"
+                        >
+                          <span>{cat.name}</span>
+                          <span className="text-xs text-[#6F606C]">→</span>
+                        </Link>
+                        {subcats.length > 0 && (
+                          <div className="ml-3 space-y-1 border-l-2 border-[#321B2D]/25 pl-3">
+                            {subcats.map((sub) => (
+                              <Link
+                                key={sub.slug}
+                                href={getCategoryHref(sub.slug)}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="flex min-h-[40px] items-center rounded-xl bg-white px-3 text-sm font-medium text-[#321B2D] shadow-2xs"
+                              >
+                                • {sub.name}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
               </div>
             </li>
             <li className="border-t border-[#ECE4D8] pt-2">
