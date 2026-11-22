@@ -188,7 +188,7 @@
       "slug": "yilbasi",
       "name": "Yılbaşı Ürünleri",
       "description": "Yılbaşı ağaçları, Noel Baba figürleri, ağaç süsleri ve yılbaşı dekorları.",
-      "image": "/ensar-yilbasi/gorseller/yilbasi-agaclari/mf-90-01.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795379807529-4q8ly-77566EA6-2658-44BE-A11E-842FEC1F9998.png",
       "imageAlt": "Yılbaşı Ürünleri",
       "showOnHome": true,
       "homeOrder": 9,
