@@ -148,7 +148,7 @@
       "slug": "muzik-kutulari",
       "name": "Müzik Kutuları",
       "description": "Balerinli piyano, nostaljik ahşap ve kurmalı mekanizmalı müzik kutuları.",
-      "image": "/ensar-web/gorseller/kategori-muzik-kutusu.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795380503029-1c6rz-IMG_4485.jpeg",
       "imageAlt": "Müzik Kutuları",
       "showOnHome": true,
       "homeOrder": 5,
