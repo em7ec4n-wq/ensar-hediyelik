@@ -229,7 +229,7 @@
       "slug": "kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar koleksiyonundaki ürünler.",
-      "image": "/ensar-web/gorseller/kategori-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795382743953-jw3td-IMG_4494.jpeg",
       "imageAlt": "Kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
