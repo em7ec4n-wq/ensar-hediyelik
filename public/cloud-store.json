@@ -285,51 +285,6 @@
       "legacyPath": "/Kar küresi çeşitleri?product_id=490"
     },
     {
-      "id": "prod-562",
-      "sku": "ENS-IG-562",
-      "slug": "buyuk-boy-cam-fanus-solmayan-kristal-gul",
-      "name": "Büyük Boy Cam Fanus Solmayan Kristal Gül",
-      "shortName": "Solmayan Gül Fanusu",
-      "categorySlug": "sevgililer-gunu",
-      "description": "Şeffaf cam fanus altında canlı kırmızı gül ve sarılı sıcak LED peri ışıklarıyla hazırlanan dekoratif hediye. Ahşap tabanındaki anahtarla kolayca açılıp kapanır.",
-      "price": 589,
-      "stock": 14,
-      "published": true,
-      "image": "/ensar-web/gorseller/urun-solmayan-gul-fanusu.webp",
-      "gallery": [
-        "/ensar-web/gorseller/urun-solmayan-gul-fanusu.webp",
-        "/ensar-web/gorseller/vitrin-isikli-hediyeler.webp"
-      ],
-      "imageAlt": "Ahşap tabanlı cam fanus içinde sıcak sarı LED peri ışıklı kırmızı solmayan gül",
-      "isConceptImage": true,
-      "isNewArrival": true,
-      "newArrivalOrder": 3,
-      "occasions": [
-        "Sevgililer Günü",
-        "Yıldönümü",
-        "Anneler Günü",
-        "Doğum Günü"
-      ],
-      "giftTypes": [
-        "Işıklı Ürünler",
-        "Romantik Hediyeler"
-      ],
-      "options": [
-        {
-          "name": "Gül Rengi",
-          "required": true,
-          "values": [
-            "Kırmızı Gül",
-            "Bordo Gül"
-          ]
-        }
-      ],
-      "legacyPath": "/isikli-grup?product_id=562",
-      "extraCategorySlugs": [
-        "hediyelik-urunler"
-      ]
-    },
-    {
       "id": "prod-460",
       "sku": "ENS-KS-460",
       "slug": "15-dakikalik-metal-kum-saati",
