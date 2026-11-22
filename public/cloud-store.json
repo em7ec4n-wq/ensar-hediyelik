@@ -224,6 +224,17 @@
       "homeOrder": 5,
       "parentSlug": "anahtarliklar",
       "isConceptImage": false
+    },
+    {
+      "slug": "kumbaralar",
+      "name": "Kumbaralar",
+      "description": "Kumbaralar koleksiyonundaki ürünler.",
+      "image": "/ensar-web/gorseller/kategori-cam-kure.webp",
+      "imageAlt": "Kumbaralar",
+      "showOnHome": true,
+      "homeOrder": 5,
+      "parentSlug": "hediyelik-urunler",
+      "isConceptImage": false
     }
   ],
   "products": [
