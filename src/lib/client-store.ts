@@ -272,21 +272,12 @@ export async function loadClientStoreAsync(): Promise<StoreData> {
     });
     if (res.ok) {
       const serverData = sanitizeStoreImages((await res.json()) as StoreData);
-      const { merged, didRescue } =
-        await rescueLocalChangesIntoServerStore(serverData);
-      if (didRescue) {
-        await fetch("/api/store/", {
-          method: "PUT",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(merged),
-        });
-      }
       try {
-        localStorage.setItem(LS_FALLBACK_KEY, JSON.stringify(merged));
+        localStorage.setItem(LS_FALLBACK_KEY, JSON.stringify(serverData));
       } catch {
         // ignore
       }
-      return merged;
+      return serverData;
     }
   } catch {
     // fallback if offline
