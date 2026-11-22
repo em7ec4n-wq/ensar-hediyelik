@@ -239,52 +239,6 @@
   ],
   "products": [
     {
-      "id": "prod-490",
-      "sku": "ENS-KK-490",
-      "slug": "buyuk-boy-puskurtmeli-kar-kuresi",
-      "name": "Büyük Boy Püskürtmeli Kar Küresi",
-      "shortName": "Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
-      "extraCategorySlugs": [
-        "kar-kureleri",
-        "sevgililer-gunu"
-      ],
-      "description": "Otomatik kar püskürtme motoru, çoklu melodi ve yumuşak LED ışık geçişine sahip büyük boy kış evi temalı kar küresi. Sallamaya gerek kalmadan kar tanelerini küre içinde savurur.",
-      "price": 749,
-      "stock": 9,
-      "published": true,
-      "image": "/ensar-web/gorseller/urun-puskurtmeli-kar-kuresi.webp",
-      "gallery": [
-        "/ensar-web/gorseller/urun-puskurtmeli-kar-kuresi.webp"
-      ],
-      "imageAlt": "Karlı kış evi figürlü, ışıklı ve otomatik püskürtmeli büyük boy cam kar küresi",
-      "isConceptImage": true,
-      "isNewArrival": true,
-      "newArrivalOrder": 2,
-      "occasions": [
-        "Yılbaşı",
-        "Doğum Günü",
-        "Sevgililer Günü",
-        "Ev Hediyesi"
-      ],
-      "giftTypes": [
-        "Işıklı Ürünler",
-        "Cam Küreler",
-        "Müzik Kutuları"
-      ],
-      "options": [
-        {
-          "name": "Boyut",
-          "required": true,
-          "values": [
-            "Büyük Boy (16 cm)",
-            "Mega Boy (18 cm)"
-          ]
-        }
-      ],
-      "legacyPath": "/Kar küresi çeşitleri?product_id=490"
-    },
-    {
       "id": "yilbasi-6169-01",
       "sku": "6169-01",
       "slug": "yilbasi-agac-susu-6169-01",
