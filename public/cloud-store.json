@@ -158,7 +158,7 @@
       "slug": "kum-saatleri",
       "name": "Kum Saatleri",
       "description": "Masaüstü dekorasyonu için 5, 10, 15 ve 30 dakikalık metal ve cam kum saatleri.",
-      "image": "/ensar-web/gorseller/kategori-kum-saati.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795381349758-suocp-IMG_4488.jpeg",
       "imageAlt": "Kum Saatleri",
       "showOnHome": true,
       "homeOrder": 6,
