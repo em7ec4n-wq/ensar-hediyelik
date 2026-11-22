@@ -203,6 +203,16 @@
       "showOnHome": true,
       "homeOrder": 5,
       "isConceptImage": false
+    },
+    {
+      "slug": "nostaljik-radyolar",
+      "name": "Nostaljik radyolar",
+      "description": "Nostaljik radyolar koleksiyonundaki ürünler.",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795379135879-3mykd-IMG_4480.jpeg",
+      "imageAlt": "Nostaljik radyolar",
+      "showOnHome": true,
+      "homeOrder": 5,
+      "isConceptImage": false
     }
   ],
   "products": [
