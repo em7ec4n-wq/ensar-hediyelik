@@ -73,7 +73,7 @@ export default function AdminPanelPage() {
   const [newCatParent, setNewCatParent] = useState("");
   const [newCatDesc, setNewCatDesc] = useState("");
   const [newCatImage, setNewCatImage] = useState("");
-  const [newCatHome, setNewCatHome] = useState(false);
+  const [newCatHome, setNewCatHome] = useState(true);
 
   // Confirm reset state
   const [confirmReset, setConfirmReset] = useState(false);

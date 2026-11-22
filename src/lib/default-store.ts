@@ -69,9 +69,9 @@ export const DEFAULT_STORE_DATA: StoreData = {
   categories: [
     {
       slug: "cam-kureler",
-      name: "Cam Küreler",
+      name: "Kar & Cam Küreler",
       description:
-        "Ahşap tabanlı USB'li ışıklı cam küreler ve püskürtmeli kar küresi çeşitleri.",
+        "Büyük boy, orta boy, küçük boy ve mini boy kar küreleri ile ışıklı cam küre çeşitleri.",
       image: "/ensar-web/gorseller/kategori-cam-kure.webp",
       imageAlt: "Ahşap tabanlı sıcak ışıklı astronot cam küre",
       showOnHome: true,

@@ -76,8 +76,8 @@
     },
     {
       "slug": "cam-kureler",
-      "name": "Cam Küreler",
-      "description": "Ahşap tabanlı USB'li ışıklı cam küreler ve püskürtmeli kar küresi çeşitleri.",
+      "name": "Kar & Cam Küreler",
+      "description": "Büyük boy, orta boy, küçük boy ve mini boy kar küreleri ile ışıklı cam küre çeşitleri.",
       "image": "/ensar-web/gorseller/kategori-cam-kure.webp",
       "imageAlt": "Ahşap tabanlı sıcak ışıklı astronot cam küre",
       "showOnHome": true,
@@ -122,6 +122,46 @@
       "imageAlt": "Cam fanus içinde peri ışıklı solmayan kırmızı gül",
       "showOnHome": false,
       "isConceptImage": true
+    },
+    {
+      "slug": "buyuk-boy-kar-kureleri",
+      "name": "Büyük Boy Kar Küreleri",
+      "description": "Işıklı, müzikli ve püskürtmeli büyük boy kar küresi modelleri.",
+      "image": "/ensar-web/gorseller/urun-puskurtmeli-kar-kuresi.webp",
+      "imageAlt": "Büyük Boy Kar Küreleri",
+      "showOnHome": false,
+      "parentSlug": "cam-kureler",
+      "isConceptImage": false
+    },
+    {
+      "slug": "orta-boy-kar-kureleri",
+      "name": "Orta Boy Kar Küreleri",
+      "description": "Işıklı ve müzikli orta boy kar küresi çeşitleri.",
+      "image": "/ensar-yilbasi/gorseller/kar-kureleri/erc5001b-01.webp",
+      "imageAlt": "Orta Boy Kar Küreleri",
+      "showOnHome": false,
+      "parentSlug": "cam-kureler",
+      "isConceptImage": false
+    },
+    {
+      "slug": "kucuk-boy-kar-kureleri",
+      "name": "Küçük Boy Kar Küreleri",
+      "description": "Zarif masaüstü küçük boy kar küresi modelleri.",
+      "image": "/ensar-yilbasi/gorseller/kar-kureleri/b4-9209-76-01.webp",
+      "imageAlt": "Küçük Boy Kar Küreleri",
+      "showOnHome": false,
+      "parentSlug": "cam-kureler",
+      "isConceptImage": false
+    },
+    {
+      "slug": "mini-boy-kar-kureleri",
+      "name": "Mini Boy Kar Küreleri",
+      "description": "Sevimli mini boy hediyelik kar küresi çeşitleri.",
+      "image": "/ensar-yilbasi/gorseller/kar-kureleri/b4-9209-63-01.webp",
+      "imageAlt": "Mini Boy Kar Küreleri",
+      "showOnHome": false,
+      "parentSlug": "cam-kureler",
+      "isConceptImage": false
     }
   ],
   "products": [
@@ -217,10 +257,10 @@
       "slug": "buyuk-boy-puskurtmeli-kar-kuresi",
       "name": "Büyük Boy Püskürtmeli Kar Küresi",
       "shortName": "Püskürtmeli Kar Küresi",
-      "categorySlug": "cam-kureler",
+      "categorySlug": "buyuk-boy-kar-kureleri",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
-        "muzik-kutulari"
+        "cam-kureler",
+        "isikli-hediyeler"
       ],
       "description": "Otomatik kar püskürtme motoru, çoklu melodi ve yumuşak LED ışık geçişine sahip büyük boy kış evi temalı kar küresi. Sallamaya gerek kalmadan kar tanelerini küre içinde savurur.",
       "price": 749,
@@ -4607,8 +4647,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2360x",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -4642,8 +4685,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-jm2136c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -4677,8 +4723,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2051c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -4712,8 +4761,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-jm2208c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -4747,8 +4799,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-jm2206c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -4782,8 +4837,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2041c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -4817,8 +4875,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2021c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -4852,8 +4913,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2022c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -4887,8 +4951,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-jm2137c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -4922,8 +4989,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-jm2207c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -4957,8 +5027,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2044c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -4992,8 +5065,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-jm2383c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -5027,8 +5103,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2361x",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -5062,8 +5141,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2369x",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -5097,8 +5179,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2374x",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -5132,8 +5217,11 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2373x",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "buyuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 850,
       "stock": null,
@@ -5167,8 +5255,11 @@
       "slug": "yilbasi-orta-kure-2044-3",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5202,8 +5293,11 @@
       "slug": "yilbasi-orta-kure-2041-3",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5237,8 +5331,11 @@
       "slug": "yilbasi-orta-kure-2021-3",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5272,8 +5369,11 @@
       "slug": "yilbasi-orta-kure-2022-3",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5307,8 +5407,11 @@
       "slug": "yilbasi-orta-kure-jm2207y",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5342,8 +5445,11 @@
       "slug": "yilbasi-orta-kure-jm2206y",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5377,8 +5483,11 @@
       "slug": "yilbasi-orta-kure-jm2137y",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5412,8 +5521,11 @@
       "slug": "yilbasi-orta-kure-jm2208y",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5447,8 +5559,11 @@
       "slug": "yilbasi-orta-kure-2051-3",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5482,8 +5597,11 @@
       "slug": "yilbasi-orta-kure-1966x-1",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5517,8 +5635,11 @@
       "slug": "yilbasi-orta-kure-2361x-1",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5552,8 +5673,11 @@
       "slug": "yilbasi-orta-kure-2360x-1",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5587,8 +5711,11 @@
       "slug": "yilbasi-orta-kure-2362x-1",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5622,8 +5749,11 @@
       "slug": "yilbasi-orta-kure-jhsd80-39",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5657,8 +5787,11 @@
       "slug": "yilbasi-orta-kure-jhsd80-38",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5692,8 +5825,11 @@
       "slug": "yilbasi-orta-kure-2369x-1",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5727,8 +5863,11 @@
       "slug": "yilbasi-orta-kure-2374x-1",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5762,8 +5901,11 @@
       "slug": "yilbasi-orta-kure-jhsd80-29",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5797,8 +5939,11 @@
       "slug": "yilbasi-orta-kure-jhsd80-35",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5832,8 +5977,11 @@
       "slug": "yilbasi-orta-kure-jhsd80-14",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5867,8 +6015,11 @@
       "slug": "yilbasi-orta-kure-jhsd80-13",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -5902,8 +6053,11 @@
       "slug": "yilbasi-kure-midi-jm2387-2",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "kucuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 295,
       "stock": null,
@@ -5937,8 +6091,11 @@
       "slug": "yilbasi-kure-midi-jm2387",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "kucuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 295,
       "stock": null,
@@ -5972,8 +6129,11 @@
       "slug": "yilbasi-kure-midi-jm2388-2",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "kucuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 295,
       "stock": null,
@@ -6007,8 +6167,11 @@
       "slug": "yilbasi-kure-midi-jm2349-2",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "kucuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 295,
       "stock": null,
@@ -6042,8 +6205,11 @@
       "slug": "yilbasi-kure-midi-m026",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "kucuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 295,
       "stock": null,
@@ -6077,8 +6243,11 @@
       "slug": "yilbasi-kure-midi-m010",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "kucuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 295,
       "stock": null,
@@ -6112,8 +6281,11 @@
       "slug": "yilbasi-kure-midi-m011",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "kucuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 295,
       "stock": null,
@@ -6147,8 +6319,11 @@
       "slug": "yilbasi-kure-midi-m009",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "kucuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 295,
       "stock": null,
@@ -6182,8 +6357,11 @@
       "slug": "yilbasi-kure-midi-m012",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "kucuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 295,
       "stock": null,
@@ -6217,8 +6395,11 @@
       "slug": "yilbasi-orta-kure-2368x-1",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "orta-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 545,
       "stock": null,
@@ -6252,8 +6433,11 @@
       "slug": "yilbasi-kure-midi-jhsd65-36",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "kucuk-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 295,
       "stock": null,
@@ -7432,8 +7616,11 @@
       "slug": "melek-kar-kuresi-k-2020",
       "name": "Melek Kar Küresi K.",
       "shortName": "Melek Kar Küresi K.",
-      "categorySlug": "yilbasi",
-      "extraCategorySlugs": [],
+      "categorySlug": "mini-boy-kar-kureleri",
+      "extraCategorySlugs": [
+        "yilbasi",
+        "cam-kureler"
+      ],
       "description": "",
       "price": 140,
       "stock": null,

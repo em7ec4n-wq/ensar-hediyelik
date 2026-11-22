@@ -3,11 +3,11 @@
 import type { StoreData } from "@/types/store";
 import { DEFAULT_STORE_DATA } from "./default-store";
 
-const LS_FALLBACK_KEY = "ensar_hediyelik_store_v6";
+const LS_FALLBACK_KEY = "ensar_hediyelik_store_v7";
 const IDB_NAME = "ensar_hediyelik_idb_v3";
 const IDB_VERSION = 1;
 const STORE_KV = "store_kv";
-const MAIN_RECORD_KEY = "active_store_v6";
+const MAIN_RECORD_KEY = "active_store_v7";
 
 const DEFAULT_PROD_IMG_MAP = new Map(
   DEFAULT_STORE_DATA.products.map((p) => [p.id, p.image])
@@ -26,7 +26,6 @@ function isBrokenOrVolatileUrl(url: string | undefined | null): boolean {
   if (!url || typeof url !== "string") return true;
   const trimmed = url.trim();
   if (!trimmed) return true;
-  // blob: URLs from previous page loads are always dead after navigation/refresh
   if (trimmed.startsWith("blob:") || trimmed.startsWith("idb-media://")) {
     return true;
   }
@@ -71,6 +70,14 @@ function sanitizeStoreImages(store: StoreData): StoreData {
     }
   }
 
+  // Ensure default categories & 4 snow globe subcategories exist
+  const existingCatSlugs = new Set(next.categories.map((c) => c.slug));
+  for (const defCat of DEFAULT_STORE_DATA.categories) {
+    if (!existingCatSlugs.has(defCat.slug)) {
+      next.categories.push(structuredClone(defCat));
+    }
+  }
+
   for (const cat of next.categories) {
     if (isBrokenOrVolatileUrl(cat.image)) {
       cat.image =
@@ -92,13 +99,13 @@ function sanitizeStoreImages(store: StoreData): StoreData {
   return next;
 }
 
-function openDb(): Promise<IDBDatabase> {
+function openDb(dbName = IDB_NAME): Promise<IDBDatabase> {
   return new Promise((resolve, reject) => {
     if (typeof window === "undefined" || !("indexedDB" in window)) {
       reject(new Error("IndexedDB unavailable"));
       return;
     }
-    const req = window.indexedDB.open(IDB_NAME, IDB_VERSION);
+    const req = window.indexedDB.open(dbName, IDB_VERSION);
     req.onupgradeneeded = () => {
       const db = req.result;
       if (!db.objectStoreNames.contains(STORE_KV)) {
@@ -111,17 +118,129 @@ function openDb(): Promise<IDBDatabase> {
 }
 
 /**
- * Reads an uploaded image File into a persistent, 100% lossless Data URL
- * (exact original file bytes — zero canvas re-encoding or compression)
- * that never expires across page refreshes, cart storage, or PDF generation.
+ * Uploads an image file via our Server API (`/api/upload`) in 100% original
+ * quality and returns its permanent public URL so all visitors see it.
  */
 export async function uploadLosslessImage(file: File): Promise<string> {
+  try {
+    const formData = new FormData();
+    formData.append("file", file);
+    const res = await fetch("/api/upload/", {
+      method: "POST",
+      body: formData,
+    });
+    if (res.ok) {
+      const data = await res.json();
+      if (data?.url) return data.url as string;
+    }
+  } catch {
+    // fallback to lossless data URL
+  }
+
   return new Promise<string>((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = () => resolve(String(reader.result));
     reader.onerror = () => reject(new Error("Dosya okunamadı"));
     reader.readAsDataURL(file);
   });
+}
+
+/**
+ * Rescues any custom categories or custom products that the shopkeeper previously
+ * created locally on his phone into the shared server store!
+ */
+async function rescueLocalChangesIntoServerStore(
+  serverStore: StoreData
+): Promise<{ merged: StoreData; didRescue: boolean }> {
+  if (typeof window === "undefined") {
+    return { merged: serverStore, didRescue: false };
+  }
+
+  const serverCatSlugs = new Set(serverStore.categories.map((c) => c.slug));
+  const serverProdIds = new Set(serverStore.products.map((p) => p.id));
+  const serverProdSkus = new Set(
+    serverStore.products.map((p) => p.sku.toUpperCase())
+  );
+
+  const rescuedCategories = new Map<
+    string,
+    StoreData["categories"][number]
+  >();
+  const rescuedProducts = new Map<string, StoreData["products"][number]>();
+
+  const inspectCandidate = (candidate: StoreData | undefined | null) => {
+    if (!candidate) return;
+    if (Array.isArray(candidate.categories)) {
+      for (const c of candidate.categories) {
+        if (c?.slug && !serverCatSlugs.has(c.slug)) {
+          rescuedCategories.set(c.slug, c);
+        }
+      }
+    }
+    if (Array.isArray(candidate.products)) {
+      for (const p of candidate.products) {
+        if (
+          p?.id?.startsWith("custom-") &&
+          !serverProdIds.has(p.id) &&
+          !serverProdSkus.has(p.sku.toUpperCase())
+        ) {
+          rescuedProducts.set(p.id, p);
+        }
+      }
+    }
+  };
+
+  for (const lsKey of [
+    LS_FALLBACK_KEY,
+    "ensar_hediyelik_store_v6",
+    "ensar_hediyelik_store_v5",
+    "ensar_hediyelik_store_v4",
+    "ensar_hediyelik_store_v3",
+  ]) {
+    try {
+      const raw = localStorage.getItem(lsKey);
+      if (raw) inspectCandidate(JSON.parse(raw) as StoreData);
+    } catch {
+      // ignore
+    }
+  }
+
+  for (const [dbName, recKey] of [
+    ["ensar_hediyelik_idb_v3", "active_store_v6"],
+    ["ensar_hediyelik_idb_v2", "active_store_v5"],
+    ["ensar_hediyelik_idb_v1", "active_store_v4"],
+  ]) {
+    try {
+      const db = await openDb(dbName);
+      const record = await new Promise<StoreData | undefined>((resolve) => {
+        try {
+          const tx = db.transaction(STORE_KV, "readonly");
+          const req = tx.objectStore(STORE_KV).get(recKey);
+          req.onsuccess = () => resolve(req.result as StoreData | undefined);
+          req.onerror = () => resolve(undefined);
+        } catch {
+          resolve(undefined);
+        }
+      });
+      inspectCandidate(record);
+    } catch {
+      // ignore
+    }
+  }
+
+  if (rescuedCategories.size === 0 && rescuedProducts.size === 0) {
+    return { merged: serverStore, didRescue: false };
+  }
+
+  const merged = structuredClone(serverStore);
+  for (const cat of rescuedCategories.values()) {
+    merged.categories.push(cat);
+  }
+  for (const prod of rescuedProducts.values()) {
+    merged.products.unshift(prod);
+  }
+
+  return { merged: sanitizeStoreImages(merged), didRescue: true };
 }
 
 export function loadClientStore(): StoreData {
@@ -145,22 +264,34 @@ export async function loadClientStoreAsync(): Promise<StoreData> {
   if (typeof window === "undefined") {
     return structuredClone(DEFAULT_STORE_DATA);
   }
+
+  // 1. Fetch live shared catalog from Server API (/api/store) so all phones/computers see the exact same data
   try {
-    const db = await openDb();
-    const record = await new Promise<StoreData | undefined>(
-      (resolve, reject) => {
-        const tx = db.transaction(STORE_KV, "readonly");
-        const req = tx.objectStore(STORE_KV).get(MAIN_RECORD_KEY);
-        req.onsuccess = () => resolve(req.result as StoreData | undefined);
-        req.onerror = () => reject(req.error);
+    const res = await fetch(`/api/store/?t=${Date.now()}`, {
+      cache: "no-store",
+    });
+    if (res.ok) {
+      const serverData = sanitizeStoreImages((await res.json()) as StoreData);
+      const { merged, didRescue } =
+        await rescueLocalChangesIntoServerStore(serverData);
+      if (didRescue) {
+        await fetch("/api/store/", {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(merged),
+        });
       }
-    );
-    if (record && Array.isArray(record.products)) {
-      return sanitizeStoreImages(record);
+      try {
+        localStorage.setItem(LS_FALLBACK_KEY, JSON.stringify(merged));
+      } catch {
+        // ignore
+      }
+      return merged;
     }
   } catch {
-    // fallback to localStorage
+    // fallback if offline
   }
+
   return loadClientStore();
 }
 
@@ -170,6 +301,7 @@ export async function saveClientStoreAsync(
   const cleanData = sanitizeStoreImages(data);
 
   if (typeof window !== "undefined") {
+    // 1. Save to local cache for instant feedback
     try {
       const db = await openDb();
       await new Promise<void>((resolve, reject) => {
@@ -179,13 +311,25 @@ export async function saveClientStoreAsync(
         tx.onerror = () => reject(tx.error);
       });
     } catch {
-      // ignore IDB error
+      // ignore
     }
     try {
       localStorage.setItem(LS_FALLBACK_KEY, JSON.stringify(cleanData));
     } catch {
-      // ignore quota error when large lossless images are stored in IDB
+      // ignore
     }
+
+    // 2. Persist to global Server API (/api/store) so EVERY phone and computer sees the change!
+    try {
+      await fetch("/api/store/", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(cleanData),
+      });
+    } catch {
+      // ignore
+    }
+
     window.dispatchEvent(new CustomEvent("ensar-store-updated"));
   }
   return cleanData;
@@ -207,6 +351,15 @@ export async function resetClientStoreToDefault(): Promise<StoreData> {
         tx.objectStore(STORE_KV).clear();
         tx.oncomplete = () => resolve();
         tx.onerror = () => reject(tx.error);
+      });
+    } catch {
+      // ignore
+    }
+    try {
+      await fetch("/api/store/", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(fresh),
       });
     } catch {
       // ignore
