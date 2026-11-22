@@ -223,6 +223,17 @@
       "showOnHome": true,
       "homeOrder": 5,
       "isConceptImage": false
+    },
+    {
+      "slug": "silikon-anahtarliklar",
+      "name": "Silikon anahtarlıklar",
+      "description": "Silikon anahtarlıklar koleksiyonundaki ürünler.",
+      "image": "/ensar-web/gorseller/kategori-cam-kure.webp",
+      "imageAlt": "Silikon anahtarlıklar",
+      "showOnHome": true,
+      "homeOrder": 5,
+      "parentSlug": "anahtarliklar",
+      "isConceptImage": false
     }
   ],
   "products": [
