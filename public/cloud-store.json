@@ -28,9 +28,9 @@
       ],
       "buttonLabel": "Kategorileri İncele",
       "buttonHref": "/kategoriler/",
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795381204386-l4c5b-IMG_4478.jpeg",
       "imageAlt": "Ahşap tabanlı, sıcak LED ışıklı astronot ve gezegen figürlü kristal cam küre",
-      "isConceptImage": true,
+      "isConceptImage": false,
       "desktopObjectPosition": "50% 50%",
       "mobileObjectPosition": "50% 50%"
     },
