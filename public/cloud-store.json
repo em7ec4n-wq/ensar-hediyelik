@@ -239,52 +239,6 @@
   ],
   "products": [
     {
-      "id": "prod-564",
-      "sku": "ENS-MK-564",
-      "slug": "muzikli-balerinli-piyano",
-      "name": "Müzikli Balerinli Piyano",
-      "shortName": "Balerinli Piyano",
-      "categorySlug": "muzik-kutulari",
-      "description": "Kuyruklu piyano formunda tasarlanmış kurmalı müzik kutusu. Kapak açıldığında klasik melodi çalar ve mıknatıslı taban üzerindeki zarif balerin figürü piyano üzerinde dans eder.",
-      "price": 529,
-      "stock": 12,
-      "published": true,
-      "image": "/ensar-web/gorseller/urun-balerinli-piyano.webp",
-      "gallery": [
-        "/ensar-web/gorseller/urun-balerinli-piyano.webp",
-        "/ensar-web/gorseller/hero-balerinli-piyano.webp"
-      ],
-      "imageAlt": "Pastel pembe kuyruklu piyano formunda dönen balerinli müzik kutusu",
-      "isConceptImage": true,
-      "isNewArrival": true,
-      "newArrivalOrder": 1,
-      "occasions": [
-        "Doğum Günü",
-        "Sevgililer Günü",
-        "Anneler Günü",
-        "Yıldönümü"
-      ],
-      "giftTypes": [
-        "Müzik Kutuları",
-        "Romantik Hediyeler"
-      ],
-      "options": [
-        {
-          "name": "Renk",
-          "required": true,
-          "values": [
-            "Pastel Pembe",
-            "Krem Beyaz"
-          ]
-        }
-      ],
-      "legacyPath": "/Müzik-Kutusu-Cesitleri?product_id=564",
-      "extraCategorySlugs": [
-        "sevgililer-gunu",
-        "hediyelik-urunler"
-      ]
-    },
-    {
       "id": "prod-490",
       "sku": "ENS-KK-490",
       "slug": "buyuk-boy-puskurtmeli-kar-kuresi",
