@@ -213,6 +213,16 @@
       "showOnHome": true,
       "homeOrder": 5,
       "isConceptImage": false
+    },
+    {
+      "slug": "anahtarliklar",
+      "name": "Anahtarlıklar",
+      "description": "Anahtarlıklar koleksiyonundaki ürünler.",
+      "image": "/ensar-web/gorseller/kategori-cam-kure.webp",
+      "imageAlt": "Anahtarlıklar",
+      "showOnHome": true,
+      "homeOrder": 5,
+      "isConceptImage": false
     }
   ],
   "products": [
