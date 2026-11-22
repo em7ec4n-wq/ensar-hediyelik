@@ -88,7 +88,7 @@
       "slug": "kar-kureleri",
       "name": "Kar Küreleri",
       "description": "Büyük boy, orta boy, küçük boy ve mini boy ışıklı, müzikli ve püskürtmeli kar küresi koleksiyonu.",
-      "image": "/ensar-web/gorseller/urun-puskurtmeli-kar-kuresi.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795382205694-lpbhc-IMG_4491.jpeg",
       "imageAlt": "Kar Küreleri",
       "showOnHome": true,
       "homeOrder": 3,
