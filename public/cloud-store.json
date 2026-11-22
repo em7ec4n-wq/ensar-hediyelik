@@ -168,7 +168,7 @@
       "slug": "ilginc-kupalar",
       "name": "İlginç Kupalar",
       "description": "Kabartma figürlü, temalı ve hediyelik porselen kupa çeşitleri.",
-      "image": "/ensar-web/gorseller/kategori-ilginc-kupa.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795382352536-yqgg3-IMG_4492.jpeg",
       "imageAlt": "İlginç Kupalar",
       "showOnHome": true,
       "homeOrder": 7,
