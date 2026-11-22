@@ -328,38 +328,6 @@
       ]
     },
     {
-      "id": "prod-541",
-      "sku": "ENS-KP-541",
-      "slug": "astronot-kabartmali-porselen-kupa",
-      "name": "Astronot Kabartmalı Altın Kulplu Porselen Kupa",
-      "shortName": "Astronot Porselen Kupa",
-      "categorySlug": "ilginc-kupalar",
-      "description": "Üç boyutlu kabartma astronot figürü, gece gökyüzü desenleri ve parlak altın renkli ergonomik kulpuyla kahve molalarına keyif katan hediyelik porselen kupa.",
-      "price": 329,
-      "stock": 25,
-      "published": true,
-      "image": "/ensar-web/gorseller/kategori-ilginc-kupa.webp",
-      "gallery": [
-        "/ensar-web/gorseller/kategori-ilginc-kupa.webp"
-      ],
-      "imageAlt": "Üç boyutlu astronot kabartmalı ve altın kulplu porselen kupa",
-      "isConceptImage": true,
-      "occasions": [
-        "Doğum Günü",
-        "Yeni İş",
-        "Mezuniyet",
-        "Yılbaşı"
-      ],
-      "giftTypes": [
-        "İlginç Kupalar",
-        "Ofis & Masaüstü"
-      ],
-      "legacyPath": "/İlginc-Kupa-Cesitleri?product_id=541",
-      "extraCategorySlugs": [
-        "hediyelik-urunler"
-      ]
-    },
-    {
       "id": "prod-324",
       "sku": "ENS-MK-324",
       "slug": "ahsap-oymali-balerinli-muzik-kutusu",
