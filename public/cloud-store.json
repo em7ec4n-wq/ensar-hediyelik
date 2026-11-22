@@ -217,35 +217,6 @@
   ],
   "products": [
     {
-      "id": "custom-1795377701240",
-      "sku": "ENS-01240",
-      "slug": "orta-boy-kar-kuresi-ens-01240",
-      "name": "Orta boy kar küresi",
-      "shortName": "Orta boy kar küresi",
-      "categorySlug": "orta-boy-kar-kuresi",
-      "extraCategorySlugs": [
-        "kar-kureleri"
-      ],
-      "description": "",
-      "price": 500,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795377665504-z7e45-IMG_0548.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795377665504-z7e45-IMG_0548.jpeg"
-      ],
-      "imageAlt": "Orta boy kar küresi (ENS-01240)",
-      "isConceptImage": false,
-      "isNewArrival": false,
-      "occasions": [
-        "Doğum Günü",
-        "Yılbaşı"
-      ],
-      "giftTypes": [
-        "Orta Boy Kar Küresi"
-      ]
-    },
-    {
       "id": "prod-347",
       "sku": "ENS-CK-347",
       "slug": "astronot-buyuk-boy-usbli-cam-kure",
