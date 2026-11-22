@@ -239,50 +239,6 @@
   ],
   "products": [
     {
-      "id": "prod-347",
-      "sku": "ENS-CK-347",
-      "slug": "astronot-buyuk-boy-usbli-cam-kure",
-      "name": "Astronot Büyük Boy USB'li Cam Küre",
-      "shortName": "Astronot Cam Küre",
-      "categorySlug": "cam-kureler",
-      "extraCategorySlugs": [
-        "hediyelik-urunler"
-      ],
-      "description": "Lazer işleme kristal cam küre içerisinde astronot ve gezegen detayı bulunur. Doğal ahşap görünümlü tabanı USB kablo ile sıcak sarı LED ışık verir; gece lambası ve masaüstü hediyesi olarak idealdir.",
-      "price": 449,
-      "stock": 18,
-      "published": true,
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
-      "gallery": [
-        "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
-        "/ensar-web/gorseller/kategori-cam-kure.webp",
-        "/ensar-web/gorseller/hediye-sonuc.webp"
-      ],
-      "imageAlt": "Ahşap tabanlı, sıcak LED ışıklı astronot ve gezegen figürlü kristal cam küre",
-      "isConceptImage": true,
-      "occasions": [
-        "Doğum Günü",
-        "Mezuniyet",
-        "Yeni İş",
-        "Sevgililer Günü"
-      ],
-      "giftTypes": [
-        "Işıklı Ürünler",
-        "Cam Küreler"
-      ],
-      "options": [
-        {
-          "name": "Taban Işık Modu",
-          "required": true,
-          "values": [
-            "Sıcak Gün Işığı (Sabit)",
-            "Renk Değiştiren RGB"
-          ]
-        }
-      ],
-      "legacyPath": "/Cam-Kureler?product_id=347"
-    },
-    {
       "id": "prod-564",
       "sku": "ENS-MK-564",
       "slug": "muzikli-balerinli-piyano",
