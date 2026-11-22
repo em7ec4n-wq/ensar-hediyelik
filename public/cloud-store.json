@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795383148314",
+      "sku": "ENS-48313",
+      "slug": "tavsan-pelus-ens-48313",
+      "name": "Tavşan peluş",
+      "shortName": "Tavşan peluş",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "45 cm",
+      "price": 550,
+      "stock": 99,
+      "published": true,
+      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "gallery": [
+        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+      ],
+      "imageAlt": "Tavşan peluş (ENS-48313)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "yilbasi-6169-01",
       "sku": "6169-01",
       "slug": "yilbasi-agac-susu-6169-01",
