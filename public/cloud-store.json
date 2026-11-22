@@ -250,9 +250,9 @@
       "price": 550,
       "stock": 99,
       "published": true,
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795383175135-yd55n-IMG_4495.jpeg",
       "gallery": [
-        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795383175135-yd55n-IMG_4495.jpeg"
       ],
       "imageAlt": "Tavşan peluş (ENS-48313)",
       "isConceptImage": false,
