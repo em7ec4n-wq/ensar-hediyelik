@@ -1,40 +1,8 @@
 import { NextResponse } from "next/server";
 import { readStore, writeStore } from "@/lib/store-server";
-import { DEFAULT_STORE_DATA } from "@/lib/default-store";
 import type { StoreData } from "@/types/store";
 
 export const dynamic = "force-dynamic";
-
-function ensureMandatoryCategories(store: StoreData): StoreData {
-  const existing = new Set(store.categories.map((c) => c.slug));
-  const defBySlug = new Map(
-    DEFAULT_STORE_DATA.categories.map((c) => [c.slug, c])
-  );
-  // Ensure all default categories exist with proper parentSlug
-  for (const defCat of DEFAULT_STORE_DATA.categories) {
-    if (!existing.has(defCat.slug)) {
-      store.categories.push(structuredClone(defCat));
-      existing.add(defCat.slug);
-    } else {
-      const found = store.categories.find((c) => c.slug === defCat.slug);
-      if (found && defCat.parentSlug && !found.parentSlug) {
-        found.parentSlug = defCat.parentSlug;
-      }
-    }
-  }
-  // Keep main order from DEFAULT_STORE_DATA for core categories while preserving any extra custom categories
-  const coreOrder = new Map(
-    DEFAULT_STORE_DATA.categories.map((c, idx) => [c.slug, idx])
-  );
-  store.categories.sort((a, b) => {
-    const idxA = coreOrder.has(a.slug) ? coreOrder.get(a.slug)! : 999;
-    const idxB = coreOrder.has(b.slug) ? coreOrder.get(b.slug)! : 999;
-    if (idxA !== idxB) return idxA - idxB;
-    return 0;
-  });
-  void defBySlug;
-  return store;
-}
 
 const GH_REPO = process.env.GITHUB_STORE_REPO || "em7ec4n-wq/ensar-hediyelik";
 const GH_PATH = "public/cloud-store.json";
@@ -181,7 +149,7 @@ async function saveToCloud(store: StoreData): Promise<boolean> {
 
 export async function GET() {
   const cloud = await fetchFromCloud();
-  const store = ensureMandatoryCategories(cloud || readStore());
+  const store = cloud || readStore();
   return NextResponse.json(store, {
     headers: {
       "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
@@ -191,15 +159,14 @@ export async function GET() {
 
 export async function PUT(request: Request) {
   try {
-    const rawBody = (await request.json()) as StoreData;
-    if (!rawBody || !Array.isArray(rawBody.products) || !Array.isArray(rawBody.categories)) {
+    const body = (await request.json()) as StoreData;
+    if (!body || !Array.isArray(body.products) || !Array.isArray(body.categories)) {
       return NextResponse.json(
         { error: "Geçersiz mağaza verisi." },
         { status: 400 }
       );
     }
 
-    const body = ensureMandatoryCategories(rawBody);
     await saveToCloud(body);
     try {
       writeStore(body);

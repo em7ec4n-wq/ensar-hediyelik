@@ -70,14 +70,6 @@ function sanitizeStoreImages(store: StoreData): StoreData {
     }
   }
 
-  // Ensure default categories & 4 snow globe subcategories exist
-  const existingCatSlugs = new Set(next.categories.map((c) => c.slug));
-  for (const defCat of DEFAULT_STORE_DATA.categories) {
-    if (!existingCatSlugs.has(defCat.slug)) {
-      next.categories.push(structuredClone(defCat));
-    }
-  }
-
   for (const cat of next.categories) {
     if (isBrokenOrVolatileUrl(cat.image)) {
       cat.image =

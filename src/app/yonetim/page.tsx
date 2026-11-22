@@ -74,6 +74,9 @@ export default function AdminPanelPage() {
   const [newCatDesc, setNewCatDesc] = useState("");
   const [newCatImage, setNewCatImage] = useState("");
   const [newCatHome, setNewCatHome] = useState(true);
+  const [confirmDeleteCatSlug, setConfirmDeleteCatSlug] = useState<string | null>(
+    null
+  );
 
   // Confirm reset state
   const [confirmReset, setConfirmReset] = useState(false);
@@ -422,6 +425,9 @@ export default function AdminPanelPage() {
             <button
               type="button"
               onClick={() => {
+                if (prodCatFilter !== "all" && !showNewProduct) {
+                  setNewProdCat(prodCatFilter);
+                }
                 setShowNewProduct((v) => !v);
                 setShowBulkPrice(false);
               }}
@@ -618,11 +624,18 @@ export default function AdminPanelPage() {
                       onChange={(e) => setNewProdCat(e.target.value)}
                       className="ensar-select h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] pl-3.5 pr-9 text-sm focus:border-[#321B2D] focus:outline-none"
                     >
-                      {store.categories.map((c) => (
-                        <option key={c.slug} value={c.slug}>
-                          {c.parentSlug ? `↳ ${c.name}` : c.name}
-                        </option>
-                      ))}
+                      {store.categories.map((c) => {
+                        const parent = c.parentSlug
+                          ? store.categories.find((p) => p.slug === c.parentSlug)
+                          : null;
+                        return (
+                          <option key={c.slug} value={c.slug}>
+                            {parent
+                              ? `↳ ${parent.name} → ${c.name}`
+                              : c.name}
+                          </option>
+                        );
+                      })}
                     </select>
                     <ChevronDownIcon
                       size={16}
@@ -878,7 +891,7 @@ export default function AdminPanelPage() {
                 { slug: "all", label: "Tümü" },
                 ...store.categories.map((c) => ({
                   slug: c.slug,
-                  label: c.name,
+                  label: c.parentSlug ? `↳ ${c.name}` : c.name,
                 })),
               ].map((chip) => (
                 <button
@@ -886,6 +899,9 @@ export default function AdminPanelPage() {
                   type="button"
                   onClick={() => {
                     setProdCatFilter(chip.slug);
+                    if (chip.slug !== "all") {
+                      setNewProdCat(chip.slug);
+                    }
                     setVisibleLimit(24);
                   }}
                   className={`shrink-0 rounded-lg px-2.5 py-1 text-xs font-semibold transition-colors ${
@@ -1147,11 +1163,20 @@ export default function AdminPanelPage() {
                               }}
                               className="ensar-select h-10 w-full truncate rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] pl-2.5 pr-7 text-xs font-semibold text-[#241722] sm:w-40"
                             >
-                              {store.categories.map((c) => (
-                                <option key={c.slug} value={c.slug}>
-                                  {c.parentSlug ? `↳ ${c.name}` : c.name}
-                                </option>
-                              ))}
+                              {store.categories.map((c) => {
+                                const parent = c.parentSlug
+                                  ? store.categories.find(
+                                      (p) => p.slug === c.parentSlug
+                                    )
+                                  : null;
+                                return (
+                                  <option key={c.slug} value={c.slug}>
+                                    {parent
+                                      ? `↳ ${parent.name} → ${c.name}`
+                                      : c.name}
+                                  </option>
+                                );
+                              })}
                             </select>
                             <ChevronDownIcon
                               size={14}
@@ -1517,90 +1542,245 @@ export default function AdminPanelPage() {
           )}
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            {store.categories.map((cat, idx) => (
-              <div
-                key={cat.slug}
-                className="ensar-card flex flex-col gap-4 p-4 sm:flex-row sm:items-center"
-              >
-                <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-[#E5DCD0] bg-[#FFFDF8]">
-                  <img
-                    src={cat.image}
-                    alt={cat.imageAlt}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="flex-1 space-y-2.5">
-                  <div className="flex items-center justify-between gap-2">
-                    <input
-                      value={cat.name}
-                      onChange={(e) => {
-                        const next = structuredClone(store);
-                        next.categories[idx].name = e.target.value;
-                        void commitStore(next);
-                      }}
-                      className="h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm font-semibold text-[#241722]"
+            {store.categories.map((cat, idx) => {
+              const parentCat = cat.parentSlug
+                ? store.categories.find((c) => c.slug === cat.parentSlug)
+                : null;
+              const catProdCount = store.products.filter(
+                (p) =>
+                  p.categorySlug === cat.slug ||
+                  p.extraCategorySlugs?.includes(cat.slug)
+              ).length;
+
+              return (
+                <div
+                  key={cat.slug}
+                  className={`ensar-card flex flex-col gap-4 p-4 sm:flex-row sm:items-start ${
+                    cat.parentSlug ? "border-l-4 border-l-[#321B2D]" : ""
+                  }`}
+                >
+                  <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-[#E5DCD0] bg-[#FFFDF8]">
+                    <img
+                      src={cat.image}
+                      alt={cat.imageAlt}
+                      className="h-full w-full object-cover"
                     />
-                    <Link
-                      href={getCategoryHref(cat.slug)}
-                      className="shrink-0 rounded-xl bg-[#E9D9F1] px-3 py-2 text-xs font-semibold text-[#321B2D]"
-                    >
-                      Gör ↗
-                    </Link>
+                    <span className="absolute bottom-1 right-1 rounded-md bg-black/70 px-1.5 py-0.5 text-[10px] font-semibold text-white">
+                      {catProdCount} ürün
+                    </span>
                   </div>
+                  <div className="flex-1 space-y-2.5">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <span
+                        className={`rounded-md px-2 py-0.5 text-[11px] font-bold ${
+                          parentCat
+                            ? "bg-[#321B2D] text-[#F7F3EB]"
+                            : "bg-[#E9D9F1] text-[#321B2D]"
+                        }`}
+                      >
+                        {parentCat
+                          ? `↳ Alt Kategori (${parentCat.name})`
+                          : "Ana Kategori"}
+                      </span>
 
-                  <input
-                    value={cat.description}
-                    onChange={(e) => {
-                      const next = structuredClone(store);
-                      next.categories[idx].description = e.target.value;
-                      void commitStore(next);
-                    }}
-                    className="h-9 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-xs text-[#4C3C49]"
-                  />
+                      <div className="flex items-center gap-1.5">
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setNewProdCat(cat.slug);
+                            setProdCatFilter(cat.slug);
+                            setShowNewProduct(true);
+                            setActiveTab("urunler");
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }}
+                          className="rounded-xl bg-[#321B2D] px-2.5 py-1.5 text-xs font-semibold text-[#F7F3EB] hover:bg-[#44253D]"
+                        >
+                          ＋ Bu Kategoriye Ürün Ekle
+                        </button>
+                        <Link
+                          href={getCategoryHref(cat.slug)}
+                          className="shrink-0 rounded-xl bg-[#E9D9F1] px-2.5 py-1.5 text-xs font-semibold text-[#321B2D]"
+                        >
+                          Gör ↗
+                        </Link>
+                      </div>
+                    </div>
 
-                  <div className="flex flex-wrap items-center justify-between gap-2 pt-0.5">
-                    <label className="inline-flex min-h-[36px] cursor-pointer items-center gap-1.5 rounded-xl bg-[#321B2D] px-3.5 py-1 text-xs font-semibold text-[#F7F3EB]">
-                      <span>📷 Fotoğraf Değiştir</span>
-                      <input
-                        type="file"
-                        accept="image/*"
-                        className="hidden"
-                        onChange={(e) =>
-                          handleFilesUpload(
-                            e.target.files,
-                            `cat-${cat.slug}`,
-                            (urls) => {
-                              if (!urls[0]) return;
+                    <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                      <div>
+                        <label className="block text-[11px] font-bold text-[#6F606C]">
+                          Kategori Adı
+                        </label>
+                        <input
+                          value={cat.name}
+                          onChange={(e) => {
+                            const next = structuredClone(store);
+                            next.categories[idx].name = e.target.value;
+                            void commitStore(next);
+                          }}
+                          className="mt-0.5 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm font-semibold text-[#241722]"
+                        />
+                      </div>
+
+                      <div>
+                        <label className="block text-[11px] font-bold text-[#6F606C]">
+                          Üst Kategori (Alt kategori yapmak için seçin)
+                        </label>
+                        <div className="relative mt-0.5">
+                          <select
+                            value={cat.parentSlug || ""}
+                            onChange={(e) => {
                               const next = structuredClone(store);
-                              next.categories[idx].image = urls[0];
-                              next.categories[idx].isConceptImage = false;
+                              next.categories[idx].parentSlug =
+                                e.target.value || undefined;
                               void commitStore(
                                 next,
-                                "✓ Kategori fotoğrafı kaydedildi"
+                                e.target.value
+                                  ? "✓ Alt kategori olarak bağlandı"
+                                  : "✓ Ana kategori yapıldı"
                               );
-                            }
-                          )
-                        }
-                      />
-                    </label>
+                            }}
+                            className="ensar-select h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] pl-2.5 pr-7 text-xs font-semibold text-[#241722]"
+                          >
+                            <option value="">Ana Kategori (Üst Yok)</option>
+                            {store.categories
+                              .filter(
+                                (c) => !c.parentSlug && c.slug !== cat.slug
+                              )
+                              .map((c) => (
+                                <option key={c.slug} value={c.slug}>
+                                  ↳ {c.name} Altında
+                                </option>
+                              ))}
+                          </select>
+                          <ChevronDownIcon
+                            size={14}
+                            className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-[#5F505C]"
+                          />
+                        </div>
+                      </div>
+                    </div>
 
-                    <label className="flex items-center gap-1.5 text-xs font-medium text-[#241722]">
-                      <input
-                        type="checkbox"
-                        checked={cat.showOnHome}
-                        onChange={(e) => {
-                          const next = structuredClone(store);
-                          next.categories[idx].showOnHome = e.target.checked;
-                          void commitStore(next);
-                        }}
-                        className="accent-[#321B2D]"
-                      />
-                      <span>Ana sayfada göster</span>
-                    </label>
+                    <input
+                      value={cat.description}
+                      onChange={(e) => {
+                        const next = structuredClone(store);
+                        next.categories[idx].description = e.target.value;
+                        void commitStore(next);
+                      }}
+                      placeholder="Kategori açıklaması…"
+                      className="h-9 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-xs text-[#4C3C49]"
+                    />
+
+                    <div className="flex flex-wrap items-center justify-between gap-2 pt-0.5">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <label className="inline-flex min-h-[36px] cursor-pointer items-center gap-1.5 rounded-xl bg-[#321B2D] px-3.5 py-1 text-xs font-semibold text-[#F7F3EB]">
+                          <span>📷 Fotoğraf Değiştir</span>
+                          <input
+                            type="file"
+                            accept="image/*"
+                            className="hidden"
+                            onChange={(e) =>
+                              handleFilesUpload(
+                                e.target.files,
+                                `cat-${cat.slug}`,
+                                (urls) => {
+                                  if (!urls[0]) return;
+                                  const next = structuredClone(store);
+                                  next.categories[idx].image = urls[0];
+                                  next.categories[idx].isConceptImage = false;
+                                  void commitStore(
+                                    next,
+                                    "✓ Kategori fotoğrafı kaydedildi"
+                                  );
+                                }
+                              )
+                            }
+                          />
+                        </label>
+
+                        <label className="flex items-center gap-1.5 text-xs font-medium text-[#241722]">
+                          <input
+                            type="checkbox"
+                            checked={cat.showOnHome}
+                            onChange={(e) => {
+                              const next = structuredClone(store);
+                              next.categories[idx].showOnHome =
+                                e.target.checked;
+                              void commitStore(next);
+                            }}
+                            className="accent-[#321B2D]"
+                          />
+                          <span>Ana sayfada göster</span>
+                        </label>
+                      </div>
+
+                      {confirmDeleteCatSlug === cat.slug ? (
+                        <div className="flex items-center gap-1.5">
+                          <span className="text-xs font-bold text-rose-700">
+                            Silinsin mi?
+                          </span>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              const next = structuredClone(store);
+                              const fallbackSlug =
+                                cat.parentSlug ||
+                                next.categories.find(
+                                  (c) => c.slug !== cat.slug
+                                )?.slug ||
+                                "hediyelik-urunler";
+                              next.categories = next.categories.filter(
+                                (c) => c.slug !== cat.slug
+                              );
+                              for (const c of next.categories) {
+                                if (c.parentSlug === cat.slug) {
+                                  c.parentSlug = undefined;
+                                }
+                              }
+                              for (const p of next.products) {
+                                if (p.categorySlug === cat.slug) {
+                                  p.categorySlug = fallbackSlug;
+                                }
+                                if (Array.isArray(p.extraCategorySlugs)) {
+                                  p.extraCategorySlugs =
+                                    p.extraCategorySlugs.filter(
+                                      (s) => s !== cat.slug
+                                    );
+                                }
+                              }
+                              setConfirmDeleteCatSlug(null);
+                              void commitStore(
+                                next,
+                                `✓ "${cat.name}" kategorisi silindi`
+                              );
+                            }}
+                            className="rounded-lg bg-rose-700 px-3 py-1 text-xs font-semibold text-white"
+                          >
+                            Evet, Sil
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setConfirmDeleteCatSlug(null)}
+                            className="rounded-lg border border-[#DDD3C6] px-2.5 py-1 text-xs font-semibold"
+                          >
+                            Vazgeç
+                          </button>
+                        </div>
+                      ) : (
+                        <button
+                          type="button"
+                          onClick={() => setConfirmDeleteCatSlug(cat.slug)}
+                          className="rounded-lg border border-rose-700/30 bg-rose-50 px-2.5 py-1 text-xs font-semibold text-rose-700 hover:bg-rose-700 hover:text-white"
+                        >
+                          🗑 Kategoriyi Sil
+                        </button>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}
