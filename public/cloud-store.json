@@ -175,16 +175,6 @@
       "isConceptImage": false
     },
     {
-      "slug": "isikli-hediyeler",
-      "name": "Işıklı Hediyeler",
-      "description": "Cam fanus solmayan güller, ışıklı dekoratif fanuslar, LED'li cam küreler ve gece lambaları.",
-      "image": "/ensar-web/gorseller/vitrin-isikli-hediyeler.webp",
-      "imageAlt": "Işıklı Hediyeler",
-      "showOnHome": true,
-      "homeOrder": 8,
-      "isConceptImage": false
-    },
-    {
       "slug": "yilbasi",
       "name": "Yılbaşı Ürünleri",
       "description": "Yılbaşı ağaçları, Noel Baba figürleri, ağaç süsleri ve yılbaşı dekorları.",
@@ -255,7 +245,6 @@
       "shortName": "Astronot Cam Küre",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "Lazer işleme kristal cam küre içerisinde astronot ve gezegen detayı bulunur. Doğal ahşap görünümlü tabanı USB kablo ile sıcak sarı LED ışık verir; gece lambası ve masaüstü hediyesi olarak idealdir.",
@@ -426,7 +415,6 @@
       ],
       "legacyPath": "/isikli-grup?product_id=562",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ]
     },
@@ -1264,7 +1252,7 @@
       "slug": "yilbasi-sapka-isikli-9103-002",
       "name": "Yılbaşı Şapka Işıklı",
       "shortName": "Yılbaşı Şapka Işıklı",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -3354,7 +3342,7 @@
       "slug": "kardan-adam-silikon-isik-12cm-mf-30",
       "name": "Kardan Adam Silikon Işık 12Cm",
       "shortName": "Kardan Adam Silikon Işık 12Cm",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -3391,7 +3379,7 @@
       "slug": "kardan-adam-silikon-isik-14-cm-mf-40",
       "name": "Kardan Adam Silikon Işık 14 Cm",
       "shortName": "Kardan Adam Silikon Işık 14 Cm",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -3428,7 +3416,7 @@
       "slug": "kardan-adam-silikon-isik-18-cm-mf-50",
       "name": "Kardan Adam Silikon Işık 18 Cm",
       "shortName": "Kardan Adam Silikon Işık 18 Cm",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4132,7 +4120,6 @@
       "shortName": "Yılbaşı Işık 2.5 Metre",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4170,7 +4157,6 @@
       "shortName": "Yılbaşı Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4208,7 +4194,6 @@
       "shortName": "Yılbaşı Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4246,7 +4231,6 @@
       "shortName": "Yılbaşı Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4284,7 +4268,6 @@
       "shortName": "Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4322,7 +4305,6 @@
       "shortName": "Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4360,7 +4342,6 @@
       "shortName": "Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4398,7 +4379,6 @@
       "shortName": "Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4436,7 +4416,6 @@
       "shortName": "Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4472,7 +4451,7 @@
       "slug": "isik-emn-1001",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4509,7 +4488,7 @@
       "slug": "isik-emn-1002",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4546,7 +4525,7 @@
       "slug": "isik-emn-1003",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4583,7 +4562,7 @@
       "slug": "isik-emn-1004",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4620,7 +4599,7 @@
       "slug": "isik-emn-1005",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4657,7 +4636,7 @@
       "slug": "isik-emn-1006",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4694,7 +4673,7 @@
       "slug": "isik-emn-1007",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -6832,7 +6811,7 @@
       "slug": "yilbasi-fanus-b4-9209-79",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -6870,7 +6849,7 @@
       "slug": "yilbasi-fanus-b4-9209-80",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -6908,7 +6887,7 @@
       "slug": "yilbasi-fanus-b4-9209-81",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -6946,7 +6925,7 @@
       "slug": "yilbasi-fanus-b4-9209-91",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -6984,7 +6963,7 @@
       "slug": "yilbasi-fanus-b4-9209-95",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -7022,7 +7001,7 @@
       "slug": "yilbasi-fanus-b4-9209-96",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -7060,7 +7039,7 @@
       "slug": "yilbasi-fanus-b4-9209-97",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -7098,7 +7077,7 @@
       "slug": "yilbasi-fanus-b4-9209-98",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -7136,7 +7115,7 @@
       "slug": "yilbasi-pls-fanus-b4-9209-68",
       "name": "Yılbaşı Pls.Fanus",
       "shortName": "Yılbaşı Pls.Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -7174,7 +7153,7 @@
       "slug": "yilbasi-pls-fanus-b4-9209-83",
       "name": "Yılbaşı Pls.Fanus",
       "shortName": "Yılbaşı Pls.Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -7286,7 +7265,7 @@
       "slug": "yilbasi-muzikli-fanus-ch03",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7402,7 +7381,7 @@
       "slug": "yilbasi-muzikli-fanus-ds029",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7444,7 +7423,7 @@
       "slug": "yilbasi-muzikli-fanus-ds030-1",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7483,7 +7462,7 @@
       "slug": "yilbasi-muzikli-fanus-ds0103",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7524,7 +7503,7 @@
       "slug": "yilbasi-muzikli-fanus-ds609",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7566,7 +7545,7 @@
       "slug": "yilbasi-muzikli-fanus-ds809",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7605,7 +7584,7 @@
       "slug": "yilbasi-muzikli-fanus-ds812",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7647,7 +7626,7 @@
       "slug": "yilbasi-muzikli-fanus-ds815",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7688,7 +7667,7 @@
       "slug": "yilbasi-muzikli-fanus-ds819",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7729,7 +7708,7 @@
       "slug": "yilbasi-muzikli-fanus-ds827",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7768,7 +7747,7 @@
       "slug": "yilbasi-muzikli-fanus-ds833",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7809,7 +7788,7 @@
       "slug": "yilbasi-muzikli-fanus-ds834",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7851,7 +7830,7 @@
       "slug": "yilbasi-muzikli-fanus-ds836",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7931,7 +7910,7 @@
       "slug": "yilbasi-sokak-lambasi-ld18a-3c",
       "name": "Yılbaşı Sokak Lambası",
       "shortName": "Yılbaşı Sokak Lambası",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -7968,7 +7947,7 @@
       "slug": "yilbasi-sokak-lambasi-ld22a-1",
       "name": "Yılbaşı Sokak Lambası",
       "shortName": "Yılbaşı Sokak Lambası",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -8005,7 +7984,7 @@
       "slug": "yilbasi-sokak-lambasi-ld22a-4",
       "name": "Yılbaşı Sokak Lambası",
       "shortName": "Yılbaşı Sokak Lambası",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -8042,7 +8021,7 @@
       "slug": "yilbasi-sokak-lambasi-ld22b-6",
       "name": "Yılbaşı Sokak Lambası",
       "shortName": "Yılbaşı Sokak Lambası",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -8079,7 +8058,7 @@
       "slug": "yilbasi-sokak-lambasi-ld23q-a2",
       "name": "Yılbaşı Sokak Lambası",
       "shortName": "Yılbaşı Sokak Lambası",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -8116,7 +8095,7 @@
       "slug": "yilbasi-sokak-lambasi-ld23q-a4",
       "name": "Yılbaşı Sokak Lambası",
       "shortName": "Yılbaşı Sokak Lambası",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -8153,7 +8132,7 @@
       "slug": "yilbasi-muzikli-fanus-lwb03",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -8195,7 +8174,7 @@
       "slug": "yilbasi-fanus-wdl-22009a",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -8492,7 +8471,7 @@
       "slug": "yilbasi-muzikli-fanus-sds01",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -8573,7 +8552,6 @@
       "shortName": "Pls.Ağaç Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -8609,7 +8587,7 @@
       "slug": "usb-li-fanus-b4-9209-87",
       "name": "Usb Li Fanus",
       "shortName": "Usb Li Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -8647,7 +8625,7 @@
       "slug": "usb-li-fanus-b4-9209-89",
       "name": "Usb Li Fanus",
       "shortName": "Usb Li Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -8904,7 +8882,7 @@
       "slug": "yilbasi-muzikli-fanus-ds029-2",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -8945,7 +8923,7 @@
       "slug": "usb-li-fanus-b4-9209-88",
       "name": "Usb Li Fanus",
       "shortName": "Usb Li Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -8983,7 +8961,7 @@
       "slug": "usb-li-fanus-b4-9209-90",
       "name": "Usb Li Fanus",
       "shortName": "Usb Li Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
