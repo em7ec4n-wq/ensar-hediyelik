@@ -78,7 +78,7 @@
       "slug": "sevgililer-gunu",
       "name": "Sevgililer Günü",
       "description": "Solmayan gül fanusları, romantik müzik kutuları, ışıklı fanuslar ve Sevgililer Günü'ne özel hediyeler.",
-      "image": "/ensar-web/gorseller/urun-solmayan-gul-fanusu.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795378472931-4fz2e-IMG_4478.jpeg",
       "imageAlt": "Sevgililer Günü Hediyeleri",
       "showOnHome": true,
       "homeOrder": 2,
