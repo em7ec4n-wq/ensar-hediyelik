@@ -285,49 +285,6 @@
       "legacyPath": "/Kar küresi çeşitleri?product_id=490"
     },
     {
-      "id": "prod-460",
-      "sku": "ENS-KS-460",
-      "slug": "15-dakikalik-metal-kum-saati",
-      "name": "15 Dakikalık Metal Gövdeli Dekoratif Kum Saati",
-      "shortName": "Metal Kum Saati",
-      "categorySlug": "kum-saatleri",
-      "description": "Antik pirinç tonunda metal sütunlar ve ince akışlı renkli kum ile çalışma masası veya kitaplık için zamansız bir dekoratif hediye.",
-      "price": 389,
-      "stock": 22,
-      "published": true,
-      "image": "/ensar-web/gorseller/kategori-kum-saati.webp",
-      "gallery": [
-        "/ensar-web/gorseller/kategori-kum-saati.webp"
-      ],
-      "imageAlt": "Pirinç görünümlü metal çerçeveli mor kumlu 15 dakikalık kum saati",
-      "isConceptImage": true,
-      "occasions": [
-        "Yeni İş",
-        "Ev Hediyesi",
-        "Mezuniyet",
-        "Doğum Günü"
-      ],
-      "giftTypes": [
-        "Kum Saatleri",
-        "Ofis & Masaüstü"
-      ],
-      "options": [
-        {
-          "name": "Süre Seçeneği",
-          "required": true,
-          "values": [
-            "10 Dakika",
-            "15 Dakika",
-            "30 Dakika"
-          ]
-        }
-      ],
-      "legacyPath": "/Kum-Saati-Cesitleri?product_id=460",
-      "extraCategorySlugs": [
-        "hediyelik-urunler"
-      ]
-    },
-    {
       "id": "yilbasi-6169-01",
       "sku": "6169-01",
       "slug": "yilbasi-agac-susu-6169-01",
