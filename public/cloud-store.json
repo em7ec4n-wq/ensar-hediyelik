@@ -256,7 +256,7 @@
       ],
       "imageAlt": "Işıklı Star master (01)",
       "isConceptImage": false,
-      "isNewArrival": true,
+      "isNewArrival": false,
       "occasions": [
         "Hediye"
       ],
@@ -9803,5 +9803,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795458158688
+  "updatedAt": 1795458239659
 }
