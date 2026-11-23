@@ -250,9 +250,9 @@
       "price": 370,
       "stock": 99,
       "published": true,
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428107342-t196p-IMG_4501.jpeg",
       "gallery": [
-        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428107342-t196p-IMG_4501.jpeg"
       ],
       "imageAlt": "Civciv peluş 42 cm (ENS-96195)",
       "isConceptImage": false,
