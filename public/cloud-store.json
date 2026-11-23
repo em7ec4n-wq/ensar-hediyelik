@@ -249,6 +249,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795467934126",
+      "sku": "ENS-QVSX",
+      "slug": "asorti-welsoft-kutulu-oturan-pelus-ayicil",
+      "name": "Asorti welsoft kutulu oturan peluş ayıcıl",
+      "shortName": "Asorti welsoft kutulu oturan peluş ayıcıl",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467911420-ztptu-IMG_4577.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467911420-ztptu-IMG_4577.jpeg"
+      ],
+      "imageAlt": "Asorti welsoft kutulu oturan peluş ayıcıl (ENS-QVSX)",
+      "isConceptImage": false,
+      "isNewArrival": false,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795467876029",
       "sku": "ENS-KVWW",
       "slug": "asorti-welsoft-oturan-pelus-ayicik-35-cm",
@@ -832,9 +858,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467877530-rtsmx.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467936030-w0hsb.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467879127-vhe8q.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467937295-lrpqo.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -936,9 +962,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467881366-jod0c.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467938259-cws97.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467882344-erzw2.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467939143-qkgcd.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -10574,5 +10600,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795467877521
+  "updatedAt": 1795467936020
 }
