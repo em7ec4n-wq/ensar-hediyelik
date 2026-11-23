@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795430067833",
+      "sku": "ENS-67833",
+      "slug": "fermuarli-penguen-pelus-mavi-26-cm-ens-67833",
+      "name": "Fermuarlı penguen peluş mavi 26 cm",
+      "shortName": "Fermuarlı penguen peluş mavi 26 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 305,
+      "stock": 99,
+      "published": true,
+      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "gallery": [
+        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+      ],
+      "imageAlt": "Fermuarlı penguen peluş mavi 26 cm (ENS-67833)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795430008805",
       "sku": "ENS-08804",
       "slug": "sapkali-pembe-pelus-27-cm-ens-08804",
