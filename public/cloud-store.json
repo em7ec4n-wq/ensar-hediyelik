@@ -239,22 +239,74 @@
   ],
   "products": [
     {
-      "id": "custom-1795449094765",
-      "sku": "ENS-209L",
-      "slug": "gri-yavrulu-fil-pelus",
-      "name": "Gri yavrulu fil peluş 55 cm",
-      "shortName": "Gri yavrulu fil peluş 55 cm",
+      "id": "custom-1795449400296",
+      "sku": "ENS-8O8F",
+      "slug": "hugs-baby-kahverengi-elbiseli-pelus-ayicik-60-cm",
+      "name": "Hugs baby kahverengi elbiseli peluş ayıcık 60 cm",
+      "shortName": "Hugs baby kahverengi elbiseli peluş ayıcık 60 cm",
       "categorySlug": "peluslar",
       "extraCategorySlugs": [],
-      "description": "",
+      "description": "60 cm",
       "price": 535,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795449073105-nia66-IMG_4536.jpeg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795449351589-3zkid-IMG_4540.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795449073105-nia66-IMG_4536.jpeg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795449351589-3zkid-IMG_4540.jpeg"
       ],
-      "imageAlt": "Gri yavrulu fil peluş (ENS-209L)",
+      "imageAlt": "Hugs baby kahverengi elbiseli peluş ayıcık 60 cm (ENS-8O8F)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795449153372",
+      "sku": "ENS-4HX0",
+      "slug": "gri-yavrulu-fil-pelus-45-cm",
+      "name": "Gri yavrulu fil peluş 45 cm",
+      "shortName": "Gri yavrulu fil peluş 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 400,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795449122651-b0cqs-IMG_4536.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795449122651-b0cqs-IMG_4536.jpeg"
+      ],
+      "imageAlt": "Gri yavrulu fil peluş 45 cm (ENS-4HX0)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795448991243",
+      "sku": "ENS-VVZO",
+      "slug": "giris-yavrulu-fil-pelus-55-cm",
+      "name": "Giriş yavrulu fil peluş 55 cm",
+      "shortName": "Giriş yavrulu fil peluş 55 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 500,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795448944150-sujye-IMG_4536.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795448944150-sujye-IMG_4536.jpeg"
+      ],
+      "imageAlt": "Giriş yavrulu fil peluş 55 cm (ENS-VVZO)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
