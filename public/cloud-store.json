@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795428096196",
+      "sku": "ENS-96195",
+      "slug": "civciv-pelus-42-cm-ens-96195",
+      "name": "Civciv peluş 42 cm",
+      "shortName": "Civciv peluş 42 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 370,
+      "stock": 99,
+      "published": true,
+      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "gallery": [
+        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+      ],
+      "imageAlt": "Civciv peluş 42 cm (ENS-96195)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795428093362",
       "sku": "ENS-93362",
       "slug": "civciv-pelus-42-cm-ens-93362",
