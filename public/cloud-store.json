@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795446298660",
+      "sku": "ENS-98660",
+      "slug": "patili-pelus-ayicik-kahverengi-50-cm-ens-98660",
+      "name": "Patili peluş ayıcık kahverengi 50 cm",
+      "shortName": "Patili peluş ayıcık kahverengi 50 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 505,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446251848-mes3h-IMG_4534.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446251848-mes3h-IMG_4534.jpeg"
+      ],
+      "imageAlt": "Patili peluş ayıcık kahverengi 50 cm (ENS-98660)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795446217041",
       "sku": "ENS-17040",
       "slug": "sevimli-tavsan-gri-pelus-35-cm-ens-17040",
