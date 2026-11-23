@@ -239,9 +239,9 @@
   ],
   "products": [
     {
-      "id": "custom-1795462730603",
+      "id": "custom-1795462738717",
       "sku": "111",
-      "slug": "enstruman-m-kutu",
+      "slug": "enstruman-m-kutu-2",
       "name": "Enstrüman m kutu",
       "shortName": "Enstrüman m kutu",
       "categorySlug": "muzik-kutulari",
@@ -302,9 +302,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462734557-6h2fo.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462742756-5jyl2.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462735584-9vsgb.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462743806-wop8i.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -406,9 +406,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462736554-hvf9j.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462744922-q5ilx.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462737523-oyb6l.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462745978-ppe89.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -10063,5 +10063,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795462734553
+  "updatedAt": 1795462742750
 }
