@@ -239,6 +239,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795458156456",
+      "sku": "01",
+      "slug": "isikli-star-master",
+      "name": "Işıklı Star master",
+      "shortName": "Işıklı Star master",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 165,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795458127712-ibpwj-IMG_9358.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795458127712-ibpwj-IMG_9358.jpeg"
+      ],
+      "imageAlt": "Işıklı Star master (01)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795452621611",
       "sku": "ENS-Y4MR",
       "slug": "asorti-balik-pelus-30-cm",
@@ -9750,5 +9776,6 @@
       ]
     }
   ],
-  "orders": []
+  "orders": [],
+  "updatedAt": 1795458157014
 }
