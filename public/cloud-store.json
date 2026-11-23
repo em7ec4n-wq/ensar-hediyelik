@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795430177131",
+      "sku": "ENS-77131",
+      "slug": "fermuarli-penguen-pelus-pembe-26-cm-ens-77131",
+      "name": "Fermuarlı penguen peluş pembe 26 cm",
+      "shortName": "Fermuarlı penguen peluş pembe 26 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 305,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795430169590-udo1v-IMG_4512.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795430169590-udo1v-IMG_4512.jpeg"
+      ],
+      "imageAlt": "Fermuarlı penguen peluş pembe 26 cm (ENS-77131)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795430067833",
       "sku": "ENS-67833",
       "slug": "fermuarli-penguen-pelus-mavi-26-cm-ens-67833",
