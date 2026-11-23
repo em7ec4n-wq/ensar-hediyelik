@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795445543662",
+      "sku": "ENS-43661",
+      "slug": "asorti-ayakta-kopek-pelus-siyah-25-cm-ens-43661",
+      "name": "Asorti ayakta köpek peluş siyah 25 cm",
+      "shortName": "Asorti ayakta köpek peluş siyah 25 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 355,
+      "stock": 99,
+      "published": true,
+      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "gallery": [
+        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+      ],
+      "imageAlt": "Asorti ayakta köpek peluş siyah 25 cm (ENS-43661)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795445498480",
       "sku": "ENS-98480",
       "slug": "kalpli-fiyonklu-pelus-ayicik-beyaz-35-cm-ens-98480",
