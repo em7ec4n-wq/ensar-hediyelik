@@ -239,6 +239,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795462396773",
+      "sku": "ENS-I6CN",
+      "slug": "dikis-mak-nostalji-m-kutu",
+      "name": "Dikiş mak nostalji m kutu",
+      "shortName": "Dikiş mak nostalji m kutu",
+      "categorySlug": "muzik-kutulari",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 425,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462356327-9nb5t-IMG_9290.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462356327-9nb5t-IMG_9290.png"
+      ],
+      "imageAlt": "Dikiş mak nostalji m kutu (ENS-I6CN)",
+      "isConceptImage": false,
+      "isNewArrival": false,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Müzik Kutuları"
+      ]
+    },
+    {
       "id": "custom-1795462281445",
       "sku": "88",
       "slug": "dikis-mak-m-kutu-2",
@@ -250,9 +276,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462307173-0us5p.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462398025-0r4nt.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462308190-khrgs.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462399127-82nnk.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -354,9 +380,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462309235-4ckzl.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462400071-pz6kh.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462310193-l629q.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795462401136-num5h.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -10011,5 +10037,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795462307169
+  "updatedAt": 1795462398021
 }
