@@ -239,34 +239,6 @@
   ],
   "products": [
     {
-      "id": "custom-1795427901410",
-      "sku": "ENS-01410",
-      "slug": "asorti-love-sarilan-miskin-pelus-ens-01410",
-      "name": "Asorti love sarılan miskin peluş",
-      "shortName": "Asorti love sarılan miskin peluş",
-      "categorySlug": "peluslar",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 310,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795427873623-68d0n-IMG_4499.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795427873623-68d0n-IMG_4499.jpeg"
-      ],
-      "imageAlt": "Asorti love sarılan miskin peluş (ENS-01410)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "newArrivalOrder": 1,
-      "occasions": [
-        "Doğum Günü",
-        "Yılbaşı"
-      ],
-      "giftTypes": [
-        "Peluşlar"
-      ]
-    },
-    {
       "id": "custom-1795427899362",
       "sku": "ENS-99361",
       "slug": "asorti-love-sarilan-miskin-pelus-ens-99361",
