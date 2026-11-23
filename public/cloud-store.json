@@ -239,6 +239,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795460326827",
+      "sku": "22",
+      "slug": "lux-gullu-istiridye-kolye",
+      "name": "Lüx güllü istiridye kolye",
+      "shortName": "Lüx güllü istiridye kolye",
+      "categorySlug": "sevgililer-gunu",
+      "extraCategorySlugs": [],
+      "description": "Ürün güllü ve çantalı",
+      "price": 290,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460275705-j5azw-5C6E219B-B184-4630-81BD-A74EBFC0DE42.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460275705-j5azw-5C6E219B-B184-4630-81BD-A74EBFC0DE42.png"
+      ],
+      "imageAlt": "Lüx güllü istiridye kolye (22)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Sevgililer Günü"
+      ]
+    },
+    {
       "id": "custom-1795460190428",
       "sku": "24",
       "slug": "sulu-fotograf-cerceve",
@@ -9855,5 +9881,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795460191171
+  "updatedAt": 1795460327870
 }
