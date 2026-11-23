@@ -2127,6 +2127,23 @@ export default function AdminPanelPage() {
                 className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm"
               />
             </div>
+
+            <div className="sm:col-span-2">
+              <label className="block text-xs font-bold text-[#241722]">
+                Teslimat &amp; Kargo Bilgilendirme Notu
+              </label>
+              <textarea
+                rows={2}
+                value={store.settings.deliverySummary}
+                onChange={(e) => {
+                  const next = structuredClone(store);
+                  next.settings.deliverySummary = e.target.value;
+                  void commitStore(next, "✓ Teslimat notu kaydedildi");
+                }}
+                placeholder="Örn: Ürün paketlendikten sonra çıkış için bilgi verilecektir."
+                className="mt-1 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] p-3 text-sm focus:border-[#321B2D] focus:outline-none"
+              />
+            </div>
           </div>
 
           <div className="ensar-card flex flex-wrap items-center justify-between gap-4 p-6">

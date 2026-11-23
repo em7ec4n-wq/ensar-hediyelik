@@ -13,7 +13,7 @@
     "taxOfficeAndNo": "Vergi dairesi ve numarası müşteri onayı ile eklenecektir",
     "shippingThreshold": 0,
     "shippingFee": 0,
-    "deliverySummary": "Tüm siparişler özenli paketleme ile aynı gün veya 1 iş günü içinde kargoya teslim edilir.",
+    "deliverySummary": "Ürün paketlendikten sonra çıkış için bilgi verilecektir.",
     "returnSummary": "Teslim tarihinden itibaren 14 gün içinde kullanılmamış, orijinal kutusu ve aksesuarları eksiksiz ürünlerde iade veya değişim hakkı geçerlidir.",
     "paymentSummary": "Ödeme akışı işletmenin onayladığı kredi kartı (3D Secure), havale/EFT ve kapıda ödeme seçenekleriyle devreye alınır.",
     "agencyRoleNote": "Bu web sitesinin arayüz tasarımı, yazılım geliştirme, katalog geçiş altyapısı ve teknik danışmanlık hizmetleri İlay Ajans tarafından hazırlanmıştır. Satış, fiyatlandırma, faturalandırma, kargo ve müşteri ilişkileri münhasıran Ensar Hediyelik sorumluluğundadır."

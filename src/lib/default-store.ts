@@ -20,8 +20,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
     taxOfficeAndNo: "Vergi dairesi ve numarası müşteri onayı ile eklenecektir",
     shippingThreshold: 0,
     shippingFee: 0,
-    deliverySummary:
-      "Stoktaki ürünler hafta içi 15:00'e kadar verilen siparişlerde aynı gün, sonraki siparişlerde 1–2 iş günü içinde özenli hediye paketlemesiyle kargoya teslim edilir.",
+    deliverySummary: "Ürün paketlendikten sonra çıkış için bilgi verilecektir.",
     returnSummary:
       "Teslim tarihinden itibaren 14 gün içinde kullanılmamış, orijinal kutusu ve aksesuarları eksiksiz ürünlerde iade veya değişim hakkı geçerlidir.",
     paymentSummary:
