@@ -269,6 +269,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795467316419",
+      "sku": "0004",
+      "slug": "denge",
+      "name": "Denge",
+      "shortName": "Denge",
+      "categorySlug": "denge-toplari-ve-balanslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 525,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467278851-aznuc-IMG_9319.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467278851-aznuc-IMG_9319.png"
+      ],
+      "imageAlt": "Denge (0004)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Denge topları ve balanslar"
+      ]
+    },
+    {
       "id": "custom-1795466865827",
       "sku": "022",
       "slug": "metal-kumbara",
@@ -670,9 +696,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467262331-s2mnq.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467317998-i3wr7.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467263327-awgkp.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467319102-gor97.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -774,9 +800,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467264352-i3tml.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467320181-qi7ug.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467265376-rdbco.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467321057-wsm15.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -10412,5 +10438,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795467262320
+  "updatedAt": 1795467317996
 }
