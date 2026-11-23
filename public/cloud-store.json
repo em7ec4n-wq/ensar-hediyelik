@@ -239,6 +239,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795460514487",
+      "sku": "25",
+      "slug": "m-kutu-kalp",
+      "name": "M kutu kalp",
+      "shortName": "M kutu kalp",
+      "categorySlug": "muzik-kutulari",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 475,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460516214-212gv.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460517164-izm7b.png"
+      ],
+      "imageAlt": "M kutu kalp (25)",
+      "isConceptImage": false,
+      "isNewArrival": false,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Müzik Kutuları"
+      ]
+    },
+    {
       "id": "custom-1795460326827",
       "sku": "22",
       "slug": "lux-gullu-istiridye-kolye",
@@ -9881,5 +9907,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795460327870
+  "updatedAt": 1795460516212
 }
