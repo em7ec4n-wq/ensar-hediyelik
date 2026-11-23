@@ -239,9 +239,9 @@
   ],
   "products": [
     {
-      "id": "custom-1795463177569",
+      "id": "custom-1795463184615",
       "sku": "98",
-      "slug": "metal-zil",
+      "slug": "metal-zil-4",
       "name": "Metal zil",
       "shortName": "Metal zil",
       "categorySlug": "hediyelik-urunler",
@@ -328,9 +328,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463179637-c8r7o.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463186399-ikdkr.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463180855-0c5kp.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463187321-fu7bs.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -432,9 +432,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463182028-u5tpv.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463188263-k2gih.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463182932-oozry.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463189102-ffh29.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -10073,5 +10073,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795463179623
+  "updatedAt": 1795463186396
 }
