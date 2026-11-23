@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795428734231",
+      "sku": "ENS-34230",
+      "slug": "sapkali-civciv-pelus-mavi-27-cm-ens-34230",
+      "name": "Şapkalı civciv peluş mavi 27 cm",
+      "shortName": "Şapkalı civciv peluş mavi 27 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428698524-r3uxj-IMG_4503.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428698524-r3uxj-IMG_4503.jpeg"
+      ],
+      "imageAlt": "Şapkalı civciv peluş mavi 27 cm (ENS-34230)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795428731782",
       "sku": "ENS-31782",
       "slug": "sapkali-civciv-pelus-mavi-27-cm-ens-31782",
