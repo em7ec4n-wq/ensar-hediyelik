@@ -249,6 +249,43 @@
   ],
   "products": [
     {
+      "id": "custom-1795466123532",
+      "sku": "123",
+      "slug": "metal-lux-saat",
+      "name": "Metal lüx saat",
+      "shortName": "Metal lüx saat",
+      "categorySlug": "masa-saatleri",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 285,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466090629-c4oa7-a09933f8-6d3e-409a-a820-f4f08623702b.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466090629-c4oa7-a09933f8-6d3e-409a-a820-f4f08623702b.jpeg",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466092111-m1rgb-685bb94a-0aec-4f8b-9018-96c9d323e6ab.jpeg",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466094036-ltar1-db874a11-1464-4faf-8dd9-4265532dcc3e.jpeg",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466095530-gwq2f-e8664c89-08f2-4393-93ba-01c210d15148.jpeg",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466097853-xhhyx-f14a7560-6370-4cfa-b0a4-60787a4bf396.jpeg",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466100997-54wst-91fb0300-0b31-4b5d-8732-faa7ef028afa.jpeg",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466102834-qannf-685bb94a-0aec-4f8b-9018-96c9d323e6ab.jpeg",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466104362-3pcyn-393c5cbd-2487-49db-b17b-70bb20b1ea7f.jpeg",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466105780-c767j-7755fb60-d4c2-4c75-a757-c6c6d3434f3c.jpeg",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466108077-u2pgj-a09933f8-6d3e-409a-a820-f4f08623702b.jpeg",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466109594-x7iu7-f14a7560-6370-4cfa-b0a4-60787a4bf396.jpeg",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466111114-gnn8z-db874a11-1464-4faf-8dd9-4265532dcc3e.jpeg"
+      ],
+      "imageAlt": "Metal lüx saat (123)",
+      "isConceptImage": false,
+      "isNewArrival": false,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Masa saatleri"
+      ]
+    },
+    {
       "id": "custom-1795464181758",
       "sku": "103",
       "slug": "kalp-el-isitici",
@@ -390,9 +427,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466021641-xk76c.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466127381-nq4uc.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466022834-w281j.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466128366-q9akn.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -494,9 +531,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466023841-uhdd8.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466129638-8ru9w.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466024791-59umx.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466130567-c7znp.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -10132,5 +10169,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795466021637
+  "updatedAt": 1795466127378
 }
