@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795446162787",
+      "sku": "ENS-62786",
+      "slug": "sevimli-tavsan-pelus-kahverengi-35-cm-ens-62786",
+      "name": "Sevimli tavşan peluş kahverengi 35 cm",
+      "shortName": "Sevimli tavşan peluş kahverengi 35 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446127013-7ganx-IMG_4532.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446127013-7ganx-IMG_4532.jpeg"
+      ],
+      "imageAlt": "Sevimli tavşan peluş kahverengi 35 cm (ENS-62786)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795446108214",
       "sku": "ENS-08213",
       "slug": "sevimli-tavsan-pelus-pembe-35-cm-ens-08213",
