@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795445166187",
+      "sku": "ENS-66186",
+      "slug": "sempatik-esek-kirmizi-pelus-27-cm-ens-66186",
+      "name": "Sempatik eşek kırmızı peluş 27 cm",
+      "shortName": "Sempatik eşek kırmızı peluş 27 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 295,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445160193-degzz-IMG_4520.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445160193-degzz-IMG_4520.jpeg"
+      ],
+      "imageAlt": "Sempatik eşek kırmızı peluş 27 cm (ENS-66186)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795444866536",
       "sku": "ENS-66536",
       "slug": "kirpi-krem-pelus-24-cm-ens-66536",
