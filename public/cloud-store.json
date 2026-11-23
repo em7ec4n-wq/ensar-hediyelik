@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795428042634",
+      "sku": "ENS-42633",
+      "slug": "penguen-pelus-30-cm-ens-42633",
+      "name": "Penguen peluş 30 cm",
+      "shortName": "Penguen peluş 30 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428000869-tra1u-IMG_4500.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428000869-tra1u-IMG_4500.jpeg"
+      ],
+      "imageAlt": "Penguen peluş 30 cm (ENS-42633)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795427899362",
       "sku": "ENS-99361",
       "slug": "asorti-love-sarilan-miskin-pelus-ens-99361",
