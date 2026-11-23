@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795445498480",
+      "sku": "ENS-98480",
+      "slug": "kalpli-fiyonklu-pelus-ayicik-beyaz-35-cm-ens-98480",
+      "name": "Kalpli fiyonklu peluş ayıcık beyaz 35 cm",
+      "shortName": "Kalpli fiyonklu peluş ayıcık beyaz 35 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 405,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445480008-fs200-IMG_4526.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445480008-fs200-IMG_4526.jpeg"
+      ],
+      "imageAlt": "Kalpli fiyonklu peluş ayıcık beyaz 35 cm (ENS-98480)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795445455060",
       "sku": "ENS-55060",
       "slug": "kalpli-fiyonklu-pelus-ayicik-kahverengi-35-cm-ens-55060",
