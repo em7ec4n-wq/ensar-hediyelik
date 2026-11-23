@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { readStore } from "@/lib/store-server";
 import { CategoryCatalogClient } from "@/components/CategoryCatalogClient";
 
+export const dynamicParams = true;
+
 export function generateStaticParams() {
   const store = readStore();
   return store.categories.map((c) => ({ slug: c.slug }));

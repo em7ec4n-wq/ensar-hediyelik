@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { readStore } from "@/lib/store-server";
 import { ProductDetailClient } from "@/components/ProductDetailClient";
 
+export const dynamicParams = true;
+
 export function generateStaticParams() {
   const store = readStore();
   return store.products.map((p) => ({ slug: p.slug }));

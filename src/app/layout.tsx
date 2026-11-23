@@ -156,6 +156,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const initialStore = readStore();
   return (
     <html lang="tr" className={`${playfair.variable} ${dmSans.variable}`}>
       <head>
@@ -171,7 +172,7 @@ export default function RootLayout({
         />
       </head>
       <body className="flex min-h-screen flex-col bg-[#F7F3EB] text-[#241722] antialiased">
-        <StoreProvider>
+        <StoreProvider initialStore={initialStore}>
           <CartProvider>
             <LiveAppShell>{children}</LiveAppShell>
           </CartProvider>

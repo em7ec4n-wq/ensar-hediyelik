@@ -6,15 +6,9 @@ import { useLiveStore } from "./StoreProvider";
 import { ChevronRightIcon } from "./Icons";
 import { DEFAULT_STORE_DATA } from "@/lib/default-store";
 
-const STATIC_CAT_SLUGS = new Set(
-  DEFAULT_STORE_DATA.categories.map((c) => c.slug)
-);
-
 export function getCategoryHref(slug: string): string {
-  if (STATIC_CAT_SLUGS.has(slug)) {
-    return `/kategori/${slug}/`;
-  }
-  return `/kategori/detay/?slug=${encodeURIComponent(slug)}`;
+  if (!slug) return "/kategoriler/";
+  return `/kategori/${encodeURIComponent(slug)}/`;
 }
 
 export function CategoriesClient() {

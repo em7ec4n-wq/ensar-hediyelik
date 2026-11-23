@@ -278,13 +278,41 @@ export async function loadClientStoreAsync(): Promise<StoreData> {
   return loadClientStore();
 }
 
+let serverSyncTimer: ReturnType<typeof setTimeout> | null = null;
+let pendingServerPayload: StoreData | null = null;
+
+async function executeServerSync(payload: StoreData): Promise<void> {
+  try {
+    await fetch("/api/store/", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+  } catch (e) {
+    console.warn("Could not sync store to cloud server:", e);
+  }
+}
+
+export async function flushServerSync(): Promise<void> {
+  if (serverSyncTimer) {
+    clearTimeout(serverSyncTimer);
+    serverSyncTimer = null;
+  }
+  if (pendingServerPayload) {
+    const data = pendingServerPayload;
+    pendingServerPayload = null;
+    await executeServerSync(data);
+  }
+}
+
 export async function saveClientStoreAsync(
-  data: StoreData
+  data: StoreData,
+  immediateCloudSync = false
 ): Promise<StoreData> {
   const cleanData = sanitizeStoreImages(data);
 
   if (typeof window !== "undefined") {
-    // 1. Save to local cache for instant feedback
+    // 1. Save to local cache for instant feedback (0ms)
     try {
       const db = await openDb();
       await new Promise<void>((resolve, reject) => {
@@ -302,15 +330,19 @@ export async function saveClientStoreAsync(
       // ignore
     }
 
-    // 2. Persist to global Server API (/api/store) so EVERY phone and computer sees the change!
-    try {
-      await fetch("/api/store/", {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(cleanData),
-      });
-    } catch {
-      // ignore
+    // 2. Persist to global Server API (/api/store) with debouncing to prevent concurrent race conditions
+    pendingServerPayload = cleanData;
+    if (serverSyncTimer) {
+      clearTimeout(serverSyncTimer);
+      serverSyncTimer = null;
+    }
+
+    if (immediateCloudSync) {
+      await flushServerSync();
+    } else {
+      serverSyncTimer = setTimeout(() => {
+        void flushServerSync();
+      }, 500);
     }
 
     window.dispatchEvent(new CustomEvent("ensar-store-updated"));

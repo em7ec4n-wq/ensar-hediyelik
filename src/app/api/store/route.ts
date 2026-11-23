@@ -123,7 +123,7 @@ async function saveToCloud(store: StoreData): Promise<boolean> {
       "utf-8"
     ).toString("base64");
 
-    const putRes = await fetch(
+    let putRes = await fetch(
       `https://api.github.com/repos/${GH_REPO}/contents/${GH_PATH}`,
       {
         method: "PUT",
@@ -141,6 +141,43 @@ async function saveToCloud(store: StoreData): Promise<boolean> {
         }),
       }
     );
+
+    if (!putRes.ok && putRes.status === 409) {
+      // Retry once on SHA conflict
+      const retryMetaRes = await fetch(
+        `https://api.github.com/repos/${GH_REPO}/contents/${GH_PATH}?ref=main&t=${Date.now()}`,
+        {
+          headers: {
+            Authorization: `token ${token}`,
+            Accept: "application/vnd.github.v3+json",
+            "User-Agent": "ensar-hediyelik-server",
+          },
+          cache: "no-store",
+        }
+      );
+      if (retryMetaRes.ok) {
+        const retryMeta = await retryMetaRes.json();
+        putRes = await fetch(
+          `https://api.github.com/repos/${GH_REPO}/contents/${GH_PATH}`,
+          {
+            method: "PUT",
+            headers: {
+              Authorization: `token ${token}`,
+              Accept: "application/vnd.github.v3+json",
+              "Content-Type": "application/json",
+              "User-Agent": "ensar-hediyelik-server",
+            },
+            body: JSON.stringify({
+              message: "Sync live store data from admin panel (retry)",
+              content: contentBase64,
+              branch: "main",
+              sha: retryMeta?.sha,
+            }),
+          }
+        );
+      }
+    }
+
     return putRes.ok;
   } catch {
     return false;

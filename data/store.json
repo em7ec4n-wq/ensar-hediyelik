@@ -28,9 +28,9 @@
       ],
       "buttonLabel": "Kategorileri İncele",
       "buttonHref": "/kategoriler/",
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795381217693-e6mqm-IMG_4478.jpeg",
       "imageAlt": "Ahşap tabanlı, sıcak LED ışıklı astronot ve gezegen figürlü kristal cam küre",
-      "isConceptImage": true,
+      "isConceptImage": false,
       "desktopObjectPosition": "50% 50%",
       "mobileObjectPosition": "50% 50%"
     },
@@ -68,7 +68,7 @@
       "slug": "hediyelik-urunler",
       "name": "Hediyelik Ürünler",
       "description": "Dekoratif biblolar, hediyelik aksesuarlar, mumlar, hediye çantaları ve özel tasarım objeler.",
-      "image": "/ensar-yilbasi/gorseller/biblolar-ve-dekorlar/bdq23-1a-01.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795379148209-lu0n9-IMG_4479.jpeg",
       "imageAlt": "Hediyelik Ürünler",
       "showOnHome": true,
       "homeOrder": 1,
@@ -78,7 +78,7 @@
       "slug": "sevgililer-gunu",
       "name": "Sevgililer Günü",
       "description": "Solmayan gül fanusları, romantik müzik kutuları, ışıklı fanuslar ve Sevgililer Günü'ne özel hediyeler.",
-      "image": "/ensar-web/gorseller/urun-solmayan-gul-fanusu.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795378472931-4fz2e-IMG_4478.jpeg",
       "imageAlt": "Sevgililer Günü Hediyeleri",
       "showOnHome": true,
       "homeOrder": 2,
@@ -88,7 +88,7 @@
       "slug": "kar-kureleri",
       "name": "Kar Küreleri",
       "description": "Büyük boy, orta boy, küçük boy ve mini boy ışıklı, müzikli ve püskürtmeli kar küresi koleksiyonu.",
-      "image": "/ensar-web/gorseller/urun-puskurtmeli-kar-kuresi.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795382205694-lpbhc-IMG_4491.jpeg",
       "imageAlt": "Kar Küreleri",
       "showOnHome": true,
       "homeOrder": 3,
@@ -138,7 +138,7 @@
       "slug": "cam-kureler",
       "name": "Cam Küreler",
       "description": "Ahşap tabanlı USB'li 3D lazer işleme ışıklı kristal cam küre çeşitleri.",
-      "image": "/ensar-web/gorseller/kategori-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795380178979-bxchn-IMG_4483.jpeg",
       "imageAlt": "Cam Küreler",
       "showOnHome": true,
       "homeOrder": 4,
@@ -148,7 +148,7 @@
       "slug": "muzik-kutulari",
       "name": "Müzik Kutuları",
       "description": "Balerinli piyano, nostaljik ahşap ve kurmalı mekanizmalı müzik kutuları.",
-      "image": "/ensar-web/gorseller/kategori-muzik-kutusu.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795380954493-w2ap6-IMG_4487.jpeg",
       "imageAlt": "Müzik Kutuları",
       "showOnHome": true,
       "homeOrder": 5,
@@ -158,7 +158,7 @@
       "slug": "kum-saatleri",
       "name": "Kum Saatleri",
       "description": "Masaüstü dekorasyonu için 5, 10, 15 ve 30 dakikalık metal ve cam kum saatleri.",
-      "image": "/ensar-web/gorseller/kategori-kum-saati.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795381349758-suocp-IMG_4488.jpeg",
       "imageAlt": "Kum Saatleri",
       "showOnHome": true,
       "homeOrder": 6,
@@ -168,27 +168,17 @@
       "slug": "ilginc-kupalar",
       "name": "İlginç Kupalar",
       "description": "Kabartma figürlü, temalı ve hediyelik porselen kupa çeşitleri.",
-      "image": "/ensar-web/gorseller/kategori-ilginc-kupa.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795382352536-yqgg3-IMG_4492.jpeg",
       "imageAlt": "İlginç Kupalar",
       "showOnHome": true,
       "homeOrder": 7,
       "isConceptImage": false
     },
     {
-      "slug": "isikli-hediyeler",
-      "name": "Işıklı Hediyeler",
-      "description": "Cam fanus solmayan güller, ışıklı dekoratif fanuslar, LED'li cam küreler ve gece lambaları.",
-      "image": "/ensar-web/gorseller/vitrin-isikli-hediyeler.webp",
-      "imageAlt": "Işıklı Hediyeler",
-      "showOnHome": true,
-      "homeOrder": 8,
-      "isConceptImage": false
-    },
-    {
       "slug": "yilbasi",
       "name": "Yılbaşı Ürünleri",
       "description": "Yılbaşı ağaçları, Noel Baba figürleri, ağaç süsleri ve yılbaşı dekorları.",
-      "image": "/ensar-yilbasi/gorseller/yilbasi-agaclari/mf-90-01.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795381638292-8wsn1-IMG_4489.jpeg",
       "imageAlt": "Yılbaşı Ürünleri",
       "showOnHome": true,
       "homeOrder": 9,
@@ -198,303 +188,838 @@
       "slug": "peluslar",
       "name": "Peluşlar",
       "description": "Peluşlar koleksiyonundaki ürünler.",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795377434388-llcjt-IMG_0548.jpeg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795379537086-7u9qy-3F6EE43A-AA3D-4FAF-9D15-ED0C848C362A.png",
       "imageAlt": "Peluşlar",
       "showOnHome": true,
       "homeOrder": 5,
+      "isConceptImage": false
+    },
+    {
+      "slug": "nostaljik-radyolar",
+      "name": "Nostaljik radyolar",
+      "description": "Nostaljik radyolar koleksiyonundaki ürünler.",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795380917306-zk6ly-IMG_4486.jpeg",
+      "imageAlt": "Nostaljik radyolar",
+      "showOnHome": true,
+      "homeOrder": 5,
+      "isConceptImage": false
+    },
+    {
+      "slug": "anahtarliklar",
+      "name": "Anahtarlıklar",
+      "description": "Anahtarlıklar koleksiyonundaki ürünler.",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795380378145-80we0-IMG_4484.jpeg",
+      "imageAlt": "Anahtarlıklar",
+      "showOnHome": true,
+      "homeOrder": 5,
+      "isConceptImage": false
+    },
+    {
+      "slug": "silikon-anahtarliklar",
+      "name": "Silikon anahtarlıklar",
+      "description": "Silikon anahtarlıklar koleksiyonundaki ürünler.",
+      "image": "/ensar-web/gorseller/kategori-cam-kure.webp",
+      "imageAlt": "Silikon anahtarlıklar",
+      "showOnHome": true,
+      "homeOrder": 5,
+      "parentSlug": "anahtarliklar",
+      "isConceptImage": false
+    },
+    {
+      "slug": "kumbaralar",
+      "name": "Kumbaralar",
+      "description": "Kumbaralar koleksiyonundaki ürünler.",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795382743953-jw3td-IMG_4494.jpeg",
+      "imageAlt": "Kumbaralar",
+      "showOnHome": true,
+      "homeOrder": 5,
+      "parentSlug": "hediyelik-urunler",
       "isConceptImage": false
     }
   ],
   "products": [
     {
-      "id": "prod-347",
-      "sku": "ENS-CK-347",
-      "slug": "astronot-buyuk-boy-usbli-cam-kure",
-      "name": "Astronot Büyük Boy USB'li Cam Küre",
-      "shortName": "Astronot Cam Küre",
-      "categorySlug": "cam-kureler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler",
-        "hediyelik-urunler"
-      ],
-      "description": "Lazer işleme kristal cam küre içerisinde astronot ve gezegen detayı bulunur. Doğal ahşap görünümlü tabanı USB kablo ile sıcak sarı LED ışık verir; gece lambası ve masaüstü hediyesi olarak idealdir.",
-      "price": 449,
-      "stock": 18,
+      "id": "custom-1795446355802",
+      "sku": "ENS-55801",
+      "slug": "patili-pelus-ayicik-pembe-50-cm-ens-55801",
+      "name": "Patili peluş ayıcık pembe 50 cm",
+      "shortName": "Patili peluş ayıcık pembe 50 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 505,
+      "stock": 99,
       "published": true,
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446326444-d8xt8-IMG_4535.jpeg",
       "gallery": [
-        "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
-        "/ensar-web/gorseller/kategori-cam-kure.webp",
-        "/ensar-web/gorseller/hediye-sonuc.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446326444-d8xt8-IMG_4535.jpeg"
       ],
-      "imageAlt": "Ahşap tabanlı, sıcak LED ışıklı astronot ve gezegen figürlü kristal cam küre",
-      "isConceptImage": true,
-      "occasions": [
-        "Doğum Günü",
-        "Mezuniyet",
-        "Yeni İş",
-        "Sevgililer Günü"
-      ],
-      "giftTypes": [
-        "Işıklı Ürünler",
-        "Cam Küreler"
-      ],
-      "options": [
-        {
-          "name": "Taban Işık Modu",
-          "required": true,
-          "values": [
-            "Sıcak Gün Işığı (Sabit)",
-            "Renk Değiştiren RGB"
-          ]
-        }
-      ],
-      "legacyPath": "/Cam-Kureler?product_id=347"
-    },
-    {
-      "id": "prod-564",
-      "sku": "ENS-MK-564",
-      "slug": "muzikli-balerinli-piyano",
-      "name": "Müzikli Balerinli Piyano",
-      "shortName": "Balerinli Piyano",
-      "categorySlug": "muzik-kutulari",
-      "description": "Kuyruklu piyano formunda tasarlanmış kurmalı müzik kutusu. Kapak açıldığında klasik melodi çalar ve mıknatıslı taban üzerindeki zarif balerin figürü piyano üzerinde dans eder.",
-      "price": 529,
-      "stock": 12,
-      "published": true,
-      "image": "/ensar-web/gorseller/urun-balerinli-piyano.webp",
-      "gallery": [
-        "/ensar-web/gorseller/urun-balerinli-piyano.webp",
-        "/ensar-web/gorseller/hero-balerinli-piyano.webp"
-      ],
-      "imageAlt": "Pastel pembe kuyruklu piyano formunda dönen balerinli müzik kutusu",
-      "isConceptImage": true,
+      "imageAlt": "Patili peluş ayıcık pembe 50 cm (ENS-55801)",
+      "isConceptImage": false,
       "isNewArrival": true,
       "newArrivalOrder": 1,
       "occasions": [
         "Doğum Günü",
-        "Sevgililer Günü",
-        "Anneler Günü",
-        "Yıldönümü"
-      ],
-      "giftTypes": [
-        "Müzik Kutuları",
-        "Romantik Hediyeler"
-      ],
-      "options": [
-        {
-          "name": "Renk",
-          "required": true,
-          "values": [
-            "Pastel Pembe",
-            "Krem Beyaz"
-          ]
-        }
-      ],
-      "legacyPath": "/Müzik-Kutusu-Cesitleri?product_id=564",
-      "extraCategorySlugs": [
-        "sevgililer-gunu",
-        "hediyelik-urunler"
-      ]
-    },
-    {
-      "id": "prod-490",
-      "sku": "ENS-KK-490",
-      "slug": "buyuk-boy-puskurtmeli-kar-kuresi",
-      "name": "Büyük Boy Püskürtmeli Kar Küresi",
-      "shortName": "Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
-      "extraCategorySlugs": [
-        "kar-kureleri",
-        "sevgililer-gunu"
-      ],
-      "description": "Otomatik kar püskürtme motoru, çoklu melodi ve yumuşak LED ışık geçişine sahip büyük boy kış evi temalı kar küresi. Sallamaya gerek kalmadan kar tanelerini küre içinde savurur.",
-      "price": 749,
-      "stock": 9,
-      "published": true,
-      "image": "/ensar-web/gorseller/urun-puskurtmeli-kar-kuresi.webp",
-      "gallery": [
-        "/ensar-web/gorseller/urun-puskurtmeli-kar-kuresi.webp"
-      ],
-      "imageAlt": "Karlı kış evi figürlü, ışıklı ve otomatik püskürtmeli büyük boy cam kar küresi",
-      "isConceptImage": true,
-      "isNewArrival": true,
-      "newArrivalOrder": 2,
-      "occasions": [
-        "Yılbaşı",
-        "Doğum Günü",
-        "Sevgililer Günü",
-        "Ev Hediyesi"
-      ],
-      "giftTypes": [
-        "Işıklı Ürünler",
-        "Cam Küreler",
-        "Müzik Kutuları"
-      ],
-      "options": [
-        {
-          "name": "Boyut",
-          "required": true,
-          "values": [
-            "Büyük Boy (16 cm)",
-            "Mega Boy (18 cm)"
-          ]
-        }
-      ],
-      "legacyPath": "/Kar küresi çeşitleri?product_id=490"
-    },
-    {
-      "id": "prod-562",
-      "sku": "ENS-IG-562",
-      "slug": "buyuk-boy-cam-fanus-solmayan-kristal-gul",
-      "name": "Büyük Boy Cam Fanus Solmayan Kristal Gül",
-      "shortName": "Solmayan Gül Fanusu",
-      "categorySlug": "sevgililer-gunu",
-      "description": "Şeffaf cam fanus altında canlı kırmızı gül ve sarılı sıcak LED peri ışıklarıyla hazırlanan dekoratif hediye. Ahşap tabanındaki anahtarla kolayca açılıp kapanır.",
-      "price": 589,
-      "stock": 14,
-      "published": true,
-      "image": "/ensar-web/gorseller/urun-solmayan-gul-fanusu.webp",
-      "gallery": [
-        "/ensar-web/gorseller/urun-solmayan-gul-fanusu.webp",
-        "/ensar-web/gorseller/vitrin-isikli-hediyeler.webp"
-      ],
-      "imageAlt": "Ahşap tabanlı cam fanus içinde sıcak sarı LED peri ışıklı kırmızı solmayan gül",
-      "isConceptImage": true,
-      "isNewArrival": true,
-      "newArrivalOrder": 3,
-      "occasions": [
-        "Sevgililer Günü",
-        "Yıldönümü",
-        "Anneler Günü",
-        "Doğum Günü"
-      ],
-      "giftTypes": [
-        "Işıklı Ürünler",
-        "Romantik Hediyeler"
-      ],
-      "options": [
-        {
-          "name": "Gül Rengi",
-          "required": true,
-          "values": [
-            "Kırmızı Gül",
-            "Bordo Gül"
-          ]
-        }
-      ],
-      "legacyPath": "/isikli-grup?product_id=562",
-      "extraCategorySlugs": [
-        "isikli-hediyeler",
-        "hediyelik-urunler"
-      ]
-    },
-    {
-      "id": "prod-460",
-      "sku": "ENS-KS-460",
-      "slug": "15-dakikalik-metal-kum-saati",
-      "name": "15 Dakikalık Metal Gövdeli Dekoratif Kum Saati",
-      "shortName": "Metal Kum Saati",
-      "categorySlug": "kum-saatleri",
-      "description": "Antik pirinç tonunda metal sütunlar ve ince akışlı renkli kum ile çalışma masası veya kitaplık için zamansız bir dekoratif hediye.",
-      "price": 389,
-      "stock": 22,
-      "published": true,
-      "image": "/ensar-web/gorseller/kategori-kum-saati.webp",
-      "gallery": [
-        "/ensar-web/gorseller/kategori-kum-saati.webp"
-      ],
-      "imageAlt": "Pirinç görünümlü metal çerçeveli mor kumlu 15 dakikalık kum saati",
-      "isConceptImage": true,
-      "occasions": [
-        "Yeni İş",
-        "Ev Hediyesi",
-        "Mezuniyet",
-        "Doğum Günü"
-      ],
-      "giftTypes": [
-        "Kum Saatleri",
-        "Ofis & Masaüstü"
-      ],
-      "options": [
-        {
-          "name": "Süre Seçeneği",
-          "required": true,
-          "values": [
-            "10 Dakika",
-            "15 Dakika",
-            "30 Dakika"
-          ]
-        }
-      ],
-      "legacyPath": "/Kum-Saati-Cesitleri?product_id=460",
-      "extraCategorySlugs": [
-        "hediyelik-urunler"
-      ]
-    },
-    {
-      "id": "prod-541",
-      "sku": "ENS-KP-541",
-      "slug": "astronot-kabartmali-porselen-kupa",
-      "name": "Astronot Kabartmalı Altın Kulplu Porselen Kupa",
-      "shortName": "Astronot Porselen Kupa",
-      "categorySlug": "ilginc-kupalar",
-      "description": "Üç boyutlu kabartma astronot figürü, gece gökyüzü desenleri ve parlak altın renkli ergonomik kulpuyla kahve molalarına keyif katan hediyelik porselen kupa.",
-      "price": 329,
-      "stock": 25,
-      "published": true,
-      "image": "/ensar-web/gorseller/kategori-ilginc-kupa.webp",
-      "gallery": [
-        "/ensar-web/gorseller/kategori-ilginc-kupa.webp"
-      ],
-      "imageAlt": "Üç boyutlu astronot kabartmalı ve altın kulplu porselen kupa",
-      "isConceptImage": true,
-      "occasions": [
-        "Doğum Günü",
-        "Yeni İş",
-        "Mezuniyet",
         "Yılbaşı"
       ],
       "giftTypes": [
-        "İlginç Kupalar",
-        "Ofis & Masaüstü"
-      ],
-      "legacyPath": "/İlginc-Kupa-Cesitleri?product_id=541",
-      "extraCategorySlugs": [
-        "hediyelik-urunler"
+        "Peluşlar"
       ]
     },
     {
-      "id": "prod-324",
-      "sku": "ENS-MK-324",
-      "slug": "ahsap-oymali-balerinli-muzik-kutusu",
-      "name": "Ahşap Oymalı Nostaljik Balerinli Müzik Kutusu",
-      "shortName": "Ahşap Müzik Kutusu",
-      "categorySlug": "muzik-kutulari",
-      "description": "Vintage kabartma detaylı ahşap kutu içinde kurmalı mekanizma ile dönen balerin figürü. Takı ve küçük hatıralar için zarif bir saklama ve hediye seçeneği.",
-      "price": 495,
-      "stock": 7,
+      "id": "custom-1795446298660",
+      "sku": "ENS-98660",
+      "slug": "patili-pelus-ayicik-kahverengi-50-cm-ens-98660",
+      "name": "Patili peluş ayıcık kahverengi 50 cm",
+      "shortName": "Patili peluş ayıcık kahverengi 50 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 505,
+      "stock": 99,
       "published": true,
-      "image": "/ensar-web/gorseller/kategori-muzik-kutusu.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446251848-mes3h-IMG_4534.jpeg",
       "gallery": [
-        "/ensar-web/gorseller/kategori-muzik-kutusu.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446251848-mes3h-IMG_4534.jpeg"
       ],
-      "imageAlt": "Oymalı ahşap sandık formunda balerinli müzik kutusu",
-      "isConceptImage": true,
+      "imageAlt": "Patili peluş ayıcık kahverengi 50 cm (ENS-98660)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
       "occasions": [
-        "Anneler Günü",
-        "Yıldönümü",
         "Doğum Günü",
-        "Sevgililer Günü"
+        "Yılbaşı"
       ],
       "giftTypes": [
-        "Müzik Kutuları",
-        "Romantik Hediyeler"
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795446217041",
+      "sku": "ENS-17040",
+      "slug": "sevimli-tavsan-gri-pelus-35-cm-ens-17040",
+      "name": "Sevimli tavşan gri peluş 35 cm",
+      "shortName": "Sevimli tavşan gri peluş 35 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446186886-odgpo-IMG_4533.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446186886-odgpo-IMG_4533.jpeg"
       ],
-      "legacyPath": "/Müzik-Kutusu-Cesitleri?product_id=324",
-      "extraCategorySlugs": [
-        "sevgililer-gunu",
-        "hediyelik-urunler"
+      "imageAlt": "Sevimli tavşan gri peluş 35 cm (ENS-17040)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795446162787",
+      "sku": "ENS-62786",
+      "slug": "sevimli-tavsan-pelus-kahverengi-35-cm-ens-62786",
+      "name": "Sevimli tavşan peluş kahverengi 35 cm",
+      "shortName": "Sevimli tavşan peluş kahverengi 35 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446127013-7ganx-IMG_4532.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446127013-7ganx-IMG_4532.jpeg"
+      ],
+      "imageAlt": "Sevimli tavşan peluş kahverengi 35 cm (ENS-62786)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795446108214",
+      "sku": "ENS-08213",
+      "slug": "sevimli-tavsan-pelus-pembe-35-cm-ens-08213",
+      "name": "Sevimli tavşan peluş pembe 35 cm",
+      "shortName": "Sevimli tavşan peluş pembe 35 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446067481-u9x4d-IMG_4531.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446067481-u9x4d-IMG_4531.jpeg"
+      ],
+      "imageAlt": "Sevimli tavşan peluş pembe 35 cm (ENS-08213)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795445983824",
+      "sku": "ENS-83824",
+      "slug": "cizgili-oturan-pelus-kedi-gri-30-cm-ens-83824",
+      "name": "Çizgili oturan peluş kedi gri 30 cm",
+      "shortName": "Çizgili oturan peluş kedi gri 30 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 405,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445955594-cdj45-IMG_4530.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445955594-cdj45-IMG_4530.jpeg"
+      ],
+      "imageAlt": "Çizgili oturan peluş kedi gri 30 cm (ENS-83824)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795445862857",
+      "sku": "ENS-62855",
+      "slug": "cizgili-oturan-asil-kedi-pelus-30-cm-ens-62855",
+      "name": "Çizgili oturan asil kedi peluş 30 cm",
+      "shortName": "Çizgili oturan asil kedi peluş 30 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 405,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445653778-qg8gk-IMG_4529.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445653778-qg8gk-IMG_4529.jpeg"
+      ],
+      "imageAlt": "Çizgili oturan asil kedi peluş 30 cm (ENS-62855)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795445626814",
+      "sku": "ENS-26814",
+      "slug": "asorti-ayakta-kopek-pelus-25-cm-ens-26814",
+      "name": "Asorti ayakta köpek peluş 25 cm",
+      "shortName": "Asorti ayakta köpek peluş 25 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 355,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445605653-90hi0-IMG_4528.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445605653-90hi0-IMG_4528.jpeg"
+      ],
+      "imageAlt": "Asorti ayakta köpek peluş 25 cm (ENS-26814)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795445543662",
+      "sku": "ENS-43661",
+      "slug": "asorti-ayakta-kopek-pelus-siyah-25-cm-ens-43661",
+      "name": "Asorti ayakta köpek peluş siyah 25 cm",
+      "shortName": "Asorti ayakta köpek peluş siyah 25 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 355,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445567695-pp4kt-IMG_4527.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445567695-pp4kt-IMG_4527.jpeg"
+      ],
+      "imageAlt": "Asorti ayakta köpek peluş siyah 25 cm (ENS-43661)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795445498480",
+      "sku": "ENS-98480",
+      "slug": "kalpli-fiyonklu-pelus-ayicik-beyaz-35-cm-ens-98480",
+      "name": "Kalpli fiyonklu peluş ayıcık beyaz 35 cm",
+      "shortName": "Kalpli fiyonklu peluş ayıcık beyaz 35 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 405,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445480008-fs200-IMG_4526.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445480008-fs200-IMG_4526.jpeg"
+      ],
+      "imageAlt": "Kalpli fiyonklu peluş ayıcık beyaz 35 cm (ENS-98480)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795445455060",
+      "sku": "ENS-55060",
+      "slug": "kalpli-fiyonklu-pelus-ayicik-kahverengi-35-cm-ens-55060",
+      "name": "Kalpli fiyonklu peluş ayıcık kahverengi 35 cm",
+      "shortName": "Kalpli fiyonklu peluş ayıcık kahverengi 35 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 405,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445405047-ct3uy-IMG_4525.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445405047-ct3uy-IMG_4525.jpeg"
+      ],
+      "imageAlt": "Kalpli fiyonklu peluş ayıcık kahverengi 35 cm (ENS-55060)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795445374334",
+      "sku": "ENS-74334",
+      "slug": "kalpli-fiyonklu-pelus-ayicik-kahverengi-35-cm-ens-74334",
+      "name": "Kalpli fiyonklu peluş ayıcık koyukahverengi 35 cm",
+      "shortName": "Kalpli fiyonklu peluş ayıcık koyukahverengi 35 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 405,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445322155-aezk5-IMG_4524.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445322155-aezk5-IMG_4524.jpeg"
+      ],
+      "imageAlt": "Kalpli fiyonklu peluş ayıcık kahverengi 35 cm (ENS-74334)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795445304783",
+      "sku": "ENS-04783",
+      "slug": "sempatik-esek-pelus-turuncu-27-cm-ens-04783",
+      "name": "Sempatik eşek peluş turuncu 27 cm",
+      "shortName": "Sempatik eşek peluş turuncu 27 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 295,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445275438-ts6l7-IMG_4523.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445275438-ts6l7-IMG_4523.jpeg"
+      ],
+      "imageAlt": "Sempatik eşek peluş turuncu 27 cm (ENS-04783)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795445249623",
+      "sku": "ENS-49623",
+      "slug": "sempatik-esek-pelus-mor-27-cm-ens-49623",
+      "name": "Sempatik eşek peluş mor 27 cm",
+      "shortName": "Sempatik eşek peluş mor 27 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 295,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445246171-i20yf-IMG_4522.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445246171-i20yf-IMG_4522.jpeg"
+      ],
+      "imageAlt": "Sempatik eşek peluş mor 27 cm (ENS-49623)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795445214917",
+      "sku": "ENS-14917",
+      "slug": "sempatik-esek-pelus-pembe-27-cm-ens-14917",
+      "name": "Sempatik eşek peluş pembe 27 cm",
+      "shortName": "Sempatik eşek peluş pembe 27 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 295,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445207086-jcoxf-IMG_4521.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445207086-jcoxf-IMG_4521.jpeg"
+      ],
+      "imageAlt": "Sempatik eşek peluş pembe 27 cm (ENS-14917)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795445166187",
+      "sku": "ENS-66186",
+      "slug": "sempatik-esek-kirmizi-pelus-27-cm-ens-66186",
+      "name": "Sempatik eşek kırmızı peluş 27 cm",
+      "shortName": "Sempatik eşek kırmızı peluş 27 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 295,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445160193-degzz-IMG_4520.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445160193-degzz-IMG_4520.jpeg"
+      ],
+      "imageAlt": "Sempatik eşek kırmızı peluş 27 cm (ENS-66186)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795444866536",
+      "sku": "ENS-66536",
+      "slug": "kirpi-krem-pelus-24-cm-ens-66536",
+      "name": "Kirpi krem peluş 24 cm",
+      "shortName": "Kirpi krem peluş 24 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 295,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795444849959-meqi6-IMG_4519.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795444849959-meqi6-IMG_4519.jpeg"
+      ],
+      "imageAlt": "Kirpi krem peluş 24 cm (ENS-66536)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795444826088",
+      "sku": "ENS-26088",
+      "slug": "kirpi-pelus-24cm-ens-26088",
+      "name": "Kirpi peluş kahverengi 24 cm",
+      "shortName": "Kirpi peluş kahverengi 24 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 295,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795444800823-gf8ft-IMG_4518.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795444800823-gf8ft-IMG_4518.jpeg"
+      ],
+      "imageAlt": "Kirpi peluş 24cm (ENS-26088)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795444762404",
+      "sku": "ENS-62403",
+      "slug": "kahverengi-fermuarli-penguen-26-cm-ens-62403",
+      "name": "Kahverengi fermuarlı penguen 26 cm",
+      "shortName": "Kahverengi fermuarlı penguen 26 cm",
+      "categorySlug": "yilbasi",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 305,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795444730493-u6sin-IMG_4513.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795444730493-u6sin-IMG_4513.jpeg"
+      ],
+      "imageAlt": "Kahverengi fermuarlı penguen 26 cm (ENS-62403)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Yılbaşı Ürünleri"
+      ]
+    },
+    {
+      "id": "custom-1795430177131",
+      "sku": "ENS-77131",
+      "slug": "fermuarli-penguen-pelus-pembe-26-cm-ens-77131",
+      "name": "Fermuarlı penguen peluş pembe 26 cm",
+      "shortName": "Fermuarlı penguen peluş pembe 26 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 305,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795430169590-udo1v-IMG_4512.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795430169590-udo1v-IMG_4512.jpeg"
+      ],
+      "imageAlt": "Fermuarlı penguen peluş pembe 26 cm (ENS-77131)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795430067833",
+      "sku": "ENS-67833",
+      "slug": "fermuarli-penguen-pelus-mavi-26-cm-ens-67833",
+      "name": "Fermuarlı penguen peluş mavi 26 cm",
+      "shortName": "Fermuarlı penguen peluş mavi 26 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 305,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795430078243-5h4mz-IMG_4511.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795430078243-5h4mz-IMG_4511.jpeg"
+      ],
+      "imageAlt": "Fermuarlı penguen peluş mavi 26 cm (ENS-67833)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795430008805",
+      "sku": "ENS-08804",
+      "slug": "sapkali-pembe-pelus-27-cm-ens-08804",
+      "name": "Şapkalı pembe peluş 27 cm",
+      "shortName": "Şapkalı pembe peluş 27 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795429982397-taku9-IMG_4510.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795429982397-taku9-IMG_4510.jpeg"
+      ],
+      "imageAlt": "Şapkalı pembe peluş 27 cm (ENS-08804)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795428731782",
+      "sku": "ENS-31782",
+      "slug": "sapkali-civciv-pelus-mavi-27-cm-ens-31782",
+      "name": "Şapkalı civciv peluş mavi 27 cm",
+      "shortName": "Şapkalı civciv peluş mavi 27 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428698524-r3uxj-IMG_4503.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428698524-r3uxj-IMG_4503.jpeg"
+      ],
+      "imageAlt": "Şapkalı civciv peluş mavi 27 cm (ENS-31782)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795428632876",
+      "sku": "ENS-32875",
+      "slug": "sapkali-civciv-pelus-pembe-27-cm-ens-32875",
+      "name": "Şapkalı civciv peluş pembe 27 cm",
+      "shortName": "Şapkalı civciv peluş pembe 27 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428593949-ty4pe-IMG_4502.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428593949-ty4pe-IMG_4502.jpeg"
+      ],
+      "imageAlt": "Şapkalı civciv peluş pembe 27 cm (ENS-32875)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795428096196",
+      "sku": "ENS-96195",
+      "slug": "civciv-pelus-42-cm-ens-96195",
+      "name": "Civciv peluş 42 cm",
+      "shortName": "Civciv peluş 42 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 370,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428107342-t196p-IMG_4501.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428107342-t196p-IMG_4501.jpeg"
+      ],
+      "imageAlt": "Civciv peluş 42 cm (ENS-96195)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795428042634",
+      "sku": "ENS-42633",
+      "slug": "penguen-pelus-30-cm-ens-42633",
+      "name": "Penguen peluş 30 cm",
+      "shortName": "Penguen peluş 30 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428000869-tra1u-IMG_4500.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428000869-tra1u-IMG_4500.jpeg"
+      ],
+      "imageAlt": "Penguen peluş 30 cm (ENS-42633)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795427899362",
+      "sku": "ENS-99361",
+      "slug": "asorti-love-sarilan-miskin-pelus-ens-99361",
+      "name": "Asorti love sarılan miskin peluş",
+      "shortName": "Asorti love sarılan miskin peluş",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 310,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795427873623-68d0n-IMG_4499.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795427873623-68d0n-IMG_4499.jpeg"
+      ],
+      "imageAlt": "Asorti love sarılan miskin peluş (ENS-99361)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795383148314",
+      "sku": "ENS-48313",
+      "slug": "tavsan-pelus-ens-48313",
+      "name": "Tavşan peluş 4",
+      "shortName": "Tavşan peluş 4",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "45 cm",
+      "price": 550,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795383175135-yd55n-IMG_4495.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795383175135-yd55n-IMG_4495.jpeg"
+      ],
+      "imageAlt": "Tavşan peluş (ENS-48313)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
       ]
     },
     {
@@ -853,7 +1378,7 @@
       "slug": "yilbasi-tac-yj25-248",
       "name": "Yılbaşı Taç",
       "shortName": "Yılbaşı Taç",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -890,7 +1415,7 @@
       "slug": "yilbasi-tac-yj25-211",
       "name": "Yılbaşı Taç",
       "shortName": "Yılbaşı Taç",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -927,7 +1452,7 @@
       "slug": "yilbasi-tac-yj25-227",
       "name": "Yılbaşı Taç",
       "shortName": "Yılbaşı Taç",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -964,7 +1489,7 @@
       "slug": "yilbasi-gozluk-yj25-174",
       "name": "Yılbaşı Gözlük",
       "shortName": "Yılbaşı Gözlük",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1001,7 +1526,7 @@
       "slug": "yilbasi-gozluk-yj25-181",
       "name": "Yılbaşı Gözlük",
       "shortName": "Yılbaşı Gözlük",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1038,7 +1563,7 @@
       "slug": "pelus-biblo-30-22-dy-349016",
       "name": "Peluş Biblo 30*22",
       "shortName": "Peluş Biblo 30*22",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1149,7 +1674,7 @@
       "slug": "pelus-biblo-60-20-dy-10003ab",
       "name": "Peluş Biblo 60*20",
       "shortName": "Peluş Biblo 60*20",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1223,7 +1748,7 @@
       "slug": "yilbasi-sapka-isikli-9103-002",
       "name": "Yılbaşı Şapka Işıklı",
       "shortName": "Yılbaşı Şapka Işıklı",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -1630,7 +2155,7 @@
       "slug": "karton-canta-23-18-1544-s",
       "name": "Karton Çanta 23*18",
       "shortName": "Karton Çanta 23*18",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1667,7 +2192,7 @@
       "slug": "karton-canta-32-26-1544-m",
       "name": "Karton Çanta 32*26",
       "shortName": "Karton Çanta 32*26",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1704,7 +2229,7 @@
       "slug": "karton-canta-40-30-1544-l",
       "name": "Karton Çanta 40*30",
       "shortName": "Karton Çanta 40*30",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1741,7 +2266,7 @@
       "slug": "karton-canta-23-18-1550-s",
       "name": "Karton Çanta 23*18",
       "shortName": "Karton Çanta 23*18",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1778,7 +2303,7 @@
       "slug": "karton-canta-32-26-1550-m",
       "name": "Karton Çanta 32*26",
       "shortName": "Karton Çanta 32*26",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1815,7 +2340,7 @@
       "slug": "karton-canta-40-30-1550-l",
       "name": "Karton Çanta 40*30",
       "shortName": "Karton Çanta 40*30",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1852,7 +2377,7 @@
       "slug": "karton-canta-23-18-7371-s",
       "name": "Karton Çanta 23*18",
       "shortName": "Karton Çanta 23*18",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1889,7 +2414,7 @@
       "slug": "karton-canta-32-26-7371-m",
       "name": "Karton Çanta 32*26",
       "shortName": "Karton Çanta 32*26",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1926,7 +2451,7 @@
       "slug": "karton-canta-23-18-7337-s",
       "name": "Karton Çanta 23*18",
       "shortName": "Karton Çanta 23*18",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2000,7 +2525,7 @@
       "slug": "karton-canta-23-18-7322-s",
       "name": "Karton Çanta 23*18",
       "shortName": "Karton Çanta 23*18",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2037,7 +2562,7 @@
       "slug": "karton-canta-32-26-7322-m",
       "name": "Karton Çanta 32*26",
       "shortName": "Karton Çanta 32*26",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2074,7 +2599,7 @@
       "slug": "karton-canta-40-30-7322-l",
       "name": "Karton Çanta 40*30",
       "shortName": "Karton Çanta 40*30",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2111,7 +2636,7 @@
       "slug": "karton-canta-23-18-7349-s",
       "name": "Karton Çanta 23*18",
       "shortName": "Karton Çanta 23*18",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2148,7 +2673,7 @@
       "slug": "karton-canta-32-26-7349-m",
       "name": "Karton Çanta 32*26",
       "shortName": "Karton Çanta 32*26",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2185,7 +2710,7 @@
       "slug": "karton-canta-40-30-7349-l",
       "name": "Karton Çanta 40*30",
       "shortName": "Karton Çanta 40*30",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -3027,7 +3552,7 @@
       "slug": "pelus-cuce-140-cm-hq243013-xl",
       "name": "Peluş Cüce 140 Cm",
       "shortName": "Peluş Cüce 140 Cm",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -3064,7 +3589,7 @@
       "slug": "pelus-cuce-70-cm-hq243013-l",
       "name": "Peluş Cüce 70 Cm",
       "shortName": "Peluş Cüce 70 Cm",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -3101,7 +3626,7 @@
       "slug": "pelus-cuce-60-cm-hq243013-3",
       "name": "Peluş Cüce 60 Cm",
       "shortName": "Peluş Cüce 60 Cm",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -3313,7 +3838,7 @@
       "slug": "kardan-adam-silikon-isik-12cm-mf-30",
       "name": "Kardan Adam Silikon Işık 12Cm",
       "shortName": "Kardan Adam Silikon Işık 12Cm",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -3350,7 +3875,7 @@
       "slug": "kardan-adam-silikon-isik-14-cm-mf-40",
       "name": "Kardan Adam Silikon Işık 14 Cm",
       "shortName": "Kardan Adam Silikon Işık 14 Cm",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -3387,7 +3912,7 @@
       "slug": "kardan-adam-silikon-isik-18-cm-mf-50",
       "name": "Kardan Adam Silikon Işık 18 Cm",
       "shortName": "Kardan Adam Silikon Işık 18 Cm",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4091,7 +4616,6 @@
       "shortName": "Yılbaşı Işık 2.5 Metre",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4129,7 +4653,6 @@
       "shortName": "Yılbaşı Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4167,7 +4690,6 @@
       "shortName": "Yılbaşı Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4205,7 +4727,6 @@
       "shortName": "Yılbaşı Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4243,7 +4764,6 @@
       "shortName": "Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4281,7 +4801,6 @@
       "shortName": "Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4319,7 +4838,6 @@
       "shortName": "Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4357,7 +4875,6 @@
       "shortName": "Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4395,7 +4912,6 @@
       "shortName": "Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -4431,7 +4947,7 @@
       "slug": "isik-emn-1001",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4468,7 +4984,7 @@
       "slug": "isik-emn-1002",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4505,7 +5021,7 @@
       "slug": "isik-emn-1003",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4542,7 +5058,7 @@
       "slug": "isik-emn-1004",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4579,7 +5095,7 @@
       "slug": "isik-emn-1005",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4616,7 +5132,7 @@
       "slug": "isik-emn-1006",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4653,7 +5169,7 @@
       "slug": "isik-emn-1007",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -6791,7 +7307,7 @@
       "slug": "yilbasi-fanus-b4-9209-79",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -6829,7 +7345,7 @@
       "slug": "yilbasi-fanus-b4-9209-80",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -6867,7 +7383,7 @@
       "slug": "yilbasi-fanus-b4-9209-81",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -6905,7 +7421,7 @@
       "slug": "yilbasi-fanus-b4-9209-91",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -6943,7 +7459,7 @@
       "slug": "yilbasi-fanus-b4-9209-95",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -6981,7 +7497,7 @@
       "slug": "yilbasi-fanus-b4-9209-96",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -7019,7 +7535,7 @@
       "slug": "yilbasi-fanus-b4-9209-97",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -7057,7 +7573,7 @@
       "slug": "yilbasi-fanus-b4-9209-98",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -7095,7 +7611,7 @@
       "slug": "yilbasi-pls-fanus-b4-9209-68",
       "name": "Yılbaşı Pls.Fanus",
       "shortName": "Yılbaşı Pls.Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -7133,7 +7649,7 @@
       "slug": "yilbasi-pls-fanus-b4-9209-83",
       "name": "Yılbaşı Pls.Fanus",
       "shortName": "Yılbaşı Pls.Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -7245,7 +7761,7 @@
       "slug": "yilbasi-muzikli-fanus-ch03",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7361,7 +7877,7 @@
       "slug": "yilbasi-muzikli-fanus-ds029",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7403,7 +7919,7 @@
       "slug": "yilbasi-muzikli-fanus-ds030-1",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7442,7 +7958,7 @@
       "slug": "yilbasi-muzikli-fanus-ds0103",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7483,7 +7999,7 @@
       "slug": "yilbasi-muzikli-fanus-ds609",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7525,7 +8041,7 @@
       "slug": "yilbasi-muzikli-fanus-ds809",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7564,7 +8080,7 @@
       "slug": "yilbasi-muzikli-fanus-ds812",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7606,7 +8122,7 @@
       "slug": "yilbasi-muzikli-fanus-ds815",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7647,7 +8163,7 @@
       "slug": "yilbasi-muzikli-fanus-ds819",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7688,7 +8204,7 @@
       "slug": "yilbasi-muzikli-fanus-ds827",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7727,7 +8243,7 @@
       "slug": "yilbasi-muzikli-fanus-ds833",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7768,7 +8284,7 @@
       "slug": "yilbasi-muzikli-fanus-ds834",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7810,7 +8326,7 @@
       "slug": "yilbasi-muzikli-fanus-ds836",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -7890,7 +8406,7 @@
       "slug": "yilbasi-sokak-lambasi-ld18a-3c",
       "name": "Yılbaşı Sokak Lambası",
       "shortName": "Yılbaşı Sokak Lambası",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -7927,7 +8443,7 @@
       "slug": "yilbasi-sokak-lambasi-ld22a-1",
       "name": "Yılbaşı Sokak Lambası",
       "shortName": "Yılbaşı Sokak Lambası",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -7964,7 +8480,7 @@
       "slug": "yilbasi-sokak-lambasi-ld22a-4",
       "name": "Yılbaşı Sokak Lambası",
       "shortName": "Yılbaşı Sokak Lambası",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -8001,7 +8517,7 @@
       "slug": "yilbasi-sokak-lambasi-ld22b-6",
       "name": "Yılbaşı Sokak Lambası",
       "shortName": "Yılbaşı Sokak Lambası",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -8038,7 +8554,7 @@
       "slug": "yilbasi-sokak-lambasi-ld23q-a2",
       "name": "Yılbaşı Sokak Lambası",
       "shortName": "Yılbaşı Sokak Lambası",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -8075,7 +8591,7 @@
       "slug": "yilbasi-sokak-lambasi-ld23q-a4",
       "name": "Yılbaşı Sokak Lambası",
       "shortName": "Yılbaşı Sokak Lambası",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -8112,7 +8628,7 @@
       "slug": "yilbasi-muzikli-fanus-lwb03",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -8154,7 +8670,7 @@
       "slug": "yilbasi-fanus-wdl-22009a",
       "name": "Yılbaşı Fanus",
       "shortName": "Yılbaşı Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -8451,7 +8967,7 @@
       "slug": "yilbasi-muzikli-fanus-sds01",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -8532,7 +9048,6 @@
       "shortName": "Pls.Ağaç Işık",
       "categorySlug": "cam-kureler",
       "extraCategorySlugs": [
-        "isikli-hediyeler",
         "hediyelik-urunler"
       ],
       "description": "",
@@ -8568,7 +9083,7 @@
       "slug": "usb-li-fanus-b4-9209-87",
       "name": "Usb Li Fanus",
       "shortName": "Usb Li Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -8606,7 +9121,7 @@
       "slug": "usb-li-fanus-b4-9209-89",
       "name": "Usb Li Fanus",
       "shortName": "Usb Li Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -8863,7 +9378,7 @@
       "slug": "yilbasi-muzikli-fanus-ds029-2",
       "name": "Yılbaşı Müzikli Fanus",
       "shortName": "Yılbaşı Müzikli Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "muzik-kutulari",
@@ -8904,7 +9419,7 @@
       "slug": "usb-li-fanus-b4-9209-88",
       "name": "Usb Li Fanus",
       "shortName": "Usb Li Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
@@ -8942,7 +9457,7 @@
       "slug": "usb-li-fanus-b4-9209-90",
       "name": "Usb Li Fanus",
       "shortName": "Usb Li Fanus",
-      "categorySlug": "isikli-hediyeler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu",
         "hediyelik-urunler"
