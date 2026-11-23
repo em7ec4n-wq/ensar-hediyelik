@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795445862857",
+      "sku": "ENS-62855",
+      "slug": "cizgili-oturan-asil-kedi-pelus-30-cm-ens-62855",
+      "name": "Çizgili oturan asil kedi peluş 30 cm",
+      "shortName": "Çizgili oturan asil kedi peluş 30 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 405,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445653778-qg8gk-IMG_4529.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445653778-qg8gk-IMG_4529.jpeg"
+      ],
+      "imageAlt": "Çizgili oturan asil kedi peluş 30 cm (ENS-62855)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795445626814",
       "sku": "ENS-26814",
       "slug": "asorti-ayakta-kopek-pelus-25-cm-ens-26814",
