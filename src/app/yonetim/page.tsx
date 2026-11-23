@@ -2140,7 +2140,7 @@ export default function AdminPanelPage() {
                   next.settings.deliverySummary = e.target.value;
                   void commitStore(next, "✓ Teslimat notu kaydedildi");
                 }}
-                placeholder="Örn: Ürün paketlendikten sonra çıkış için bilgi verilecektir."
+                placeholder="Örn: Siparişleriniz, sipariş tarihini takip eden ikinci gün sevk edilir."
                 className="mt-1 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] p-3 text-sm focus:border-[#321B2D] focus:outline-none"
               />
             </div>

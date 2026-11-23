@@ -20,7 +20,8 @@ export const DEFAULT_STORE_DATA: StoreData = {
     taxOfficeAndNo: "Vergi dairesi ve numarası müşteri onayı ile eklenecektir",
     shippingThreshold: 0,
     shippingFee: 0,
-    deliverySummary: "Ürün paketlendikten sonra çıkış için bilgi verilecektir.",
+    deliverySummary:
+      "Siparişleriniz, sipariş tarihini takip eden ikinci gün sevk edilir.",
     returnSummary:
       "Teslim tarihinden itibaren 14 gün içinde kullanılmamış, orijinal kutusu ve aksesuarları eksiksiz ürünlerde iade veya değişim hakkı geçerlidir.",
     paymentSummary:
