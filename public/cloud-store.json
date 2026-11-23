@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795446108214",
+      "sku": "ENS-08213",
+      "slug": "sevimli-tavsan-pelus-pembe-35-cm-ens-08213",
+      "name": "Sevimli tavşan peluş pembe 35 cm",
+      "shortName": "Sevimli tavşan peluş pembe 35 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446067481-u9x4d-IMG_4531.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446067481-u9x4d-IMG_4531.jpeg"
+      ],
+      "imageAlt": "Sevimli tavşan peluş pembe 35 cm (ENS-08213)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795445983824",
       "sku": "ENS-83824",
       "slug": "cizgili-oturan-pelus-kedi-gri-30-cm-ens-83824",
