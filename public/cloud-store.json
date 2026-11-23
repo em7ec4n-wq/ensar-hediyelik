@@ -245,79 +245,33 @@
       "showOnHome": true,
       "homeOrder": 5,
       "isConceptImage": false
-    },
-    {
-      "slug": "metal-kumbaralar",
-      "name": "Metal kumbaralar",
-      "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466820991-0uk9n-IMG_9310.png",
-      "imageAlt": "Metal kumbaralar",
-      "showOnHome": true,
-      "homeOrder": 5,
-      "isConceptImage": false
-    },
-    {
-      "slug": "denge-toplari-ve-balanslar",
-      "name": "Denge topları ve balanslar",
-      "description": "Denge topları",
-      "image": "/ensar-web/gorseller/kategori-cam-kure.webp",
-      "imageAlt": "Denge topları ve balanslar",
-      "showOnHome": true,
-      "homeOrder": 5,
-      "isConceptImage": false
     }
   ],
   "products": [
     {
-      "id": "custom-1795466865827",
-      "sku": "022",
-      "slug": "metal-kumbara",
-      "name": "Metal kumbara",
-      "shortName": "Metal kumbara",
-      "categorySlug": "metal-kumbaralar",
+      "id": "custom-1795467144537",
+      "sku": "ENS-BC5R",
+      "slug": "isikli-sesli-uyku-arkadasim-pelus-koala",
+      "name": "Işıklı sesli uyku arkadaşım peluş koala",
+      "shortName": "Işıklı sesli uyku arkadaşım peluş koala",
+      "categorySlug": "peluslar",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 155,
+      "price": 560,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466842600-tlv2r-IMG_9315.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467100479-rzcwa-IMG_4568.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466842600-tlv2r-IMG_9315.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467100479-rzcwa-IMG_4568.jpeg"
       ],
-      "imageAlt": "Metal kumbara (022)",
+      "imageAlt": "Işıklı sesli uyku arkadaşım peluş koala (ENS-BC5R)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
         "Hediye"
       ],
       "giftTypes": [
-        "Kumbaralar"
-      ]
-    },
-    {
-      "id": "custom-1795466123532",
-      "sku": "123",
-      "slug": "metal-lux-saat",
-      "name": "Metal lüx saat",
-      "shortName": "Metal lüx saat",
-      "categorySlug": "masa-saatleri",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 285,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466090629-c4oa7-a09933f8-6d3e-409a-a820-f4f08623702b.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466090629-c4oa7-a09933f8-6d3e-409a-a820-f4f08623702b.jpeg"
-      ],
-      "imageAlt": "Metal lüx saat (123)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Masa saatleri"
+        "Peluşlar"
       ]
     },
     {
@@ -670,9 +624,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467139596-4o2tq.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467146011-lwqmi.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467140571-jazzq.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467147085-fv90n.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -774,9 +728,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467141526-ncxj0.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467148100-8k4v6.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467142436-rp6r0.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467149090-7wq93.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -10412,5 +10366,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795467139593
+  "updatedAt": 1795467146004
 }
