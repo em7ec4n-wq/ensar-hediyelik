@@ -239,22 +239,22 @@
   ],
   "products": [
     {
-      "id": "custom-1795452296547",
-      "sku": "ENS-D6IU",
-      "slug": "sesli-aslan-pelus-65-cm",
-      "name": "Sesli aslan peluş 65 cm",
-      "shortName": "Sesli aslan peluş 65 cm",
+      "id": "custom-1795452574456",
+      "sku": "ENS-NNFD",
+      "slug": "nano-kaplumbaga-pelus-40-cm",
+      "name": "Nano kaplumbağa peluş 40 cm",
+      "shortName": "Nano kaplumbağa peluş 40 cm",
       "categorySlug": "peluslar",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 685,
+      "price": 300,
       "stock": 99,
       "published": true,
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795452538153-kbgfw-IMG_4551.jpeg",
       "gallery": [
-        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795452538153-kbgfw-IMG_4551.jpeg"
       ],
-      "imageAlt": "Sesli aslan peluş 65 cm (ENS-D6IU)",
+      "imageAlt": "Nano kaplumbağa peluş 40 cm (ENS-NNFD)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
