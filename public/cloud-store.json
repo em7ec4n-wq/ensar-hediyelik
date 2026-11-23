@@ -239,6 +239,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795451918764",
+      "sku": "ENS-PB29",
+      "slug": "dinazor-pelus-45-cm",
+      "name": "Dinazor peluş 45 cm",
+      "shortName": "Dinazor peluş 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "45 cm",
+      "price": 340,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795451880524-wokyb-IMG_4544.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795451880524-wokyb-IMG_4544.jpeg"
+      ],
+      "imageAlt": "Dinazor peluş 45 cm (ENS-PB29)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795449521755",
       "sku": "ENS-CJPF",
       "slug": "dinazor-pelus-60-cm",
