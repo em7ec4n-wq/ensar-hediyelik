@@ -252,12 +252,12 @@
       "id": "custom-1795466326491",
       "sku": "ENS-KW53",
       "slug": "fok-baligi-pelus",
-      "name": "Fok balığı peluş",
-      "shortName": "Fok balığı peluş",
+      "name": "Fok balığı peluş 38 cm",
+      "shortName": "Fok balığı peluş 38 cm",
       "categorySlug": "peluslar",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 0,
+      "price": 325,
       "stock": 99,
       "published": true,
       "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466311000-91vsx-IMG_4553.jpeg",
@@ -442,9 +442,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466327616-e7jvo.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466367460-9gu9l.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466328620-9ixxd.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466368622-ch0ry.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -546,9 +546,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466329627-oflt1.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466369771-ze8ok.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466330693-3e71l.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466370774-pbht6.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -10184,5 +10184,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795466327613
+  "updatedAt": 1795466367457
 }
