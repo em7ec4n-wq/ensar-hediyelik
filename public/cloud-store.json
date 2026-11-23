@@ -245,9 +245,71 @@
       "showOnHome": true,
       "homeOrder": 5,
       "isConceptImage": false
+    },
+    {
+      "slug": "metal-kumbaralar",
+      "name": "Metal kumbaralar",
+      "description": "Kumbaralar",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466820991-0uk9n-IMG_9310.png",
+      "imageAlt": "Metal kumbaralar",
+      "showOnHome": true,
+      "homeOrder": 5,
+      "isConceptImage": false
     }
   ],
   "products": [
+    {
+      "id": "custom-1795466123532",
+      "sku": "123",
+      "slug": "metal-lux-saat",
+      "name": "Metal lüx saat",
+      "shortName": "Metal lüx saat",
+      "categorySlug": "masa-saatleri",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 285,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466090629-c4oa7-a09933f8-6d3e-409a-a820-f4f08623702b.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466090629-c4oa7-a09933f8-6d3e-409a-a820-f4f08623702b.jpeg"
+      ],
+      "imageAlt": "Metal lüx saat (123)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Masa saatleri"
+      ]
+    },
+    {
+      "id": "custom-1795466865827",
+      "sku": "022",
+      "slug": "metal-kumbara",
+      "name": "Metal kumbara",
+      "shortName": "Metal kumbara",
+      "categorySlug": "metal-kumbaralar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 155,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466842600-tlv2r-IMG_9315.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466842600-tlv2r-IMG_9315.png"
+      ],
+      "imageAlt": "Metal kumbara (022)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Kumbaralar"
+      ]
+    },
     {
       "id": "custom-1795466962049",
       "sku": "ENS-FLZC",
@@ -572,9 +634,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466963772-op06q.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466970311-fon9p.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466965107-cco0o.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466971534-k1c1a.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -676,9 +738,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466966264-qwzv9.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466972648-xic95.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466967225-eh2lz.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466973678-uzce2.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -10314,5 +10376,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795466963757
+  "updatedAt": 1795466970304
 }
