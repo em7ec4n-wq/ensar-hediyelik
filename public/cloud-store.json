@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795444764469",
+      "sku": "ENS-64468",
+      "slug": "kahverengi-fermuarli-penguen-26-cm-ens-64468",
+      "name": "Kahverengi fermuarlı penguen 26 cm",
+      "shortName": "Kahverengi fermuarlı penguen 26 cm",
+      "categorySlug": "yilbasi",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 305,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795444730493-u6sin-IMG_4513.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795444730493-u6sin-IMG_4513.jpeg"
+      ],
+      "imageAlt": "Kahverengi fermuarlı penguen 26 cm (ENS-64468)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Yılbaşı Ürünleri"
+      ]
+    },
+    {
       "id": "custom-1795444762404",
       "sku": "ENS-62403",
       "slug": "kahverengi-fermuarli-penguen-26-cm-ens-62403",
