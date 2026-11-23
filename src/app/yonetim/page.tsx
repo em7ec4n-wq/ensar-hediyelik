@@ -4,7 +4,7 @@ import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import type { Category, Order, Product, StoreData } from "@/types/store";
 import { formatPriceTRY, buildWhatsAppGeneralUrl } from "@/lib/format";
-import { uploadLosslessImage } from "@/lib/client-store";
+import { uploadLosslessImage, deduplicateProducts } from "@/lib/client-store";
 import { useLiveStore } from "@/components/StoreProvider";
 import { getProductHref } from "@/components/ProductCard";
 import { getCategoryHref } from "@/components/CategoriesClient";
@@ -75,6 +75,7 @@ export default function AdminPanelPage() {
   const [newProdDesc, setNewProdDesc] = useState("");
   const [newProdGallery, setNewProdGallery] = useState<string[]>([]);
   const [newProdNewArrival, setNewProdNewArrival] = useState(false);
+  const [isCreatingProduct, setIsCreatingProduct] = useState(false);
 
   // Bulk price state
   const [bulkCat, setBulkCat] = useState("all");
@@ -167,76 +168,123 @@ export default function AdminPanelPage() {
     }
   };
 
+  const handleCleanDuplicates = async () => {
+    const originalCount = store.products.length;
+    const cleanList = deduplicateProducts(store.products);
+    const removedCount = originalCount - cleanList.length;
+    if (removedCount <= 0) {
+      showNotice("Mükerrer (çift) ürün bulunamadı. Kataloğunuz temiz!");
+      return;
+    }
+    const next = structuredClone(store);
+    next.products = cleanList;
+    await commitStore(
+      next,
+      `✓ ${removedCount} adet çift ürün başarıyla temizlendi!`,
+      undefined,
+      true
+    );
+  };
+
   const handleCreateProduct = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (isCreatingProduct) return;
+
     const trimmedName = newProdName.trim();
     if (!trimmedName) {
       showNotice("Lütfen ürün adını yazın.");
       return;
     }
-    const sku =
-      newProdSku.trim().toUpperCase() ||
-      `ENS-${Math.random().toString(36).slice(2, 6).toUpperCase()}`;
-    const baseSlug = slugifyTR(trimmedName) || `urun-${Date.now()}`;
-    const existingSlugs = new Set(store.products.map((p) => p.slug));
-    let slug = baseSlug;
-    let c = 2;
-    while (existingSlugs.has(slug)) {
-      slug = `${baseSlug}-${c++}`;
+
+    const finalCatSlug = newProdSubCat || newProdCat;
+
+    // Check duplicate: if identical product name already exists in this category
+    const isDuplicate = store.products.some(
+      (p) =>
+        p.name.trim().toLocaleLowerCase("tr-TR") === trimmedName.toLocaleLowerCase("tr-TR") &&
+        p.categorySlug === finalCatSlug &&
+        p.id.startsWith("custom-")
+    );
+    if (isDuplicate) {
+      showNotice(`"${trimmedName}" bu kategoride zaten mevcut!`);
+      setShowNewProduct(false);
+      return;
     }
 
-    const cover =
-      newProdGallery[0] ||
-      "/ensar-web/gorseller/hero-astronot-cam-kure.webp";
-    const gallery = newProdGallery.length > 0 ? newProdGallery : [cover];
-    const finalCatSlug = newProdSubCat || newProdCat;
-    const selectedCatObj = store.categories.find(
-      (cat) => cat.slug === finalCatSlug
-    );
-    const extraCats = selectedCatObj?.parentSlug
-      ? [selectedCatObj.parentSlug]
-      : [];
-
-    const created: Product = {
-      id: `custom-${Date.now()}`,
-      sku,
-      slug,
-      name: trimmedName,
-      shortName: trimmedName,
-      categorySlug: finalCatSlug,
-      extraCategorySlugs: extraCats,
-      description: newProdDesc.trim(),
-      price: newProdPrice !== "" ? Number(newProdPrice) : 0,
-      stock: 99,
-      published: true,
-      image: cover,
-      gallery,
-      imageAlt: `${trimmedName} (${sku})`,
-      isConceptImage: false,
-      isNewArrival: newProdNewArrival,
-      occasions: ["Hediye"],
-      giftTypes: [selectedCatObj?.name || "Hediyelik"],
-    };
-
-    const next = structuredClone(store);
-    next.products.unshift(created);
-    await commitStore(next, `✓ "${trimmedName}" ürünü eklendi`, undefined, true);
-
-    setNewProdName("");
-    setNewProdSku("");
-    setNewProdPrice("");
-    setNewProdDesc("");
-    setNewProdGallery([]);
-    setNewProdNewArrival(false);
-    setNewProdSubCat("");
-    setIsAddingNewSubcatInline(false);
-    setNewSubcatInlineName("");
+    setIsCreatingProduct(true);
+    // Immediately close modal to eliminate double-clicks / touchscreen multi-taps
     setShowNewProduct(false);
+    showNotice(`"${trimmedName}" ekleniyor...`);
 
-    // Keep the newly created product in view immediately
-    setProdCatFilter(finalCatSlug);
-    setProdSearch("");
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    try {
+      const sku =
+        newProdSku.trim().toUpperCase() ||
+        `ENS-${Math.random().toString(36).slice(2, 6).toUpperCase()}`;
+      const baseSlug = slugifyTR(trimmedName) || `urun-${Date.now()}`;
+      const existingSlugs = new Set(store.products.map((p) => p.slug));
+      let slug = baseSlug;
+      let c = 2;
+      while (existingSlugs.has(slug)) {
+        slug = `${baseSlug}-${c++}`;
+      }
+
+      const cover =
+        newProdGallery[0] ||
+        "/ensar-web/gorseller/hero-astronot-cam-kure.webp";
+      const gallery = newProdGallery.length > 0 ? newProdGallery : [cover];
+      const selectedCatObj = store.categories.find(
+        (cat) => cat.slug === finalCatSlug
+      );
+      const extraCats = selectedCatObj?.parentSlug
+        ? [selectedCatObj.parentSlug]
+        : [];
+
+      const created: Product = {
+        id: `custom-${Date.now()}`,
+        sku,
+        slug,
+        name: trimmedName,
+        shortName: trimmedName,
+        categorySlug: finalCatSlug,
+        extraCategorySlugs: extraCats,
+        description: newProdDesc.trim(),
+        price: newProdPrice !== "" ? Number(newProdPrice) : 0,
+        stock: 99,
+        published: true,
+        image: cover,
+        gallery,
+        imageAlt: `${trimmedName} (${sku})`,
+        isConceptImage: false,
+        isNewArrival: newProdNewArrival,
+        occasions: ["Hediye"],
+        giftTypes: [selectedCatObj?.name || "Hediyelik"],
+      };
+
+      const next = structuredClone(store);
+      next.products.unshift(created);
+      next.products = deduplicateProducts(next.products);
+      await commitStore(next, `✓ "${trimmedName}" ürünü eklendi`, undefined, true);
+
+      setNewProdName("");
+      setNewProdSku("");
+      setNewProdPrice("");
+      setNewProdDesc("");
+      setNewProdGallery([]);
+      setNewProdNewArrival(false);
+      setNewProdSubCat("");
+      setIsAddingNewSubcatInline(false);
+      setNewSubcatInlineName("");
+
+      // Keep the newly created product in view immediately
+      setProdCatFilter(finalCatSlug);
+      setProdSearch("");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } catch (err) {
+      console.error(err);
+      showNotice("Ürün kaydedilirken bir hata oluştu.");
+    } finally {
+      setIsCreatingProduct(false);
+    }
   };
 
   const handleCreateInlineSubcategory = async () => {
@@ -556,6 +604,15 @@ export default function AdminPanelPage() {
                 className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl border border-[#321B2D] bg-[#FFFDF8] px-4 text-xs font-semibold text-[#321B2D] hover:bg-[#E9D9F1]"
               >
                 <span>📂 Toplu Kategori Değiştir</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={handleCleanDuplicates}
+                className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl border border-amber-600/50 bg-amber-50 px-4 text-xs font-semibold text-amber-900 hover:bg-amber-100 transition-colors"
+                title="Mükerrer ve çift eklenmiş ürünleri otomatik temizler"
+              >
+                <span>🧹 Çift Ürünleri Temizle</span>
               </button>
             </div>
 
@@ -1494,9 +1551,10 @@ export default function AdminPanelPage() {
                 </button>
                 <button
                   type="submit"
-                  className="min-h-[44px] rounded-xl bg-[#321B2D] px-6 text-xs font-bold text-[#F7F3EB] shadow hover:bg-[#44253D]"
+                  disabled={isCreatingProduct}
+                  className="min-h-[44px] rounded-xl bg-[#321B2D] px-6 text-xs font-bold text-[#F7F3EB] shadow hover:bg-[#44253D] disabled:opacity-50"
                 >
-                  ✓ Ürünü Kaydet
+                  {isCreatingProduct ? "Kaydediliyor..." : "✓ Ürünü Kaydet"}
                 </button>
               </div>
             </form>

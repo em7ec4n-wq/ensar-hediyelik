@@ -10,6 +10,29 @@ const GH_PATH = "public/cloud-store.json";
 // In-memory cache for ultra-fast, zero-loss access across warm serverless requests
 let inMemoryStore: StoreData | null = null;
 
+function deduplicateProducts(products: StoreData["products"]): StoreData["products"] {
+  if (!Array.isArray(products)) return [];
+  const seenIds = new Set<string>();
+  const seenCustomKeys = new Set<string>();
+  const unique: StoreData["products"] = [];
+
+  for (const p of products) {
+    if (!p || !p.id) continue;
+    if (seenIds.has(p.id)) continue;
+    seenIds.add(p.id);
+
+    if (p.id.startsWith("custom-")) {
+      const key = `${p.name?.trim().toLocaleLowerCase("tr-TR")}:::${p.categorySlug || ""}`;
+      if (seenCustomKeys.has(key)) continue;
+      seenCustomKeys.add(key);
+    }
+
+    unique.push(p);
+  }
+
+  return unique;
+}
+
 async function fetchFromCloud(): Promise<StoreData | null> {
   const token = process.env.GITHUB_STORE_TOKEN;
   if (!token) return null;
@@ -210,6 +233,8 @@ export async function GET() {
     }
   }
 
+  store.products = deduplicateProducts(store.products);
+
   return NextResponse.json(store, {
     headers: {
       "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
@@ -227,6 +252,7 @@ export async function PUT(request: Request) {
       );
     }
 
+    body.products = deduplicateProducts(body.products);
     body.updatedAt = Date.now();
     inMemoryStore = body;
 

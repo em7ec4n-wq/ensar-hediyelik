@@ -49,8 +49,36 @@ export function sanitizeProductImage(
   return "/ensar-web/gorseller/hero-astronot-cam-kure.webp";
 }
 
+export function deduplicateProducts(
+  products: StoreData["products"]
+): StoreData["products"] {
+  const seenIds = new Set<string>();
+  const seenCustomKeys = new Set<string>();
+  const unique: StoreData["products"] = [];
+
+  for (const p of products) {
+    if (!p || !p.id) continue;
+    if (seenIds.has(p.id)) continue;
+    seenIds.add(p.id);
+
+    // If it's a custom-added product, check for exact duplicates (same name and category)
+    if (p.id.startsWith("custom-")) {
+      const key = `${p.name?.trim().toLocaleLowerCase("tr-TR")}:::${p.categorySlug || ""}`;
+      if (seenCustomKeys.has(key)) {
+        continue;
+      }
+      seenCustomKeys.add(key);
+    }
+
+    unique.push(p);
+  }
+
+  return unique;
+}
+
 function sanitizeStoreImages(store: StoreData): StoreData {
   const next = structuredClone(store);
+  next.products = deduplicateProducts(next.products);
 
   if (isBrokenOrVolatileUrl(next.settings.logoLightBg)) {
     next.settings.logoLightBg = DEFAULT_STORE_DATA.settings.logoLightBg;
@@ -153,6 +181,11 @@ async function rescueLocalChangesIntoServerStore(
   const serverProdSkus = new Set(
     serverStore.products.map((p) => p.sku.toUpperCase())
   );
+  const serverProdNames = new Set(
+    serverStore.products.map(
+      (p) => `${p.name.trim().toLocaleLowerCase("tr-TR")}:::${p.categorySlug}`
+    )
+  );
 
   const rescuedCategories = new Map<
     string,
@@ -172,10 +205,13 @@ async function rescueLocalChangesIntoServerStore(
     if (Array.isArray(candidate.products)) {
       for (const p of candidate.products) {
         if (!p?.id) continue;
-        if (
-          !serverProdIds.has(p.id) &&
-          !serverProdSkus.has(p.sku.toUpperCase())
-        ) {
+        const nameKey = `${p.name?.trim()?.toLocaleLowerCase("tr-TR") || ""}:::${p.categorySlug || ""}`;
+        const isDuplicate =
+          serverProdIds.has(p.id) ||
+          (Boolean(p.sku) && serverProdSkus.has(p.sku.toUpperCase())) ||
+          (p.id.startsWith("custom-") && serverProdNames.has(nameKey));
+
+        if (!isDuplicate) {
           rescuedProducts.set(p.id, p);
         }
       }

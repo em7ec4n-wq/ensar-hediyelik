@@ -137,6 +137,7 @@ export function EditProductModal({
 
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (isSaving) return;
     const trimmedName = name.trim();
     if (!trimmedName) {
       showNotice("Lütfen ürün adını boş bırakmayın.");
