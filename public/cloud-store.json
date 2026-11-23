@@ -328,9 +328,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463233024-7zg2y.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463420809-5d9mx.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463234058-9ygpr.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463421946-hq23z.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -432,9 +432,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463235126-rrswz.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463422956-skxex.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463236005-zx00b.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795463423971-jxacq.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -6573,7 +6573,7 @@
       "slug": "yilbasi-orta-kure-2041-3",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "kucuk-boy-kar-kuresi",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7165,7 +7165,7 @@
       "slug": "yilbasi-orta-kure-jhsd80-29",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7202,7 +7202,7 @@
       "slug": "yilbasi-orta-kure-jhsd80-35",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -8952,7 +8952,7 @@
       "slug": "melek-kar-kuresi-k-2020",
       "name": "Melek Kar Küresi K.",
       "shortName": "Melek Kar Küresi K.",
-      "categorySlug": "mini-boy-kar-kuresi",
+      "categorySlug": "yilbasi",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -10073,5 +10073,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795463233021
+  "updatedAt": 1795463420806
 }
