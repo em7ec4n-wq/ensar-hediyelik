@@ -13,7 +13,7 @@
     "taxOfficeAndNo": "Vergi dairesi ve numarası müşteri onayı ile eklenecektir",
     "shippingThreshold": 0,
     "shippingFee": 0,
-    "deliverySummary": "Siparişleriniz, sipariş tarihini takip eden ikinci gün sevk edilir.",
+    "deliverySummary": "Tüm siparişler özenli paketleme ile aynı gün veya 1 iş günü içinde kargoya teslim edilir.",
     "returnSummary": "Teslim tarihinden itibaren 14 gün içinde kullanılmamış, orijinal kutusu ve aksesuarları eksiksiz ürünlerde iade veya değişim hakkı geçerlidir.",
     "paymentSummary": "Ödeme akışı işletmenin onayladığı kredi kartı (3D Secure), havale/EFT ve kapıda ödeme seçenekleriyle devreye alınır.",
     "agencyRoleNote": "Bu web sitesinin arayüz tasarımı, yazılım geliştirme, katalog geçiş altyapısı ve teknik danışmanlık hizmetleri İlay Ajans tarafından hazırlanmıştır. Satış, fiyatlandırma, faturalandırma, kargo ve müşteri ilişkileri münhasıran Ensar Hediyelik sorumluluğundadır."
@@ -238,6 +238,34 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795446414621",
+      "sku": "ENS-14620",
+      "slug": "gri-yavrulu-fil-pelus-55-cm-ens-14620",
+      "name": "Gri yavrulu fil  peluş 55 cm",
+      "shortName": "Gri yavrulu fil  peluş 55 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 535,
+      "stock": 99,
+      "published": true,
+      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "gallery": [
+        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+      ],
+      "imageAlt": "Gri yavrulu fil  peluş 55 cm (ENS-14620)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
     {
       "id": "custom-1795446355802",
       "sku": "ENS-55801",
