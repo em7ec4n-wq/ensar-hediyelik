@@ -259,6 +259,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795466865827",
+      "sku": "022",
+      "slug": "metal-kumbara",
+      "name": "Metal kumbara",
+      "shortName": "Metal kumbara",
+      "categorySlug": "kumbaralar",
+      "extraCategorySlugs": [
+        "hediyelik-urunler"
+      ],
+      "description": "",
+      "price": 155,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466842600-tlv2r-IMG_9315.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466842600-tlv2r-IMG_9315.png"
+      ],
+      "imageAlt": "Metal kumbara (022)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Kumbaralar"
+      ]
+    },
+    {
       "id": "custom-1795466123532",
       "sku": "123",
       "slug": "metal-lux-saat",
@@ -478,9 +506,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466829991-s370d.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466867802-msno9.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466830980-rtmcw.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466868872-v2khc.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -582,9 +610,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466832145-uwfn1.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466869932-a1mem.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466833092-uug5j.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466870949-szvt5.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -10220,5 +10248,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795466829981
+  "updatedAt": 1795466867800
 }
