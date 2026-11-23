@@ -61,17 +61,17 @@ export function WholesaleNoticeModal({
           type="button"
           onClick={handleClose}
           aria-label="Kapat"
-          className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-stone-100 text-[#241722] transition-colors hover:bg-stone-200"
+          className="absolute right-3.5 top-3.5 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-stone-100 text-[#241722] transition-colors hover:bg-stone-200 sm:right-4 sm:top-4 sm:h-10 sm:w-10"
         >
-          <CloseIcon size={20} />
+          <CloseIcon size={18} />
         </button>
 
-        {/* Brand Logo */}
-        <div className="flex justify-center pb-3">
+        {/* Brand Logo with safe horizontal clearance so close button never overlaps */}
+        <div className="flex justify-center px-12 pb-3 pt-1">
           <img
             src={logoSrc}
             alt={brandName}
-            className="h-10 w-auto object-contain sm:h-12"
+            className="h-9 w-auto max-w-[200px] object-contain sm:h-11 sm:max-w-[240px]"
           />
         </div>
 

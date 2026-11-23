@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import type { Category, StoreData } from "@/types/store";
 import { getCategoryHref } from "@/components/CategoriesClient";
@@ -20,6 +20,7 @@ interface AdminCategoryCardProps {
   onAddProductToCat: (catSlug: string) => void;
   onAssignExistingToCat: (catSlug: string) => void;
   onDeleteCategory: (catSlug: string) => void;
+  onViewCategoryProducts?: (catSlug: string) => void;
 }
 
 export function AdminCategoryCard({
@@ -32,6 +33,7 @@ export function AdminCategoryCard({
   onAddProductToCat,
   onAssignExistingToCat,
   onDeleteCategory,
+  onViewCategoryProducts,
 }: AdminCategoryCardProps) {
   // Local isolated draft states — typing here will NEVER jitter or cause cursor jump!
   const [name, setName] = useState(cat.name);
@@ -41,11 +43,23 @@ export function AdminCategoryCard({
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [isSaved, setIsSaved] = useState(false);
 
+  const isInputFocusedRef = useRef(false);
+  const prevCatSlugRef = useRef(cat.slug);
+
   useEffect(() => {
-    setName(cat.name);
-    setDescription(cat.description || "");
-    setParentSlug(cat.parentSlug || "");
-    setShowOnHome(cat.showOnHome);
+    const isNewCat = prevCatSlugRef.current !== cat.slug;
+    if (isNewCat) {
+      prevCatSlugRef.current = cat.slug;
+      setName(cat.name);
+      setDescription(cat.description || "");
+      setParentSlug(cat.parentSlug || "");
+      setShowOnHome(cat.showOnHome);
+    } else if (!isInputFocusedRef.current) {
+      setName((prev) => (prev === cat.name ? prev : cat.name));
+      setDescription((prev) => (prev === (cat.description || "") ? prev : cat.description || ""));
+      setParentSlug(cat.parentSlug || "");
+      setShowOnHome(cat.showOnHome);
+    }
   }, [cat.slug, cat.name, cat.description, cat.parentSlug, cat.showOnHome]);
 
   const parentCat = cat.parentSlug
@@ -63,9 +77,10 @@ export function AdminCategoryCard({
     overrideShowOnHome?: boolean
   ) => {
     const next = structuredClone(store);
-    if (!next.categories[idx]) return;
+    const target = next.categories.find((c) => c.slug === cat.slug);
+    if (!target) return;
 
-    const trimmedName = name.trim() || next.categories[idx].name;
+    const trimmedName = name.trim() || target.name;
     const trimmedDesc = description.trim();
     const finalParent =
       overrideParentSlug !== undefined
@@ -74,10 +89,10 @@ export function AdminCategoryCard({
     const finalHome =
       overrideShowOnHome !== undefined ? overrideShowOnHome : showOnHome;
 
-    next.categories[idx].name = trimmedName;
-    next.categories[idx].description = trimmedDesc;
-    next.categories[idx].parentSlug = finalParent;
-    next.categories[idx].showOnHome = finalHome;
+    target.name = trimmedName;
+    target.description = trimmedDesc;
+    target.parentSlug = finalParent;
+    target.showOnHome = finalHome;
 
     await commitStore(next, `✓ "${trimmedName}" kategorisi kaydedildi`);
     setIsSaved(true);
@@ -90,17 +105,22 @@ export function AdminCategoryCard({
         cat.parentSlug ? "border-l-4 border-l-[#321B2D]" : ""
       }`}
     >
-      {/* Category Image */}
-      <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-[#E5DCD0] bg-[#FFFDF8]">
+      {/* Category Image - Clickable to enter category products */}
+      <button
+        type="button"
+        onClick={() => onViewCategoryProducts?.(cat.slug)}
+        title="Bu kategorideki ürünleri listele ve düzenle"
+        className="group relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-[#E5DCD0] bg-[#FFFDF8] text-left transition-all hover:border-[#321B2D]"
+      >
         <img
           src={cat.image}
           alt={cat.imageAlt}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover transition-transform group-hover:scale-105"
         />
-        <span className="absolute bottom-1 right-1 rounded-md bg-black/70 px-1.5 py-0.5 text-[10px] font-semibold text-white">
-          {catProdCount} ürün
+        <span className="absolute bottom-1 right-1 rounded-md bg-black/75 px-1.5 py-0.5 text-[10px] font-bold text-white group-hover:bg-[#321B2D]">
+          {catProdCount} ürün ↗
         </span>
-      </div>
+      </button>
 
       {/* Category Fields */}
       <div className="flex-1 space-y-2.5">
@@ -118,6 +138,17 @@ export function AdminCategoryCard({
           </span>
 
           <div className="flex flex-wrap items-center gap-1.5">
+            {onViewCategoryProducts && (
+              <button
+                type="button"
+                onClick={() => onViewCategoryProducts(cat.slug)}
+                className="rounded-xl bg-[#E9D9F1] px-2.5 py-1.5 text-xs font-bold text-[#321B2D] hover:bg-[#321B2D] hover:text-[#F7F3EB]"
+                title="Bu kategorideki ürünleri yönetin"
+              >
+                📋 Ürünleri Gör ({catProdCount})
+              </button>
+            )}
+
             <button
               type="button"
               onClick={() => onAddProductToCat(cat.slug)}
@@ -136,9 +167,9 @@ export function AdminCategoryCard({
 
             <Link
               href={getCategoryHref(cat.slug)}
-              className="shrink-0 rounded-xl bg-[#E9D9F1] px-2.5 py-1.5 text-xs font-semibold text-[#321B2D]"
+              className="shrink-0 rounded-xl bg-stone-100 px-2.5 py-1.5 text-xs font-semibold text-[#5F505C] hover:bg-stone-200"
             >
-              Gör ↗
+              Sitede Gör ↗
             </Link>
           </div>
         </div>
@@ -150,8 +181,17 @@ export function AdminCategoryCard({
             </label>
             <input
               value={name}
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck={false}
+              onFocus={() => {
+                isInputFocusedRef.current = true;
+              }}
               onChange={(e) => setName(e.target.value)}
-              onBlur={() => void saveCategoryDraft()}
+              onBlur={() => {
+                isInputFocusedRef.current = false;
+                void saveCategoryDraft();
+              }}
               onKeyDown={(e) => {
                 if (e.key === "Enter") e.currentTarget.blur();
               }}
@@ -196,8 +236,17 @@ export function AdminCategoryCard({
           </label>
           <input
             value={description}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            onFocus={() => {
+              isInputFocusedRef.current = true;
+            }}
             onChange={(e) => setDescription(e.target.value)}
-            onBlur={() => void saveCategoryDraft()}
+            onBlur={() => {
+              isInputFocusedRef.current = false;
+              void saveCategoryDraft();
+            }}
             onKeyDown={(e) => {
               if (e.key === "Enter") e.currentTarget.blur();
             }}

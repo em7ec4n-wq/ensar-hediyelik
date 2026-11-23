@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import type { Product, StoreData } from "@/types/store";
 import { getProductHref } from "@/components/ProductCard";
@@ -48,15 +48,32 @@ export function AdminProductCard({
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
 
-  // Sync from props only when the underlying product ID changes or when external update lands
+  // Focus lock ref: Prevents external store updates from clobbering text while user is actively typing!
+  const isInputFocusedRef = useRef(false);
+  const prevProductIdRef = useRef(product.id);
+
+  // Sync from props only when product ID changes, or when props change AND user is not focused on an input
   useEffect(() => {
-    setName(product.name);
-    setPriceStr(
-      product.price !== null && product.price !== undefined ? String(product.price) : ""
-    );
-    setSku(product.sku);
-    setDescription(product.description || "");
-    setCategorySlug(product.categorySlug);
+    const isNewProduct = prevProductIdRef.current !== product.id;
+    if (isNewProduct) {
+      prevProductIdRef.current = product.id;
+      setName(product.name);
+      setPriceStr(
+        product.price !== null && product.price !== undefined ? String(product.price) : ""
+      );
+      setSku(product.sku);
+      setDescription(product.description || "");
+      setCategorySlug(product.categorySlug);
+    } else if (!isInputFocusedRef.current) {
+      // Safe update only if not actively typing
+      setName((prev) => (prev === product.name ? prev : product.name));
+      const nextPriceStr =
+        product.price !== null && product.price !== undefined ? String(product.price) : "";
+      setPriceStr((prev) => (prev === nextPriceStr ? prev : nextPriceStr));
+      setSku((prev) => (prev === product.sku ? prev : product.sku));
+      setDescription((prev) => (prev === (product.description || "") ? prev : product.description || ""));
+      setCategorySlug(product.categorySlug);
+    }
   }, [product.id, product.name, product.price, product.sku, product.description, product.categorySlug]);
 
   const isJustSaved = savedCardId === product.id || isSaving;
@@ -71,7 +88,7 @@ export function AdminProductCard({
 
   const saveProductDraft = async (overrideCatSlug?: string) => {
     const next = structuredClone(store);
-    const target = next.products[originalIndex];
+    const target = next.products.find((p) => p.id === product.id);
     if (!target) return;
 
     const trimmedName = name.trim() || target.name;
@@ -155,8 +172,17 @@ export function AdminProductCard({
               <input
                 value={name}
                 aria-label="Ürün adı"
+                autoComplete="off"
+                autoCorrect="off"
+                spellCheck={false}
+                onFocus={() => {
+                  isInputFocusedRef.current = true;
+                }}
                 onChange={(e) => setName(e.target.value)}
-                onBlur={() => void saveProductDraft()}
+                onBlur={() => {
+                  isInputFocusedRef.current = false;
+                  void saveProductDraft();
+                }}
                 onKeyDown={(e) => {
                   if (e.key === "Enter") {
                     e.currentTarget.blur();
@@ -238,8 +264,17 @@ export function AdminProductCard({
               inputMode="decimal"
               value={priceStr}
               placeholder="0"
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck={false}
+              onFocus={() => {
+                isInputFocusedRef.current = true;
+              }}
               onChange={(e) => setPriceStr(e.target.value)}
-              onBlur={() => void saveProductDraft()}
+              onBlur={() => {
+                isInputFocusedRef.current = false;
+                void saveProductDraft();
+              }}
               onKeyDown={(e) => {
                 if (e.key === "Enter") {
                   e.currentTarget.blur();
@@ -403,8 +438,17 @@ export function AdminProductCard({
               </label>
               <input
                 value={sku}
+                autoComplete="off"
+                autoCorrect="off"
+                spellCheck={false}
+                onFocus={() => {
+                  isInputFocusedRef.current = true;
+                }}
                 onChange={(e) => setSku(e.target.value)}
-                onBlur={() => void saveProductDraft()}
+                onBlur={() => {
+                  isInputFocusedRef.current = false;
+                  void saveProductDraft();
+                }}
                 onKeyDown={(e) => {
                   if (e.key === "Enter") e.currentTarget.blur();
                 }}
@@ -418,8 +462,17 @@ export function AdminProductCard({
               </label>
               <input
                 value={description}
+                autoComplete="off"
+                autoCorrect="off"
+                spellCheck={false}
+                onFocus={() => {
+                  isInputFocusedRef.current = true;
+                }}
                 onChange={(e) => setDescription(e.target.value)}
-                onBlur={() => void saveProductDraft()}
+                onBlur={() => {
+                  isInputFocusedRef.current = false;
+                  void saveProductDraft();
+                }}
                 onKeyDown={(e) => {
                   if (e.key === "Enter") e.currentTarget.blur();
                 }}

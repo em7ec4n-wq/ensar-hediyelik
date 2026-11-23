@@ -174,14 +174,42 @@ export function CategoryAssignModal({
               <select
                 value={filterSourceCat}
                 onChange={(e) => setFilterSourceCat(e.target.value)}
-                className="ensar-select h-10 w-full rounded-xl border border-[#DDD3C6] bg-white px-3 text-xs focus:border-[#321B2D] focus:outline-none"
+                className="ensar-select h-10 w-full rounded-xl border border-[#DDD3C6] bg-white px-3 text-xs focus:border-[#321B2D] focus:outline-none font-medium"
               >
-                <option value="all">Tüm Kategorilerden Göster</option>
-                {store.categories.map((c) => (
-                  <option key={c.slug} value={c.slug}>
-                    Şu anki: {c.name}
-                  </option>
-                ))}
+                <option value="all">Tüm Kategorilerden Göster ({store.products.length} ürün)</option>
+                <optgroup label="─── ANA KATEGORİLER ───">
+                  {store.categories
+                    .filter((c) => !c.parentSlug)
+                    .map((c) => {
+                      const count = store.products.filter(
+                        (p) =>
+                          p.categorySlug === c.slug ||
+                          p.extraCategorySlugs?.includes(c.slug)
+                      ).length;
+                      return (
+                        <option key={c.slug} value={c.slug}>
+                          📁 {c.name} ({count} ürün)
+                        </option>
+                      );
+                    })}
+                </optgroup>
+                <optgroup label="─── ALT KATEGORİLER ───">
+                  {store.categories
+                    .filter((c) => Boolean(c.parentSlug))
+                    .map((c) => {
+                      const parent = store.categories.find(
+                        (p) => p.slug === c.parentSlug
+                      );
+                      const count = store.products.filter(
+                        (p) => p.categorySlug === c.slug
+                      ).length;
+                      return (
+                        <option key={c.slug} value={c.slug}>
+                          ↳ {parent?.name || "Üst"} → {c.name} ({count} ürün)
+                        </option>
+                      );
+                    })}
+                </optgroup>
               </select>
             </div>
           </div>

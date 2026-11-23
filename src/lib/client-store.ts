@@ -345,7 +345,11 @@ export async function saveClientStoreAsync(
       }, 500);
     }
 
-    window.dispatchEvent(new CustomEvent("ensar-store-updated"));
+    window.dispatchEvent(
+      new CustomEvent("ensar-store-updated", {
+        detail: { origin: "local-save" },
+      })
+    );
   }
   return cleanData;
 }

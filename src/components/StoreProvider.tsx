@@ -44,7 +44,12 @@ export function StoreProvider({
 
   useEffect(() => {
     void refreshFromStorage();
-    const handleCustomUpdate = () => {
+    const handleCustomUpdate = (e: Event) => {
+      const ce = e as CustomEvent<{ origin?: string }>;
+      if (ce?.detail?.origin === "local-save") {
+        // Local save already updated in-memory state; avoid re-fetching stale data over active edits!
+        return;
+      }
       void refreshFromStorage();
     };
     window.addEventListener("ensar-store-updated", handleCustomUpdate);

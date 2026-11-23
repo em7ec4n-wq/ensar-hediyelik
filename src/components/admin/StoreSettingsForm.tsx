@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import type { StoreData, StoreSettings } from "@/types/store";
 
 interface StoreSettingsFormProps {
@@ -28,13 +28,17 @@ export function StoreSettingsForm({
   const [deliverySummary, setDeliverySummary] = useState(settings.deliverySummary);
   const [isSaved, setIsSaved] = useState(false);
 
+  const isInputFocusedRef = useRef(false);
+
   useEffect(() => {
-    setPhoneDisplay(settings.phoneDisplay);
-    setWhatsappNumber(settings.whatsappNumber);
-    setEmail(settings.email);
-    setWorkingHours(settings.workingHours);
-    setAddress(settings.address);
-    setDeliverySummary(settings.deliverySummary);
+    if (!isInputFocusedRef.current) {
+      setPhoneDisplay((prev) => (prev === settings.phoneDisplay ? prev : settings.phoneDisplay));
+      setWhatsappNumber((prev) => (prev === settings.whatsappNumber ? prev : settings.whatsappNumber));
+      setEmail((prev) => (prev === settings.email ? prev : settings.email));
+      setWorkingHours((prev) => (prev === settings.workingHours ? prev : settings.workingHours));
+      setAddress((prev) => (prev === settings.address ? prev : settings.address));
+      setDeliverySummary((prev) => (prev === settings.deliverySummary ? prev : settings.deliverySummary));
+    }
   }, [
     settings.phoneDisplay,
     settings.whatsappNumber,
@@ -129,8 +133,17 @@ export function StoreSettingsForm({
           </label>
           <input
             value={phoneDisplay}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            onFocus={() => {
+              isInputFocusedRef.current = true;
+            }}
             onChange={(e) => setPhoneDisplay(e.target.value)}
-            onBlur={() => void saveSettings()}
+            onBlur={() => {
+              isInputFocusedRef.current = false;
+              void saveSettings();
+            }}
             className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
@@ -141,8 +154,17 @@ export function StoreSettingsForm({
           </label>
           <input
             value={whatsappNumber}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            onFocus={() => {
+              isInputFocusedRef.current = true;
+            }}
             onChange={(e) => setWhatsappNumber(e.target.value)}
-            onBlur={() => void saveSettings()}
+            onBlur={() => {
+              isInputFocusedRef.current = false;
+              void saveSettings();
+            }}
             className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
@@ -153,8 +175,17 @@ export function StoreSettingsForm({
           </label>
           <input
             value={email}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            onFocus={() => {
+              isInputFocusedRef.current = true;
+            }}
             onChange={(e) => setEmail(e.target.value)}
-            onBlur={() => void saveSettings()}
+            onBlur={() => {
+              isInputFocusedRef.current = false;
+              void saveSettings();
+            }}
             className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
@@ -165,8 +196,17 @@ export function StoreSettingsForm({
           </label>
           <input
             value={workingHours}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            onFocus={() => {
+              isInputFocusedRef.current = true;
+            }}
             onChange={(e) => setWorkingHours(e.target.value)}
-            onBlur={() => void saveSettings()}
+            onBlur={() => {
+              isInputFocusedRef.current = false;
+              void saveSettings();
+            }}
             className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
@@ -177,8 +217,17 @@ export function StoreSettingsForm({
           </label>
           <input
             value={address}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            onFocus={() => {
+              isInputFocusedRef.current = true;
+            }}
             onChange={(e) => setAddress(e.target.value)}
-            onBlur={() => void saveSettings()}
+            onBlur={() => {
+              isInputFocusedRef.current = false;
+              void saveSettings();
+            }}
             className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
@@ -190,8 +239,17 @@ export function StoreSettingsForm({
           <textarea
             rows={2}
             value={deliverySummary}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            onFocus={() => {
+              isInputFocusedRef.current = true;
+            }}
             onChange={(e) => setDeliverySummary(e.target.value)}
-            onBlur={() => void saveSettings()}
+            onBlur={() => {
+              isInputFocusedRef.current = false;
+              void saveSettings();
+            }}
             placeholder="Örn: Siparişleriniz, sipariş tarihini takip eden ikinci gün sevk edilir."
             className="mt-1 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] p-3 text-sm focus:border-[#321B2D] focus:outline-none"
           />

@@ -670,6 +670,65 @@ export default function AdminPanelPage() {
             </div>
           </div>
 
+          {/* Active Category Filter Banner with Direct Actions */}
+          {prodCatFilter !== "all" && (() => {
+            const activeCat = store.categories.find((c) => c.slug === prodCatFilter);
+            const parentCat = activeCat?.parentSlug
+              ? store.categories.find((p) => p.slug === activeCat.parentSlug)
+              : null;
+            return (
+              <div className="ensar-card flex flex-col gap-3.5 border-2 border-[#321B2D] bg-[#FFFDF8] p-4 shadow-sm sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#321B2D] text-lg text-white shadow-xs">
+                    {parentCat ? "↳" : "📁"}
+                  </div>
+                  <div>
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="font-heading text-base font-bold text-[#321B2D]">
+                        {activeCat?.name || prodCatFilter}
+                      </span>
+                      {parentCat && (
+                        <span className="rounded-md bg-[#E9D9F1] px-2 py-0.5 text-[11px] font-bold text-[#321B2D]">
+                          ↳ {parentCat.name} Alt Kategorisi
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-xs text-[#5F505C]">
+                      Şu an bu kategorideki <strong>{filteredProducts.length}</strong> ürün listeleniyor.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setNewProdCat(prodCatFilter);
+                      setShowNewProduct(true);
+                    }}
+                    className="rounded-xl bg-[#321B2D] px-3.5 py-2 text-xs font-bold text-[#F7F3EB] shadow hover:bg-[#44253D]"
+                  >
+                    ＋ Bu Kategoriye Yeni Ürün Ekle
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setAssignModalCatSlug(prodCatFilter)}
+                    className="rounded-xl border border-[#321B2D] bg-white px-3.5 py-2 text-xs font-bold text-[#321B2D] hover:bg-[#E9D9F1]"
+                  >
+                    📦 Başka Kategorilerden Ürün Taşı / Ata
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setProdCatFilter("all")}
+                    className="rounded-xl border border-[#DDD3C6] bg-white px-3 py-2 text-xs font-semibold text-[#5F505C] hover:bg-stone-100"
+                  >
+                    ✕ Filtreyi Kaldır ({store.products.length} Ürün)
+                  </button>
+                </div>
+              </div>
+            );
+          })()}
+
           {/* Product Cards List */}
           <div className="space-y-3.5">
             {filteredProducts.length === 0 ? (
@@ -867,6 +926,11 @@ export default function AdminPanelPage() {
                 commitStore={commitStore}
                 showNotice={showNotice}
                 handleFilesUpload={handleFilesUpload}
+                onViewCategoryProducts={(slug) => {
+                  setProdCatFilter(slug);
+                  setActiveTab("urunler");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 onAddProductToCat={(slug) => {
                   setNewProdCat(slug);
                   setProdCatFilter(slug);
