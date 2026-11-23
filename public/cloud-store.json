@@ -249,29 +249,29 @@
   ],
   "products": [
     {
-      "id": "custom-1795466123532",
-      "sku": "123",
-      "slug": "metal-lux-saat",
-      "name": "Metal lüx saat",
-      "shortName": "Metal lüx saat",
-      "categorySlug": "masa-saatleri",
+      "id": "custom-1795466439198",
+      "sku": "ENS-RQ2P",
+      "slug": "yunus-baligi-pelus-60-cm",
+      "name": "Yunus balığı peluş 60 cm",
+      "shortName": "Yunus balığı peluş 60 cm",
+      "categorySlug": "peluslar",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 285,
+      "price": 355,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466090629-c4oa7-a09933f8-6d3e-409a-a820-f4f08623702b.jpeg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466414997-n6ih0-IMG_4562.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466090629-c4oa7-a09933f8-6d3e-409a-a820-f4f08623702b.jpeg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466414997-n6ih0-IMG_4562.jpeg"
       ],
-      "imageAlt": "Metal lüx saat (123)",
+      "imageAlt": "Yunus balığı peluş 60 cm (ENS-RQ2P)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
         "Hediye"
       ],
       "giftTypes": [
-        "Masa saatleri"
+        "Peluşlar"
       ]
     },
     {
@@ -468,9 +468,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466425973-193qo.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466440224-ncwh1.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466426996-ti6zc.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466441184-9ek47.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -572,9 +572,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466428036-vjxq2.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466442147-mp64q.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466428939-il6zp.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466443055-5yuc7.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -10210,5 +10210,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795466425933
+  "updatedAt": 1795466440222
 }
