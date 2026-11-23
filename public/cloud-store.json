@@ -239,6 +239,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795452296547",
+      "sku": "ENS-D6IU",
+      "slug": "sesli-aslan-pelus-65-cm",
+      "name": "Sesli aslan peluş 65 cm",
+      "shortName": "Sesli aslan peluş 65 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 685,
+      "stock": 99,
+      "published": true,
+      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "gallery": [
+        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+      ],
+      "imageAlt": "Sesli aslan peluş 65 cm (ENS-D6IU)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795452240277",
       "sku": "ENS-0YH7",
       "slug": "asorti-kalp-kutulu-pelus-ayicik-25-cm",
