@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795445934028",
+      "sku": "ENS-34027",
+      "slug": "cizgili-oturan-pelus-kedi-gri-30-cm-ens-34027",
+      "name": "Çizgili oturan peluş kedi gri  30 cm",
+      "shortName": "Çizgili oturan peluş kedi gri  30 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 405,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445905711-m612d-IMG_4530.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445905711-m612d-IMG_4530.jpeg"
+      ],
+      "imageAlt": "Çizgili oturan peluş kedi gri  30 cm (ENS-34027)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795445862857",
       "sku": "ENS-62855",
       "slug": "cizgili-oturan-asil-kedi-pelus-30-cm-ens-62855",
