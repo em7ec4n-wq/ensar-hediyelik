@@ -8,7 +8,7 @@ interface WholesaleNoticeModalProps {
   brandName?: string;
 }
 
-const STORAGE_KEY = "ensar_wholesale_popup_seen_v2";
+const STORAGE_KEY = "ensar_wholesale_popup_seen_v3";
 
 export function WholesaleNoticeModal({
   logoSrc = "/ensar-web/logo/ensar-logo-seffaf.png",

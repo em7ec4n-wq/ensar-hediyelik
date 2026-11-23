@@ -22,6 +22,7 @@ interface AdminProductCardProps {
   uploadingId: string;
   savedCardId: string;
   onDeleteProduct: (index: number) => void;
+  onEditProduct?: (product: Product) => void;
 }
 
 export function AdminProductCard({
@@ -36,6 +37,7 @@ export function AdminProductCard({
   uploadingId,
   savedCardId,
   onDeleteProduct,
+  onEditProduct,
 }: AdminProductCardProps) {
   // Local isolated draft states — typing here never triggers global re-renders or cursor jumping!
   const [name, setName] = useState(product.name);
@@ -91,7 +93,11 @@ export function AdminProductCard({
     const target = next.products.find((p) => p.id === product.id);
     if (!target) return;
 
-    const trimmedName = name.trim() || target.name;
+    const trimmedName = name.trim();
+    if (!trimmedName) {
+      showNotice("Lütfen ürün adını boş bırakmayın.");
+      return;
+    }
     const trimmedSku = sku.trim() || target.sku;
     const trimmedDesc = description.trim();
     const finalCatSlug = overrideCatSlug || categorySlug;
@@ -170,21 +176,16 @@ export function AdminProductCard({
                 Ürün Adı
               </label>
               <input
+                type="text"
                 value={name}
                 aria-label="Ürün adı"
-                autoComplete="off"
-                autoCorrect="off"
-                spellCheck={false}
                 onFocus={() => {
                   isInputFocusedRef.current = true;
                 }}
                 onChange={(e) => setName(e.target.value)}
-                onBlur={() => {
-                  isInputFocusedRef.current = false;
-                  void saveProductDraft();
-                }}
                 onKeyDown={(e) => {
                   if (e.key === "Enter") {
+                    void saveProductDraft();
                     e.currentTarget.blur();
                   }
                 }}
@@ -264,19 +265,13 @@ export function AdminProductCard({
               inputMode="decimal"
               value={priceStr}
               placeholder="0"
-              autoComplete="off"
-              autoCorrect="off"
-              spellCheck={false}
               onFocus={() => {
                 isInputFocusedRef.current = true;
               }}
               onChange={(e) => setPriceStr(e.target.value)}
-              onBlur={() => {
-                isInputFocusedRef.current = false;
-                void saveProductDraft();
-              }}
               onKeyDown={(e) => {
                 if (e.key === "Enter") {
+                  void saveProductDraft();
                   e.currentTarget.blur();
                 }
               }}
@@ -333,7 +328,18 @@ export function AdminProductCard({
           </div>
 
           {/* Action Buttons */}
-          <div className="col-span-2 flex items-center gap-2 pt-1 sm:pt-0">
+          <div className="col-span-2 flex flex-wrap items-center gap-2 pt-1 sm:pt-0">
+            {onEditProduct && (
+              <button
+                type="button"
+                onClick={() => onEditProduct(product)}
+                className="min-h-[40px] rounded-xl bg-[#E9D9F1] px-3 text-xs font-bold text-[#321B2D] hover:bg-[#321B2D] hover:text-[#F7F3EB] transition-all"
+                title="Ürünü tüm alanlarıyla düzenle"
+              >
+                ✏️ Düzenle
+              </button>
+            )}
+
             <button
               type="button"
               onClick={() => void saveProductDraft()}
@@ -356,7 +362,7 @@ export function AdminProductCard({
 
             <Link
               href={getProductHref(product.slug)}
-              className="inline-flex min-h-[40px] items-center rounded-xl bg-[#E9D9F1] px-3 text-xs font-semibold text-[#321B2D] hover:bg-[#321B2D] hover:text-[#F7F3EB]"
+              className="inline-flex min-h-[40px] items-center rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-xs font-semibold text-[#321B2D] hover:bg-[#321B2D] hover:text-[#F7F3EB]"
             >
               Gör ↗
             </Link>
@@ -437,22 +443,19 @@ export function AdminProductCard({
                 Ürün Kodu (SKU)
               </label>
               <input
+                type="text"
                 value={sku}
-                autoComplete="off"
-                autoCorrect="off"
-                spellCheck={false}
                 onFocus={() => {
                   isInputFocusedRef.current = true;
                 }}
                 onChange={(e) => setSku(e.target.value)}
-                onBlur={() => {
-                  isInputFocusedRef.current = false;
-                  void saveProductDraft();
-                }}
                 onKeyDown={(e) => {
-                  if (e.key === "Enter") e.currentTarget.blur();
+                  if (e.key === "Enter") {
+                    void saveProductDraft();
+                    e.currentTarget.blur();
+                  }
                 }}
-                className="mt-1 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm focus:border-[#321B2D] focus:outline-none"
+                className="mt-1 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm focus:border-[#321B2D] focus:outline-none uppercase"
               />
             </div>
 
@@ -461,20 +464,17 @@ export function AdminProductCard({
                 Ürün Açıklaması
               </label>
               <input
+                type="text"
                 value={description}
-                autoComplete="off"
-                autoCorrect="off"
-                spellCheck={false}
                 onFocus={() => {
                   isInputFocusedRef.current = true;
                 }}
                 onChange={(e) => setDescription(e.target.value)}
-                onBlur={() => {
-                  isInputFocusedRef.current = false;
-                  void saveProductDraft();
-                }}
                 onKeyDown={(e) => {
-                  if (e.key === "Enter") e.currentTarget.blur();
+                  if (e.key === "Enter") {
+                    void saveProductDraft();
+                    e.currentTarget.blur();
+                  }
                 }}
                 placeholder="Ürün açıklaması…"
                 className="mt-1 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm focus:border-[#321B2D] focus:outline-none"

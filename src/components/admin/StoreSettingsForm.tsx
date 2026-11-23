@@ -132,18 +132,9 @@ export function StoreSettingsForm({
             Telefon Numarası (Sitede Görünen)
           </label>
           <input
+            type="text"
             value={phoneDisplay}
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck={false}
-            onFocus={() => {
-              isInputFocusedRef.current = true;
-            }}
             onChange={(e) => setPhoneDisplay(e.target.value)}
-            onBlur={() => {
-              isInputFocusedRef.current = false;
-              void saveSettings();
-            }}
             className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
@@ -153,18 +144,9 @@ export function StoreSettingsForm({
             WhatsApp Sipariş Hattı (Örn: 905413567162)
           </label>
           <input
+            type="text"
             value={whatsappNumber}
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck={false}
-            onFocus={() => {
-              isInputFocusedRef.current = true;
-            }}
             onChange={(e) => setWhatsappNumber(e.target.value)}
-            onBlur={() => {
-              isInputFocusedRef.current = false;
-              void saveSettings();
-            }}
             className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
@@ -174,18 +156,9 @@ export function StoreSettingsForm({
             E-posta Adresi
           </label>
           <input
+            type="text"
             value={email}
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck={false}
-            onFocus={() => {
-              isInputFocusedRef.current = true;
-            }}
             onChange={(e) => setEmail(e.target.value)}
-            onBlur={() => {
-              isInputFocusedRef.current = false;
-              void saveSettings();
-            }}
             className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
@@ -195,18 +168,9 @@ export function StoreSettingsForm({
             Çalışma Saatleri
           </label>
           <input
+            type="text"
             value={workingHours}
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck={false}
-            onFocus={() => {
-              isInputFocusedRef.current = true;
-            }}
             onChange={(e) => setWorkingHours(e.target.value)}
-            onBlur={() => {
-              isInputFocusedRef.current = false;
-              void saveSettings();
-            }}
             className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
@@ -216,18 +180,9 @@ export function StoreSettingsForm({
             Mağaza Açık Adresi
           </label>
           <input
+            type="text"
             value={address}
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck={false}
-            onFocus={() => {
-              isInputFocusedRef.current = true;
-            }}
             onChange={(e) => setAddress(e.target.value)}
-            onBlur={() => {
-              isInputFocusedRef.current = false;
-              void saveSettings();
-            }}
             className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
@@ -239,17 +194,7 @@ export function StoreSettingsForm({
           <textarea
             rows={2}
             value={deliverySummary}
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck={false}
-            onFocus={() => {
-              isInputFocusedRef.current = true;
-            }}
             onChange={(e) => setDeliverySummary(e.target.value)}
-            onBlur={() => {
-              isInputFocusedRef.current = false;
-              void saveSettings();
-            }}
             placeholder="Örn: Siparişleriniz, sipariş tarihini takip eden ikinci gün sevk edilir."
             className="mt-1 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] p-3 text-sm focus:border-[#321B2D] focus:outline-none"
           />

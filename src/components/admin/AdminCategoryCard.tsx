@@ -80,7 +80,11 @@ export function AdminCategoryCard({
     const target = next.categories.find((c) => c.slug === cat.slug);
     if (!target) return;
 
-    const trimmedName = name.trim() || target.name;
+    const trimmedName = name.trim();
+    if (!trimmedName) {
+      showNotice("Lütfen kategori adını boş bırakmayın.");
+      return;
+    }
     const trimmedDesc = description.trim();
     const finalParent =
       overrideParentSlug !== undefined
@@ -180,20 +184,17 @@ export function AdminCategoryCard({
               Kategori Adı
             </label>
             <input
+              type="text"
               value={name}
-              autoComplete="off"
-              autoCorrect="off"
-              spellCheck={false}
               onFocus={() => {
                 isInputFocusedRef.current = true;
               }}
               onChange={(e) => setName(e.target.value)}
-              onBlur={() => {
-                isInputFocusedRef.current = false;
-                void saveCategoryDraft();
-              }}
               onKeyDown={(e) => {
-                if (e.key === "Enter") e.currentTarget.blur();
+                if (e.key === "Enter") {
+                  void saveCategoryDraft();
+                  e.currentTarget.blur();
+                }
               }}
               className="mt-0.5 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm font-semibold text-[#241722] focus:border-[#321B2D] focus:outline-none"
             />
@@ -235,20 +236,17 @@ export function AdminCategoryCard({
             Kısa Açıklama
           </label>
           <input
+            type="text"
             value={description}
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck={false}
             onFocus={() => {
               isInputFocusedRef.current = true;
             }}
             onChange={(e) => setDescription(e.target.value)}
-            onBlur={() => {
-              isInputFocusedRef.current = false;
-              void saveCategoryDraft();
-            }}
             onKeyDown={(e) => {
-              if (e.key === "Enter") e.currentTarget.blur();
+              if (e.key === "Enter") {
+                void saveCategoryDraft();
+                e.currentTarget.blur();
+              }
             }}
             placeholder="Kategori açıklaması…"
             className="mt-0.5 h-9 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-xs text-[#4C3C49] focus:border-[#321B2D] focus:outline-none"

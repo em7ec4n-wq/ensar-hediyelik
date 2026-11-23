@@ -15,6 +15,7 @@ import { StoreSettingsForm } from "@/components/admin/StoreSettingsForm";
 import { CategoryAssignModal } from "@/components/admin/CategoryAssignModal";
 import { BulkCategoryModal } from "@/components/admin/BulkCategoryModal";
 import { HeroSlideCard } from "@/components/admin/HeroSlideCard";
+import { EditProductModal } from "@/components/admin/EditProductModal";
 
 type TabKey = "urunler" | "kategoriler" | "vitrin" | "siparisler" | "magaza";
 
@@ -58,6 +59,7 @@ export default function AdminPanelPage() {
 
   // Modals state
   const [showNewProduct, setShowNewProduct] = useState(false);
+  const [editingProduct, setEditingProduct] = useState<Product | null>(null);
   const [showBulkPrice, setShowBulkPrice] = useState(false);
   const [showBulkCategory, setShowBulkCategory] = useState(false);
   const [assignModalCatSlug, setAssignModalCatSlug] = useState<string | null>(null);
@@ -67,6 +69,9 @@ export default function AdminPanelPage() {
   const [newProdSku, setNewProdSku] = useState("");
   const [newProdPrice, setNewProdPrice] = useState("");
   const [newProdCat, setNewProdCat] = useState("kar-kureleri");
+  const [newProdSubCat, setNewProdSubCat] = useState("");
+  const [isAddingNewSubcatInline, setIsAddingNewSubcatInline] = useState(false);
+  const [newSubcatInlineName, setNewSubcatInlineName] = useState("");
   const [newProdDesc, setNewProdDesc] = useState("");
   const [newProdGallery, setNewProdGallery] = useState<string[]>([]);
   const [newProdNewArrival, setNewProdNewArrival] = useState(false);
@@ -184,8 +189,9 @@ export default function AdminPanelPage() {
       newProdGallery[0] ||
       "/ensar-web/gorseller/hero-astronot-cam-kure.webp";
     const gallery = newProdGallery.length > 0 ? newProdGallery : [cover];
+    const finalCatSlug = newProdSubCat || newProdCat;
     const selectedCatObj = store.categories.find(
-      (cat) => cat.slug === newProdCat
+      (cat) => cat.slug === finalCatSlug
     );
     const extraCats = selectedCatObj?.parentSlug
       ? [selectedCatObj.parentSlug]
@@ -197,7 +203,7 @@ export default function AdminPanelPage() {
       slug,
       name: trimmedName,
       shortName: trimmedName,
-      categorySlug: newProdCat,
+      categorySlug: finalCatSlug,
       extraCategorySlugs: extraCats,
       description: newProdDesc.trim(),
       price: newProdPrice !== "" ? Number(newProdPrice) : 0,
@@ -222,12 +228,51 @@ export default function AdminPanelPage() {
     setNewProdDesc("");
     setNewProdGallery([]);
     setNewProdNewArrival(false);
+    setNewProdSubCat("");
+    setIsAddingNewSubcatInline(false);
+    setNewSubcatInlineName("");
     setShowNewProduct(false);
 
     // Keep the newly created product in view immediately
-    setProdCatFilter(newProdCat);
+    setProdCatFilter(finalCatSlug);
     setProdSearch("");
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleCreateInlineSubcategory = async () => {
+    const trimmed = newSubcatInlineName.trim();
+    if (!trimmed) {
+      showNotice("Lütfen alt kategori adını yazın.");
+      return;
+    }
+
+    const baseSlug = slugifyTR(trimmed) || `alt-kat-${Date.now()}`;
+    const existingSlugs = new Set(store.categories.map((c) => c.slug));
+    let slug = baseSlug;
+    let counter = 2;
+    while (existingSlugs.has(slug)) {
+      slug = `${baseSlug}-${counter++}`;
+    }
+
+    const parentCat = store.categories.find((c) => c.slug === newProdCat);
+
+    const newCategory: Category = {
+      slug,
+      name: trimmed,
+      parentSlug: newProdCat,
+      image: parentCat?.image || "/ensar-web/gorseller/kategori-cam-kure.webp",
+      imageAlt: `${trimmed} Kategorisi`,
+      description: `${parentCat?.name || "Hediyelik"} alt kategorisi: ${trimmed}`,
+      showOnHome: false,
+    };
+
+    const next = structuredClone(store);
+    next.categories.push(newCategory);
+    await commitStore(next, `✓ "${trimmed}" alt kategorisi oluşturuldu`, undefined, true);
+
+    setNewProdSubCat(slug);
+    setNewSubcatInlineName("");
+    setIsAddingNewSubcatInline(false);
   };
 
   const handleApplyBulkPrice = async () => {
@@ -764,6 +809,7 @@ export default function AdminPanelPage() {
                     uploadingId={uploadingId}
                     savedCardId={savedCardId}
                     onDeleteProduct={handleDeleteProduct}
+                    onEditProduct={(p) => setEditingProduct(p)}
                   />
                 ))
             )}
@@ -923,35 +969,110 @@ export default function AdminPanelPage() {
             </form>
           )}
 
-          {/* Category Cards Grid */}
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            {store.categories.map((cat, idx) => (
-              <AdminCategoryCard
-                key={cat.slug}
-                cat={cat}
-                idx={idx}
-                store={store}
-                commitStore={commitStore}
-                showNotice={showNotice}
-                handleFilesUpload={handleFilesUpload}
-                onViewCategoryProducts={(slug) => {
-                  setProdCatFilter(slug);
-                  setActiveTab("urunler");
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-                onAddProductToCat={(slug) => {
-                  setNewProdCat(slug);
-                  setProdCatFilter(slug);
-                  setShowNewProduct(true);
-                  setActiveTab("urunler");
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-                onAssignExistingToCat={(slug) => {
-                  setAssignModalCatSlug(slug);
-                }}
-                onDeleteCategory={handleDeleteCategory}
-              />
-            ))}
+          {/* Hierarchical Categories View */}
+          <div className="space-y-6">
+            {mainCategories.map((mainCat) => {
+              const mainIdx = store.categories.findIndex((c) => c.slug === mainCat.slug);
+              const subcats = store.categories.filter((c) => c.parentSlug === mainCat.slug);
+
+              return (
+                <div
+                  key={mainCat.slug}
+                  className="rounded-2xl border-2 border-[#E5DCD0] bg-white p-4 shadow-xs sm:p-5 space-y-4"
+                >
+                  <AdminCategoryCard
+                    cat={mainCat}
+                    idx={mainIdx}
+                    store={store}
+                    commitStore={commitStore}
+                    showNotice={showNotice}
+                    handleFilesUpload={handleFilesUpload}
+                    onViewCategoryProducts={(slug) => {
+                      setProdCatFilter(slug);
+                      setActiveTab("urunler");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    onAddProductToCat={(slug) => {
+                      setNewProdCat(slug);
+                      setNewProdSubCat("");
+                      setProdCatFilter(slug);
+                      setShowNewProduct(true);
+                      setActiveTab("urunler");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    onAssignExistingToCat={(slug) => {
+                      setAssignModalCatSlug(slug);
+                    }}
+                    onDeleteCategory={handleDeleteCategory}
+                  />
+
+                  {/* Subcategories Drawer for this Main Category */}
+                  <div className="rounded-xl border border-[#321B2D]/20 bg-[#FFFDF8] p-4">
+                    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#EFE7DC] pb-2.5">
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-bold text-[#321B2D]">
+                          ↳ {mainCat.name} Alt Kategorileri ({subcats.length} adet)
+                        </span>
+                        <span className="hidden text-[11px] text-[#6F606C] sm:inline">
+                          Bu kategoriye ait alt grupları buradan yönetebilir veya ürün ekleyebilirsiniz.
+                        </span>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setNewCatParent(mainCat.slug);
+                          setShowNewCategory(true);
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
+                        className="rounded-lg bg-[#321B2D] px-3 py-1.5 text-xs font-bold text-[#F7F3EB] hover:bg-[#44253D]"
+                      >
+                        ＋ Bu Kategoriye Alt Kategori Ekle
+                      </button>
+                    </div>
+
+                    {subcats.length === 0 ? (
+                      <div className="py-3 text-center text-xs text-[#6F606C]">
+                        Bu kategoride henüz alt kategori bulunmuyor. Dilerseniz &ldquo;＋ Bu Kategoriye Alt Kategori Ekle&rdquo; butonundan ekleyebilirsiniz.
+                      </div>
+                    ) : (
+                      <div className="mt-3 grid grid-cols-1 gap-3 md:grid-cols-2">
+                        {subcats.map((sub) => {
+                          const subIdx = store.categories.findIndex((c) => c.slug === sub.slug);
+                          return (
+                            <AdminCategoryCard
+                              key={sub.slug}
+                              cat={sub}
+                              idx={subIdx}
+                              store={store}
+                              commitStore={commitStore}
+                              showNotice={showNotice}
+                              handleFilesUpload={handleFilesUpload}
+                              onViewCategoryProducts={(slug) => {
+                                setProdCatFilter(slug);
+                                setActiveTab("urunler");
+                                window.scrollTo({ top: 0, behavior: "smooth" });
+                              }}
+                              onAddProductToCat={(slug) => {
+                                setNewProdCat(mainCat.slug);
+                                setNewProdSubCat(slug);
+                                setProdCatFilter(slug);
+                                setShowNewProduct(true);
+                                setActiveTab("urunler");
+                                window.scrollTo({ top: 0, behavior: "smooth" });
+                              }}
+                              onAssignExistingToCat={(slug) => {
+                                setAssignModalCatSlug(slug);
+                              }}
+                              onDeleteCategory={handleDeleteCategory}
+                            />
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       )}
@@ -1226,48 +1347,104 @@ export default function AdminPanelPage() {
                   />
                 </div>
 
-                <div>
-                  <label className="block text-xs font-bold text-[#241722]">
-                    4. Hangi Kategoriye Eklensin? *
-                  </label>
-                  <div className="relative mt-1.5">
-                    <select
-                      value={newProdCat}
-                      onChange={(e) => setNewProdCat(e.target.value)}
-                      className="ensar-select h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] pl-3.5 pr-9 text-sm focus:border-[#321B2D] focus:outline-none"
-                    >
-                      <optgroup label="─── ANA KATEGORİLER ───">
+              {/* Category & Subcategory Selection — 2-Level Picker */}
+              <div className="rounded-2xl border-2 border-[#321B2D]/15 bg-white p-4 space-y-3">
+                <div className="flex items-center gap-2">
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#321B2D] text-[10px] font-bold text-white">
+                    4
+                  </span>
+                  <span className="text-xs font-bold text-[#241722] uppercase tracking-wide">
+                    Kategori ve Alt Kategori Seçimi *
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  {/* Ana Kategori */}
+                  <div>
+                    <label className="block text-[11px] font-bold text-[#6F606C]">
+                      Ana Kategori *
+                    </label>
+                    <div className="relative mt-1">
+                      <select
+                        value={newProdCat}
+                        onChange={(e) => {
+                          setNewProdCat(e.target.value);
+                          setNewProdSubCat("");
+                        }}
+                        className="ensar-select h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] pl-3 pr-8 text-xs font-semibold text-[#241722] focus:border-[#321B2D] focus:outline-none"
+                      >
                         {mainCategories.map((c) => (
                           <option key={c.slug} value={c.slug}>
                             📁 {c.name}
                           </option>
                         ))}
-                      </optgroup>
-                      {karKuresiSubcats.length > 0 && (
-                        <optgroup label="─── KAR KÜRELERİ ALT KATEGORİLERİ ───">
-                          {karKuresiSubcats.map((c) => (
-                            <option key={c.slug} value={c.slug}>
-                              ↳ Kar Küresi: {c.name}
+                      </select>
+                      <ChevronDownIcon
+                        size={14}
+                        className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-[#5F505C]"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Alt Kategori */}
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <label className="block text-[11px] font-bold text-[#6F606C]">
+                        Alt Kategori (İsteğe Bağlı)
+                      </label>
+                      <button
+                        type="button"
+                        onClick={() => setIsAddingNewSubcatInline((v) => !v)}
+                        className="text-[11px] font-bold text-[#321B2D] hover:underline"
+                      >
+                        {isAddingNewSubcatInline ? "✕ Vazgeç" : "＋ Yeni Alt Kategori"}
+                      </button>
+                    </div>
+                    <div className="relative mt-1">
+                      <select
+                        value={newProdSubCat}
+                        onChange={(e) => setNewProdSubCat(e.target.value)}
+                        className="ensar-select h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] pl-3 pr-8 text-xs font-semibold text-[#241722] focus:border-[#321B2D] focus:outline-none"
+                      >
+                        <option value="">
+                          — Alt Kategori Yok (Sadece {mainCategories.find((c) => c.slug === newProdCat)?.name || "Ana Kategori"}&apos;de kalsın) —
+                        </option>
+                        {store.categories
+                          .filter((c) => c.parentSlug === newProdCat)
+                          .map((sub) => (
+                            <option key={sub.slug} value={sub.slug}>
+                              ↳ {sub.name}
                             </option>
                           ))}
-                        </optgroup>
-                      )}
-                      {otherSubcats.length > 0 && (
-                        <optgroup label="─── DİĞER ALT KATEGORİLER ───">
-                          {otherSubcats.map((c) => (
-                            <option key={c.slug} value={c.slug}>
-                              ↳ {c.name}
-                            </option>
-                          ))}
-                        </optgroup>
-                      )}
-                    </select>
-                    <ChevronDownIcon
-                      size={16}
-                      className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[#5F505C]"
-                    />
+                      </select>
+                      <ChevronDownIcon
+                        size={14}
+                        className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-[#5F505C]"
+                      />
+                    </div>
                   </div>
                 </div>
+
+                {/* Inline New Subcategory Creator */}
+                {isAddingNewSubcatInline && (
+                  <div className="mt-2 rounded-xl border border-dashed border-[#321B2D] bg-[#F7F3EB] p-3 flex flex-col sm:flex-row items-center gap-2">
+                    <input
+                      type="text"
+                      value={newSubcatInlineName}
+                      onChange={(e) => setNewSubcatInlineName(e.target.value)}
+                      placeholder={`"${mainCategories.find((c) => c.slug === newProdCat)?.name || "Bu kategori"}" altına eklenecek yeni alt kategori adı…`}
+                      className="h-10 flex-1 rounded-xl border border-[#DDD3C6] bg-white px-3 text-xs font-medium text-[#241722] focus:border-[#321B2D] focus:outline-none"
+                    />
+                    <button
+                      type="button"
+                      onClick={handleCreateInlineSubcategory}
+                      className="h-10 w-full sm:w-auto rounded-xl bg-[#321B2D] px-4 text-xs font-bold text-white hover:bg-[#44253D]"
+                    >
+                      ✓ Alt Kategoriyi Ekle ve Seç
+                    </button>
+                  </div>
+                )}
+              </div>
 
                 <div>
                   <label className="block text-xs font-bold text-[#241722]">
@@ -1349,6 +1526,22 @@ export default function AdminPanelPage() {
           onClose={() => setAssignModalCatSlug(null)}
           commitStore={commitStore}
           showNotice={showNotice}
+        />
+      )}
+
+      {/* ========================================================= */}
+      {/* MODAL: ÜRÜN DÜZENLE                                       */}
+      {/* ========================================================= */}
+      {editingProduct && (
+        <EditProductModal
+          product={editingProduct}
+          store={store}
+          isOpen={Boolean(editingProduct)}
+          onClose={() => setEditingProduct(null)}
+          commitStore={commitStore}
+          showNotice={showNotice}
+          handleFilesUpload={handleFilesUpload}
+          uploadingId={uploadingId}
         />
       )}
     </div>
