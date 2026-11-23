@@ -239,6 +239,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795460190428",
+      "sku": "24",
+      "slug": "sulu-fotograf-cerceve",
+      "name": "Sulu fotoğraf çerçeve",
+      "shortName": "Sulu fotoğraf çerçeve",
+      "categorySlug": "sevgililer-gunu",
+      "extraCategorySlugs": [],
+      "description": "Sulu foto çerçeve",
+      "price": 325,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460158826-4mqmt-106000C1-924D-421C-98B5-4615A2AE8D9E.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460158826-4mqmt-106000C1-924D-421C-98B5-4615A2AE8D9E.png"
+      ],
+      "imageAlt": "Sulu fotoğraf çerçeve (24)",
+      "isConceptImage": false,
+      "isNewArrival": false,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Sevgililer Günü"
+      ]
+    },
+    {
       "id": "custom-1795460077765",
       "sku": "001",
       "slug": "istiridye-inci-kolye",
@@ -9829,5 +9855,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795460078479
+  "updatedAt": 1795460191171
 }
