@@ -51,6 +51,13 @@ export function Header({ settings, categories }: HeaderProps) {
 
   return (
     <header className="sticky top-0 z-40 border-b border-[#E5DCD0]/80 bg-[#F7F3EB]/95 backdrop-blur-sm">
+      {/* Top Wholesale Notice Bar matching Google search snippet */}
+      <div className="bg-[#321B2D] px-3 py-1.5 text-center text-[11px] font-medium text-[#F7F3EB] sm:text-xs">
+        <p className="mx-auto max-w-5xl leading-tight">
+          Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 5.000₺ ve üzeridir.
+        </p>
+      </div>
+
       <div className="ensar-container flex h-[60px] items-center justify-between gap-3 lg:h-[76px]">
         {/* Left: Logo + Vertical Divider (Desktop) */}
         <div className="flex shrink-0 items-center gap-5">

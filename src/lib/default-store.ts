@@ -13,8 +13,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
     phoneDisplay: "+90 541 356 71 62",
     whatsappNumber: "905413567162",
     email: "info@ensarhediyelik.com.tr",
-    address:
-      "İstanbul, Türkiye (Onaylı işletme adresi yayın öncesi güncellenecektir)",
+    address: "Şark Han Tomruk Sk. No:36/27 Tahtakale 34116 Fatih / İstanbul",
     workingHours: "Pazartesi – Cumartesi: 09:30 – 19:00",
     legalEntityName:
       "Ensar Hediyelik (Ticari unvan yayın öncesi işletme tarafından onaylanacaktır)",
