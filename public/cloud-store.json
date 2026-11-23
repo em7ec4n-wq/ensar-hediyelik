@@ -245,85 +245,43 @@
       "showOnHome": true,
       "homeOrder": 5,
       "isConceptImage": false
+    },
+    {
+      "slug": "metal-kumbaralar",
+      "name": "Metal kumbaralar",
+      "description": "Kumbaralar",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466820991-0uk9n-IMG_9310.png",
+      "imageAlt": "Metal kumbaralar",
+      "showOnHome": true,
+      "homeOrder": 5,
+      "isConceptImage": false
     }
   ],
   "products": [
     {
-      "id": "custom-1795466778520",
-      "sku": "ENS-FJPM",
-      "slug": "asorti-balik-pelus-40-cm",
-      "name": "Asorti balık peluş 40 cm",
-      "shortName": "Asorti balık peluş 40 cm",
-      "categorySlug": "peluslar",
+      "id": "custom-1795466123532",
+      "sku": "123",
+      "slug": "metal-lux-saat",
+      "name": "Metal lüx saat",
+      "shortName": "Metal lüx saat",
+      "categorySlug": "masa-saatleri",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 355,
+      "price": 285,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466740354-zmk33-IMG_4564.jpeg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466090629-c4oa7-a09933f8-6d3e-409a-a820-f4f08623702b.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466740354-zmk33-IMG_4564.jpeg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466090629-c4oa7-a09933f8-6d3e-409a-a820-f4f08623702b.jpeg"
       ],
-      "imageAlt": "Asorti balık peluş 40 cm (ENS-FJPM)",
+      "imageAlt": "Metal lüx saat (123)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
         "Hediye"
       ],
       "giftTypes": [
-        "Peluşlar"
-      ]
-    },
-    {
-      "id": "custom-1795466703978",
-      "sku": "ENS-IWKE",
-      "slug": "balina-baligi-pelus-60-cm",
-      "name": "Balina balığı peluş 60 cm",
-      "shortName": "Balina balığı peluş 60 cm",
-      "categorySlug": "peluslar",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 345,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466665210-g28n4-IMG_4563.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466665210-g28n4-IMG_4563.jpeg"
-      ],
-      "imageAlt": "Balina balığı peluş 60 cm (ENS-IWKE)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Peluşlar"
-      ]
-    },
-    {
-      "id": "custom-1795466439198",
-      "sku": "ENS-RQ2P",
-      "slug": "yunus-baligi-pelus-60-cm",
-      "name": "Yunus balığı peluş 60 cm",
-      "shortName": "Yunus balığı peluş 60 cm",
-      "categorySlug": "peluslar",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 355,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466414997-n6ih0-IMG_4562.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466414997-n6ih0-IMG_4562.jpeg"
-      ],
-      "imageAlt": "Yunus balığı peluş 60 cm (ENS-RQ2P)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Peluşlar"
+        "Masa saatleri"
       ]
     },
     {
@@ -520,9 +478,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466779536-8acoc.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466829991-s370d.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466780759-2p16s.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466830980-rtmcw.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -624,9 +582,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466781761-e4lgo.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466832145-uwfn1.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466782644-ptuwc.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466833092-uug5j.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -10262,5 +10220,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795466779533
+  "updatedAt": 1795466829981
 }
