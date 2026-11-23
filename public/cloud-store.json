@@ -249,6 +249,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795467229130",
+      "sku": "ENS-D08E",
+      "slug": "isikli-sesli-uyku-arkadasim-pembe-ayicik-30-cm",
+      "name": "Işıklı sesli uyku arkadaşım pembe ayıcık 30 cm",
+      "shortName": "Işıklı sesli uyku arkadaşım pembe ayıcık 30 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 560,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467186896-bml9q-IMG_4569.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467186896-bml9q-IMG_4569.jpeg"
+      ],
+      "imageAlt": "Işıklı sesli uyku arkadaşım pembe ayıcık 30 cm (ENS-D08E)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795467144537",
       "sku": "ENS-BC5R",
       "slug": "isikli-sesli-uyku-arkadasim-pelus-koala",
@@ -624,9 +650,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467146011-lwqmi.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467231211-khvxs.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467147085-fv90n.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467232357-a86x3.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -728,9 +754,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467148100-8k4v6.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467233401-wnjik.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467149090-7wq93.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795467234398-z4tnw.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -10366,5 +10392,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795467146004
+  "updatedAt": 1795467231196
 }
