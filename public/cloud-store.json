@@ -249,6 +249,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795466703978",
+      "sku": "ENS-IWKE",
+      "slug": "balina-baligi-pelus-60-cm",
+      "name": "Balina balığı peluş 60 cm",
+      "shortName": "Balina balığı peluş 60 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 345,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466665210-g28n4-IMG_4563.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466665210-g28n4-IMG_4563.jpeg"
+      ],
+      "imageAlt": "Balina balığı peluş 60 cm (ENS-IWKE)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795466439198",
       "sku": "ENS-RQ2P",
       "slug": "yunus-baligi-pelus-60-cm",
@@ -468,9 +494,9 @@
       "price": 425,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466650863-3j9rc.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466705365-6ftsc.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466651919-w9law.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466706423-vi4bi.png"
       ],
       "imageAlt": "Dikiş mak m kutu (88)",
       "isConceptImage": false,
@@ -572,9 +598,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466652906-233mk.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466707477-ok26j.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466653798-1m0br.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795466708429-vr0bi.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -10210,5 +10236,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795466650861
+  "updatedAt": 1795466705362
 }
