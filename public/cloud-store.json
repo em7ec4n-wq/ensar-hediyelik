@@ -265,32 +265,6 @@
       ]
     },
     {
-      "id": "custom-1795458565722",
-      "sku": "ENS-T2RW",
-      "slug": "nostalji-gorunumlu-tel-muzik-kutusu",
-      "name": "Nostalji görünümlü tel müzik kutusu",
-      "shortName": "Nostalji görünümlü tel müzik kutusu",
-      "categorySlug": "muzik-kutulari",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 475,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795458530251-eshv2-IMG_5635.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795458530251-eshv2-IMG_5635.jpeg"
-      ],
-      "imageAlt": "Nostalji görünümlü tel müzik kutusu (ENS-T2RW)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Müzik Kutuları"
-      ]
-    },
-    {
       "id": "custom-1795458156456",
       "sku": "01",
       "slug": "isikli-star-master",
@@ -9829,5 +9803,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795458568967
+  "updatedAt": 1795458628731
 }
