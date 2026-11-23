@@ -239,6 +239,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795460677613",
+      "sku": "35",
+      "slug": "muzik-kut-daktilo-2",
+      "name": "Müzik kut.daktilo",
+      "shortName": "Müzik kut.daktilo",
+      "categorySlug": "muzik-kutulari",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 465,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460656891-dsdqp-IMG_9288.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460656891-dsdqp-IMG_9288.png"
+      ],
+      "imageAlt": "Müzik kut.daktilo (35)",
+      "isConceptImage": false,
+      "isNewArrival": false,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Müzik Kutuları"
+      ]
+    },
+    {
       "id": "custom-1795460675297",
       "sku": "35",
       "slug": "muzik-kut-daktilo",
@@ -328,9 +354,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460677098-cpc8w.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460678947-f1k2a.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460678111-bcaba.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460679860-x01yk.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -9985,5 +10011,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795460677096
+  "updatedAt": 1795460678945
 }
