@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795445249623",
+      "sku": "ENS-49623",
+      "slug": "sempatik-esek-pelus-mor-27-cm-ens-49623",
+      "name": "Sempatik eşek peluş mor 27 cm",
+      "shortName": "Sempatik eşek peluş mor 27 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 295,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445246171-i20yf-IMG_4522.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445246171-i20yf-IMG_4522.jpeg"
+      ],
+      "imageAlt": "Sempatik eşek peluş mor 27 cm (ENS-49623)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795445214917",
       "sku": "ENS-14917",
       "slug": "sempatik-esek-pelus-pembe-27-cm-ens-14917",
