@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795430008805",
+      "sku": "ENS-08804",
+      "slug": "sapkali-pembe-pelus-27-cm-ens-08804",
+      "name": "Şapkalı pembe peluş 27 cm",
+      "shortName": "Şapkalı pembe peluş 27 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795429982397-taku9-IMG_4510.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795429982397-taku9-IMG_4510.jpeg"
+      ],
+      "imageAlt": "Şapkalı pembe peluş 27 cm (ENS-08804)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795428731782",
       "sku": "ENS-31782",
       "slug": "sapkali-civciv-pelus-mavi-27-cm-ens-31782",
