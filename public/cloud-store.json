@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795445374334",
+      "sku": "ENS-74334",
+      "slug": "kalpli-fiyonklu-pelus-ayicik-kahverengi-35-cm-ens-74334",
+      "name": "Kalpli fiyonklu peluş ayıcık kahverengi 35 cm",
+      "shortName": "Kalpli fiyonklu peluş ayıcık kahverengi 35 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 405,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445322155-aezk5-IMG_4524.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445322155-aezk5-IMG_4524.jpeg"
+      ],
+      "imageAlt": "Kalpli fiyonklu peluş ayıcık kahverengi 35 cm (ENS-74334)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795445304783",
       "sku": "ENS-04783",
       "slug": "sempatik-esek-pelus-turuncu-27-cm-ens-04783",
