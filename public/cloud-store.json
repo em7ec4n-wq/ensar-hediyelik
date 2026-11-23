@@ -239,6 +239,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795460599490",
+      "sku": "32",
+      "slug": "muzik-kut-gitar-2",
+      "name": "Müzik kut.gitar",
+      "shortName": "Müzik kut.gitar",
+      "categorySlug": "muzik-kutulari",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 245,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460560953-3b0pa-IMG_9299.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460560953-3b0pa-IMG_9299.png"
+      ],
+      "imageAlt": "Müzik kut.gitar (32)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Müzik Kutuları"
+      ]
+    },
+    {
       "id": "custom-1795460594859",
       "sku": "32",
       "slug": "muzik-kut-gitar",
@@ -276,9 +302,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460596019-ozlje.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460600616-x4ggx.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460597207-8s79i.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460601389-72326.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -9933,5 +9959,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795460596016
+  "updatedAt": 1795460600613
 }
