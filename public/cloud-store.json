@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795428632876",
+      "sku": "ENS-32875",
+      "slug": "sapkali-civciv-pelus-pembe-27-cm-ens-32875",
+      "name": "Şapkalı civciv peluş pembe 27 cm",
+      "shortName": "Şapkalı civciv peluş pembe 27 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428593949-ty4pe-IMG_4502.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795428593949-ty4pe-IMG_4502.jpeg"
+      ],
+      "imageAlt": "Şapkalı civciv peluş pembe 27 cm (ENS-32875)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795428096196",
       "sku": "ENS-96195",
       "slug": "civciv-pelus-42-cm-ens-96195",
