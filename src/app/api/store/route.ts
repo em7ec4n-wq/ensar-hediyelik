@@ -10,6 +10,29 @@ const GH_PATH = "public/cloud-store.json";
 // In-memory cache for ultra-fast, zero-loss access across warm serverless requests
 let inMemoryStore: StoreData | null = null;
 
+function cleanYilbasiProducts(products: StoreData["products"]): StoreData["products"] {
+  if (!Array.isArray(products)) return [];
+  for (const p of products) {
+    if (!p) continue;
+    const isYilbasi =
+      (p.id && p.id.startsWith("yilbasi-")) ||
+      (p.name && (p.name.includes("Yılbaşı") || p.name.includes("Noel")));
+    if (isYilbasi) {
+      if (Array.isArray(p.extraCategorySlugs)) {
+        p.extraCategorySlugs = p.extraCategorySlugs.filter((s) => s !== "muzik-kutulari");
+      }
+      if (
+        p.categorySlug === "muzik-kutulari" ||
+        p.categorySlug === "isikli-hediyeler" ||
+        (p.id.startsWith("yilbasi-") && p.categorySlug === "hediyelik-urunler")
+      ) {
+        p.categorySlug = "yilbasi";
+      }
+    }
+  }
+  return products;
+}
+
 function deduplicateProducts(products: StoreData["products"]): StoreData["products"] {
   if (!Array.isArray(products)) return [];
   const seenIds = new Set<string>();
@@ -233,7 +256,7 @@ export async function GET() {
     }
   }
 
-  store.products = deduplicateProducts(store.products);
+  store.products = cleanYilbasiProducts(deduplicateProducts(store.products));
 
   return NextResponse.json(store, {
     headers: {
@@ -252,7 +275,7 @@ export async function PUT(request: Request) {
       );
     }
 
-    body.products = deduplicateProducts(body.products);
+    body.products = cleanYilbasiProducts(deduplicateProducts(body.products));
     body.updatedAt = Date.now();
     inMemoryStore = body;
 

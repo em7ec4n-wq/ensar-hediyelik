@@ -76,9 +76,36 @@ export function deduplicateProducts(
   return unique;
 }
 
+export function cleanYilbasiProducts(
+  products: StoreData["products"]
+): StoreData["products"] {
+  if (!Array.isArray(products)) return [];
+  for (const p of products) {
+    if (!p) continue;
+    const isYilbasi =
+      (p.id && p.id.startsWith("yilbasi-")) ||
+      (p.name && (p.name.includes("Yılbaşı") || p.name.includes("Noel")));
+    if (isYilbasi) {
+      if (Array.isArray(p.extraCategorySlugs)) {
+        p.extraCategorySlugs = p.extraCategorySlugs.filter(
+          (s) => s !== "muzik-kutulari"
+        );
+      }
+      if (
+        p.categorySlug === "muzik-kutulari" ||
+        p.categorySlug === "isikli-hediyeler" ||
+        (p.id.startsWith("yilbasi-") && p.categorySlug === "hediyelik-urunler")
+      ) {
+        p.categorySlug = "yilbasi";
+      }
+    }
+  }
+  return products;
+}
+
 function sanitizeStoreImages(store: StoreData): StoreData {
   const next = structuredClone(store);
-  next.products = deduplicateProducts(next.products);
+  next.products = cleanYilbasiProducts(deduplicateProducts(next.products));
 
   if (isBrokenOrVolatileUrl(next.settings.logoLightBg)) {
     next.settings.logoLightBg = DEFAULT_STORE_DATA.settings.logoLightBg;
