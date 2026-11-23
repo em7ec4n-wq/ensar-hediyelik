@@ -250,9 +250,9 @@
       "price": 535,
       "stock": 99,
       "published": true,
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446423680-0t1he-IMG_4536.jpeg",
       "gallery": [
-        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795446423680-0t1he-IMG_4536.jpeg"
       ],
       "imageAlt": "Gri yavrulu fil  peluş 55 cm (ENS-14620)",
       "isConceptImage": false,
