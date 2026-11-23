@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795445626814",
+      "sku": "ENS-26814",
+      "slug": "asorti-ayakta-kopek-pelus-25-cm-ens-26814",
+      "name": "Asorti ayakta köpek peluş 25 cm",
+      "shortName": "Asorti ayakta köpek peluş 25 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 355,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445605653-90hi0-IMG_4528.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445605653-90hi0-IMG_4528.jpeg"
+      ],
+      "imageAlt": "Asorti ayakta köpek peluş 25 cm (ENS-26814)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795445543662",
       "sku": "ENS-43661",
       "slug": "asorti-ayakta-kopek-pelus-siyah-25-cm-ens-43661",
