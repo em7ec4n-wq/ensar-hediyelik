@@ -239,6 +239,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795460077765",
+      "sku": "001",
+      "slug": "istiridye-inci-kolye",
+      "name": "İstiridye inci kolye",
+      "shortName": "İstiridye inci kolye",
+      "categorySlug": "sevgililer-gunu",
+      "extraCategorySlugs": [],
+      "description": "Zarif inci\nKolye",
+      "price": 85,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460018766-8qxwx-F262BD5C-F6C3-4D1B-9296-FF8BF6FA33D5.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795460018766-8qxwx-F262BD5C-F6C3-4D1B-9296-FF8BF6FA33D5.png"
+      ],
+      "imageAlt": "İstiridye inci kolye (001)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Sevgililer Günü"
+      ]
+    },
+    {
       "id": "custom-1795458568168",
       "sku": "ENS-MTN5",
       "slug": "nostalji-gorunumlu-tel-muzik-kutusu-2",
@@ -9803,5 +9829,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795458628731
+  "updatedAt": 1795460078479
 }
