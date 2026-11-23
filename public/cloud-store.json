@@ -239,6 +239,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795444866536",
+      "sku": "ENS-66536",
+      "slug": "kirpi-krem-pelus-24-cm-ens-66536",
+      "name": "Kirpi krem peluş 24 cm",
+      "shortName": "Kirpi krem peluş 24 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 295,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795444849959-meqi6-IMG_4519.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795444849959-meqi6-IMG_4519.jpeg"
+      ],
+      "imageAlt": "Kirpi krem peluş 24 cm (ENS-66536)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795444826088",
       "sku": "ENS-26088",
       "slug": "kirpi-pelus-24cm-ens-26088",
