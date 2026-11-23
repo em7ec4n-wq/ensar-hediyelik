@@ -250,9 +250,9 @@
       "price": 355,
       "stock": 99,
       "published": true,
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445567695-pp4kt-IMG_4527.jpeg",
       "gallery": [
-        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795445567695-pp4kt-IMG_4527.jpeg"
       ],
       "imageAlt": "Asorti ayakta köpek peluş siyah 25 cm (ENS-43661)",
       "isConceptImage": false,
