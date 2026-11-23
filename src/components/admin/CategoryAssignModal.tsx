@@ -9,7 +9,7 @@ interface CategoryAssignModalProps {
   store: StoreData;
   isOpen: boolean;
   onClose: () => void;
-  commitStore: (next: StoreData, msg?: string) => Promise<void>;
+  commitStore: (next: StoreData, msg?: string, cardId?: string, immediate?: boolean) => Promise<void>;
   showNotice: (msg: string) => void;
 }
 
@@ -124,7 +124,9 @@ export function CategoryAssignModal({
 
     await commitStore(
       next,
-      `✓ "${targetCategory.name}" kategorisine ürünler başarıyla atandı!`
+      `✓ "${targetCategory.name}" kategorisine ürünler başarıyla atandı!`,
+      undefined,
+      true
     );
     onClose();
   };

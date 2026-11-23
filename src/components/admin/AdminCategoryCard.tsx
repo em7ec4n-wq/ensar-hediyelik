@@ -10,7 +10,7 @@ interface AdminCategoryCardProps {
   cat: Category;
   idx: number;
   store: StoreData;
-  commitStore: (next: StoreData, msg?: string) => Promise<void>;
+  commitStore: (next: StoreData, msg?: string, cardId?: string, immediate?: boolean) => Promise<void>;
   showNotice: (msg: string) => void;
   handleFilesUpload: (
     files: FileList | null,
@@ -94,7 +94,7 @@ export function AdminCategoryCard({
     target.parentSlug = finalParent;
     target.showOnHome = finalHome;
 
-    await commitStore(next, `✓ "${trimmedName}" kategorisi kaydedildi`);
+    await commitStore(next, `✓ "${trimmedName}" kategorisi kaydedildi`, undefined, true);
     setIsSaved(true);
     setTimeout(() => setIsSaved(false), 2000);
   };

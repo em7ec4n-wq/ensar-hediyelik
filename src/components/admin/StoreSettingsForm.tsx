@@ -6,7 +6,7 @@ import type { StoreData, StoreSettings } from "@/types/store";
 interface StoreSettingsFormProps {
   settings: StoreSettings;
   store: StoreData;
-  commitStore: (next: StoreData, msg?: string) => Promise<void>;
+  commitStore: (next: StoreData, msg?: string, cardId?: string, immediate?: boolean) => Promise<void>;
   handleFilesUpload: (
     files: FileList | null,
     targetKey: string,
@@ -57,7 +57,7 @@ export function StoreSettingsForm({
     next.settings.address = address.trim();
     next.settings.deliverySummary = deliverySummary.trim();
 
-    await commitStore(next, "✓ Mağaza iletişim ve teslimat bilgileri kaydedildi");
+    await commitStore(next, "✓ Mağaza iletişim ve teslimat bilgileri kaydedildi", undefined, true);
     setIsSaved(true);
     setTimeout(() => setIsSaved(false), 2500);
   };

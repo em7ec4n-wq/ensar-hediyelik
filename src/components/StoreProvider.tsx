@@ -18,7 +18,7 @@ import {
 interface StoreContextValue {
   store: StoreData;
   ready: boolean;
-  updateStore: (next: StoreData) => Promise<StoreData>;
+  updateStore: (next: StoreData, immediate?: boolean) => Promise<StoreData>;
   resetStore: () => Promise<StoreData>;
 }
 
@@ -58,11 +58,14 @@ export function StoreProvider({
     };
   }, [refreshFromStorage]);
 
-  const updateStore = useCallback(async (next: StoreData) => {
-    setStore(next);
-    await saveClientStoreAsync(next);
-    return next;
-  }, []);
+  const updateStore = useCallback(
+    async (next: StoreData, immediate = false) => {
+      setStore(next);
+      await saveClientStoreAsync(next, immediate);
+      return next;
+    },
+    []
+  );
 
   const resetStore = useCallback(async () => {
     const fresh = await resetClientStoreToDefault();

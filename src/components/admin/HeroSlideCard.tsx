@@ -8,7 +8,7 @@ interface HeroSlideCardProps {
   slide: HeroSlide;
   idx: number;
   store: StoreData;
-  commitStore: (next: StoreData, msg?: string) => Promise<void>;
+  commitStore: (next: StoreData, msg?: string, cardId?: string, immediate?: boolean) => Promise<void>;
   handleFilesUpload: (
     files: FileList | null,
     targetKey: string,
@@ -45,7 +45,7 @@ export function HeroSlideCard({
     next.heroSlides[idx].buttonLabel = buttonLabel.trim() || next.heroSlides[idx].buttonLabel;
     next.heroSlides[idx].buttonHref = overrideHref || buttonHref;
 
-    await commitStore(next, "✓ Vitrin slaytı kaydedildi");
+    await commitStore(next, "✓ Vitrin slaytı kaydedildi", undefined, true);
     setIsSaved(true);
     setTimeout(() => setIsSaved(false), 2000);
   };

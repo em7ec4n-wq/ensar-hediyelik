@@ -116,6 +116,7 @@ export interface StoreData {
   categories: Category[];
   products: Product[];
   orders: Order[];
+  updatedAt?: number;
 }
 
 export interface CartItem {

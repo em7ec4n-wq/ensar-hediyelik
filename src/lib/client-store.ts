@@ -139,7 +139,7 @@ export async function uploadLosslessImage(file: File): Promise<string> {
 
 /**
  * Rescues any custom categories or custom products that the shopkeeper previously
- * created locally on his phone into the shared server store!
+ * created locally on his phone or computer into the shared server store!
  */
 async function rescueLocalChangesIntoServerStore(
   serverStore: StoreData
@@ -171,8 +171,8 @@ async function rescueLocalChangesIntoServerStore(
     }
     if (Array.isArray(candidate.products)) {
       for (const p of candidate.products) {
+        if (!p?.id) continue;
         if (
-          p?.id?.startsWith("custom-") &&
           !serverProdIds.has(p.id) &&
           !serverProdSkus.has(p.sku.toUpperCase())
         ) {
@@ -182,8 +182,10 @@ async function rescueLocalChangesIntoServerStore(
     }
   };
 
+  // Inspect current and past local storage keys
   for (const lsKey of [
     LS_FALLBACK_KEY,
+    "ensar_hediyelik_store_v7",
     "ensar_hediyelik_store_v6",
     "ensar_hediyelik_store_v5",
     "ensar_hediyelik_store_v4",
@@ -197,7 +199,9 @@ async function rescueLocalChangesIntoServerStore(
     }
   }
 
+  // Inspect active and past IndexedDB stores
   for (const [dbName, recKey] of [
+    [IDB_NAME, MAIN_RECORD_KEY],
     ["ensar_hediyelik_idb_v3", "active_store_v6"],
     ["ensar_hediyelik_idb_v2", "active_store_v5"],
     ["ensar_hediyelik_idb_v1", "active_store_v4"],
@@ -264,12 +268,33 @@ export async function loadClientStoreAsync(): Promise<StoreData> {
     });
     if (res.ok) {
       const serverData = sanitizeStoreImages((await res.json()) as StoreData);
+
+      // Rescue any locally created products or categories before overwriting
+      const { merged, didRescue } = await rescueLocalChangesIntoServerStore(serverData);
+
       try {
-        localStorage.setItem(LS_FALLBACK_KEY, JSON.stringify(serverData));
+        localStorage.setItem(LS_FALLBACK_KEY, JSON.stringify(merged));
       } catch {
         // ignore
       }
-      return serverData;
+      try {
+        const db = await openDb();
+        await new Promise<void>((resolve, reject) => {
+          const tx = db.transaction(STORE_KV, "readwrite");
+          tx.objectStore(STORE_KV).put(merged, MAIN_RECORD_KEY);
+          tx.oncomplete = () => resolve();
+          tx.onerror = () => reject(tx.error);
+        });
+      } catch {
+        // ignore
+      }
+
+      if (didRescue) {
+        // Sync rescued data back up to the server immediately!
+        void executeServerSync(merged);
+      }
+
+      return merged;
     }
   } catch {
     // fallback if offline
@@ -280,6 +305,15 @@ export async function loadClientStoreAsync(): Promise<StoreData> {
 
 let serverSyncTimer: ReturnType<typeof setTimeout> | null = null;
 let pendingServerPayload: StoreData | null = null;
+
+if (typeof window !== "undefined") {
+  window.addEventListener("beforeunload", () => {
+    void flushServerSync();
+  });
+  window.addEventListener("pagehide", () => {
+    void flushServerSync();
+  });
+}
 
 async function executeServerSync(payload: StoreData): Promise<void> {
   try {
@@ -309,6 +343,7 @@ export async function saveClientStoreAsync(
   data: StoreData,
   immediateCloudSync = false
 ): Promise<StoreData> {
+  data.updatedAt = Date.now();
   const cleanData = sanitizeStoreImages(data);
 
   if (typeof window !== "undefined") {

@@ -7,6 +7,9 @@ export const dynamic = "force-dynamic";
 const GH_REPO = process.env.GITHUB_STORE_REPO || "em7ec4n-wq/ensar-hediyelik";
 const GH_PATH = "public/cloud-store.json";
 
+// In-memory cache for ultra-fast, zero-loss access across warm serverless requests
+let inMemoryStore: StoreData | null = null;
+
 async function fetchFromCloud(): Promise<StoreData | null> {
   const token = process.env.GITHUB_STORE_TOKEN;
   if (!token) return null;
@@ -17,16 +20,20 @@ async function fetchFromCloud(): Promise<StoreData | null> {
       {
         headers: {
           Authorization: `token ${token}`,
-          Accept: "application/vnd.github.v3.raw",
+          Accept: "application/vnd.github.v3+json",
           "User-Agent": "ensar-hediyelik-server",
         },
         cache: "no-store",
       }
     );
     if (!res.ok) return null;
-    const data = (await res.json()) as StoreData;
-    if (data && Array.isArray(data.products) && Array.isArray(data.categories)) {
-      return data;
+    const json = (await res.json()) as { content?: string };
+    if (json?.content) {
+      const raw = Buffer.from(json.content, "base64").toString("utf-8");
+      const data = JSON.parse(raw) as StoreData;
+      if (data && Array.isArray(data.products) && Array.isArray(data.categories)) {
+        return data;
+      }
     }
   } catch {
     // fallback to local file
@@ -186,7 +193,23 @@ async function saveToCloud(store: StoreData): Promise<boolean> {
 
 export async function GET() {
   const cloud = await fetchFromCloud();
-  const store = cloud || readStore();
+  let store: StoreData;
+
+  if (cloud && inMemoryStore) {
+    if (inMemoryStore.products.length >= cloud.products.length) {
+      store = inMemoryStore;
+      void saveToCloud(inMemoryStore);
+    } else {
+      store = cloud;
+      inMemoryStore = cloud;
+    }
+  } else {
+    store = inMemoryStore || cloud || readStore();
+    if (cloud && !inMemoryStore) {
+      inMemoryStore = cloud;
+    }
+  }
+
   return NextResponse.json(store, {
     headers: {
       "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
@@ -203,6 +226,9 @@ export async function PUT(request: Request) {
         { status: 400 }
       );
     }
+
+    body.updatedAt = Date.now();
+    inMemoryStore = body;
 
     await saveToCloud(body);
     try {

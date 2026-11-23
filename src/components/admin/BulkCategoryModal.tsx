@@ -8,7 +8,7 @@ interface BulkCategoryModalProps {
   store: StoreData;
   isOpen: boolean;
   onClose: () => void;
-  commitStore: (next: StoreData, msg?: string) => Promise<void>;
+  commitStore: (next: StoreData, msg?: string, cardId?: string, immediate?: boolean) => Promise<void>;
   showNotice: (msg: string) => void;
 }
 
@@ -63,7 +63,9 @@ export function BulkCategoryModal({
 
     await commitStore(
       next,
-      `✓ ${movedCount} ürün "${targetObj?.name || targetCat}" kategorisine taşındı!`
+      `✓ ${movedCount} ürün "${targetObj?.name || targetCat}" kategorisine taşındı!`,
+      undefined,
+      true
     );
     onClose();
   };

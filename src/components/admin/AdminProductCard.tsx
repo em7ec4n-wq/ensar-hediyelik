@@ -12,7 +12,7 @@ interface AdminProductCardProps {
   store: StoreData;
   isExpanded: boolean;
   onToggleExpand: () => void;
-  commitStore: (next: StoreData, msg?: string, cardId?: string) => Promise<void>;
+  commitStore: (next: StoreData, msg?: string, cardId?: string, immediate?: boolean) => Promise<void>;
   showNotice: (msg: string) => void;
   handleFilesUpload: (
     files: FileList | null,
@@ -111,7 +111,7 @@ export function AdminProductCard({
     target.extraCategorySlugs = extraCats;
 
     setIsSaving(true);
-    await commitStore(next, `✓ "${trimmedName}" kaydedildi`, product.id);
+    await commitStore(next, `✓ "${trimmedName}" kaydedildi`, product.id, true);
     setIsSaving(false);
   };
 

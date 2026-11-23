@@ -97,9 +97,10 @@ export default function AdminPanelPage() {
   const commitStore = async (
     next: StoreData,
     message = "✓ Değişiklik kaydedildi",
-    cardId?: string
+    cardId?: string,
+    immediate = false
   ) => {
-    await updateStore(next);
+    await updateStore(next, immediate);
     if (cardId) {
       setSavedCardId(cardId);
       setTimeout(() => {
@@ -213,7 +214,7 @@ export default function AdminPanelPage() {
 
     const next = structuredClone(store);
     next.products.unshift(created);
-    await commitStore(next, `✓ "${trimmedName}" ürünü eklendi`);
+    await commitStore(next, `✓ "${trimmedName}" ürünü eklendi`, undefined, true);
 
     setNewProdName("");
     setNewProdSku("");
@@ -222,6 +223,11 @@ export default function AdminPanelPage() {
     setNewProdGallery([]);
     setNewProdNewArrival(false);
     setShowNewProduct(false);
+
+    // Keep the newly created product in view immediately
+    setProdCatFilter(newProdCat);
+    setProdSearch("");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const handleApplyBulkPrice = async () => {
@@ -257,7 +263,9 @@ export default function AdminPanelPage() {
 
     await commitStore(
       next,
-      `✓ ${updatedCount} ürünün fiyatı güncellendi`
+      `✓ ${updatedCount} ürünün fiyatı güncellendi`,
+      undefined,
+      true
     );
     setShowBulkPrice(false);
   };
@@ -292,7 +300,7 @@ export default function AdminPanelPage() {
 
     const next = structuredClone(store);
     next.categories.push(created);
-    await commitStore(next, `✓ "${trimmed}" kategorisi oluşturuldu`);
+    await commitStore(next, `✓ "${trimmed}" kategorisi oluşturuldu`, undefined, true);
 
     setNewCatName("");
     setNewCatParent("");
@@ -305,7 +313,7 @@ export default function AdminPanelPage() {
   const handleDeleteProduct = async (index: number) => {
     const next = structuredClone(store);
     const deleted = next.products.splice(index, 1)[0];
-    await commitStore(next, `✓ "${deleted?.name || "Ürün"}" silindi`);
+    await commitStore(next, `✓ "${deleted?.name || "Ürün"}" silindi`, undefined, true);
   };
 
   const handleDeleteCategory = async (catSlug: string) => {
@@ -327,7 +335,7 @@ export default function AdminPanelPage() {
         p.extraCategorySlugs = p.extraCategorySlugs.filter((s) => s !== catSlug);
       }
     }
-    await commitStore(next, `✓ "${cat?.name || catSlug}" kategorisi silindi`);
+    await commitStore(next, `✓ "${cat?.name || catSlug}" kategorisi silindi`, undefined, true);
   };
 
   const handleExportBackup = () => {
