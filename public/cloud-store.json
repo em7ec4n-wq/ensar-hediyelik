@@ -239,22 +239,22 @@
   ],
   "products": [
     {
-      "id": "custom-1795452670177",
-      "sku": "ENS-9KHV",
-      "slug": "fok-baligi-pelus-38-cm",
-      "name": "Fok balığı peluş 38 cm",
-      "shortName": "Fok balığı peluş 38 cm",
+      "id": "custom-1795452621611",
+      "sku": "ENS-Y4MR",
+      "slug": "asorti-balik-pelus-30-cm",
+      "name": "Asorti balık peluş 30 cm",
+      "shortName": "Asorti balık peluş 30 cm",
       "categorySlug": "peluslar",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 325,
+      "price": 335,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795452641774-zdbwu-IMG_4553.jpeg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795452591152-k1lgu-IMG_4552.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795452641774-zdbwu-IMG_4553.jpeg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795452591152-k1lgu-IMG_4552.jpeg"
       ],
-      "imageAlt": "Fok balığı peluş 38 cm (ENS-9KHV)",
+      "imageAlt": "Asorti balık peluş 30 cm (ENS-Y4MR)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -265,22 +265,22 @@
       ]
     },
     {
-      "id": "custom-1795452574456",
-      "sku": "ENS-NNFD",
-      "slug": "nano-kaplumbaga-pelus-40-cm",
-      "name": "Nano kaplumbağa peluş 40 cm",
-      "shortName": "Nano kaplumbağa peluş 40 cm",
+      "id": "custom-1795452296547",
+      "sku": "ENS-D6IU",
+      "slug": "sesli-aslan-pelus-65-cm",
+      "name": "Sesli aslan peluş 65 cm",
+      "shortName": "Sesli aslan peluş 65 cm",
       "categorySlug": "peluslar",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 300,
+      "price": 685,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795452538153-kbgfw-IMG_4551.jpeg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795452679202-hmt3x-IMG_4550.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795452538153-kbgfw-IMG_4551.jpeg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795452679202-hmt3x-IMG_4550.jpeg"
       ],
-      "imageAlt": "Nano kaplumbağa peluş 40 cm (ENS-NNFD)",
+      "imageAlt": "Sesli aslan peluş 65 cm (ENS-D6IU)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
