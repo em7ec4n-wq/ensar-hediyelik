@@ -7,12 +7,14 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { MobileBottomNav } from "./MobileBottomNav";
 
+import { WholesaleNoticeModal } from "./WholesaleNoticeModal";
+
 export function LiveAppShell({ children }: { children: React.ReactNode }) {
   const { store } = useLiveStore();
 
   return (
     <div className="flex min-h-screen flex-col pb-[66px] lg:pb-0">
-      <SplashOverlay
+      <WholesaleNoticeModal
         logoSrc={store.settings.logoLightBg}
         brandName={store.settings.brandName}
       />
