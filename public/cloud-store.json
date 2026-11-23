@@ -239,22 +239,22 @@
   ],
   "products": [
     {
-      "id": "custom-1795451918764",
-      "sku": "ENS-PB29",
-      "slug": "dinazor-pelus-45-cm",
-      "name": "Dinazor peluş 45 cm",
-      "shortName": "Dinazor peluş 45 cm",
+      "id": "custom-1795451963777",
+      "sku": "ENS-1XBT",
+      "slug": "dino-pelus-57-cm-pembe",
+      "name": "Dino peluş  57 cm pembe",
+      "shortName": "Dino peluş  57 cm pembe",
       "categorySlug": "peluslar",
       "extraCategorySlugs": [],
-      "description": "45 cm",
-      "price": 340,
+      "description": "",
+      "price": 290,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795451880524-wokyb-IMG_4544.jpeg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795451960488-88izp-IMG_4545.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795451880524-wokyb-IMG_4544.jpeg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795451960488-88izp-IMG_4545.jpeg"
       ],
-      "imageAlt": "Dinazor peluş 45 cm (ENS-PB29)",
+      "imageAlt": "Dino peluş  57 cm pembe (ENS-1XBT)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
