@@ -328,9 +328,9 @@
       "price": 475,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795461163522-ujfrq.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795461897891-t7vrg.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795461164522-kbro2.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795461899205-z95tw.png"
       ],
       "imageAlt": "M kutu kalp (25)",
       "isConceptImage": false,
@@ -1522,7 +1522,7 @@
       "slug": "yilbasi-agac-susu-6169-01",
       "name": "Yılbaşı Ağaç Süsü",
       "shortName": "Yılbaşı Ağaç Süsü",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 66,
@@ -1557,7 +1557,7 @@
       "slug": "yilbasi-agac-susu-6169-02",
       "name": "Yılbaşı Ağaç Süsü",
       "shortName": "Yılbaşı Ağaç Süsü",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 77,
@@ -1592,7 +1592,7 @@
       "slug": "yilbasi-agac-susu-6169-03",
       "name": "Yılbaşı Ağaç Süsü",
       "shortName": "Yılbaşı Ağaç Süsü",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 89,
@@ -1627,7 +1627,7 @@
       "slug": "yilbasi-agac-susu-6169-04",
       "name": "Yılbaşı Ağaç Süsü",
       "shortName": "Yılbaşı Ağaç Süsü",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 160,
@@ -1662,7 +1662,7 @@
       "slug": "yilbasi-agac-susu-6169-05",
       "name": "Yılbaşı Ağaç Süsü",
       "shortName": "Yılbaşı Ağaç Süsü",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 160,
@@ -1697,7 +1697,7 @@
       "slug": "yilbasi-agac-susu-6169-06",
       "name": "Yılbaşı Ağaç Süsü",
       "shortName": "Yılbaşı Ağaç Süsü",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 160,
@@ -1732,7 +1732,7 @@
       "slug": "yilbasi-agac-susu-6169-07",
       "name": "Yılbaşı Ağaç Süsü",
       "shortName": "Yılbaşı Ağaç Süsü",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 195,
@@ -1767,7 +1767,7 @@
       "slug": "yilbasi-agac-susu-6169-09",
       "name": "Yılbaşı Ağaç Süsü",
       "shortName": "Yılbaşı Ağaç Süsü",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 135,
@@ -1802,7 +1802,7 @@
       "slug": "yilbasi-agac-susu-6169-13",
       "name": "Yılbaşı Ağaç Süsü",
       "shortName": "Yılbaşı Ağaç Süsü",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 215,
@@ -1837,7 +1837,7 @@
       "slug": "yilbasi-agac-susu-6169-14",
       "name": "Yılbaşı Ağaç Süsü",
       "shortName": "Yılbaşı Ağaç Süsü",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 215,
@@ -1872,7 +1872,7 @@
       "slug": "yilbasi-tac-yj25-248",
       "name": "Yılbaşı Taç",
       "shortName": "Yılbaşı Taç",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1909,7 +1909,7 @@
       "slug": "yilbasi-tac-yj25-211",
       "name": "Yılbaşı Taç",
       "shortName": "Yılbaşı Taç",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1946,7 +1946,7 @@
       "slug": "yilbasi-tac-yj25-227",
       "name": "Yılbaşı Taç",
       "shortName": "Yılbaşı Taç",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -1983,7 +1983,7 @@
       "slug": "yilbasi-gozluk-yj25-174",
       "name": "Yılbaşı Gözlük",
       "shortName": "Yılbaşı Gözlük",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2020,7 +2020,7 @@
       "slug": "yilbasi-gozluk-yj25-181",
       "name": "Yılbaşı Gözlük",
       "shortName": "Yılbaşı Gözlük",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2057,7 +2057,7 @@
       "slug": "pelus-biblo-30-22-dy-349016",
       "name": "Peluş Biblo 30*22",
       "shortName": "Peluş Biblo 30*22",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2168,7 +2168,7 @@
       "slug": "pelus-biblo-60-20-dy-10003ab",
       "name": "Peluş Biblo 60*20",
       "shortName": "Peluş Biblo 60*20",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2353,7 +2353,7 @@
       "slug": "kizakli-noel-baba-9104-15cm",
       "name": "Kızaklı Noel Baba",
       "shortName": "Kızaklı Noel Baba",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 288,
@@ -2392,7 +2392,7 @@
       "slug": "bankli-noel-baba-9104-15cm-2",
       "name": "Banklı Noel Baba",
       "shortName": "Banklı Noel Baba",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 288,
@@ -2649,7 +2649,7 @@
       "slug": "karton-canta-23-18-1544-s",
       "name": "Karton Çanta 23*18",
       "shortName": "Karton Çanta 23*18",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2686,7 +2686,7 @@
       "slug": "karton-canta-32-26-1544-m",
       "name": "Karton Çanta 32*26",
       "shortName": "Karton Çanta 32*26",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2723,7 +2723,7 @@
       "slug": "karton-canta-40-30-1544-l",
       "name": "Karton Çanta 40*30",
       "shortName": "Karton Çanta 40*30",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2760,7 +2760,7 @@
       "slug": "karton-canta-23-18-1550-s",
       "name": "Karton Çanta 23*18",
       "shortName": "Karton Çanta 23*18",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2797,7 +2797,7 @@
       "slug": "karton-canta-32-26-1550-m",
       "name": "Karton Çanta 32*26",
       "shortName": "Karton Çanta 32*26",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2834,7 +2834,7 @@
       "slug": "karton-canta-40-30-1550-l",
       "name": "Karton Çanta 40*30",
       "shortName": "Karton Çanta 40*30",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2871,7 +2871,7 @@
       "slug": "karton-canta-23-18-7371-s",
       "name": "Karton Çanta 23*18",
       "shortName": "Karton Çanta 23*18",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2908,7 +2908,7 @@
       "slug": "karton-canta-32-26-7371-m",
       "name": "Karton Çanta 32*26",
       "shortName": "Karton Çanta 32*26",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -2945,7 +2945,7 @@
       "slug": "karton-canta-23-18-7337-s",
       "name": "Karton Çanta 23*18",
       "shortName": "Karton Çanta 23*18",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -3019,7 +3019,7 @@
       "slug": "karton-canta-23-18-7322-s",
       "name": "Karton Çanta 23*18",
       "shortName": "Karton Çanta 23*18",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -3056,7 +3056,7 @@
       "slug": "karton-canta-32-26-7322-m",
       "name": "Karton Çanta 32*26",
       "shortName": "Karton Çanta 32*26",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -3093,7 +3093,7 @@
       "slug": "karton-canta-40-30-7322-l",
       "name": "Karton Çanta 40*30",
       "shortName": "Karton Çanta 40*30",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -3130,7 +3130,7 @@
       "slug": "karton-canta-23-18-7349-s",
       "name": "Karton Çanta 23*18",
       "shortName": "Karton Çanta 23*18",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -3167,7 +3167,7 @@
       "slug": "karton-canta-32-26-7349-m",
       "name": "Karton Çanta 32*26",
       "shortName": "Karton Çanta 32*26",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -3204,7 +3204,7 @@
       "slug": "karton-canta-40-30-7349-l",
       "name": "Karton Çanta 40*30",
       "shortName": "Karton Çanta 40*30",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -3241,7 +3241,7 @@
       "slug": "sakalli-noel-baba-23cm-a-1-6",
       "name": "Sakallı Noel Baba 23Cm",
       "shortName": "Sakallı Noel Baba 23Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 55,
@@ -3276,7 +3276,7 @@
       "slug": "sakalli-noel-baba-27cm-a-1-8",
       "name": "Sakallı Noel Baba 27Cm",
       "shortName": "Sakallı Noel Baba 27Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 82,
@@ -3311,7 +3311,7 @@
       "slug": "sakalli-noel-baba-34cm-a-1-10",
       "name": "Sakallı Noel Baba 34Cm",
       "shortName": "Sakallı Noel Baba 34Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 112,
@@ -3346,7 +3346,7 @@
       "slug": "sakalli-noel-baba-38cm-a-1-11",
       "name": "Sakallı Noel Baba 38Cm",
       "shortName": "Sakallı Noel Baba 38Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 165,
@@ -3381,7 +3381,7 @@
       "slug": "noel-baba-90cm-hq241300-36",
       "name": "Noel Baba 90Cm",
       "shortName": "Noel Baba 90Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 8400,
@@ -3416,7 +3416,7 @@
       "slug": "noel-baba-50cm-hq241300-18",
       "name": "Noel Baba 50Cm",
       "shortName": "Noel Baba 50Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 2500,
@@ -3451,7 +3451,7 @@
       "slug": "noel-baba-30cm-hq241300-12",
       "name": "Noel Baba 30Cm",
       "shortName": "Noel Baba 30Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 1300,
@@ -3486,7 +3486,7 @@
       "slug": "noel-baba-90cm-hq241295a-36",
       "name": "Noel Baba 90Cm",
       "shortName": "Noel Baba 90Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 8400,
@@ -3521,7 +3521,7 @@
       "slug": "noel-baba-60cm-hq241295a-24",
       "name": "Noel Baba 60Cm",
       "shortName": "Noel Baba 60Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 4400,
@@ -3556,7 +3556,7 @@
       "slug": "noel-baba-50cm-hq241295a-18",
       "name": "Noel Baba 50Cm",
       "shortName": "Noel Baba 50Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 2500,
@@ -3591,7 +3591,7 @@
       "slug": "noel-baba-30cm-hq241295a-12",
       "name": "Noel Baba 30Cm",
       "shortName": "Noel Baba 30Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 1300,
@@ -3626,7 +3626,7 @@
       "slug": "noel-baba-90cm-hq241309-36",
       "name": "Noel Baba 90Cm",
       "shortName": "Noel Baba 90Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 8400,
@@ -3661,7 +3661,7 @@
       "slug": "noel-baba-60cm-hq241309-24",
       "name": "Noel Baba 60Cm",
       "shortName": "Noel Baba 60Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 4400,
@@ -3696,7 +3696,7 @@
       "slug": "noel-baba-50cm-hq241309-18",
       "name": "Noel Baba 50Cm",
       "shortName": "Noel Baba 50Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 2500,
@@ -3731,7 +3731,7 @@
       "slug": "noel-baba-30cm-hq241309-12",
       "name": "Noel Baba 30Cm",
       "shortName": "Noel Baba 30Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 1300,
@@ -3766,7 +3766,7 @@
       "slug": "noel-baba-90cm-hq241299-36",
       "name": "Noel Baba 90Cm",
       "shortName": "Noel Baba 90Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 8400,
@@ -3801,7 +3801,7 @@
       "slug": "noel-baba-60cm-hq241299-24",
       "name": "Noel Baba 60Cm",
       "shortName": "Noel Baba 60Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 4400,
@@ -3836,7 +3836,7 @@
       "slug": "noel-baba-50cm-hq241299-18",
       "name": "Noel Baba 50Cm",
       "shortName": "Noel Baba 50Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 2500,
@@ -3871,7 +3871,7 @@
       "slug": "noel-baba-30cm-hq241299-12",
       "name": "Noel Baba 30Cm",
       "shortName": "Noel Baba 30Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 1300,
@@ -3906,7 +3906,7 @@
       "slug": "noel-baba-90cm-hq241414-36",
       "name": "Noel Baba 90Cm",
       "shortName": "Noel Baba 90Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 8400,
@@ -3941,7 +3941,7 @@
       "slug": "noel-baba-60cm-hq241414-24",
       "name": "Noel Baba 60Cm",
       "shortName": "Noel Baba 60Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 4400,
@@ -3976,7 +3976,7 @@
       "slug": "noel-baba-50cm-hq241414-18",
       "name": "Noel Baba 50Cm",
       "shortName": "Noel Baba 50Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 2500,
@@ -4011,7 +4011,7 @@
       "slug": "noel-baba-30cm-hq241414-12",
       "name": "Noel Baba 30Cm",
       "shortName": "Noel Baba 30Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 1300,
@@ -4046,7 +4046,7 @@
       "slug": "pelus-cuce-140-cm-hq243013-xl",
       "name": "Peluş Cüce 140 Cm",
       "shortName": "Peluş Cüce 140 Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -4083,7 +4083,7 @@
       "slug": "pelus-cuce-70-cm-hq243013-l",
       "name": "Peluş Cüce 70 Cm",
       "shortName": "Peluş Cüce 70 Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -4120,7 +4120,7 @@
       "slug": "pelus-cuce-60-cm-hq243013-3",
       "name": "Peluş Cüce 60 Cm",
       "shortName": "Peluş Cüce 60 Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "yilbasi"
       ],
@@ -4157,7 +4157,7 @@
       "slug": "cam-agaci-120-cm-120cm100t",
       "name": "Çam Ağaçı 120 Cm",
       "shortName": "Çam Ağaçı 120 Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 320,
@@ -4192,7 +4192,7 @@
       "slug": "cam-agaci-150-cm-150cm230t",
       "name": "Çam Ağaçı 150 Cm",
       "shortName": "Çam Ağaçı 150 Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 750,
@@ -4227,7 +4227,7 @@
       "slug": "cam-agaci-180-cm-180cm450t",
       "name": "Çam Ağaçı 180 Cm",
       "shortName": "Çam Ağaçı 180 Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 1490,
@@ -4262,7 +4262,7 @@
       "slug": "cam-agaci-210-cm-210cm600t",
       "name": "Çam Ağaçı 210 Cm",
       "shortName": "Çam Ağaçı 210 Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 2200,
@@ -4297,7 +4297,7 @@
       "slug": "tirmanan-noel-baba-mf-10",
       "name": "Tırmanan Noel Baba",
       "shortName": "Tırmanan Noel Baba",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 855,
@@ -4332,7 +4332,7 @@
       "slug": "kardan-adam-silikon-isik-12cm-mf-30",
       "name": "Kardan Adam Silikon Işık 12Cm",
       "shortName": "Kardan Adam Silikon Işık 12Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4369,7 +4369,7 @@
       "slug": "kardan-adam-silikon-isik-14-cm-mf-40",
       "name": "Kardan Adam Silikon Işık 14 Cm",
       "shortName": "Kardan Adam Silikon Işık 14 Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -4443,7 +4443,7 @@
       "slug": "noel-baba-hareketli-mf-70",
       "name": "Noel Baba Hareketli",
       "shortName": "Noel Baba Hareketli",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 1050,
@@ -4478,7 +4478,7 @@
       "slug": "cam-agaci-hareketli-mf-90",
       "name": "Çam Ağacı Hareketli",
       "shortName": "Çam Ağacı Hareketli",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 550,
@@ -4513,7 +4513,7 @@
       "slug": "noel-baba-hareketli-mf-100",
       "name": "Noel Baba Hareketli",
       "shortName": "Noel Baba Hareketli",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 850,
@@ -4548,7 +4548,7 @@
       "slug": "cam-agaci-hareketli-mf-110",
       "name": "Çam Ağacı Hareketli",
       "shortName": "Çam Ağacı Hareketli",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 495,
@@ -4583,7 +4583,7 @@
       "slug": "noel-baba-hareketli-mf-130",
       "name": "Noel Baba Hareketli",
       "shortName": "Noel Baba Hareketli",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 1050,
@@ -4618,7 +4618,7 @@
       "slug": "noel-baba-hareketli-mf-140",
       "name": "Noel Baba Hareketli",
       "shortName": "Noel Baba Hareketli",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 1250,
@@ -4653,7 +4653,7 @@
       "slug": "noel-baba-parasut-hareketli-mf-150",
       "name": "Noel Baba Paraşüt Hareketli",
       "shortName": "Noel Baba Paraşüt Hareketli",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 950,
@@ -4688,7 +4688,7 @@
       "slug": "noel-baba-hareketli-mf-160",
       "name": "Noel Baba Hareketli",
       "shortName": "Noel Baba Hareketli",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 1050,
@@ -4723,7 +4723,7 @@
       "slug": "noel-baba-hareketli-mf-170",
       "name": "Noel Baba Hareketli",
       "shortName": "Noel Baba Hareketli",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 1050,
@@ -4758,7 +4758,7 @@
       "slug": "noel-baba-b-hareketli-mf-180",
       "name": "Noel Baba B.Hareketli",
       "shortName": "Noel Baba B.Hareketli",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 14500,
@@ -4793,7 +4793,7 @@
       "slug": "noel-baba-b-hareketli-mf-190",
       "name": "Noel Baba B.Hareketli",
       "shortName": "Noel Baba B.Hareketli",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 14500,
@@ -4828,7 +4828,7 @@
       "slug": "noel-baba-b-hareketli-mf-200",
       "name": "Noel Baba B.Hareketli",
       "shortName": "Noel Baba B.Hareketli",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 14500,
@@ -4898,7 +4898,7 @@
       "slug": "yilbasi-agac-susu-12li-krnv-200",
       "name": "Yılbaşı Ağaç Süsü 12Li",
       "shortName": "Yılbaşı Ağaç Süsü 12Li",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 195,
@@ -4933,7 +4933,7 @@
       "slug": "yilbasi-agac-susu-20li-krnv-300",
       "name": "Yılbaşı Ağaç Süsü 20Li",
       "shortName": "Yılbaşı Ağaç Süsü 20Li",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 750,
@@ -4968,7 +4968,7 @@
       "slug": "yilbasi-agac-susu-20li-krnv-400",
       "name": "Yılbaşı Ağaç Süsü 20Li",
       "shortName": "Yılbaşı Ağaç Süsü 20Li",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 425,
@@ -5003,7 +5003,7 @@
       "slug": "yilbasi-agac-susu-24lu-krnv-500",
       "name": "Yılbaşı Ağaç Süsü 24Lü",
       "shortName": "Yılbaşı Ağaç Süsü 24Lü",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 335,
@@ -5038,7 +5038,7 @@
       "slug": "yilbasi-agac-susu-12li-krnv-600",
       "name": "Yılbaşı Ağaç Süsü 12Li",
       "shortName": "Yılbaşı Ağaç Süsü 12Li",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 130,
@@ -5073,7 +5073,7 @@
       "slug": "yilbasi-agac-susu-20li-krnv-700",
       "name": "Yılbaşı Ağaç Süsü 20Li",
       "shortName": "Yılbaşı Ağaç Süsü 20Li",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 265,
@@ -5108,7 +5108,7 @@
       "slug": "yilbasi-isik-2-5-metre-6074-1",
       "name": "Yılbaşı Işık 2.5 Metre",
       "shortName": "Yılbaşı Işık 2.5 Metre",
-      "categorySlug": "cam-kureler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -5145,7 +5145,7 @@
       "slug": "yilbasi-isik-6074-2",
       "name": "Yılbaşı Işık",
       "shortName": "Yılbaşı Işık",
-      "categorySlug": "cam-kureler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -5182,7 +5182,7 @@
       "slug": "yilbasi-isik-6074-3",
       "name": "Yılbaşı Işık",
       "shortName": "Yılbaşı Işık",
-      "categorySlug": "cam-kureler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -5219,7 +5219,7 @@
       "slug": "yilbasi-isik-6074-5",
       "name": "Yılbaşı Işık",
       "shortName": "Yılbaşı Işık",
-      "categorySlug": "cam-kureler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -5256,7 +5256,7 @@
       "slug": "isik-6074-6",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "cam-kureler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -5293,7 +5293,7 @@
       "slug": "isik-6074-7",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "cam-kureler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -5330,7 +5330,7 @@
       "slug": "isik-6074-8",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "cam-kureler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -5367,7 +5367,7 @@
       "slug": "isik-6074-9",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "cam-kureler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -5404,7 +5404,7 @@
       "slug": "isik-6074-10",
       "name": "Işık",
       "shortName": "Işık",
-      "categorySlug": "cam-kureler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -5700,7 +5700,7 @@
       "slug": "noel-baba-9104-30cm",
       "name": "Noel Baba",
       "shortName": "Noel Baba",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 1100,
@@ -5735,7 +5735,7 @@
       "slug": "noel-baba-9104-45cm",
       "name": "Noel Baba",
       "shortName": "Noel Baba",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 1950,
@@ -5770,7 +5770,7 @@
       "slug": "kizakli-noel-baba-9104-15cm-1",
       "name": "Kızaklı Noel Baba",
       "shortName": "Kızaklı Noel Baba",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 288,
@@ -5805,7 +5805,7 @@
       "slug": "kizakli-noel-baba-9104-18cm",
       "name": "Kızaklı Noel Baba",
       "shortName": "Kızaklı Noel Baba",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 300,
@@ -5840,7 +5840,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2360x",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -5877,7 +5877,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-jm2136c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -5914,7 +5914,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2051c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -5951,7 +5951,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-jm2208c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -5988,7 +5988,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-jm2206c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6025,7 +6025,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2041c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6062,7 +6062,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2021c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6099,7 +6099,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2022c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6136,7 +6136,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-jm2137c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6173,7 +6173,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-jm2207c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6210,7 +6210,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2044c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6247,7 +6247,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-jm2383c",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6284,7 +6284,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2361x",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6321,7 +6321,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2369x",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6358,7 +6358,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2374x",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6395,7 +6395,7 @@
       "slug": "yilbasi-puskurtmeli-kar-kuresi-2373x",
       "name": "Yılbaşı Püskürtmeli Kar Küresi",
       "shortName": "Yılbaşı Püskürtmeli Kar Küresi",
-      "categorySlug": "buyuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6432,7 +6432,7 @@
       "slug": "yilbasi-orta-kure-2044-3",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "kucuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6506,7 +6506,7 @@
       "slug": "yilbasi-orta-kure-2021-3",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "kucuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6543,7 +6543,7 @@
       "slug": "yilbasi-orta-kure-2022-3",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "kucuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6580,7 +6580,7 @@
       "slug": "yilbasi-orta-kure-jm2207y",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "kucuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6617,7 +6617,7 @@
       "slug": "yilbasi-orta-kure-jm2206y",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "kucuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6654,7 +6654,7 @@
       "slug": "yilbasi-orta-kure-jm2137y",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "kucuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6691,7 +6691,7 @@
       "slug": "yilbasi-orta-kure-jm2208y",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "kucuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6728,7 +6728,7 @@
       "slug": "yilbasi-orta-kure-2051-3",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "kucuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6765,7 +6765,7 @@
       "slug": "yilbasi-orta-kure-1966x-1",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6802,7 +6802,7 @@
       "slug": "yilbasi-orta-kure-2361x-1",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6839,7 +6839,7 @@
       "slug": "yilbasi-orta-kure-2360x-1",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6876,7 +6876,7 @@
       "slug": "yilbasi-orta-kure-2362x-1",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6913,7 +6913,7 @@
       "slug": "yilbasi-orta-kure-jhsd80-39",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6950,7 +6950,7 @@
       "slug": "yilbasi-orta-kure-jhsd80-38",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -6987,7 +6987,7 @@
       "slug": "yilbasi-orta-kure-2369x-1",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7024,7 +7024,7 @@
       "slug": "yilbasi-orta-kure-2374x-1",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7135,7 +7135,7 @@
       "slug": "yilbasi-orta-kure-jhsd80-14",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7172,7 +7172,7 @@
       "slug": "yilbasi-orta-kure-jhsd80-13",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7209,7 +7209,7 @@
       "slug": "yilbasi-kure-midi-jm2387-2",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "mini-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7246,7 +7246,7 @@
       "slug": "yilbasi-kure-midi-jm2387",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "mini-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7283,7 +7283,7 @@
       "slug": "yilbasi-kure-midi-jm2388-2",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "mini-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7320,7 +7320,7 @@
       "slug": "yilbasi-kure-midi-jm2349-2",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "mini-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7357,7 +7357,7 @@
       "slug": "yilbasi-kure-midi-m026",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "mini-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7394,7 +7394,7 @@
       "slug": "yilbasi-kure-midi-m010",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "mini-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7431,7 +7431,7 @@
       "slug": "yilbasi-kure-midi-m011",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "mini-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7468,7 +7468,7 @@
       "slug": "yilbasi-kure-midi-m009",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "kucuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7505,7 +7505,7 @@
       "slug": "yilbasi-kure-midi-m012",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "kucuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7542,7 +7542,7 @@
       "slug": "yilbasi-orta-kure-2368x-1",
       "name": "Yılbaşı Orta Küre",
       "shortName": "Yılbaşı Orta Küre",
-      "categorySlug": "orta-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -7579,7 +7579,7 @@
       "slug": "yilbasi-kure-midi-jhsd65-36",
       "name": "Yılbaşı Küre Midi",
       "shortName": "Yılbaşı Küre Midi",
-      "categorySlug": "kucuk-boy-kar-kuresi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
@@ -9540,7 +9540,7 @@
       "slug": "pls-agac-isik-b4-9209-77",
       "name": "Pls.Ağaç Işık",
       "shortName": "Pls.Ağaç Işık",
-      "categorySlug": "cam-kureler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "hediyelik-urunler"
       ],
@@ -9802,7 +9802,7 @@
       "slug": "yilbasi-agac-10-cm-jh6019-1",
       "name": "Yılbaşı Ağaç 10 Cm",
       "shortName": "Yılbaşı Ağaç 10 Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 30,
@@ -9837,7 +9837,7 @@
       "slug": "yilbasi-agac-15-cm-jh6019-2",
       "name": "Yılbaşı Ağaç 15 Cm",
       "shortName": "Yılbaşı Ağaç 15 Cm",
-      "categorySlug": "yilbasi",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 49.5,
@@ -9985,5 +9985,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795461163520
+  "updatedAt": 1795461897888
 }
