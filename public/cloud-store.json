@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795550533865",
+      "sku": "ENS-R44X",
+      "slug": "tavuk-pelus-30-cm",
+      "name": "tavuk peluş 30 cm",
+      "shortName": "tavuk peluş 30 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 310,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550509657-vcbr3-IMG_4638.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550509657-vcbr3-IMG_4638.jpeg"
+      ],
+      "imageAlt": "tavuk peluş 30 cm (ENS-R44X)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795550481167",
       "sku": "ENS-AX3C",
       "slug": "elbiseli-kopek-pelus-40-cm",
@@ -12208,6 +12234,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795550481737,
+  "updatedAt": 1795550534430,
   "members": []
 }
