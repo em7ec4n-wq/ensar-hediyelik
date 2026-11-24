@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795550354223",
+      "sku": "ENS-1HRJ",
+      "slug": "esek-pelus-25-cm",
+      "name": "eşek peluş 25 cm",
+      "shortName": "eşek peluş 25 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 255,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550329601-3frzd-IMG_4635.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550329601-3frzd-IMG_4635.jpeg"
+      ],
+      "imageAlt": "eşek peluş 25 cm (ENS-1HRJ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795550274464",
       "sku": "ENS-HV6Y",
       "slug": "tuylu-uzunkulak-gri-tavsan-pelus-37cm",
@@ -12130,6 +12156,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795550275147,
+  "updatedAt": 1795550354876,
   "members": []
 }
