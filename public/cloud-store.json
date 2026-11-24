@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795546982899",
+      "sku": "ENS-41LY",
+      "slug": "yilisik-kaplan-aksesuar-pelus-45-cm",
+      "name": "yılışık kaplan aksesuar peluş 45 cm",
+      "shortName": "yılışık kaplan aksesuar peluş 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 160,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546960175-5b8w9-IMG_4599.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546960175-5b8w9-IMG_4599.jpeg"
+      ],
+      "imageAlt": "yılışık kaplan aksesuar peluş 45 cm (ENS-41LY)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795546943105",
       "sku": "ENS-N4QE",
       "slug": "yilisik-inek-aksesuar-pelus-45-cm",
@@ -11246,6 +11272,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795546943680,
+  "updatedAt": 1795546983405,
   "members": []
 }
