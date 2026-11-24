@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795547583742",
+      "sku": "ENS-QGA2",
+      "slug": "mira-bez-bebek-pelus-asorti-45-cm",
+      "name": "mira bez bebek peluş asorti 45 cm",
+      "shortName": "mira bez bebek peluş asorti 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 180,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547552001-b8yu7-IMG_4610.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547552001-b8yu7-IMG_4610.jpeg"
+      ],
+      "imageAlt": "mira bez bebek peluş asorti 45 cm (ENS-QGA2)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795547538500",
       "sku": "ENS-FKRE",
       "slug": "mira-bez-bebek-asorti-70-cm",
@@ -11532,6 +11558,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795547539079,
+  "updatedAt": 1795547584319,
   "members": []
 }
