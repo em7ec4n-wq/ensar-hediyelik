@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795547346625",
+      "sku": "ENS-VA5M",
+      "slug": "zurafa-pelus-100-cm",
+      "name": "zürafa peluş 100 cm",
+      "shortName": "zürafa peluş 100 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 435,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547320853-lagua-IMG_4606.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547320853-lagua-IMG_4606.jpeg"
+      ],
+      "imageAlt": "zürafa peluş 100 cm (ENS-VA5M)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795547270384",
       "sku": "ENS-KUV2",
       "slug": "yilisik-zurafa-aksesuar-pelus-45-cm",
@@ -11428,6 +11454,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795547270867,
+  "updatedAt": 1795547347347,
   "members": []
 }
