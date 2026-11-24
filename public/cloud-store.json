@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795550481167",
+      "sku": "ENS-AX3C",
+      "slug": "elbiseli-kopek-pelus-40-cm",
+      "name": "elbiseli köpek peluş 40 cm",
+      "shortName": "elbiseli köpek peluş 40 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 355,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550457613-02fhz-IMG_4637.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550457613-02fhz-IMG_4637.jpeg"
+      ],
+      "imageAlt": "elbiseli köpek peluş 40 cm (ENS-AX3C)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795550403569",
       "sku": "ENS-88FL",
       "slug": "elbiseli-ayicik-pelus-40-cm",
@@ -12182,6 +12208,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795550404134,
+  "updatedAt": 1795550481737,
   "members": []
 }
