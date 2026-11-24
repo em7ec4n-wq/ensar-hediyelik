@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795549161917",
+      "sku": "ENS-2WYH",
+      "slug": "oturan-unicorn-fusya-35-cm",
+      "name": "oturan unicorn fuşya 35 cm",
+      "shortName": "oturan unicorn fuşya 35 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 235,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549127498-7zlk3-IMG_4624.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549127498-7zlk3-IMG_4624.jpeg"
+      ],
+      "imageAlt": "oturan unicorn fuşya 35 cm (ENS-2WYH)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795549113544",
       "sku": "ENS-VB0L",
       "slug": "uyku-bebek-pelus-35-cm",
@@ -11844,6 +11870,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795549114234,
+  "updatedAt": 1795549162629,
   "members": []
 }
