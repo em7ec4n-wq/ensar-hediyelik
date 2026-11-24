@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795549417955",
+      "sku": "ENS-WXTG",
+      "slug": "ayakta-unicorn-beyaz",
+      "name": "ayakta unicorn beyaz",
+      "shortName": "ayakta unicorn beyaz",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 200,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549392831-w3zbu-IMG_4630.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549392831-w3zbu-IMG_4630.jpeg"
+      ],
+      "imageAlt": "ayakta unicorn beyaz (ENS-WXTG)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795549373122",
       "sku": "ENS-KO90",
       "slug": "ayakta-unicorn-fusya-30-cm",
@@ -12000,6 +12026,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795549373793,
+  "updatedAt": 1795549418548,
   "members": []
 }
