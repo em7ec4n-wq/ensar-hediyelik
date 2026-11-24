@@ -378,6 +378,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795531666079",
+      "sku": "003",
+      "slug": "yuvarlak-sihirli-ayna",
+      "name": "Yuvarlak sihirli ayna",
+      "shortName": "Yuvarlak sihirli ayna",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 160,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531642181-y8lpf-IMG_9379.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531642181-y8lpf-IMG_9379.jpeg"
+      ],
+      "imageAlt": "Yuvarlak sihirli ayna (003)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795531582307",
       "sku": "1111",
       "slug": "kalp-sihirli-ayna",
@@ -597,9 +623,9 @@
       "price": 290,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531583747-pqnf5.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531667701-85lsk.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531584766-8lnzn.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531668569-00hho.jpg"
       ],
       "imageAlt": "Bavul m kutu (009)",
       "isConceptImage": false,
@@ -11349,5 +11375,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795531583743
+  "updatedAt": 1795531667696
 }
