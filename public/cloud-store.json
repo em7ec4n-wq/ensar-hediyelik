@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795549244796",
+      "sku": "ENS-0W5M",
+      "slug": "ayakta-unicorn-sari-30-cm",
+      "name": "ayakta unicorn sarı 30 cm",
+      "shortName": "ayakta unicorn sarı 30 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 200,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549240600-s8rzc-IMG_4626.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549240600-s8rzc-IMG_4626.jpeg"
+      ],
+      "imageAlt": "ayakta unicorn sarı 30 cm (ENS-0W5M)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795549212116",
       "sku": "ENS-WFIZ",
       "slug": "ayakta-unicorn-turuncu-30-cm",
@@ -11896,6 +11922,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795549212812,
+  "updatedAt": 1795549245480,
   "members": []
 }
