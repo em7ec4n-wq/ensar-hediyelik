@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795550403569",
+      "sku": "ENS-88FL",
+      "slug": "elbiseli-ayicik-pelus-40-cm",
+      "name": "elbiseli ayıcık peluş 40 cm",
+      "shortName": "elbiseli ayıcık peluş 40 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 340,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550381260-4kqqu-IMG_4636.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550381260-4kqqu-IMG_4636.jpeg"
+      ],
+      "imageAlt": "elbiseli ayıcık peluş 40 cm (ENS-88FL)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795550354223",
       "sku": "ENS-1HRJ",
       "slug": "esek-pelus-25-cm",
@@ -12156,6 +12182,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795550354876,
+  "updatedAt": 1795550404134,
   "members": []
 }
