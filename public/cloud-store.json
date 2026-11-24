@@ -389,6 +389,110 @@
   ],
   "products": [
     {
+      "id": "custom-1795546137255",
+      "sku": "ENS-1R8O",
+      "slug": "kapakli-celik-termos",
+      "name": "kapaklı çelik termos",
+      "shortName": "kapaklı çelik termos",
+      "categorySlug": "termos",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 275,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546139312-hin3u.jpg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546140340-ax40k.jpg"
+      ],
+      "imageAlt": "kapaklı çelik termos (ENS-1R8O)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Termos"
+      ]
+    },
+    {
+      "id": "custom-1795546058702",
+      "sku": "ENS-U64Z",
+      "slug": "celik-termos",
+      "name": "çelik termos",
+      "shortName": "çelik termos",
+      "categorySlug": "termos",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 375,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546141160-wn256.jpg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546142277-30uiu.jpg"
+      ],
+      "imageAlt": "çelik termos (ENS-U64Z)",
+      "isConceptImage": false,
+      "isNewArrival": false,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Termos"
+      ]
+    },
+    {
+      "id": "custom-1795546035784",
+      "sku": "ENS-107S",
+      "slug": "celik-temros",
+      "name": "çelik temros",
+      "shortName": "çelik temros",
+      "categorySlug": "termos",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 375,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546143662-6cxns.jpg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546145058-zu6a8.jpg"
+      ],
+      "imageAlt": "çelik temros (ENS-107S)",
+      "isConceptImage": false,
+      "isNewArrival": false,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Termos"
+      ]
+    },
+    {
+      "id": "custom-1795546007790",
+      "sku": "ENS-GN2L",
+      "slug": "3-bardakli-termos",
+      "name": "3 bardaklı termos",
+      "shortName": "3 bardaklı termos",
+      "categorySlug": "termos",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 350,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546146031-kc7qy.jpg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546147125-9830u.jpg"
+      ],
+      "imageAlt": "3 bardaklı termos (ENS-GN2L)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Termos"
+      ]
+    },
+    {
       "id": "custom-1795545878436",
       "sku": "ENS-TQHI",
       "slug": "yilisik-canavar-aksesuar-pelus-45-cm",
@@ -11178,6 +11282,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795545927263,
+  "updatedAt": 1795546139305,
   "members": []
 }
