@@ -378,6 +378,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795531472299",
+      "sku": "003",
+      "slug": "kalpli-yuzuk-kutusu",
+      "name": "Kalpli yüzük kutusu",
+      "shortName": "Kalpli yüzük kutusu",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 100,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531451284-y3kuc-IMG_9377.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531451284-y3kuc-IMG_9377.jpeg"
+      ],
+      "imageAlt": "Kalpli yüzük kutusu (003)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795531433863",
       "sku": "004",
       "slug": "isikli-kare-yuzuk-kutusu",
@@ -545,9 +571,9 @@
       "price": 290,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531434890-nzs2m.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531475062-po3zd.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531435914-l2zfx.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531476147-0ups5.jpg"
       ],
       "imageAlt": "Bavul m kutu (009)",
       "isConceptImage": false,
@@ -11297,5 +11323,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795531434886
+  "updatedAt": 1795531475057
 }
