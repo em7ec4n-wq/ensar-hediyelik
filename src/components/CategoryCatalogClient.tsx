@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { Category, Product } from "@/types/store";
 import { useLiveStore } from "./StoreProvider";
 import { ProductCard } from "./ProductCard";
+import { getCategoryHref } from "./CategoriesClient";
 
 interface CategoryCatalogClientProps {
   category: Category;
@@ -72,7 +73,7 @@ function CategoryCatalogInner({
           <>
             <span className="mx-2">/</span>
             <Link
-              href={`/kategori/${parentCategory.slug}/`}
+              href={getCategoryHref(parentCategory.slug)}
               className="hover:text-[#321B2D]"
             >
               {parentCategory.name}
@@ -139,7 +140,7 @@ function CategoryCatalogInner({
       {parentCategory && siblingSubcategories.length > 0 && (
         <div className="mt-6 flex flex-wrap gap-2">
           <Link
-            href={`/kategori/${parentCategory.slug}/`}
+            href={getCategoryHref(parentCategory.slug)}
             className="inline-flex min-h-[42px] items-center rounded-full border border-[#DDD3C6] bg-white px-4 py-2 text-xs font-semibold text-[#241722] hover:border-[#321B2D] sm:text-sm"
           >
             Tümü ({parentCategory.name})
@@ -147,7 +148,7 @@ function CategoryCatalogInner({
           {siblingSubcategories.map((sub) => (
             <Link
               key={sub.slug}
-              href={`/kategori/${sub.slug}/`}
+              href={getCategoryHref(sub.slug)}
               className={`inline-flex min-h-[42px] items-center rounded-full px-4 py-2 text-xs font-semibold transition-colors sm:text-sm ${
                 sub.slug === category.slug
                   ? "bg-[#321B2D] text-[#F7F3EB]"

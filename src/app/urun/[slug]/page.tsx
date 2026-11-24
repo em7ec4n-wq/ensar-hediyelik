@@ -1,8 +1,8 @@
 import React from "react";
-import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { readStore } from "@/lib/store-server";
 import { ProductDetailClient } from "@/components/ProductDetailClient";
+import { DynamicProductResolver } from "@/components/DynamicProductResolver";
 
 export const dynamicParams = true;
 
@@ -21,15 +21,13 @@ export async function generateMetadata({
   const { slug } = await params;
   const store = readStore();
   const product = store.products.find((p) => p.slug === slug);
-  if (!product) {
-    return { title: "Ürün Bulunamadı" };
-  }
+  const title = product?.name || decodeURIComponent(slug).replace(/-/g, " ");
   return {
-    title: product.name,
+    title,
     description:
-      product.description || `${product.name} (${product.sku}) — Ensar Hediyelik`,
-    alternates: { canonical: `/urun/${product.slug}` },
-    robots: product.published ? undefined : { index: false, follow: false },
+      product?.description || `${title} — Ensar Hediyelik`,
+    alternates: { canonical: `/urun/${slug}` },
+    robots: product && !product.published ? { index: false, follow: false } : undefined,
   };
 }
 
@@ -39,7 +37,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   const product = store.products.find((p) => p.slug === slug);
 
   if (!product) {
-    notFound();
+    return <DynamicProductResolver slug={slug} />;
   }
 
   const category = store.categories.find(

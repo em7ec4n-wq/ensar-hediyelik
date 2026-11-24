@@ -1,8 +1,8 @@
 import React from "react";
-import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { readStore } from "@/lib/store-server";
 import { CategoryCatalogClient } from "@/components/CategoryCatalogClient";
+import { DynamicCategoryResolver } from "@/components/DynamicCategoryResolver";
 
 export const dynamicParams = true;
 
@@ -21,13 +21,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const store = readStore();
   const cat = store.categories.find((c) => c.slug === slug);
-  if (!cat) {
-    return { title: "Kategori Bulunamadı" };
-  }
+  const name = cat?.name || decodeURIComponent(slug).replace(/-/g, " ");
   return {
-    title: cat.name,
-    description: cat.description,
-    alternates: { canonical: `/kategori/${cat.slug}` },
+    title: name,
+    description: cat?.description || `${name} — Ensar Hediyelik`,
+    alternates: { canonical: `/kategori/${slug}` },
   };
 }
 
@@ -37,18 +35,22 @@ export default async function CategoryDetailPage({ params }: CategoryPageProps) 
   const category = store.categories.find((c) => c.slug === slug);
 
   if (!category) {
-    notFound();
+    return <DynamicCategoryResolver slug={slug} />;
   }
 
   const parentCategory = category.parentSlug
     ? store.categories.find((c) => c.slug === category.parentSlug)
     : undefined;
 
+  const subcategories = store.categories.filter(
+    (c) => c.parentSlug === category.slug
+  );
+
   return (
     <CategoryCatalogClient
       category={category}
       parentCategory={parentCategory}
-      subcategories={[]}
+      subcategories={subcategories}
       allCategoryProducts={[]}
     />
   );

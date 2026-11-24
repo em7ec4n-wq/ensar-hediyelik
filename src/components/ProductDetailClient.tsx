@@ -9,6 +9,7 @@ import { useCart } from "./CartProvider";
 import { useLiveStore } from "./StoreProvider";
 import { useWholesaleAuth } from "./WholesaleAuthProvider";
 import { BagIcon, WhatsAppIcon } from "./Icons";
+import { getCategoryHref } from "./CategoriesClient";
 
 interface ProductDetailClientProps {
   product: Product;
@@ -154,7 +155,7 @@ function ProductDetailInner({
           <>
             <span className="mx-2">/</span>
             <Link
-              href={`/kategori/${parentCategorySlug}${previewSuffix}`}
+              href={getCategoryHref(parentCategorySlug)}
               className="hover:text-[#321B2D]"
             >
               {parentCategoryName}
@@ -163,7 +164,7 @@ function ProductDetailInner({
         )}
         <span className="mx-2">/</span>
         <Link
-          href={`/kategori/${product.categorySlug}${previewSuffix}`}
+          href={getCategoryHref(product.categorySlug)}
           className="hover:text-[#321B2D]"
         >
           {categoryName}

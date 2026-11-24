@@ -10,19 +10,30 @@ function DynamicProductInner() {
   const searchParams = useSearchParams();
   const slug = searchParams.get("slug") || "";
   const id = searchParams.get("id") || "";
-  const { store } = useLiveStore();
+  const { store, ready } = useLiveStore();
 
   const product = store.products.find(
     (p) => (slug && p.slug === slug) || (id && p.id === id)
   );
 
   if (!product) {
+    if (!ready) {
+      return (
+        <div className="ensar-container py-16 text-center">
+          <p className="text-sm font-medium text-[#5F505C]">Ürün yükleniyor…</p>
+        </div>
+      );
+    }
+
     return (
       <div className="ensar-container py-16 text-center">
         <div className="ensar-card mx-auto max-w-md p-8">
           <h1 className="font-heading text-2xl font-medium text-[#241722]">
             Ürün Bulunamadı
           </h1>
+          <p className="mt-2 text-sm text-[#5F505C]">
+            Aradığınız ürün henüz mevcut değil veya kaldırılmış olabilir.
+          </p>
           <Link
             href="/kategoriler"
             className="mt-5 inline-flex min-h-[44px] items-center rounded-full bg-[#321B2D] px-6 text-sm font-semibold text-[#F7F3EB]"
