@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795547021102",
+      "sku": "ENS-CAHD",
+      "slug": "yilisik-kedi-aksesuar-pelus-45-cm",
+      "name": "yılışık kedi aksesuar peluş 45 cm",
+      "shortName": "yılışık kedi aksesuar peluş 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 160,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546996497-n5ezn-IMG_4600.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546996497-n5ezn-IMG_4600.jpeg"
+      ],
+      "imageAlt": "yılışık kedi aksesuar peluş 45 cm (ENS-CAHD)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795546982899",
       "sku": "ENS-41LY",
       "slug": "yilisik-kaplan-aksesuar-pelus-45-cm",
@@ -11272,6 +11298,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795546983405,
+  "updatedAt": 1795547021815,
   "members": []
 }
