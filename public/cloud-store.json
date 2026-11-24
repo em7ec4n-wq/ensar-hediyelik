@@ -378,6 +378,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795530703240",
+      "sku": "004",
+      "slug": "istiridye-balerin-m-kutu",
+      "name": "İstiridye balerin m kutu",
+      "shortName": "İstiridye balerin m kutu",
+      "categorySlug": "muzik-kutulari",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 290,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530685764-dbghq-IMG_9353.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530685764-dbghq-IMG_9353.jpeg"
+      ],
+      "imageAlt": "İstiridye balerin m kutu (004)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Müzik Kutuları"
+      ]
+    },
+    {
       "id": "custom-1795530651873",
       "sku": "009",
       "slug": "bavul-m-kutu",
@@ -389,9 +415,9 @@
       "price": 290,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530670810-b5fl6.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530704590-77qf9.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530671715-hk5xu.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530705596-kerem.jpg"
       ],
       "imageAlt": "Bavul m kutu (009)",
       "isConceptImage": false,
@@ -11141,5 +11167,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795530670807
+  "updatedAt": 1795530704587
 }
