@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795547066879",
+      "sku": "ENS-DU92",
+      "slug": "yilisik-koyun-aksesuar-pelus-45-cm",
+      "name": "yılışık koyun aksesuar peluş 45 cm",
+      "shortName": "yılışık koyun aksesuar peluş 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 160,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547039590-ylhs9-IMG_4601.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547039590-ylhs9-IMG_4601.jpeg"
+      ],
+      "imageAlt": "yılışık koyun aksesuar peluş 45 cm (ENS-DU92)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795547021102",
       "sku": "ENS-CAHD",
       "slug": "yilisik-kedi-aksesuar-pelus-45-cm",
@@ -11298,6 +11324,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795547021815,
+  "updatedAt": 1795547067539,
   "members": []
 }
