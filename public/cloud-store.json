@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795550737943",
+      "sku": "ENS-XZ5N",
+      "slug": "lameli-sempatik-i-love-you-kahverengi-ayicik-55-cm",
+      "name": "lameli sempatik ı love you kahverengi ayıcık 55 cm",
+      "shortName": "lameli sempatik ı love you kahverengi ayıcık 55 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 500,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550701212-s1w0l-IMG_4642.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550701212-s1w0l-IMG_4642.jpeg"
+      ],
+      "imageAlt": "lameli sempatik ı love you kahverengi ayıcık 55 cm (ENS-XZ5N)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795550685025",
       "sku": "ENS-PINW",
       "slug": "lameli-sempatik-i-love-you-ayicik-krem55-cm",
@@ -12312,6 +12338,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795550685588,
+  "updatedAt": 1795550738586,
   "members": []
 }
