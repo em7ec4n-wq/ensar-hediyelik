@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795547107777",
+      "sku": "ENS-W9A4",
+      "slug": "yilisik-kopek-aksesuar-pelus-45-cm",
+      "name": "yılışık köpek aksesuar peluş 45 cm",
+      "shortName": "yılışık köpek aksesuar peluş 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 160,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547081042-k94zy-IMG_4602.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547081042-k94zy-IMG_4602.jpeg"
+      ],
+      "imageAlt": "yılışık köpek aksesuar peluş 45 cm (ENS-W9A4)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795547066879",
       "sku": "ENS-DU92",
       "slug": "yilisik-koyun-aksesuar-pelus-45-cm",
@@ -11324,6 +11350,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795547067539,
+  "updatedAt": 1795547108441,
   "members": []
 }
