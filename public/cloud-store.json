@@ -378,6 +378,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795530651873",
+      "sku": "009",
+      "slug": "bavul-m-kutu",
+      "name": "Bavul m kutu",
+      "shortName": "Bavul m kutu",
+      "categorySlug": "muzik-kutulari",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 290,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530653039-hlxfo.jpg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530654996-siva5.jpg"
+      ],
+      "imageAlt": "Bavul m kutu (009)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Müzik Kutuları"
+      ]
+    },
+    {
       "id": "custom-1795466123532",
       "sku": "123",
       "slug": "metal-lux-saat",
@@ -11161,5 +11187,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795529565826
+  "updatedAt": 1795530653036
 }
