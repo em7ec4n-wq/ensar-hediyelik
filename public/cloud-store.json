@@ -378,6 +378,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795530829804",
+      "sku": "007",
+      "slug": "atli-karinca",
+      "name": "Atlı karınca",
+      "shortName": "Atlı karınca",
+      "categorySlug": "muzik-kutulari",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 145,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530813403-de2xa-IMG_9363.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530813403-de2xa-IMG_9363.jpeg"
+      ],
+      "imageAlt": "Atlı karınca (007)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Müzik Kutuları"
+      ]
+    },
+    {
       "id": "custom-1795530744812",
       "sku": "004",
       "slug": "isikli-buyuk-boy-atli-karinca",
@@ -441,9 +467,9 @@
       "price": 290,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530746606-tl8fa.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530830881-j34k3.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530747712-of6sk.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530831955-5acou.jpg"
       ],
       "imageAlt": "Bavul m kutu (009)",
       "isConceptImage": false,
@@ -11193,5 +11219,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795530746603
+  "updatedAt": 1795530830875
 }
