@@ -378,6 +378,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795531433863",
+      "sku": "004",
+      "slug": "isikli-kare-yuzuk-kutusu",
+      "name": "Işıklı kare yüzük kutusu",
+      "shortName": "Işıklı kare yüzük kutusu",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 100,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531416578-9hr27-IMG_9378.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531416578-9hr27-IMG_9378.jpeg"
+      ],
+      "imageAlt": "Işıklı kare yüzük kutusu (004)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795531320735",
       "sku": "005",
       "slug": "parfum-sisesi",
@@ -519,9 +545,9 @@
       "price": 290,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531323014-xnz1e.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531434890-nzs2m.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531323917-yemc6.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531435914-l2zfx.jpg"
       ],
       "imageAlt": "Bavul m kutu (009)",
       "isConceptImage": false,
@@ -11271,5 +11297,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795531323006
+  "updatedAt": 1795531434886
 }
