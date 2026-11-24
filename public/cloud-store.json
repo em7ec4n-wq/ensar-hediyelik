@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795550222396",
+      "sku": "ENS-MYPL",
+      "slug": "tuylu-uzunkulak-tavsan-pelus-37-cm",
+      "name": "tüylü uzunkulak tavşan  peluş 37 cm",
+      "shortName": "tüylü uzunkulak tavşan  peluş 37 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 225,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550171615-6z4t1-IMG_4633.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550171615-6z4t1-IMG_4633.jpeg"
+      ],
+      "imageAlt": "tüylü uzunkulak tavşan  peluş 37 cm (ENS-MYPL)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795549569173",
       "sku": "ENS-9OEQ",
       "slug": "tuylu-uzun-kulak-tavsan-pelus-50-cm",
@@ -12078,17 +12104,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795549974670,
-  "members": [
-    {
-      "id": "bayi-1795549973649",
-      "companyName": "Pasta parti home",
-      "contactName": "Kader keven",
-      "phone": "05538046899",
-      "email": "",
-      "city": "Afşin",
-      "password": "Ali463311.",
-      "createdAt": "24.11.2026"
-    }
-  ]
+  "updatedAt": 1795550223186,
+  "members": []
 }
