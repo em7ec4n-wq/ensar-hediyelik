@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795550575677",
+      "sku": "ENS-AI5S",
+      "slug": "asorti-kapibara-pelus-35-cm",
+      "name": "asorti kapibara peluş 35 cm",
+      "shortName": "asorti kapibara peluş 35 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 365,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550545004-4e4mw-IMG_4639.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550545004-4e4mw-IMG_4639.jpeg"
+      ],
+      "imageAlt": "asorti kapibara peluş 35 cm (ENS-AI5S)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795550533865",
       "sku": "ENS-R44X",
       "slug": "tavuk-pelus-30-cm",
@@ -12234,6 +12260,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795550534430,
+  "updatedAt": 1795550576237,
   "members": []
 }
