@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795548798680",
+      "sku": "ENS-ANIR",
+      "slug": "cift-tarafli-kedi-pelus-25-cm",
+      "name": "çift taraflı kedi peluş 25 cm",
+      "shortName": "çift taraflı kedi peluş 25 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 100,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795548776040-1mb70-IMG_4618.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795548776040-1mb70-IMG_4618.jpeg"
+      ],
+      "imageAlt": "çift taraflı kedi peluş 25 cm (ENS-ANIR)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795548764183",
       "sku": "ENS-OMIL",
       "slug": "rengarenk-tirtil-pelus-95-cm",
@@ -11688,6 +11714,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795548764857,
+  "updatedAt": 1795548799504,
   "members": []
 }
