@@ -389,6 +389,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795546176847",
+      "sku": "ENS-5B1X",
+      "slug": "dijital-gostergeli-termos",
+      "name": "dijital göstergeli termos",
+      "shortName": "dijital göstergeli termos",
+      "categorySlug": "termos",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 450,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546158798-av65b-IMG_9406.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546158798-av65b-IMG_9406.png"
+      ],
+      "imageAlt": "dijital göstergeli termos (ENS-5B1X)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Termos"
+      ]
+    },
+    {
       "id": "custom-1795546137255",
       "sku": "ENS-1R8O",
       "slug": "kapakli-celik-termos",
@@ -400,9 +426,9 @@
       "price": 275,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546139312-hin3u.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546178782-nt24b.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546140340-ax40k.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546179802-5ctje.jpg"
       ],
       "imageAlt": "kapaklı çelik termos (ENS-1R8O)",
       "isConceptImage": false,
@@ -426,9 +452,9 @@
       "price": 375,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546141160-wn256.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546180671-igcn3.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546142277-30uiu.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546181684-mtxq1.jpg"
       ],
       "imageAlt": "çelik termos (ENS-U64Z)",
       "isConceptImage": false,
@@ -452,9 +478,9 @@
       "price": 375,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546143662-6cxns.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546182758-fmlcm.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546145058-zu6a8.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546183929-qkbor.jpg"
       ],
       "imageAlt": "çelik temros (ENS-107S)",
       "isConceptImage": false,
@@ -478,9 +504,9 @@
       "price": 350,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546146031-kc7qy.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546184870-caupm.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546147125-9830u.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546186430-l7nly.jpg"
       ],
       "imageAlt": "3 bardaklı termos (ENS-GN2L)",
       "isConceptImage": false,
@@ -11282,6 +11308,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795546139305,
+  "updatedAt": 1795546178777,
   "members": []
 }
