@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795550685025",
+      "sku": "ENS-PINW",
+      "slug": "lameli-sempatik-i-love-you-ayicik-krem55-cm",
+      "name": "lameli sempatik I love you ayıcık krem55 cm",
+      "shortName": "lameli sempatik I love you ayıcık krem55 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 500,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550636322-6k13k-IMG_4641.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550636322-6k13k-IMG_4641.jpeg"
+      ],
+      "imageAlt": "lameli sempatik I love you ayıcık krem55 cm (ENS-PINW)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795550620995",
       "sku": "ENS-DIIY",
       "slug": "sevimli-yatan-kopek-pelus-50-cm",
@@ -12286,6 +12312,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795550621569,
+  "updatedAt": 1795550685588,
   "members": []
 }
