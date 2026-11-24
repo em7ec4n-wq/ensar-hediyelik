@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795548764183",
+      "sku": "ENS-OMIL",
+      "slug": "rengarenk-tirtil-pelus-95-cm",
+      "name": "rengarenk tırtıl peluş 95 cm",
+      "shortName": "rengarenk tırtıl peluş 95 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 340,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795548721650-o3nom-IMG_4617.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795548721650-o3nom-IMG_4617.jpeg"
+      ],
+      "imageAlt": "rengarenk tırtıl peluş 95 cm (ENS-OMIL)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795547694295",
       "sku": "ENS-85RR",
       "slug": "avokado-pelus-55-cm",
@@ -11662,6 +11688,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795548229376,
+  "updatedAt": 1795548764857,
   "members": []
 }
