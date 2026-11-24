@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795549500452",
+      "sku": "ENS-FT0W",
+      "slug": "tuylu-uzun-kulak-tavsan-krem-50-cm",
+      "name": "tüylü uzun kulak tavşan krem 50 cm",
+      "shortName": "tüylü uzun kulak tavşan krem 50 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549449557-knxvp-IMG_4631.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549449557-knxvp-IMG_4631.jpeg"
+      ],
+      "imageAlt": "tüylü uzun kulak tavşan krem 50 cm (ENS-FT0W)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795549417955",
       "sku": "ENS-WXTG",
       "slug": "ayakta-unicorn-beyaz",
@@ -12026,6 +12052,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795549418548,
+  "updatedAt": 1795549501068,
   "members": []
 }
