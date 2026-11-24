@@ -386,7 +386,7 @@
       "shortName": "tüylü uzun kulak tavşan peluş 50 cm",
       "categorySlug": "peluslar",
       "extraCategorySlugs": [],
-      "description": "",
+      "description": "50 cm",
       "price": 335,
       "stock": 99,
       "published": true,
@@ -12078,6 +12078,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795549569910,
+  "updatedAt": 1795549604742,
   "members": []
 }
