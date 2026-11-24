@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795550274464",
+      "sku": "ENS-HV6Y",
+      "slug": "tuylu-uzunkulak-gri-tavsan-pelus-37cm",
+      "name": "tüylü uzunkulak gri tavşan peluş 37cm",
+      "shortName": "tüylü uzunkulak gri tavşan peluş 37cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 225,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550234852-48uc3-IMG_4634.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550234852-48uc3-IMG_4634.jpeg"
+      ],
+      "imageAlt": "tüylü uzunkulak gri tavşan peluş 37cm (ENS-HV6Y)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795550222396",
       "sku": "ENS-MYPL",
       "slug": "tuylu-uzunkulak-tavsan-pelus-37-cm",
@@ -12104,6 +12130,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795550223186,
+  "updatedAt": 1795550275147,
   "members": []
 }
