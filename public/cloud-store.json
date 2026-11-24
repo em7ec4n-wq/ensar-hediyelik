@@ -378,6 +378,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795531320735",
+      "sku": "005",
+      "slug": "parfum-sisesi",
+      "name": "Parfüm şişesi",
+      "shortName": "Parfüm şişesi",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 25,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531297603-cklp9-IMG_9376.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531297603-cklp9-IMG_9376.jpeg"
+      ],
+      "imageAlt": "Parfüm şişesi (005)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795531071454",
       "sku": "ENS-B461",
       "slug": "mini-atli-karinca",
@@ -493,9 +519,9 @@
       "price": 290,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531100444-mofl2.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531323014-xnz1e.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531101466-mye9l.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531323917-yemc6.jpg"
       ],
       "imageAlt": "Bavul m kutu (009)",
       "isConceptImage": false,
@@ -11245,5 +11271,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795531100440
+  "updatedAt": 1795531323006
 }
