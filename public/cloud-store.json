@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795547629268",
+      "sku": "ENS-8XPF",
+      "slug": "dinazor-pelus-yesil-45-cm",
+      "name": "dinazor peluş yeşil 45 cm",
+      "shortName": "dinazor peluş yeşil 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 280,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547613232-9iejp-IMG_4611.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547613232-9iejp-IMG_4611.jpeg"
+      ],
+      "imageAlt": "dinazor peluş yeşil 45 cm (ENS-8XPF)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795547583742",
       "sku": "ENS-QGA2",
       "slug": "mira-bez-bebek-pelus-asorti-45-cm",
@@ -11558,6 +11584,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795547584319,
+  "updatedAt": 1795547629842,
   "members": []
 }
