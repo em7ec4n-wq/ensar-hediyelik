@@ -378,6 +378,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795531903216",
+      "sku": "006",
+      "slug": "mantar-lamba",
+      "name": "Mantar lamba",
+      "shortName": "Mantar lamba",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 225,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531889367-dabd3-IMG_9390.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531889367-dabd3-IMG_9390.png"
+      ],
+      "imageAlt": "Mantar lamba (006)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795531666079",
       "sku": "003",
       "slug": "yuvarlak-sihirli-ayna",
@@ -623,9 +649,9 @@
       "price": 290,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531854985-r2zhc.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531904244-o0206.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531856472-8u4cd.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531905274-66fqi.jpg"
       ],
       "imageAlt": "Bavul m kutu (009)",
       "isConceptImage": false,
@@ -11375,5 +11401,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795531854982
+  "updatedAt": 1795531904240
 }
