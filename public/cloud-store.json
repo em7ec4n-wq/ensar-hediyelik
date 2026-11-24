@@ -389,9 +389,9 @@
       "price": 290,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530653039-hlxfo.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530670810-b5fl6.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530654996-siva5.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530671715-hk5xu.jpg"
       ],
       "imageAlt": "Bavul m kutu (009)",
       "isConceptImage": false,
@@ -620,52 +620,6 @@
         }
       ],
       "legacyPath": "/isikli-grup?product_id=562"
-    },
-    {
-      "id": "prod-490",
-      "sku": "ENS-KK-490",
-      "slug": "buyuk-boy-puskurtmeli-kar-kuresi",
-      "name": "Büyük Boy Püskürtmeli Kar Küresi",
-      "shortName": "Püskürtmeli Kar Küresi",
-      "categorySlug": "cam-kureler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler",
-        "muzik-kutulari"
-      ],
-      "description": "Otomatik kar püskürtme motoru, çoklu melodi ve yumuşak LED ışık geçişine sahip büyük boy kış evi temalı kar küresi. Sallamaya gerek kalmadan kar tanelerini küre içinde savurur.",
-      "price": 749,
-      "stock": 9,
-      "published": true,
-      "image": "/ensar-web/gorseller/urun-puskurtmeli-kar-kuresi.webp",
-      "gallery": [
-        "/ensar-web/gorseller/urun-puskurtmeli-kar-kuresi.webp"
-      ],
-      "imageAlt": "Karlı kış evi figürlü, ışıklı ve otomatik püskürtmeli büyük boy cam kar küresi",
-      "isConceptImage": true,
-      "isNewArrival": true,
-      "newArrivalOrder": 2,
-      "occasions": [
-        "Yılbaşı",
-        "Doğum Günü",
-        "Sevgililer Günü",
-        "Ev Hediyesi"
-      ],
-      "giftTypes": [
-        "Işıklı Ürünler",
-        "Cam Küreler",
-        "Müzik Kutuları"
-      ],
-      "options": [
-        {
-          "name": "Boyut",
-          "required": true,
-          "values": [
-            "Büyük Boy (16 cm)",
-            "Mega Boy (18 cm)"
-          ]
-        }
-      ],
-      "legacyPath": "/Kar küresi çeşitleri?product_id=490"
     },
     {
       "id": "prod-564",
@@ -11187,5 +11141,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795530653036
+  "updatedAt": 1795530670807
 }
