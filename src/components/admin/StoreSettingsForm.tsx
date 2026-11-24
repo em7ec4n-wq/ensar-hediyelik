@@ -26,6 +26,9 @@ export function StoreSettingsForm({
   const [workingHours, setWorkingHours] = useState(settings.workingHours);
   const [address, setAddress] = useState(settings.address);
   const [deliverySummary, setDeliverySummary] = useState(settings.deliverySummary);
+  const [hidePricesForGuests, setHidePricesForGuests] = useState(
+    settings.hidePricesForGuests ?? true
+  );
   const [isSaved, setIsSaved] = useState(false);
 
   const isInputFocusedRef = useRef(false);
@@ -38,6 +41,7 @@ export function StoreSettingsForm({
       setWorkingHours((prev) => (prev === settings.workingHours ? prev : settings.workingHours));
       setAddress((prev) => (prev === settings.address ? prev : settings.address));
       setDeliverySummary((prev) => (prev === settings.deliverySummary ? prev : settings.deliverySummary));
+      setHidePricesForGuests((prev) => (prev === (settings.hidePricesForGuests ?? true) ? prev : (settings.hidePricesForGuests ?? true)));
     }
   }, [
     settings.phoneDisplay,
@@ -46,6 +50,7 @@ export function StoreSettingsForm({
     settings.workingHours,
     settings.address,
     settings.deliverySummary,
+    settings.hidePricesForGuests,
   ]);
 
   const saveSettings = async () => {
@@ -56,8 +61,9 @@ export function StoreSettingsForm({
     next.settings.workingHours = workingHours.trim();
     next.settings.address = address.trim();
     next.settings.deliverySummary = deliverySummary.trim();
+    next.settings.hidePricesForGuests = hidePricesForGuests;
 
-    await commitStore(next, "✓ Mağaza iletişim ve teslimat bilgileri kaydedildi", undefined, true);
+    await commitStore(next, "✓ Mağaza ayarları ve toptan satış modu kaydedildi", undefined, true);
     setIsSaved(true);
     setTimeout(() => setIsSaved(false), 2500);
   };
@@ -127,6 +133,41 @@ export function StoreSettingsForm({
 
       {/* Contact & Address & Delivery */}
       <div className="ensar-card grid grid-cols-1 gap-4 p-6 sm:grid-cols-2">
+        {/* B2B Wholesale Pricing Mode Toggle */}
+        <div className="sm:col-span-2 rounded-2xl border-2 border-[#321B2D]/20 bg-[#FFFDF8] p-4 sm:p-5">
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-base">🔒</span>
+                <span className="text-sm font-bold text-[#241722]">
+                  B2B Toptan Fiyat Kilidi (Üye Girişi Zorunluluğu)
+                </span>
+                <span
+                  className={`rounded-full px-2.5 py-0.5 text-[11px] font-bold ${
+                    hidePricesForGuests
+                      ? "bg-amber-100 text-amber-900 border border-amber-300"
+                      : "bg-stone-100 text-stone-700 border border-stone-300"
+                  }`}
+                >
+                  {hidePricesForGuests ? "● Aktif (Fiyatlar Ziyaretçilere Gizli)" : "○ Kapalı (Herkes Fiyatı Görür)"}
+                </span>
+              </div>
+              <p className="mt-1.5 text-xs text-[#5F505C] leading-relaxed">
+                Bu ayar açıkken üye girişi yapmayan ziyaretçiler toptan fiyatları göremez (&ldquo;🔒 Toptan Fiyatı Gör / Bayi Girişi&rdquo; görünür). Sadece kayıtlı toptan bayiler fiyatları görebilir ve sipariş verebilir.
+              </p>
+            </div>
+            <label className="relative inline-flex cursor-pointer items-center shrink-0 mt-0.5">
+              <input
+                type="checkbox"
+                checked={hidePricesForGuests}
+                onChange={(e) => setHidePricesForGuests(e.target.checked)}
+                className="peer sr-only"
+              />
+              <div className="peer h-7 w-12 rounded-full bg-stone-300 after:absolute after:left-[3px] after:top-[3px] after:h-5.5 after:w-5.5 after:rounded-full after:bg-white after:transition-all after:content-[''] peer-checked:bg-[#321B2D] peer-checked:after:translate-x-5 peer-focus:outline-none"></div>
+            </label>
+          </div>
+        </div>
+
         <div>
           <label className="block text-xs font-bold text-[#241722]">
             Telefon Numarası (Sitede Görünen)
@@ -135,7 +176,10 @@ export function StoreSettingsForm({
             type="text"
             value={phoneDisplay}
             onChange={(e) => setPhoneDisplay(e.target.value)}
-            className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-[16px] sm:text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
 
@@ -147,7 +191,10 @@ export function StoreSettingsForm({
             type="text"
             value={whatsappNumber}
             onChange={(e) => setWhatsappNumber(e.target.value)}
-            className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-[16px] sm:text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
 
@@ -159,7 +206,10 @@ export function StoreSettingsForm({
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-[16px] sm:text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
 
@@ -171,7 +221,10 @@ export function StoreSettingsForm({
             type="text"
             value={workingHours}
             onChange={(e) => setWorkingHours(e.target.value)}
-            className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-[16px] sm:text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
 
@@ -183,7 +236,10 @@ export function StoreSettingsForm({
             type="text"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
-            className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-[16px] sm:text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
 
@@ -195,8 +251,11 @@ export function StoreSettingsForm({
             rows={2}
             value={deliverySummary}
             onChange={(e) => setDeliverySummary(e.target.value)}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
             placeholder="Örn: Siparişleriniz, sipariş tarihini takip eden ikinci gün sevk edilir."
-            className="mt-1 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] p-3 text-sm focus:border-[#321B2D] focus:outline-none"
+            className="mt-1 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] p-3 text-[16px] sm:text-sm focus:border-[#321B2D] focus:outline-none"
           />
         </div>
 

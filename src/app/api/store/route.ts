@@ -16,18 +16,10 @@ function cleanYilbasiProducts(products: StoreData["products"]): StoreData["produ
     if (!p) continue;
     const isYilbasi =
       (p.id && p.id.startsWith("yilbasi-")) ||
-      (p.name && (p.name.includes("Yılbaşı") || p.name.includes("Noel")));
+      (p.name && (p.name.includes("Yılbaşı") || p.name.includes("Noel") || p.name.includes("Kardan Adam")));
     if (isYilbasi) {
-      if (Array.isArray(p.extraCategorySlugs)) {
-        p.extraCategorySlugs = p.extraCategorySlugs.filter((s) => s !== "muzik-kutulari");
-      }
-      if (
-        p.categorySlug === "muzik-kutulari" ||
-        p.categorySlug === "isikli-hediyeler" ||
-        (p.id.startsWith("yilbasi-") && p.categorySlug === "hediyelik-urunler")
-      ) {
-        p.categorySlug = "yilbasi";
-      }
+      p.categorySlug = "yilbasi";
+      p.extraCategorySlugs = [];
     }
   }
   return products;

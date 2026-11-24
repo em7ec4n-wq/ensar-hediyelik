@@ -179,8 +179,15 @@ export function AdminProductCard({
                 type="text"
                 value={name}
                 aria-label="Ürün adı"
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="none"
+                spellCheck={false}
                 onFocus={() => {
                   isInputFocusedRef.current = true;
+                }}
+                onBlur={() => {
+                  isInputFocusedRef.current = false;
                 }}
                 onChange={(e) => setName(e.target.value)}
                 onKeyDown={(e) => {
@@ -189,7 +196,7 @@ export function AdminProductCard({
                     e.currentTarget.blur();
                   }
                 }}
-                className="mt-0.5 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm font-semibold text-[#241722] focus:border-[#321B2D] focus:outline-none sm:min-w-[280px]"
+                className="mt-0.5 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-[16px] sm:text-sm font-semibold text-[#241722] focus:border-[#321B2D] focus:outline-none sm:min-w-[280px]"
               />
             </div>
 
@@ -265,8 +272,14 @@ export function AdminProductCard({
               inputMode="decimal"
               value={priceStr}
               placeholder="0"
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck={false}
               onFocus={() => {
                 isInputFocusedRef.current = true;
+              }}
+              onBlur={() => {
+                isInputFocusedRef.current = false;
               }}
               onChange={(e) => setPriceStr(e.target.value)}
               onKeyDown={(e) => {
@@ -275,7 +288,7 @@ export function AdminProductCard({
                   e.currentTarget.blur();
                 }
               }}
-              className="mt-0.5 h-10 w-full rounded-xl border-2 border-[#321B2D]/35 bg-[#FFFDF8] px-3 text-base font-bold text-[#321B2D] focus:border-[#321B2D] focus:outline-none sm:w-28"
+              className="mt-0.5 h-10 w-full rounded-xl border-2 border-[#321B2D]/35 bg-[#FFFDF8] px-3 text-[16px] sm:text-base font-bold text-[#321B2D] focus:border-[#321B2D] focus:outline-none sm:w-28"
             />
           </div>
 
@@ -445,8 +458,15 @@ export function AdminProductCard({
               <input
                 type="text"
                 value={sku}
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="none"
+                spellCheck={false}
                 onFocus={() => {
                   isInputFocusedRef.current = true;
+                }}
+                onBlur={() => {
+                  isInputFocusedRef.current = false;
                 }}
                 onChange={(e) => setSku(e.target.value)}
                 onKeyDown={(e) => {
@@ -455,7 +475,7 @@ export function AdminProductCard({
                     e.currentTarget.blur();
                   }
                 }}
-                className="mt-1 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm focus:border-[#321B2D] focus:outline-none uppercase"
+                className="mt-1 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-[16px] sm:text-sm focus:border-[#321B2D] focus:outline-none uppercase"
               />
             </div>
 
@@ -466,8 +486,14 @@ export function AdminProductCard({
               <input
                 type="text"
                 value={description}
+                autoComplete="off"
+                autoCorrect="off"
+                spellCheck={false}
                 onFocus={() => {
                   isInputFocusedRef.current = true;
+                }}
+                onBlur={() => {
+                  isInputFocusedRef.current = false;
                 }}
                 onChange={(e) => setDescription(e.target.value)}
                 onKeyDown={(e) => {
@@ -477,7 +503,7 @@ export function AdminProductCard({
                   }
                 }}
                 placeholder="Ürün açıklaması…"
-                className="mt-1 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-sm focus:border-[#321B2D] focus:outline-none"
+                className="mt-1 h-10 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3 text-[16px] sm:text-sm focus:border-[#321B2D] focus:outline-none"
               />
             </div>
           </div>

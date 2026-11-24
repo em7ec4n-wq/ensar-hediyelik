@@ -90,6 +90,17 @@ export interface Order {
   status: "Yeni" | "Hazırlanıyor" | "Kargolandı" | "Teslim Edildi" | "İptal";
 }
 
+export interface WholesaleMember {
+  id: string;
+  companyName: string; // Mağaza / Firma Adı
+  contactName: string; // Yetkili Adı Soyadı
+  phone: string; // Telefon / WhatsApp numarası
+  email?: string; // E-posta
+  city?: string; // Şehir / İlçe
+  password?: string;
+  createdAt: string; // Tarih
+}
+
 export interface StoreSettings {
   brandName: string;
   logoLightBg: string; // /ensar-web/logo/ensar-logo-seffaf.png
@@ -108,6 +119,7 @@ export interface StoreSettings {
   returnSummary: string;
   paymentSummary: string;
   agencyRoleNote: string;
+  hidePricesForGuests?: boolean; // Toptan satış: misafirlere fiyatları gizle
 }
 
 export interface StoreData {
@@ -116,6 +128,7 @@ export interface StoreData {
   categories: Category[];
   products: Product[];
   orders: Order[];
+  members?: WholesaleMember[];
   updatedAt?: number;
 }
 

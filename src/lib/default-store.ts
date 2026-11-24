@@ -28,6 +28,7 @@ export const DEFAULT_STORE_DATA: StoreData = {
       "Ödeme akışı işletmenin onayladığı kredi kartı (3D Secure), havale/EFT ve kapıda ödeme seçenekleriyle devreye alınır.",
     agencyRoleNote:
       "Bu web sitesinin arayüz tasarımı, yazılım geliştirme, katalog geçiş altyapısı ve teknik danışmanlık hizmetleri İlay Ajans tarafından hazırlanmıştır. Satış, fiyatlandırma, faturalandırma, kargo ve müşteri ilişkileri münhasıran Ensar Hediyelik sorumluluğundadır.",
+    hidePricesForGuests: true,
   },
   heroSlides: [
     {
@@ -275,4 +276,5 @@ export const DEFAULT_STORE_DATA: StoreData = {
     ...CATALOG_PRODUCTS,
   ],
   orders: [],
+  members: [],
 };

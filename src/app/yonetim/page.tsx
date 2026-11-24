@@ -17,7 +17,7 @@ import { BulkCategoryModal } from "@/components/admin/BulkCategoryModal";
 import { HeroSlideCard } from "@/components/admin/HeroSlideCard";
 import { EditProductModal } from "@/components/admin/EditProductModal";
 
-type TabKey = "urunler" | "kategoriler" | "vitrin" | "siparisler" | "magaza";
+type TabKey = "urunler" | "kategoriler" | "vitrin" | "siparisler" | "bayiler" | "magaza";
 
 function slugifyTR(input: string): string {
   return String(input || "")
@@ -248,7 +248,10 @@ export default function AdminPanelPage() {
         categorySlug: finalCatSlug,
         extraCategorySlugs: extraCats,
         description: newProdDesc.trim(),
-        price: newProdPrice !== "" ? Number(newProdPrice) : 0,
+        price:
+          newProdPrice.trim() !== ""
+            ? Number(newProdPrice.replace(",", ".")) || 0
+            : 0,
         stock: 99,
         published: true,
         image: cover,
@@ -559,6 +562,18 @@ export default function AdminPanelPage() {
           }`}
         >
           🛍️ Siparişler ({store.orders.length})
+        </button>
+
+        <button
+          type="button"
+          onClick={() => setActiveTab("bayiler")}
+          className={`min-h-[44px] rounded-xl px-5 text-sm font-bold transition-all ${
+            activeTab === "bayiler"
+              ? "bg-[#321B2D] text-[#F7F3EB] shadow"
+              : "bg-white text-[#5F505C] hover:bg-stone-100"
+          }`}
+        >
+          👥 Bayiler ({store.members?.length || 0})
         </button>
 
         <button
@@ -1238,6 +1253,117 @@ export default function AdminPanelPage() {
       )}
 
       {/* ========================================================= */}
+      {/* TAB: BAYİLER (TOPTAN ÜYELER)                              */}
+      {/* ========================================================= */}
+      {activeTab === "bayiler" && (
+        <div className="mt-5 space-y-5">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <h2 className="font-heading text-xl font-bold text-[#241722]">
+                👥 Kayıtlı Toptan Bayiler ({store.members?.length || 0})
+              </h2>
+              <p className="mt-0.5 text-xs text-[#5F505C]">
+                Siteden kayıt olan veya toptan fiyatları görüntüleme yetkisi verilen bayi listesi.
+              </p>
+            </div>
+          </div>
+
+          {!store.members || store.members.length === 0 ? (
+            <div className="ensar-card p-10 text-center text-sm text-[#5F505C]">
+              Henüz kayıtlı toptan bayi bulunmuyor. Ziyaretçiler site üzerinden veya /hesabim sayfasından bayi kaydı oluşturduklarında burada listelenecektir.
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {store.members.map((m) => {
+                const regDate = m.createdAt
+                  ? new Date(m.createdAt).toLocaleDateString("tr-TR", {
+                      day: "2-digit",
+                      month: "short",
+                      year: "numeric",
+                    })
+                  : "-";
+                const waUrl = buildWhatsAppGeneralUrl(
+                  m.phone,
+                  `Merhaba ${m.contactName}, Ensar Hediyelik'ten toptan bayiliğiniz hakkında yazıyorum.`
+                );
+
+                return (
+                  <div
+                    key={m.id}
+                    className="ensar-card flex flex-col justify-between p-5 bg-white shadow-xs space-y-3"
+                  >
+                    <div>
+                      <div className="flex items-start justify-between gap-2">
+                        <span className="rounded-md bg-amber-100 px-2 py-0.5 text-[10px] font-bold text-amber-900 border border-amber-300">
+                          ★ Toptan Bayi
+                        </span>
+                        <span className="text-[11px] text-[#786875]">{regDate}</span>
+                      </div>
+
+                      <h3 className="font-heading mt-2 text-base font-bold text-[#241722]">
+                        {m.companyName || m.contactName}
+                      </h3>
+                      {m.companyName && (
+                        <p className="text-xs text-[#5F505C]">Yetkili: {m.contactName}</p>
+                      )}
+
+                      <div className="mt-3 space-y-1 text-xs text-[#4C3C49]">
+                        <p>
+                          📞 <strong>Telefon:</strong> {m.phone}
+                        </p>
+                        {m.city && (
+                          <p>
+                            📍 <strong>Şehir:</strong> {m.city}
+                          </p>
+                        )}
+                        {m.email && (
+                          <p>
+                            ✉️ <strong>E-posta:</strong> {m.email}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+
+                    <div className="flex items-center justify-between border-t border-[#EFE7DC] pt-3">
+                      <a
+                        href={waUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-700 px-3 py-1.5 text-xs font-bold text-white hover:bg-emerald-800 transition-colors"
+                      >
+                        <WhatsAppIcon size={14} />
+                        <span>WhatsApp</span>
+                      </a>
+
+                      <button
+                        type="button"
+                        onClick={async () => {
+                          if (
+                            confirm(
+                              `"${m.companyName || m.contactName}" bayisini silmek istediğinize emin misiniz?`
+                            )
+                          ) {
+                            const next = structuredClone(store);
+                            next.members = (next.members || []).filter(
+                              (mem) => mem.id !== m.id
+                            );
+                            await commitStore(next, "✓ Bayi silindi");
+                          }
+                        }}
+                        className="text-xs font-semibold text-rose-700 hover:underline"
+                      >
+                        Sil
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* ========================================================= */}
       {/* TAB 5: MAĞAZA BİLGİLERİ                                   */}
       {/* ========================================================= */}
       {activeTab === "magaza" && (
@@ -1383,8 +1509,12 @@ export default function AdminPanelPage() {
                   required
                   value={newProdName}
                   onChange={(e) => setNewProdName(e.target.value)}
+                  autoComplete="off"
+                  autoCorrect="off"
+                  autoCapitalize="none"
+                  spellCheck={false}
                   placeholder="Örn: Işıklı Müzikli Kar Küresi"
-                  className="mt-1.5 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
+                  className="mt-1.5 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-[16px] sm:text-sm focus:border-[#321B2D] focus:outline-none"
                 />
               </div>
 
@@ -1394,13 +1524,15 @@ export default function AdminPanelPage() {
                     3. Satış Fiyatı (TL)
                   </label>
                   <input
-                    type="number"
-                    min={0}
-                    step="any"
+                    type="text"
+                    inputMode="decimal"
                     value={newProdPrice}
                     onChange={(e) => setNewProdPrice(e.target.value)}
+                    autoComplete="off"
+                    autoCorrect="off"
+                    spellCheck={false}
                     placeholder="Örn: 450"
-                    className="mt-1.5 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
+                    className="mt-1.5 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-[16px] sm:text-sm font-bold text-[#321B2D] focus:border-[#321B2D] focus:outline-none"
                   />
                 </div>
 
@@ -1510,8 +1642,12 @@ export default function AdminPanelPage() {
                   <input
                     value={newProdSku}
                     onChange={(e) => setNewProdSku(e.target.value)}
+                    autoComplete="off"
+                    autoCorrect="off"
+                    autoCapitalize="none"
+                    spellCheck={false}
                     placeholder="Örn: ENS-102"
-                    className="mt-1.5 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-sm focus:border-[#321B2D] focus:outline-none"
+                    className="mt-1.5 h-11 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] px-3.5 text-[16px] sm:text-sm focus:border-[#321B2D] focus:outline-none uppercase"
                   />
                 </div>
 
@@ -1536,8 +1672,11 @@ export default function AdminPanelPage() {
                   rows={3}
                   value={newProdDesc}
                   onChange={(e) => setNewProdDesc(e.target.value)}
+                  autoComplete="off"
+                  autoCorrect="off"
+                  spellCheck={false}
                   placeholder="Ürün özellikleri, ebatları, materyali…"
-                  className="mt-1.5 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] p-3 text-sm focus:border-[#321B2D] focus:outline-none"
+                  className="mt-1.5 w-full rounded-xl border border-[#DDD3C6] bg-[#FFFDF8] p-3 text-[16px] sm:text-sm focus:border-[#321B2D] focus:outline-none"
                 />
               </div>
 

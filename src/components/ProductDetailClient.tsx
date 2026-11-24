@@ -7,6 +7,7 @@ import type { Product, StoreSettings } from "@/types/store";
 import { formatPriceTRY, buildWhatsAppProductUrl } from "@/lib/format";
 import { useCart } from "./CartProvider";
 import { useLiveStore } from "./StoreProvider";
+import { useWholesaleAuth } from "./WholesaleAuthProvider";
 import { BagIcon, WhatsAppIcon } from "./Icons";
 
 interface ProductDetailClientProps {
@@ -38,6 +39,7 @@ function ProductDetailInner({
   const isPreview = searchParams.get("onizleme") === "1";
 
   const { addItem } = useCart();
+  const { isPriceVisible, openAuthModal } = useWholesaleAuth();
   const gallery = product.gallery?.length ? product.gallery : [product.image];
   const [activeImage, setActiveImage] = useState(gallery[0]);
 
@@ -251,15 +253,36 @@ function ProductDetailInner({
 
           {/* Verified Price */}
           <div className="mt-4 flex flex-wrap items-center gap-4">
-            <p
-              className={`font-semibold ${
-                hasValidPrice
-                  ? "text-[28px] text-[#321B2D]"
-                  : "text-base text-[#6F606C]"
-              }`}
-            >
-              {formatPriceTRY(product.price)}
-            </p>
+            {isPriceVisible ? (
+              <p
+                className={`font-semibold ${
+                  hasValidPrice
+                    ? "text-[28px] text-[#321B2D]"
+                    : "text-base text-[#6F606C]"
+                }`}
+              >
+                {formatPriceTRY(product.price)}
+              </p>
+            ) : (
+              <div className="w-full rounded-2xl border border-[#321B2D]/20 bg-[#FFFDF8] p-4 text-left shadow-xs">
+                <div className="flex items-center gap-2 text-[#321B2D]">
+                  <span className="text-xl">🔒</span>
+                  <span className="font-heading text-base font-bold">
+                    Toptan Fiyatı Görmek İçin Bayi Girişi Yapın
+                  </span>
+                </div>
+                <p className="mt-1 text-xs text-[#5F505C]">
+                  Firmamız yalnızca toptan satış yapmaktadır. Toptan fiyatları görebilmek ve sipariş verebilmek için lütfen bayi girişi yapın.
+                </p>
+                <button
+                  type="button"
+                  onClick={() => openAuthModal("login")}
+                  className="mt-3 inline-flex min-h-[40px] items-center gap-2 rounded-xl bg-[#321B2D] px-5 text-xs font-bold text-[#F7F3EB] shadow hover:bg-[#44253D]"
+                >
+                  <span>Giriş Yap / Bayi Ol</span>
+                </button>
+              </div>
+            )}
           </div>
 
           {product.description && (
@@ -369,15 +392,25 @@ function ProductDetailInner({
 
           {/* Primary Actions: Add to Cart + Tool 2 (WhatsApp'tan Sor) */}
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-            <button
-              type="button"
-              onClick={handleAddToCart}
-              disabled={!canPurchase}
-              className="inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-full bg-[#321B2D] px-6 py-3 text-[15px] font-semibold text-[#F7F3EB] transition-colors hover:bg-[#44253D] disabled:cursor-not-allowed disabled:opacity-50"
-            >
-              <BagIcon size={19} />
-              <span>{hasValidPrice ? "Sepete Ekle" : "Fiyat Bekleniyor"}</span>
-            </button>
+            {isPriceVisible ? (
+              <button
+                type="button"
+                onClick={handleAddToCart}
+                disabled={!canPurchase}
+                className="inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-full bg-[#321B2D] px-6 py-3 text-[15px] font-semibold text-[#F7F3EB] transition-colors hover:bg-[#44253D] disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                <BagIcon size={19} />
+                <span>{hasValidPrice ? "Sepete Ekle" : "Fiyat Bekleniyor"}</span>
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={() => openAuthModal("login")}
+                className="inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-full bg-[#321B2D] px-6 py-3 text-[15px] font-semibold text-[#F7F3EB] shadow transition-colors hover:bg-[#44253D]"
+              >
+                <span>🔒 Fiyatları Görmek ve Sipariş İçin Giriş Yapın</span>
+              </button>
+            )}
 
             <button
               type="button"

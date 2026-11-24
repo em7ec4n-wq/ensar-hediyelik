@@ -4,6 +4,7 @@ import React, { useMemo, useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import type { Product } from "@/types/store";
 import { formatPriceTRY } from "@/lib/format";
+import { useWholesaleAuth } from "./WholesaleAuthProvider";
 import {
   GiftIcon,
   LightIcon,
@@ -166,6 +167,7 @@ function ModernFilterDropdown({
 }
 
 export function GiftFinder({ products }: GiftFinderProps) {
+  const { isPriceVisible } = useWholesaleAuth();
   const published = useMemo(
     () => products.filter((p) => p.published),
     [products]
@@ -327,7 +329,7 @@ export function GiftFinder({ products }: GiftFinderProps) {
                     </p>
                     {!isPreviewMode && (
                       <p className="mt-0.5 text-xs font-medium text-[#5F505C]">
-                        {formatPriceTRY(product.price)}
+                        {isPriceVisible ? formatPriceTRY(product.price) : "🔒 Toptan Fiyat"}
                       </p>
                     )}
                   </div>

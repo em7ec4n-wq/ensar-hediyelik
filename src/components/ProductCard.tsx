@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import type { Product } from "@/types/store";
 import { formatPriceTRY } from "@/lib/format";
 import { DEFAULT_STORE_DATA } from "@/lib/default-store";
+import { useWholesaleAuth } from "./WholesaleAuthProvider";
 
 const STATIC_PRODUCT_SLUGS = new Set(
   DEFAULT_STORE_DATA.products.map((p) => p.slug)
@@ -21,6 +24,7 @@ export function getProductHref(slug: string): string {
 }
 
 export function ProductCard({ product }: ProductCardProps) {
+  const { isPriceVisible, openAuthModal } = useWholesaleAuth();
   const galleryCount = product.gallery?.length || 1;
   const href = getProductHref(product.slug);
 
@@ -60,9 +64,16 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
 
         <div className="mt-2.5 flex items-center justify-between border-t border-[#F2ECE4] pt-2.5 sm:mt-3 sm:pt-3">
-          <span className="text-[14px] font-bold text-[#321B2D] sm:text-[17px]">
-            {formatPriceTRY(product.price)}
-          </span>
+          {isPriceVisible ? (
+            <span className="text-[14px] font-bold text-[#321B2D] sm:text-[17px]">
+              {formatPriceTRY(product.price)}
+            </span>
+          ) : (
+            <span className="inline-flex items-center gap-1 rounded-full bg-[#321B2D]/8 px-2 py-0.5 text-[11px] font-bold text-[#321B2D]">
+              <span>🔒</span>
+              <span>Fiyatı Gör</span>
+            </span>
+          )}
           <span className="rounded-full bg-[#F7F3EB] px-2 py-0.5 text-[11px] font-semibold text-[#321B2D] transition-colors group-hover:bg-[#321B2D] group-hover:text-white sm:px-3 sm:py-1 sm:text-xs">
             İncele →
           </span>

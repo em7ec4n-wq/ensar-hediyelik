@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useLiveStore } from "./StoreProvider";
 import { formatPriceTRY } from "@/lib/format";
+import { useWholesaleAuth } from "./WholesaleAuthProvider";
 import { HeroCarousel } from "./HeroCarousel";
 import { ChevronRightIcon, GiftIcon } from "./Icons";
 import { getProductHref } from "./ProductCard";
@@ -11,6 +12,7 @@ import { getCategoryHref } from "./CategoriesClient";
 
 export function HomeClient() {
   const { store } = useLiveStore();
+  const { isPriceVisible } = useWholesaleAuth();
 
   // Order categories cleanly with Yılbaşı Ürünleri and main categories stacked vertically & larger
   const allMainCategories = store.categories.filter((c) => !c.parentSlug);
@@ -133,7 +135,7 @@ export function HomeClient() {
                   {product.shortName || product.name}
                 </h3>
                 <p className="mt-1 text-sm font-bold text-[#321B2D]">
-                  {formatPriceTRY(product.price)}
+                  {isPriceVisible ? formatPriceTRY(product.price) : "🔒 Toptan Fiyat"}
                 </p>
               </div>
             </Link>

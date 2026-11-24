@@ -188,9 +188,9 @@ export function EditProductModal({
     <div
       role="dialog"
       aria-modal="true"
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-3 sm:p-5 backdrop-blur-xs animate-in fade-in duration-150"
+      className="fixed inset-0 z-50 flex items-start sm:items-center justify-center bg-black/75 p-2 sm:p-5 backdrop-blur-xs overflow-y-auto"
     >
-      <div className="ensar-card flex max-h-[92vh] w-full max-w-2xl flex-col overflow-hidden bg-[#F7F3EB] shadow-2xl">
+      <div className="ensar-card my-auto flex max-h-[92dvh] sm:max-h-[90vh] w-full max-w-2xl flex-col overflow-hidden bg-[#F7F3EB] shadow-2xl">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-[#E5DCD0] bg-white px-5 py-4">
           <div>
@@ -298,8 +298,12 @@ export function EditProductModal({
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
+              autoComplete="off"
+              autoCorrect="off"
+              autoCapitalize="none"
+              spellCheck={false}
               placeholder="Örn: Balina Kar Küresi Işıklı Müzikli"
-              className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-white px-3.5 text-sm font-semibold text-[#241722] focus:border-[#321B2D] focus:outline-none"
+              className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-white px-3.5 text-[16px] sm:text-sm font-semibold text-[#241722] focus:border-[#321B2D] focus:outline-none"
             />
           </div>
 
@@ -314,8 +318,12 @@ export function EditProductModal({
                 inputMode="decimal"
                 value={priceStr}
                 onChange={(e) => setPriceStr(e.target.value)}
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="none"
+                spellCheck={false}
                 placeholder="Örn: 450"
-                className="mt-1 h-11 w-full rounded-xl border-2 border-[#321B2D]/40 bg-white px-3.5 text-base font-bold text-[#321B2D] focus:border-[#321B2D] focus:outline-none"
+                className="mt-1 h-11 w-full rounded-xl border-2 border-[#321B2D]/40 bg-white px-3.5 text-[16px] sm:text-base font-bold text-[#321B2D] focus:border-[#321B2D] focus:outline-none"
               />
             </div>
 
@@ -327,8 +335,12 @@ export function EditProductModal({
                 type="text"
                 value={sku}
                 onChange={(e) => setSku(e.target.value)}
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="none"
+                spellCheck={false}
                 placeholder="Örn: ENS-102"
-                className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-white px-3.5 text-sm font-semibold text-[#241722] focus:border-[#321B2D] focus:outline-none uppercase"
+                className="mt-1 h-11 w-full rounded-xl border border-[#DDD3C6] bg-white px-3.5 text-[16px] sm:text-sm font-semibold text-[#241722] focus:border-[#321B2D] focus:outline-none uppercase"
               />
             </div>
           </div>
@@ -413,8 +425,11 @@ export function EditProductModal({
                   type="text"
                   value={newSubcatName}
                   onChange={(e) => setNewSubcatName(e.target.value)}
+                  autoComplete="off"
+                  autoCorrect="off"
+                  spellCheck={false}
                   placeholder={`"${mainCategories.find((c) => c.slug === mainCatSlug)?.name || "Bu kategori"}" altına eklenecek yeni alt kategori adı…`}
-                  className="h-10 flex-1 rounded-xl border border-[#DDD3C6] bg-white px-3 text-xs font-medium text-[#241722] focus:border-[#321B2D] focus:outline-none"
+                  className="h-10 flex-1 rounded-xl border border-[#DDD3C6] bg-white px-3 text-[16px] sm:text-xs font-medium text-[#241722] focus:border-[#321B2D] focus:outline-none"
                 />
                 <button
                   type="button"
@@ -436,8 +451,11 @@ export function EditProductModal({
               rows={3}
               value={description}
               onChange={(e) => setDescription(e.target.value)}
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck={false}
               placeholder="Ürün ebatları, materyali veya özellikleri hakkında bilgi…"
-              className="mt-1 w-full rounded-xl border border-[#DDD3C6] bg-white p-3 text-xs font-medium text-[#241722] focus:border-[#321B2D] focus:outline-none"
+              className="mt-1 w-full rounded-xl border border-[#DDD3C6] bg-white p-3 text-[16px] sm:text-xs font-medium text-[#241722] focus:border-[#321B2D] focus:outline-none"
             />
           </div>
 

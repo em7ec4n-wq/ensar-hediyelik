@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import type { Category, StoreSettings } from "@/types/store";
 import { useCart } from "./CartProvider";
+import { useWholesaleAuth } from "./WholesaleAuthProvider";
 import {
   SearchIcon,
   BagIcon,
@@ -22,6 +23,7 @@ interface HeaderProps {
 export function Header({ settings, categories }: HeaderProps) {
   const router = useRouter();
   const { totalCount } = useCart();
+  const { member, openAuthModal, logout } = useWholesaleAuth();
   const [searchTerm, setSearchTerm] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
@@ -183,6 +185,41 @@ export function Header({ settings, categories }: HeaderProps) {
             />
           </form>
 
+          {/* Wholesale Dealer Button */}
+          {member ? (
+            <div className="flex items-center gap-2">
+              <Link
+                href="/hesabim"
+                className="flex items-center gap-1.5 rounded-full border border-[#321B2D]/25 bg-[#321B2D]/5 px-3 py-1.5 text-xs font-bold text-[#321B2D] hover:bg-[#321B2D]/10 transition-colors"
+              >
+                <span>👤</span>
+                <span className="max-w-[120px] truncate">
+                  {member.companyName || member.contactName}
+                </span>
+                <span className="rounded bg-[#321B2D] px-1 py-0.2 text-[10px] text-white">
+                  Bayi
+                </span>
+              </Link>
+              <button
+                type="button"
+                onClick={logout}
+                title="Çıkış Yap"
+                className="text-xs font-semibold text-rose-800 hover:underline"
+              >
+                Çıkış
+              </button>
+            </div>
+          ) : (
+            <button
+              type="button"
+              onClick={() => openAuthModal()}
+              className="flex items-center gap-1.5 rounded-full bg-[#321B2D] px-3.5 py-2 text-xs font-bold text-[#F7F3EB] shadow hover:bg-[#44253D] transition-colors"
+            >
+              <span>🔒</span>
+              <span>Bayi Girişi</span>
+            </button>
+          )}
+
           <Link
             href="/sepet"
             aria-label={`Sepet (${totalCount} ürün)`}
@@ -274,6 +311,58 @@ export function Header({ settings, categories }: HeaderProps) {
           aria-label="Mobil menü"
           className="border-t border-[#E5DCD0] bg-[#FFFDF8] px-4 pb-5 pt-3 shadow-lg lg:hidden"
         >
+          {/* Wholesale Status Card in Mobile Menu */}
+          <div className="mb-3 rounded-2xl border border-[#321B2D]/20 bg-[#F7F3EB] p-3">
+            {member ? (
+              <div className="flex items-center justify-between gap-2">
+                <div className="min-w-0">
+                  <p className="truncate text-xs font-bold text-[#321B2D]">
+                    👤 {member.companyName || member.contactName}
+                  </p>
+                  <p className="text-[11px] font-semibold text-emerald-800">
+                    ● Yetkili Bayi Girişi Açık
+                  </p>
+                </div>
+                <div className="flex items-center gap-1.5 shrink-0">
+                  <Link
+                    href="/hesabim"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="rounded-lg bg-[#321B2D] px-2.5 py-1 text-xs font-bold text-[#F7F3EB]"
+                  >
+                    Hesabım
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      logout();
+                      setMobileMenuOpen(false);
+                    }}
+                    className="rounded-lg border border-[#DDD3C6] bg-white px-2 py-1 text-xs font-semibold text-rose-800"
+                  >
+                    Çıkış
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <div className="flex items-center justify-between gap-2">
+                <div>
+                  <p className="text-xs font-bold text-[#321B2D]">🔒 Toptan Fiyatları Gör</p>
+                  <p className="text-[11px] text-[#5F505C]">Bayi girişi yapın veya kayıt olun</p>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    openAuthModal();
+                  }}
+                  className="rounded-full bg-[#321B2D] px-3.5 py-1.5 text-xs font-bold text-[#F7F3EB] shadow hover:bg-[#44253D] shrink-0"
+                >
+                  Bayi Girişi
+                </button>
+              </div>
+            )}
+          </div>
+
           <ul className="space-y-1">
             <li>
               <Link

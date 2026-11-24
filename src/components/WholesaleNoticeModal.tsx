@@ -2,37 +2,43 @@
 
 import React, { useState, useEffect } from "react";
 import { CloseIcon } from "@/components/Icons";
+import { useWholesaleAuth } from "./WholesaleAuthProvider";
 
 interface WholesaleNoticeModalProps {
   logoSrc?: string;
   brandName?: string;
 }
 
-const STORAGE_KEY = "ensar_wholesale_popup_seen_v3";
+const STORAGE_KEY = "ensar_wholesale_welcome_notice_v4";
 
 export function WholesaleNoticeModal({
   logoSrc = "/ensar-web/logo/ensar-logo-seffaf.png",
   brandName = "Ensar Hediyelik",
 }: WholesaleNoticeModalProps) {
+  const { member, openAuthModal } = useWholesaleAuth();
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    // Check if the user already dismissed it in this browser session
+    // If already logged in as a wholesale dealer, no need to show entrance notice
+    if (member) {
+      setIsOpen(false);
+      return;
+    }
+
     try {
       const seen = sessionStorage.getItem(STORAGE_KEY);
       if (!seen) {
-        // Small delay so page mounts smoothly before the big notice appears
         const timer = setTimeout(() => {
           setIsOpen(true);
-        }, 200);
+        }, 300);
         return () => clearTimeout(timer);
       }
     } catch {
       setIsOpen(true);
     }
-  }, []);
+  }, [member]);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -43,17 +49,22 @@ export function WholesaleNoticeModal({
     }
   };
 
-  if (!isOpen) return null;
+  const handleOpenAuth = () => {
+    handleClose();
+    openAuthModal();
+  };
+
+  if (!isOpen || member) return null;
 
   return (
     <div
       role="dialog"
       aria-modal="true"
       aria-labelledby="wholesale-notice-title"
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4 backdrop-blur-sm animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-3 sm:p-5 backdrop-blur-sm animate-in fade-in duration-200"
     >
       <div
-        className="relative w-full max-w-lg overflow-hidden rounded-3xl border-2 border-[#321B2D]/20 bg-[#FFFDF8] p-6 text-center shadow-2xl sm:p-8"
+        className="relative w-full max-w-lg overflow-hidden rounded-3xl border-2 border-[#321B2D]/20 bg-[#FFFDF8] p-5 text-center shadow-2xl sm:p-7 max-h-[95dvh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Close Button */}
@@ -61,22 +72,22 @@ export function WholesaleNoticeModal({
           type="button"
           onClick={handleClose}
           aria-label="Kapat"
-          className="absolute right-3.5 top-3.5 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-stone-100 text-[#241722] transition-colors hover:bg-stone-200 sm:right-4 sm:top-4 sm:h-10 sm:w-10"
+          className="absolute right-3.5 top-3.5 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-stone-100 text-[#241722] transition-colors hover:bg-stone-200"
         >
           <CloseIcon size={18} />
         </button>
 
-        {/* Brand Logo with safe horizontal clearance so close button never overlaps */}
-        <div className="flex justify-center px-12 pb-3 pt-1">
+        {/* Brand Logo */}
+        <div className="flex justify-center px-10 pb-2 pt-1">
           <img
             src={logoSrc}
             alt={brandName}
-            className="h-9 w-auto max-w-[200px] object-contain sm:h-11 sm:max-w-[240px]"
+            className="h-8 w-auto max-w-[190px] object-contain sm:h-10 sm:max-w-[230px]"
           />
         </div>
 
         {/* Announcement Badge */}
-        <div className="inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-3.5 py-1 text-xs font-bold text-amber-900">
+        <div className="inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-900">
           <span>📢</span>
           <span>ÖNEMLİ TOPTAN SATIŞ DUYURUSU</span>
         </div>
@@ -84,7 +95,7 @@ export function WholesaleNoticeModal({
         {/* Large Prominent Notice Headline */}
         <h2
           id="wholesale-notice-title"
-          className="font-heading mt-4 text-xl font-bold text-[#321B2D] sm:text-2xl sm:leading-tight"
+          className="font-heading mt-3 text-lg font-bold text-[#321B2D] sm:text-2xl sm:leading-snug"
         >
           Değerli Müşterilerimiz,
           <br />
@@ -92,8 +103,8 @@ export function WholesaleNoticeModal({
         </h2>
 
         {/* Big 10.000 TL Highlight Banner */}
-        <div className="my-4 rounded-2xl bg-[#321B2D] p-4 text-[#F7F3EB] shadow-inner sm:my-5 sm:p-5">
-          <p className="text-xs font-medium uppercase tracking-wider text-amber-200/90 sm:text-sm">
+        <div className="my-3.5 rounded-2xl bg-[#321B2D] p-4 text-[#F7F3EB] shadow-inner sm:my-4 sm:p-4.5">
+          <p className="text-xs font-medium uppercase tracking-wider text-amber-200/95 sm:text-sm">
             Sadece Toptan Satış Yapılmaktadır
           </p>
           <div className="mt-1 flex items-baseline justify-center gap-1.5">
@@ -106,31 +117,47 @@ export function WholesaleNoticeModal({
         </div>
 
         {/* Explanation Bullets */}
-        <div className="space-y-2 rounded-xl bg-[#F7F3EB] p-3.5 text-left text-xs font-medium text-[#4C3C49] sm:text-sm">
-          <div className="flex items-center gap-2">
-            <span className="text-emerald-700 font-bold">✓</span>
+        <div className="space-y-2 rounded-xl bg-[#F7F3EB] p-3 text-left text-xs font-medium text-[#4C3C49] sm:p-3.5 sm:text-sm">
+          <div className="flex items-start gap-2">
+            <span className="text-emerald-700 font-bold shrink-0 mt-0.5">✓</span>
             <span>Firmamız toptan satış politikasıyla çalışmaktadır.</span>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="text-emerald-700 font-bold">✓</span>
+          <div className="flex items-start gap-2">
+            <span className="text-emerald-700 font-bold shrink-0 mt-0.5">✓</span>
             <span>Sepet toplamı en az <strong>10.000 TL</strong> olmalıdır.</span>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="text-emerald-700 font-bold">✓</span>
+          <div className="flex items-start gap-2">
+            <span className="text-emerald-700 font-bold shrink-0 mt-0.5">✓</span>
+            <span>
+              <strong>Toptan fiyatları görmek</strong> ve sipariş vermek için bayi girişi yapılmalıdır.
+            </span>
+          </div>
+          <div className="flex items-start gap-2">
+            <span className="text-emerald-700 font-bold shrink-0 mt-0.5">✓</span>
             <span>
               Siparişleriniz, sipariş tarihini takip eden ikinci gün sevk edilir.
             </span>
           </div>
         </div>
 
-        {/* Primary CTA Button */}
-        <button
-          type="button"
-          onClick={handleClose}
-          className="mt-6 flex min-h-[52px] w-full items-center justify-center rounded-full bg-[#321B2D] px-6 text-sm font-bold text-[#F7F3EB] shadow-lg transition-transform hover:scale-[1.02] hover:bg-[#44253D] active:scale-[0.98] sm:text-base"
-        >
-          Anladım, Alışverişe Devam Et
-        </button>
+        {/* Action Buttons */}
+        <div className="mt-5 flex flex-col gap-2.5 sm:flex-row sm:gap-3">
+          <button
+            type="button"
+            onClick={handleOpenAuth}
+            className="flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-full bg-[#321B2D] px-5 text-sm font-bold text-[#F7F3EB] shadow-lg transition-transform hover:scale-[1.02] hover:bg-[#44253D] active:scale-[0.98]"
+          >
+            <span>🔒</span>
+            <span>Toptan Fiyatları Gör (Bayi Girişi)</span>
+          </button>
+          <button
+            type="button"
+            onClick={handleClose}
+            className="flex min-h-[44px] items-center justify-center rounded-full border border-[#DDD3C6] bg-white px-5 text-xs font-semibold text-[#5F505C] hover:bg-stone-100 sm:flex-initial"
+          >
+            Kataloğu İncele
+          </button>
+        </div>
       </div>
     </div>
   );
