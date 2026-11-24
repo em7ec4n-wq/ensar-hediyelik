@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795546943105",
+      "sku": "ENS-N4QE",
+      "slug": "yilisik-inek-aksesuar-pelus-45-cm",
+      "name": "yılışık inek aksesuar peluş 45 cm",
+      "shortName": "yılışık inek aksesuar peluş 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 160,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546914366-ntjss-IMG_4598.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795546914366-ntjss-IMG_4598.jpeg"
+      ],
+      "imageAlt": "yılışık inek aksesuar peluş 45 cm (ENS-N4QE)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795546882934",
       "sku": "ENS-GU0B",
       "slug": "yilisik-deve-aksesuar-pelus-45-cm",
@@ -11220,6 +11246,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795546883634,
+  "updatedAt": 1795546943680,
   "members": []
 }
