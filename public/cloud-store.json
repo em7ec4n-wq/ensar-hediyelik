@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795547727727",
+      "sku": "ENS-KCYO",
+      "slug": "kaplumbaga-pelus-45-cm",
+      "name": "kaplumbağa peluş 45 cm",
+      "shortName": "kaplumbağa peluş 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 265,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547706378-n4zky-IMG_4614.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547706378-n4zky-IMG_4614.jpeg"
+      ],
+      "imageAlt": "kaplumbağa peluş 45 cm (ENS-KCYO)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795547694295",
       "sku": "ENS-85RR",
       "slug": "avokado-pelus-55-cm",
@@ -11636,6 +11662,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795547694888,
+  "updatedAt": 1795547728382,
   "members": []
 }
