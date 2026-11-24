@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795536240579",
+      "sku": "ENS-NDT9",
+      "slug": "ask-olcer",
+      "name": "aşk ölçer",
+      "shortName": "aşk ölçer",
+      "categorySlug": "sevgililer-gunu",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 90,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795536243010-j0tae.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795536244315-lgrfi.png"
+      ],
+      "imageAlt": "aşk ölçer (ENS-NDT9)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Sevgililer Günü"
+      ]
+    },
+    {
       "id": "prod-490",
       "sku": "ENS-KK-490",
       "slug": "buyuk-boy-puskurtmeli-kar-kuresi",
@@ -11090,6 +11116,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795536063291,
+  "updatedAt": 1795536243005,
   "members": []
 }
