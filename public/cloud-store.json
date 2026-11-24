@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795547694295",
+      "sku": "ENS-85RR",
+      "slug": "avokado-pelus-55-cm",
+      "name": "avokado peluş 55 cm",
+      "shortName": "avokado peluş 55 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 265,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547666657-6owik-IMG_4613.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547666657-6owik-IMG_4613.jpeg"
+      ],
+      "imageAlt": "avokado peluş 55 cm (ENS-85RR)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795547656394",
       "sku": "ENS-OKV2",
       "slug": "pelus-ayicik-25-cm",
@@ -11610,6 +11636,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795547656966,
+  "updatedAt": 1795547694888,
   "members": []
 }
