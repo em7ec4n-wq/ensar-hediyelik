@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795549569173",
+      "sku": "ENS-9OEQ",
+      "slug": "tuylu-uzun-kulak-tavsan-pelus-50-cm",
+      "name": "tüylü uzun kulak tavşan peluş 50 cm",
+      "shortName": "tüylü uzun kulak tavşan peluş 50 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549545857-fszp4-IMG_4632.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549545857-fszp4-IMG_4632.jpeg"
+      ],
+      "imageAlt": "tüylü uzun kulak tavşan peluş 50 cm (ENS-9OEQ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795549500452",
       "sku": "ENS-FT0W",
       "slug": "tuylu-uzun-kulak-tavsan-krem-50-cm",
@@ -12052,6 +12078,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795549501068,
+  "updatedAt": 1795549569910,
   "members": []
 }
