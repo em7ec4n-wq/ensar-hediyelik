@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795547494147",
+      "sku": "ENS-AEGX",
+      "slug": "mira-bez-bebek-pelus-asorti-100cm",
+      "name": "mira bez bebek peluş asorti 100cm",
+      "shortName": "mira bez bebek peluş asorti 100cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 455,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547457125-3hzrj-IMG_4608.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547457125-3hzrj-IMG_4608.jpeg"
+      ],
+      "imageAlt": "mira bez bebek peluş asorti 100cm (ENS-AEGX)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795547433309",
       "sku": "ENS-JDT6",
       "slug": "fermuarli-surpriz-pelus-cilek-tabsan-50-cm",
@@ -11480,6 +11506,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795547433881,
+  "updatedAt": 1795547494854,
   "members": []
 }
