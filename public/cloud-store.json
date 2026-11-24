@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795545878436",
+      "sku": "ENS-TQHI",
+      "slug": "yilisik-canavar-aksesuar-pelus-45-cm",
+      "name": "yılışık  canavar aksesuar peluş 45 cm",
+      "shortName": "yılışık  canavar aksesuar peluş 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 168,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795545848276-uioqs-IMG_4590.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795545848276-uioqs-IMG_4590.jpeg"
+      ],
+      "imageAlt": "yılışık  canavar aksesuar peluş 45 cm (ENS-TQHI)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795537210264",
       "sku": "ENS-HVYZ",
       "slug": "yuzuk-kuttusu-lux",
@@ -11142,6 +11168,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795537212124,
+  "updatedAt": 1795545879207,
   "members": []
 }
