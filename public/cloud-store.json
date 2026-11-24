@@ -378,6 +378,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795531839511",
+      "sku": "005",
+      "slug": "mantar-lamba",
+      "name": "Mantar lamba",
+      "shortName": "Mantar lamba",
+      "categorySlug": "cam-kureler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 200,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531822593-n93uy-IMG_9390.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531822593-n93uy-IMG_9390.png"
+      ],
+      "imageAlt": "Mantar lamba (005)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Cam Küreler"
+      ]
+    },
+    {
       "id": "custom-1795531666079",
       "sku": "003",
       "slug": "yuvarlak-sihirli-ayna",
@@ -623,9 +649,9 @@
       "price": 290,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531667701-85lsk.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531841265-3zql9.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531668569-00hho.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531842255-6s0mz.jpg"
       ],
       "imageAlt": "Bavul m kutu (009)",
       "isConceptImage": false,
@@ -11375,5 +11401,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795531667696
+  "updatedAt": 1795531841261
 }
