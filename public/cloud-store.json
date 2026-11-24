@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795549113544",
+      "sku": "ENS-VB0L",
+      "slug": "uyku-bebek-pelus-35-cm",
+      "name": "uyku bebek peluş 35 cm",
+      "shortName": "uyku bebek peluş 35 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 235,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549098327-iyf91-IMG_4621.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549098327-iyf91-IMG_4621.jpeg"
+      ],
+      "imageAlt": "uyku bebek peluş 35 cm (ENS-VB0L)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795549087574",
       "sku": "ENS-W2Q1",
       "slug": "uyku-bebek-pelus-mavi",
@@ -11818,6 +11844,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795549088257,
+  "updatedAt": 1795549114234,
   "members": []
 }
