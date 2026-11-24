@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795549059282",
+      "sku": "ENS-CFE1",
+      "slug": "uyku-bebek-pelus-pembe-45-cm",
+      "name": "uyku bebek peluş pembe 45 cm",
+      "shortName": "uyku bebek peluş pembe 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 285,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549039003-3117m-IMG_4621.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549039003-3117m-IMG_4621.jpeg"
+      ],
+      "imageAlt": "uyku bebek peluş pembe 45 cm (ENS-CFE1)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795549026061",
       "sku": "ENS-AJGA",
       "slug": "uyku-bebek-pelus-mavi-45cm",
@@ -11766,6 +11792,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795549026676,
+  "updatedAt": 1795549059892,
   "members": []
 }
