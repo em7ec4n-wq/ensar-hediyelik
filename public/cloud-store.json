@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795547270384",
+      "sku": "ENS-KUV2",
+      "slug": "yilisik-zurafa-aksesuar-pelus-45-cm",
+      "name": "yılışık zürafa aksesuar peluş 45 cm",
+      "shortName": "yılışık zürafa aksesuar peluş 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 160,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547240664-h4v9r-IMG_4605.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547240664-h4v9r-IMG_4605.jpeg"
+      ],
+      "imageAlt": "yılışık zürafa aksesuar peluş 45 cm (ENS-KUV2)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795547220320",
       "sku": "ENS-FBK1",
       "slug": "yilisik-disi-ordek-aksesuar-pelus-45-cm",
@@ -11402,6 +11428,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795547220911,
+  "updatedAt": 1795547270867,
   "members": []
 }
