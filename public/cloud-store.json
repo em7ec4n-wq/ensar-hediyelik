@@ -378,6 +378,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795530744812",
+      "sku": "004",
+      "slug": "isikli-buyuk-boy-atli-karinca",
+      "name": "Işıklı büyük boy atlı karınca",
+      "shortName": "Işıklı büyük boy atlı karınca",
+      "categorySlug": "muzik-kutulari",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 180,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530723580-b96hg-IMG_9355.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530723580-b96hg-IMG_9355.jpeg"
+      ],
+      "imageAlt": "Işıklı büyük boy atlı karınca (004)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Müzik Kutuları"
+      ]
+    },
+    {
       "id": "custom-1795530703240",
       "sku": "004",
       "slug": "istiridye-balerin-m-kutu",
@@ -415,9 +441,9 @@
       "price": 290,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530704590-77qf9.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530746606-tl8fa.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530705596-kerem.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530747712-of6sk.jpg"
       ],
       "imageAlt": "Bavul m kutu (009)",
       "isConceptImage": false,
@@ -11167,5 +11193,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795530704587
+  "updatedAt": 1795530746603
 }
