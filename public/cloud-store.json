@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795550620995",
+      "sku": "ENS-DIIY",
+      "slug": "sevimli-yatan-kopek-pelus-50-cm",
+      "name": "sevimli yatan köpek peluş 50 cm",
+      "shortName": "sevimli yatan köpek peluş 50 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 375,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550586948-yeufp-IMG_4640.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795550586948-yeufp-IMG_4640.jpeg"
+      ],
+      "imageAlt": "sevimli yatan köpek peluş 50 cm (ENS-DIIY)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795550575677",
       "sku": "ENS-AI5S",
       "slug": "asorti-kapibara-pelus-35-cm",
@@ -12260,6 +12286,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795550576237,
+  "updatedAt": 1795550621569,
   "members": []
 }
