@@ -8,7 +8,7 @@
     "whatsappNumber": "905413567162",
     "email": "info@ensarhediyelik.com.tr",
     "address": "Şark Han Tomruk Sk. No:36/27 Tahtakale 34116 Fatih / İstanbul",
-    "workingHours": "Pazartesi – Cumartesi: 09:30 – 19:00",
+    "workingHours": "Pazartesi – Cumartesi: 09:30 – 18:00",
     "legalEntityName": "Ensar Hediyelik (Ticari unvan yayın öncesi işletme tarafından onaylanacaktır)",
     "taxOfficeAndNo": "Vergi dairesi ve numarası müşteri onayı ile eklenecektir",
     "shippingThreshold": 0,
@@ -378,6 +378,58 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795547694295",
+      "sku": "ENS-85RR",
+      "slug": "avokado-pelus-55-cm",
+      "name": "avokado peluş 55 cm",
+      "shortName": "avokado peluş 55 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 265,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547666657-6owik-IMG_4613.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547666657-6owik-IMG_4613.jpeg"
+      ],
+      "imageAlt": "avokado peluş 55 cm (ENS-85RR)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
+      "id": "custom-1795547727727",
+      "sku": "ENS-KCYO",
+      "slug": "kaplumbaga-pelus-45-cm",
+      "name": "kaplumbağa peluş 45 cm",
+      "shortName": "kaplumbağa peluş 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 265,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547706378-n4zky-IMG_4614.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547706378-n4zky-IMG_4614.jpeg"
+      ],
+      "imageAlt": "kaplumbağa peluş 45 cm (ENS-KCYO)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
     {
       "id": "custom-1795547656394",
       "sku": "ENS-OKV2",
@@ -11610,6 +11662,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795547656966,
+  "updatedAt": 1795548227203,
   "members": []
 }
