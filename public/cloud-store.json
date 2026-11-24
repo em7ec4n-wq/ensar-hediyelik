@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795549373122",
+      "sku": "ENS-KO90",
+      "slug": "ayakta-unicorn-fusya-30-cm",
+      "name": "ayakta unicorn fuşya 30 cm",
+      "shortName": "ayakta unicorn fuşya 30 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 200,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549323403-7zwl1-IMG_4629.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795549323403-7zwl1-IMG_4629.jpeg"
+      ],
+      "imageAlt": "ayakta unicorn fuşya 30 cm (ENS-KO90)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795549312582",
       "sku": "ENS-GO2Q",
       "slug": "ayakta-unicorn-lila-30-cm",
@@ -11974,6 +12000,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795549313266,
+  "updatedAt": 1795549373793,
   "members": []
 }
