@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795547433309",
+      "sku": "ENS-JDT6",
+      "slug": "fermuarli-surpriz-pelus-cilek-tabsan-50-cm",
+      "name": "fermuarlı sürpriz peluş çilek tabşan 50 cm",
+      "shortName": "fermuarlı sürpriz peluş çilek tabşan 50 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 270,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547387038-dzmd2-IMG_4607.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547387038-dzmd2-IMG_4607.jpeg"
+      ],
+      "imageAlt": "fermuarlı sürpriz peluş çilek tabşan 50 cm (ENS-JDT6)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795547346625",
       "sku": "ENS-VA5M",
       "slug": "zurafa-pelus-100-cm",
@@ -11454,6 +11480,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795547347347,
+  "updatedAt": 1795547433881,
   "members": []
 }
