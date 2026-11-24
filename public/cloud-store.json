@@ -375,6 +375,16 @@
       "showOnHome": true,
       "homeOrder": 5,
       "isConceptImage": false
+    },
+    {
+      "slug": "termos",
+      "name": "Termos",
+      "description": "Çelik Termoslar",
+      "image": "/ensar-web/gorseller/kategori-cam-kure.webp",
+      "imageAlt": "Termos",
+      "showOnHome": true,
+      "homeOrder": 5,
+      "isConceptImage": false
     }
   ],
   "products": [
@@ -11168,6 +11178,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795545879207,
+  "updatedAt": 1795545927263,
   "members": []
 }
