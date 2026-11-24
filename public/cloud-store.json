@@ -378,6 +378,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795531071454",
+      "sku": "ENS-B461",
+      "slug": "mini-atli-karinca",
+      "name": "Mini atlı karınca",
+      "shortName": "Mini atlı karınca",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531065006-dtwy6-98FD5071-F715-4BC4-AFFF-0BDADA5836A7.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531065006-dtwy6-98FD5071-F715-4BC4-AFFF-0BDADA5836A7.png"
+      ],
+      "imageAlt": "Mini atlı karınca (ENS-B461)",
+      "isConceptImage": false,
+      "isNewArrival": false,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795530829804",
       "sku": "007",
       "slug": "atli-karinca",
@@ -467,9 +493,9 @@
       "price": 290,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530830881-j34k3.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531072363-uja8k.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795530831955-5acou.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795531073428-4vkj5.jpg"
       ],
       "imageAlt": "Bavul m kutu (009)",
       "isConceptImage": false,
@@ -11219,5 +11245,5 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795530830875
+  "updatedAt": 1795531072359
 }
