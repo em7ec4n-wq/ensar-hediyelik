@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795547656394",
+      "sku": "ENS-OKV2",
+      "slug": "pelus-ayicik-25-cm",
+      "name": "peluş ayıcık 25 cm",
+      "shortName": "peluş ayıcık 25 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 155,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547643968-b4281-IMG_4612.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547643968-b4281-IMG_4612.jpeg"
+      ],
+      "imageAlt": "peluş ayıcık 25 cm (ENS-OKV2)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795547629268",
       "sku": "ENS-8XPF",
       "slug": "dinazor-pelus-yesil-45-cm",
@@ -11584,6 +11610,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795547629842,
+  "updatedAt": 1795547656966,
   "members": []
 }
