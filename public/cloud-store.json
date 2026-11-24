@@ -379,6 +379,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795547162681",
+      "sku": "ENS-100A",
+      "slug": "yilisik-sari-sapkali-ordek-aksesuar-45-cm",
+      "name": "yılışık sarı şapkalı ördek aksesuar 45 cm",
+      "shortName": "yılışık sarı şapkalı ördek aksesuar 45 cm",
+      "categorySlug": "peluslar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 160,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547132559-c0wem-IMG_4603.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795547132559-c0wem-IMG_4603.jpeg"
+      ],
+      "imageAlt": "yılışık sarı şapkalı ördek aksesuar 45 cm (ENS-100A)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Peluşlar"
+      ]
+    },
+    {
       "id": "custom-1795547107777",
       "sku": "ENS-W9A4",
       "slug": "yilisik-kopek-aksesuar-pelus-45-cm",
@@ -11350,6 +11376,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795547108441,
+  "updatedAt": 1795547163272,
   "members": []
 }
