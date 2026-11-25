@@ -3548,12 +3548,12 @@
       "price": 329,
       "stock": 25,
       "published": true,
-      "image": "/ensar-web/gorseller/kategori-ilginc-kupa.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795620025106-xngdg-IMG_9555.jpeg",
       "gallery": [
-        "/ensar-web/gorseller/kategori-ilginc-kupa.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795620025106-xngdg-IMG_9555.jpeg"
       ],
       "imageAlt": "Üç boyutlu astronot kabartmalı ve altın kulplu porselen kupa",
-      "isConceptImage": true,
+      "isConceptImage": false,
       "occasions": [
         "Doğum Günü",
         "Yeni İş",
@@ -13810,6 +13810,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795619950088,
+  "updatedAt": 1795620027507,
   "members": []
 }
