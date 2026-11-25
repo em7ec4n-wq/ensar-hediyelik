@@ -440,6 +440,62 @@
   ],
   "products": [
     {
+      "id": "custom-1795629085108",
+      "sku": "ENS-J1QY",
+      "slug": "buyuk-boy-kar-kuresi-4",
+      "name": "büyük boy kar küresi 4",
+      "shortName": "büyük boy kar küresi 4",
+      "categorySlug": "buyuk-boy-kar-kuresi",
+      "extraCategorySlugs": [
+        "kar-kureleri"
+      ],
+      "description": "",
+      "price": 325,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795629024698-10bm4-5addfe64-0994-49f8-80ff-eed973374d68.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795629024698-10bm4-5addfe64-0994-49f8-80ff-eed973374d68.jpeg"
+      ],
+      "imageAlt": "büyük boy kar küresi 4 (ENS-J1QY)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Büyük Boy Kar Küresi"
+      ]
+    },
+    {
+      "id": "custom-1795629014532",
+      "sku": "ENS-FSCK",
+      "slug": "buyuk-boy-kar-kuresi-3",
+      "name": "büyük boy kar küresi 3",
+      "shortName": "büyük boy kar küresi 3",
+      "categorySlug": "buyuk-boy-kar-kuresi",
+      "extraCategorySlugs": [
+        "kar-kureleri"
+      ],
+      "description": "",
+      "price": 325,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795628993766-35sir-bc84fa84-f363-4c27-a1d4-9705da39aeb9.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795628993766-35sir-bc84fa84-f363-4c27-a1d4-9705da39aeb9.jpeg"
+      ],
+      "imageAlt": "büyük boy kar küresi 3 (ENS-FSCK)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Büyük Boy Kar Küresi"
+      ]
+    },
+    {
       "id": "custom-1795628644313",
       "sku": "ENS-242X",
       "slug": "buyuk-boy-kar-kuresi-2",
@@ -14825,16 +14881,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795629064561,
-  "members": [
-    {
-      "id": "bayi-1795629063153",
-      "companyName": "Toptan Bayi",
-      "contactName": "Bayi Yetkilisi",
-      "phone": "05416966165",
-      "city": "",
-      "password": "takılove61",
-      "createdAt": "25.11.2026"
-    }
-  ]
+  "updatedAt": 1795629085722,
+  "members": []
 }
