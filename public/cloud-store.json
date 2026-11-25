@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795619168949",
+      "sku": "ENS-WWEW",
+      "slug": "kristal-ay-lamba",
+      "name": "kristal ay lamba",
+      "shortName": "kristal ay lamba",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 275,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619155085-bwu55-IMG_9389.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619155085-bwu55-IMG_9389.png"
+      ],
+      "imageAlt": "kristal ay lamba (ENS-WWEW)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795619133622",
       "sku": "ENS-WAL9",
       "slug": "kristal-lux-lamba-2",
@@ -13393,6 +13419,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795619135221,
+  "updatedAt": 1795619169799,
   "members": []
 }
