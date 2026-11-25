@@ -440,6 +440,232 @@
   ],
   "products": [
     {
+      "id": "prod-324",
+      "sku": "ENS-MK-324",
+      "slug": "ahsap-oymali-balerinli-muzik-kutusu",
+      "name": "Ahşap Oymalı Nostaljik Balerinli Müzik Kutusu",
+      "shortName": "Ahşap Müzik Kutusu",
+      "categorySlug": "muzik-kutulari",
+      "description": "Vintage kabartma detaylı ahşap kutu içinde kurmalı mekanizma ile dönen balerin figürü. Takı ve küçük hatıralar için zarif bir saklama ve hediye seçeneği.",
+      "price": 495,
+      "stock": 7,
+      "published": true,
+      "image": "/ensar-web/gorseller/kategori-muzik-kutusu.webp",
+      "gallery": [
+        "/ensar-web/gorseller/kategori-muzik-kutusu.webp"
+      ],
+      "imageAlt": "Oymalı ahşap sandık formunda balerinli müzik kutusu",
+      "isConceptImage": true,
+      "occasions": [
+        "Anneler Günü",
+        "Yıldönümü",
+        "Doğum Günü",
+        "Sevgililer Günü"
+      ],
+      "giftTypes": [
+        "Müzik Kutuları",
+        "Romantik Hediyeler"
+      ],
+      "legacyPath": "/Müzik-Kutusu-Cesitleri?product_id=324"
+    },
+    {
+      "id": "prod-541",
+      "sku": "ENS-KP-541",
+      "slug": "astronot-kabartmali-porselen-kupa",
+      "name": "Astronot Kabartmalı Altın Kulplu Porselen Kupa",
+      "shortName": "Astronot Porselen Kupa",
+      "categorySlug": "ilginc-kupalar",
+      "description": "Üç boyutlu kabartma astronot figürü, gece gökyüzü desenleri ve parlak altın renkli ergonomik kulpuyla kahve molalarına keyif katan hediyelik porselen kupa.",
+      "price": 329,
+      "stock": 25,
+      "published": true,
+      "image": "/ensar-web/gorseller/kategori-ilginc-kupa.webp",
+      "gallery": [
+        "/ensar-web/gorseller/kategori-ilginc-kupa.webp"
+      ],
+      "imageAlt": "Üç boyutlu astronot kabartmalı ve altın kulplu porselen kupa",
+      "isConceptImage": true,
+      "occasions": [
+        "Doğum Günü",
+        "Yeni İş",
+        "Mezuniyet",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "İlginç Kupalar",
+        "Ofis & Masaüstü"
+      ],
+      "legacyPath": "/İlginc-Kupa-Cesitleri?product_id=541"
+    },
+    {
+      "id": "prod-460",
+      "sku": "ENS-KS-460",
+      "slug": "15-dakikalik-metal-kum-saati",
+      "name": "15 Dakikalık Metal Gövdeli Dekoratif Kum Saati",
+      "shortName": "Metal Kum Saati",
+      "categorySlug": "kum-saatleri",
+      "description": "Antik pirinç tonunda metal sütunlar ve ince akışlı renkli kum ile çalışma masası veya kitaplık için zamansız bir dekoratif hediye.",
+      "price": 389,
+      "stock": 22,
+      "published": true,
+      "image": "/ensar-web/gorseller/kategori-kum-saati.webp",
+      "gallery": [
+        "/ensar-web/gorseller/kategori-kum-saati.webp"
+      ],
+      "imageAlt": "Pirinç görünümlü metal çerçeveli mor kumlu 15 dakikalık kum saati",
+      "isConceptImage": true,
+      "occasions": [
+        "Yeni İş",
+        "Ev Hediyesi",
+        "Mezuniyet",
+        "Doğum Günü"
+      ],
+      "giftTypes": [
+        "Kum Saatleri",
+        "Ofis & Masaüstü"
+      ],
+      "options": [
+        {
+          "name": "Süre Seçeneği",
+          "required": true,
+          "values": [
+            "10 Dakika",
+            "15 Dakika",
+            "30 Dakika"
+          ]
+        }
+      ],
+      "legacyPath": "/Kum-Saati-Cesitleri?product_id=460"
+    },
+    {
+      "id": "prod-562",
+      "sku": "ENS-IG-562",
+      "slug": "buyuk-boy-cam-fanus-solmayan-kristal-gul",
+      "name": "Büyük Boy Cam Fanus Solmayan Kristal Gül",
+      "shortName": "Solmayan Gül Fanusu",
+      "categorySlug": "isikli-hediyeler",
+      "description": "Şeffaf cam fanus altında canlı kırmızı gül ve sarılı sıcak LED peri ışıklarıyla hazırlanan dekoratif hediye. Ahşap tabanındaki anahtarla kolayca açılıp kapanır.",
+      "price": 589,
+      "stock": 14,
+      "published": true,
+      "image": "/ensar-web/gorseller/urun-solmayan-gul-fanusu.webp",
+      "gallery": [
+        "/ensar-web/gorseller/urun-solmayan-gul-fanusu.webp",
+        "/ensar-web/gorseller/vitrin-isikli-hediyeler.webp"
+      ],
+      "imageAlt": "Ahşap tabanlı cam fanus içinde sıcak sarı LED peri ışıklı kırmızı solmayan gül",
+      "isConceptImage": true,
+      "isNewArrival": true,
+      "newArrivalOrder": 3,
+      "occasions": [
+        "Sevgililer Günü",
+        "Yıldönümü",
+        "Anneler Günü",
+        "Doğum Günü"
+      ],
+      "giftTypes": [
+        "Işıklı Ürünler",
+        "Romantik Hediyeler"
+      ],
+      "options": [
+        {
+          "name": "Gül Rengi",
+          "required": true,
+          "values": [
+            "Kırmızı Gül",
+            "Bordo Gül"
+          ]
+        }
+      ],
+      "legacyPath": "/isikli-grup?product_id=562"
+    },
+    {
+      "id": "prod-564",
+      "sku": "ENS-MK-564",
+      "slug": "muzikli-balerinli-piyano",
+      "name": "Müzikli Balerinli Piyano",
+      "shortName": "Balerinli Piyano",
+      "categorySlug": "muzik-kutulari",
+      "description": "Kuyruklu piyano formunda tasarlanmış kurmalı müzik kutusu. Kapak açıldığında klasik melodi çalar ve mıknatıslı taban üzerindeki zarif balerin figürü piyano üzerinde dans eder.",
+      "price": 529,
+      "stock": 12,
+      "published": true,
+      "image": "/ensar-web/gorseller/urun-balerinli-piyano.webp",
+      "gallery": [
+        "/ensar-web/gorseller/urun-balerinli-piyano.webp",
+        "/ensar-web/gorseller/hero-balerinli-piyano.webp"
+      ],
+      "imageAlt": "Pastel pembe kuyruklu piyano formunda dönen balerinli müzik kutusu",
+      "isConceptImage": true,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Sevgililer Günü",
+        "Anneler Günü",
+        "Yıldönümü"
+      ],
+      "giftTypes": [
+        "Müzik Kutuları",
+        "Romantik Hediyeler"
+      ],
+      "options": [
+        {
+          "name": "Renk",
+          "required": true,
+          "values": [
+            "Pastel Pembe",
+            "Krem Beyaz"
+          ]
+        }
+      ],
+      "legacyPath": "/Müzik-Kutusu-Cesitleri?product_id=564"
+    },
+    {
+      "id": "prod-347",
+      "sku": "ENS-CK-347",
+      "slug": "astronot-buyuk-boy-usbli-cam-kure",
+      "name": "Astronot Büyük Boy USB'li Cam Küre",
+      "shortName": "Astronot Cam Küre",
+      "categorySlug": "cam-kureler",
+      "extraCategorySlugs": [
+        "isikli-hediyeler"
+      ],
+      "description": "Lazer işleme kristal cam küre içerisinde astronot ve gezegen detayı bulunur. Doğal ahşap görünümlü tabanı USB kablo ile sıcak sarı LED ışık verir; gece lambası ve masaüstü hediyesi olarak idealdir.",
+      "price": 449,
+      "stock": 18,
+      "published": true,
+      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "gallery": [
+        "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+        "/ensar-web/gorseller/kategori-cam-kure.webp",
+        "/ensar-web/gorseller/hediye-sonuc.webp"
+      ],
+      "imageAlt": "Ahşap tabanlı, sıcak LED ışıklı astronot ve gezegen figürlü kristal cam küre",
+      "isConceptImage": true,
+      "occasions": [
+        "Doğum Günü",
+        "Mezuniyet",
+        "Yeni İş",
+        "Sevgililer Günü"
+      ],
+      "giftTypes": [
+        "Işıklı Ürünler",
+        "Cam Küreler"
+      ],
+      "options": [
+        {
+          "name": "Taban Işık Modu",
+          "required": true,
+          "values": [
+            "Sıcak Gün Işığı (Sabit)",
+            "Renk Değiştiren RGB"
+          ]
+        }
+      ],
+      "legacyPath": "/Cam-Kureler?product_id=347"
+    },
+    {
       "id": "custom-1795629175993",
       "sku": "ENS-DQVS",
       "slug": "buyuk-boy-kar-kuresi-7",
@@ -14711,6 +14937,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795629475110,
+  "updatedAt": 1795629523949,
   "members": []
 }
