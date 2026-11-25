@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795615414105",
+      "sku": "ENS-MNP6",
+      "slug": "sevgili-temali-fanus",
+      "name": "sevgili temalı fanus",
+      "shortName": "sevgili temalı fanus",
+      "categorySlug": "sevgililer-gunu",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795615394173-5h6mj-d110b659-4ba9-4a8a-89d8-16bfc0c21f1f.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795615394173-5h6mj-d110b659-4ba9-4a8a-89d8-16bfc0c21f1f.jpeg"
+      ],
+      "imageAlt": "sevgili temalı fanus (ENS-MNP6)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Sevgililer Günü"
+      ]
+    },
+    {
       "id": "custom-1795615386606",
       "sku": "ENS-ILO9",
       "slug": "sevgili-temali-isikli-fanus",
@@ -13237,6 +13263,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795615387373,
+  "updatedAt": 1795615414894,
   "members": []
 }
