@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795615386606",
+      "sku": "ENS-ILO9",
+      "slug": "sevgili-temali-isikli-fanus",
+      "name": "sevgili temalı ışıklı fanus",
+      "shortName": "sevgili temalı ışıklı fanus",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795615368222-woufz-d110b659-4ba9-4a8a-89d8-16bfc0c21f1f.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795615368222-woufz-d110b659-4ba9-4a8a-89d8-16bfc0c21f1f.jpeg"
+      ],
+      "imageAlt": "sevgili temalı ışıklı fanus (ENS-ILO9)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı Hediyeler"
+      ]
+    },
+    {
       "id": "custom-1795615353483",
       "sku": "ENS-J9WG",
       "slug": "isikli-mavi-gul-fanus",
@@ -13211,6 +13237,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795615354358,
+  "updatedAt": 1795615387373,
   "members": []
 }
