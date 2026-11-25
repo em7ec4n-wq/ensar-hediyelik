@@ -3542,10 +3542,10 @@
       "sku": "ENS-KP-541",
       "slug": "astronot-kabartmali-porselen-kupa",
       "name": "Astronot Kabartmalı Altın Kulplu Porselen Kupa",
-      "shortName": "Astronot Porselen Kupa",
+      "shortName": "Astronot Kabartmalı Altın Kulplu Porselen Kupa",
       "categorySlug": "ilginc-kupalar",
       "description": "Üç boyutlu kabartma astronot figürü, gece gökyüzü desenleri ve parlak altın renkli ergonomik kulpuyla kahve molalarına keyif katan hediyelik porselen kupa.",
-      "price": 329,
+      "price": 475,
       "stock": 25,
       "published": true,
       "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795620025106-xngdg-IMG_9555.jpeg",
@@ -3564,7 +3564,8 @@
         "İlginç Kupalar",
         "Ofis & Masaüstü"
       ],
-      "legacyPath": "/İlginc-Kupa-Cesitleri?product_id=541"
+      "legacyPath": "/İlginc-Kupa-Cesitleri?product_id=541",
+      "extraCategorySlugs": []
     },
     {
       "id": "prod-460",
@@ -13810,6 +13811,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795620027507,
+  "updatedAt": 1795620032417,
   "members": []
 }
