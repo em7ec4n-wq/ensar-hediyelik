@@ -4664,35 +4664,6 @@
       ]
     },
     {
-      "id": "prod-324",
-      "sku": "ENS-MK-324",
-      "slug": "ahsap-oymali-balerinli-muzik-kutusu",
-      "name": "Ahşap Oymalı Nostaljik Balerinli Müzik Kutusu",
-      "shortName": "Ahşap Müzik Kutusu",
-      "categorySlug": "muzik-kutulari",
-      "description": "Vintage kabartma detaylı ahşap kutu içinde kurmalı mekanizma ile dönen balerin figürü. Takı ve küçük hatıralar için zarif bir saklama ve hediye seçeneği.",
-      "price": 495,
-      "stock": 7,
-      "published": true,
-      "image": "/ensar-web/gorseller/kategori-muzik-kutusu.webp",
-      "gallery": [
-        "/ensar-web/gorseller/kategori-muzik-kutusu.webp"
-      ],
-      "imageAlt": "Oymalı ahşap sandık formunda balerinli müzik kutusu",
-      "isConceptImage": true,
-      "occasions": [
-        "Anneler Günü",
-        "Yıldönümü",
-        "Doğum Günü",
-        "Sevgililer Günü"
-      ],
-      "giftTypes": [
-        "Müzik Kutuları",
-        "Romantik Hediyeler"
-      ],
-      "legacyPath": "/Müzik-Kutusu-Cesitleri?product_id=324"
-    },
-    {
       "id": "prod-460",
       "sku": "ENS-KS-460",
       "slug": "15-dakikalik-metal-kum-saati",
@@ -14780,6 +14751,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795629463295,
+  "updatedAt": 1795629470141,
   "members": []
 }
