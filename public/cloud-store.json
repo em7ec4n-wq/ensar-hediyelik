@@ -4890,34 +4890,6 @@
       "legacyPath": "/Cam-Kureler?product_id=347"
     },
     {
-      "id": "custom-1795275832774",
-      "sku": "ENS-32773",
-      "slug": "pelus-ens-32773",
-      "name": "Peluş",
-      "shortName": "Peluş",
-      "categorySlug": "ilginc-kupalar",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 550,
-      "stock": 99,
-      "published": true,
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
-      "gallery": [
-        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
-      ],
-      "imageAlt": "Peluş (ENS-32773)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "newArrivalOrder": 1,
-      "occasions": [
-        "Doğum Günü",
-        "Yılbaşı"
-      ],
-      "giftTypes": [
-        "İlginç Kupalar"
-      ]
-    },
-    {
       "id": "custom-1795446414621",
       "sku": "ENS-14620",
       "slug": "gri-yavrulu-fil-pelus-55-cm-ens-14620",
@@ -14965,6 +14937,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795629176730,
+  "updatedAt": 1795629413664,
   "members": []
 }
