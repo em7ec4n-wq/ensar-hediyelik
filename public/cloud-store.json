@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795614872199",
+      "sku": "ENS-7SB7",
+      "slug": "sarjli-cakmak-audi",
+      "name": "şarjlı çakmak audi",
+      "shortName": "şarjlı çakmak audi",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 340,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795614832190-e6s3s-373873f3-e00c-4067-87de-46f33f259b86.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795614832190-e6s3s-373873f3-e00c-4067-87de-46f33f259b86.jpeg"
+      ],
+      "imageAlt": "şarjlı çakmak audi (ENS-7SB7)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795614755411",
       "sku": "ENS-H56H",
       "slug": "yuzuk-kutusu",
@@ -12977,6 +13003,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795614756444,
+  "updatedAt": 1795614872931,
   "members": []
 }
