@@ -436,6 +436,33 @@
   ],
   "products": [
     {
+      "id": "custom-1795619883231",
+      "sku": "ENS-IPYZ",
+      "slug": "celik-kupa-8",
+      "name": "çelik kupa 8",
+      "shortName": "çelik kupa 8",
+      "categorySlug": "ilginc-kupalar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619866762-n3zku-IMG_9548.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619866762-n3zku-IMG_9548.jpeg",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619868329-7leco-IMG_9553.jpeg"
+      ],
+      "imageAlt": "çelik kupa 8 (ENS-IPYZ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "İlginç Kupalar"
+      ]
+    },
+    {
       "id": "custom-1795619856453",
       "sku": "ENS-0NDV",
       "slug": "celik-kupa-7",
@@ -13705,6 +13732,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795619857388,
+  "updatedAt": 1795619884222,
   "members": []
 }
