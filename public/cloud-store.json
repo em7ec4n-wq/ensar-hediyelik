@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795615437320",
+      "sku": "ENS-4GEX",
+      "slug": "isikli-cicek-buketi",
+      "name": "ışıklı çiçek buketi",
+      "shortName": "ışıklı çiçek buketi",
+      "categorySlug": "sevgililer-gunu",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 250,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795615423077-0cjcv-6d5ee5c5-979c-4e36-a0c7-3ffd4af87cbe.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795615423077-0cjcv-6d5ee5c5-979c-4e36-a0c7-3ffd4af87cbe.jpeg"
+      ],
+      "imageAlt": "ışıklı çiçek buketi (ENS-4GEX)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Sevgililer Günü"
+      ]
+    },
+    {
       "id": "custom-1795615414105",
       "sku": "ENS-MNP6",
       "slug": "sevgili-temali-fanus",
@@ -13263,6 +13289,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795615414894,
+  "updatedAt": 1795615437927,
   "members": []
 }
