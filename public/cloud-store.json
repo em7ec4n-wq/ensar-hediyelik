@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795619811458",
+      "sku": "ENS-2A73",
+      "slug": "celik-kupa-5",
+      "name": "çelik kupa 5",
+      "shortName": "çelik kupa 5",
+      "categorySlug": "ilginc-kupalar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619802399-qfxpc-IMG_9558.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619802399-qfxpc-IMG_9558.jpeg"
+      ],
+      "imageAlt": "çelik kupa 5 (ENS-2A73)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "İlginç Kupalar"
+      ]
+    },
+    {
       "id": "custom-1795619792491",
       "sku": "ENS-G4RB",
       "slug": "celik-4-kupa",
@@ -13627,6 +13653,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795619793432,
+  "updatedAt": 1795619812506,
   "members": []
 }
