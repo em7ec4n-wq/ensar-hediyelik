@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795614956235",
+      "sku": "ENS-PYXA",
+      "slug": "sarjli-cakmak-volkawagen",
+      "name": "sarjlı çakmak volkawagen",
+      "shortName": "sarjlı çakmak volkawagen",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 340,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795614912825-kkmm4-95ea5192-177b-4c02-bb78-67c1115c78ca.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795614912825-kkmm4-95ea5192-177b-4c02-bb78-67c1115c78ca.jpeg"
+      ],
+      "imageAlt": "sarjlı çakmak volkawagen (ENS-PYXA)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795614905453",
       "sku": "ENS-D164",
       "slug": "satjli-cakmak-audi-1",
@@ -13029,6 +13055,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795614906156,
+  "updatedAt": 1795614957752,
   "members": []
 }
