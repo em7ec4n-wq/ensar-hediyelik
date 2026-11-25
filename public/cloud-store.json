@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795629175993",
+      "sku": "ENS-DQVS",
+      "slug": "buyuk-boy-kar-kuresi-7",
+      "name": "büyük boy kar küresi 7",
+      "shortName": "büyük boy kar küresi 7",
+      "categorySlug": "buyuk-boy-kar-kuresi",
+      "extraCategorySlugs": [
+        "kar-kureleri"
+      ],
+      "description": "",
+      "price": 325,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795629161900-tytge-c5d06909-7210-4bcc-bd7d-1a3a0dabda59.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795629161900-tytge-c5d06909-7210-4bcc-bd7d-1a3a0dabda59.jpeg"
+      ],
+      "imageAlt": "büyük boy kar küresi 7 (ENS-DQVS)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Büyük Boy Kar Küresi"
+      ]
+    },
+    {
       "id": "custom-1795629155568",
       "sku": "ENS-4I8U",
       "slug": "buyuk-boy-kar-kuresi-6",
@@ -14937,6 +14965,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795629156193,
+  "updatedAt": 1795629176730,
   "members": []
 }
