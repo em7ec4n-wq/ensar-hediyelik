@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795620601450",
+      "sku": "ENS-O0MP",
+      "slug": "nostalji-araba-ses-bombasi",
+      "name": "nostalji araba ses bombası",
+      "shortName": "nostalji araba ses bombası",
+      "categorySlug": "nostaljik-radyolar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 675,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795620575914-p7kwm-ECBCC53E-FD3A-4E3E-B10E-1294EA4881CC.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795620575914-p7kwm-ECBCC53E-FD3A-4E3E-B10E-1294EA4881CC.png"
+      ],
+      "imageAlt": "nostalji araba ses bombası (ENS-O0MP)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Nostaljik radyolar"
+      ]
+    },
+    {
       "id": "custom-1795620159239",
       "sku": "ENS-JUZ5",
       "slug": "orta-boy-kar-kure-2",
@@ -13867,6 +13893,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795620302911,
+  "updatedAt": 1795620602900,
   "members": []
 }
