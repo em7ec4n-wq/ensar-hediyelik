@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795619133622",
+      "sku": "ENS-WAL9",
+      "slug": "kristal-lux-lamba-2",
+      "name": "kristal lüx lamba  2",
+      "shortName": "kristal lüx lamba  2",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 275,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619053710-q5wfx-IMG_9381.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619053710-q5wfx-IMG_9381.png"
+      ],
+      "imageAlt": "kristal lüx lamba  2 (ENS-WAL9)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795619030590",
       "sku": "ENS-R65J",
       "slug": "kristal-lux-lamba",
@@ -13367,6 +13393,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795619031418,
+  "updatedAt": 1795619135221,
   "members": []
 }
