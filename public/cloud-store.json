@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795614905453",
+      "sku": "ENS-D164",
+      "slug": "satjli-cakmak-audi-1",
+      "name": "şatjlı çakmak audi 1",
+      "shortName": "şatjlı çakmak audi 1",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 340,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795614887789-cb3oh-ffbfeb0c-01d6-40eb-a24c-84e63ad7caad.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795614887789-cb3oh-ffbfeb0c-01d6-40eb-a24c-84e63ad7caad.jpeg"
+      ],
+      "imageAlt": "şatjlı çakmak audi 1 (ENS-D164)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795614872199",
       "sku": "ENS-7SB7",
       "slug": "sarjli-cakmak-audi",
@@ -13003,6 +13029,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795614872931,
+  "updatedAt": 1795614906156,
   "members": []
 }
