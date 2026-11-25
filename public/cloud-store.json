@@ -436,6 +436,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795599882997",
+      "sku": "ENS-JT6B",
+      "slug": "orta-boy-kar-kuresi",
+      "name": "orta boy kar küresi",
+      "shortName": "orta boy kar küresi",
+      "categorySlug": "orta-boy-kar-kuresi",
+      "extraCategorySlugs": [
+        "kar-kureleri"
+      ],
+      "description": "",
+      "price": 225,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795599843626-h4u9m-5493a9bb-e7ff-4cdb-9688-e56f6d15c2a0.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795599843626-h4u9m-5493a9bb-e7ff-4cdb-9688-e56f6d15c2a0.jpeg"
+      ],
+      "imageAlt": "orta boy kar küresi (ENS-JT6B)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Orta Boy Kar Küresi"
+      ]
+    },
+    {
       "id": "custom-1795598439788",
       "sku": "ENS-54E9",
       "slug": "isikli-kalp",
@@ -681,9 +709,9 @@
       "price": 275,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795599702327-l14xx.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795599884433-2vu3y.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795599703456-1mnrq.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795599885499-sbijz.jpg"
       ],
       "imageAlt": "ışıklı nene-dede biblosu (ENS-9ROF)",
       "isConceptImage": false,
@@ -733,9 +761,9 @@
       "price": 450,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795599704800-xqus2.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795599886456-3cjw6.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795599706141-0uar9.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795599887540-9nqb0.jpg"
       ],
       "imageAlt": "kulplu model termos (ENS-NQYY)",
       "isConceptImage": false,
@@ -759,7 +787,7 @@
       "price": 375,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795599707576-pr0wj.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795599888488-9que9.jpg",
       "gallery": [
         "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795597484553-3ru3k.jpg"
       ],
@@ -12811,6 +12839,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795599702322,
+  "updatedAt": 1795599884428,
   "members": []
 }
