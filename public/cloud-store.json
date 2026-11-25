@@ -436,6 +436,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795620159239",
+      "sku": "ENS-JUZ5",
+      "slug": "orta-boy-kar-kure-2",
+      "name": "orta boy kar küre",
+      "shortName": "orta boy kar küre",
+      "categorySlug": "orta-boy-kar-kuresi",
+      "extraCategorySlugs": [
+        "kar-kureleri"
+      ],
+      "description": "",
+      "price": 225,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795620146552-73y23-634FBD72-2CEF-450B-A4CD-8EBC3F67B63B.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795620146552-73y23-634FBD72-2CEF-450B-A4CD-8EBC3F67B63B.png"
+      ],
+      "imageAlt": "orta boy kar küre (ENS-JUZ5)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Orta Boy Kar Küresi"
+      ]
+    },
+    {
       "id": "custom-1795620126924",
       "sku": "ENS-PRX2",
       "slug": "orta-boy-kar-kure",
@@ -13839,6 +13867,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795620128290,
+  "updatedAt": 1795620160321,
   "members": []
 }
