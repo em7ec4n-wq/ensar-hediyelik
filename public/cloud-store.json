@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795619251187",
+      "sku": "ENS-R7WN",
+      "slug": "kristal-yildiz-lamba",
+      "name": "kristal yıldız lamba",
+      "shortName": "kristal yıldız lamba",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 275,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619234335-7rc43-IMG_9388.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619234335-7rc43-IMG_9388.png"
+      ],
+      "imageAlt": "kristal yıldız lamba (ENS-R7WN)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795619168949",
       "sku": "ENS-WWEW",
       "slug": "kristal-ay-lamba",
@@ -13419,6 +13445,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795619169799,
+  "updatedAt": 1795619251900,
   "members": []
 }
