@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795614984765",
+      "sku": "ENS-I19V",
+      "slug": "sarjli-cakmak-mercedes",
+      "name": "şarjlı çakmak mercedes",
+      "shortName": "şarjlı çakmak mercedes",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 340,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795614963304-805hl-a8aa298b-4c78-4d2d-9f72-6187ebadf4d6.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795614963304-805hl-a8aa298b-4c78-4d2d-9f72-6187ebadf4d6.jpeg"
+      ],
+      "imageAlt": "şarjlı çakmak mercedes (ENS-I19V)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795614956235",
       "sku": "ENS-PYXA",
       "slug": "sarjli-cakmak-volkawagen",
@@ -13055,6 +13081,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795614957752,
+  "updatedAt": 1795614985895,
   "members": []
 }
