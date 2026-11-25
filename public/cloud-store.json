@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795619729269",
+      "sku": "ENS-MRU9",
+      "slug": "celik-kupa",
+      "name": "çelik kupa",
+      "shortName": "çelik kupa",
+      "categorySlug": "ilginc-kupalar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619720605-e4i1h-IMG_9562.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619720605-e4i1h-IMG_9562.jpeg"
+      ],
+      "imageAlt": "çelik kupa (ENS-MRU9)",
+      "isConceptImage": false,
+      "isNewArrival": false,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "İlginç Kupalar"
+      ]
+    },
+    {
       "id": "custom-1795619488831",
       "sku": "ENS-V381",
       "slug": "astronot-gece-lambasi",
@@ -13523,6 +13549,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795619489598,
+  "updatedAt": 1795619730191,
   "members": []
 }
