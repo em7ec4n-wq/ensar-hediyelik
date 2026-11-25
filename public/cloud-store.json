@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795619406664",
+      "sku": "ENS-G9PI",
+      "slug": "kristal-oval-lamba",
+      "name": "kristal oval lamba",
+      "shortName": "kristal oval lamba",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 275,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619394615-snbra-IMG_9387.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619394615-snbra-IMG_9387.png"
+      ],
+      "imageAlt": "kristal oval lamba (ENS-G9PI)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795619291340",
       "sku": "ENS-90CQ",
       "slug": "kristal-lux-ucgen-lamba",
@@ -13471,6 +13497,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795619292260,
+  "updatedAt": 1795619407484,
   "members": []
 }
