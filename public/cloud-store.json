@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795620920506",
+      "sku": "ENS-KXHR",
+      "slug": "lux-ital-fanus",
+      "name": "lüx ital fanus",
+      "shortName": "lüx ital fanus",
+      "categorySlug": "sevgililer-gunu",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 250,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795620904446-2drfa-7fe3b644-ae92-4f6c-8b78-d68d943830b9.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795620904446-2drfa-7fe3b644-ae92-4f6c-8b78-d68d943830b9.jpeg"
+      ],
+      "imageAlt": "lüx ital fanus (ENS-KXHR)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Sevgililer Günü"
+      ]
+    },
+    {
       "id": "custom-1795620601450",
       "sku": "ENS-O0MP",
       "slug": "nostalji-araba-ses-bombasi",
@@ -13893,6 +13919,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795620602900,
+  "updatedAt": 1795620923233,
   "members": []
 }
