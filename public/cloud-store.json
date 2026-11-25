@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795614755411",
+      "sku": "ENS-H56H",
+      "slug": "yuzuk-kutusu",
+      "name": "yüzük kutusu",
+      "shortName": "yüzük kutusu",
+      "categorySlug": "sevgililer-gunu",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 350,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795614702123-rg4f6-b08796e8-ddc2-4855-bd64-a9597d3a30ef.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795614702123-rg4f6-b08796e8-ddc2-4855-bd64-a9597d3a30ef.jpeg"
+      ],
+      "imageAlt": "yüzük kutusu (ENS-H56H)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Sevgililer Günü"
+      ]
+    },
+    {
       "id": "custom-1795600261205",
       "sku": "ENS-NGUJ",
       "slug": "orta-boy-sevgili-kar-kuresi",
@@ -12951,6 +12977,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795610559383,
+  "updatedAt": 1795614756444,
   "members": []
 }
