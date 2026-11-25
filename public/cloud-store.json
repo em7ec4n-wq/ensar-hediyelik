@@ -14937,6 +14937,17 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795629523949,
-  "members": []
+  "updatedAt": 1795630336694,
+  "members": [
+    {
+      "id": "bayi-1795630334960",
+      "companyName": "ByZeynep Bijuteri Kozmetik",
+      "contactName": "Zeynep Derman",
+      "phone": "05344381181",
+      "email": "dermanzeynep05@gmail.com",
+      "city": "Trabzon/Çaykara",
+      "password": "",
+      "createdAt": "25.11.2026"
+    }
+  ]
 }
