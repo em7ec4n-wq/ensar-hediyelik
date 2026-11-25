@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795615179825",
+      "sku": "ENS-FJIT",
+      "slug": "atm-kumbara",
+      "name": "Atm kumbara",
+      "shortName": "Atm kumbara",
+      "categorySlug": "metal-kumbaralar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795615124267-wzxod-8d104141-afb4-4e9f-80c6-26aa7d286ff3.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795615124267-wzxod-8d104141-afb4-4e9f-80c6-26aa7d286ff3.jpeg"
+      ],
+      "imageAlt": "Atm kumbara (ENS-FJIT)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Metal kumbaralar"
+      ]
+    },
+    {
       "id": "custom-1795615102847",
       "sku": "ENS-9EWH",
       "slug": "3u1-arada-sarjli-cakmak",
@@ -13107,6 +13133,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795615103398,
+  "updatedAt": 1795615180471,
   "members": []
 }
