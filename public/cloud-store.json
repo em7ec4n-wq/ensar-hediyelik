@@ -436,6 +436,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795600261205",
+      "sku": "ENS-NGUJ",
+      "slug": "orta-boy-sevgili-kar-kuresi",
+      "name": "orta boy sevgili kar küresi",
+      "shortName": "orta boy sevgili kar küresi",
+      "categorySlug": "orta-boy-kar-kuresi",
+      "extraCategorySlugs": [
+        "kar-kureleri"
+      ],
+      "description": "",
+      "price": 225,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600226377-4vxut-9c9a0257-4828-41a3-be79-c22fe6a0f7f9.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600226377-4vxut-9c9a0257-4828-41a3-be79-c22fe6a0f7f9.jpeg"
+      ],
+      "imageAlt": "orta boy sevgili kar küresi (ENS-NGUJ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Orta Boy Kar Küresi"
+      ]
+    },
+    {
       "id": "custom-1795600176003",
       "sku": "ENS-NB7N",
       "slug": "orta-boy-koca-ayi-kar-kuresi",
@@ -505,9 +533,9 @@
       "price": 225,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600177919-a8vuw.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600263673-cu11t.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600178990-9nmxf.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600264691-3s4zh.jpg"
       ],
       "imageAlt": "orta boy karakter kar küresi (ENS-6GYV)",
       "isConceptImage": false,
@@ -793,9 +821,9 @@
       "price": 275,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600180114-187wn.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600265703-w1p6x.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600181383-ibxae.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600266773-h1xha.jpg"
       ],
       "imageAlt": "ışıklı nene-dede biblosu (ENS-9ROF)",
       "isConceptImage": false,
@@ -845,9 +873,9 @@
       "price": 450,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600182586-ievxr.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600267830-u0nsp.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600183519-72rf1.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600268691-zxnhf.jpg"
       ],
       "imageAlt": "kulplu model termos (ENS-NQYY)",
       "isConceptImage": false,
@@ -871,7 +899,7 @@
       "price": 375,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600184484-5yh30.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795600269536-9eaye.jpg",
       "gallery": [
         "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795597484553-3ru3k.jpg"
       ],
@@ -12923,6 +12951,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795600177893,
+  "updatedAt": 1795600263665,
   "members": []
 }
