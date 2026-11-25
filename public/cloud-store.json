@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795615102847",
+      "sku": "ENS-9EWH",
+      "slug": "3u1-arada-sarjli-cakmak",
+      "name": "3ü1 arada şarjlı çakmak",
+      "shortName": "3ü1 arada şarjlı çakmak",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "Led ışıklı -usb şarjlı -stres çarkı",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795615035230-h6gid-6b6d46d2-b9bd-41d2-b9d9-533909a3361c.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795615035230-h6gid-6b6d46d2-b9bd-41d2-b9d9-533909a3361c.jpeg"
+      ],
+      "imageAlt": "3ü1 arada şarjlı çakmak (ENS-9EWH)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795614984765",
       "sku": "ENS-I19V",
       "slug": "sarjli-cakmak-mercedes",
@@ -13081,6 +13107,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795614985895,
+  "updatedAt": 1795615103398,
   "members": []
 }
