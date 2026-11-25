@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795619030590",
+      "sku": "ENS-R65J",
+      "slug": "kristal-lux-lamba",
+      "name": "kristal lüx lamba",
+      "shortName": "kristal lüx lamba",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 275,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619016851-dw0pt-IMG_9384.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619016851-dw0pt-IMG_9384.png"
+      ],
+      "imageAlt": "kristal lüx lamba (ENS-R65J)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795618958805",
       "sku": "ENS-VBTU",
       "slug": "kalin-ahsap-kalem",
@@ -13341,6 +13367,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795618959673,
+  "updatedAt": 1795619031418,
   "members": []
 }
