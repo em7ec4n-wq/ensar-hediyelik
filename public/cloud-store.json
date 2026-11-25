@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795618958805",
+      "sku": "ENS-VBTU",
+      "slug": "kalin-ahsap-kalem",
+      "name": "kalın ahşap kalem",
+      "shortName": "kalın ahşap kalem",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 90,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795618941228-agp28-IMG_9543.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795618941228-agp28-IMG_9543.jpeg"
+      ],
+      "imageAlt": "kalın ahşap kalem (ENS-VBTU)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795615469104",
       "sku": "ENS-24L6",
       "slug": "isikli-cicek-buketi-2",
@@ -13315,6 +13341,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795615469865,
+  "updatedAt": 1795618959673,
   "members": []
 }
