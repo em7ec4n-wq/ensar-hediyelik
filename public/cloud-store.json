@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795619488831",
+      "sku": "ENS-V381",
+      "slug": "astronot-gece-lambasi",
+      "name": "astronot gece lambası",
+      "shortName": "astronot gece lambası",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 550,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619473673-oky78-IMG_9544.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795619473673-oky78-IMG_9544.jpeg"
+      ],
+      "imageAlt": "astronot gece lambası (ENS-V381)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795619406664",
       "sku": "ENS-G9PI",
       "slug": "kristal-oval-lamba",
@@ -13497,6 +13523,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795619407484,
+  "updatedAt": 1795619489598,
   "members": []
 }
