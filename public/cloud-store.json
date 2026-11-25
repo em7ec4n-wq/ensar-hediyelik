@@ -375,46 +375,6 @@
       "showOnHome": true,
       "homeOrder": 5,
       "isConceptImage": false
-    },
-    {
-      "slug": "buyuk-boy-kar-kureleri",
-      "name": "Büyük Boy Kar Küreleri",
-      "description": "Işıklı, müzikli ve püskürtmeli büyük boy kar küresi modelleri.",
-      "image": "/ensar-web/gorseller/urun-puskurtmeli-kar-kuresi.webp",
-      "imageAlt": "Büyük Boy Kar Küreleri",
-      "showOnHome": false,
-      "parentSlug": "cam-kureler",
-      "isConceptImage": false
-    },
-    {
-      "slug": "orta-boy-kar-kureleri",
-      "name": "Orta Boy Kar Küreleri",
-      "description": "Işıklı ve müzikli orta boy kar küresi çeşitleri.",
-      "image": "/ensar-yilbasi/gorseller/kar-kureleri/erc5001b-01.webp",
-      "imageAlt": "Orta Boy Kar Küreleri",
-      "showOnHome": false,
-      "parentSlug": "cam-kureler",
-      "isConceptImage": false
-    },
-    {
-      "slug": "kucuk-boy-kar-kureleri",
-      "name": "Küçük Boy Kar Küreleri",
-      "description": "Zarif masaüstü küçük boy kar küresi modelleri.",
-      "image": "/ensar-yilbasi/gorseller/kar-kureleri/b4-9209-76-01.webp",
-      "imageAlt": "Küçük Boy Kar Küreleri",
-      "showOnHome": false,
-      "parentSlug": "cam-kureler",
-      "isConceptImage": false
-    },
-    {
-      "slug": "mini-boy-kar-kureleri",
-      "name": "Mini Boy Kar Küreleri",
-      "description": "Sevimli mini boy hediyelik kar küresi çeşitleri.",
-      "image": "/ensar-yilbasi/gorseller/kar-kureleri/b4-9209-63-01.webp",
-      "imageAlt": "Mini Boy Kar Küreleri",
-      "showOnHome": false,
-      "parentSlug": "cam-kureler",
-      "isConceptImage": false
     }
   ],
   "products": [
@@ -12404,6 +12364,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795589867786,
+  "updatedAt": 1795550773772,
   "members": []
 }
