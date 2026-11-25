@@ -389,6 +389,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795625473675",
+      "sku": "ENS-OTTO",
+      "slug": "buyuk-boy-silikon-anahtarlik-19",
+      "name": "büyük boy silikon anahtarlık 19",
+      "shortName": "büyük boy silikon anahtarlık 19",
+      "categorySlug": "silikon-anahtarliklar",
+      "extraCategorySlugs": [
+        "anahtarliklar"
+      ],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625465239-lobdt-9803816b-8ead-41ea-a84e-e0b9e473b60d.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625465239-lobdt-9803816b-8ead-41ea-a84e-e0b9e473b60d.jpeg"
+      ],
+      "imageAlt": "büyük boy silikon anahtarlık 19 (ENS-OTTO)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Silikon anahtarlıklar"
+      ]
+    },
+    {
       "id": "custom-1795625410800",
       "sku": "ENS-FPRV",
       "slug": "buyuk-boy-silikon-anahtarlik-18",
@@ -627,9 +655,9 @@
       "price": 510,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625412922-ga70t.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625475637-k3ho1.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625413969-oacyz.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625476539-75uxk.jpg"
       ],
       "imageAlt": "büyük boy silikpn anahtarlık 12 (ENS-8787)",
       "isConceptImage": false,
@@ -1758,9 +1786,9 @@
       "price": 510,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625414908-pidw4.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625477469-5l8op.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625416088-nrj53.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625478355-hqt08.jpg"
       ],
       "imageAlt": "silikon anahtarlık 6 (ENS-8DV0)",
       "isConceptImage": false,
@@ -1814,9 +1842,9 @@
       "price": 510,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625417016-lu84j.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625479155-h36iu.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625417887-du3z5.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625480203-l11ca.jpg"
       ],
       "imageAlt": "silikon anahtarlık4 (ENS-MX7X)",
       "isConceptImage": false,
@@ -1842,9 +1870,9 @@
       "price": 510,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625418804-zfa34.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625481049-ynehd.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625419840-j1lar.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625482108-m8zj8.jpg"
       ],
       "imageAlt": "silikon anahtarlık 3 (ENS-S3I8)",
       "isConceptImage": false,
@@ -1870,9 +1898,9 @@
       "price": 510,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625420814-fc6wy.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625483042-x2lsu.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625421847-3ac0y.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625484313-w93qb.jpg"
       ],
       "imageAlt": "silikon anahtarlık2 (ENS-N4SA)",
       "isConceptImage": false,
@@ -2010,9 +2038,9 @@
       "price": 225,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625422858-hmtb4.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625485120-tjxbj.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625423831-aqzxi.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625486093-9ncs8.jpg"
       ],
       "imageAlt": "orta boy karakter kar küresi (ENS-6GYV)",
       "isConceptImage": false,
@@ -2298,9 +2326,9 @@
       "price": 275,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625424791-xasha.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625486979-zqkca.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625426233-a3qhn.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625488013-2s695.jpg"
       ],
       "imageAlt": "ışıklı nene-dede biblosu (ENS-9ROF)",
       "isConceptImage": false,
@@ -2350,9 +2378,9 @@
       "price": 450,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625427330-q6zqt.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625488986-cagla.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625428217-xhax1.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625489878-usw30.jpg"
       ],
       "imageAlt": "kulplu model termos (ENS-NQYY)",
       "isConceptImage": false,
@@ -2376,7 +2404,7 @@
       "price": 375,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625429102-dv9cm.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795625490740-ii2i0.jpg",
       "gallery": [
         "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795597484553-3ru3k.jpg"
       ],
@@ -14428,6 +14456,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795625412908,
+  "updatedAt": 1795625475626,
   "members": []
 }
