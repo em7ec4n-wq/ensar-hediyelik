@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795615269483",
+      "sku": "ENS-5O2D",
+      "slug": "isikli-mor-gul-fanus",
+      "name": "ışıklı mor gül fanus",
+      "shortName": "ışıklı mor gül fanus",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 250,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795615251526-f41rk-6456f9ea-d5d6-4cd4-90d0-cbde331cc62d.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795615251526-f41rk-6456f9ea-d5d6-4cd4-90d0-cbde331cc62d.jpeg"
+      ],
+      "imageAlt": "ışıklı mor gül fanus (ENS-5O2D)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı Hediyeler"
+      ]
+    },
+    {
       "id": "custom-1795615244549",
       "sku": "ENS-O2YK",
       "slug": "gul-fanus",
@@ -13159,6 +13185,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795615245469,
+  "updatedAt": 1795615270236,
   "members": []
 }
