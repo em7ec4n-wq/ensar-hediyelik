@@ -429,6 +429,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795598268380",
+      "sku": "ENS-RIRZ",
+      "slug": "koltukta-oturan-sevgili-temali-isikli-biblo",
+      "name": "koltukta oturan sevgili temalı ışıklı biblo",
+      "shortName": "koltukta oturan sevgili temalı ışıklı biblo",
+      "categorySlug": "sevgililer-gunu",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 275,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795598240616-hjmmv-76be1196-3155-410c-b3cc-c29b141685bb.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795598240616-hjmmv-76be1196-3155-410c-b3cc-c29b141685bb.jpeg"
+      ],
+      "imageAlt": "koltukta oturan sevgili temalı ışıklı biblo (ENS-RIRZ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Sevgililer Günü"
+      ]
+    },
+    {
       "id": "custom-1795598197287",
       "sku": "ENS-FFQP",
       "slug": "kirmizi-gul-figurlu-hediye-kutusu",
@@ -596,9 +622,9 @@
       "price": 275,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795598198861-gg415.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795598269912-ycokv.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795598199998-t6yng.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795598270927-0qrs8.jpg"
       ],
       "imageAlt": "ışıklı nene-dede biblosu (ENS-9ROF)",
       "isConceptImage": false,
@@ -648,9 +674,9 @@
       "price": 450,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795598201230-qapfm.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795598271973-03pw0.jpg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795598202249-ea9w5.jpg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795598272770-v4w20.jpg"
       ],
       "imageAlt": "kulplu model termos (ENS-NQYY)",
       "isConceptImage": false,
@@ -674,7 +700,7 @@
       "price": 375,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795598203201-br8de.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795598273662-f16xf.jpg",
       "gallery": [
         "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795597484553-3ru3k.jpg"
       ],
@@ -12726,6 +12752,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795598198854,
+  "updatedAt": 1795598269899,
   "members": []
 }
