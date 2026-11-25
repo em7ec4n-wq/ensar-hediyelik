@@ -436,6 +436,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795615244549",
+      "sku": "ENS-O2YK",
+      "slug": "gul-fanus",
+      "name": "gül fanus",
+      "shortName": "gül fanus",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 250,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795615207073-0n2c1-5867f5f2-3607-475e-91a3-87ca2bd3327f.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795615207073-0n2c1-5867f5f2-3607-475e-91a3-87ca2bd3327f.jpeg"
+      ],
+      "imageAlt": "gül fanus (ENS-O2YK)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı Hediyeler"
+      ]
+    },
+    {
       "id": "custom-1795615179825",
       "sku": "ENS-FJIT",
       "slug": "atm-kumbara",
@@ -13133,6 +13159,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795615180471,
+  "updatedAt": 1795615245469,
   "members": []
 }
