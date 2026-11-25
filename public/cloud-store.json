@@ -436,6 +436,58 @@
   ],
   "products": [
     {
+      "id": "custom-1795621461458",
+      "sku": "ENS-GPP0",
+      "slug": "kupa-6",
+      "name": "kupa 6",
+      "shortName": "kupa 6",
+      "categorySlug": "ilginc-kupalar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795621444397-5e6f7-IMG_9609.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795621444397-5e6f7-IMG_9609.png"
+      ],
+      "imageAlt": "kupa 6 (ENS-GPP0)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "İlginç Kupalar"
+      ]
+    },
+    {
+      "id": "custom-1795621391830",
+      "sku": "ENS-O3Z0",
+      "slug": "kupa-4",
+      "name": "kupa 4",
+      "shortName": "kupa 4",
+      "categorySlug": "ilginc-kupalar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795621380396-ya4dx-IMG_9611.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795621380396-ya4dx-IMG_9611.png"
+      ],
+      "imageAlt": "kupa 4 (ENS-O3Z0)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "İlginç Kupalar"
+      ]
+    },
+    {
       "id": "custom-1795620920506",
       "sku": "ENS-KXHR",
       "slug": "lux-ital-fanus",
@@ -13919,6 +13971,6 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795620923233,
+  "updatedAt": 1795621462289,
   "members": []
 }
