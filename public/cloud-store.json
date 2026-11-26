@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682683833-ozbb8.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682786308-az26o.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795682785235",
+      "sku": "ENS-V9I5",
+      "slug": "isikli-hava-nemlemdirici",
+      "name": "ışıklı hava nemlemdirici",
+      "shortName": "ışıklı hava nemlemdirici",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 600,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682723343-0pc3d-IMG_0768.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682723343-0pc3d-IMG_0768.webp"
+      ],
+      "imageAlt": "ışıklı hava nemlemdirici (ENS-V9I5)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795682682766",
       "sku": "ENS-UB3N",
@@ -15829,7 +15855,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795682683827,
+  "updatedAt": 1795682786302,
   "members": [
     {
       "id": "bayi-1795675580824",
