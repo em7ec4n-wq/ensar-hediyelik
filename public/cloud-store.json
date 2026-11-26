@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682638973-t56y1.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682683833-ozbb8.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795682682766",
+      "sku": "ENS-UB3N",
+      "slug": "usb-star-master",
+      "name": "usb star master",
+      "shortName": "usb star master",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 180,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682645831-1j6qm-IMG_0766.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682645831-1j6qm-IMG_0766.webp"
+      ],
+      "imageAlt": "usb star master (ENS-UB3N)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795682637929",
       "sku": "ENS-3VCC",
@@ -15803,7 +15829,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795682638966,
+  "updatedAt": 1795682683827,
   "members": [
     {
       "id": "bayi-1795675580824",
