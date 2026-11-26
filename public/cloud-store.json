@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795698162992",
+      "sku": "ENS-TN91",
+      "slug": "adalet-terazili-biblo",
+      "name": "adalet terazili biblo",
+      "shortName": "adalet terazili biblo",
+      "categorySlug": "dekoratif-biplolar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 970,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795698130405-qoczb-IMG_4850.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795698130405-qoczb-IMG_4850.webp"
+      ],
+      "imageAlt": "adalet terazili biblo (ENS-TN91)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Dekoratif biblolar"
+      ]
+    },
+    {
       "id": "custom-1795698112886",
       "sku": "ENS-VI21",
       "slug": "dekoratif-kartal-saatli-biblo",
@@ -17136,7 +17162,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795698113774,
+  "updatedAt": 1795698164037,
   "members": [
     {
       "id": "bayi-1795691161837",
