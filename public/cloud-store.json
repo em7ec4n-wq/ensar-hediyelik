@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795698112886",
+      "sku": "ENS-VI21",
+      "slug": "dekoratif-kartal-saatli-biblo",
+      "name": "dekoratif kartal saatli biblo",
+      "shortName": "dekoratif kartal saatli biblo",
+      "categorySlug": "dekoratif-biplolar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 615,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795698084119-0pw86-IMG_4849.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795698084119-0pw86-IMG_4849.webp"
+      ],
+      "imageAlt": "dekoratif kartal saatli biblo (ENS-VI21)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Dekoratif biblolar"
+      ]
+    },
+    {
       "id": "custom-1795698037658",
       "sku": "ENS-SK13",
       "slug": "kartal-biblo",
@@ -17110,7 +17136,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795698039488,
+  "updatedAt": 1795698113774,
   "members": [
     {
       "id": "bayi-1795691161837",
