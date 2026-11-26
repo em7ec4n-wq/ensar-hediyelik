@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680724011-tpvu4.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680734888-z1hpa.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -451,9 +451,9 @@
       "price": 95,
       "stock": 99,
       "published": true,
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680732413-p8v65-IMG_0743.webp",
       "gallery": [
-        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680732413-p8v65-IMG_0743.webp"
       ],
       "imageAlt": "ışıklı bambi masa lambası (ENS-63S2)",
       "isConceptImage": false,
@@ -15253,7 +15253,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795680724008,
+  "updatedAt": 1795680734884,
   "members": [
     {
       "id": "bayi-1795675580824",
