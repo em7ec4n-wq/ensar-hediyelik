@@ -453,9 +453,9 @@
       "price": 325,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795708493208-01f6u-e50bc91b-901a-4c87-a6b2-5d33f4e93edd.jpeg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795708949300-2z4jg-36D87638-872E-4388-9D9C-B735757FAC4C.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795708493208-01f6u-e50bc91b-901a-4c87-a6b2-5d33f4e93edd.jpeg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795708949300-2z4jg-36D87638-872E-4388-9D9C-B735757FAC4C.png"
       ],
       "imageAlt": "büyük boy kar küre 2 (ENS-E50Q)",
       "isConceptImage": false,
@@ -17351,7 +17351,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795708943982,
+  "updatedAt": 1795708959016,
   "members": [
     {
       "id": "bayi-1795703458767",
