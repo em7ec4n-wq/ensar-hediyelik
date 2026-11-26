@@ -385,16 +385,6 @@
       "showOnHome": true,
       "homeOrder": 5,
       "isConceptImage": false
-    },
-    {
-      "slug": "buyuk-boy-kar-kureleri",
-      "name": "Büyük Boy Kar Küreleri",
-      "description": "Işıklı, müzikli ve püskürtmeli büyük boy kar küresi modelleri.",
-      "image": "/ensar-web/gorseller/urun-puskurtmeli-kar-kuresi.webp",
-      "imageAlt": "Büyük Boy Kar Küreleri",
-      "showOnHome": false,
-      "parentSlug": "cam-kureler",
-      "isConceptImage": false
     }
   ],
   "products": [
@@ -17282,7 +17272,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795706898195,
+  "updatedAt": 1795706902219,
   "members": [
     {
       "id": "bayi-1795703458767",
