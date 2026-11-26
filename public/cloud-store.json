@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795708510041",
+      "sku": "ENS-E50Q",
+      "slug": "buyuk-boy-kar-kure-2",
+      "name": "büyük boy kar küre 2",
+      "shortName": "büyük boy kar küre 2",
+      "categorySlug": "buyuk-boy-kar-kuresi",
+      "extraCategorySlugs": [
+        "kar-kureleri"
+      ],
+      "description": "",
+      "price": 325,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795708493208-01f6u-e50bc91b-901a-4c87-a6b2-5d33f4e93edd.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795708493208-01f6u-e50bc91b-901a-4c87-a6b2-5d33f4e93edd.jpeg"
+      ],
+      "imageAlt": "büyük boy kar küre 2 (ENS-E50Q)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Büyük Boy Kar Küresi"
+      ]
+    },
+    {
       "id": "custom-1795275832774",
       "sku": "ENS-32773",
       "slug": "pelus-ens-32773",
@@ -17323,7 +17351,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795707993782,
+  "updatedAt": 1795708512797,
   "members": [
     {
       "id": "bayi-1795703458767",
