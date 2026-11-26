@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681351986-47g5d.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681381426-m5zmu.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795681380504",
+      "sku": "ENS-9J8E",
+      "slug": "silikon-isikli-kalp-byk",
+      "name": "silikon ışıklı kalp byk",
+      "shortName": "silikon ışıklı kalp byk",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "Adet fiyat\nBüyük boy",
+      "price": 125,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681355228-j7sm3-IMG_0752.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681355228-j7sm3-IMG_0752.webp"
+      ],
+      "imageAlt": "silikon ışıklı kalp byk (ENS-9J8E)",
+      "isConceptImage": false,
+      "isNewArrival": false,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795681284128",
       "sku": "ENS-RQ42",
@@ -15413,7 +15439,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795681351980,
+  "updatedAt": 1795681381420,
   "members": [
     {
       "id": "bayi-1795675580824",
