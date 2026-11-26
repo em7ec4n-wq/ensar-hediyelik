@@ -43,7 +43,10 @@ export function CategoryAssignModal({
     if (isOpen) {
       const initial = new Set<string>();
       for (const p of store.products) {
-        if (p.categorySlug === targetCategorySlug) {
+        if (
+          p.categorySlug === targetCategorySlug ||
+          p.extraCategorySlugs?.includes(targetCategorySlug)
+        ) {
           initial.add(p.id);
         }
       }
@@ -102,23 +105,34 @@ export function CategoryAssignModal({
 
   const handleSaveAssignments = async () => {
     const next = structuredClone(store);
-    let assignedCount = 0;
     const parentSlug = targetCategory.parentSlug;
 
     for (const p of next.products) {
       const isSelected = selectedProductIds.has(p.id);
-      const isCurrentlyIn = p.categorySlug === targetCategorySlug;
+      const isPrimaryIn = p.categorySlug === targetCategorySlug;
+      const isExtraIn = Boolean(p.extraCategorySlugs?.includes(targetCategorySlug));
+      const isCurrentlyIn = isPrimaryIn || isExtraIn;
 
       if (isSelected && !isCurrentlyIn) {
-        p.categorySlug = targetCategorySlug;
+        const extraSet = new Set<string>(p.extraCategorySlugs || []);
+        extraSet.add(targetCategorySlug);
         if (parentSlug) {
-          p.extraCategorySlugs = [parentSlug];
+          extraSet.add(parentSlug);
         }
-        assignedCount++;
+        extraSet.delete(p.categorySlug);
+        p.extraCategorySlugs = Array.from(extraSet);
       } else if (!isSelected && isCurrentlyIn) {
-        // Moved out of this category: assign to parent or hediyelik-urunler
-        p.categorySlug = parentSlug || "hediyelik-urunler";
-        p.extraCategorySlugs = [];
+        if (isExtraIn) {
+          p.extraCategorySlugs = (p.extraCategorySlugs || []).filter(
+            (s) => s !== targetCategorySlug
+          );
+        }
+        if (isPrimaryIn) {
+          p.categorySlug = parentSlug || "hediyelik-urunler";
+          p.extraCategorySlugs = (p.extraCategorySlugs || []).filter(
+            (s) => s !== p.categorySlug
+          );
+        }
       }
     }
 

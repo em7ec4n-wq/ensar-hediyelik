@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { Product, StoreData } from "@/types/store";
 import { getProductHref } from "@/components/ProductCard";
 import { ChevronDownIcon } from "@/components/Icons";
+import { ExtraCategoriesPicker } from "./ExtraCategoriesPicker";
 
 interface AdminProductCardProps {
   product: Product;
@@ -172,11 +173,20 @@ export function AdminProductCard({
               >
                 {product.published ? "● Satışta" : "○ Gizli"}
               </button>
-              {product.extraCategorySlugs && product.extraCategorySlugs.length > 0 && (
-                <span className="rounded-md bg-[#321B2D]/10 px-2 py-0.5 text-[10px] font-bold text-[#321B2D]">
-                  +{product.extraCategorySlugs.length} Ek Kategori
-                </span>
-              )}
+              <button
+                type="button"
+                onClick={onToggleExpand}
+                className={`rounded-md px-2 py-0.5 text-[10px] font-bold transition-colors ${
+                  product.extraCategorySlugs && product.extraCategorySlugs.length > 0
+                    ? "bg-[#321B2D]/15 text-[#321B2D] hover:bg-[#321B2D]/25"
+                    : "border border-[#321B2D]/25 bg-white text-[#5F505C] hover:border-[#321B2D]"
+                }`}
+                title="Ürünü birden fazla kategoriye ekle"
+              >
+                {product.extraCategorySlugs && product.extraCategorySlugs.length > 0
+                  ? `+${product.extraCategorySlugs.length} Ek Kategori`
+                  : "＋ Çoklu Kategori"}
+              </button>
             </div>
 
             <div>
@@ -515,6 +525,19 @@ export function AdminProductCard({
               />
             </div>
           </div>
+
+          <ExtraCategoriesPicker
+            categories={store.categories}
+            primarySlug={categorySlug}
+            selectedSlugs={product.extraCategorySlugs || []}
+            onChange={async (nextSlugs) => {
+              const next = structuredClone(store);
+              const target = next.products[originalIndex];
+              if (!target) return;
+              target.extraCategorySlugs = nextSlugs.filter((s) => s !== target.categorySlug);
+              await commitStore(next, "✓ Ek kategoriler güncellendi", product.id, true);
+            }}
+          />
 
           <div className="flex flex-wrap items-center justify-between gap-3 pt-1">
             <label className="flex items-center gap-2 text-xs font-semibold text-[#241722]">
