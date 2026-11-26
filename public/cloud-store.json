@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795693798434",
+      "sku": "ENS-1VXF",
+      "slug": "yilbasi-cam-fanus-1",
+      "name": "yılbaşı cam fanus 1",
+      "shortName": "yılbaşı cam fanus 1",
+      "categorySlug": "yilbasi",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 1770,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795693673288-yc6av-IMG_4833.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795693673288-yc6av-IMG_4833.webp"
+      ],
+      "imageAlt": "yılbaşı cam fanus 1 (ENS-1VXF)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Yılbaşı Ürünleri"
+      ]
+    },
+    {
       "id": "custom-1795693115040",
       "sku": "ENS-KAYQ",
       "slug": "kucuk-boy-motorlu-stantli-mavi-motor-biblo",
@@ -16744,7 +16770,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795693115968,
+  "updatedAt": 1795693799523,
   "members": [
     {
       "id": "bayi-1795691161837",
