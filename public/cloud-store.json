@@ -443,8 +443,8 @@
       "id": "custom-1795704256247",
       "sku": "ENS-8RG9",
       "slug": "adelet-biblo-3",
-      "name": "adelet biblo 3",
-      "shortName": "adelet biblo 3",
+      "name": "adalet biblo 3",
+      "shortName": "adalet biblo 3",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "dekoratif-biplolar"
@@ -457,7 +457,7 @@
       "gallery": [
         "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795704227314-kcsna-IMG_4852.webp"
       ],
-      "imageAlt": "adelet biblo 3 (ENS-8RG9)",
+      "imageAlt": "adalet biblo 3 (ENS-8RG9)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -17295,7 +17295,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795704258091,
+  "updatedAt": 1795704269513,
   "members": [
     {
       "id": "bayi-1795703458767",
