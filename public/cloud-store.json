@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795691892625",
+      "sku": "ENS-J4ZU",
+      "slug": "nostaljik-radyo",
+      "name": "nostaljik radyo",
+      "shortName": "nostaljik radyo",
+      "categorySlug": "nostaljik-radyolar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 725,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795691867500-f7ipp-1877934b-9446-4887-b63e-ea03d63dd157.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795691867500-f7ipp-1877934b-9446-4887-b63e-ea03d63dd157.jpeg"
+      ],
+      "imageAlt": "nostaljik radyo (ENS-J4ZU)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Nostaljik radyolar"
+      ]
+    },
+    {
       "id": "custom-1795683578783",
       "sku": "ENS-F1CA",
       "slug": "isikli-biblo-2",
@@ -16219,7 +16245,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795691163063,
+  "updatedAt": 1795691893688,
   "members": [
     {
       "id": "bayi-1795691161837",
