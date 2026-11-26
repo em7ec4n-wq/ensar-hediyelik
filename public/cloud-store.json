@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681286796-byvmz.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681293167-wovqj.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -451,9 +451,9 @@
       "price": 75,
       "stock": 99,
       "published": true,
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681290541-zb6kw-IMG_0752.webp",
       "gallery": [
-        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681290541-zb6kw-IMG_0752.webp"
       ],
       "imageAlt": "silikon ışıklı kalp (ENS-RQ42)",
       "isConceptImage": false,
@@ -15413,7 +15413,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795681286790,
+  "updatedAt": 1795681293160,
   "members": [
     {
       "id": "bayi-1795675580824",
