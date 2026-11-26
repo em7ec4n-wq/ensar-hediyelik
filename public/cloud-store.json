@@ -17379,8 +17379,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795711102821,
+  "updatedAt": 1795715321223,
   "members": [
+    {
+      "id": "bayi-1795715320178",
+      "companyName": "Mersin Eslife",
+      "contactName": "Sercan Mercan",
+      "phone": "05454823011",
+      "email": "",
+      "city": "Mersin mezitli",
+      "password": "159951",
+      "createdAt": "26.11.2026"
+    },
     {
       "id": "bayi-1795703458767",
       "companyName": "Japon shop",
