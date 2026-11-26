@@ -440,6 +440,105 @@
   ],
   "products": [
     {
+      "id": "prod-564",
+      "sku": "ENS-MK-564",
+      "slug": "muzikli-balerinli-piyano",
+      "name": "Müzikli Balerinli Piyano",
+      "shortName": "Balerinli Piyano",
+      "categorySlug": "muzik-kutulari",
+      "description": "Kuyruklu piyano formunda tasarlanmış kurmalı müzik kutusu. Kapak açıldığında klasik melodi çalar ve mıknatıslı taban üzerindeki zarif balerin figürü piyano üzerinde dans eder.",
+      "price": 529,
+      "stock": 12,
+      "published": true,
+      "image": "/ensar-web/gorseller/urun-balerinli-piyano.webp",
+      "gallery": [
+        "/ensar-web/gorseller/urun-balerinli-piyano.webp",
+        "/ensar-web/gorseller/hero-balerinli-piyano.webp"
+      ],
+      "imageAlt": "Pastel pembe kuyruklu piyano formunda dönen balerinli müzik kutusu",
+      "isConceptImage": true,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Sevgililer Günü",
+        "Anneler Günü",
+        "Yıldönümü"
+      ],
+      "giftTypes": [
+        "Müzik Kutuları",
+        "Romantik Hediyeler"
+      ],
+      "options": [
+        {
+          "name": "Renk",
+          "required": true,
+          "values": [
+            "Pastel Pembe",
+            "Krem Beyaz"
+          ]
+        }
+      ],
+      "legacyPath": "/Müzik-Kutusu-Cesitleri?product_id=564"
+    },
+    {
+      "id": "prod-324",
+      "sku": "ENS-MK-324",
+      "slug": "ahsap-oymali-balerinli-muzik-kutusu",
+      "name": "Ahşap Oymalı Nostaljik Balerinli Müzik Kutusu",
+      "shortName": "Ahşap Müzik Kutusu",
+      "categorySlug": "muzik-kutulari",
+      "description": "Vintage kabartma detaylı ahşap kutu içinde kurmalı mekanizma ile dönen balerin figürü. Takı ve küçük hatıralar için zarif bir saklama ve hediye seçeneği.",
+      "price": 495,
+      "stock": 7,
+      "published": true,
+      "image": "/ensar-web/gorseller/kategori-muzik-kutusu.webp",
+      "gallery": [
+        "/ensar-web/gorseller/kategori-muzik-kutusu.webp"
+      ],
+      "imageAlt": "Oymalı ahşap sandık formunda balerinli müzik kutusu",
+      "isConceptImage": true,
+      "occasions": [
+        "Anneler Günü",
+        "Yıldönümü",
+        "Doğum Günü",
+        "Sevgililer Günü"
+      ],
+      "giftTypes": [
+        "Müzik Kutuları",
+        "Romantik Hediyeler"
+      ],
+      "legacyPath": "/Müzik-Kutusu-Cesitleri?product_id=324"
+    },
+    {
+      "id": "custom-1795275832774",
+      "sku": "ENS-32773",
+      "slug": "pelus-ens-32773",
+      "name": "Peluş",
+      "shortName": "Peluş",
+      "categorySlug": "ilginc-kupalar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 550,
+      "stock": 99,
+      "published": true,
+      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "gallery": [
+        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+      ],
+      "imageAlt": "Peluş (ENS-32773)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "newArrivalOrder": 1,
+      "occasions": [
+        "Doğum Günü",
+        "Yılbaşı"
+      ],
+      "giftTypes": [
+        "İlginç Kupalar"
+      ]
+    },
+    {
       "id": "custom-1795694397406",
       "sku": "ENS-17M9",
       "slug": "sulu-dekoratif-biblo",
@@ -17058,7 +17157,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795694398388,
+  "updatedAt": 1795697331832,
   "members": [
     {
       "id": "bayi-1795691161837",
