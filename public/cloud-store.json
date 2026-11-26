@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680770279-zchic.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680817536-xntiy.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795680816616",
+      "sku": "ENS-UUA3",
+      "slug": "isikli-masa-lambasi-ayicik",
+      "name": "ışıklı masa lambası ayıcık",
+      "shortName": "ışıklı masa lambası ayıcık",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 95,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680799996-3pr0j-IMG_0745.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680799996-3pr0j-IMG_0745.webp"
+      ],
+      "imageAlt": "ışıklı masa lambası ayıcık (ENS-UUA3)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795680769265",
       "sku": "ENS-LDQA",
@@ -15279,7 +15305,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795680770275,
+  "updatedAt": 1795680817533,
   "members": [
     {
       "id": "bayi-1795675580824",
