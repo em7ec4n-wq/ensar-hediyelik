@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795679650550",
+      "sku": "ENS-4CLS",
+      "slug": "sulu-kum-saati-5",
+      "name": "sulu kum saati 5",
+      "shortName": "sulu kum saati 5",
+      "categorySlug": "kum-saatleri",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 200,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795679605888-e893z-IMG_4801.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795679605888-e893z-IMG_4801.webp"
+      ],
+      "imageAlt": "sulu kum saati 5 (ENS-4CLS)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Kum Saatleri"
+      ]
+    },
+    {
       "id": "custom-1795679596222",
       "sku": "ENS-36ER",
       "slug": "sulu-kum-saati-4",
@@ -15097,7 +15123,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795679597071,
+  "updatedAt": 1795679651468,
   "members": [
     {
       "id": "bayi-1795675580824",
