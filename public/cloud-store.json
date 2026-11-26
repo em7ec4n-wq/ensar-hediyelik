@@ -16219,8 +16219,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795683579749,
+  "updatedAt": 1795691163063,
   "members": [
+    {
+      "id": "bayi-1795691161837",
+      "companyName": "bakioğlu taşımacılık",
+      "contactName": "ebrar dursun",
+      "phone": "05416750505",
+      "email": "",
+      "city": "kocaeli",
+      "password": "ebrar0404",
+      "createdAt": "26.11.2026"
+    },
     {
       "id": "bayi-1795675580824",
       "companyName": "Dreamer shop",
