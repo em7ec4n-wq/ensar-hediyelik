@@ -395,16 +395,6 @@
       "showOnHome": false,
       "parentSlug": "cam-kureler",
       "isConceptImage": false
-    },
-    {
-      "slug": "orta-boy-kar-kureleri",
-      "name": "Orta Boy Kar Küreleri",
-      "description": "Işıklı ve müzikli orta boy kar küresi çeşitleri.",
-      "image": "/ensar-yilbasi/gorseller/kar-kureleri/erc5001b-01.webp",
-      "imageAlt": "Orta Boy Kar Küreleri",
-      "showOnHome": false,
-      "parentSlug": "cam-kureler",
-      "isConceptImage": false
     }
   ],
   "products": [
@@ -17292,7 +17282,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795706892767,
+  "updatedAt": 1795706898195,
   "members": [
     {
       "id": "bayi-1795703458767",
