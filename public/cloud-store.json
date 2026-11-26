@@ -440,34 +440,6 @@
   ],
   "products": [
     {
-      "id": "custom-1795275832774",
-      "sku": "ENS-32773",
-      "slug": "pelus-ens-32773",
-      "name": "Peluş",
-      "shortName": "Peluş",
-      "categorySlug": "ilginc-kupalar",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 550,
-      "stock": 99,
-      "published": true,
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
-      "gallery": [
-        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
-      ],
-      "imageAlt": "Peluş (ENS-32773)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "newArrivalOrder": 1,
-      "occasions": [
-        "Doğum Günü",
-        "Yılbaşı"
-      ],
-      "giftTypes": [
-        "İlginç Kupalar"
-      ]
-    },
-    {
       "id": "prod-324",
       "sku": "ENS-MK-324",
       "slug": "ahsap-oymali-balerinli-muzik-kutusu",
@@ -571,7 +543,9 @@
       "name": "adalet terazili biblo 43 cm",
       "shortName": "adalet terazili biblo 43 cm",
       "categorySlug": "dekoratif-biplolar",
-      "extraCategorySlugs": [],
+      "extraCategorySlugs": [
+        "hediyelik-urunler"
+      ],
       "description": "",
       "price": 970,
       "stock": 99,
@@ -580,7 +554,7 @@
       "gallery": [
         "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795698130405-qoczb-IMG_4850.webp"
       ],
-      "imageAlt": "adalet terazili biblo (ENS-TN91)",
+      "imageAlt": "adalet terazili biblo 43 cm (ENS-TN91)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -17287,7 +17261,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795703971392,
+  "updatedAt": 1795703997904,
   "members": [
     {
       "id": "bayi-1795703458767",
