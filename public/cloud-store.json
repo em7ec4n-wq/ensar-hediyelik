@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795679509731",
+      "sku": "ENS-FABN",
+      "slug": "sulu-kum-saati-3",
+      "name": "sulu kum saati 3",
+      "shortName": "sulu kum saati 3",
+      "categorySlug": "kum-saatleri",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 205,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795679473145-0t01o-IMG_4798.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795679473145-0t01o-IMG_4798.webp"
+      ],
+      "imageAlt": "sulu kum saati 3 (ENS-FABN)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Kum Saatleri"
+      ]
+    },
+    {
       "id": "custom-1795679402396",
       "sku": "ENS-NL3V",
       "slug": "sulu-kum-saati-1",
@@ -15045,7 +15071,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795679403348,
+  "updatedAt": 1795679510563,
   "members": [
     {
       "id": "bayi-1795675580824",
