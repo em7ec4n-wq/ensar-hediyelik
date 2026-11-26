@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795691961105",
+      "sku": "ENS-R39D",
+      "slug": "nostaljik-radyo-3",
+      "name": "nostaljik  radyo 3",
+      "shortName": "nostaljik  radyo 3",
+      "categorySlug": "nostaljik-radyolar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 725,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795691943281-l5mbq-acdbb1d1-0429-437f-8a85-57127d188f98.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795691943281-l5mbq-acdbb1d1-0429-437f-8a85-57127d188f98.jpeg"
+      ],
+      "imageAlt": "nostaljik  radyo 3 (ENS-R39D)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Nostaljik radyolar"
+      ]
+    },
+    {
       "id": "custom-1795691933274",
       "sku": "ENS-4BBQ",
       "slug": "nostaljik-radyo-2",
@@ -16271,7 +16297,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795691934449,
+  "updatedAt": 1795691962091,
   "members": [
     {
       "id": "bayi-1795691161837",
