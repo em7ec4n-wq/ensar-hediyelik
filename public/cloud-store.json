@@ -440,6 +440,33 @@
   ],
   "products": [
     {
+      "id": "custom-1795694397406",
+      "sku": "ENS-17M9",
+      "slug": "sulu-dekoratif-biblo",
+      "name": "sulu dekoratif biblo",
+      "shortName": "sulu dekoratif biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 60,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795694380696-xrejj-IMG_4845.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795694380696-xrejj-IMG_4845.webp",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795694382038-vcua0-IMG_4846.webp"
+      ],
+      "imageAlt": "sulu dekoratif biblo (ENS-17M9)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795694341429",
       "sku": "ENS-2L87",
       "slug": "sulu-sise-biblo",
@@ -17031,7 +17058,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795694342393,
+  "updatedAt": 1795694398388,
   "members": [
     {
       "id": "bayi-1795691161837",
