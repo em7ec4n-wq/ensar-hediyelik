@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680695685-achsd.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680724011-tpvu4.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795680723087",
+      "sku": "ENS-63S2",
+      "slug": "isikli-bambi-masa-lambasi",
+      "name": "ışıklı bambi masa lambası",
+      "shortName": "ışıklı bambi masa lambası",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 95,
+      "stock": 99,
+      "published": true,
+      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "gallery": [
+        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+      ],
+      "imageAlt": "ışıklı bambi masa lambası (ENS-63S2)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795680694496",
       "sku": "ENS-BF1G",
@@ -15227,7 +15253,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795680695680,
+  "updatedAt": 1795680724008,
   "members": [
     {
       "id": "bayi-1795675580824",
