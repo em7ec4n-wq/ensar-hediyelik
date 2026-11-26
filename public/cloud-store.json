@@ -405,16 +405,6 @@
       "showOnHome": false,
       "parentSlug": "cam-kureler",
       "isConceptImage": false
-    },
-    {
-      "slug": "kucuk-boy-kar-kureleri",
-      "name": "Küçük Boy Kar Küreleri",
-      "description": "Zarif masaüstü küçük boy kar küresi modelleri.",
-      "image": "/ensar-yilbasi/gorseller/kar-kureleri/b4-9209-76-01.webp",
-      "imageAlt": "Küçük Boy Kar Küreleri",
-      "showOnHome": false,
-      "parentSlug": "cam-kureler",
-      "isConceptImage": false
     }
   ],
   "products": [
@@ -17302,7 +17292,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795706888918,
+  "updatedAt": 1795706892767,
   "members": [
     {
       "id": "bayi-1795703458767",
