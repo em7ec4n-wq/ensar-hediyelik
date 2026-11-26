@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682544379-ospm0.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682581207-nl27e.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795682580089",
+      "sku": "ENS-OBYR",
+      "slug": "kamp-lambasi-sarjli",
+      "name": "kamp lambası şarjlı",
+      "shortName": "kamp lambası şarjlı",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 160,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682559669-lj1hw-IMG_0765.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682559669-lj1hw-IMG_0765.webp"
+      ],
+      "imageAlt": "kamp lambası şarjlı (ENS-OBYR)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795682543328",
       "sku": "ENS-XR4P",
@@ -15751,7 +15777,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795682544375,
+  "updatedAt": 1795682581201,
   "members": [
     {
       "id": "bayi-1795675580824",
