@@ -500,7 +500,7 @@
       "categorySlug": "nostaljik-radyolar",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 0,
+      "price": 725,
       "stock": 99,
       "published": true,
       "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692025636-6hz3l-8e87770a-38ba-4a95-9bac-6f954f2d920d.jpeg",
@@ -16453,7 +16453,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795692068429,
+  "updatedAt": 1795692096779,
   "members": [
     {
       "id": "bayi-1795691161837",
