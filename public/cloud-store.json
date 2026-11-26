@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683349565-4fh7d.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683428503-ouida.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795683427449",
+      "sku": "ENS-EZUD",
+      "slug": "isikli-lale-1",
+      "name": "ışıklı lale 1",
+      "shortName": "ışıklı lale 1",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 330,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683383767-hmmzy-IMG_0779.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683383767-hmmzy-IMG_0779.webp"
+      ],
+      "imageAlt": "ışıklı lale 1 (ENS-EZUD)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795683348525",
       "sku": "ENS-9ID0",
@@ -16115,7 +16141,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795683349561,
+  "updatedAt": 1795683428486,
   "members": [
     {
       "id": "bayi-1795675580824",
