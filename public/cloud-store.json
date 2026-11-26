@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681536865-33n53.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681620324-6cnln.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795681619281",
+      "sku": "ENS-P35Q",
+      "slug": "isikli-melek",
+      "name": "ışıklı melek",
+      "shortName": "ışıklı melek",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "Adet fiyatı",
+      "price": 60,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681566605-7jnjr-IMG_0755.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681566605-7jnjr-IMG_0755.webp"
+      ],
+      "imageAlt": "ışıklı melek (ENS-P35Q)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795681535829",
       "sku": "ENS-870C",
@@ -15491,7 +15517,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795681536859,
+  "updatedAt": 1795681620318,
   "members": [
     {
       "id": "bayi-1795675580824",
