@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681241789-hpp48.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681286796-byvmz.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795681284128",
+      "sku": "ENS-RQ42",
+      "slug": "silikon-isikli-kalp",
+      "name": "silikon ışıklı kalp",
+      "shortName": "silikon ışıklı kalp",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "Orta boy \nAdet fiyat",
+      "price": 75,
+      "stock": 99,
+      "published": true,
+      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "gallery": [
+        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+      ],
+      "imageAlt": "silikon ışıklı kalp (ENS-RQ42)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795681240744",
       "sku": "ENS-X2XT",
@@ -15387,7 +15413,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795681241782,
+  "updatedAt": 1795681286790,
   "members": [
     {
       "id": "bayi-1795675580824",
