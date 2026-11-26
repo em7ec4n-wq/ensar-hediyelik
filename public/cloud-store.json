@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795692867211",
+      "sku": "ENS-SZEU",
+      "slug": "buyuk-boy-stantli-motor-biblo",
+      "name": "büyük boy stantlı motor biblo",
+      "shortName": "büyük boy stantlı motor biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 550,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692844063-a25ux-92b7e598-108f-44da-9ea8-3a39c5440c1c.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692844063-a25ux-92b7e598-108f-44da-9ea8-3a39c5440c1c.jpeg"
+      ],
+      "imageAlt": "büyük boy stantlı motor biblo (ENS-SZEU)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795692509356",
       "sku": "ENS-K26E",
       "slug": "kucuk-boy-calar-saat-2",
@@ -16562,7 +16588,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795692755974,
+  "updatedAt": 1795692868435,
   "members": [
     {
       "id": "bayi-1795691161837",
