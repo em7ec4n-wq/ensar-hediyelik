@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795679321947",
+      "sku": "ENS-AI2A",
+      "slug": "sulu-kum-saati",
+      "name": "Sulu kum saati",
+      "shortName": "Sulu kum saati",
+      "categorySlug": "kum-saatleri",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 195,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795679270479-glbn5-IMG_4796.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795679270479-glbn5-IMG_4796.webp"
+      ],
+      "imageAlt": "Sulu kum saati (ENS-AI2A)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Kum Saatleri"
+      ]
+    },
+    {
       "id": "custom-1795679170913",
       "sku": "ENS-51L3",
       "slug": "yilbasi-fanus",
@@ -14993,7 +15019,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795679171702,
+  "updatedAt": 1795679322677,
   "members": [
     {
       "id": "bayi-1795675580824",
