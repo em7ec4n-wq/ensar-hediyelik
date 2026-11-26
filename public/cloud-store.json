@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681949002-89g97.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682174926-570ic.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795682173889",
+      "sku": "ENS-9Q6M",
+      "slug": "star-master",
+      "name": "star master",
+      "shortName": "star master",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 160,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682054874-6xghh-IMG_0761.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682054874-6xghh-IMG_0761.webp"
+      ],
+      "imageAlt": "star master (ENS-9Q6M)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795681947962",
       "sku": "ENS-6XU7",
@@ -15647,7 +15673,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795681948996,
+  "updatedAt": 1795682174920,
   "members": [
     {
       "id": "bayi-1795675580824",
