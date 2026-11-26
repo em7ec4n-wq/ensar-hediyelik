@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682786308-az26o.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682943124-57l9v.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795682942087",
+      "sku": "ENS-AZNZ",
+      "slug": "sokak-lambali-biblo",
+      "name": "sokak lambalı biblo",
+      "shortName": "sokak lambalı biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 260,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682876331-lm9yz-IMG_0769.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682876331-lm9yz-IMG_0769.webp"
+      ],
+      "imageAlt": "sokak lambalı biblo (ENS-AZNZ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
     {
       "id": "custom-1795682785235",
       "sku": "ENS-V9I5",
@@ -15855,7 +15881,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795682786302,
+  "updatedAt": 1795682943119,
   "members": [
     {
       "id": "bayi-1795675580824",
