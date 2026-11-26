@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681457877-tc1a7.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681536865-33n53.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795681535829",
+      "sku": "ENS-870C",
+      "slug": "mini-isikli-abajur-1",
+      "name": "mini ışıklı abajür 1",
+      "shortName": "mini ışıklı abajür 1",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "12'li Paket fiyatı",
+      "price": 720,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681508016-9zwjc-IMG_0754.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681508016-9zwjc-IMG_0754.webp"
+      ],
+      "imageAlt": "mini ışıklı abajür 1 (ENS-870C)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795681456850",
       "sku": "ENS-ZYBA",
@@ -15465,7 +15491,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795681457873,
+  "updatedAt": 1795681536859,
   "members": [
     {
       "id": "bayi-1795675580824",
