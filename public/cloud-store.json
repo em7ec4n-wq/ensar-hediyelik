@@ -440,6 +440,33 @@
   ],
   "products": [
     {
+      "id": "custom-1795694027782",
+      "sku": "ENS-LBXZ",
+      "slug": "sulu-gitar-biblo",
+      "name": "sulu gitar biblo",
+      "shortName": "sulu gitar biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795693999979-1z4b3-IMG_4838.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795693999979-1z4b3-IMG_4838.webp",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795694001105-qqqzk-IMG_4839.webp"
+      ],
+      "imageAlt": "sulu gitar biblo (ENS-LBXZ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795693920454",
       "sku": "ENS-9KEJ",
       "slug": "usb-li-cam-fanus-2",
@@ -16848,7 +16875,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795693921324,
+  "updatedAt": 1795694028834,
   "members": [
     {
       "id": "bayi-1795691161837",
