@@ -469,34 +469,6 @@
       "legacyPath": "/Müzik-Kutusu-Cesitleri?product_id=324"
     },
     {
-      "id": "custom-1795275832774",
-      "sku": "ENS-32773",
-      "slug": "pelus-ens-32773",
-      "name": "Peluş",
-      "shortName": "Peluş",
-      "categorySlug": "ilginc-kupalar",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 550,
-      "stock": 99,
-      "published": true,
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
-      "gallery": [
-        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
-      ],
-      "imageAlt": "Peluş (ENS-32773)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "newArrivalOrder": 1,
-      "occasions": [
-        "Doğum Günü",
-        "Yılbaşı"
-      ],
-      "giftTypes": [
-        "İlginç Kupalar"
-      ]
-    },
-    {
       "id": "custom-1795694397406",
       "sku": "ENS-17M9",
       "slug": "sulu-dekoratif-biblo",
@@ -17115,7 +17087,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795697897159,
+  "updatedAt": 1795697902355,
   "members": [
     {
       "id": "bayi-1795691161837",
