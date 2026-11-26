@@ -443,14 +443,14 @@
       "id": "custom-1795708961244",
       "sku": "ENS-ST91",
       "slug": "325-tl",
-      "name": "325 tl",
-      "shortName": "325 tl",
+      "name": "kar küresi büyük boy",
+      "shortName": "kar küresi büyük boy",
       "categorySlug": "buyuk-boy-kar-kuresi",
       "extraCategorySlugs": [
         "kar-kureleri"
       ],
       "description": "",
-      "price": 0,
+      "price": 325,
       "stock": 99,
       "published": true,
       "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795708958270-wrx8z-D2057F3D-7A82-48E0-8F57-C1519E4AD188.png",
@@ -17309,7 +17309,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795709423047,
+  "updatedAt": 1795709564486,
   "members": [
     {
       "id": "bayi-1795703458767",
