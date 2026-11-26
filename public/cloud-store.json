@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681062150-5chl4.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681132385-ffcq1.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,34 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795681131365",
+      "sku": "ENS-PI9F",
+      "slug": "isikli-ayicik",
+      "name": "ışıklı ayıcık",
+      "shortName": "ışıklı ayıcık",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "12 li paket fiyatıdır\nAdeti 35₺",
+      "price": 420,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681072794-nktqh-IMG_0749.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681072794-nktqh-IMG_0749.webp",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681073985-5pnoj-IMG_0750.webp",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681075303-52dki-IMG_0751.webp"
+      ],
+      "imageAlt": "ışıklı ayıcık (ENS-PI9F)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795681061074",
       "sku": "ENS-KXK4",
@@ -15333,7 +15361,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795681062144,
+  "updatedAt": 1795681132380,
   "members": [
     {
       "id": "bayi-1795675580824",
