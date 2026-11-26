@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683456806-vu1hz.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683516356-7u5et.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795683514931",
+      "sku": "ENS-I40Q",
+      "slug": "isikli-biblo",
+      "name": "ışıklı biblo",
+      "shortName": "ışıklı biblo",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 700,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683490975-tjirm-IMG_0780.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683490975-tjirm-IMG_0780.webp"
+      ],
+      "imageAlt": "ışıklı biblo (ENS-I40Q)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795683455735",
       "sku": "ENS-BVGX",
@@ -16167,7 +16193,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795683456802,
+  "updatedAt": 1795683516350,
   "members": [
     {
       "id": "bayi-1795675580824",
