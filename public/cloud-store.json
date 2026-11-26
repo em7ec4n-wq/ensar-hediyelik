@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682424826-0cw12.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682467926-3r96t.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795682466899",
+      "sku": "ENS-HXL6",
+      "slug": "star-master-masa-lambasi",
+      "name": "star master masa lambası",
+      "shortName": "star master masa lambası",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 100,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682430742-dbh3r-IMG_0763.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682430742-dbh3r-IMG_0763.webp"
+      ],
+      "imageAlt": "star master masa lambası (ENS-HXL6)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795682423882",
       "sku": "ENS-LN2V",
@@ -15699,7 +15725,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795682424819,
+  "updatedAt": 1795682467922,
   "members": [
     {
       "id": "bayi-1795675580824",
