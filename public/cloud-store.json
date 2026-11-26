@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682581207-nl27e.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682638973-t56y1.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795682637929",
+      "sku": "ENS-3VCC",
+      "slug": "usb-li-ay-gece-lambasi",
+      "name": "usb li ay gece lambası",
+      "shortName": "usb li ay gece lambası",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 410,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682613057-hzvva-IMG_0767.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795682613057-hzvva-IMG_0767.webp"
+      ],
+      "imageAlt": "usb li ay gece lambası (ENS-3VCC)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795682580089",
       "sku": "ENS-OBYR",
@@ -15777,7 +15803,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795682581201,
+  "updatedAt": 1795682638966,
   "members": [
     {
       "id": "bayi-1795675580824",
