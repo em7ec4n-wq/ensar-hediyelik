@@ -239,11 +239,11 @@
     },
     {
       "slug": "isikli-hediyeler",
-      "name": "Işıklı Hediyeler",
+      "name": "Işıklı ürünler",
       "description": "Cam fanus solmayan güller, LED'li cam küreler ve sıcak atmosferli gece lambaları.",
       "image": "/ensar-web/gorseller/vitrin-isikli-hediyeler.webp",
       "imageAlt": "Cam fanus içinde peri ışıklı solmayan kırmızı gül",
-      "showOnHome": false,
+      "showOnHome": true,
       "isConceptImage": true
     },
     {
@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680203939-oq3hc.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680236985-iznop.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -15201,7 +15201,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795680203935,
+  "updatedAt": 1795680236981,
   "members": [
     {
       "id": "bayi-1795675580824",
