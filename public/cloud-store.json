@@ -912,8 +912,10 @@
       "slug": "usb-li-cam-fanus",
       "name": "usb'li cam fanus",
       "shortName": "usb'li cam fanus",
-      "categorySlug": "isikli-hediyeler",
-      "extraCategorySlugs": [],
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "isikli-hediyeler"
+      ],
       "description": "",
       "price": 1950,
       "stock": 99,
@@ -17263,7 +17265,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795704116953,
+  "updatedAt": 1795704136758,
   "members": [
     {
       "id": "bayi-1795703458767",
