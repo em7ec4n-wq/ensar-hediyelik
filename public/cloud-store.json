@@ -597,7 +597,9 @@
       "name": "kartal biblo",
       "shortName": "kartal biblo",
       "categorySlug": "dekoratif-biplolar",
-      "extraCategorySlugs": [],
+      "extraCategorySlugs": [
+        "hediyelik-urunler"
+      ],
       "description": "",
       "price": 510,
       "stock": 99,
@@ -17261,7 +17263,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795703997904,
+  "updatedAt": 1795704085114,
   "members": [
     {
       "id": "bayi-1795703458767",
