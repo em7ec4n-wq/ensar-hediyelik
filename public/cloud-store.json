@@ -597,9 +597,7 @@
       "name": "kartal biblo",
       "shortName": "kartal biblo",
       "categorySlug": "dekoratif-biplolar",
-      "extraCategorySlugs": [
-        "hediyelik-urunler"
-      ],
+      "extraCategorySlugs": [],
       "description": "",
       "price": 510,
       "stock": 99,
@@ -17263,8 +17261,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795704085114,
+  "updatedAt": 1795704101829,
   "members": [
+    {
+      "id": "bayi-1795704098523",
+      "companyName": "TRANSFER REKLAM",
+      "contactName": "Mehmet Tülek",
+      "phone": "05343051310",
+      "email": "",
+      "city": "Beyşehir",
+      "password": "332711",
+      "createdAt": "26.11.2026"
+    },
     {
       "id": "bayi-1795703458767",
       "companyName": "Japon shop",
