@@ -443,8 +443,8 @@
       "id": "custom-1795692917016",
       "sku": "ENS-C2KQ",
       "slug": "buyuk-boy-motorlu-stantli-motor-biblo-2",
-      "name": "büyük boy motorlu stantlı motor biblo 2",
-      "shortName": "büyük boy motorlu stantlı motor biblo 2",
+      "name": "büyük boy motorlu stantlı kırmızı motor biblo",
+      "shortName": "büyük boy motorlu stantlı kırmızı motor biblo",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
@@ -455,7 +455,7 @@
       "gallery": [
         "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692927505-pye7d-3f996430-7c80-4965-b335-d9edc533ba51.jpeg"
       ],
-      "imageAlt": "büyük boy motorlu stantlı motor biblo 2 (ENS-C2KQ)",
+      "imageAlt": "büyük boy motorlu stantlı kırmızı motor biblo (ENS-C2KQ)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -16614,7 +16614,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795692930401,
+  "updatedAt": 1795692948615,
   "members": [
     {
       "id": "bayi-1795691161837",
