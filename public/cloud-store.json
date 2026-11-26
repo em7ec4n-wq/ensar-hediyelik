@@ -440,34 +440,6 @@
   ],
   "products": [
     {
-      "id": "custom-1795275832774",
-      "sku": "ENS-32773",
-      "slug": "pelus-ens-32773",
-      "name": "Peluş",
-      "shortName": "Peluş",
-      "categorySlug": "peluslar",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 550,
-      "stock": 99,
-      "published": true,
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
-      "gallery": [
-        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
-      ],
-      "imageAlt": "Peluş (ENS-32773)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "newArrivalOrder": 1,
-      "occasions": [
-        "Doğum Günü",
-        "Yılbaşı"
-      ],
-      "giftTypes": [
-        "İlginç Kupalar"
-      ]
-    },
-    {
       "id": "prod-324",
       "sku": "ENS-MK-324",
       "slug": "ahsap-oymali-balerinli-muzik-kutusu",
@@ -17287,7 +17259,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795703853461,
+  "updatedAt": 1795703864469,
   "members": [
     {
       "id": "bayi-1795703458767",
