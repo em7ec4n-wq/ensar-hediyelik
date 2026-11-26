@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795692917016",
+      "sku": "ENS-C2KQ",
+      "slug": "buyuk-boy-motorlu-stantli-motor-biblo-2",
+      "name": "büyük boy motorlu stantlı motor biblo 2",
+      "shortName": "büyük boy motorlu stantlı motor biblo 2",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 550,
+      "stock": 99,
+      "published": true,
+      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "gallery": [
+        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+      ],
+      "imageAlt": "büyük boy motorlu stantlı motor biblo 2 (ENS-C2KQ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795692867211",
       "sku": "ENS-SZEU",
       "slug": "buyuk-boy-stantli-motor-biblo",
@@ -16588,7 +16614,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795692868435,
+  "updatedAt": 1795692917949,
   "members": [
     {
       "id": "bayi-1795691161837",
