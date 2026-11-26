@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683032887-slrnz.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683060184-goy4r.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795683059161",
+      "sku": "ENS-ZY5V",
+      "slug": "sokak-lamba-biblo-2",
+      "name": "sokak lamba biblo 2",
+      "shortName": "sokak lamba biblo 2",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 260,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683038997-28kp3-IMG_0771.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683038997-28kp3-IMG_0771.webp"
+      ],
+      "imageAlt": "sokak lamba biblo 2 (ENS-ZY5V)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
     {
       "id": "custom-1795683031863",
       "sku": "ENS-6G6C",
@@ -15907,7 +15933,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795683032883,
+  "updatedAt": 1795683060179,
   "members": [
     {
       "id": "bayi-1795675580824",
