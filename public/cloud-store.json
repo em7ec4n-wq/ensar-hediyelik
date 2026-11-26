@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681310779-ycjra.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681351986-47g5d.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -443,8 +443,8 @@
       "id": "custom-1795681284128",
       "sku": "ENS-RQ42",
       "slug": "silikon-isikli-kalp",
-      "name": "silikon ışıklı kalp",
-      "shortName": "silikon ışıklı kalp",
+      "name": "silikon ışıklı kalp orta",
+      "shortName": "silikon ışıklı kalp orta",
       "categorySlug": "isikli-hediyeler",
       "extraCategorySlugs": [],
       "description": "Orta boy \nAdet fiyat",
@@ -15413,7 +15413,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795681310773,
+  "updatedAt": 1795681351980,
   "members": [
     {
       "id": "bayi-1795675580824",
