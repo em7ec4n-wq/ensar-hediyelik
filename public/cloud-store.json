@@ -445,7 +445,7 @@
       "slug": "pelus-ens-32773",
       "name": "Peluş",
       "shortName": "Peluş",
-      "categorySlug": "ilginc-kupalar",
+      "categorySlug": "peluslar",
       "extraCategorySlugs": [],
       "description": "",
       "price": 550,
@@ -17287,7 +17287,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795703461050,
+  "updatedAt": 1795703853461,
   "members": [
     {
       "id": "bayi-1795703458767",
