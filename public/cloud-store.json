@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795693032142",
+      "sku": "ENS-DUNE",
+      "slug": "kucuk-boy-motorlu-stantli-motor-biblo",
+      "name": "Küçük boy motorlu stantlı motor biblo",
+      "shortName": "Küçük boy motorlu stantlı motor biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 275,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795693009290-vcwd1-0000ce23-5d94-4a41-9cb0-586dd04d6e58.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795693009290-vcwd1-0000ce23-5d94-4a41-9cb0-586dd04d6e58.jpeg"
+      ],
+      "imageAlt": "Küçük boy motorlu stantlı motor biblo (ENS-DUNE)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795692976310",
       "sku": "ENS-THI4",
       "slug": "buyuk-boy-motorlu-stantli-gri-motor-biblo",
@@ -16640,7 +16666,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795692977179,
+  "updatedAt": 1795693032926,
   "members": [
     {
       "id": "bayi-1795691161837",
