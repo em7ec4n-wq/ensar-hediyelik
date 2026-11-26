@@ -451,9 +451,9 @@
       "price": 550,
       "stock": 99,
       "published": true,
-      "image": "/ensar-web/gorseller/hero-astronot-cam-kure.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692927505-pye7d-3f996430-7c80-4965-b335-d9edc533ba51.jpeg",
       "gallery": [
-        "/ensar-web/gorseller/hero-astronot-cam-kure.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692927505-pye7d-3f996430-7c80-4965-b335-d9edc533ba51.jpeg"
       ],
       "imageAlt": "büyük boy motorlu stantlı motor biblo 2 (ENS-C2KQ)",
       "isConceptImage": false,
@@ -16614,7 +16614,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795692917949,
+  "updatedAt": 1795692930401,
   "members": [
     {
       "id": "bayi-1795691161837",
