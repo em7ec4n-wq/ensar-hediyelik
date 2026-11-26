@@ -17407,8 +17407,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795716771303,
+  "updatedAt": 1795717343512,
   "members": [
+    {
+      "id": "bayi-1795717341340",
+      "companyName": "Orkide çiçek evi",
+      "contactName": "Siber kaya",
+      "phone": "5462501983",
+      "email": "",
+      "city": "İzmir",
+      "password": "hs1983",
+      "createdAt": "26.11.2026"
+    },
     {
       "id": "bayi-1795703458767",
       "companyName": "Japon shop",
