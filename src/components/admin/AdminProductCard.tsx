@@ -103,7 +103,10 @@ export function AdminProductCard({
     const finalCatSlug = overrideCatSlug || categorySlug;
 
     const catObj = store.categories.find((c) => c.slug === finalCatSlug);
-    const extraCats = catObj?.parentSlug ? [catObj.parentSlug] : [];
+    const extraSet = new Set<string>(target.extraCategorySlugs || []);
+    if (catObj?.parentSlug) extraSet.add(catObj.parentSlug);
+    extraSet.delete(finalCatSlug);
+    const extraCats = Array.from(extraSet);
 
     const parsedPrice = priceStr.trim() === "" ? null : Number(priceStr.replace(",", "."));
     const finalPrice = parsedPrice !== null && !isNaN(parsedPrice) ? Math.max(0, parsedPrice) : null;
@@ -169,6 +172,11 @@ export function AdminProductCard({
               >
                 {product.published ? "● Satışta" : "○ Gizli"}
               </button>
+              {product.extraCategorySlugs && product.extraCategorySlugs.length > 0 && (
+                <span className="rounded-md bg-[#321B2D]/10 px-2 py-0.5 text-[10px] font-bold text-[#321B2D]">
+                  +{product.extraCategorySlugs.length} Ek Kategori
+                </span>
+              )}
             </div>
 
             <div>

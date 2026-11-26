@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | Ensar Hediyelik",
   },
   description:
-    "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 10.000₺ ve üzeridir.",
+    "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 5.000₺ ve üzeridir.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     siteName: "Ensar Hediyelik",
     title: "Ensar Hediyelik",
     description:
-      "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 10.000₺ ve üzeridir.",
+      "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 5.000₺ ve üzeridir.",
     images: [
       {
         url: "/icon-512.png",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Ensar Hediyelik",
     description:
-      "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 10.000₺ ve üzeridir.",
+      "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 5.000₺ ve üzeridir.",
     images: ["/icon-512.png"],
   },
 };
@@ -82,7 +82,7 @@ const jsonLdData = {
       "logo": "https://www.ensarhediyelik.com.tr/icon-512.png",
       "image": "https://www.ensarhediyelik.com.tr/icon-512.png",
       "description":
-        "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 10.000₺ ve üzeridir.",
+        "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 5.000₺ ve üzeridir.",
       "telephone": "+905413567162",
       "priceRange": "₺₺",
       "address": {
@@ -122,28 +122,28 @@ const jsonLdData = {
           "@type": "SiteNavigationElement",
           "position": 2,
           "name": "Hediyelik Eşya",
-          "description": "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 10.000₺ ve üzeridir.",
+          "description": "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 5.000₺ ve üzeridir.",
           "url": "https://www.ensarhediyelik.com.tr/kategori/hediyelik-urunler",
         },
         {
           "@type": "SiteNavigationElement",
           "position": 3,
           "name": "Kar Küreleri",
-          "description": "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 10.000₺ ve üzeridir.",
+          "description": "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 5.000₺ ve üzeridir.",
           "url": "https://www.ensarhediyelik.com.tr/kategori/kar-kureleri",
         },
         {
           "@type": "SiteNavigationElement",
           "position": 4,
           "name": "Işıklı Grup",
-          "description": "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 10.000₺ ve üzeridir.",
+          "description": "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 5.000₺ ve üzeridir.",
           "url": "https://www.ensarhediyelik.com.tr/kategori/isikli-hediyeler",
         },
         {
           "@type": "SiteNavigationElement",
           "position": 5,
           "name": "Müzik Kutuları",
-          "description": "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 10.000₺ ve üzeridir.",
+          "description": "Değerli Müşterilerimiz, Firmamızda perakende satış bulunmamaktadır. Sadece toptan satış yapılmakta olup minimum sipariş tutarı 5.000₺ ve üzeridir.",
           "url": "https://www.ensarhediyelik.com.tr/kategori/muzik-kutulari",
         },
       ],

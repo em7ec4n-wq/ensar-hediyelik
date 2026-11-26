@@ -96,7 +96,7 @@ export function WholesaleAuthModal() {
 
         {/* Wholesale Warning Badge */}
         <div className="mt-3.5 rounded-xl border border-amber-600/30 bg-amber-50/80 p-2.5 text-center text-[11px] font-semibold text-amber-900">
-          ⚠️ Minimum toptan sipariş tutarımız <strong>10.000 TL</strong>&apos;dir. Perakende satışımız yoktur.
+          ⚠️ Minimum toptan sipariş tutarımız <strong>5.000 TL</strong>&apos;dir. Perakende satışımız yoktur.
         </div>
 
         {/* Mode Switcher Tabs */}

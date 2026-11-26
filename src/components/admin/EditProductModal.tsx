@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import type { Product, StoreData, Category } from "@/types/store";
 import { ChevronDownIcon, CloseIcon } from "@/components/Icons";
+import { ExtraCategoriesPicker } from "./ExtraCategoriesPicker";
 
 interface EditProductModalProps {
   product: Product;
@@ -67,6 +68,9 @@ export function EditProductModal({
   const [description, setDescription] = useState(product.description || "");
   const [mainCatSlug, setMainCatSlug] = useState(initialMainSlug);
   const [subCatSlug, setSubCatSlug] = useState(initialSubSlug);
+  const [extraCatSlugs, setExtraCatSlugs] = useState<string[]>(() =>
+    (product.extraCategorySlugs || []).filter((s) => s !== product.categorySlug)
+  );
   const [isNewArrival, setIsNewArrival] = useState(Boolean(product.isNewArrival));
   const [published, setPublished] = useState(Boolean(product.published));
 
@@ -156,7 +160,10 @@ export function EditProductModal({
 
     const finalCatSlug = subCatSlug || mainCatSlug;
     const catObj = store.categories.find((c) => c.slug === finalCatSlug);
-    const extraCats = catObj?.parentSlug ? [catObj.parentSlug] : [];
+    const extraSet = new Set<string>(extraCatSlugs);
+    if (catObj?.parentSlug) extraSet.add(catObj.parentSlug);
+    extraSet.delete(finalCatSlug);
+    const extraCats = Array.from(extraSet);
 
     const finalCover = coverImage || gallery[0] || product.image;
     const finalGallery = gallery.length > 0 ? gallery : [finalCover];
@@ -440,6 +447,13 @@ export function EditProductModal({
                 </button>
               </div>
             )}
+
+            <ExtraCategoriesPicker
+              categories={store.categories}
+              primarySlug={subCatSlug || mainCatSlug}
+              selectedSlugs={extraCatSlugs}
+              onChange={setExtraCatSlugs}
+            />
           </div>
 
           {/* Description */}

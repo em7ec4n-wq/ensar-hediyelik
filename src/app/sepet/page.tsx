@@ -28,12 +28,12 @@ export default function CartPage() {
 
   const catMap = new Map(store.categories.map((c) => [c.slug, c.name]));
 
-  const MIN_WHOLESALE_AMOUNT = 10000;
+  const MIN_WHOLESALE_AMOUNT = 5000;
 
   const validateCustomerFields = (): boolean => {
     if (subtotal < MIN_WHOLESALE_AMOUNT) {
       setFormError(
-        `Firmamızda perakende satış bulunmamaktadır. Minimum toptan sipariş tutarı 10.000 ₺'dir. Siparişinizi tamamlayabilmek için sepetinize ${(MIN_WHOLESALE_AMOUNT - subtotal).toLocaleString("tr-TR")} ₺ değerinde daha ürün eklemelisiniz.`
+        `Firmamızda perakende satış bulunmamaktadır. Minimum toptan sipariş tutarı 5.000 ₺'dir. Siparişinizi tamamlayabilmek için sepetinize ${(MIN_WHOLESALE_AMOUNT - subtotal).toLocaleString("tr-TR")} ₺ değerinde daha ürün eklemelisiniz.`
       );
       return false;
     }
@@ -469,7 +469,7 @@ export default function CartPage() {
                 <div className="rounded-2xl border-2 border-amber-300/80 bg-amber-50/90 p-4 text-xs text-amber-950 shadow-xs">
                   <div className="flex items-center gap-1.5 font-bold text-amber-900">
                     <span>📢</span>
-                    <span>Minimum Toptan Sipariş Tutarı: 10.000 ₺</span>
+                    <span>Minimum Toptan Sipariş Tutarı: 5.000 ₺</span>
                   </div>
                   <p className="mt-1 leading-relaxed text-amber-900">
                     Firmamızda perakende satış bulunmamaktadır. Siparişinizi tamamlayabilmek için sepetinize en az{" "}

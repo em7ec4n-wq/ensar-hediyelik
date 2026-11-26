@@ -102,7 +102,7 @@ export function WholesaleNoticeModal({
           Firmamızda Perakende Satış Bulunmamaktadır.
         </h2>
 
-        {/* Big 10.000 TL Highlight Banner */}
+        {/* Big 5.000 TL Highlight Banner */}
         <div className="my-3.5 rounded-2xl bg-[#321B2D] p-4 text-[#F7F3EB] shadow-inner sm:my-4 sm:p-4.5">
           <p className="text-xs font-medium uppercase tracking-wider text-amber-200/95 sm:text-sm">
             Sadece Toptan Satış Yapılmaktadır
@@ -110,7 +110,7 @@ export function WholesaleNoticeModal({
           <div className="mt-1 flex items-baseline justify-center gap-1.5">
             <span className="text-xs text-stone-300">Minimum Sipariş Tutarı:</span>
             <span className="text-3xl font-black tracking-tight text-amber-300 sm:text-4xl">
-              10.000 ₺
+              5.000 ₺
             </span>
           </div>
           <p className="mt-1 text-xs text-stone-300">ve üzeridir</p>
@@ -124,7 +124,7 @@ export function WholesaleNoticeModal({
           </div>
           <div className="flex items-start gap-2">
             <span className="text-emerald-700 font-bold shrink-0 mt-0.5">✓</span>
-            <span>Sepet toplamı en az <strong>10.000 TL</strong> olmalıdır.</span>
+            <span>Sepet toplamı en az <strong>5.000 TL</strong> olmalıdır.</span>
           </div>
           <div className="flex items-start gap-2">
             <span className="text-emerald-700 font-bold shrink-0 mt-0.5">✓</span>

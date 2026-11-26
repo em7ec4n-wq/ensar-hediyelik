@@ -141,7 +141,7 @@ export default function AccountPage() {
               {/* Wholesale Minimum Order Notice */}
               <div className="rounded-2xl bg-[#F7F3EB] p-4 text-xs text-[#4C3C49] space-y-1.5">
                 <p className="font-bold text-[#321B2D]">📦 Toptan Sipariş ve Teslimat Bilgileri:</p>
-                <p>• Minimum toptan sipariş tutarı <strong>10.000 TL</strong>&apos;dir.</p>
+                <p>• Minimum toptan sipariş tutarı <strong>5.000 TL</strong>&apos;dir.</p>
                 <p>• {store.settings.deliverySummary}</p>
               </div>
 
@@ -188,7 +188,7 @@ export default function AccountPage() {
 
             {/* Wholesale Info Notice */}
             <div className="bg-amber-50 border-b border-amber-200 px-5 py-3 text-center text-xs text-amber-900">
-              ⚠️ Minimum toptan sipariş tutarımız <strong>10.000 TL</strong>&apos;dir. Perakende satışımız yoktur.
+              ⚠️ Minimum toptan sipariş tutarımız <strong>5.000 TL</strong>&apos;dir. Perakende satışımız yoktur.
             </div>
 
             {/* Tab Buttons */}

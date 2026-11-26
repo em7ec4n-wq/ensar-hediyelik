@@ -16,6 +16,7 @@ import { CategoryAssignModal } from "@/components/admin/CategoryAssignModal";
 import { BulkCategoryModal } from "@/components/admin/BulkCategoryModal";
 import { HeroSlideCard } from "@/components/admin/HeroSlideCard";
 import { EditProductModal } from "@/components/admin/EditProductModal";
+import { ExtraCategoriesPicker } from "@/components/admin/ExtraCategoriesPicker";
 
 type TabKey = "urunler" | "kategoriler" | "vitrin" | "siparisler" | "bayiler" | "magaza";
 
@@ -70,6 +71,7 @@ export default function AdminPanelPage() {
   const [newProdPrice, setNewProdPrice] = useState("");
   const [newProdCat, setNewProdCat] = useState("kar-kureleri");
   const [newProdSubCat, setNewProdSubCat] = useState("");
+  const [newProdExtraCats, setNewProdExtraCats] = useState<string[]>([]);
   const [isAddingNewSubcatInline, setIsAddingNewSubcatInline] = useState(false);
   const [newSubcatInlineName, setNewSubcatInlineName] = useState("");
   const [newProdDesc, setNewProdDesc] = useState("");
@@ -235,9 +237,12 @@ export default function AdminPanelPage() {
       const selectedCatObj = store.categories.find(
         (cat) => cat.slug === finalCatSlug
       );
-      const extraCats = selectedCatObj?.parentSlug
-        ? [selectedCatObj.parentSlug]
-        : [];
+      const extraSet = new Set<string>(newProdExtraCats);
+      if (selectedCatObj?.parentSlug) {
+        extraSet.add(selectedCatObj.parentSlug);
+      }
+      extraSet.delete(finalCatSlug);
+      const extraCats = Array.from(extraSet);
 
       const created: Product = {
         id: `custom-${Date.now()}`,
@@ -275,6 +280,7 @@ export default function AdminPanelPage() {
       setNewProdGallery([]);
       setNewProdNewArrival(false);
       setNewProdSubCat("");
+      setNewProdExtraCats([]);
       setIsAddingNewSubcatInline(false);
       setNewSubcatInlineName("");
 
@@ -1633,6 +1639,13 @@ export default function AdminPanelPage() {
                     </button>
                   </div>
                 )}
+
+                <ExtraCategoriesPicker
+                  categories={store.categories}
+                  primarySlug={newProdSubCat || newProdCat}
+                  selectedSlugs={newProdExtraCats}
+                  onChange={setNewProdExtraCats}
+                />
               </div>
 
                 <div>
