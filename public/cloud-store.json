@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795692494099",
+      "sku": "ENS-K3SL",
+      "slug": "kucuk-boy-calar-saat-1",
+      "name": "Küçük boy çalar saat 1",
+      "shortName": "Küçük boy çalar saat 1",
+      "categorySlug": "masa-saatleri",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 225,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692483344-qg0oj-f6044514-c357-47e9-82b0-5ec5d414e39d.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692483344-qg0oj-f6044514-c357-47e9-82b0-5ec5d414e39d.jpeg"
+      ],
+      "imageAlt": "Küçük boy çalar saat 1 (ENS-K3SL)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Masa saatleri"
+      ]
+    },
+    {
       "id": "custom-1795692476842",
       "sku": "ENS-1N2T",
       "slug": "kucuk-boy-calar-saat",
@@ -16609,7 +16635,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795692477668,
+  "updatedAt": 1795692494888,
   "members": [
     {
       "id": "bayi-1795691161837",
