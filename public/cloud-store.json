@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795692067550",
+      "sku": "ENS-6OCN",
+      "slug": "nostaljik-radyo-9",
+      "name": "nostaljik radyo 9",
+      "shortName": "nostaljik radyo 9",
+      "categorySlug": "nostaljik-radyolar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692059239-kbbmq-c67ae3d8-4ff2-4ed3-86ed-6b1194941861.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692059239-kbbmq-c67ae3d8-4ff2-4ed3-86ed-6b1194941861.jpeg"
+      ],
+      "imageAlt": "nostaljik radyo 9 (ENS-6OCN)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Nostaljik radyolar"
+      ]
+    },
+    {
       "id": "custom-1795692050904",
       "sku": "ENS-IGNC",
       "slug": "nostaljik-radyo-8",
@@ -16427,7 +16453,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795692051892,
+  "updatedAt": 1795692068429,
   "members": [
     {
       "id": "bayi-1795691161837",
