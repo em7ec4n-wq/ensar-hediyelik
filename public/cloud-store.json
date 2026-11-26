@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680817536-xntiy.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681062150-5chl4.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,34 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795681061074",
+      "sku": "ENS-KXK4",
+      "slug": "isikli-guller",
+      "name": "ışıklı güller",
+      "shortName": "ışıklı güller",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "Paket 12 li fiyatıdır \nAdet 35₺",
+      "price": 420,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680860472-3zcs4-IMG_0748.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680860472-3zcs4-IMG_0748.webp",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680861673-ujoho-IMG_0746.webp",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795680862781-62n76-IMG_0747.webp"
+      ],
+      "imageAlt": "ışıklı güller (ENS-KXK4)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795680816616",
       "sku": "ENS-UUA3",
@@ -15305,7 +15333,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795680817533,
+  "updatedAt": 1795681062144,
   "members": [
     {
       "id": "bayi-1795675580824",
