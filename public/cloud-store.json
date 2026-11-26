@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795698250487",
+      "sku": "ENS-D720",
+      "slug": "adalet-terazili-biblo-31-cm",
+      "name": "adalet terazili biblo 31 cm",
+      "shortName": "adalet terazili biblo 31 cm",
+      "categorySlug": "dekoratif-biplolar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 700,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795698210216-cek4i-IMG_4850.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795698210216-cek4i-IMG_4850.webp"
+      ],
+      "imageAlt": "adalet terazili biblo 31 cm (ENS-D720)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Dekoratif biblolar"
+      ]
+    },
+    {
       "id": "custom-1795698162992",
       "sku": "ENS-TN91",
       "slug": "adalet-terazili-biblo",
@@ -17162,7 +17188,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795698201025,
+  "updatedAt": 1795698251707,
   "members": [
     {
       "id": "bayi-1795691161837",
