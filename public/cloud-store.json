@@ -475,7 +475,7 @@
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 0,
+      "price": 1950,
       "stock": 99,
       "published": true,
       "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795693912177-r32m7-IMG_4836.webp",
@@ -16875,7 +16875,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795694062033,
+  "updatedAt": 1795694066075,
   "members": [
     {
       "id": "bayi-1795691161837",
