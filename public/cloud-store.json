@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795693060983",
+      "sku": "ENS-QLX7",
+      "slug": "kucuk-boy-motorlu-stantli-siyah-motor-biblo",
+      "name": "Küçük boy motorlu stantlı siyah motor biblo",
+      "shortName": "Küçük boy motorlu stantlı siyah motor biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 225,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795693046668-cntde-3ae2f5ce-42f3-4f73-9cd7-2678b9fa6733.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795693046668-cntde-3ae2f5ce-42f3-4f73-9cd7-2678b9fa6733.jpeg"
+      ],
+      "imageAlt": "Küçük boy motorlu stantlı siyah motor biblo (ENS-QLX7)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795693032142",
       "sku": "ENS-DUNE",
       "slug": "kucuk-boy-motorlu-stantli-motor-biblo",
@@ -16666,7 +16692,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795693032926,
+  "updatedAt": 1795693062019,
   "members": [
     {
       "id": "bayi-1795691161837",
