@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795694092486",
+      "sku": "ENS-DRM3",
+      "slug": "sulu-gitar-renkli-biblo",
+      "name": "sulu gitar renkli biblo",
+      "shortName": "sulu gitar renkli biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 160,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795694074794-z7e8n-IMG_4799.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795694074794-z7e8n-IMG_4799.webp"
+      ],
+      "imageAlt": "sulu gitar renkli biblo (ENS-DRM3)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795694027782",
       "sku": "ENS-LBXZ",
       "slug": "sulu-gitar-biblo",
@@ -16875,7 +16901,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795694068182,
+  "updatedAt": 1795694093468,
   "members": [
     {
       "id": "bayi-1795691161837",
