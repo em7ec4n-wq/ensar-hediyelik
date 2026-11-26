@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795692032282",
+      "sku": "ENS-PDS3",
+      "slug": "nostaljik-radyo-7",
+      "name": "nostaljik radyo 7",
+      "shortName": "nostaljik radyo 7",
+      "categorySlug": "nostaljik-radyolar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692025636-6hz3l-8e87770a-38ba-4a95-9bac-6f954f2d920d.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692025636-6hz3l-8e87770a-38ba-4a95-9bac-6f954f2d920d.jpeg"
+      ],
+      "imageAlt": "nostaljik radyo 7 (ENS-PDS3)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Nostaljik radyolar"
+      ]
+    },
+    {
       "id": "custom-1795692016847",
       "sku": "ENS-1JUX",
       "slug": "nostaljik-radyo-6",
@@ -16375,7 +16401,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795692017820,
+  "updatedAt": 1795692033009,
   "members": [
     {
       "id": "bayi-1795691161837",
