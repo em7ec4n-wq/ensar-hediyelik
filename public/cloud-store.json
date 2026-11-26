@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795694269418",
+      "sku": "ENS-SPT9",
+      "slug": "sulu-vosvos-biblo",
+      "name": "sulu vosvos biblo",
+      "shortName": "sulu vosvos biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 195,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795694248028-g09oq-IMG_4843.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795694248028-g09oq-IMG_4843.webp"
+      ],
+      "imageAlt": "sulu vosvos biblo (ENS-SPT9)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795694222527",
       "sku": "ENS-11ZX",
       "slug": "savas-gemisi-sulu-biblo",
@@ -16953,7 +16979,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795694223721,
+  "updatedAt": 1795694270408,
   "members": [
     {
       "id": "bayi-1795691161837",
