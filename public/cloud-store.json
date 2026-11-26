@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795694287919",
+      "sku": "ENS-IKIB",
+      "slug": "sulu-valiz-biblo",
+      "name": "sulu valiz biblo",
+      "shortName": "sulu valiz biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 195,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795694275145-rqd1n-IMG_4842.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795694275145-rqd1n-IMG_4842.webp"
+      ],
+      "imageAlt": "sulu valiz biblo (ENS-IKIB)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795694269418",
       "sku": "ENS-SPT9",
       "slug": "sulu-vosvos-biblo",
@@ -16979,7 +17005,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795694270408,
+  "updatedAt": 1795694289067,
   "members": [
     {
       "id": "bayi-1795691161837",
