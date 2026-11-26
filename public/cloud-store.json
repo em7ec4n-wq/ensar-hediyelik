@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795691933274",
+      "sku": "ENS-4BBQ",
+      "slug": "nostaljik-radyo-2",
+      "name": "nostaljik radyo 2",
+      "shortName": "nostaljik radyo 2",
+      "categorySlug": "nostaljik-radyolar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 725,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795691911952-quwqa-cf9371df-009d-4cf5-a7b1-1f5c2334ce1d.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795691911952-quwqa-cf9371df-009d-4cf5-a7b1-1f5c2334ce1d.jpeg"
+      ],
+      "imageAlt": "nostaljik radyo 2 (ENS-4BBQ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Nostaljik radyolar"
+      ]
+    },
+    {
       "id": "custom-1795691892625",
       "sku": "ENS-J4ZU",
       "slug": "nostaljik-radyo",
@@ -16245,7 +16271,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795691893688,
+  "updatedAt": 1795691934449,
   "members": [
     {
       "id": "bayi-1795691161837",
