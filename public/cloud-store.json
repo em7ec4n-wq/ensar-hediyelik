@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681293167-wovqj.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681310779-ycjra.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -469,8 +469,8 @@
       "id": "custom-1795681240744",
       "sku": "ENS-X2XT",
       "slug": "silikon-kalp-isik",
-      "name": "silikon kalp ışık",
-      "shortName": "silikon kalp ışık",
+      "name": "silikon ışıklı kalp kçk",
+      "shortName": "silikon ışıklı kalp kçk",
       "categorySlug": "isikli-hediyeler",
       "extraCategorySlugs": [],
       "description": "Küçük boy\nAdet fiyat",
@@ -15413,7 +15413,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795681293160,
+  "updatedAt": 1795681310773,
   "members": [
     {
       "id": "bayi-1795675580824",
