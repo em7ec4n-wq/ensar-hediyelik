@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795693903404",
+      "sku": "ENS-FB94",
+      "slug": "usb-li-cam-fanus-1",
+      "name": "usb'li cam fanus 1",
+      "shortName": "usb'li cam fanus 1",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795693895761-hy3qr-IMG_4835.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795693895761-hy3qr-IMG_4835.webp"
+      ],
+      "imageAlt": "usb'li cam fanus 1 (ENS-FB94)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795693889264",
       "sku": "ENS-MV2G",
       "slug": "usb-li-cam-fanus",
@@ -16796,7 +16822,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795693890659,
+  "updatedAt": 1795693904132,
   "members": [
     {
       "id": "bayi-1795691161837",
