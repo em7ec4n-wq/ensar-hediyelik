@@ -375,16 +375,6 @@
       "showOnHome": true,
       "homeOrder": 5,
       "isConceptImage": false
-    },
-    {
-      "slug": "cam-kureler",
-      "name": "Cam Küreler",
-      "description": "Cam Küreler koleksiyonundaki ürünler.",
-      "image": "/ensar-web/gorseller/kategori-cam-kure.webp",
-      "imageAlt": "Cam Küreler",
-      "showOnHome": true,
-      "homeOrder": 5,
-      "isConceptImage": false
     }
   ],
   "products": [
@@ -2962,7 +2952,7 @@
       "slug": "astronot-buyuk-boy-usbli-cam-kure",
       "name": "Astronot Büyük Boy USB'li Cam Küre",
       "shortName": "Astronot Cam Küre",
-      "categorySlug": "cam-kureler",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "isikli-hediyeler"
       ],
@@ -17272,7 +17262,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795706902219,
+  "updatedAt": 1795706917493,
   "members": [
     {
       "id": "bayi-1795703458767",
