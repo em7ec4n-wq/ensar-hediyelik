@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681620324-6cnln.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681722244-ybeux.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795681721283",
+      "sku": "ENS-98MW",
+      "slug": "dokunmatik-masa-lambasi",
+      "name": "dokunmatik  masa lambası",
+      "shortName": "dokunmatik  masa lambası",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 200,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681678255-dcvwk-IMG_0756.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681678255-dcvwk-IMG_0756.webp"
+      ],
+      "imageAlt": "dokunmatik  masa lambası (ENS-98MW)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795681619281",
       "sku": "ENS-P35Q",
@@ -15517,7 +15543,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795681620318,
+  "updatedAt": 1795681722238,
   "members": [
     {
       "id": "bayi-1795675580824",
