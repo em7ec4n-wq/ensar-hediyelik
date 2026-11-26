@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683208686-c7zmf.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683271005-no6b4.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795683270055",
+      "sku": "ENS-PSCZ",
+      "slug": "isikli-sokak-lambali-biblo7",
+      "name": "ışıklı sokak lambalı biblo7",
+      "shortName": "ışıklı sokak lambalı biblo7",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 260,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683257396-506go-IMG_0775.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795683257396-506go-IMG_0775.webp"
+      ],
+      "imageAlt": "ışıklı sokak lambalı biblo7 (ENS-PSCZ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
     {
       "id": "custom-1795683207663",
       "sku": "ENS-LH0C",
@@ -16011,7 +16037,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795683208680,
+  "updatedAt": 1795683271000,
   "members": [
     {
       "id": "bayi-1795675580824",
