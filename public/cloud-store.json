@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795698037658",
+      "sku": "ENS-SK13",
+      "slug": "kartal-biblo",
+      "name": "kartal biblo",
+      "shortName": "kartal biblo",
+      "categorySlug": "dekoratif-biplolar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 510,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795698012941-1k92k-IMG_4848.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795698012941-1k92k-IMG_4848.webp"
+      ],
+      "imageAlt": "kartal biblo (ENS-SK13)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Dekoratif biblolar"
+      ]
+    },
+    {
       "id": "custom-1795697982915",
       "sku": "ENS-NOGK",
       "slug": "sulu-biblo-dekoratif-2",
@@ -17084,7 +17110,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795697983862,
+  "updatedAt": 1795698039488,
   "members": [
     {
       "id": "bayi-1795691161837",
