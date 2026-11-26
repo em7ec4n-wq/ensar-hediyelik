@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795692334260",
+      "sku": "ENS-8LSP",
+      "slug": "buyuk-boy-metal-calar-saat-4",
+      "name": "Büyük boy metal  çalar saat 4",
+      "shortName": "Büyük boy metal  çalar saat 4",
+      "categorySlug": "masa-saatleri",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 275,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692303400-tbejf-079f566f-e07e-4053-83fd-9e15c341e34e.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692303400-tbejf-079f566f-e07e-4053-83fd-9e15c341e34e.jpeg"
+      ],
+      "imageAlt": "Büyük boy metal  çalar saat 4 (ENS-8LSP)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Masa saatleri"
+      ]
+    },
+    {
       "id": "custom-1795692221713",
       "sku": "ENS-G2NT",
       "slug": "buyuk-boy-metal-calar-saat-3-2",
@@ -16531,7 +16557,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795692325124,
+  "updatedAt": 1795692334941,
   "members": [
     {
       "id": "bayi-1795691161837",
