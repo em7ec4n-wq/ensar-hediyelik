@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795679170913",
+      "sku": "ENS-51L3",
+      "slug": "yilbasi-fanus",
+      "name": "yılbaşı fanus",
+      "shortName": "yılbaşı fanus",
+      "categorySlug": "fanuslar",
+      "extraCategorySlugs": [
+        "yilbasi"
+      ],
+      "description": "",
+      "price": 2900,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795679118525-df6nt-IMG_4795.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795679118525-df6nt-IMG_4795.webp"
+      ],
+      "imageAlt": "yılbaşı fanus (ENS-51L3)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Fanuslar"
+      ]
+    },
+    {
       "id": "custom-1795275832774",
       "sku": "ENS-32773",
       "slug": "pelus-ens-32773",
@@ -14965,7 +14993,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795675581576,
+  "updatedAt": 1795679171702,
   "members": [
     {
       "id": "bayi-1795675580824",
