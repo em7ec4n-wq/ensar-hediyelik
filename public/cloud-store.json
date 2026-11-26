@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795716540533",
+      "sku": "ENS-JWTP",
+      "slug": "adalet-terazisi-biblo-4",
+      "name": "adalet terazisi biblo 4",
+      "shortName": "adalet terazisi biblo 4",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 285,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795716455032-ajezz-IMG_4854.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795716455032-ajezz-IMG_4854.webp"
+      ],
+      "imageAlt": "adalet terazisi biblo 4 (ENS-JWTP)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "prod-564",
       "sku": "ENS-MK-564",
       "slug": "muzikli-balerinli-piyano",
@@ -17379,18 +17407,8 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795715321223,
+  "updatedAt": 1795716542221,
   "members": [
-    {
-      "id": "bayi-1795715320178",
-      "companyName": "Mersin Eslife",
-      "contactName": "Sercan Mercan",
-      "phone": "05454823011",
-      "email": "",
-      "city": "Mersin mezitli",
-      "password": "159951",
-      "createdAt": "26.11.2026"
-    },
     {
       "id": "bayi-1795703458767",
       "companyName": "Japon shop",
