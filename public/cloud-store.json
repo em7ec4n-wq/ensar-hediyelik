@@ -425,17 +425,6 @@
       "showOnHome": false,
       "parentSlug": "cam-kureler",
       "isConceptImage": false
-    },
-    {
-      "slug": "cam-kureler-2",
-      "name": "Cam Küreler",
-      "description": "Cam Küreler koleksiyonundaki ürünler.",
-      "image": "/ensar-web/gorseller/kategori-cam-kure.webp",
-      "imageAlt": "Cam Küreler",
-      "showOnHome": true,
-      "homeOrder": 5,
-      "parentSlug": "cam-kureler",
-      "isConceptImage": false
     }
   ],
   "products": [
@@ -17323,7 +17312,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795706284921,
+  "updatedAt": 1795706880423,
   "members": [
     {
       "id": "bayi-1795703458767",
