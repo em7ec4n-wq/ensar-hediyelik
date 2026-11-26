@@ -340,7 +340,7 @@
       "slug": "metal-kumbaralar",
       "name": "Kumbaralar",
       "description": "Kumbaralar",
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681919191-fok4p.jpg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681949002-89g97.jpg",
       "imageAlt": "Metal kumbaralar",
       "showOnHome": true,
       "homeOrder": 5,
@@ -439,6 +439,32 @@
     }
   ],
   "products": [
+    {
+      "id": "custom-1795681947962",
+      "sku": "ENS-6XU7",
+      "slug": "metalik-mantar-lamba",
+      "name": "metalik mantar lamba",
+      "shortName": "metalik mantar lamba",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 320,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681927478-9ftg1-IMG_0760.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795681927478-9ftg1-IMG_0760.webp"
+      ],
+      "imageAlt": "metalik mantar lamba (ENS-6XU7)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
     {
       "id": "custom-1795681901921",
       "sku": "ENS-2FJ9",
@@ -15621,7 +15647,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795681919185,
+  "updatedAt": 1795681948996,
   "members": [
     {
       "id": "bayi-1795675580824",
