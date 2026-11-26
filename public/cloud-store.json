@@ -597,7 +597,9 @@
       "name": "kartal biblo",
       "shortName": "kartal biblo",
       "categorySlug": "dekoratif-biplolar",
-      "extraCategorySlugs": [],
+      "extraCategorySlugs": [
+        "hediyelik-urunler"
+      ],
       "description": "",
       "price": 510,
       "stock": 99,
@@ -910,7 +912,7 @@
       "slug": "usb-li-cam-fanus",
       "name": "usb'li cam fanus",
       "shortName": "usb'li cam fanus",
-      "categorySlug": "hediyelik-urunler",
+      "categorySlug": "isikli-hediyeler",
       "extraCategorySlugs": [],
       "description": "",
       "price": 1950,
@@ -17261,18 +17263,8 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795704101829,
+  "updatedAt": 1795704116953,
   "members": [
-    {
-      "id": "bayi-1795704098523",
-      "companyName": "TRANSFER REKLAM",
-      "contactName": "Mehmet Tülek",
-      "phone": "05343051310",
-      "email": "",
-      "city": "Beyşehir",
-      "password": "332711",
-      "createdAt": "26.11.2026"
-    },
     {
       "id": "bayi-1795703458767",
       "companyName": "Japon shop",
