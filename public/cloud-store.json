@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795691996473",
+      "sku": "ENS-QJPO",
+      "slug": "nostaljik-radyo-5",
+      "name": "nostaljik radyo 5",
+      "shortName": "nostaljik radyo 5",
+      "categorySlug": "nostaljik-radyolar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 725,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795691984229-a5ik3-080bcabc-c6b4-48e1-b207-cc613dec699d.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795691984229-a5ik3-080bcabc-c6b4-48e1-b207-cc613dec699d.jpeg"
+      ],
+      "imageAlt": "nostaljik radyo 5 (ENS-QJPO)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Nostaljik radyolar"
+      ]
+    },
+    {
       "id": "custom-1795691976655",
       "sku": "ENS-VASV",
       "slug": "nostaljik-radyo-4",
@@ -16323,7 +16349,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795691977521,
+  "updatedAt": 1795691997541,
   "members": [
     {
       "id": "bayi-1795691161837",
