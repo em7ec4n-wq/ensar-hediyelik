@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795797426484",
+      "sku": "ENS-85YT",
+      "slug": "metal-anahtralik",
+      "name": "metal anahtralık",
+      "shortName": "metal anahtralık",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 40,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797410405-kzds9-IMG_9834.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797410405-kzds9-IMG_9834.jpeg"
+      ],
+      "imageAlt": "metal anahtralık (ENS-85YT)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795789811768",
       "sku": "ENS-EIUL",
       "slug": "heykel-bibloo",
@@ -19971,18 +19997,8 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795797367169,
+  "updatedAt": 1795797428409,
   "members": [
-    {
-      "id": "bayi-1795797364999",
-      "companyName": "Kırtasiyekurdu turizm ith.ih.santic.ltdsti",
-      "contactName": "Kemal Keşab",
-      "phone": "5327686040",
-      "email": "",
-      "city": "İstanbul",
-      "password": "616280",
-      "createdAt": "27.11.2026"
-    },
     {
       "id": "bayi-1795797172320",
       "companyName": "Toptan Bayi",
