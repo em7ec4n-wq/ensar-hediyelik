@@ -477,9 +477,9 @@
       "price": 40,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797438434-742ss-IMG_9833.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797619450-ml0t6-IMG_9835.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797438434-742ss-IMG_9833.png"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797619450-ml0t6-IMG_9835.jpeg"
       ],
       "imageAlt": "metal anahtralık 1 (ENS-SVJD)",
       "isConceptImage": false,
@@ -20049,7 +20049,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795797518722,
+  "updatedAt": 1795797623236,
   "members": [
     {
       "id": "bayi-1795797172320",
