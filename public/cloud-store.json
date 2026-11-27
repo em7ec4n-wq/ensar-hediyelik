@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795772665130",
+      "sku": "ENS-6Y67",
+      "slug": "metall-motor",
+      "name": "metall motor",
+      "shortName": "metall motor",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 200,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795772621836-8zqfs-IMG_4864.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795772621836-8zqfs-IMG_4864.webp"
+      ],
+      "imageAlt": "metall motor (ENS-6Y67)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795772593787",
       "sku": "ENS-GIFQ",
       "slug": "dekoratif-metal-motor-biblo",
@@ -17521,7 +17549,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795772595519,
+  "updatedAt": 1795772666592,
   "members": [
     {
       "id": "bayi-1795765984382",
