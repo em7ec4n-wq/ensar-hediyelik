@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795795770115",
+      "sku": "ENS-BDOS",
+      "slug": "silikpn-hello-kity-lamba",
+      "name": "silikpn hello kity lamba",
+      "shortName": "silikpn hello kity lamba",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "isikli-hediyeler"
+      ],
+      "description": "",
+      "price": 500,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795751703-rlezm-d75315b5-4e4b-4476-a96c-b8205e6bbde1.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795751703-rlezm-d75315b5-4e4b-4476-a96c-b8205e6bbde1.jpeg"
+      ],
+      "imageAlt": "silikpn hello kity lamba (ENS-BDOS)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795795743592",
       "sku": "ENS-NS84",
       "slug": "silikpn-kuromi-lamba",
@@ -1097,9 +1125,9 @@
       "price": 210,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795745379-4m6t6.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795771125-ui971.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795746252-iwvwt.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795772073-xmw7c.webp"
       ],
       "imageAlt": "metal dünya biblo (ENS-1VXO)",
       "isConceptImage": false,
@@ -19183,7 +19211,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795795745374,
+  "updatedAt": 1795795771121,
   "members": [
     {
       "id": "bayi-1795786679048",
