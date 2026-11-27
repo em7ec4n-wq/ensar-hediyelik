@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795789599423",
+      "sku": "ENS-AJNO",
+      "slug": "selale-2",
+      "name": "şelale 2",
+      "shortName": "şelale 2",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 490,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789584484-k82t4-IMG_9781.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789584484-k82t4-IMG_9781.jpeg"
+      ],
+      "imageAlt": "şelale 2 (ENS-AJNO)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795782789546",
       "sku": "ENS-XTW5",
       "slug": "kristal-dunya-orta",
@@ -17970,7 +17996,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795789287231,
+  "updatedAt": 1795789601254,
   "members": [
     {
       "id": "bayi-1795786679048",
