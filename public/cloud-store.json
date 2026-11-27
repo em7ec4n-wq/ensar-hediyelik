@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795791270154",
+      "sku": "ENS-6GNZ",
+      "slug": "sulu-biblo-yunus",
+      "name": "sulu biblo yunus",
+      "shortName": "sulu biblo yunus",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 70,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791257213-etetq-IMG_4893.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791257213-etetq-IMG_4893.webp"
+      ],
+      "imageAlt": "sulu biblo yunus (ENS-6GNZ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795791230795",
       "sku": "ENS-R4HD",
       "slug": "sulu-sise-biblo-5",
@@ -18214,7 +18240,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795791232457,
+  "updatedAt": 1795791271760,
   "members": [
     {
       "id": "bayi-1795786679048",
