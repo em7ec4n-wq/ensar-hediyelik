@@ -3877,7 +3877,7 @@
         "kar-kureleri"
       ],
       "description": "",
-      "price": 325,
+      "price": 275,
       "stock": 99,
       "published": true,
       "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795628646086-atyqd.jpg",
@@ -17970,7 +17970,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795789249497,
+  "updatedAt": 1795789253973,
   "members": [
     {
       "id": "bayi-1795786679048",
