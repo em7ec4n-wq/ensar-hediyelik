@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795789956147",
+      "sku": "ENS-3Z40",
+      "slug": "ozgurluk-heykeli-orta",
+      "name": "özgürlük heykeli orta",
+      "shortName": "özgürlük heykeli orta",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789933294-n13dr-IMG_4884.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789933294-n13dr-IMG_4884.webp"
+      ],
+      "imageAlt": "özgürlük heykeli orta (ENS-3Z40)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795789926249",
       "sku": "ENS-F1ES",
       "slug": "ozgurluk-heykeli-biblo-buyuk",
@@ -18052,7 +18080,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795789928265,
+  "updatedAt": 1795789957283,
   "members": [
     {
       "id": "bayi-1795786679048",
