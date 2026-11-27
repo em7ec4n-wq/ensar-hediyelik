@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795781738464",
+      "sku": "ENS-OH8K",
+      "slug": "yavrulu-fil-biblo",
+      "name": "yavrulu fil biblo",
+      "shortName": "yavrulu fil biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 770,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795781694320-sdn2g-IMG_4870.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795781694320-sdn2g-IMG_4870.webp"
+      ],
+      "imageAlt": "yavrulu fil biblo (ENS-OH8K)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795774326817",
       "sku": "ENS-JOX7",
       "slug": "isikli-sulu-gitar-biblo",
@@ -17662,7 +17690,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795779929914,
+  "updatedAt": 1795781740111,
   "members": [
     {
       "id": "bayi-1795779928250",
