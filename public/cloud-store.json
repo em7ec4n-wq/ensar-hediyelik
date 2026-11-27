@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795792372219",
+      "sku": "ENS-USBE",
+      "slug": "isikli-kalpli-sulu-biblo",
+      "name": "ışıklı kalpli sulu biblo",
+      "shortName": "ışıklı kalpli sulu biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "sevgililer-gunu"
+      ],
+      "description": "",
+      "price": 165,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792348953-x8xrq-IMG_4903.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792348953-x8xrq-IMG_4903.webp"
+      ],
+      "imageAlt": "ışıklı kalpli sulu biblo (ENS-USBE)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795792295081",
       "sku": "ENS-LNRM",
       "slug": "sulu-kalpli-tipali-sise-biblo",
@@ -18403,7 +18431,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795792296824,
+  "updatedAt": 1795792373791,
   "members": [
     {
       "id": "bayi-1795786679048",
