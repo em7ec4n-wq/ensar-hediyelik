@@ -20215,8 +20215,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795809067511,
+  "updatedAt": 1795809320717,
   "members": [
+    {
+      "id": "bayi-1795809318153",
+      "companyName": "NB bujiteri",
+      "contactName": "Müslm çoşkun",
+      "phone": "5326728242",
+      "email": "",
+      "city": "Gaziantep",
+      "password": "252580",
+      "createdAt": "27.11.2026"
+    },
     {
       "id": "bayi-1795809066408",
       "companyName": "Toptan Bayi",
