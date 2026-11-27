@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795782108005",
+      "sku": "ENS-MPBA",
+      "slug": "gold-dekoratuf-fil-byk-boy-biblo",
+      "name": "gold dekoratüf fil byk boy biblo",
+      "shortName": "gold dekoratüf fil byk boy biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 875,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795782068438-vacw2-IMG_4876.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795782068438-vacw2-IMG_4876.webp"
+      ],
+      "imageAlt": "gold dekoratüf fil byk boy biblo (ENS-MPBA)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795782053689",
       "sku": "ENS-7MC6",
       "slug": "gold-dekoratif-fil-biblo",
@@ -17830,7 +17858,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795782055728,
+  "updatedAt": 1795782109868,
   "members": [
     {
       "id": "bayi-1795779928250",
