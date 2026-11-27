@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795793546694",
+      "sku": "ENS-FNME",
+      "slug": "3-lu-kalp-kutu",
+      "name": "3 lü kalp kutu",
+      "shortName": "3 lü kalp kutu",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "sevgililer-gunu"
+      ],
+      "description": "",
+      "price": 190,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793532880-rjj89-IMG_9806.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793532880-rjj89-IMG_9806.webp"
+      ],
+      "imageAlt": "3 lü kalp kutu (ENS-FNME)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795793466656",
       "sku": "ENS-XKUX",
       "slug": "taraftar-kupa-koli-60-adetli",
@@ -18396,7 +18424,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795793468605,
+  "updatedAt": 1795793548777,
   "members": [
     {
       "id": "bayi-1795786679048",
