@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795793466656",
+      "sku": "ENS-XKUX",
+      "slug": "taraftar-kupa-koli-60-adetli",
+      "name": "taraftar kupa koli 60 adetli",
+      "shortName": "taraftar kupa koli 60 adetli",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "ilginc-kupalar"
+      ],
+      "description": "",
+      "price": 5400,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793434254-vdtb2-8623e982-c0a8-4f1f-8fb0-bcf6f69b2020.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793434254-vdtb2-8623e982-c0a8-4f1f-8fb0-bcf6f69b2020.jpeg"
+      ],
+      "imageAlt": "taraftar kupa koli 60 adetli (ENS-XKUX)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795793340654",
       "sku": "ENS-FGWA",
       "slug": "yazili-kupa-bardak-koli-60-adetli",
@@ -18368,7 +18396,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795793342817,
+  "updatedAt": 1795793468605,
   "members": [
     {
       "id": "bayi-1795786679048",
