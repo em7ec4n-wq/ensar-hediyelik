@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795793614872",
+      "sku": "ENS-4590",
+      "slug": "dekoratif-poly-biblo",
+      "name": "dekoratif poly biblo",
+      "shortName": "dekoratif poly biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 185,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793587742-ksu41-IMG_4909.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793587742-ksu41-IMG_4909.webp"
+      ],
+      "imageAlt": "dekoratif poly biblo (ENS-4590)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795793571158",
       "sku": "ENS-1VXO",
       "slug": "metal-dunya-biblo",
@@ -453,9 +481,9 @@
       "price": 210,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793572225-2iosx.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793618943-wvb9z.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793573108-m93km.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793619890-c1iwb.webp"
       ],
       "imageAlt": "metal dünya biblo (ENS-1VXO)",
       "isConceptImage": false,
@@ -18539,7 +18567,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795793572223,
+  "updatedAt": 1795793616687,
   "members": [
     {
       "id": "bayi-1795786679048",
