@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795794116290",
+      "sku": "ENS-KKF5",
+      "slug": "isikli-donen-kure",
+      "name": "ışıklı dönen küre",
+      "shortName": "ışıklı dönen küre",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "cam-kureler"
+      ],
+      "description": "",
+      "price": 240,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794100705-nxnc9-IMG_9809.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794100705-nxnc9-IMG_9809.jpeg"
+      ],
+      "imageAlt": "ışıklı dönen küre (ENS-KKF5)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795794088837",
       "sku": "ENS-YGTU",
       "slug": "isikli-donen-cam-kure-2",
@@ -18508,7 +18536,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795794089858,
+  "updatedAt": 1795794117291,
   "members": [
     {
       "id": "bayi-1795786679048",
