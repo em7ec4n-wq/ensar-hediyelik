@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795791324335",
+      "sku": "ENS-CDG8",
+      "slug": "sulu-ev-biblo",
+      "name": "sulu ev biblo",
+      "shortName": "sulu ev biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 145,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791301729-mnpzp-IMG_4894.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791301729-mnpzp-IMG_4894.webp"
+      ],
+      "imageAlt": "sulu ev biblo (ENS-CDG8)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795791270154",
       "sku": "ENS-6GNZ",
       "slug": "sulu-biblo-yunus",
@@ -18240,7 +18266,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795791271760,
+  "updatedAt": 1795791325942,
   "members": [
     {
       "id": "bayi-1795786679048",
