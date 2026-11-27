@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795790352453",
+      "sku": "ENS-5G5G",
+      "slug": "panda-sulu-biblo",
+      "name": "panda sulu biblo",
+      "shortName": "panda sulu biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 145,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790326949-kzyp9-IMG_4886.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790326949-kzyp9-IMG_4886.webp",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790328135-09yl5-IMG_4888.webp",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790329791-nvixf-IMG_4887.webp"
+      ],
+      "imageAlt": "panda sulu biblo (ENS-5G5G)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795789984063",
       "sku": "ENS-P4GL",
       "slug": "ozgurluk-heykeli-kucuk",
@@ -18108,7 +18136,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795790075283,
+  "updatedAt": 1795790354351,
   "members": [
     {
       "id": "bayi-1795786679048",
