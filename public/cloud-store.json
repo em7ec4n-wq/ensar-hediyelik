@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795793294688",
+      "sku": "ENS-L5KF",
+      "slug": "el-dekorlu-kupa-koli-60-adetli",
+      "name": "el dekorlu kupa koli 60 adetli",
+      "shortName": "el dekorlu kupa koli 60 adetli",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "ilginc-kupalar"
+      ],
+      "description": "",
+      "price": 4500,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793266837-g7e8u-3832d9c8-8f3a-4d16-958a-2a521597d93a.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793266837-g7e8u-3832d9c8-8f3a-4d16-958a-2a521597d93a.jpeg"
+      ],
+      "imageAlt": "el dekorlu kupa koli 60 adetli (ENS-L5KF)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795793178247",
       "sku": "ENS-0KIY",
       "slug": "10-lu-kalp-kutu",
@@ -18312,7 +18340,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795793179692,
+  "updatedAt": 1795793297373,
   "members": [
     {
       "id": "bayi-1795786679048",
