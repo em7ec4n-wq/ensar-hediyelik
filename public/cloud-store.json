@@ -468,32 +468,6 @@
       ]
     },
     {
-      "id": "custom-1795797790370",
-      "sku": "ENS-ZVOV",
-      "slug": "nostalji-mini-radyo",
-      "name": "nostalji mini radyo",
-      "shortName": "nostalji mini radyo",
-      "categorySlug": "nostaljik-radyolar",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 40,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797776588-xogqy-7a73cb89-c521-4aaf-b0a5-fbf5bfb78772.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797776588-xogqy-7a73cb89-c521-4aaf-b0a5-fbf5bfb78772.jpeg"
-      ],
-      "imageAlt": "nostalji mini radyo (ENS-ZVOV)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Nostaljik radyolar"
-      ]
-    },
-    {
       "id": "custom-1795797517385",
       "sku": "ENS-C1YN",
       "slug": "metal-anahtralik-3",
@@ -20103,7 +20077,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795797878764,
+  "updatedAt": 1795797905087,
   "members": [
     {
       "id": "bayi-1795797172320",
