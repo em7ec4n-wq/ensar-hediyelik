@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795774263056",
+      "sku": "ENS-Y6CQ",
+      "slug": "sulu-kum-saati-22",
+      "name": "sulu kum saati 22",
+      "shortName": "sulu kum saati 22",
+      "categorySlug": "kum-saatleri",
+      "extraCategorySlugs": [
+        "hediyelik-urunler"
+      ],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795774233428-ck66q-IMG_4868.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795774233428-ck66q-IMG_4868.webp"
+      ],
+      "imageAlt": "sulu kum saati 22 (ENS-Y6CQ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Kum Saatleri"
+      ]
+    },
+    {
       "id": "custom-1795774166993",
       "sku": "ENS-BXYB",
       "slug": "poly-dekoratif-at-biblo",
@@ -17605,7 +17633,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795774194248,
+  "updatedAt": 1795774264610,
   "members": [
     {
       "id": "bayi-1795765984382",
