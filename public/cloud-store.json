@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795795845356",
+      "sku": "ENS-INZ9",
+      "slug": "silikon-civciv-lamba",
+      "name": "silikon civciv lamba",
+      "shortName": "silikon civciv lamba",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "isikli-hediyeler"
+      ],
+      "description": "",
+      "price": 300,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795807583-jrbla-10076aac-b032-494e-8c86-839c122bd678.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795807583-jrbla-10076aac-b032-494e-8c86-839c122bd678.jpeg"
+      ],
+      "imageAlt": "silikon civciv lamba (ENS-INZ9)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795795799280",
       "sku": "ENS-OWFP",
       "slug": "silikpn-panda-lamba",
@@ -1153,9 +1181,9 @@
       "price": 210,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795800299-8fbkk.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795846900-b1vxe.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795801249-m22kr.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795847982-mnrlm.webp"
       ],
       "imageAlt": "metal dünya biblo (ENS-1VXO)",
       "isConceptImage": false,
@@ -19239,7 +19267,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795795800295,
+  "updatedAt": 1795795846896,
   "members": [
     {
       "id": "bayi-1795786679048",
