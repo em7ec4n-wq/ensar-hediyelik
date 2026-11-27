@@ -440,24 +440,22 @@
   ],
   "products": [
     {
-      "id": "custom-1795790352453",
-      "sku": "ENS-5G5G",
-      "slug": "panda-sulu-biblo",
-      "name": "panda sulu biblo",
-      "shortName": "panda sulu biblo",
+      "id": "custom-1795790821736",
+      "sku": "ENS-9AI4",
+      "slug": "resepsiyom-zili",
+      "name": "resepsiyom zili",
+      "shortName": "resepsiyom zili",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 145,
+      "price": 60,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790326949-kzyp9-IMG_4886.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790807335-vopr2-IMG_9784.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790326949-kzyp9-IMG_4886.webp",
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790328135-09yl5-IMG_4888.webp",
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790329791-nvixf-IMG_4887.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790807335-vopr2-IMG_9784.jpeg"
       ],
-      "imageAlt": "panda sulu biblo (ENS-5G5G)",
+      "imageAlt": "resepsiyom zili (ENS-9AI4)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -468,24 +466,22 @@
       ]
     },
     {
-      "id": "custom-1795789984063",
-      "sku": "ENS-P4GL",
-      "slug": "ozgurluk-heykeli-kucuk",
-      "name": "özgürlük heykeli küçük",
-      "shortName": "özgürlük heykeli küçük",
+      "id": "custom-1795789703116",
+      "sku": "ENS-KMSA",
+      "slug": "selale-5",
+      "name": "şelale 5",
+      "shortName": "şelale 5",
       "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "dekoratif-biplolar"
-      ],
+      "extraCategorySlugs": [],
       "description": "",
-      "price": 160,
+      "price": 490,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789963595-hpp0o-IMG_4885.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789685397-3lcnv-IMG_9778.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789963595-hpp0o-IMG_4885.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789685397-3lcnv-IMG_9778.jpeg"
       ],
-      "imageAlt": "özgürlük heykeli küçük (ENS-P4GL)",
+      "imageAlt": "şelale 5 (ENS-KMSA)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -496,24 +492,22 @@
       ]
     },
     {
-      "id": "custom-1795789956147",
-      "sku": "ENS-3Z40",
-      "slug": "ozgurluk-heykeli-orta",
-      "name": "özgürlük heykeli orta",
-      "shortName": "özgürlük heykeli orta",
+      "id": "custom-1795789652346",
+      "sku": "ENS-DK1M",
+      "slug": "selale-4",
+      "name": "şelale 4",
+      "shortName": "şelale 4",
       "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "dekoratif-biplolar"
-      ],
+      "extraCategorySlugs": [],
       "description": "",
-      "price": 280,
+      "price": 490,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789933294-n13dr-IMG_4884.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789644702-0v5w1-IMG_9779.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789933294-n13dr-IMG_4884.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789644702-0v5w1-IMG_9779.jpeg"
       ],
-      "imageAlt": "özgürlük heykeli orta (ENS-3Z40)",
+      "imageAlt": "şelale 4 (ENS-DK1M)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -524,52 +518,22 @@
       ]
     },
     {
-      "id": "custom-1795789926249",
-      "sku": "ENS-F1ES",
-      "slug": "ozgurluk-heykeli-biblo-buyuk",
-      "name": "özgürlük heykeli biblo büyük",
-      "shortName": "özgürlük heykeli biblo büyük",
+      "id": "custom-1795789629806",
+      "sku": "ENS-Z86U",
+      "slug": "selale-3",
+      "name": "şelale 3",
+      "shortName": "şelale 3",
       "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "dekoratif-biplolar"
-      ],
+      "extraCategorySlugs": [],
       "description": "",
-      "price": 385,
+      "price": 490,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789844505-epphl-IMG_4883.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789613389-xhe0r-IMG_9780.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789844505-epphl-IMG_4883.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789613389-xhe0r-IMG_9780.jpeg"
       ],
-      "imageAlt": "özgürlük heykeli biblo büyük (ENS-F1ES)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795789811768",
-      "sku": "ENS-EIUL",
-      "slug": "heykel-bibloo",
-      "name": "heykel bibloo",
-      "shortName": "heykel bibloo",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "dekoratif-biplolar"
-      ],
-      "description": "",
-      "price": 320,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789776609-yhztn-IMG_4882.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789776609-yhztn-IMG_4882.webp"
-      ],
-      "imageAlt": "heykel bibloo (ENS-EIUL)",
+      "imageAlt": "şelale 3 (ENS-Z86U)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -18136,7 +18100,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795790354351,
+  "updatedAt": 1795790823863,
   "members": [
     {
       "id": "bayi-1795786679048",
