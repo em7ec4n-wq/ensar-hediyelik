@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795793005582",
+      "sku": "ENS-Y92K",
+      "slug": "kuru-guk",
+      "name": "kuru gük",
+      "shortName": "kuru gük",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 30,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792992514-13vsx-IMG_9799.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792992514-13vsx-IMG_9799.jpeg"
+      ],
+      "imageAlt": "kuru gük (ENS-Y92K)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795792842975",
       "sku": "ENS-3SQI",
       "slug": "365-gun-ask-sozleri",
@@ -18230,7 +18256,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795792844966,
+  "updatedAt": 1795793008778,
   "members": [
     {
       "id": "bayi-1795786679048",
