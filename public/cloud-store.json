@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795782227087",
+      "sku": "ENS-29O5",
+      "slug": "ithal-polyester-kaplumbaga-biblo",
+      "name": "ithal polyester kaplumbağa biblo",
+      "shortName": "ithal polyester kaplumbağa biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795782198236-ahaud-IMG_4878.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795782198236-ahaud-IMG_4878.webp"
+      ],
+      "imageAlt": "ithal polyester kaplumbağa biblo (ENS-29O5)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795782178656",
       "sku": "ENS-WTG3",
       "slug": "polyestr-kurbaga-biblo",
@@ -17886,7 +17914,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795782180354,
+  "updatedAt": 1795782228935,
   "members": [
     {
       "id": "bayi-1795779928250",
