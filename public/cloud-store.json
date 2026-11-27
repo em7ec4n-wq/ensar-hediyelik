@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795796045061",
+      "sku": "ENS-PEOZ",
+      "slug": "ahsap-isikli-cerceve-3",
+      "name": "ahşap ışıklı çerçeve 3",
+      "shortName": "ahşap ışıklı çerçeve 3",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 375,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796002494-7saue-IMG_4924.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796002494-7saue-IMG_4924.webp"
+      ],
+      "imageAlt": "ahşap ışıklı çerçeve 3 (ENS-PEOZ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
+    {
       "id": "custom-1795795845356",
       "sku": "ENS-INZ9",
       "slug": "silikon-civciv-lamba",
@@ -1181,9 +1209,9 @@
       "price": 210,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795989224-t6yk3.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796047281-1x31d.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795990173-6rx1l.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796048152-kc9z9.webp"
       ],
       "imageAlt": "metal dünya biblo (ENS-1VXO)",
       "isConceptImage": false,
@@ -19267,7 +19295,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795795989218,
+  "updatedAt": 1795796047277,
   "members": [
     {
       "id": "bayi-1795786679048",
