@@ -440,6 +440,35 @@
   ],
   "products": [
     {
+      "id": "custom-1795774326817",
+      "sku": "ENS-JOX7",
+      "slug": "isikli-sulu-gitar-biblo",
+      "name": "ışıklı sulu gitar biblo",
+      "shortName": "ışıklı sulu gitar biblo",
+      "categorySlug": "kum-saatleri",
+      "extraCategorySlugs": [
+        "hediyelik-urunler",
+        "isikli-hediyeler"
+      ],
+      "description": "",
+      "price": 165,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795774286369-hwc7e-IMG_4869.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795774286369-hwc7e-IMG_4869.webp"
+      ],
+      "imageAlt": "ışıklı sulu gitar biblo (ENS-JOX7)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Kum Saatleri"
+      ]
+    },
+    {
       "id": "custom-1795774263056",
       "sku": "ENS-Y6CQ",
       "slug": "sulu-kum-saati-22",
@@ -17633,7 +17662,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795774264610,
+  "updatedAt": 1795774328459,
   "members": [
     {
       "id": "bayi-1795765984382",
