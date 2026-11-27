@@ -440,6 +440,35 @@
   ],
   "products": [
     {
+      "id": "custom-1795772536248",
+      "sku": "ENS-J2JL",
+      "slug": "metal-motor-byk",
+      "name": "metal motor byk",
+      "shortName": "metal motor byk",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "biblolar-ve-dekorlar",
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795772507629-afyk7-IMG_4862.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795772507629-afyk7-IMG_4862.webp"
+      ],
+      "imageAlt": "metal motor byk (ENS-J2JL)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795772476629",
       "sku": "ENS-3ZDD",
       "slug": "kartal-biblosu",
@@ -17463,7 +17492,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795772478390,
+  "updatedAt": 1795772538294,
   "members": [
     {
       "id": "bayi-1795765984382",
