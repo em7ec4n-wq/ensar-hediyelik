@@ -440,80 +440,24 @@
   ],
   "products": [
     {
-      "id": "custom-1795796090617",
-      "sku": "ENS-1YZC",
-      "slug": "isikli-cerceve",
-      "name": "ışıklı çerçeve",
-      "shortName": "ışıklı çerçeve",
-      "categorySlug": "isikli-hediyeler",
+      "id": "custom-1795796418120",
+      "sku": "ENS-KNZ8",
+      "slug": "uyku-arladasi",
+      "name": "uyku arladaşı",
+      "shortName": "uyku arladaşı",
+      "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
-        "dekoratif-biplolar"
-      ],
-      "description": "",
-      "price": 270,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796056506-4jtvs-IMG_4925.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796056506-4jtvs-IMG_4925.webp"
-      ],
-      "imageAlt": "ışıklı çerçeve (ENS-1YZC)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Işıklı ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795796045061",
-      "sku": "ENS-PEOZ",
-      "slug": "ahsap-isikli-cerceve-3",
-      "name": "ahşap ışıklı çerçeve 3",
-      "shortName": "ahşap ışıklı çerçeve 3",
-      "categorySlug": "isikli-hediyeler",
-      "extraCategorySlugs": [
-        "dekoratif-biplolar"
+        "peluslar"
       ],
       "description": "",
       "price": 375,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796002494-7saue-IMG_4924.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796401793-6geby-C37E745C-83D4-41AD-9AEC-4A7F5BE4D67A.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796002494-7saue-IMG_4924.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796401793-6geby-C37E745C-83D4-41AD-9AEC-4A7F5BE4D67A.png"
       ],
-      "imageAlt": "ahşap ışıklı çerçeve 3 (ENS-PEOZ)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Işıklı ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795795845356",
-      "sku": "ENS-INZ9",
-      "slug": "silikon-civciv-lamba",
-      "name": "silikon civciv lamba",
-      "shortName": "silikon civciv lamba",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 300,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795807583-jrbla-10076aac-b032-494e-8c86-839c122bd678.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795807583-jrbla-10076aac-b032-494e-8c86-839c122bd678.jpeg"
-      ],
-      "imageAlt": "silikon civciv lamba (ENS-INZ9)",
+      "imageAlt": "uyku arladaşı (ENS-KNZ8)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -524,804 +468,24 @@
       ]
     },
     {
-      "id": "custom-1795795799280",
-      "sku": "ENS-OWFP",
-      "slug": "silikpn-panda-lamba",
-      "name": "silikpn panda lamba",
-      "shortName": "silikpn panda lamba",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 300,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795779071-xa4vb-9176511d-28d7-4cec-9468-e06c9719e708.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795779071-xa4vb-9176511d-28d7-4cec-9468-e06c9719e708.jpeg"
-      ],
-      "imageAlt": "silikpn panda lamba (ENS-OWFP)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795795770115",
-      "sku": "ENS-BDOS",
-      "slug": "silikpn-hello-kity-lamba",
-      "name": "silikpn hello kitty lamba",
-      "shortName": "silikpn hello kitty lamba",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 500,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795751703-rlezm-d75315b5-4e4b-4476-a96c-b8205e6bbde1.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795751703-rlezm-d75315b5-4e4b-4476-a96c-b8205e6bbde1.jpeg"
-      ],
-      "imageAlt": "silikpn hello kity lamba (ENS-BDOS)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795795743592",
-      "sku": "ENS-NS84",
-      "slug": "silikpn-kuromi-lamba",
-      "name": "silikpn kuromi lamba",
-      "shortName": "silikpn kuromi lamba",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 500,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795723416-sotxg-6491adea-6295-4df8-8c46-cdd64c0c65c1.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795723416-sotxg-6491adea-6295-4df8-8c46-cdd64c0c65c1.jpeg"
-      ],
-      "imageAlt": "silikpn kuromi lamba (ENS-NS84)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795795140064",
-      "sku": "ENS-IK06",
-      "slug": "isikli-silikon-biblo-11",
-      "name": "ışıklı silikon biblo 11",
-      "shortName": "ışıklı silikon biblo 11",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 135,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795126332-r7hqs-IMG_4926.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795126332-r7hqs-IMG_4926.webp"
-      ],
-      "imageAlt": "ışıklı silikon biblo 11 (ENS-IK06)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795795103051",
-      "sku": "ENS-Q9AV",
-      "slug": "isikli-silikon-biblo-10",
-      "name": "ışıklı silikon biblo 10",
-      "shortName": "ışıklı silikon biblo 10",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 135,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795070569-ybc1t-IMG_4936.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795070569-ybc1t-IMG_4936.webp"
-      ],
-      "imageAlt": "ışıklı silikon biblo 10 (ENS-Q9AV)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795795037490",
-      "sku": "ENS-3IMS",
-      "slug": "isikli-silikon-biblo-9",
-      "name": "ışıklı silikon biblo 9",
-      "shortName": "ışıklı silikon biblo 9",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 135,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795019813-3i4sz-IMG_4935.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795019813-3i4sz-IMG_4935.webp"
-      ],
-      "imageAlt": "ışıklı silikon biblo 9 (ENS-3IMS)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795795010376",
-      "sku": "ENS-UXQ0",
-      "slug": "isikli-silikon-biblo-8",
-      "name": "ışıklı silikon biblo 8",
-      "shortName": "ışıklı silikon biblo 8",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 135,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794996153-iivia-IMG_4934.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794996153-iivia-IMG_4934.webp"
-      ],
-      "imageAlt": "ışıklı silikon biblo 8 (ENS-UXQ0)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795794982248",
-      "sku": "ENS-3EQD",
-      "slug": "isikli-silikon-biblo-7",
-      "name": "ışıklı silikon biblo 7",
-      "shortName": "ışıklı silikon biblo 7",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 135,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794967863-kgqi3-IMG_4933.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794967863-kgqi3-IMG_4933.webp"
-      ],
-      "imageAlt": "ışıklı silikon biblo 7 (ENS-3EQD)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795794957245",
-      "sku": "ENS-JFDR",
-      "slug": "isikli-silikon-biblo-6",
-      "name": "ışıklı silikon biblo 6",
-      "shortName": "ışıklı silikon biblo 6",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 135,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794936979-dxgen-IMG_4932.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794936979-dxgen-IMG_4932.webp"
-      ],
-      "imageAlt": "ışıklı silikon biblo 6 (ENS-JFDR)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795794907245",
-      "sku": "ENS-E9HN",
-      "slug": "isikli-silikon-biblo-5",
-      "name": "ışıklı silikon biblo 5",
-      "shortName": "ışıklı silikon biblo 5",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 135,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794856533-2o612-IMG_4931.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794856533-2o612-IMG_4931.webp"
-      ],
-      "imageAlt": "ışıklı silikon biblo 5 (ENS-E9HN)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795794818104",
-      "sku": "ENS-LB5R",
-      "slug": "isikli-silikon-biblo-4",
-      "name": "ışıklı silikon biblo 4",
-      "shortName": "ışıklı silikon biblo 4",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 135,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794804162-vbyp8-IMG_4930.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794804162-vbyp8-IMG_4930.webp"
-      ],
-      "imageAlt": "ışıklı silikon biblo 4 (ENS-LB5R)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795794793298",
-      "sku": "ENS-2P7E",
-      "slug": "isikli-silikon-biblo-3",
-      "name": "ışıklı silikon biblo 3",
-      "shortName": "ışıklı silikon biblo 3",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 135,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794775343-vflzi-IMG_4929.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794775343-vflzi-IMG_4929.webp"
-      ],
-      "imageAlt": "ışıklı silikon biblo 3 (ENS-2P7E)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795794744832",
-      "sku": "ENS-810W",
-      "slug": "isikli-silikon-biblo-2",
-      "name": "ışıklı silikon biblo 2",
-      "shortName": "ışıklı silikon biblo 2",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 135,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794727981-b69on-IMG_4928.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794727981-b69on-IMG_4928.webp"
-      ],
-      "imageAlt": "ışıklı silikon biblo 2 (ENS-810W)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795794717104",
-      "sku": "ENS-ZSYV",
-      "slug": "isikli-silikon-biblo-1",
-      "name": "ışıklı silikon biblo 1",
-      "shortName": "ışıklı silikon biblo 1",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 135,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794671574-fpqg9-IMG_4927.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794671574-fpqg9-IMG_4927.webp"
-      ],
-      "imageAlt": "ışıklı silikon biblo 1 (ENS-ZSYV)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795794119197",
-      "sku": "ENS-CZJS",
-      "slug": "pls-isikli-lamba-7",
-      "name": "pls ışıklı lamba 7",
-      "shortName": "pls ışıklı lamba 7",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 55,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794102543-aorjj-IMG_4921.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794102543-aorjj-IMG_4921.webp"
-      ],
-      "imageAlt": "pls ışıklı lamba 7 (ENS-CZJS)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795794078173",
-      "sku": "ENS-C1N7",
-      "slug": "pls-isikli-lamba",
-      "name": "pls ışıklı lamba",
-      "shortName": "pls ışıklı lamba",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 55,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794046154-6dokc-IMG_4920.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794046154-6dokc-IMG_4920.webp"
-      ],
-      "imageAlt": "pls ışıklı lamba (ENS-C1N7)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795794032413",
-      "sku": "ENS-MA0G",
-      "slug": "pla-isikli-lamba-6",
-      "name": "pla ışıklı lamba 6",
-      "shortName": "pla ışıklı lamba 6",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 0,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794014759-fsmmd-IMG_4919.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794014759-fsmmd-IMG_4919.webp"
-      ],
-      "imageAlt": "pla ışıklı lamba 6 (ENS-MA0G)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795794005326",
-      "sku": "ENS-CU73",
-      "slug": "pla-isikli-lamba-5",
-      "name": "pla ışıklı lamba 5",
-      "shortName": "pla ışıklı lamba 5",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 55,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793990403-pow90-IMG_4918.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793990403-pow90-IMG_4918.webp"
-      ],
-      "imageAlt": "pla ışıklı lamba 5 (ENS-CU73)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795793964740",
-      "sku": "ENS-7Y69",
-      "slug": "isikli-pls-lamba-4",
-      "name": "ışıklı pls lamba 4",
-      "shortName": "ışıklı pls lamba 4",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 55,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793955851-2gprh-IMG_4917.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793955851-2gprh-IMG_4917.webp"
-      ],
-      "imageAlt": "ışıklı pls lamba 4 (ENS-7Y69)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795793937237",
-      "sku": "ENS-BM60",
-      "slug": "pls-isikli-lamba3",
-      "name": "pls ışıklı lamba3",
-      "shortName": "pls ışıklı lamba3",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 55,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793922199-poosj-IMG_4916.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793922199-poosj-IMG_4916.webp"
-      ],
-      "imageAlt": "pls ışıklı lamba3 (ENS-BM60)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795793905671",
-      "sku": "ENS-2U9S",
-      "slug": "pls-isikli-lamba-2",
-      "name": "pls ışıklı lamba 2",
-      "shortName": "pls ışıklı lamba 2",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 55,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793885712-d40qc-IMG_4915.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793885712-d40qc-IMG_4915.webp"
-      ],
-      "imageAlt": "pls ışıklı lamba 2 (ENS-2U9S)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795793873561",
-      "sku": "ENS-W3S6",
-      "slug": "pls-isikli-panda",
-      "name": "pls ışıklı panda",
-      "shortName": "pls ışıklı panda",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 55,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793857734-ln24k-IMG_4914.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793857734-ln24k-IMG_4914.webp"
-      ],
-      "imageAlt": "pls ışıklı panda (ENS-W3S6)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795793824539",
-      "sku": "ENS-7NYF",
-      "slug": "isikli-zurayfa",
-      "name": "ışıklı zürayfa",
-      "shortName": "ışıklı zürayfa",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 55,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793803356-63m48-IMG_4913.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793803356-63m48-IMG_4913.webp"
-      ],
-      "imageAlt": "ışıklı zürayfa (ENS-7NYF)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795793793232",
-      "sku": "ENS-YT9M",
-      "slug": "isikli-minik-civciv",
-      "name": "ışıklı minik civciv",
-      "shortName": "ışıklı minik civciv",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "isikli-hediyeler"
-      ],
-      "description": "",
-      "price": 55,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793759612-psg1t-IMG_4912.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793759612-psg1t-IMG_4912.webp"
-      ],
-      "imageAlt": "ışıklı minik civciv (ENS-YT9M)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795793614872",
-      "sku": "ENS-4590",
-      "slug": "dekoratif-poly-biblo",
-      "name": "dekoratif poly biblo",
-      "shortName": "dekoratif poly biblo",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "dekoratif-biplolar"
-      ],
-      "description": "",
-      "price": 185,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793587742-ksu41-IMG_4909.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793587742-ksu41-IMG_4909.webp"
-      ],
-      "imageAlt": "dekoratif poly biblo (ENS-4590)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795793571158",
-      "sku": "ENS-1VXO",
-      "slug": "metal-dunya-biblo",
-      "name": "metal dünya biblo",
-      "shortName": "metal dünya biblo",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "dekoratif-biplolar"
-      ],
-      "description": "",
-      "price": 210,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796092360-77bkj.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796094265-93uy2.webp"
-      ],
-      "imageAlt": "metal dünya biblo (ENS-1VXO)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795792622766",
-      "sku": "ENS-M50U",
-      "slug": "kalemlikli-sulu-biblo",
-      "name": "kalemlikli sulu biblo",
-      "shortName": "kalemlikli sulu biblo",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 145,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792596532-g7xap-IMG_4905.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792596532-g7xap-IMG_4905.webp"
-      ],
-      "imageAlt": "kalemlikli sulu biblo (ENS-M50U)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795792589381",
-      "sku": "ENS-L0HX",
-      "slug": "sulu-batmayan-gemi",
-      "name": "sulu batmayan gemi",
-      "shortName": "sulu batmayan gemi",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 145,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792564282-p74bw-IMG_4908.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792564282-p74bw-IMG_4908.webp"
-      ],
-      "imageAlt": "sulu batmayan gemi (ENS-L0HX)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795792520371",
-      "sku": "ENS-WTQC",
-      "slug": "beyaz-kalpli-sulu-biblo",
-      "name": "beyaz kalpli sulu biblo",
-      "shortName": "beyaz kalpli sulu biblo",
+      "id": "custom-1795795254816",
+      "sku": "ENS-OOKR",
+      "slug": "dilek-sisesi",
+      "name": "dilek şişesi",
+      "shortName": "dilek şişesi",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu"
       ],
       "description": "",
-      "price": 145,
+      "price": 20,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792420297-4xutp-IMG_4906.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795229076-o4fqq-IMG_9823.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792420297-4xutp-IMG_4906.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795229076-o4fqq-IMG_9823.jpeg"
       ],
-      "imageAlt": "beyaz kalpli sulu biblo (ENS-WTQC)",
+      "imageAlt": "dilek şişesi (ENS-OOKR)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -1332,24 +496,188 @@
       ]
     },
     {
-      "id": "custom-1795792372219",
-      "sku": "ENS-USBE",
-      "slug": "isikli-kalpli-sulu-biblo",
-      "name": "ışıklı kalpli sulu biblo",
-      "shortName": "ışıklı kalpli sulu biblo",
+      "id": "custom-1795794479645",
+      "sku": "ENS-IA8T",
+      "slug": "pelus-cep-ayna2",
+      "name": "peluş cep ayna2",
+      "shortName": "peluş cep ayna2",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 75,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794464740-1h55d-IMG_9814.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794464740-1h55d-IMG_9814.jpeg"
+      ],
+      "imageAlt": "peluş cep ayna2 (ENS-IA8T)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
+      "id": "custom-1795794448270",
+      "sku": "ENS-HK6L",
+      "slug": "pelus-cep-ayna",
+      "name": "peluş cep ayna",
+      "shortName": "peluş cep ayna",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 75,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794435776-zhxi7-IMG_9815.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794435776-zhxi7-IMG_9815.jpeg"
+      ],
+      "imageAlt": "peluş cep ayna (ENS-HK6L)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
+      "id": "custom-1795794116290",
+      "sku": "ENS-KKF5",
+      "slug": "isikli-donen-kure",
+      "name": "ışıklı dönen küre",
+      "shortName": "ışıklı dönen küre",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "cam-kureler"
+      ],
+      "description": "",
+      "price": 240,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794100705-nxnc9-IMG_9809.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794100705-nxnc9-IMG_9809.jpeg"
+      ],
+      "imageAlt": "ışıklı dönen küre (ENS-KKF5)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
+      "id": "custom-1795794088837",
+      "sku": "ENS-YGTU",
+      "slug": "isikli-donen-cam-kure-2",
+      "name": "ışıklı dönen cam küre",
+      "shortName": "ışıklı dönen cam küre",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "cam-kureler"
+      ],
+      "description": "",
+      "price": 240,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794057222-apuwg-IMG_9810.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794057222-apuwg-IMG_9810.webp"
+      ],
+      "imageAlt": "ışıklı dönen cam küre (ENS-YGTU)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
+      "id": "custom-1795794046883",
+      "sku": "ENS-YGQV",
+      "slug": "isikli-donen-cam-kure",
+      "name": "ışıklı  dönen cam küre",
+      "shortName": "ışıklı  dönen cam küre",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "cam-kureler"
+      ],
+      "description": "",
+      "price": 240,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794026455-cflls-IMG_9811.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794026455-cflls-IMG_9811.jpeg"
+      ],
+      "imageAlt": "ışıklı  dönen cam küre (ENS-YGQV)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
+      "id": "custom-1795794016684",
+      "sku": "ENS-LV25",
+      "slug": "isikl-donen-kure",
+      "name": "ışıkl dönen küre",
+      "shortName": "ışıkl dönen küre",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "cam-kureler"
+      ],
+      "description": "",
+      "price": 240,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793979270-rb4bq-IMG_9812.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793979270-rb4bq-IMG_9812.jpeg"
+      ],
+      "imageAlt": "ışıkl dönen küre (ENS-LV25)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
+      "id": "custom-1795793546694",
+      "sku": "ENS-FNME",
+      "slug": "3-lu-kalp-kutu",
+      "name": "3 lü kalp kutu",
+      "shortName": "3 lü kalp kutu",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu"
       ],
       "description": "",
-      "price": 165,
+      "price": 190,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792348953-x8xrq-IMG_4903.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793532880-rjj89-IMG_9806.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792348953-x8xrq-IMG_4903.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793532880-rjj89-IMG_9806.webp"
       ],
-      "imageAlt": "ışıklı kalpli sulu biblo (ENS-USBE)",
+      "imageAlt": "3 lü kalp kutu (ENS-FNME)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -1360,24 +688,108 @@
       ]
     },
     {
-      "id": "custom-1795792295081",
-      "sku": "ENS-LNRM",
-      "slug": "sulu-kalpli-tipali-sise-biblo",
-      "name": "sulu kalpli tıpalı şişe biblo",
-      "shortName": "sulu kalpli tıpalı şişe biblo",
+      "id": "custom-1795793466656",
+      "sku": "ENS-XKUX",
+      "slug": "taraftar-kupa-koli-60-adetli",
+      "name": "taraftar kupa koli 60 adetli",
+      "shortName": "taraftar kupa koli 60 adetli",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "ilginc-kupalar"
+      ],
+      "description": "",
+      "price": 5400,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793434254-vdtb2-8623e982-c0a8-4f1f-8fb0-bcf6f69b2020.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793434254-vdtb2-8623e982-c0a8-4f1f-8fb0-bcf6f69b2020.jpeg"
+      ],
+      "imageAlt": "taraftar kupa koli 60 adetli (ENS-XKUX)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
+      "id": "custom-1795793340654",
+      "sku": "ENS-FGWA",
+      "slug": "yazili-kupa-bardak-koli-60-adetli",
+      "name": "yazılı kupa bardak koli 60 adetli",
+      "shortName": "yazılı kupa bardak koli 60 adetli",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "ilginc-kupalar"
+      ],
+      "description": "",
+      "price": 3900,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793310713-c33pa-281c81fa-9394-49a1-a762-1a9634882223.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793310713-c33pa-281c81fa-9394-49a1-a762-1a9634882223.jpeg"
+      ],
+      "imageAlt": "yazılı kupa bardak koli 60 adetli (ENS-FGWA)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
+      "id": "custom-1795793294688",
+      "sku": "ENS-L5KF",
+      "slug": "el-dekorlu-kupa-koli-60-adetli",
+      "name": "el dekorlu kupa koli 60 adetli",
+      "shortName": "el dekorlu kupa koli 60 adetli",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "ilginc-kupalar"
+      ],
+      "description": "",
+      "price": 4500,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793266837-g7e8u-3832d9c8-8f3a-4d16-958a-2a521597d93a.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793266837-g7e8u-3832d9c8-8f3a-4d16-958a-2a521597d93a.jpeg"
+      ],
+      "imageAlt": "el dekorlu kupa koli 60 adetli (ENS-L5KF)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
+      "id": "custom-1795793178247",
+      "sku": "ENS-0KIY",
+      "slug": "10-lu-kalp-kutu",
+      "name": "10 lu kalp kutu",
+      "shortName": "10 lu kalp kutu",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu"
       ],
       "description": "",
-      "price": 175,
+      "price": 850,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792209784-crcwe-IMG_4902.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793160781-9ojtb-IMG_9800.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792209784-crcwe-IMG_4902.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793160781-9ojtb-IMG_9800.jpeg"
       ],
-      "imageAlt": "sulu kalpli tıpalı şişe biblo (ENS-LNRM)",
+      "imageAlt": "10 lu kalp kutu (ENS-0KIY)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -1388,25 +800,24 @@
       ]
     },
     {
-      "id": "custom-1795792199424",
-      "sku": "ENS-FFXQ",
-      "slug": "sulu-kalpli-kalemlikli-biblo",
-      "name": "sulu kalpli kalemlikli biblo",
-      "shortName": "sulu kalpli kalemlikli biblo",
+      "id": "custom-1795793145736",
+      "sku": "ENS-DC1R",
+      "slug": "10-lu-kare-kuru",
+      "name": "10 lu kare kuru",
+      "shortName": "10 lu kare kuru",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [
         "sevgililer-gunu"
       ],
       "description": "",
-      "price": 145,
+      "price": 850,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792157884-zzzl9-IMG_4901.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793129147-d8jqz-IMG_9801.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792157884-zzzl9-IMG_4901.webp",
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792162682-3piqo-IMG_4904.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793129147-d8jqz-IMG_9801.webp"
       ],
-      "imageAlt": "sulu kalpli kalemlikli biblo (ENS-FFXQ)",
+      "imageAlt": "10 lu kare kuru (ENS-DC1R)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -1417,50 +828,22 @@
       ]
     },
     {
-      "id": "custom-1795792150615",
-      "sku": "ENS-OMHX",
-      "slug": "sulu-biblo-6",
-      "name": "sulu biblo 6",
-      "shortName": "sulu biblo 6",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "sevgililer-gunu"
-      ],
-      "description": "",
-      "price": 145,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792133691-g9brg-IMG_4900.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792133691-g9brg-IMG_4900.webp"
-      ],
-      "imageAlt": "sulu biblo 6 (ENS-OMHX)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795792125333",
-      "sku": "ENS-KB55",
-      "slug": "kirmizi-ev-suku-biblo",
-      "name": "kırmızı ev suku biblo",
-      "shortName": "kırmızı ev suku biblo",
+      "id": "custom-1795793005582",
+      "sku": "ENS-Y92K",
+      "slug": "kuru-guk",
+      "name": "kuru gük",
+      "shortName": "kuru gük",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 145,
+      "price": 30,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792101756-uae66-IMG_4899.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792992514-13vsx-IMG_9799.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792101756-uae66-IMG_4899.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792992514-13vsx-IMG_9799.jpeg"
       ],
-      "imageAlt": "kırmızı ev suku biblo (ENS-KB55)",
+      "imageAlt": "kuru gük (ENS-Y92K)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -1471,22 +854,22 @@
       ]
     },
     {
-      "id": "custom-1795791989344",
-      "sku": "ENS-1518",
-      "slug": "sulu-biblo-5",
-      "name": "sulu biblo 5",
-      "shortName": "sulu biblo 5",
+      "id": "custom-1795792842975",
+      "sku": "ENS-3SQI",
+      "slug": "365-gun-ask-sozleri",
+      "name": "365 gün aşk sözleri",
+      "shortName": "365 gün aşk sözleri",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 145,
+      "price": 45,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791967656-phrlm-IMG_4898.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792827991-byemg-IMG_9798.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791967656-phrlm-IMG_4898.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792827991-byemg-IMG_9798.jpeg"
       ],
-      "imageAlt": "sulu biblo 5 (ENS-1518)",
+      "imageAlt": "365 gün aşk sözleri (ENS-3SQI)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -1497,22 +880,22 @@
       ]
     },
     {
-      "id": "custom-1795791324335",
-      "sku": "ENS-CDG8",
-      "slug": "sulu-ev-biblo",
-      "name": "sulu ev biblo",
-      "shortName": "sulu ev biblo",
+      "id": "custom-1795792434431",
+      "sku": "ENS-9MN8",
+      "slug": "cantali-kupa-bardak",
+      "name": "çantalı kupa bardak",
+      "shortName": "çantalı kupa bardak",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 145,
+      "price": 190,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791301729-mnpzp-IMG_4894.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792397111-bnfmh-F760825A-050B-40D9-803F-A14C917846DE.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791301729-mnpzp-IMG_4894.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792397111-bnfmh-F760825A-050B-40D9-803F-A14C917846DE.png"
       ],
-      "imageAlt": "sulu ev biblo (ENS-CDG8)",
+      "imageAlt": "çantalı kupa bardak (ENS-9MN8)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -1523,22 +906,22 @@
       ]
     },
     {
-      "id": "custom-1795791270154",
-      "sku": "ENS-6GNZ",
-      "slug": "sulu-biblo-yunus",
-      "name": "sulu biblo yunus",
-      "shortName": "sulu biblo yunus",
+      "id": "custom-1795791987911",
+      "sku": "ENS-49MV",
+      "slug": "cicekli-cam-bardak",
+      "name": "çiçekli cam bardak",
+      "shortName": "çiçekli cam bardak",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 70,
+      "price": 90,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791257213-etetq-IMG_4893.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791975104-yy2xr-IMG_9792.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791257213-etetq-IMG_4893.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791975104-yy2xr-IMG_9792.jpeg"
       ],
-      "imageAlt": "sulu biblo yunus (ENS-6GNZ)",
+      "imageAlt": "çiçekli cam bardak (ENS-49MV)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -1549,24 +932,24 @@
       ]
     },
     {
-      "id": "custom-1795791230795",
-      "sku": "ENS-R4HD",
-      "slug": "sulu-sise-biblo-5",
-      "name": "sulu şişe biblo 5",
-      "shortName": "sulu şişe biblo 5",
+      "id": "custom-1795791076992",
+      "sku": "ENS-OUSU",
+      "slug": "tel-askisi",
+      "name": "tel askısı",
+      "shortName": "tel askısı",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 175,
+      "price": 50,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791211415-e4y3q-IMG_4889.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791056973-jtztq-AD9D63EA-4F6D-42A3-B79B-915D62A40FEC.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791211415-e4y3q-IMG_4889.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791056973-jtztq-AD9D63EA-4F6D-42A3-B79B-915D62A40FEC.png"
       ],
-      "imageAlt": "sulu şişe biblo 5 (ENS-R4HD)",
+      "imageAlt": "tel askısı (ENS-OUSU)",
       "isConceptImage": false,
-      "isNewArrival": false,
+      "isNewArrival": true,
       "occasions": [
         "Hediye"
       ],
@@ -1575,22 +958,22 @@
       ]
     },
     {
-      "id": "custom-1795791198856",
-      "sku": "ENS-TZZL",
-      "slug": "sulu-sise-biblo-4",
-      "name": "sulu şişe biblo 4",
-      "shortName": "sulu şişe biblo 4",
+      "id": "custom-1795790848989",
+      "sku": "ENS-ZPDX",
+      "slug": "el-zili",
+      "name": "el zili",
+      "shortName": "el zili",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 175,
+      "price": 75,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791180681-8fz3q-IMG_4890.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790834579-scy08-IMG_9783.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791180681-8fz3q-IMG_4890.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790834579-scy08-IMG_9783.jpeg"
       ],
-      "imageAlt": "sulu şişe biblo 4 (ENS-TZZL)",
+      "imageAlt": "el zili (ENS-ZPDX)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -1601,22 +984,22 @@
       ]
     },
     {
-      "id": "custom-1795791172327",
-      "sku": "ENS-T0O9",
-      "slug": "sulu-sise-biblo-2",
-      "name": "sulu şişe biblo 2",
-      "shortName": "sulu şişe biblo 2",
+      "id": "custom-1795790821736",
+      "sku": "ENS-9AI4",
+      "slug": "resepsiyom-zili",
+      "name": "resepsiyom zili",
+      "shortName": "resepsiyom zili",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 175,
+      "price": 60,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791131926-qx0gg-IMG_4891.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790807335-vopr2-IMG_9784.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791131926-qx0gg-IMG_4891.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790807335-vopr2-IMG_9784.jpeg"
       ],
-      "imageAlt": "sulu şişe biblo 2 (ENS-T0O9)",
+      "imageAlt": "resepsiyom zili (ENS-9AI4)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -1627,24 +1010,22 @@
       ]
     },
     {
-      "id": "custom-1795790352453",
-      "sku": "ENS-5G5G",
-      "slug": "panda-sulu-biblo",
-      "name": "panda sulu biblo",
-      "shortName": "panda sulu biblo",
+      "id": "custom-1795789703116",
+      "sku": "ENS-KMSA",
+      "slug": "selale-5",
+      "name": "şelale 5",
+      "shortName": "şelale 5",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 145,
+      "price": 490,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790326949-kzyp9-IMG_4886.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789685397-3lcnv-IMG_9778.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790326949-kzyp9-IMG_4886.webp",
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790328135-09yl5-IMG_4888.webp",
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790329791-nvixf-IMG_4887.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789685397-3lcnv-IMG_9778.jpeg"
       ],
-      "imageAlt": "panda sulu biblo (ENS-5G5G)",
+      "imageAlt": "şelale 5 (ENS-KMSA)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -1655,24 +1036,22 @@
       ]
     },
     {
-      "id": "custom-1795789984063",
-      "sku": "ENS-P4GL",
-      "slug": "ozgurluk-heykeli-kucuk",
-      "name": "özgürlük heykeli küçük",
-      "shortName": "özgürlük heykeli küçük",
+      "id": "custom-1795789652346",
+      "sku": "ENS-DK1M",
+      "slug": "selale-4",
+      "name": "şelale 4",
+      "shortName": "şelale 4",
       "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "dekoratif-biplolar"
-      ],
+      "extraCategorySlugs": [],
       "description": "",
-      "price": 160,
+      "price": 490,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789963595-hpp0o-IMG_4885.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789644702-0v5w1-IMG_9779.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789963595-hpp0o-IMG_4885.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789644702-0v5w1-IMG_9779.jpeg"
       ],
-      "imageAlt": "özgürlük heykeli küçük (ENS-P4GL)",
+      "imageAlt": "şelale 4 (ENS-DK1M)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -1683,80 +1062,22 @@
       ]
     },
     {
-      "id": "custom-1795789956147",
-      "sku": "ENS-3Z40",
-      "slug": "ozgurluk-heykeli-orta",
-      "name": "özgürlük heykeli orta",
-      "shortName": "özgürlük heykeli orta",
+      "id": "custom-1795789629806",
+      "sku": "ENS-Z86U",
+      "slug": "selale-3",
+      "name": "şelale 3",
+      "shortName": "şelale 3",
       "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "dekoratif-biplolar"
-      ],
+      "extraCategorySlugs": [],
       "description": "",
-      "price": 280,
+      "price": 490,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789933294-n13dr-IMG_4884.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789613389-xhe0r-IMG_9780.jpeg",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789933294-n13dr-IMG_4884.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789613389-xhe0r-IMG_9780.jpeg"
       ],
-      "imageAlt": "özgürlük heykeli orta (ENS-3Z40)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795789926249",
-      "sku": "ENS-F1ES",
-      "slug": "ozgurluk-heykeli-biblo-buyuk",
-      "name": "özgürlük heykeli biblo büyük",
-      "shortName": "özgürlük heykeli biblo büyük",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "dekoratif-biplolar"
-      ],
-      "description": "",
-      "price": 385,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789844505-epphl-IMG_4883.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789844505-epphl-IMG_4883.webp"
-      ],
-      "imageAlt": "özgürlük heykeli biblo büyük (ENS-F1ES)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795789811768",
-      "sku": "ENS-EIUL",
-      "slug": "heykel-bibloo",
-      "name": "heykel bibloo",
-      "shortName": "heykel bibloo",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [
-        "dekoratif-biplolar"
-      ],
-      "description": "",
-      "price": 320,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789776609-yhztn-IMG_4882.webp",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789776609-yhztn-IMG_4882.webp"
-      ],
-      "imageAlt": "heykel bibloo (ENS-EIUL)",
+      "imageAlt": "şelale 3 (ENS-Z86U)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -3417,7 +2738,7 @@
       "categorySlug": "nostaljik-radyolar",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 0,
+      "price": 725,
       "stock": 99,
       "published": true,
       "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795692059239-kbbmq-c67ae3d8-4ff2-4ed3-86ed-6b1194941861.jpeg",
@@ -3547,7 +2868,7 @@
       "categorySlug": "nostaljik-radyolar",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 0,
+      "price": 725,
       "stock": 99,
       "published": true,
       "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795691967741-sbcts-22b240f6-abc2-4e29-94b9-49a84e3ac627.jpeg",
@@ -19323,7 +18644,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795796092356,
+  "updatedAt": 1795796420215,
   "members": [
     {
       "id": "bayi-1795786679048",
