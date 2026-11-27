@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795792622766",
+      "sku": "ENS-M50U",
+      "slug": "kalemlikli-sulu-biblo",
+      "name": "kalemlikli sulu biblo",
+      "shortName": "kalemlikli sulu biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 145,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792596532-g7xap-IMG_4905.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792596532-g7xap-IMG_4905.webp"
+      ],
+      "imageAlt": "kalemlikli sulu biblo (ENS-M50U)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795792589381",
       "sku": "ENS-L0HX",
       "slug": "sulu-batmayan-gemi",
@@ -18485,7 +18511,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795792591205,
+  "updatedAt": 1795792624437,
   "members": [
     {
       "id": "bayi-1795786679048",
