@@ -440,6 +440,35 @@
   ],
   "products": [
     {
+      "id": "custom-1795792199424",
+      "sku": "ENS-FFXQ",
+      "slug": "sulu-kalpli-kalemlikli-biblo",
+      "name": "sulu kalpli kalemlikli biblo",
+      "shortName": "sulu kalpli kalemlikli biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "sevgililer-gunu"
+      ],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792157884-zzzl9-IMG_4901.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792157884-zzzl9-IMG_4901.webp",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792162682-3piqo-IMG_4904.webp"
+      ],
+      "imageAlt": "sulu kalpli kalemlikli biblo (ENS-FFXQ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795792150615",
       "sku": "ENS-OMHX",
       "slug": "sulu-biblo-6",
@@ -18346,7 +18375,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795792151608,
+  "updatedAt": 1795792201916,
   "members": [
     {
       "id": "bayi-1795786679048",
