@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795789652346",
+      "sku": "ENS-DK1M",
+      "slug": "selale-4",
+      "name": "şelale 4",
+      "shortName": "şelale 4",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789644702-0v5w1-IMG_9779.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789644702-0v5w1-IMG_9779.jpeg"
+      ],
+      "imageAlt": "şelale 4 (ENS-DK1M)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795789629806",
       "sku": "ENS-Z86U",
       "slug": "selale-3",
@@ -18022,7 +18048,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795789630671,
+  "updatedAt": 1795789653735,
   "members": [
     {
       "id": "bayi-1795786679048",
