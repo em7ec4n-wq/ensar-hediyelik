@@ -20215,8 +20215,17 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795814522915,
+  "updatedAt": 1795820949885,
   "members": [
+    {
+      "id": "bayi-1795820949036",
+      "companyName": "Toptan Bayi",
+      "contactName": "Bayi Yetkilisi",
+      "phone": "5326262414",
+      "city": "",
+      "password": "",
+      "createdAt": "28.11.2026"
+    },
     {
       "id": "bayi-1795814521950",
       "companyName": "Arven bujiteri ve kozmetik",
