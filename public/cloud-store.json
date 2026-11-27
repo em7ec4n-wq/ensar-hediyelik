@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795800757579",
+      "sku": "ENS-SKLB",
+      "slug": "isikli-fanus-kux",
+      "name": "ışıklı fanus küx",
+      "shortName": "ışıklı fanus küx",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 275,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795800746013-5xt24-ADA55220-FE0A-4C7D-987C-A6B0CE1D7137.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795800746013-5xt24-ADA55220-FE0A-4C7D-987C-A6B0CE1D7137.png"
+      ],
+      "imageAlt": "ışıklı fanus küx (ENS-SKLB)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795798027831",
       "sku": "ENS-1E4D",
       "slug": "nostalji-somine-radyo-buyuk-blu",
@@ -20105,7 +20131,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795800051240,
+  "updatedAt": 1795800758766,
   "members": [
     {
       "id": "bayi-1795800050165",
