@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795789984063",
+      "sku": "ENS-P4GL",
+      "slug": "ozgurluk-heykeli-kucuk",
+      "name": "özgürlük heykeli küçük",
+      "shortName": "özgürlük heykeli küçük",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789963595-hpp0o-IMG_4885.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789963595-hpp0o-IMG_4885.webp"
+      ],
+      "imageAlt": "özgürlük heykeli küçük (ENS-P4GL)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795789956147",
       "sku": "ENS-3Z40",
       "slug": "ozgurluk-heykeli-orta",
@@ -18080,7 +18108,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795789957283,
+  "updatedAt": 1795789985085,
   "members": [
     {
       "id": "bayi-1795786679048",
