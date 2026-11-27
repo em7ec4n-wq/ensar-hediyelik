@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795791230795",
+      "sku": "ENS-R4HD",
+      "slug": "sulu-sise-biblo-5",
+      "name": "sulu şişe biblo 5",
+      "shortName": "sulu şişe biblo 5",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 175,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791211415-e4y3q-IMG_4889.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791211415-e4y3q-IMG_4889.webp"
+      ],
+      "imageAlt": "sulu şişe biblo 5 (ENS-R4HD)",
+      "isConceptImage": false,
+      "isNewArrival": false,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795791198856",
       "sku": "ENS-TZZL",
       "slug": "sulu-sise-biblo-4",
@@ -18188,7 +18214,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795791199981,
+  "updatedAt": 1795791232457,
   "members": [
     {
       "id": "bayi-1795786679048",
