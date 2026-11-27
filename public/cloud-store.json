@@ -20105,15 +20105,16 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795798171961,
+  "updatedAt": 1795798261573,
   "members": [
     {
-      "id": "bayi-1795798170696",
-      "companyName": "Toptan Bayi",
-      "contactName": "Bayi Yetkilisi",
-      "phone": "05300545333",
-      "city": "",
-      "password": "197373",
+      "id": "bayi-1795798260433",
+      "companyName": "Van aksesuar",
+      "contactName": "Savaş arslaner",
+      "phone": "05412540240",
+      "email": "",
+      "city": "Van",
+      "password": "beşiktaş.1903",
       "createdAt": "27.11.2026"
     },
     {
