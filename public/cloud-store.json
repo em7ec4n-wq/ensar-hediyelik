@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795793824539",
+      "sku": "ENS-7NYF",
+      "slug": "isikli-zurayfa",
+      "name": "ışıklı zürayfa",
+      "shortName": "ışıklı zürayfa",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "isikli-hediyeler"
+      ],
+      "description": "",
+      "price": 55,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793803356-63m48-IMG_4913.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793803356-63m48-IMG_4913.webp"
+      ],
+      "imageAlt": "ışıklı zürayfa (ENS-7NYF)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795793793232",
       "sku": "ENS-YT9M",
       "slug": "isikli-minik-civciv",
@@ -509,9 +537,9 @@
       "price": 210,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793796288-vte76.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793825708-tsf5g.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793797441-ezk02.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793826684-8xy2i.webp"
       ],
       "imageAlt": "metal dünya biblo (ENS-1VXO)",
       "isConceptImage": false,
@@ -18595,7 +18623,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795793796282,
+  "updatedAt": 1795793825702,
   "members": [
     {
       "id": "bayi-1795786679048",
