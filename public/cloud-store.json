@@ -20215,8 +20215,17 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795808103104,
+  "updatedAt": 1795809067511,
   "members": [
+    {
+      "id": "bayi-1795809066408",
+      "companyName": "Toptan Bayi",
+      "contactName": "Bayi Yetkilisi",
+      "phone": "5356262414",
+      "city": "",
+      "password": "Aysu1998",
+      "createdAt": "27.11.2026"
+    },
     {
       "id": "bayi-1795806304084",
       "companyName": "Simetri Kırtasiye",
