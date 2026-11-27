@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795795743592",
+      "sku": "ENS-NS84",
+      "slug": "silikpn-kuromi-lamba",
+      "name": "silikpn kuromi lamba",
+      "shortName": "silikpn kuromi lamba",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "isikli-hediyeler"
+      ],
+      "description": "",
+      "price": 500,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795723416-sotxg-6491adea-6295-4df8-8c46-cdd64c0c65c1.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795723416-sotxg-6491adea-6295-4df8-8c46-cdd64c0c65c1.jpeg"
+      ],
+      "imageAlt": "silikpn kuromi lamba (ENS-NS84)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795795140064",
       "sku": "ENS-IK06",
       "slug": "isikli-silikon-biblo-11",
@@ -1069,9 +1097,9 @@
       "price": 210,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795149357-s5okq.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795745379-4m6t6.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795150290-dqf17.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795746252-iwvwt.webp"
       ],
       "imageAlt": "metal dünya biblo (ENS-1VXO)",
       "isConceptImage": false,
@@ -19155,17 +19183,8 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795795262074,
+  "updatedAt": 1795795745374,
   "members": [
-    {
-      "id": "bayi-1795795261135",
-      "companyName": "Toptan Bayi",
-      "contactName": "Bayi Yetkilisi",
-      "phone": "05536086824",
-      "city": "",
-      "password": "dilek12345",
-      "createdAt": "27.11.2026"
-    },
     {
       "id": "bayi-1795786679048",
       "companyName": "ELİF KİTAP KIRTASİYE",
