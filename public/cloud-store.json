@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795801103021",
+      "sku": "ENS-SXTL",
+      "slug": "sevgili-lux-isikli-ahsap",
+      "name": "sevgili lüx ışıklı ahşap",
+      "shortName": "sevgili lüx ışıklı ahşap",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "sevgililer-gunu"
+      ],
+      "description": "",
+      "price": 275,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795801092902-rut9z-C4CFD05E-5E72-4F41-8B5F-06A4E3EF8504.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795801092902-rut9z-C4CFD05E-5E72-4F41-8B5F-06A4E3EF8504.png"
+      ],
+      "imageAlt": "sevgili lüx ışıklı ahşap (ENS-SXTL)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795800789997",
       "sku": "ENS-3ZT6",
       "slug": "isikli-lux-fanus",
@@ -20159,7 +20187,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795801034273,
+  "updatedAt": 1795801106189,
   "members": [
     {
       "id": "bayi-1795800050165",
