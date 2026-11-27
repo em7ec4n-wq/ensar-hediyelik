@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795793340654",
+      "sku": "ENS-FGWA",
+      "slug": "yazili-kupa-bardak-koli-60-adetli",
+      "name": "yazılı kupa bardak koli 60 adetli",
+      "shortName": "yazılı kupa bardak koli 60 adetli",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "ilginc-kupalar"
+      ],
+      "description": "",
+      "price": 3900,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793310713-c33pa-281c81fa-9394-49a1-a762-1a9634882223.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793310713-c33pa-281c81fa-9394-49a1-a762-1a9634882223.jpeg"
+      ],
+      "imageAlt": "yazılı kupa bardak koli 60 adetli (ENS-FGWA)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795793294688",
       "sku": "ENS-L5KF",
       "slug": "el-dekorlu-kupa-koli-60-adetli",
@@ -18340,7 +18368,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795793297373,
+  "updatedAt": 1795793342817,
   "members": [
     {
       "id": "bayi-1795786679048",
