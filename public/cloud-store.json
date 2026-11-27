@@ -450,7 +450,7 @@
         "isikli-hediyeler"
       ],
       "description": "",
-      "price": 0,
+      "price": 135,
       "stock": 99,
       "published": true,
       "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795126332-r7hqs-IMG_4926.webp",
@@ -1069,9 +1069,9 @@
       "price": 210,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795142323-wazh7.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795149357-s5okq.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795143338-5klt2.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795150290-dqf17.webp"
       ],
       "imageAlt": "metal dünya biblo (ENS-1VXO)",
       "isConceptImage": false,
@@ -19155,7 +19155,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795795142319,
+  "updatedAt": 1795795149353,
   "members": [
     {
       "id": "bayi-1795786679048",
