@@ -17662,8 +17662,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795774328459,
+  "updatedAt": 1795777015795,
   "members": [
+    {
+      "id": "bayi-1795777013998",
+      "companyName": "BEREN KIRTASİYE",
+      "contactName": "NECLA TAŞKIRAN",
+      "phone": "05433304535",
+      "email": "",
+      "city": "İzmir",
+      "password": "123456",
+      "createdAt": "27.11.2026"
+    },
     {
       "id": "bayi-1795765984382",
       "companyName": "selam kitabevi",
