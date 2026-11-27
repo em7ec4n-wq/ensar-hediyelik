@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795794005326",
+      "sku": "ENS-CU73",
+      "slug": "pla-isikli-lamba-5",
+      "name": "pla ışıklı lamba 5",
+      "shortName": "pla ışıklı lamba 5",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "isikli-hediyeler"
+      ],
+      "description": "",
+      "price": 55,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793990403-pow90-IMG_4918.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793990403-pow90-IMG_4918.webp"
+      ],
+      "imageAlt": "pla ışıklı lamba 5 (ENS-CU73)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795793964740",
       "sku": "ENS-7Y69",
       "slug": "isikli-pls-lamba-4",
@@ -649,9 +677,9 @@
       "price": 210,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793965684-4y04x.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794007648-24zuq.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793966500-c5he3.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794008506-gvtkf.webp"
       ],
       "imageAlt": "metal dünya biblo (ENS-1VXO)",
       "isConceptImage": false,
@@ -18735,7 +18763,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795793965680,
+  "updatedAt": 1795794007639,
   "members": [
     {
       "id": "bayi-1795786679048",
