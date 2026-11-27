@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795800789997",
+      "sku": "ENS-3ZT6",
+      "slug": "isikli-lux-fanus",
+      "name": "ışıklı lüx fanus",
+      "shortName": "ışıklı lüx fanus",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "sevgililer-gunu"
+      ],
+      "description": "",
+      "price": 275,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795800777125-sqrv5-50F37AD9-EB16-4CC4-9322-ADB2DFED4D90.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795800777125-sqrv5-50F37AD9-EB16-4CC4-9322-ADB2DFED4D90.png"
+      ],
+      "imageAlt": "ışıklı lüx fanus (ENS-3ZT6)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795800757579",
       "sku": "ENS-SKLB",
       "slug": "isikli-fanus-kux",
@@ -20131,16 +20159,15 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795800841594,
+  "updatedAt": 1795800862247,
   "members": [
     {
-      "id": "bayi-1795800840556",
-      "companyName": "Su oyuncak hediyelik",
-      "contactName": "Lokman dönmez",
-      "phone": "05077824180",
-      "email": "",
-      "city": "Kütahya altıntaş",
-      "password": "asdfg123",
+      "id": "bayi-1795800861080",
+      "companyName": "Toptan Bayi",
+      "contactName": "Bayi Yetkilisi",
+      "phone": "5445651249",
+      "city": "",
+      "password": "259753",
       "createdAt": "27.11.2026"
     },
     {
