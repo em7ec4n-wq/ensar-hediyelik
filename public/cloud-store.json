@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795795037490",
+      "sku": "ENS-3IMS",
+      "slug": "isikli-silikon-biblo-9",
+      "name": "ışıklı silikon biblo 9",
+      "shortName": "ışıklı silikon biblo 9",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "isikli-hediyeler"
+      ],
+      "description": "",
+      "price": 135,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795019813-3i4sz-IMG_4935.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795019813-3i4sz-IMG_4935.webp"
+      ],
+      "imageAlt": "ışıklı silikon biblo 9 (ENS-3IMS)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795795010376",
       "sku": "ENS-UXQ0",
       "slug": "isikli-silikon-biblo-8",
@@ -985,9 +1013,9 @@
       "price": 210,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795011267-b7rpw.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795038456-4o4lv.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795012068-s4j7g.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795795039343-unudc.webp"
       ],
       "imageAlt": "metal dünya biblo (ENS-1VXO)",
       "isConceptImage": false,
@@ -19071,7 +19099,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795795011264,
+  "updatedAt": 1795795038452,
   "members": [
     {
       "id": "bayi-1795786679048",
