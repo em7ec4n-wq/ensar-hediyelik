@@ -440,6 +440,62 @@
   ],
   "products": [
     {
+      "id": "custom-1795801141149",
+      "sku": "ENS-HB9M",
+      "slug": "sevgili-isikli-biplo",
+      "name": "sevgili ışıklı biplo",
+      "shortName": "sevgili ışıklı biplo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "sevgililer-gunu"
+      ],
+      "description": "",
+      "price": 275,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795801131979-b7nyh-AEE67740-E6D7-4D58-96C5-B5EF5DF8219B.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795801131979-b7nyh-AEE67740-E6D7-4D58-96C5-B5EF5DF8219B.png"
+      ],
+      "imageAlt": "sevgili ışıklı biplo (ENS-HB9M)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
+      "id": "custom-1795801103021",
+      "sku": "ENS-SXTL",
+      "slug": "sevgili-lux-isikli-ahsap",
+      "name": "sevgili lüx ışıklı ahşap",
+      "shortName": "sevgili lüx ışıklı ahşap",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "sevgililer-gunu"
+      ],
+      "description": "",
+      "price": 275,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795801092902-rut9z-C4CFD05E-5E72-4F41-8B5F-06A4E3EF8504.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795801092902-rut9z-C4CFD05E-5E72-4F41-8B5F-06A4E3EF8504.png"
+      ],
+      "imageAlt": "sevgili lüx ışıklı ahşap (ENS-SXTL)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795800789997",
       "sku": "ENS-3ZT6",
       "slug": "isikli-lux-fanus",
@@ -20159,27 +20215,8 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795801121775,
+  "updatedAt": 1795801144301,
   "members": [
-    {
-      "id": "bayi-1795801120528",
-      "companyName": "Hedef kırtasiye",
-      "contactName": "Hikmet Duran",
-      "phone": "5519622938",
-      "email": "",
-      "city": "Aksaray",
-      "password": "33793379",
-      "createdAt": "27.11.2026"
-    },
-    {
-      "id": "bayi-1795800861080",
-      "companyName": "Toptan Bayi",
-      "contactName": "Bayi Yetkilisi",
-      "phone": "5445651249",
-      "city": "",
-      "password": "259753",
-      "createdAt": "27.11.2026"
-    },
     {
       "id": "bayi-1795800050165",
       "companyName": "Toptan Bayi",
