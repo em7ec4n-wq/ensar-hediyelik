@@ -17407,15 +17407,16 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795763323032,
+  "updatedAt": 1795763322965,
   "members": [
     {
-      "id": "bayi-1795763319148",
-      "companyName": "Toptan Bayi",
-      "contactName": "Bayi Yetkilisi",
-      "phone": "05455950307",
-      "city": "",
-      "password": "6489",
+      "id": "bayi-1795763321279",
+      "companyName": "Akkuzu Aksesuar",
+      "contactName": "İbrahim Akkuzu",
+      "phone": "5016240063",
+      "email": "",
+      "city": "Şanlıurfa Eyyübiye",
+      "password": "Akkuzu63",
       "createdAt": "27.11.2026"
     },
     {
