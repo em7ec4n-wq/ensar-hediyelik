@@ -440,152 +440,22 @@
   ],
   "products": [
     {
-      "id": "custom-1795789629806",
-      "sku": "ENS-Z86U",
-      "slug": "selale-3",
-      "name": "şelale 3",
-      "shortName": "şelale 3",
+      "id": "custom-1795791989344",
+      "sku": "ENS-1518",
+      "slug": "sulu-biblo-5",
+      "name": "sulu biblo 5",
+      "shortName": "sulu biblo 5",
       "categorySlug": "hediyelik-urunler",
       "extraCategorySlugs": [],
       "description": "",
-      "price": 490,
+      "price": 145,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789613389-xhe0r-IMG_9780.jpeg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791967656-phrlm-IMG_4898.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789613389-xhe0r-IMG_9780.jpeg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791967656-phrlm-IMG_4898.webp"
       ],
-      "imageAlt": "şelale 3 (ENS-Z86U)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795789652346",
-      "sku": "ENS-DK1M",
-      "slug": "selale-4",
-      "name": "şelale 4",
-      "shortName": "şelale 4",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 490,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789644702-0v5w1-IMG_9779.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789644702-0v5w1-IMG_9779.jpeg"
-      ],
-      "imageAlt": "şelale 4 (ENS-DK1M)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795789703116",
-      "sku": "ENS-KMSA",
-      "slug": "selale-5",
-      "name": "şelale 5",
-      "shortName": "şelale 5",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 490,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789685397-3lcnv-IMG_9778.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789685397-3lcnv-IMG_9778.jpeg"
-      ],
-      "imageAlt": "şelale 5 (ENS-KMSA)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795790821736",
-      "sku": "ENS-9AI4",
-      "slug": "resepsiyom-zili",
-      "name": "resepsiyom zili",
-      "shortName": "resepsiyom zili",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 60,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790807335-vopr2-IMG_9784.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790807335-vopr2-IMG_9784.jpeg"
-      ],
-      "imageAlt": "resepsiyom zili (ENS-9AI4)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795790848989",
-      "sku": "ENS-ZPDX",
-      "slug": "el-zili",
-      "name": "el zili",
-      "shortName": "el zili",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 75,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790834579-scy08-IMG_9783.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790834579-scy08-IMG_9783.jpeg"
-      ],
-      "imageAlt": "el zili (ENS-ZPDX)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795791076992",
-      "sku": "ENS-OUSU",
-      "slug": "tel-askisi",
-      "name": "tel askısı",
-      "shortName": "tel askısı",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 50,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791056973-jtztq-AD9D63EA-4F6D-42A3-B79B-915D62A40FEC.png",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791056973-jtztq-AD9D63EA-4F6D-42A3-B79B-915D62A40FEC.png"
-      ],
-      "imageAlt": "tel askısı (ENS-OUSU)",
+      "imageAlt": "sulu biblo 5 (ENS-1518)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -18422,7 +18292,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795791450491,
+  "updatedAt": 1795791990216,
   "members": [
     {
       "id": "bayi-1795786679048",
