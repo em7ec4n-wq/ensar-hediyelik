@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795796090617",
+      "sku": "ENS-1YZC",
+      "slug": "isikli-cerceve",
+      "name": "ışıklı çerçeve",
+      "shortName": "ışıklı çerçeve",
+      "categorySlug": "isikli-hediyeler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 270,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796056506-4jtvs-IMG_4925.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796056506-4jtvs-IMG_4925.webp"
+      ],
+      "imageAlt": "ışıklı çerçeve (ENS-1YZC)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Işıklı ürünler"
+      ]
+    },
+    {
       "id": "custom-1795796045061",
       "sku": "ENS-PEOZ",
       "slug": "ahsap-isikli-cerceve-3",
@@ -1209,9 +1237,9 @@
       "price": 210,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796047281-1x31d.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796092360-77bkj.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796048152-kc9z9.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795796094265-93uy2.webp"
       ],
       "imageAlt": "metal dünya biblo (ENS-1VXO)",
       "isConceptImage": false,
@@ -19295,7 +19323,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795796047277,
+  "updatedAt": 1795796092356,
   "members": [
     {
       "id": "bayi-1795786679048",
