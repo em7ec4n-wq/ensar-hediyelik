@@ -20215,8 +20215,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795812936306,
+  "updatedAt": 1795814522915,
   "members": [
+    {
+      "id": "bayi-1795814521950",
+      "companyName": "Arven bujiteri ve kozmetik",
+      "contactName": "Seval Ağar",
+      "phone": "05065241589",
+      "email": "",
+      "city": "Besni",
+      "password": "182003",
+      "createdAt": "28.11.2026"
+    },
     {
       "id": "bayi-1795812933734",
       "companyName": "Toptan Bayi",
