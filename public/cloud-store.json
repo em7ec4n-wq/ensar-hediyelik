@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795772736753",
+      "sku": "ENS-X43Y",
+      "slug": "poly-aslan-biblo",
+      "name": "poly aslan biblo",
+      "shortName": "poly aslan biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795772714260-ayf2p-IMG_4865.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795772714260-ayf2p-IMG_4865.webp"
+      ],
+      "imageAlt": "poly aslan biblo (ENS-X43Y)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795772665130",
       "sku": "ENS-6Y67",
       "slug": "metall-motor",
@@ -17549,7 +17577,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795772666592,
+  "updatedAt": 1795772738271,
   "members": [
     {
       "id": "bayi-1795765984382",
