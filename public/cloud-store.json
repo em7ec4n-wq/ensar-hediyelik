@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795797517385",
+      "sku": "ENS-C1YN",
+      "slug": "metal-anahtralik-3",
+      "name": "metal anahtralık 3",
+      "shortName": "metal anahtralık 3",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 40,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797504007-a9en5-IMG_9836.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797504007-a9en5-IMG_9836.jpeg"
+      ],
+      "imageAlt": "metal anahtralık 3 (ENS-C1YN)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795797491214",
       "sku": "ENS-SVJD",
       "slug": "metal-anahtralik-1",
@@ -20023,7 +20049,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795797492744,
+  "updatedAt": 1795797518722,
   "members": [
     {
       "id": "bayi-1795797172320",
