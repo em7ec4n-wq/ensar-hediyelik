@@ -440,6 +440,33 @@
   ],
   "products": [
     {
+      "id": "custom-1795797790370",
+      "sku": "ENS-ZVOV",
+      "slug": "nostalji-mini-radyo",
+      "name": "nostalji mini radyo",
+      "shortName": "nostalji mini radyo",
+      "categorySlug": "nostaljik-radyolar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 40,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797661516-3t6nb-e5924cf9-ac22-426f-a088-8c0d75c1594a.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797661516-3t6nb-e5924cf9-ac22-426f-a088-8c0d75c1594a.jpeg",
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797776588-xogqy-7a73cb89-c521-4aaf-b0a5-fbf5bfb78772.jpeg"
+      ],
+      "imageAlt": "nostalji mini radyo (ENS-ZVOV)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Nostaljik radyolar"
+      ]
+    },
+    {
       "id": "custom-1795797517385",
       "sku": "ENS-C1YN",
       "slug": "metal-anahtralik-3",
@@ -20049,17 +20076,8 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795797765517,
+  "updatedAt": 1795797792134,
   "members": [
-    {
-      "id": "bayi-1795797763159",
-      "companyName": "Toptan Bayi",
-      "contactName": "Bayi Yetkilisi",
-      "phone": "5413031444",
-      "city": "",
-      "password": "1976",
-      "createdAt": "27.11.2026"
-    },
     {
       "id": "bayi-1795797172320",
       "companyName": "Toptan Bayi",
