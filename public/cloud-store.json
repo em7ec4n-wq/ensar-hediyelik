@@ -17662,8 +17662,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795777015795,
+  "updatedAt": 1795779929914,
   "members": [
+    {
+      "id": "bayi-1795779928250",
+      "companyName": "Beymert Tuhafiye",
+      "contactName": "Beynan Kesen",
+      "phone": "05433377004",
+      "email": "",
+      "city": "Bursa /Gemlik",
+      "password": "197777",
+      "createdAt": "27.11.2026"
+    },
     {
       "id": "bayi-1795777013998",
       "companyName": "BEREN KIRTASİYE",
