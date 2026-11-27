@@ -19971,8 +19971,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795796607680,
+  "updatedAt": 1795796861356,
   "members": [
+    {
+      "id": "bayi-1795796860530",
+      "companyName": "Pink'y Love",
+      "contactName": "Ahmet Çetin",
+      "phone": "05447984425",
+      "email": "",
+      "city": "Balıkesir/Karesi",
+      "password": "159753.Ac",
+      "createdAt": "27.11.2026"
+    },
     {
       "id": "bayi-1795786679048",
       "companyName": "ELİF KİTAP KIRTASİYE",
