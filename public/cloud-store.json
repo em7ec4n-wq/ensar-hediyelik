@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795792295081",
+      "sku": "ENS-LNRM",
+      "slug": "sulu-kalpli-tipali-sise-biblo",
+      "name": "sulu kalpli tıpalı şişe biblo",
+      "shortName": "sulu kalpli tıpalı şişe biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "sevgililer-gunu"
+      ],
+      "description": "",
+      "price": 175,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792209784-crcwe-IMG_4902.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792209784-crcwe-IMG_4902.webp"
+      ],
+      "imageAlt": "sulu kalpli tıpalı şişe biblo (ENS-LNRM)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795792199424",
       "sku": "ENS-FFXQ",
       "slug": "sulu-kalpli-kalemlikli-biblo",
@@ -18375,7 +18403,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795792201916,
+  "updatedAt": 1795792296824,
   "members": [
     {
       "id": "bayi-1795786679048",
