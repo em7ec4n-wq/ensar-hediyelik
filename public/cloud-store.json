@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795793178247",
+      "sku": "ENS-0KIY",
+      "slug": "10-lu-kalp-kutu",
+      "name": "10 lu kalp kutu",
+      "shortName": "10 lu kalp kutu",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "sevgililer-gunu"
+      ],
+      "description": "",
+      "price": 850,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793160781-9ojtb-IMG_9800.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793160781-9ojtb-IMG_9800.jpeg"
+      ],
+      "imageAlt": "10 lu kalp kutu (ENS-0KIY)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795793145736",
       "sku": "ENS-DC1R",
       "slug": "10-lu-kare-kuru",
@@ -18284,7 +18312,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795793150270,
+  "updatedAt": 1795793179692,
   "members": [
     {
       "id": "bayi-1795786679048",
