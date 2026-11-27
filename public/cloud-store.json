@@ -20159,8 +20159,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795804944885,
+  "updatedAt": 1795806269203,
   "members": [
+    {
+      "id": "bayi-1795806266236",
+      "companyName": "Medusa gift & accessory",
+      "contactName": "Orhan Cida",
+      "phone": "05456304188",
+      "email": "",
+      "city": "Bursa/Mustafakemalpaşa",
+      "password": "Dilekcida01.",
+      "createdAt": "27.11.2026"
+    },
     {
       "id": "bayi-1795804940060",
       "companyName": "Toptan Bayi",
