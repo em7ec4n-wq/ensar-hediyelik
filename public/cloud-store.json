@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795793793232",
+      "sku": "ENS-YT9M",
+      "slug": "isikli-minik-civciv",
+      "name": "ışıklı minik civciv",
+      "shortName": "ışıklı minik civciv",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "isikli-hediyeler"
+      ],
+      "description": "",
+      "price": 55,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793759612-psg1t-IMG_4912.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793759612-psg1t-IMG_4912.webp"
+      ],
+      "imageAlt": "ışıklı minik civciv (ENS-YT9M)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795793614872",
       "sku": "ENS-4590",
       "slug": "dekoratif-poly-biblo",
@@ -481,9 +509,9 @@
       "price": 210,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793722478-3ka6d.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793796288-vte76.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793723344-w4l4b.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793797441-ezk02.webp"
       ],
       "imageAlt": "metal dünya biblo (ENS-1VXO)",
       "isConceptImage": false,
@@ -18567,18 +18595,8 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795793722473,
+  "updatedAt": 1795793796282,
   "members": [
-    {
-      "id": "bayi-1795793720204",
-      "companyName": "Freya beauty",
-      "contactName": "Ferhat erez",
-      "phone": "5414117256",
-      "email": "",
-      "city": "Siirt/kurtalan",
-      "password": "Mekan7256",
-      "createdAt": "27.11.2026"
-    },
     {
       "id": "bayi-1795786679048",
       "companyName": "ELİF KİTAP KIRTASİYE",
