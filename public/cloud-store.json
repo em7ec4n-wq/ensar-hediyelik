@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795792150615",
+      "sku": "ENS-OMHX",
+      "slug": "sulu-biblo-6",
+      "name": "sulu biblo 6",
+      "shortName": "sulu biblo 6",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "sevgililer-gunu"
+      ],
+      "description": "",
+      "price": 145,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792133691-g9brg-IMG_4900.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795792133691-g9brg-IMG_4900.webp"
+      ],
+      "imageAlt": "sulu biblo 6 (ENS-OMHX)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795792125333",
       "sku": "ENS-KB55",
       "slug": "kirmizi-ev-suku-biblo",
@@ -18318,7 +18346,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795792127625,
+  "updatedAt": 1795792151608,
   "members": [
     {
       "id": "bayi-1795786679048",
