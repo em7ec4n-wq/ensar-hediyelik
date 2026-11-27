@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795797836006",
+      "sku": "ENS-QJUU",
+      "slug": "kalste-ses-super-super",
+      "name": "kalşte ses süper süper",
+      "shortName": "kalşte ses süper süper",
+      "categorySlug": "nostaljik-radyolar",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 340,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797817505-ut0bw-7a73cb89-c521-4aaf-b0a5-fbf5bfb78772.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795797817505-ut0bw-7a73cb89-c521-4aaf-b0a5-fbf5bfb78772.jpeg"
+      ],
+      "imageAlt": "kalşte ses süper süper (ENS-QJUU)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Nostaljik radyolar"
+      ]
+    },
+    {
       "id": "custom-1795797790370",
       "sku": "ENS-ZVOV",
       "slug": "nostalji-mini-radyo",
@@ -20076,7 +20102,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795797792134,
+  "updatedAt": 1795797838132,
   "members": [
     {
       "id": "bayi-1795797172320",
