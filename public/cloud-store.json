@@ -440,74 +440,24 @@
   ],
   "products": [
     {
-      "id": "custom-1795789703116",
-      "sku": "ENS-KMSA",
-      "slug": "selale-5",
-      "name": "şelale 5",
-      "shortName": "şelale 5",
+      "id": "custom-1795789811768",
+      "sku": "ENS-EIUL",
+      "slug": "heykel-bibloo",
+      "name": "heykel bibloo",
+      "shortName": "heykel bibloo",
       "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [],
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
       "description": "",
-      "price": 490,
+      "price": 320,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789685397-3lcnv-IMG_9778.jpeg",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789776609-yhztn-IMG_4882.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789685397-3lcnv-IMG_9778.jpeg"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789776609-yhztn-IMG_4882.webp"
       ],
-      "imageAlt": "şelale 5 (ENS-KMSA)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795789652346",
-      "sku": "ENS-DK1M",
-      "slug": "selale-4",
-      "name": "şelale 4",
-      "shortName": "şelale 4",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 490,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789644702-0v5w1-IMG_9779.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789644702-0v5w1-IMG_9779.jpeg"
-      ],
-      "imageAlt": "şelale 4 (ENS-DK1M)",
-      "isConceptImage": false,
-      "isNewArrival": true,
-      "occasions": [
-        "Hediye"
-      ],
-      "giftTypes": [
-        "Hediyelik Ürünler"
-      ]
-    },
-    {
-      "id": "custom-1795789629806",
-      "sku": "ENS-Z86U",
-      "slug": "selale-3",
-      "name": "şelale 3",
-      "shortName": "şelale 3",
-      "categorySlug": "hediyelik-urunler",
-      "extraCategorySlugs": [],
-      "description": "",
-      "price": 490,
-      "stock": 99,
-      "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789613389-xhe0r-IMG_9780.jpeg",
-      "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789613389-xhe0r-IMG_9780.jpeg"
-      ],
-      "imageAlt": "şelale 3 (ENS-Z86U)",
+      "imageAlt": "heykel bibloo (ENS-EIUL)",
       "isConceptImage": false,
       "isNewArrival": true,
       "occasions": [
@@ -18074,7 +18024,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795789704284,
+  "updatedAt": 1795789813628,
   "members": [
     {
       "id": "bayi-1795786679048",
