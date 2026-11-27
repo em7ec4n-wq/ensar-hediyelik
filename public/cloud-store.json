@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795772425815",
+      "sku": "ENS-08BO",
+      "slug": "dekoratif-kartal-biblosu",
+      "name": "dekoratif kartal biblosu",
+      "shortName": "dekoratif kartal biblosu",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 300,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795772399131-ufnjv-IMG_4859.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795772399131-ufnjv-IMG_4859.webp"
+      ],
+      "imageAlt": "dekoratif kartal biblosu (ENS-08BO)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795716540533",
       "sku": "ENS-JWTP",
       "slug": "adalet-terazisi-biblo-4",
@@ -17407,7 +17435,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795765985985,
+  "updatedAt": 1795772427658,
   "members": [
     {
       "id": "bayi-1795765984382",
