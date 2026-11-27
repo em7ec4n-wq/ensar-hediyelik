@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795793873561",
+      "sku": "ENS-W3S6",
+      "slug": "pls-isikli-panda",
+      "name": "pls ışıklı panda",
+      "shortName": "pls ışıklı panda",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "isikli-hediyeler"
+      ],
+      "description": "",
+      "price": 55,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793857734-ln24k-IMG_4914.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793857734-ln24k-IMG_4914.webp"
+      ],
+      "imageAlt": "pls ışıklı panda (ENS-W3S6)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795793824539",
       "sku": "ENS-7NYF",
       "slug": "isikli-zurayfa",
@@ -537,9 +565,9 @@
       "price": 210,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793825708-tsf5g.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793875672-wkr1g.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793826684-8xy2i.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793876546-euivw.webp"
       ],
       "imageAlt": "metal dünya biblo (ENS-1VXO)",
       "isConceptImage": false,
@@ -18623,7 +18651,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795793825702,
+  "updatedAt": 1795793875669,
   "members": [
     {
       "id": "bayi-1795786679048",
