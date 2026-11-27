@@ -20105,8 +20105,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795798261573,
+  "updatedAt": 1795798387410,
   "members": [
+    {
+      "id": "bayi-1795798384932",
+      "companyName": "Tiumistrend",
+      "contactName": "Gülcan ÖZTÜRK",
+      "phone": "05467447951",
+      "email": "",
+      "city": "Zonguldak / Çaycuma",
+      "password": "G%y09251986",
+      "createdAt": "27.11.2026"
+    },
     {
       "id": "bayi-1795798260433",
       "companyName": "Van aksesuar",
