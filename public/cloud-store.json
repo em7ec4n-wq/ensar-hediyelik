@@ -20105,8 +20105,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795798735617,
+  "updatedAt": 1795798991685,
   "members": [
+    {
+      "id": "bayi-1795798989489",
+      "companyName": "Okan Binbir Çeşit",
+      "contactName": "Alaattin okan",
+      "phone": "5392324147",
+      "email": "",
+      "city": "Kocaeli",
+      "password": "414741",
+      "createdAt": "27.11.2026"
+    },
     {
       "id": "bayi-1795798734883",
       "companyName": "Mete mum",
