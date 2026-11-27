@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795782789546",
+      "sku": "ENS-XTW5",
+      "slug": "kristal-dunya-orta",
+      "name": "kristal dünya orta",
+      "shortName": "kristal dünya orta",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 175,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795782783945-vdabf-7DEA5FE8-8350-46A6-94CD-849E6F5C7AA5.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795782783945-vdabf-7DEA5FE8-8350-46A6-94CD-849E6F5C7AA5.png"
+      ],
+      "imageAlt": "kristal dünya orta (ENS-XTW5)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795782761949",
       "sku": "ENS-GH65",
       "slug": "kristal-dunya-kucuk",
@@ -17942,7 +17970,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795782763414,
+  "updatedAt": 1795782790264,
   "members": [
     {
       "id": "bayi-1795779928250",
