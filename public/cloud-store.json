@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795789926249",
+      "sku": "ENS-F1ES",
+      "slug": "ozgurluk-heykeli-biblo-buyuk",
+      "name": "özgürlük heykeli biblo büyük",
+      "shortName": "özgürlük heykeli biblo büyük",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 385,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789844505-epphl-IMG_4883.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795789844505-epphl-IMG_4883.webp"
+      ],
+      "imageAlt": "özgürlük heykeli biblo büyük (ENS-F1ES)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795789811768",
       "sku": "ENS-EIUL",
       "slug": "heykel-bibloo",
@@ -18024,7 +18052,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795789813628,
+  "updatedAt": 1795789928265,
   "members": [
     {
       "id": "bayi-1795786679048",
