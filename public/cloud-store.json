@@ -17407,8 +17407,17 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795717343512,
+  "updatedAt": 1795763323032,
   "members": [
+    {
+      "id": "bayi-1795763319148",
+      "companyName": "Toptan Bayi",
+      "contactName": "Bayi Yetkilisi",
+      "phone": "05455950307",
+      "city": "",
+      "password": "6489",
+      "createdAt": "27.11.2026"
+    },
     {
       "id": "bayi-1795717341340",
       "companyName": "Orkide çiçek evi",
