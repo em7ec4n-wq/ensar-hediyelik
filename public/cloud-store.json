@@ -451,9 +451,8 @@
       "price": 50,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790879664-6gdl2-6FC620B3-365D-4E48-8608-85D9FE9E5DCC.png",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791056973-jtztq-AD9D63EA-4F6D-42A3-B79B-915D62A40FEC.png",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795790879664-6gdl2-6FC620B3-365D-4E48-8608-85D9FE9E5DCC.png",
         "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795791056973-jtztq-AD9D63EA-4F6D-42A3-B79B-915D62A40FEC.png"
       ],
       "imageAlt": "tel askısı (ENS-OUSU)",
@@ -18153,7 +18152,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795791079103,
+  "updatedAt": 1795791089567,
   "members": [
     {
       "id": "bayi-1795786679048",
