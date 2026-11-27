@@ -440,6 +440,32 @@
   ],
   "products": [
     {
+      "id": "custom-1795794479645",
+      "sku": "ENS-IA8T",
+      "slug": "pelus-cep-ayna2",
+      "name": "peluş cep ayna2",
+      "shortName": "peluş cep ayna2",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [],
+      "description": "",
+      "price": 0,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794464740-1h55d-IMG_9814.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795794464740-1h55d-IMG_9814.jpeg"
+      ],
+      "imageAlt": "peluş cep ayna2 (ENS-IA8T)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795794448270",
       "sku": "ENS-HK6L",
       "slug": "pelus-cep-ayna",
@@ -18562,7 +18588,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795794450193,
+  "updatedAt": 1795794480615,
   "members": [
     {
       "id": "bayi-1795786679048",
