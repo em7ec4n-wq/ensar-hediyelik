@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795782053689",
+      "sku": "ENS-7MC6",
+      "slug": "gold-dekoratif-fil-biblo",
+      "name": "gold dekoratif fil biblo",
+      "shortName": "gold dekoratif fil biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 835,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795782015355-cmxk7-IMG_4875.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795782015355-cmxk7-IMG_4875.webp"
+      ],
+      "imageAlt": "gold dekoratif fil biblo (ENS-7MC6)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795781966036",
       "sku": "ENS-Z8Z6",
       "slug": "gold-yavrulu-fil-dekoratif-biblo",
@@ -17802,7 +17830,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795782009559,
+  "updatedAt": 1795782055728,
   "members": [
     {
       "id": "bayi-1795779928250",
