@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795782178656",
+      "sku": "ENS-WTG3",
+      "slug": "polyestr-kurbaga-biblo",
+      "name": "polyestr kurbağa biblo",
+      "shortName": "polyestr kurbağa biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 335,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795782150352-v2cl7-IMG_4877.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795782150352-v2cl7-IMG_4877.webp"
+      ],
+      "imageAlt": "polyestr kurbağa biblo (ENS-WTG3)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795782108005",
       "sku": "ENS-MPBA",
       "slug": "gold-dekoratuf-fil-byk-boy-biblo",
@@ -17858,7 +17886,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795782109868,
+  "updatedAt": 1795782180354,
   "members": [
     {
       "id": "bayi-1795779928250",
