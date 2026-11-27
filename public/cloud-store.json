@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795798027831",
+      "sku": "ENS-1E4D",
+      "slug": "nostalji-somine-radyo-buyuk-blu",
+      "name": "nostalji şömine radyo büyük blu",
+      "shortName": "nostalji şömine radyo büyük blu",
+      "categorySlug": "yilbasi",
+      "extraCategorySlugs": [
+        "hediyelik-urunler"
+      ],
+      "description": "",
+      "price": 900,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795798006120-uokcr-IMG_9840.jpeg",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795798006120-uokcr-IMG_9840.jpeg"
+      ],
+      "imageAlt": "nostalji şömine radyo büyük blu (ENS-1E4D)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Yılbaşı Ürünleri"
+      ]
+    },
+    {
       "id": "custom-1795797836006",
       "sku": "ENS-QJUU",
       "slug": "kalste-ses-super-super",
@@ -20077,17 +20105,8 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795797972212,
+  "updatedAt": 1795798030391,
   "members": [
-    {
-      "id": "bayi-1795797971270",
-      "companyName": "Toptan Bayi",
-      "contactName": "Bayi Yetkilisi",
-      "phone": "05073670061",
-      "city": "",
-      "password": "",
-      "createdAt": "27.11.2026"
-    },
     {
       "id": "bayi-1795797172320",
       "companyName": "Toptan Bayi",
