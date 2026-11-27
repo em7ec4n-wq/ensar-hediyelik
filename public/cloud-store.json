@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795781783890",
+      "sku": "ENS-RL27",
+      "slug": "fil-dekoratif-biblo",
+      "name": "fil dekoratif biblo",
+      "shortName": "fil dekoratif biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 835,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795781745451-elalb-IMG_4871.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795781745451-elalb-IMG_4871.webp"
+      ],
+      "imageAlt": "fil dekoratif biblo (ENS-RL27)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795781738464",
       "sku": "ENS-OH8K",
       "slug": "yavrulu-fil-biblo",
@@ -17690,7 +17718,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795781740111,
+  "updatedAt": 1795781785876,
   "members": [
     {
       "id": "bayi-1795779928250",
