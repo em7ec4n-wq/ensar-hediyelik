@@ -481,9 +481,9 @@
       "price": 210,
       "stock": 99,
       "published": true,
-      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793618943-wvb9z.webp",
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793722478-3ka6d.webp",
       "gallery": [
-        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793619890-c1iwb.webp"
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795793723344-w4l4b.webp"
       ],
       "imageAlt": "metal dünya biblo (ENS-1VXO)",
       "isConceptImage": false,
@@ -18567,8 +18567,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795793616687,
+  "updatedAt": 1795793722473,
   "members": [
+    {
+      "id": "bayi-1795793720204",
+      "companyName": "Freya beauty",
+      "contactName": "Ferhat erez",
+      "phone": "5414117256",
+      "email": "",
+      "city": "Siirt/kurtalan",
+      "password": "Mekan7256",
+      "createdAt": "27.11.2026"
+    },
     {
       "id": "bayi-1795786679048",
       "companyName": "ELİF KİTAP KIRTASİYE",
