@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795782761949",
+      "sku": "ENS-GH65",
+      "slug": "kristal-dunya-kucuk",
+      "name": "kristal dünya küçük",
+      "shortName": "kristal dünya küçük",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 140,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795782708807-0ojo7-7DEA5FE8-8350-46A6-94CD-849E6F5C7AA5.png",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795782708807-0ojo7-7DEA5FE8-8350-46A6-94CD-849E6F5C7AA5.png"
+      ],
+      "imageAlt": "kristal dünya küçük (ENS-GH65)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795782227087",
       "sku": "ENS-29O5",
       "slug": "ithal-polyester-kaplumbaga-biblo",
@@ -17914,7 +17942,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795782238285,
+  "updatedAt": 1795782763414,
   "members": [
     {
       "id": "bayi-1795779928250",
