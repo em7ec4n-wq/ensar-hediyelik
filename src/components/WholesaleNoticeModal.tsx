@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { CloseIcon } from "@/components/Icons";
 import { useWholesaleAuth } from "./WholesaleAuthProvider";
 
@@ -9,20 +10,23 @@ interface WholesaleNoticeModalProps {
   brandName?: string;
 }
 
-const STORAGE_KEY = "ensar_wholesale_welcome_notice_v4";
+const STORAGE_KEY = "ensar_wholesale_welcome_notice_v5";
 
 export function WholesaleNoticeModal({
   logoSrc = "/ensar-web/logo/ensar-logo-seffaf.png",
   brandName = "Ensar Hediyelik",
 }: WholesaleNoticeModalProps) {
+  const pathname = usePathname();
   const { member, openAuthModal } = useWholesaleAuth();
   const [isOpen, setIsOpen] = useState(false);
+
+  const isAdminRoute = pathname?.startsWith("/yonetim");
 
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    // If already logged in as a wholesale dealer, no need to show entrance notice
-    if (member) {
+    // If already logged in as a wholesale dealer or on admin panel, do not show entrance notice
+    if (member || isAdminRoute) {
       setIsOpen(false);
       return;
     }
@@ -38,7 +42,7 @@ export function WholesaleNoticeModal({
     } catch {
       setIsOpen(true);
     }
-  }, [member]);
+  }, [member, isAdminRoute]);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -49,12 +53,12 @@ export function WholesaleNoticeModal({
     }
   };
 
-  const handleOpenAuth = () => {
+  const handleOpenAuth = (mode: "login" | "register" = "register") => {
     handleClose();
-    openAuthModal();
+    openAuthModal(mode);
   };
 
-  if (!isOpen || member) return null;
+  if (!isOpen || member || isAdminRoute) return null;
 
   return (
     <div
@@ -141,22 +145,32 @@ export function WholesaleNoticeModal({
         </div>
 
         {/* Action Buttons */}
-        <div className="mt-5 flex flex-col gap-2.5 sm:flex-row sm:gap-3">
+        <div className="mt-5 flex flex-col gap-2.5">
           <button
             type="button"
-            onClick={handleOpenAuth}
-            className="flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-full bg-[#321B2D] px-5 text-sm font-bold text-[#F7F3EB] shadow-lg transition-transform hover:scale-[1.02] hover:bg-[#44253D] active:scale-[0.98]"
+            onClick={() => handleOpenAuth("register")}
+            className="flex min-h-[50px] w-full items-center justify-center gap-2 rounded-full bg-[#321B2D] px-5 text-sm font-bold text-[#F7F3EB] shadow-lg transition-transform hover:scale-[1.01] hover:bg-[#44253D] active:scale-[0.98]"
           >
-            <span>🔒</span>
-            <span>Toptan Fiyatları Gör (Bayi Girişi)</span>
+            <span>🔓</span>
+            <span>Üyelere Özel Fiyatları Görmek İçin Üye Olun</span>
           </button>
-          <button
-            type="button"
-            onClick={handleClose}
-            className="flex min-h-[44px] items-center justify-center rounded-full border border-[#DDD3C6] bg-white px-5 text-xs font-semibold text-[#5F505C] hover:bg-stone-100 sm:flex-initial"
-          >
-            Kataloğu İncele
-          </button>
+          <div className="flex flex-col gap-2 sm:flex-row">
+            <button
+              type="button"
+              onClick={() => handleOpenAuth("login")}
+              className="flex min-h-[44px] flex-1 items-center justify-center gap-1.5 rounded-full border-2 border-[#321B2D]/25 bg-white px-4 text-xs font-bold text-[#321B2D] hover:bg-[#F7F3EB]"
+            >
+              <span>🔑</span>
+              <span>Zaten Üyeyim, Giriş Yap</span>
+            </button>
+            <button
+              type="button"
+              onClick={handleClose}
+              className="flex min-h-[44px] flex-1 items-center justify-center rounded-full border border-[#DDD3C6] bg-white px-4 text-xs font-semibold text-[#5F505C] hover:bg-stone-100"
+            >
+              Üye Olmadan Kataloğu İncele
+            </button>
+          </div>
         </div>
       </div>
     </div>

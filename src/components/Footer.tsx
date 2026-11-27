@@ -86,12 +86,6 @@ export function Footer({ settings }: FooterProps) {
             >
               Hesabım
             </Link>
-            <Link
-              href="/yonetim"
-              className="transition-colors hover:text-[#FFFDF8]"
-            >
-              Yönetim Paneli
-            </Link>
           </div>
 
           <p className="text-[#F7F3EB]/65">

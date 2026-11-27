@@ -127,7 +127,7 @@ export function WholesaleAuthModal() {
                 : "text-[#6F606C] hover:text-[#241722]"
             }`}
           >
-            Yeni Bayi Kaydı
+            Üye Ol (Yeni Bayi)
           </button>
         </div>
 

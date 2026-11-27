@@ -216,7 +216,7 @@ export function Header({ settings, categories }: HeaderProps) {
               className="flex items-center gap-1.5 rounded-full bg-[#321B2D] px-3.5 py-2 text-xs font-bold text-[#F7F3EB] shadow hover:bg-[#44253D] transition-colors"
             >
               <span>🔒</span>
-              <span>Bayi Girişi</span>
+              <span>Üye Ol / Giriş</span>
             </button>
           )}
 
@@ -357,7 +357,7 @@ export function Header({ settings, categories }: HeaderProps) {
                   }}
                   className="rounded-full bg-[#321B2D] px-3.5 py-1.5 text-xs font-bold text-[#F7F3EB] shadow hover:bg-[#44253D] shrink-0"
                 >
-                  Bayi Girişi
+                  Üye Ol / Giriş
                 </button>
               </div>
             )}
@@ -455,13 +455,6 @@ export function Header({ settings, categories }: HeaderProps) {
                   className="flex min-h-[44px] items-center rounded-full border border-[#E5DCD0] px-4 text-sm text-[#241722]"
                 >
                   İletişim
-                </Link>
-                <Link
-                  href="/yonetim"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="flex min-h-[44px] items-center rounded-full border border-[#E5DCD0] px-4 text-sm text-[#241722]"
-                >
-                  Yönetim
                 </Link>
               </div>
             </li>
