@@ -440,6 +440,34 @@
   ],
   "products": [
     {
+      "id": "custom-1795781900087",
+      "sku": "ENS-TO8W",
+      "slug": "gold-yavrulu-fil-biblo",
+      "name": "gold yavrulu fil biblo",
+      "shortName": "gold yavrulu fil biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 725,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795781874807-s0yv5-IMG_4873.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795781874807-s0yv5-IMG_4873.webp"
+      ],
+      "imageAlt": "gold yavrulu fil biblo (ENS-TO8W)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795781832183",
       "sku": "ENS-1H7A",
       "slug": "dekoratif-fil-biblo-byk-boy",
@@ -17746,7 +17774,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795781833610,
+  "updatedAt": 1795781901855,
   "members": [
     {
       "id": "bayi-1795779928250",
