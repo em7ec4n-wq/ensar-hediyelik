@@ -440,6 +440,35 @@
   ],
   "products": [
     {
+      "id": "custom-1795772593787",
+      "sku": "ENS-GIFQ",
+      "slug": "dekoratif-metal-motor-biblo",
+      "name": "dekoratif metal motor biblo",
+      "shortName": "dekoratif metal motor biblo",
+      "categorySlug": "hediyelik-urunler",
+      "extraCategorySlugs": [
+        "biblolar-ve-dekorlar",
+        "dekoratif-biplolar"
+      ],
+      "description": "",
+      "price": 355,
+      "stock": 99,
+      "published": true,
+      "image": "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795772565341-o7jcl-IMG_4863.webp",
+      "gallery": [
+        "https://raw.githubusercontent.com/em7ec4n-wq/ensar-hediyelik/main/public/uploads/1795772565341-o7jcl-IMG_4863.webp"
+      ],
+      "imageAlt": "dekoratif metal motor biblo (ENS-GIFQ)",
+      "isConceptImage": false,
+      "isNewArrival": true,
+      "occasions": [
+        "Hediye"
+      ],
+      "giftTypes": [
+        "Hediyelik Ürünler"
+      ]
+    },
+    {
       "id": "custom-1795772536248",
       "sku": "ENS-J2JL",
       "slug": "metal-motor-byk",
@@ -17492,7 +17521,7 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795772548241,
+  "updatedAt": 1795772595519,
   "members": [
     {
       "id": "bayi-1795765984382",
