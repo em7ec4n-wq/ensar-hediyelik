@@ -20215,8 +20215,17 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795866838231,
+  "updatedAt": 1795867625711,
   "members": [
+    {
+      "id": "bayi-1795867623972",
+      "companyName": "Toptan Bayi",
+      "contactName": "Bayi Yetkilisi",
+      "phone": "5437352836",
+      "city": "",
+      "password": "violet",
+      "createdAt": "28.11.2026"
+    },
     {
       "id": "bayi-1795866775411",
       "companyName": "Toptan Bayi",
