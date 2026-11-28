@@ -20215,8 +20215,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795863291729,
+  "updatedAt": 1795864038920,
   "members": [
+    {
+      "id": "bayi-1795864037253",
+      "companyName": "Burcuva",
+      "contactName": "Haydar karakuş",
+      "phone": "5554052862",
+      "email": "",
+      "city": "Karşıyaka izmir",
+      "password": "Burcum58",
+      "createdAt": "28.11.2026"
+    },
     {
       "id": "bayi-1795863289406",
       "companyName": "Toptan Bayi",
