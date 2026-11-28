@@ -20215,8 +20215,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795820949885,
+  "updatedAt": 1795824873826,
   "members": [
+    {
+      "id": "bayi-1795824870611",
+      "companyName": "çizgi kitap kırtasiye NİKSAR",
+      "contactName": "KÜRŞAT ÖZDEMİR",
+      "phone": "05382631461",
+      "email": "",
+      "city": "Tokat-NİKSAR",
+      "password": "Gulay.6476",
+      "createdAt": "28.11.2026"
+    },
     {
       "id": "bayi-1795820949036",
       "companyName": "Toptan Bayi",
