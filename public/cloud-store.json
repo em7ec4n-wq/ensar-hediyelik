@@ -20215,46 +20215,17 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795864197412,
+  "updatedAt": 1795864402940,
   "members": [
     {
-      "id": "bayi-1795864192510",
-      "companyName": "Hayat Çeyiz",
-      "contactName": "Latif Kaplan",
-      "phone": "5543197943",
+      "id": "bayi-1796037200686",
+      "companyName": "Mum pazarı",
+      "contactName": "Mesut Döner",
+      "phone": "5425705704",
       "email": "",
       "city": "Gaziantep",
-      "password": "230714",
-      "createdAt": "28.11.2026"
-    },
-    {
-      "id": "bayi-1795864037253",
-      "companyName": "Burcuva",
-      "contactName": "Haydar karakuş",
-      "phone": "5554052862",
-      "email": "",
-      "city": "Karşıyaka izmir",
-      "password": "Burcum58",
-      "createdAt": "28.11.2026"
-    },
-    {
-      "id": "bayi-1795863289406",
-      "companyName": "Toptan Bayi",
-      "contactName": "Bayi Yetkilisi",
-      "phone": "05456526242",
-      "city": "",
-      "password": "cansum123",
-      "createdAt": "28.11.2026"
-    },
-    {
-      "id": "bayi-1795863016718",
-      "companyName": "Wiccu",
-      "contactName": "Hakkı",
-      "phone": "05343852303",
-      "email": "",
-      "city": "İstanbul şişli",
-      "password": "Deniz.6565",
-      "createdAt": "28.11.2026"
+      "password": "123456",
+      "createdAt": "30.11.2026"
     },
     {
       "id": "bayi-1795860890936",
