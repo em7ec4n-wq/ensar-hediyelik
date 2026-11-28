@@ -20215,8 +20215,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795860892666,
+  "updatedAt": 1795863020352,
   "members": [
+    {
+      "id": "bayi-1795863016718",
+      "companyName": "Wiccu",
+      "contactName": "Hakkı",
+      "phone": "05343852303",
+      "email": "",
+      "city": "İstanbul şişli",
+      "password": "Deniz.6565",
+      "createdAt": "28.11.2026"
+    },
     {
       "id": "bayi-1795860890936",
       "companyName": "Gümüşay bujiteri",
