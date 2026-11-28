@@ -20215,8 +20215,17 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795865062231,
+  "updatedAt": 1795866670652,
   "members": [
+    {
+      "id": "bayi-1795866669353",
+      "companyName": "Toptan Bayi",
+      "contactName": "Bayi Yetkilisi",
+      "phone": "05436063461",
+      "city": "",
+      "password": "ts34446161",
+      "createdAt": "28.11.2026"
+    },
     {
       "id": "bayi-1795865059978",
       "companyName": "Ayyıldız bijuteri",
