@@ -20215,8 +20215,17 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795864402940,
+  "updatedAt": 1795864817450,
   "members": [
+    {
+      "id": "bayi-1795864810123",
+      "companyName": "Toptan Bayi",
+      "contactName": "Bayi Yetkilisi",
+      "phone": "05435424550",
+      "city": "",
+      "password": "Hatay.25",
+      "createdAt": "28.11.2026"
+    },
     {
       "id": "bayi-1796037200686",
       "companyName": "Mum pazarı",
