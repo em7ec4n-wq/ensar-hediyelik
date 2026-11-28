@@ -20215,8 +20215,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795857793194,
+  "updatedAt": 1795860892666,
   "members": [
+    {
+      "id": "bayi-1795860890936",
+      "companyName": "Gümüşay bujiteri",
+      "contactName": "İbrahim torun",
+      "phone": "05379434423",
+      "email": "",
+      "city": "Erzurum",
+      "password": "151515Tek",
+      "createdAt": "28.11.2026"
+    },
     {
       "id": "bayi-1795857790897",
       "companyName": "Toprak takı&aksesuar",
