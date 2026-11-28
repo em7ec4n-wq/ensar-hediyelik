@@ -20215,8 +20215,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795847039675,
+  "updatedAt": 1795856591378,
   "members": [
+    {
+      "id": "bayi-1795856588579",
+      "companyName": "Meloş ambalaj",
+      "contactName": "Funda değirmenci",
+      "phone": "05432300589",
+      "email": "",
+      "city": "Zonguldak",
+      "password": " 628628",
+      "createdAt": "28.11.2026"
+    },
     {
       "id": "bayi-1795847037870",
       "companyName": "Toptan Bayi",
