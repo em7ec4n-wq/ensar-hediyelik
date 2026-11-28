@@ -20215,8 +20215,17 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795845088897,
+  "updatedAt": 1795847039675,
   "members": [
+    {
+      "id": "bayi-1795847037870",
+      "companyName": "Toptan Bayi",
+      "contactName": "Bayi Yetkilisi",
+      "phone": "5077824180",
+      "city": "",
+      "password": "asdfg123",
+      "createdAt": "28.11.2026"
+    },
     {
       "id": "bayi-1795845085184",
       "companyName": "Buket çiçekçilik",
