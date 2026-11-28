@@ -20215,8 +20215,18 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795864038920,
+  "updatedAt": 1795864197412,
   "members": [
+    {
+      "id": "bayi-1795864192510",
+      "companyName": "Hayat Çeyiz",
+      "contactName": "Latif Kaplan",
+      "phone": "5543197943",
+      "email": "",
+      "city": "Gaziantep",
+      "password": "230714",
+      "createdAt": "28.11.2026"
+    },
     {
       "id": "bayi-1795864037253",
       "companyName": "Burcuva",
