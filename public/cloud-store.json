@@ -20215,8 +20215,17 @@
     }
   ],
   "orders": [],
-  "updatedAt": 1795863020352,
+  "updatedAt": 1795863291729,
   "members": [
+    {
+      "id": "bayi-1795863289406",
+      "companyName": "Toptan Bayi",
+      "contactName": "Bayi Yetkilisi",
+      "phone": "05456526242",
+      "city": "",
+      "password": "cansum123",
+      "createdAt": "28.11.2026"
+    },
     {
       "id": "bayi-1795863016718",
       "companyName": "Wiccu",
